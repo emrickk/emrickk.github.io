@@ -2,6 +2,7 @@
 title: '天然气何去何从'
 description: ''
 pubDate: '2015-06-21'
+heroImage: '../../assets/hero/2020/02/6143431-14348198816402268-Robert-Edwards.png'
 category: 'Things'
 ---
 

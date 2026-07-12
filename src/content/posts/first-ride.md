@@ -2,6 +2,7 @@
 title: '就这样献出了我的第一次骑行'
 description: ''
 pubDate: '2014-08-23'
+heroImage: '../../assets/hero/2020/02/QQE59BBEE7898720140823225439.jpg'
 category: 'Journal'
 ---
 

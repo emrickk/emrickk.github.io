@@ -2,6 +2,7 @@
 title: '2014-10-26'
 description: ''
 pubDate: '2014-10-26'
+heroImage: '../../assets/hero/2020/02/DSC3896.jpg'
 category: 'Prodigal'
 ---
 

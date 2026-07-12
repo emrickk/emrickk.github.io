@@ -2,6 +2,7 @@
 title: 'TRIGON'
 description: ''
 pubDate: '2014-12-20'
+heroImage: '../../assets/hero/2020/02/QQE688AAE59BBE20141220170454.jpg'
 category: 'Prodigal'
 ---
 

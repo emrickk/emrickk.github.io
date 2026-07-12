@@ -2,6 +2,7 @@
 title: '这些话又又又要说一遍了'
 description: ''
 pubDate: '2016-01-03'
+heroImage: '../../assets/hero/2020/02/64-1.png'
 category: 'Journal'
 ---
 

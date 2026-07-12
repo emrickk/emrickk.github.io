@@ -2,6 +2,7 @@
 title: '2015-09-02'
 description: ''
 pubDate: '2015-09-02'
+heroImage: '../../assets/hero/2020/02/dell001.jpg'
 category: 'Prodigal'
 ---
 

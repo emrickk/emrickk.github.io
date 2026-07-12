@@ -2,6 +2,7 @@
 title: '2020-06-29'
 description: ''
 pubDate: '2020-06-29'
+heroImage: '../../assets/hero/2020/06/1-0.jpeg'
 category: 'Prodigal'
 ---
 

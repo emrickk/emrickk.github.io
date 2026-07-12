@@ -2,6 +2,7 @@
 title: '冬 树'
 description: ''
 pubDate: '2008-04-05'
+heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzNEVvekZLSUVlV1dCVEdRUmVQdndwTFZWdzhWV29rU21BPT0.jpg'
 category: 'Repost'
 ---
 

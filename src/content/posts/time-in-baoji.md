@@ -2,6 +2,7 @@
 title: '时间在宝鸡'
 description: ''
 pubDate: '2013-05-04'
+heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOS80MkFFeW9jQ1RqWk5MNEczOEFpL05lakRzMXFKajBUVUt0RTQ1a0kxd05RPT0.jpg'
 category: 'Journal'
 ---
 

@@ -2,6 +2,7 @@
 title: '又是新的一天呀'
 description: ''
 pubDate: '2014-09-02'
+heroImage: '../../assets/hero/2020/02/QQE59BBEE7898720140828214503.png'
 category: 'Journal'
 ---
 

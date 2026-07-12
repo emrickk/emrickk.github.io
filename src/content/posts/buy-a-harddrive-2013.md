@@ -2,6 +2,7 @@
 title: '硬盘购买记'
 description: ''
 pubDate: '2013-03-21'
+heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kQzFlSmFEekoxOWt0UERtUldTK0pMTHJ2ZWQyUkZ5NzhnPT0.jpg'
 category: 'Prodigal'
 ---
 

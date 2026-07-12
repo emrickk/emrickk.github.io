@@ -2,6 +2,7 @@
 title: '一套杯垫'
 description: ''
 pubDate: '2018-12-12'
+heroImage: '../../assets/hero/2020/02/coaster1.jpg'
 category: 'Things'
 ---
 

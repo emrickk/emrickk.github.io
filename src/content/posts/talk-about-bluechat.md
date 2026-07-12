@@ -2,6 +2,7 @@
 title: '来说一下蓝信'
 description: ''
 pubDate: '2016-02-06'
+heroImage: '../../assets/hero/2020/02/lanxin-pic2.png'
 category: 'Things'
 ---
 

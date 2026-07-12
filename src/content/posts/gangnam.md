@@ -2,6 +2,7 @@
 title: '2013-08-24'
 description: ''
 pubDate: '2013-08-24'
+heroImage: '../../assets/hero/2020/02/20130911.jpg'
 category: 'Journal'
 ---
 

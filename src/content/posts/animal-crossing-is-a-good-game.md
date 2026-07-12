@@ -2,6 +2,7 @@
 title: '2020-04-10'
 description: ''
 pubDate: '2020-04-10'
+heroImage: '../../assets/hero/2020/04/2020040900010500-02CB906EA538A35643C1E1484C4B947D.jpg'
 category: 'Journal'
 ---
 

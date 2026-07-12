@@ -2,6 +2,7 @@
 title: '真爱'
 description: ''
 pubDate: '2014-08-28'
+heroImage: '../../assets/hero/2020/02/QQE59BBEE7898720140828214503.png'
 category: 'Journal'
 ---
 

@@ -2,6 +2,7 @@
 title: 'reMarkable 2'
 description: ''
 pubDate: '2021-03-14'
+heroImage: '../../assets/hero/2021/03/Remarkable-01-1-min.jpeg'
 category: 'Prodigal'
 ---
 

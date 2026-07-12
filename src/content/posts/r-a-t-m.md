@@ -2,6 +2,7 @@
 title: '烈焰小钢炮：R.A.T.M红魔版'
 description: ''
 pubDate: '2014-11-16'
+heroImage: '../../assets/hero/2020/02/DSC4093.jpg'
 category: 'Prodigal'
 ---
 

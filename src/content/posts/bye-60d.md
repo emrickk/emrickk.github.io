@@ -2,6 +2,7 @@
 title: '沙扬娜拉 60D'
 description: ''
 pubDate: '2013-03-21'
+heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzN1ZTYXFIZ254WEgrd0l4b1hYem1sb09LdnBaVElXM21RPT0.jpg'
 category: 'Journal'
 ---
 

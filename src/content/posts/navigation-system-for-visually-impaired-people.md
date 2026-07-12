@@ -2,6 +2,7 @@
 title: 'Navigation System for Visually Impaired People'
 description: ''
 pubDate: '2018-11-16'
+heroImage: '../../assets/hero/2020/02/Visually-Impaired1.jpg'
 category: 'Things'
 ---
 
