@@ -18,10 +18,11 @@ import shutil
 import sys
 
 from convert_posts import emitted_img_re
+import backup_paths
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, '..', '..'))
-UPLOADS = os.path.abspath(os.path.join(REPO, '..', 'site', 'wp-content', 'uploads'))
+UPLOADS = backup_paths.uploads_root()
 POSTS = os.path.join(REPO, 'src', 'content', 'posts')
 DEST = os.path.join(REPO, 'public', 'uploads')
 

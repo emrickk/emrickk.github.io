@@ -1,4 +1,5 @@
 import pytest
+import backup_paths
 from wp_parser import load_dump
 import categories
 from categories import post_categories, build_mapping
@@ -12,7 +13,7 @@ def test_missing_row_in_edited_csv_fails_loudly(tmp_path, monkeypatch):
         build_mapping(cats)
 
 def test_every_published_post_gets_one_category():
-    d = load_dump('../../../db/emrickus_wp.sql')
+    d = load_dump(backup_paths.dump_path())
     cats = post_categories(d)          # {post_id: first_category_name}
     pub = [p[0] for p in d['wp_posts'] if p[20] == 'post' and p[7] == 'publish']
     mapping = build_mapping(cats)      # {old_name: new_name}; build_mapping maps

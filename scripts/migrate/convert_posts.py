@@ -12,11 +12,12 @@ from markdownify import markdownify as md
 
 from categories import build_mapping, post_categories
 from wp_parser import load_dump
+import backup_paths
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, '..', '..'))
-DUMP_PATH = '../../../db/emrickus_wp.sql'  # resolved relative to this file by load_dump()
-UPLOADS_ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..', 'site', 'wp-content', 'uploads'))
+DUMP_PATH = backup_paths.dump_path()
+UPLOADS_ROOT = backup_paths.uploads_root()
 POSTS_DIR = os.path.join(REPO, 'src', 'content', 'posts')
 REPORT_PATH = os.path.join(HERE, 'report.txt')
 MANIFEST_PATH = os.path.join(HERE, '.posts_manifest.txt')

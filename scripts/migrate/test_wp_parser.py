@@ -1,7 +1,8 @@
+import backup_paths
 from wp_parser import load_dump
 
 def _d():
-    return load_dump('../../../db/emrickus_wp.sql')  # resolved relative to this file
+    return load_dump(backup_paths.dump_path())
 
 def test_counts_match_audit():
     # Field index meanings (p[20], p[7], c[10], ...): see load_dump() docstring in wp_parser.py

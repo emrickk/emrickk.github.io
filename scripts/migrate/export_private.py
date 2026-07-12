@@ -2,8 +2,8 @@
 archive outside the repo.
 
 Pipeline: parse dump -> reuse convert_posts's title/slug/body helpers -> write
-../private-posts/*.md (one level above the repo root, i.e. a sibling of it,
-NOT inside it) -> never touch anything under the repo working tree.
+private-posts/*.md under the backup root located via backup_paths.py (outside
+the repo, NOT inside it) -> never touch anything under the repo working tree.
 
 WHAT GETS WRITTEN (27 files total):
   - The 22 `post` rows with status=private -> one .md each, same frontmatter
@@ -25,9 +25,10 @@ stdout when this script is run directly — never written into the repo's shared
 scripts/migrate/report.txt, which is git-tracked.
 
 PRIVACY / SAFETY:
-  - PRIVATE_DIR resolves outside the repo (REPO/../private-posts); this module
-    performs no writes, deletes, or reads anywhere under REPO except the read-only
-    imports of convert_posts/categories/wp_parser and reading public/uploads/ to
+  - PRIVATE_DIR resolves outside the repo, under the backup root (see
+    backup_paths.py); this module performs no writes, deletes, or reads
+    anywhere under REPO except the read-only imports of
+    convert_posts/categories/wp_parser and reading public/uploads/ to
     check file existence (never writing there).
   - This script must never write to scripts/migrate/report.txt: that file is
     git-tracked and shared with convert_posts.py/export_comments.py, and mixing
@@ -39,15 +40,16 @@ from categories import build_mapping, post_categories
 from convert_posts import (UPLOADS_ROOT, convert_body, emitted_img_re,
                             make_slug, make_title, yaml_single_quote)
 from wp_parser import load_dump
+import backup_paths
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, '..', '..'))
-DUMP_PATH = '../../../db/emrickus_wp.sql'  # resolved relative to this file by load_dump()
+DUMP_PATH = backup_paths.dump_path()
 PUBLIC_UPLOADS = os.path.join(REPO, 'public', 'uploads')
 
-# Deliberately OUTSIDE the repo (one level above REPO, i.e. a sibling of it) —
-# these files must NEVER be committed. Do not move this under REPO.
-PRIVATE_DIR = os.path.abspath(os.path.join(REPO, '..', 'private-posts'))
+# Deliberately OUTSIDE the repo, in the read-only backup tree — these files
+# must NEVER be committed. Do not move this under REPO.
+PRIVATE_DIR = backup_paths.private_posts_dir()
 MANIFEST_PATH = os.path.join(PRIVATE_DIR, '.manifest.txt')  # also outside the repo
 
 # Pages superseded by theme features; archived standalone with status: archived-page.

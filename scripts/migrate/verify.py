@@ -27,6 +27,7 @@ import sys
 
 from convert_posts import emitted_img_re, make_title
 from wp_parser import load_dump
+import backup_paths
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -35,7 +36,7 @@ COMMENTS_DIR = os.path.join(REPO, 'src', 'data', 'comments')
 UPLOADS_DIR = os.path.join(REPO, 'public', 'uploads')
 DIST_POSTS_DIR = os.path.join(REPO, 'dist', 'posts')
 REPORT_PATH = os.path.join(HERE, 'report.txt')
-DUMP_PATH = '../../../db/emrickus_wp.sql'  # resolved relative to this file by wp_parser.load_dump()
+DUMP_PATH = backup_paths.dump_path()
 
 EMAIL_RE = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')
 # Shape make_title() gives untitled posts ('YYYY-MM-DD' or 'YYYY-MM-DD·N');

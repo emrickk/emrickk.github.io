@@ -1,3 +1,4 @@
+import backup_paths
 from convert_posts import (_strip_dead_images, convert_body, is_slug_collision,
                            make_title, make_slug, published_slug_map, rewrite_images)
 from wp_parser import load_dump
@@ -70,7 +71,7 @@ def test_image_rewrite_strips_size_variant(tmp_path):
     assert '/uploads/2020/11/kb.jpg' in out and used == {'2020/11/kb.jpg'}
 
 def test_published_slug_map_matches_known_posts():
-    d = load_dump('../../../db/emrickus_wp.sql')
+    d = load_dump(backup_paths.dump_path())
     slug_map = published_slug_map(d)
     assert len(slug_map) == 318
     assert slug_map['1604'] == 'remarkable-2-review'   # the reMarkable review post

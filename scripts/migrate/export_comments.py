@@ -23,10 +23,11 @@ from bs4 import BeautifulSoup
 
 from convert_posts import published_slug_map
 from wp_parser import load_dump
+import backup_paths
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, '..', '..'))
-DUMP_PATH = '../../../db/emrickus_wp.sql'  # resolved relative to this file by load_dump()
+DUMP_PATH = backup_paths.dump_path()
 COMMENTS_DIR = os.path.join(REPO, 'src', 'data', 'comments')
 REPORT_PATH = os.path.join(HERE, 'report.txt')
 MANIFEST_PATH = os.path.join(HERE, '.comments_manifest.txt')
