@@ -112,7 +112,10 @@ const featuredPlaceholderStyle = featuredPlaceholder
     {
       featured && (
         <section class="featured-section">
-          <a href={withBase(`/posts/${featured.id}/`)} class="featured-card">
+          <a
+            href={withBase(`/posts/${featured.id}/`)}
+            class:list={['featured-card', !featured.data.heroImage && 'featured-card--text']}
+          >
             <div class="featured-text">
               <p class="featured-meta">
                 <FormattedDate date={featured.data.pubDate} />
@@ -123,8 +126,8 @@ const featuredPlaceholderStyle = featuredPlaceholder
               )}
               <span class="featured-cta">{tr.readLink}</span>
             </div>
-            <div class="featured-thumb-wrap" style={featuredPlaceholderStyle}>
-              {featured.data.heroImage ? (
+            {featured.data.heroImage && (
+              <div class="featured-thumb-wrap" style={featuredPlaceholderStyle}>
                 <Image
                   src={featured.data.heroImage}
                   alt={featured.data.title}
@@ -134,10 +137,8 @@ const featuredPlaceholderStyle = featuredPlaceholder
                   quality={88}
                   loading="lazy"
                 />
-              ) : (
-                <div class="featured-thumb card-img-placeholder" />
-              )}
-            </div>
+              </div>
+            )}
           </a>
         </section>
       )

@@ -171,6 +171,12 @@
   transform: translateY(-2px);
 }
 
+/* Text-only featured card (no heroImage): drop the thumb column so the copy
+   fills the row — no empty gray rectangle. */
+.featured-card--text {
+  grid-template-columns: 1fr;
+}
+
 .featured-text {
   display: flex;
   flex-direction: column;
@@ -327,12 +333,6 @@
   text-shadow: 0 0 0.5px currentColor;
 }
 
-.card-img-placeholder {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, var(--fill-secondary) 0%, var(--fill-tertiary) 100%);
-}
-
 @keyframes media-placeholder-sweep {
   from {
     transform: translateX(-42%);
@@ -351,6 +351,10 @@
   .featured-card {
     grid-template-columns: minmax(0, 1fr) minmax(180px, 34%);
     gap: var(--space-6);
+  }
+
+  .featured-card--text {
+    grid-template-columns: 1fr;
   }
 
   .featured-thumb-wrap {
