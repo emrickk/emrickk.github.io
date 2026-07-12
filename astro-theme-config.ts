@@ -62,16 +62,16 @@ const config = {
     // mode: 'giscus'        -> original giscus theme
     // mode: 'giscus-custom' -> Tone custom giscus theme
     // Local preview can also use PUBLIC_GISCUS_MODE and PUBLIC_GISCUS_* in .env.local.
-    mode: 'off',
+    mode: 'giscus-custom',
     provider: 'giscus',
     giscus: {
-      repo: '',
-      repoId: '',
-      category: '',
-      categoryId: '',
+      repo: 'emrickk/emrickk.github.io',
+      repoId: 'R_kgDOTWatYA',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOTWatYM4DBD9Y',
       mapping: 'pathname',
       strict: '0',
-      reactionsEnabled: '0',
+      reactionsEnabled: '1',
       emitMetadata: '0',
       inputPosition: 'bottom',
       theme: 'preferred_color_scheme',
