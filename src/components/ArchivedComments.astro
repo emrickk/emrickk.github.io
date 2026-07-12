@@ -1,0 +1,134 @@
+---
+interface Props {
+  slug: string;
+}
+
+type ArchivedComment = {
+  author: string;
+  date: string;
+  body: string;
+};
+
+const { slug } = Astro.props;
+
+// Eager-load every archived comment file at build time (static build, no runtime fetch).
+const files = import.meta.glob<{ default: ArchivedComment[] }>(
+  '../data/comments/*.json',
+  { eager: true },
+);
+const key = `../data/comments/${slug}.json`;
+const comments: ArchivedComment[] = files[key]?.default ?? [];
+---
+
+{
+  comments.length > 0 && (
+    <section
+      class="archived-comments"
+      data-pagefind-ignore="all"
+      aria-label="Archived comments"
+    >
+      <h2 class="archived-comments__label">历史评论 · Archived comments</h2>
+      <ol class="archived-comments__list">
+        {comments.map((c) => (
+          <li class="archived-comment">
+            <div class="archived-comment__meta">
+              <strong class="archived-comment__author">{c.author}</strong>
+              <span class="archived-comment__dot">·</span>
+              <time class="archived-comment__date">{c.date}</time>
+            </div>
+            {/* Bodies are sanitized HTML exported in Task 6 (scripts/styles/iframes
+                removed, on* attrs stripped, javascript: URLs neutered) — safe to render. */}
+            <div class="archived-comment__body" set:html={c.body} />
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
+
+<style>
+.archived-comments {
+  max-width: var(--max-width-content);
+  margin-top: var(--space-12);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--separator);
+}
+
+.archived-comments__label {
+  margin: 0 0 var(--space-6);
+  color: var(--label-tertiary);
+  font-size: var(--text-caption-1);
+  font-weight: var(--weight-accent-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.archived-comments__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archived-comment {
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--separator);
+}
+
+.archived-comment:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.archived-comment__meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-footnote);
+  color: var(--label-tertiary);
+}
+
+.archived-comment__author {
+  font-weight: var(--weight-semibold);
+  color: var(--label-secondary);
+}
+
+.archived-comment__dot {
+  color: var(--label-quaternary);
+}
+
+.archived-comment__date {
+  font-variant-numeric: tabular-nums;
+}
+
+.archived-comment__body {
+  color: var(--label-primary);
+  font-size: var(--text-callout);
+  line-height: var(--leading-relaxed);
+}
+
+/* Injected (set:html) body content — needs :global to reach past scoping.
+   Evidence-based coverage: a scan of all 82 src/data/comments/*.json bodies
+   found exactly two tags in the corpus — <p> (358) and <img> (22) — so only
+   those get rules. Re-scan before adding more. */
+.archived-comment__body :global(> :first-child) {
+  margin-block-start: 0;
+}
+
+.archived-comment__body :global(> :last-child) {
+  margin-block-end: 0;
+}
+
+.archived-comment__body :global(p) {
+  margin: 0 0 var(--space-3);
+}
+
+/* Old emoticons/avatars from dead third-party CDNs: constrain size so broken
+   images never overflow; the alt text degrades in place. No JS. */
+.archived-comment__body :global(img) {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+</style>
