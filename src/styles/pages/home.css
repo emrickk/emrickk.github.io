@@ -154,6 +154,11 @@
   border-bottom: 1px solid var(--separator);
 }
 
+/* The section holds one card per homeFeatured post; space out the stack. */
+.featured-card + .featured-card {
+  margin-top: var(--space-16);
+}
+
 .featured-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 360px);

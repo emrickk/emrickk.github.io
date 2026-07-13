@@ -22,6 +22,9 @@ const config = {
     title: 'NeVeRtheLeSs',
     logoLabel: 'NeVeRtheLeSs',
     description: '2005 年至今的个人博客 · personal blog since 2005',
+    /** Language-specific descriptions shown on the homepage hero; they swap with the EN·中 toggle. */
+    descriptionZh: '2005 年至今的个人博客',
+    descriptionEn: 'Personal blog since 2005',
     author: 'NeVeRtheLeSs',
     /** Optional absolute or root-relative image URL for homepage/search/about social previews. */
     defaultOgImage: '/og.png',

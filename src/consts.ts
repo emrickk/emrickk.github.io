@@ -6,6 +6,8 @@ import config from '../astro-theme-config';
 
 export const SITE_TITLE = config.site.title;
 export const SITE_DESCRIPTION = config.site.description;
+export const SITE_DESCRIPTION_ZH = config.site.descriptionZh ?? config.site.description;
+export const SITE_DESCRIPTION_EN = config.site.descriptionEn ?? config.site.description;
 export const SITE_AUTHOR = config.site.author;
 export const SITE_LANG = config.site.lang;
 export const SITE_LOCALE = config.site.locale;

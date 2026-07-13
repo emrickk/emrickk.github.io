@@ -6,7 +6,13 @@ import FeaturedPostGrid from '../components/FeaturedPostGrid.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import LangTitle from '../components/LangTitle.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { DATE_LOCALE, SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import {
+  DATE_LOCALE,
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  SITE_DESCRIPTION_ZH,
+  SITE_DESCRIPTION_EN,
+} from '../consts';
 import { getUiText } from '../ui';
 import { withBase } from '../utils/paths';
 const tr = getUiText();
@@ -15,10 +21,14 @@ const posts = (await getCollection('posts'))
   .filter((p) => !p.data.draft)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const featured = posts.find((post) => post.data.homeFeatured) ?? posts[0];
-const heroCandidates = posts.filter((post) => post.id !== featured?.id);
+// Every post flagged `homeFeatured` gets a featured card; without flags the
+// two most recent posts fill the section.
+const flaggedFeatured = posts.filter((post) => post.data.homeFeatured);
+const featuredPosts = flaggedFeatured.length > 0 ? flaggedFeatured : posts.slice(0, 2);
+const featuredIds = new Set(featuredPosts.map((post) => post.id));
+const heroCandidates = posts.filter((post) => !featuredIds.has(post.id));
 const pinnedHeroPosts = posts
-  .filter((post) => post.id !== featured?.id && post.data.homeHeroOrder)
+  .filter((post) => !featuredIds.has(post.id) && post.data.homeHeroOrder)
   .sort((a, b) => {
     const orderDelta = (a.data.homeHeroOrder ?? 0) - (b.data.homeHeroOrder ?? 0);
     if (orderDelta !== 0) return orderDelta;
@@ -31,14 +41,16 @@ const heroDateFormatter = new Intl.DateTimeFormat(DATE_LOCALE, {
   month: 'short',
   day: '2-digit',
 });
-const getHeroDateParts = (date: Date) => {
-  const parts = heroDateFormatter.formatToParts(date);
-  return {
-    label: heroDateFormatter.format(date),
-    parts,
-  };
-};
-const gridCandidates = posts.filter((post) => post.id !== featured?.id);
+const heroDateFormatterEn = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+const getHeroDateParts = (date: Date) => ({
+  zhParts: heroDateFormatter.formatToParts(date),
+  enParts: heroDateFormatterEn.formatToParts(date),
+});
+const gridCandidates = posts.filter((post) => !featuredIds.has(post.id));
 const pinnedGridPosts = gridCandidates
   .filter((post) => post.data.homeOrder)
   .sort((a, b) => {
@@ -48,17 +60,29 @@ const pinnedGridPosts = gridCandidates
   });
 const fallbackGridPosts = gridCandidates.filter((post) => !post.data.homeOrder);
 const gridPosts = [...pinnedGridPosts, ...fallbackGridPosts].slice(0, 3);
-const featuredPlaceholder = featured?.data.heroImage
-  ? await getImage({
-      src: featured.data.heroImage,
-      width: 48,
-      format: 'webp',
-      quality: 28,
-    })
-  : undefined;
-const featuredPlaceholderStyle = featuredPlaceholder
-  ? `--tone-image-placeholder: url("${featuredPlaceholder.src}");`
-  : undefined;
+const featuredPlaceholderEntries = await Promise.all(
+  featuredPosts.map(
+    async (post) =>
+      [
+        post.id,
+        post.data.heroImage
+          ? (
+              await getImage({
+                src: post.data.heroImage,
+                width: 48,
+                format: 'webp',
+                quality: 28,
+              })
+            ).src
+          : undefined,
+      ] as const
+  )
+);
+const featuredPlaceholderById = new Map<string, string | undefined>(featuredPlaceholderEntries);
+const featuredPlaceholderStyle = (id: string) => {
+  const src = featuredPlaceholderById.get(id);
+  return src ? `--tone-image-placeholder: url("${src}");` : undefined;
+};
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -73,7 +97,10 @@ const featuredPlaceholderStyle = featuredPlaceholder
         }
       </h1>
 
-      <p class="hero-desc">{SITE_DESCRIPTION}</p>
+      <p class="hero-desc">
+        <span class="lang lang-zh" data-orig>{SITE_DESCRIPTION_ZH}</span><span
+          class="lang lang-en">{SITE_DESCRIPTION_EN}</span>
+      </p>
 
       <div class="hero-divider" aria-hidden="true"></div>
 
@@ -101,11 +128,17 @@ const featuredPlaceholderStyle = featuredPlaceholder
                         </span>
                       </span>
                       <span class="hero-recent-date">
-                        <time datetime={post.data.pubDate.toISOString()} aria-label={heroDate.label}>{
-                          heroDate.parts.map((part) => (
-                            <span class={`hero-recent-date-${part.type}`}>{part.value}</span>
-                          ))
-                        }</time>
+                        <time datetime={post.data.pubDate.toISOString()}>
+                          <span class="lang lang-zh" data-orig>{
+                            heroDate.zhParts.map((part) => (
+                              <span class={`hero-recent-date-${part.type}`}>{part.value}</span>
+                            ))
+                          }</span><span class="lang lang-en">{
+                            heroDate.enParts.map((part) => (
+                              <span class={`hero-recent-date-${part.type}`}>{part.value}</span>
+                            ))
+                          }</span>
+                        </time>
                       </span>
                     </a>
                   );
@@ -118,43 +151,43 @@ const featuredPlaceholderStyle = featuredPlaceholder
     </section>
 
     {
-      featured && (
+      featuredPosts.length > 0 && (
         <section class="featured-section">
-          <a
-            href={withBase(`/posts/${featured.id}/`)}
-            class:list={['featured-card', !featured.data.heroImage && 'featured-card--text']}
-          >
-            <div class="featured-text">
-              <p class="featured-meta">
-                <FormattedDate date={featured.data.pubDate} />
-              </p>
-              <LangTitle
-                tag="h2"
-                class="featured-title"
-                zh={featured.data.titleZh}
-                en={featured.data.titleEn}
-                orig={featured.data.lang ?? 'zh'}
-                fallback={featured.data.title}
-              />
-              {featured.data.description && (
-                <p class="featured-desc">{featured.data.description}</p>
-              )}
-              <span class="featured-cta">{tr.readLink}</span>
-            </div>
-            {featured.data.heroImage && (
-              <div class="featured-thumb-wrap" style={featuredPlaceholderStyle}>
-                <Image
-                  src={featured.data.heroImage}
-                  alt={featured.data.title}
-                  class="featured-thumb"
-                  widths={[400, 720, 960, 1280]}
-                  sizes="(max-width: 600px) calc(100vw - 32px), 360px"
-                  quality={88}
-                  loading="lazy"
+          {featuredPosts.map((post) => (
+            <a
+              href={withBase(`/posts/${post.id}/`)}
+              class:list={['featured-card', !post.data.heroImage && 'featured-card--text']}
+            >
+              <div class="featured-text">
+                <p class="featured-meta">
+                  <FormattedDate date={post.data.pubDate} />
+                </p>
+                <LangTitle
+                  tag="h2"
+                  class="featured-title"
+                  zh={post.data.titleZh}
+                  en={post.data.titleEn}
+                  orig={post.data.lang ?? 'zh'}
+                  fallback={post.data.title}
                 />
+                {post.data.description && <p class="featured-desc">{post.data.description}</p>}
+                <span class="featured-cta">{tr.readLink}</span>
               </div>
-            )}
-          </a>
+              {post.data.heroImage && (
+                <div class="featured-thumb-wrap" style={featuredPlaceholderStyle(post.id)}>
+                  <Image
+                    src={post.data.heroImage}
+                    alt={post.data.title}
+                    class="featured-thumb"
+                    widths={[400, 720, 960, 1280]}
+                    sizes="(max-width: 600px) calc(100vw - 32px), 360px"
+                    quality={88}
+                    loading="lazy"
+                  />
+                </div>
+              )}
+            </a>
+          ))}
         </section>
       )
     }
