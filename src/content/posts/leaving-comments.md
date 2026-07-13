@@ -5,6 +5,8 @@ pubDate: '2020-10-22'
 category: 'Journal'
 lang: 'en'
 translationKey: 'leaving-comments'
+titleZh: '留言？'
+titleEn: 'Leaving Comments?'
 ---
 
 Look at the message input box, how elegant.

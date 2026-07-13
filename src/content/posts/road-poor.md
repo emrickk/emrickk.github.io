@@ -5,6 +5,8 @@ pubDate: '2014-08-21'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'road-poor'
+titleZh: '路痴'
+titleEn: 'No Sense of Direction'
 ---
 
 出门买一根甘蔗

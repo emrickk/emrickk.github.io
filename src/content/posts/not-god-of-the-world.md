@@ -1,10 +1,12 @@
 ---
-title: '2015-08-11'
+title: '你不是世界的上帝'
 description: ''
 pubDate: '2015-08-11'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'not-god-of-the-world'
+titleZh: '你不是世界的上帝'
+titleEn: 'Not the God of the World'
 ---
 
 做产品的时候上帝模式开多了，很容易代入到生活中去
