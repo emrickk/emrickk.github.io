@@ -45,7 +45,7 @@ Properties this guarantees:
 
 ### 3.2 `list`
 
-Prints checkpoints newest first: id (short), age, label, trigger, branch, and a one-line change summary versus the current working tree (`N files differ` computed via `git diff --stat` against the checkpoint tree, or "matches current state").
+Prints checkpoints newest first: id, age, label, trigger, branch, and a one-line change summary versus the current working tree (`N files differ` computed via `git diff --stat` against the checkpoint tree, or "matches current state"). The id printed by `list` is the ref's timestamp-label segment and is always a valid `<id>` argument for `diff` and `restore`.
 
 ### 3.3 `diff <id> [-- <path>...]`
 
@@ -86,7 +86,7 @@ A Node CLI, `npm run release-check [-- --full]`. Runs numbered checks, prints PA
 |---|---|---|
 | 1 | Checkpoint | `checkpoint save release-check` succeeded (or dedup no-op) |
 | 2 | Git hygiene | No forbidden files tracked or staged (`.env.local`, `image-staging/`, `originals/`, `scripts/images/.manifest.json`); working tree state printed for the report |
-| 3 | Secret scan | Uncommitted changes and commits not on `origin/main` contain no high-entropy tokens or known credential patterns (AWS/R2 keys, `ghp_`/`github_pat_`, private key blocks, `SECRET_ACCESS_KEY=` style assignments). Heuristic, with a documented allowlist file for false positives |
+| 3 | Secret scan | Uncommitted changes and commits not on `origin/main` contain no high-entropy tokens or known credential patterns (AWS/R2 keys, `ghp_`/`github_pat_`, private key blocks, `SECRET_ACCESS_KEY=` style assignments). Heuristic, with an allowlist at `scripts/release-check-allowlist.json` for false positives (regex patterns only, never actual matched strings, since the repo is public) |
 | 4 | Types | `npm run check` (astro check) |
 | 5 | Lint | `npm run lint` and `npm run lint:css` |
 | 6 | Build | `npm run build` (includes Pagefind index) |
@@ -124,7 +124,8 @@ If a bad state reaches `main` and deploys to anping.us: `git revert <bad commit(
 ## 7. Repo integration
 
 - `package.json`: add `"checkpoint": "node scripts/checkpoint.mjs"` and `"release-check": "node scripts/release-check.mjs"`; test scripts join the existing pattern (`"test:safety": "node --test scripts/checkpoint.test.mjs scripts/release-check.test.mjs"`).
-- `.claude/settings.json`: SessionStart hook (section 4). The currently untracked `.claude/launch.json` stays untracked; only `settings.json` and `skills/` are committed.
+- `.claude/settings.json`: SessionStart hook (section 4), created fresh in this worktree along with `.claude/skills/`; both are committed. The untracked `.claude/launch.json` in the main checkout is unaffected.
+- Lint coverage of `scripts/` is unchanged: the existing `lint` script only covers `src/` and root-level `.mjs`, and the new scripts follow the same convention as `scripts/images/`.
 - `CLAUDE.md`: new short "Safety" section pointing at both tools, the two skills, and the rollback procedure.
 - No changes to CI workflows.
 
@@ -155,7 +156,7 @@ Checks 4 to 7 (delegated npm scripts) are not re-tested; they have their own too
 ## 9. Error handling
 
 - Both scripts exit non-zero on failure with a one-line human-readable reason; no stack traces for expected failures.
-- The SessionStart hook never blocks a session (section 4.1).
+- The SessionStart hook never blocks a session (section 4, item 1).
 - `restore` and `prune` are the only destructive operations; both have rails (confirmation, pre-restore checkpoint, keep-floor).
 - If `git` is missing or the cwd is not the blog repo root, fail immediately with a clear message.
 
