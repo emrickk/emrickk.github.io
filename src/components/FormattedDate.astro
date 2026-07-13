@@ -1,4 +1,7 @@
 ---
+// Renders the date in both languages; lang.css shows the one matching the
+// EN·中 toggle. The zh span is `data-orig` so auto/no-JS keeps the site
+// default format.
 import { DATE_LOCALE } from '../consts';
 
 interface Props {
@@ -7,14 +10,18 @@ interface Props {
 }
 
 const { date, class: className } = Astro.props;
+const zhDate = date.toLocaleDateString(DATE_LOCALE, {
+  year: 'numeric',
+  month: 'short',
+  day: '2-digit',
+});
+const enDate = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
 ---
 
 <time class={className} datetime={date.toISOString()}>
-  {
-    date.toLocaleDateString(DATE_LOCALE, {
-      year: 'numeric',
-      month: 'short',
-      day: '2-digit',
-    })
-  }
+  <span class="lang lang-zh" data-orig>{zhDate}</span><span class="lang lang-en">{enDate}</span>
 </time>
