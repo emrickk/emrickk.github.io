@@ -154,11 +154,6 @@
   border-bottom: 1px solid var(--separator);
 }
 
-/* The section holds one card per homeFeatured post; space out the stack. */
-.featured-card + .featured-card {
-  margin-top: var(--space-16);
-}
-
 .featured-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 360px);
@@ -174,6 +169,11 @@
 .featured-card:hover {
   opacity: 1;
   transform: translateY(-2px);
+}
+
+/* The section holds one card per homeFeatured post; space out the stack. */
+.featured-card + .featured-card {
+  margin-top: var(--space-16);
 }
 
 /* Text-only featured card (no heroImage): drop the thumb column so the copy
