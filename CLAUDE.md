@@ -15,6 +15,9 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English i
 | `npm run images` | Daily image pipeline: optimize + upload staged photos (see below) |
 | `npm run images:migrate` | One-time backfill CLI, already executed; dry-run by default |
 | `npm run test:images` | Image pipeline test suite (`node:test`); the R2 live test self-skips without credentials |
+| `npm run checkpoint` | Working-tree snapshots: `save` / `list` / `diff` / `restore` (see Safety) |
+| `npm run release-check` | Pre-push checklist, `-- --full` adds CDN + link verification (see Safety) |
+| `npm run test:safety` | Test suite for the two safety CLIs |
 
 ## Architecture
 
@@ -23,6 +26,12 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English i
 - Exception: hero images in `src/assets/hero/` are Astro-optimized at build time and are deliberately outside the R2 pipeline. Leave them alone.
 - Pipeline credentials go in `.env.local` (git-ignored); the variable names are documented in `.env.example`. Without credentials, dry-run modes and all but one test still work.
 - `scripts/migrate/` is finished WordPress-migration tooling (Python). Design history lives in `docs/`, including `docs/superpowers/specs/` and `docs/superpowers/plans/`.
+
+## Safety
+
+- **Checkpoints** (`npm run checkpoint`, skill: `.claude/skills/checkpoint/`): file-level snapshots of the working tree in hidden local refs. Auto-saved at session start (hook in `.claude/settings.json`) and by every release check. Restore before push mistakes become deploy mistakes.
+- **Release checklist** (`npm run release-check`, skill: `.claude/skills/release-check/`): required before any push to `main`. Ends in GO / NO-GO; pushing remains a human decision (rule 5).
+- **Post-deploy rollback**: `git revert` the bad commit(s) on `main` and push; the Pages workflow redeploys the previous good state.
 
 ## Project status (last updated 2026-07-13)
 
