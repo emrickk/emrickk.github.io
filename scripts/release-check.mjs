@@ -32,6 +32,89 @@ export function findForbiddenPaths(root) {
   return [...all].filter((p) => FORBIDDEN_PATHS.some((f) => f.re.test(p))).sort()
 }
 
+export const SECRET_PATTERNS = [
+  { name: 'aws-access-key', re: /\bAKIA[0-9A-Z]{16}\b/g },
+  { name: 'github-token', re: /\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{36,}\b/g },
+  { name: 'github-pat', re: /\bgithub_pat_[A-Za-z0-9_]{22,}\b/g },
+  { name: 'private-key', re: /-----BEGIN [A-Z ]*PRIVATE KEY-----/g },
+  {
+    name: 'credential-assignment',
+    re: /\b[A-Z0-9_]*(?:SECRET|TOKEN|PASSWORD|PASSWD|API_KEY|ACCESS_KEY|PRIVATE_KEY)[A-Z0-9_]*\s*[=:]\s*['"][A-Za-z0-9+/_=-]{16,}['"]/gi,
+  },
+  { name: 'high-entropy', re: /\b[A-Za-z0-9+/=_-]{40,}\b/g, entropy: 4.5 },
+]
+
+// docs/superpowers/ and the release-check test file contain planted example
+// tokens by design; excluding them avoids guaranteed false positives.
+const SCAN_SKIP = /^docs\/superpowers\/|^scripts\/release-check\.test\.mjs$|(?:^|\/)(?:package-lock\.json|.*\.lock)$|\.(?:png|jpe?g|webp|gif|ico|woff2?|ttf|otf|pdf|zip|gz|mp[34])$/i
+
+export function shannonEntropy(s) {
+  const freq = {}
+  for (const ch of s) freq[ch] = (freq[ch] || 0) + 1
+  let e = 0
+  for (const n of Object.values(freq)) {
+    const p = n / s.length
+    e -= p * Math.log2(p)
+  }
+  return e
+}
+
+export function scanTextForSecrets(text, file, allowlist) {
+  const findings = []
+  for (const { name, re, entropy } of SECRET_PATTERNS) {
+    for (const m of text.matchAll(re)) {
+      const match = m[0]
+      if (entropy && shannonEntropy(match) < entropy) continue
+      if (allowlist.some((a) => a.test(`${file}:${match}`))) continue
+      const line = text.slice(0, m.index).split('\n').length
+      findings.push({ file, line, pattern: name, redacted: `${match.slice(0, 4)}...(${match.length} chars)` })
+    }
+  }
+  return findings
+}
+
+export function loadAllowlist(root) {
+  const p = join(root, 'scripts', 'release-check-allowlist.json')
+  if (!existsSync(p)) return []
+  return JSON.parse(readFileSync(p, 'utf8')).allow.map((s) => new RegExp(s))
+}
+
+// Scan scope: lines added relative to origin/main (committed or not) plus
+// every untracked file. Falls back to HEAD when origin/main is absent.
+export function collectSecretScanSources(root) {
+  const sources = []
+  const base = git(['rev-parse', '--verify', '-q', 'origin/main'], { cwd: root, allowFail: true }) ? 'origin/main' : 'HEAD'
+  const diff = git(['diff', '--no-renames', '--unified=0', base], { cwd: root, allowFail: true }) || ''
+  let file = null
+  const added = new Map()
+  for (const line of diff.split('\n')) {
+    if (line.startsWith('+++ b/')) { file = line.slice(6); continue }
+    if (line.startsWith('+++')) { file = null; continue }
+    if (file && !SCAN_SKIP.test(file) && line.startsWith('+') && !line.startsWith('+++')) {
+      added.set(file, (added.get(file) || '') + line.slice(1) + '\n')
+    }
+  }
+  for (const [f, text] of added) sources.push({ file: f, text })
+  const untracked = git(['ls-files', '--others', '--exclude-standard'], { cwd: root }) || ''
+  for (const f of untracked.split('\n').filter(Boolean)) {
+    if (SCAN_SKIP.test(f)) continue
+    const p = join(root, f)
+    if (!existsSync(p) || statSync(p).size > 1024 * 1024) continue
+    sources.push({ file: f, text: readFileSync(p, 'utf8') })
+  }
+  return sources
+}
+
+function checkSecrets(root) {
+  const allowlist = loadAllowlist(root)
+  const findings = collectSecretScanSources(root).flatMap((s) => scanTextForSecrets(s.text, s.file, allowlist))
+  if (findings.length) {
+    const lines = findings.map((f) => `${f.file}:${f.line} ${f.pattern} ${f.redacted}`)
+    return { status: 'FAIL', detail: `possible secrets:\n${lines.join('\n')}\n(false positive? add a pattern to scripts/release-check-allowlist.json)` }
+  }
+  return { status: 'PASS', detail: 'no credential patterns in new or untracked content' }
+}
+
 function checkCheckpoint(root) {
   const cli = fileURLToPath(new URL('./checkpoint.mjs', import.meta.url))
   const out = execFileSync('node', [cli, 'save', 'release-check', '--auto', 'release-check'], {
@@ -52,6 +135,7 @@ function checkHygiene(root) {
 export const CHECKS = [
   { num: 1, name: 'checkpoint', run: checkCheckpoint },
   { num: 2, name: 'git hygiene', run: checkHygiene },
+  { num: 3, name: 'secret scan', run: checkSecrets },
 ]
 
 export async function runChecks(root, { full = false } = {}) {
