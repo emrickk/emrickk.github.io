@@ -22,9 +22,9 @@ const posts = (await getCollection('posts'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 // Every post flagged `homeFeatured` gets a featured card; without flags the
-// two most recent posts fill the section.
+// single most recent post fills the section.
 const flaggedFeatured = posts.filter((post) => post.data.homeFeatured);
-const featuredPosts = flaggedFeatured.length > 0 ? flaggedFeatured : posts.slice(0, 2);
+const featuredPosts = flaggedFeatured.length > 0 ? flaggedFeatured : posts.slice(0, 1);
 const featuredIds = new Set(featuredPosts.map((post) => post.id));
 const heroCandidates = posts.filter((post) => !featuredIds.has(post.id));
 const pinnedHeroPosts = posts
