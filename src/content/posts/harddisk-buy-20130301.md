@@ -5,6 +5,8 @@ pubDate: '2013-03-01'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'harddisk-buy-20130301'
+titleZh: '储存方案选购记'
+titleEn: 'Shopping for a Storage Solution'
 ---
 
 原来的2T希捷睿翼出给EJJ了 于是盘算着买一个新的3T盘

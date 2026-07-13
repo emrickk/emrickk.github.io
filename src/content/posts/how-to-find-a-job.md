@@ -5,6 +5,8 @@ pubDate: '2015-08-01'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'how-to-find-a-job'
+titleZh: '记一次找工作'
+titleEn: 'Notes from a Job Hunt'
 ---
 
 花了两周时间换了工作，在这里写一下找工作期间累计的一些经验和感悟。不能算是一个普适的总结吧，算是个人经历的一点分享。分两部分说：

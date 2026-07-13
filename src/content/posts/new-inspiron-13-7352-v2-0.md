@@ -1,11 +1,13 @@
 ---
-title: '2015-09-02'
+title: '灵越13 7352特别版晒单'
 description: ''
 pubDate: '2015-09-02'
 heroImage: '../../assets/hero/2020/02/dell001.jpg'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'new-inspiron-13-7352-v2-0'
+titleZh: '灵越13 7352特别版晒单'
+titleEn: 'Inspiron 13 7352 Special Edition: A Show-and-Tell'
 ---
 
 **DELL New Inspiron 13 Special Edition**

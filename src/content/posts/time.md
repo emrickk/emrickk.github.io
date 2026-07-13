@@ -5,6 +5,8 @@ pubDate: '2015-09-06'
 category: 'Words'
 lang: 'zh'
 translationKey: 'time'
+titleZh: '时间'
+titleEn: 'Time'
 ---
 
 人脑不是数着表计算时间过得快慢，而是坐在一个叫“现在”的电影院里看一场叫“过去”的电影。

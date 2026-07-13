@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2021/03/Remarkable-01-1-min.jpeg'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'remarkable-2-review'
+titleZh: 'reMarkable 2'
+titleEn: 'reMarkable 2'
 ---
 
 I have a habit of keeping everything, including my thoughts, on notes for a long time. However, after losing three of my notebooks last year when I moved to California, I started forcing myself to scan all my notes every night before sleeping. Scanning plus OCR is sufficient for saving and retrieving notes, but it is painful to roll the immense boulder up the hill like Sisyphus every night. So, I had the idea to digitalize my note-taking process.

@@ -5,6 +5,8 @@ pubDate: '2018-04-22'
 category: 'Things'
 lang: 'zh'
 translationKey: 'masters-for-product-manager-1'
+titleZh: '[第一弹]产品狗要读硕士，该读什么项目？'
+titleEn: '[Part 1] A Product Dog Wants a Master''s: Which Programs?'
 ---
 
 产品狗要读硕士，该读什么项目？

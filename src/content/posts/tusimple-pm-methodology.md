@@ -5,6 +5,8 @@ pubDate: '2022-06-05'
 category: 'Things'
 lang: 'en'
 translationKey: 'tusimple-pm-methodology'
+titleZh: '内部工具的产品管理方法论'
+titleEn: 'Product Management Methodology for Internal Tools'
 ---
 
 *I wrote this document on my TuSimple anniversary. I revised it and posted it here as today is already my second anniversary at TuSimple. Time flies!*

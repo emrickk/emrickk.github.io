@@ -5,6 +5,8 @@ pubDate: '2017-01-28'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'shut-your-mouth-up'
+titleZh: '我只过农历新年，所以只在农历新年有对自己每年都一样的期望'
+titleEn: 'The Same Hopes Every Lunar New Year'
 ---
 
 现在陷入一个纠结本来我已经决定大口吃肥肉，浑浑噩噩过短命的生活了。

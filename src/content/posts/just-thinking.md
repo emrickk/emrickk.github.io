@@ -5,6 +5,8 @@ pubDate: '2020-02-16'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'just-thinking'
+titleZh: '瞎想'
+titleEn: 'Idle Thoughts'
 ---
 
 一个还有5页paper要due的夜晚

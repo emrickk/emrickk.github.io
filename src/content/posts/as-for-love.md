@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/hr_202883.png'
 category: 'Fiona'
 lang: 'en'
 translationKey: 'as-for-love'
+titleZh: '我很赞同'
+titleEn: 'I Quite Agree'
 ---
 
 [![as for love](/uploads/2020/02/hr_202883.png)](/uploads/2020/02/hr_202883.png)

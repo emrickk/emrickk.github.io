@@ -1,10 +1,12 @@
 ---
-title: '2015-03-10'
+title: '虚度的青春'
 description: ''
 pubDate: '2015-03-10'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'memory-about-student-career'
+titleZh: '虚度的青春'
+titleEn: 'Squandered Youth'
 ---
 
 今天看到一个挺有意思的文。一路看下去就到了豆瓣。

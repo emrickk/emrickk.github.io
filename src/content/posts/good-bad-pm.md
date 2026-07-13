@@ -5,6 +5,8 @@ pubDate: '2014-08-14'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'good-bad-pm'
+titleZh: '好的产品经理/糟糕的产品经理'
+titleEn: 'Good Product Manager/Bad Product Manager'
 ---
 
 文：戴雨森

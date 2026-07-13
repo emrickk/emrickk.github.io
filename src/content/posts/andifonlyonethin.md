@@ -1,10 +1,12 @@
 ---
-title: '2013-04-07'
+title: 'If Only One Thing Had Been Different'
 description: ''
 pubDate: '2013-04-07'
 category: 'Repost'
 lang: 'en'
 translationKey: 'andifonlyonethin'
+titleZh: '如果有一件事不一样'
+titleEn: 'If Only One Thing Had Been Different'
 ---
 
 And if only one thing had happened differently,

@@ -1,10 +1,12 @@
 ---
-title: '2020-04-26'
+title: '贫乏的知识，莫名的勇气'
 description: ''
 pubDate: '2020-04-26'
 category: 'Words'
 lang: 'zh'
 translationKey: 'idiots-view'
+titleZh: '贫乏的知识，莫名的勇气'
+titleEn: 'Scant Knowledge, Baseless Courage'
 ---
 
 The more impoverished one's knowledge is, the easier it is to possess a sense of courage and pride out of nowhere. The more impoverished one's knowledge, the more absolute their beliefs become - because they have never even heard or seen viewpoints that contradict their own.

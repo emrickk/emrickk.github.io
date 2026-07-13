@@ -5,6 +5,8 @@ pubDate: '2016-04-11'
 category: 'Words'
 lang: 'zh'
 translationKey: 'lizhi-duanzi'
+titleZh: '励志段子'
+titleEn: 'Inspirational One-Liners'
 ---
 
 写励志段子非常容易

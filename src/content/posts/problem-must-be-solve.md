@@ -5,6 +5,8 @@ pubDate: '2015-12-11'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'problem-must-be-solve'
+titleZh: '工作中暴露出来的问题要及时改，这自然是必须的'
+titleEn: 'Problems Exposed at Work Must Be Fixed Promptly, Of Course'
 ---
 
 随着进入公司时间的增加，与人交际的范围变大，我在人与人交往之间的问题被暴露的越来越严重。

@@ -5,6 +5,8 @@ pubDate: '2013-02-26'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'buffalowzr-hp-g300nh2'
+titleZh: 'Buffalo WZR-HP-G300NH2 小评测'
+titleEn: 'A Little Review of the Buffalo WZR-HP-G300NH2'
 ---
 
 首先想说的是这个路由器是尊敬的奶奶帮收货的 感谢~

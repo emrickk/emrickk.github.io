@@ -1,10 +1,12 @@
 ---
-title: '2007-08-15'
+title: '素描'
 description: ''
 pubDate: '2007-08-15'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'sketch'
+titleZh: '素描'
+titleEn: 'Sketch'
 ---
 
 天欲雨，淅沥声仿佛是从山的背面来的\

@@ -5,6 +5,8 @@ pubDate: '2006-10-03'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'challengers-fear-nothing'
+titleZh: '挑战者无畏'
+titleEn: 'Challengers Fear Nothing'
 ---
 
 每一个人都可能会有自己畏惧的东西，但有种人就没有——勇敢的挑战者。

@@ -5,6 +5,8 @@ pubDate: '2013-07-20'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'weight-control-aside-2013'
+titleZh: '减肥日记'
+titleEn: 'Weight Loss Diary'
 ---
 
 -----------------------------减肥第一阶段-----------------------------

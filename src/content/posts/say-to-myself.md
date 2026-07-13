@@ -5,6 +5,8 @@ pubDate: '2013-03-25'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'say-to-myself'
+titleZh: '对自己说'
+titleEn: 'Note to Self'
 ---
 
 要早睡

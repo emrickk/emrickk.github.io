@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzN1ZTYXFIZ254WE
 category: 'Journal'
 lang: 'zh'
 translationKey: 'bye-60d'
+titleZh: '沙扬娜拉 60D'
+titleEn: 'Sayonara, 60D'
 ---
 
 “沙扬娜拉”，一句日语，它不只是再见的意思。

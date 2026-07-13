@@ -5,6 +5,8 @@ pubDate: '2015-07-20'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'how-to-panduan'
+titleZh: '兴趣点失去了，怎么判断？'
+titleEn: 'When Interest Is Gone, How Can You Tell?'
 ---
 
 今日头条在买完车之后还是不断给我推各种汽车新闻..

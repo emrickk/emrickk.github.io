@@ -5,6 +5,8 @@ pubDate: '2008-08-15'
 category: 'Repost'
 lang: 'en'
 translationKey: 'because-of-you'
+titleZh: '因为你'
+titleEn: 'Because of you'
 ---
 
 Because of you,  

@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/coaster1.jpg'
 category: 'Things'
 lang: 'en'
 translationKey: 'mit-coasters'
+titleZh: '一套杯垫'
+titleEn: 'A Set of Coasters'
 ---
 
 * [![](/uploads/2020/02/coaster1.jpg)](http://emrick.us/?attachment_id=725)

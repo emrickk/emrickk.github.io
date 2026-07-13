@@ -5,6 +5,8 @@ pubDate: '2011-09-08'
 category: 'Words'
 lang: 'zh'
 translationKey: 'daisy'
+titleZh: '雏菊'
+titleEn: 'Daisy'
 ---
 
 我爱着，什么也不说，只看你在对面微笑；

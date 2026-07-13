@@ -5,6 +5,8 @@ pubDate: '2019-12-10'
 category: 'Things'
 lang: 'en'
 translationKey: 'human-factors-study-in-voice-interactive-systems'
+titleZh: '语音交互系统中的人因研究'
+titleEn: 'Human Factors study in Voice Interactive Systems'
 ---
 
 **Human Factors study in Voice Interactive Systems**

@@ -5,6 +5,8 @@ pubDate: '2014-01-12'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'behind-prodigy'
+titleZh: '天才盛名背后，那些巍巍如山的草稿'
+titleEn: 'Behind the Genius''s Fame, Mountains of Drafts'
 ---
 
 作者：张佳玮， 新书：代表作和被代表作

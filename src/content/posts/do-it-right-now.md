@@ -5,6 +5,8 @@ pubDate: '2014-09-04'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'do-it-right-now'
+titleZh: '执行力'
+titleEn: 'Execution'
 ---
 
 执行力,又理解为推动力,是一个产品经理十分重要的能力之一

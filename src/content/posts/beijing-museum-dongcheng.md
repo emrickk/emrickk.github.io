@@ -5,6 +5,8 @@ pubDate: '2018-07-25'
 category: 'Things'
 lang: 'zh'
 translationKey: 'beijing-museum-dongcheng'
+titleZh: '北京博物馆漫游指南 - 东城区篇'
+titleEn: 'A Roaming Guide to Beijing Museums: Dongcheng'
 ---
 
 北京博物馆漫游指南 - 东城区篇

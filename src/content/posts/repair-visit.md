@@ -5,6 +5,8 @@ pubDate: '2014-07-21'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'repair-visit'
+titleZh: '言语'
+titleEn: 'Words'
 ---
 
 访问这么快 真是开心极啦

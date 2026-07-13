@@ -5,6 +5,8 @@ pubDate: '2014-03-20'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'nearly-dead-guide'
+titleZh: '作死的烂尾减肥攻略'
+titleEn: 'A Reckless, Unfinished Weight-Loss Guide'
 ---
 
 夏天又要到来了~本着造福广大群众的原则我也来发一则减肥指南吧

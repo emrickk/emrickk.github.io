@@ -5,6 +5,8 @@ pubDate: '2018-04-22'
 category: 'Things'
 lang: 'zh'
 translationKey: 'masters-for-product-manager-2'
+titleZh: '[第二弹] 产品狗要读硕士，该读什么项目？'
+titleEn: '[Part 2] A Product Dog Wants a Master''s: Which Programs?'
 ---
 
 [第一弹](/blog/masters-for-product-manager-1)给大家简单介绍了一些项目(的名字..)，仍然有非常多遗漏的项目。今天做一个不包含HCI和IS项目的简单补遗。

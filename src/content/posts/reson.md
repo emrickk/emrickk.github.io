@@ -5,6 +5,8 @@ pubDate: '2014-10-28'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'reson'
+titleZh: '理由'
+titleEn: 'A Reason'
 ---
 
 中国说到底最多的还是屌丝人群。但是真正的屌丝最不愿意承认自己是屌丝。所以光给他们占便宜是不够的，你还需要一个让他们光明正大买你的理由。

@@ -5,6 +5,8 @@ pubDate: '2009-01-20'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'goodstudy'
+titleZh: '好好学习'
+titleEn: 'Study Hard'
 ---
 
 好好学习

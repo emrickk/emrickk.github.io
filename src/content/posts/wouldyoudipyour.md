@@ -5,6 +5,8 @@ pubDate: '2013-05-22'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'wouldyoudipyour'
+titleZh: '你愿意把手指浸进我的咖啡里吗？'
+titleEn: 'Would you dip your finger in my coffee?'
 ---
 
 - Would you dip your finger in my coffee?\

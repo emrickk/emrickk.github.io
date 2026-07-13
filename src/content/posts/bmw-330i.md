@@ -1,11 +1,13 @@
 ---
-title: '2020-06-29'
+title: '宝马330i提车记'
 description: ''
 pubDate: '2020-06-29'
 heroImage: '../../assets/hero/2020/06/1-0.jpeg'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'bmw-330i'
+titleZh: '宝马330i提车记'
+titleEn: 'Picking Up My BMW 330i'
 ---
 
 > If you pronounce BMW out loud your hear “Bee Em Double You”. As with many things we like and I guess dislike, we tend to give cars shorter and easier to pronounce names, kind of to bring them closer to you and make them your own. So owners all over the world started giving these shortened personal names to the cars “Bimmers”.

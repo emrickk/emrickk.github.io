@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/QQE59BBEE7898720140828214503.png'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'oh-a-new-day'
+titleZh: '又是新的一天呀'
+titleEn: 'Oh, Another New Day'
 ---
 
 昨天的工作时间还算比较饱和,果然今天早上一来没有那种 卧槽还有一万件事要做从哪件开始呢的感觉[![丢](/uploads/2020/02/QQE59BBEE7898720140828214503.png)](/uploads/2020/02/QQE59BBEE7898720140828214503.png)

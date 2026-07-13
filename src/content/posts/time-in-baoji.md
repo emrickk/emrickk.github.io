@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOS80MkFFeW9jQ1RqWk5MNEczOEFpL0
 category: 'Journal'
 lang: 'zh'
 translationKey: 'time-in-baoji'
+titleZh: '时间在宝鸡'
+titleEn: 'Time in Baoji'
 ---
 
 最近净更新减肥日记了 好久没有写日志 来一发。

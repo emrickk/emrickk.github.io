@@ -5,6 +5,8 @@ pubDate: '2014-08-18'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'a-phone-meeting'
+titleZh: '记一次电话会议'
+titleEn: 'Notes on a Conference Call'
 ---
 
 今天和JJ的同学进行了一次电话会议..经验总结如下（时间顺序

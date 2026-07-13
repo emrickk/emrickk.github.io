@@ -5,6 +5,8 @@ pubDate: '2020-11-22'
 category: 'Prodigal'
 lang: 'en'
 translationKey: 'selecting-a-mechanical-keyboard'
+titleZh: '选购机械键盘'
+titleEn: 'Shopping Mechanical Keyboards'
 ---
 
 Before we begin, there are a few things we need to consider before selecting a keyboard:

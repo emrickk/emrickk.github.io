@@ -1,10 +1,12 @@
 ---
-title: '2014-09-21·2'
+title: '我只在乎你'
 description: ''
 pubDate: '2014-09-21'
 category: 'Fiona'
 lang: 'zh'
 translationKey: 'if-life-without-you'
+titleZh: '我只在乎你'
+titleEn: 'I Only Care About You'
 ---
 
 如果没有遇见你

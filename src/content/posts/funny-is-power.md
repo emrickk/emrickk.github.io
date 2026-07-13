@@ -5,6 +5,8 @@ pubDate: '2014-07-27'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'funny-is-power'
+titleZh: '有趣是第一生产力'
+titleEn: 'Being Interesting Is the Primary Productive Force'
 ---
 
 作者：小井岩  

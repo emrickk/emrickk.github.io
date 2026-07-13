@@ -1,0 +1,11 @@
+---
+translationKey: 'things-about-50mm-lens'
+lang: 'en'
+title: 'The 50mm Lenses I''ve Used'
+---
+
+Ever since Liu the Great Programmer bought an X100s, my grudge against the bulk of the Voigtländer 50/1.8 that lives on my camera has grown and grown. So much so that these past couple of days I've even considered shelving my long-plotted bicycle purchase plan and swapping in a new everyday lens first. Which makes this a good moment, while I'm out researching standard lenses of every stripe, to walk through all the standard lenses I've used.
+
+First, the Voigtländer currently in active service. Its full name should be Voigtlander Color-Ultron 50 1.8. (I've always had an odd fondness for the Voigtländer name, and a special love for its cursive logo.) The story goes that after the Rollei factory fire and the move to Singapore, production was contracted to Voigtländer, and later the Voigtländer house put out a little standard lens of its own, built on Rollei's technology.
+
+Honestly, apart from how bulky it gets with an adapter on the A7, this lens has no obvious flaws. Cheap and plentiful, and even wide open it still delivers satisfying sharpness. After more than half a year with it, I've been especially pleased with how it renders on overcast days.[![_DSC3896](/uploads/2020/02/DSC3896.jpg)](/uploads/2020/02/DSC3896.jpg)Here's a sample shot. That said, compared with the several old Rollei lenses I've used, and even though this Voigtländer supposedly carries Rollei coating too, its colors are far more watered-down. I am, after all, a man of strong flavors. Let's go in chronological order: before this one came the Rollei HFT 50/1.8. HFT itself is a fine coating, and I love its character too. They say the Zeiss crowd always swaggered in front of Rollei, but fell silent whenever the HFT coating came up, which says something, sideways, about how brilliant HFT is. Sadly, of the several copies I picked up from Jack Ma's online shop, either the coating had problems or the mount was damaged. When I finally landed a satisfying one, I fumbled and dropped it. That lens and I were simply not meant to be. Before that came the HFT 50/1.4, a copy I picked up in May this year. About this lens, a forum user on Xitek called it lavender-colored happiness. I couldn't agree more.------So sleepy. To be continued

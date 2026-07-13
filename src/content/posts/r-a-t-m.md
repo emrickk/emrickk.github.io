@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/DSC4093.jpg'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'r-a-t-m'
+titleZh: '烈焰小钢炮：R.A.T.M红魔版'
+titleEn: 'A Fiery Pocket Rocket: The R.A.T.M Red Devil Edition'
 ---
 
 心水MadCatz的鼠标很久了,从R.A.T.5看到R.A.T.7又从M.O.U.S.9看到R.A.T.M。但即使是遇到了M.O.U.9八十刀的好价也没有入手,毕竟MadCatz没有用过,网上风评质量不稳定。于是一直一直拖着，直到双十一京东出现了199-40的特价。国行嘛，京东嘛，用的不爽毕竟还有退路。遂抓住机会入手了R.A.T.M。

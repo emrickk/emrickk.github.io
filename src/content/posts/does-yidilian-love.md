@@ -5,6 +5,8 @@ pubDate: '2013-09-25'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'does-yidilian-love'
+titleZh: '异地恋算恋爱吗？'
+titleEn: 'Does Long-Distance Count as Love?'
 ---
 
 转自知乎日报

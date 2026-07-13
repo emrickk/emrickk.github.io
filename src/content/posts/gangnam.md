@@ -1,11 +1,13 @@
 ---
-title: '2013-08-24'
+title: '大画幅真美'
 description: ''
 pubDate: '2013-08-24'
 heroImage: '../../assets/hero/2020/02/20130911.jpg'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'gangnam'
+titleZh: '大画幅真美'
+titleEn: 'Large Format Is Beautiful'
 ---
 
 [![20130911](/uploads/2020/02/20130911.jpg)](/uploads/2020/02/20130911.jpg)

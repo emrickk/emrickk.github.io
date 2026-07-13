@@ -1,10 +1,12 @@
 ---
-title: '2015-12-04'
+title: '三省吾身'
 description: ''
 pubDate: '2015-12-04'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'think-again'
+titleZh: '三省吾身'
+titleEn: 'Three Daily Questions'
 ---
 
 吾日三省吾身

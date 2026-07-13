@@ -5,6 +5,8 @@ pubDate: '2018-02-20'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'long-time-no-see'
+titleZh: '好久没写了之第一弹'
+titleEn: 'Haven''t Written in Ages, Part One'
 ---
 
 要分两弹的原因是我要写的时候突然想到一件事情

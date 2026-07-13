@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/QQE688AAE59BBE20141220170454.jpg'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'trigon-tr886'
+titleZh: 'TRIGON'
+titleEn: 'TRIGON'
 ---
 
 TRIGON是一个代工起家的自行车厂牌，近十年前以“碳纤维”作为突破点，开始自己的自行车品牌之路。这次要晒单的就是TRIGON的入门级碳纤维公路车-TRIGON TR886。

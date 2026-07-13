@@ -5,6 +5,8 @@ pubDate: '2016-09-19'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'ohhh-old'
+titleZh: '有点害怕'
+titleEn: 'A Little Scared'
 ---
 
 天气凉了

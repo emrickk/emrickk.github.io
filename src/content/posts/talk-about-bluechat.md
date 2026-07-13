@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/lanxin-pic2.png'
 category: 'Things'
 lang: 'zh'
 translationKey: 'talk-about-bluechat'
+titleZh: '来说一下蓝信'
+titleEn: 'A Word About Lanxin'
 ---
 
 先说说看为什么要有蓝信吧。

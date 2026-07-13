@@ -5,6 +5,8 @@ pubDate: '2013-09-25'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'work-and-life'
+titleZh: '工作与生活是否应该保持真性情？'
+titleEn: 'Should You Keep Your True Self at Work and in Life?'
 ---
 
 转自知乎日报

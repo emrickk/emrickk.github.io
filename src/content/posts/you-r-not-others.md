@@ -1,10 +1,12 @@
 ---
-title: '2021-02-24'
+title: '你不是别人'
 description: ''
 pubDate: '2021-02-24'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'you-r-not-others'
+titleZh: '你不是别人'
+titleEn: 'You Are Not the Others'
 ---
 
 Your body is just time, time that never stops passing.

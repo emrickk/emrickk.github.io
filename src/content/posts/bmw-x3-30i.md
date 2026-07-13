@@ -1,11 +1,13 @@
 ---
-title: '2023-03-01'
+title: 'The Clark Kent of X3s'
 description: ''
 pubDate: '2023-03-01'
 heroImage: '../../assets/hero/2023/03/BMW-X3-14.jpeg'
 category: 'Prodigal'
 lang: 'en'
 translationKey: 'bmw-x3-30i'
+titleZh: 'X3 中的克拉克·肯特'
+titleEn: 'The Clark Kent of X3s'
 ---
 
 > "Don't be fooled, it's just the Clark Kent of X3s, secretly wishing it was a superhero X3M."

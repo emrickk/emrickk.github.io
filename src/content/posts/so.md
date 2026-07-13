@@ -5,6 +5,8 @@ pubDate: '2014-10-14'
 category: 'Words'
 lang: 'zh'
 translationKey: 'so'
+titleZh: '所以'
+titleEn: 'So'
 ---
 
 就在这样和煦的阳光下我走了过去

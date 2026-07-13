@@ -1,0 +1,9 @@
+---
+translationKey: 'problem-must-be-solve'
+lang: 'en'
+title: 'Problems Exposed at Work Must Be Fixed Promptly, Of Course'
+---
+
+The longer I have been at the company and the wider my circle of dealings has grown, the more severely my problems in dealing with people have been exposed.
+
+The problems with pushing things forward have been discovered, or pointed out, many times over, yet there is still no progress in changing them. A summary written for the sake of not forgetting is very necessary. First, the methodology of dealing with people: Key Word: **getting things done** 1) Objectivity. Remember that we are gathered to get things done; it is always about the matter, never the person. In dealings with people there will naturally be those who are partly hopeless or wholly hopeless; at such moments, take care never to write a person off entirely because of one trait. It does nothing for getting the thing accomplished. 2) Independence. Do not be swayed by outside things, and bear final responsibility for what is yours. Do not give up on following through with a project, or on cooperation and communication, just because the way others communicate or work does not fit the way you find comfortable. Do not step into other people's traps; the point is that you must answer for your own affairs. 3) Openness. Share the progress of any project with everyone involved, and see that the outcome reaches them. Escalate to your superior any problem you cannot resolve yourself. Only when information flows can things be on equal footing, can things stay up-to-date 4) Kindness. Keep a friendly manner at all times. When someone's view differs from yours, listen first, judge next, then speak. Do not jump up and down, do not jump up and down, do not jump up and down. First let us see tomorrow whether I can manage all of it.

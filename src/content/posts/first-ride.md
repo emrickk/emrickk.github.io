@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/QQE59BBEE7898720140823225439.jpg'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'first-ride'
+titleZh: '就这样献出了我的第一次骑行'
+titleEn: 'And So I Gave Away My First Ride'
 ---
 
 话说作为一个产品经理好歹要有点逼格,让我用时间顺序来写

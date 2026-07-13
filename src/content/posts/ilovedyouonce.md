@@ -5,6 +5,8 @@ pubDate: '2008-04-03'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'ilovedyouonce'
+titleZh: '我曾经爱过你'
+titleEn: 'I loved you once'
 ---
 
 我曾如此深爱你

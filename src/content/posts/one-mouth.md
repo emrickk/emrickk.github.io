@@ -5,6 +5,8 @@ pubDate: '2014-08-13'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'one-mouth'
+titleZh: '白云真是苍狗啊'
+titleEn: 'White Clouds, Grey Dogs Indeed'
 ---
 
 一转眼来到我大猎豹移动已经一个月了，也从什么都不懂的纸上小小白开始到自己负责项目。咦,想想还有点小激动呢,我都开始负责盒子独立版还有JJ棋牌的接入了呢。

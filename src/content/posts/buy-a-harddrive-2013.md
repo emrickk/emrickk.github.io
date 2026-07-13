@@ -6,6 +6,8 @@ heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kQzFlSmFEekoxOW
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'buy-a-harddrive-2013'
+titleZh: '硬盘购买记'
+titleEn: 'Hard Drive Shopping Chronicle'
 ---
 
 好久没写东西了 今天来把欠下来的全补上

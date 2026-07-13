@@ -5,6 +5,8 @@ pubDate: '2014-09-03'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'buy-smart-watch'
+titleZh: '智能手表选购记'
+titleEn: 'Shopping for a Smartwatch'
 ---
 
 想要购买一只智能手表已经好久了，苦于大厂的所谓智能手表价格一直高高在上，没能狠下心下手（谁让我是穷人呢

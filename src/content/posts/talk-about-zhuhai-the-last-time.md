@@ -5,6 +5,8 @@ pubDate: '2015-08-21'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'talk-about-zhuhai-the-last-time'
+titleZh: '是时候谈一谈珠海了！'
+titleEn: 'Time to Talk About Zhuhai!'
 ---
 
 从去年7月7日到达珠海算起，到今年的8月8日离开，计入难以计算的中间假期的短暂离开，在珠海一共呆了397天。在珠海的这段时间工作和生活上都有一些收获，加之很长一段时间内应该不会再回到这座城市，所以一个为了避免忘却的回顾是必要的。

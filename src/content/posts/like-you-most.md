@@ -5,6 +5,8 @@ pubDate: '2014-01-10'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'like-you-most'
+titleZh: '「最最喜欢你，绿子。」'
+titleEn: 'I Like You the Very Most, Midori'
 ---
 
 「最最喜欢你，绿子。」
