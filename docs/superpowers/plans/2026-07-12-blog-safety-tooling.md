@@ -1666,7 +1666,7 @@ git commit -m "fix(safety): align checks with real build output"
 - [ ] **Step 13.1: Self-review the diff**
 
 Run: `git log --oneline main..HEAD && git diff main --stat`
-Confirm: only the files in the File map (plus the spec and this plan) changed; no em-dashes in docs or messages (`git diff main -- '*.md' | grep -c '—'` returns 0 for added lines); nothing forbidden staged.
+Confirm: only the files in the File map (plus the spec and this plan) changed; no em-dashes in docs or messages (`git diff main -- '*.md' | grep '^+' | grep -c $'\xe2\x80\x94'` returns 0); nothing forbidden staged.
 
 - [ ] **Step 13.2: Run everything one last time**
 
