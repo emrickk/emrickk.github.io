@@ -14,7 +14,7 @@ titleEn: 'Hard Drive Shopping Chronicle'
 
 选硬盘其实挺简单一个活 啥便宜买啥 偏偏我的二逼基因作祟 非挑了个Lacie的 贵不说 到手之后还发现有划痕 真是蛋蛋的忧伤 退货之后一狠心一咬牙购入Seagate 4T桌面硬盘
 
-![](/uploads/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kQzFlSmFEekoxOWt0UERtUldTK0pMTHJ2ZWQyUkZ5NzhnPT0.jpg)
+![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kQzFlSmFEekoxOWt0UERtUldTK0pMTHJ2ZWQyUkZ5NzhnPT0.webp)
 
 买的时候没想到 其实根据小概率事件侥幸必须失败原理 拿到手的盘运行有异响 温度高达70度
 
@@ -36,7 +36,7 @@ XXX的客服还只认Seatools的检测结果 非和我说75度以下都是正常
 
 而且还有七色跑马灯啊我了个大槽！不知道老纸是小清新吗！！（捂脸
 
-![](/uploads/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kSEJLU2N0QjB2SWZpd3krNzdQR0JRdW9pWWtOZUc5SDZnPT0.jpg)
+![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kSEJLU2N0QjB2SWZpd3krNzdQR0JRdW9pWWtOZUc5SDZnPT0.webp)
 
 好了 关于硬盘的吐槽就到这里 其实还考虑过3T\*2的方案 但是由于性价比问题作罢
 

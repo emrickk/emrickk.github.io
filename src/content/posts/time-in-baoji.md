@@ -12,7 +12,7 @@ titleEn: 'Time in Baoji'
 
 最近净更新减肥日记了 好久没有写日志 来一发。
 
-![](/uploads/2020/02/T0w0THg0dEJNOS80MkFFeW9jQ1RqWk5MNEczOEFpL05lakRzMXFKajBUVUt0RTQ1a0kxd05RPT0.jpg)这一次去宝鸡呢 是去找叶哥玩 或者说 探望叶哥。叶哥是谁呢 是一个很牛逼的人物 此处暂且不表 留待下次细细说。
+![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOS80MkFFeW9jQ1RqWk5MNEczOEFpL05lakRzMXFKajBUVUt0RTQ1a0kxd05RPT0.webp)这一次去宝鸡呢 是去找叶哥玩 或者说 探望叶哥。叶哥是谁呢 是一个很牛逼的人物 此处暂且不表 留待下次细细说。
 
 这次是谁发起的呢 是JQ。JQ是谁呢 JQ也是一个很牛逼的人物 或者说 是一个在这个年龄段高度发达人际关系的人 也留待下次细细说。
 

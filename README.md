@@ -27,10 +27,14 @@ pubDate: '2026-07-12'
 category: 'Journal'
 ---
 
-Body in Markdown. Images go in `public/uploads/` and are referenced as `/uploads/...`.
+Body in Markdown. For images: drop originals into `image-staging/`, run `npm run images`, and paste the printed `![](https://cdn.anping.us/...)` snippets (see [docs/images.md](docs/images.md)).
 ```
+
+## Images
+
+Blog images are served from Cloudflare R2 (`cdn.anping.us`) with originals archived to the NAS. See [docs/images.md](docs/images.md) for setup and daily workflow.
 
 ## License
 
 Theme source code: MIT (see `LICENSE`, © Tone contributors).
-**All blog content — posts under `src/content/posts/`, archived comments under `src/data/comments/`, and media under `public/uploads/` — is © the blog owner, all rights reserved.** The MIT license does not apply to the content.
+**All blog content — posts under `src/content/posts/`, archived comments under `src/data/comments/`, and media served from `cdn.anping.us` — is © the blog owner, all rights reserved.** The MIT license does not apply to the content.
