@@ -12,141 +12,141 @@ Don't ask me about my decision-making process... I bought it simply because The 
 
 **Packaging and Industrial Design**
 
-![](/uploads/2021/03/Remarkable-01-1-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-1-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-2-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-2-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-3-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-3-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-4-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-4-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-5-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-5-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-6-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-6-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-7-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-7-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-8-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-8-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-9-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-9-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-10-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-10-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-11-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-11-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-12-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-12-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-13-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-13-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-14-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-14-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-15-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-15-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-16-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-16-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-17-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-17-min.webp)
 
-![](/uploads/2021/03/Remarkable-01-1-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-1-min.webp)
 
 Book +Stylus+Folios. The packaging design is pretty good tho.
 
-![](/uploads/2021/03/Remarkable-01-3-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-3-min.webp)
 
 The description of the thickness of the book. Pretty proud of the thickness ha
 
-![](/uploads/2021/03/Remarkable-01-4-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-4-min.webp)
 
 Tear!
 
-![](/uploads/2021/03/Remarkable-01-2-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-2-min.webp)
 
 A black inner box, about to open the first layer
 
-![](/uploads/2021/03/Remarkable-01-5-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-5-min.webp)
 
 Book, cable, quick start guide
 
-![](/uploads/2021/03/Remarkable-01-8-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-8-min.webp)
 
 The cable is also 'tangle-free', but I decided not to open it since I already have too many Type-C cables laying around in my apartment.
 
-![](/uploads/2021/03/Remarkable-01-10-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-10-min.webp)
 
 Regarding the book itself, the screen does not consume any power if the image displayed on it is still. Therefore, the screen displays the welcome information by itself instead of a sticker or other alternative.
 
-![](/uploads/2021/03/Remarkable-01-11-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-11-min.webp)
 
 The part of the border used for gripping is made of metal, with a slightly frosted feel, and the grip is very comfortable. My hands are of normal male size, and the width is also comfortable to hold.
 
-![](/uploads/2021/03/Remarkable-01-13-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-13-min.webp)
 
 The power button in the upper right corner is harmoniously placed and looks good, but it's really too far away to reach and touch...
 
-![](/uploads/2021/03/Remarkable-01-13-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-13-min.webp)
 
 On the side, you can see that it is really thin at 4.7mm. Compared with a small bottle of Coca-cola, it is basically the height of the base part. Thanks to its thin and lightweight (400g) design, it feels good to hold in your hand. You can hold it with one hand and write with the other hand, or put it on your lap to write and it feels stable. Even after a long time, you won't feel tired. I haven't used it to view things for a long time, but I feel that it shouldn't be too tiring.
 
-![](/uploads/2021/03/Remarkable-01-16-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-01-16-min.webp)
 
 The back is designed with four non-slip footpads, which is very thoughtful. Of course, if you use a case, there is not much difference...
 
 **Hands-On Experience**
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-02-1-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-1-min.webp?ssl=1)
 
-![](https://i1.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-02-2-min.jpeg?ssl=1)![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-02-3-min.jpeg?ssl=1)
+![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-2-min.webp?ssl=1)![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-3-min.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-02-4-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-4-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-02-5-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-5-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-02-6-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-6-min.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-02-7-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-7-min.webp?ssl=1)
 
-![](/uploads/2021/03/Remarkable-02-1-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-02-1-min.webp)
 
 The getting started guide process of ReMarkable 2 is quite comprehensive, basically covering all the functions and content that the system can provide. However, the process is not lengthy, and you won't have to go through dozens of annoying new user guides as with some software during the first startup. Of course, this is also related to the fact that ReMarkable has basically no extra functions...
 
-![](/uploads/2021/03/Remarkable-02-2-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-02-2-min.webp)
 
 This page allows you to experience what it feels like when the e-ink screen is fully refreshed... But to be honest, the screen quality of ReMarkable is already very good. I compared it with a 13-inch e-reader from Onyx and Kindle Oasis at my friend's house, and I feel that ReMarkable looks the most comfortable.
 
-![](/uploads/2021/03/Remarkable-02-3-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-02-3-min.webp)
 
 Cloud service setup. Yes... ReMarkable does not support any third-party services... Uploading files or backing up notes written on the device requires the use of its own cloud service. Considering that ReMarkable is a start-up company that focuses on a very niche market, there are still concerns about the reliability and continuity of the service... I estimate that after using it for a while, I will need to consider exporting notes through methods such as Rehackable.
 
-![](/uploads/2021/03/Remarkable-02-4-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-02-4-min.webp)
 
 After entering the system, there is an introduction to various buttons... It's written in detail, but I don't think anyone will read it.
 
-![](/uploads/2021/03/Remarkable-02-7-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-02-7-min.webp)
 
 This is the complete interface. There is a screen that summarizes all files, a note browsing interface, a PDF browsing interface, and an EPUB browsing interface. That's it.
 
 **Screen Quality and User Experience**
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-1-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-1-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-2-min.jpeg?ssl=1)![](https://i1.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-3-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-2-min.webp?ssl=1)![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-3-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-4-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-4-min.webp?ssl=1)
 
-![](https://i1.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-5-min.jpeg?ssl=1)
+![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-5-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-6-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-6-min.webp?ssl=1)
 
-![](https://i1.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-7-min.jpeg?ssl=1)![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-8-min.jpeg?ssl=1)
+![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-7-min.webp?ssl=1)![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-8-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-9-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-9-min.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-10-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-10-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-11-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-11-min.webp?ssl=1)
 
-![](https://i1.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-12-min.jpeg?ssl=1)
+![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-12-min.webp?ssl=1)
 
-![](https://i1.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-13-min.jpeg?ssl=1)![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-03-14-min.jpeg?ssl=1)
+![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-13-min.webp?ssl=1)![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-14-min.webp?ssl=1)
 
 Let's talk about the writing experience first.
 
@@ -170,33 +170,33 @@ Finally, let's talk about the screen. It is a 226DPI screen, and in my normal us
 
 **The Official Folio**
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-04-1-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-1-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-04-2-min.jpeg?ssl=1)![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-04-3-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-2-min.webp?ssl=1)![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-3-min.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-04-4-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-4-min.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-04-5-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-5-min.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-04-6-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-6-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-04-7-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-7-min.webp?ssl=1)
 
 I have a polymer-woven case, but the official website also offers a genuine leather option for an extra $50. However, I felt that was a bit too expensive. As for the case itself, I don't have much to say other than it has the same level of precision in engineering design as the device, fits perfectly, and has a good hand feel. The only issue is that after using this case, the device doesn't automatically sleep or wake up, so I have to manually press the power button each time I want to start writing. Hopefully, this issue can be fixed with a software update in the future.
 
 **The Pen**
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-05-1-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-1-min.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-05-2-min.jpeg?ssl=1)![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-05-3-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-2-min.webp?ssl=1)![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-3-min.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-05-4-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-4-min.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-05-5-min.jpeg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-5-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-05-6-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-6-min.webp?ssl=1)
 
-![](https://i2.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-05-7-min.jpeg?ssl=1)
+![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-7-min.webp?ssl=1)
 
 I purchased the $99 pen with an eraser, but the official website also offers a white option without the eraser for $49.
 
@@ -206,9 +206,9 @@ Furthermore, the pen has a nice matte finish, feels comfortable to hold, and is 
 
 **Companion Software and More**
 
-![](https://i1.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-06-01-scaled.jpg?ssl=1)
+![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-06-01-scaled.webp?ssl=1)
 
-![](https://i0.wp.com/emrick.us/wp-content/uploads/2021/03/Remarkable-06-02.jpg?ssl=1)
+![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-06-02.webp?ssl=1)
 
 Finally, let me talk about the accompanying software. ReMarkable provides synchronization and management software for Mac, Windows, and mobile devices, and the platform support is quite good. In actual use, the performance is also very good. Dragging twenty or thirty PDFs at once won't crash or be unresponsive, and the transfer speed is also very fast. I have a 1G broadband at home, and the transfer speed is estimated to be around 30m/s (upload + download). The software design also conforms to modern aesthetics.
 
@@ -216,7 +216,7 @@ ReMarkable also provides a clipper plugin for Chrome, which I won't go into deta
 
 Finally x2, I would like to talk about the support for Chinese.
 
-![](/uploads/2021/03/Remarkable-02-6-min.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-02-6-min.webp)
 
 ReMarkable supports handwriting recognition for nearly 30 languages, but Chinese, both simplified and traditional, is not included. The menu language is also not available in Chinese. There is a high probability that imported Chinese EPUB and PDF files will display as various squares. It seems that ReMarkable is determined not to enter the Chinese market. Well...
 
@@ -242,4 +242,4 @@ Cons:
 
 In summary, the ReMarkable 2 is a device that many people would not recommend, yet many who have bought it find it to be a valuable tool. It is a device that garners attention from those who see it being used, but it also has some significant drawbacks, such as limited storage, high price, and poor support for non-writing functionalities and Chinese language.
 
-![](/uploads/2021/03/Remarkable-07.jpeg)
+![](https://cdn.anping.us/2021/03/Remarkable-07.webp)

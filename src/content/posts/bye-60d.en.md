@@ -12,7 +12,7 @@ Yes. So be it, then. So be it.
 
 Bought in mid-July 2012, my 60D, after the buyer confirmed payment on March 21, 2013, left me forever.
 
-![](/uploads/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzN1ZTYXFIZ254WEgrd0l4b1hYem1sb09LdnBaVElXM21RPT0.jpg)
+![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzN1ZTYXFIZ254WEgrd0l4b1hYem1sb09LdnBaVElXM21RPT0.webp)
 
 I picked out a shot I considered a proud piece of work at the time. Badly overexposed, haha. Still thought my technique was hot stuff back then; at least I knew how to use
 
@@ -24,7 +24,7 @@ That happiness. A good piece of glass at last. So the 18135 slowly fell out of f
 
 really was worlds apart
 
-![](/uploads/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzMWJJNFdxNjE2K05ad1lUTUJFUTlxaGlSYkxwTC9hcUVBPT0.jpg)
+![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzMWJJNFdxNjE2K05ad1lUTUJFUTlxaGlSYkxwTC9hcUVBPT0.webp)
 
 Above is a photo from right after it arrived. The bokeh, I thought, was just beautiful
 

@@ -14,9 +14,9 @@ As for Lanxin's ordinary functions as an IM, I'll spare the words; after all, wh
 
 * Departure notices.. after all, there isn't much other news all day long anyway
 
-![lanxin-pic2](/uploads/2020/02/lanxin-pic2.png)
+![lanxin-pic2](https://cdn.anping.us/2020/02/lanxin-pic2.webp)
 
 * File transfer alerts.. after all, nine times out of ten a file transfer is going to fail... so when you see a file coming in, just ask what it is and have it sent to the cloud drive..
 * A demo of a meeting check-in feature... why a demo... because who the hell would use something this dumb!
 
-Alright, you ask why the two items above come with no pictures... ![lanxin-pic](/uploads/2020/02/lanxin-pic.png) Because this dumbass thing has crashed again!
+Alright, you ask why the two items above come with no pictures... ![lanxin-pic](https://cdn.anping.us/2020/02/lanxin-pic.webp) Because this dumbass thing has crashed again!

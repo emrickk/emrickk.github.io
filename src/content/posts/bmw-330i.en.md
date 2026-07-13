@@ -132,56 +132,56 @@ The car was stationed at a port just 20 miles away from the dealer, which was co
 
 **Exterior**
 
-![](/uploads/2020/06/1-0.jpeg)
+![](https://cdn.anping.us/2020/06/1-0.webp)
 
 This generation of the 3 Series doesn't have overly big nostrils yet, especially not as big as the newly released 4 Series.. it still looks fairly well proportioned
 
-![](/uploads/2020/06/1-1.jpeg)
+![](https://cdn.anping.us/2020/06/1-1.webp)
 
 The LED headlights included in the options package really are bright at night. In SoCal, where the roads casually run a dozen kilometers without a streetlight, they're incredibly practical.. a pity there's no automatic high/low beam switching, or it would be even more convenient
 
-![](/uploads/2020/06/1-3.jpeg)
+![](https://cdn.anping.us/2020/06/1-3.webp)
 
 The 45-degree angle. This car has no exterior package at all, so the front end looks a bit ordinary. Personally I still think the previous generation's angel eyes looked better
 
-![](/uploads/2020/06/1-2.jpeg)
+![](https://cdn.anping.us/2020/06/1-2.webp)
 
-![](/uploads/2020/06/2-0.jpeg)
+![](https://cdn.anping.us/2020/06/2-0.webp)
 
-![](/uploads/2020/06/2-1.jpeg)
+![](https://cdn.anping.us/2020/06/2-1.webp)
 
-![](/uploads/2020/06/2-2.jpeg)
+![](https://cdn.anping.us/2020/06/2-2.webp)
 
 The lane change assist on the side mirror. Lane change assist truly is the greatest invention of recent years: when you want to change lanes, just check whether the warning light is lit and you're done
 
-![](/uploads/2020/06/2-4.jpeg)
+![](https://cdn.anping.us/2020/06/2-4.webp)
 
-![](/uploads/2020/06/2-3.jpeg)
+![](https://cdn.anping.us/2020/06/2-3.webp)
 
 This generation of the 3 Series has evolved the Hofmeister kink into a new shape
 
-![](/uploads/2020/06/2-7.jpeg)
+![](https://cdn.anping.us/2020/06/2-7.webp)
 
-![](/uploads/2020/06/3-0.jpeg)
+![](https://cdn.anping.us/2020/06/3-0.webp)
 
 The taillights do get a bit of a smoked tint. I feel this generation's rear looks better than its face: crisp layering, a strong sense of staggered depth
 
-![](/uploads/2020/06/3-1.jpeg)
+![](https://cdn.anping.us/2020/06/3-1.webp)
 
 Both exhausts are real. The ducktail at the rear is as good-looking as ever
 
-![](/uploads/2020/06/3-3.jpeg)
+![](https://cdn.anping.us/2020/06/3-3.webp)
 
 The left side is missing the four big "BMW Brilliance" characters
 
-![](/uploads/2020/06/3-4.jpeg)
+![](https://cdn.anping.us/2020/06/3-4.webp)
 
-![](/uploads/2020/06/3-5.jpeg)
+![](https://cdn.anping.us/2020/06/3-5.webp)
 
 The trunk is nice and flat, though on the small side. The seats fold 4/2/4, so it's fine
 
-![](/uploads/2020/06/3-7.jpeg)
+![](https://cdn.anping.us/2020/06/3-7.webp)
 
 The sunroof is standard across the whole lineup
 
-![](/uploads/2020/06/3-6.jpeg)
+![](https://cdn.anping.us/2020/06/3-6.webp)
