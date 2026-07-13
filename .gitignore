@@ -40,3 +40,8 @@ scripts/migrate/.venv/
 private-posts/
 __pycache__/
 .pytest_cache/
+
+# blog image pipeline
+image-staging/
+originals/
+scripts/images/.manifest.json
