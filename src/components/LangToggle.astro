@@ -14,24 +14,26 @@
 <script is:inline>
   (function () {
     function resolved(root) {
-      var l = root.getAttribute('data-lang');
+      const l = root.getAttribute('data-lang');
       if (l === 'zh' || l === 'en') return l;
-      var nav = '';
+      let nav = '';
       try {
         nav = (navigator.language || '').toLowerCase();
-      } catch (e) {}
+      } catch {
+        /* navigator unavailable */
+      }
       return nav.indexOf('zh') === 0 ? 'zh' : 'en';
     }
 
     function mount() {
-      var root = document.documentElement;
-      var group = document.querySelector('.lang-toggle');
+      const root = document.documentElement;
+      const group = document.querySelector('.lang-toggle');
       if (!group || group.dataset.langReady === 'true') return;
       group.dataset.langReady = 'true';
-      var buttons = group.querySelectorAll('[data-set-lang]');
+      const buttons = group.querySelectorAll('[data-set-lang]');
 
       function sync() {
-        var active = resolved(root);
+        const active = resolved(root);
         buttons.forEach(function (b) {
           b.setAttribute('aria-pressed', String(b.getAttribute('data-set-lang') === active));
         });
@@ -40,16 +42,18 @@
 
       buttons.forEach(function (b) {
         b.addEventListener('click', function () {
-          var lang = b.getAttribute('data-set-lang');
+          const lang = b.getAttribute('data-set-lang');
           root.setAttribute('data-lang', lang);
           try {
             localStorage.setItem('lang', lang);
-          } catch (e) {}
+          } catch {
+            /* private mode: persistence unavailable */
+          }
           sync();
         });
       });
 
-      var obs = new MutationObserver(sync);
+      const obs = new MutationObserver(sync);
       obs.observe(root, { attributes: true, attributeFilter: ['data-lang'] });
     }
 
