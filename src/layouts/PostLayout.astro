@@ -6,6 +6,7 @@ import ArchivedComments from '../components/ArchivedComments.astro';
 import Comments from '../components/Comments.astro';
 import FeaturedPostGrid from '../components/FeaturedPostGrid.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import LangTitle from '../components/LangTitle.astro';
 import ImageLightbox from '../components/ImageLightbox.astro';
 import ScrollFocus from '../components/ScrollFocus.astro';
 import BaseLayout from './BaseLayout.astro';
@@ -23,6 +24,9 @@ type Props = CollectionEntry<'posts'>['data'] & {
 const {
   slug,
   title,
+  titleZh,
+  titleEn,
+  lang: origLang = 'zh',
   description,
   pubDate,
   updatedDate,
@@ -96,7 +100,15 @@ const jsonLd = serializeScriptJson({
             )
           }
         </div>
-        <h1 class="post-title" data-pagefind-meta="title">{title}</h1>
+        <LangTitle
+          tag="h1"
+          class="post-title"
+          zh={titleZh}
+          en={titleEn}
+          orig={origLang}
+          fallback={title}
+          meta={title}
+        />
         {description && <p class="post-description">{description}</p>}
       </header>
 

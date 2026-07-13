@@ -2,6 +2,7 @@
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import readingTimeLib from 'reading-time';
 import PostLayout from '../../layouts/PostLayout.astro';
+import { buildTranslationMap } from '../../utils/translations';
 
 export async function getStaticPaths() {
   const allPosts = (await getCollection('posts'))
@@ -34,7 +35,16 @@ interface Props {
 }
 
 const { post, relatedPosts } = Astro.props;
+const orig = post.data.lang ?? 'zh';
+const otherLang = orig === 'zh' ? 'en' : 'zh';
+
 const { Content } = await render(post);
+
+const tmap = await buildTranslationMap();
+const sibling = post.data.translationKey
+  ? tmap.get(`${post.data.translationKey}:${otherLang}`)
+  : undefined;
+const Sibling = sibling ? (await render(sibling)).Content : null;
 
 const readingTime = Math.max(1, Math.round(readingTimeLib(post.body ?? '').minutes));
 ---
@@ -46,5 +56,18 @@ const readingTime = Math.max(1, Math.round(readingTimeLib(post.body ?? '').minut
   focusEffect={post.data.focusEffect}
   relatedPosts={relatedPosts}
 >
-  <Content />
+  {
+    Sibling ? (
+      <>
+        <div class={`lang lang-${orig}`} data-orig>
+          <Content />
+        </div>
+        <div class={`lang lang-${otherLang}`}>
+          <Sibling />
+        </div>
+      </>
+    ) : (
+      <Content />
+    )
+  }
 </PostLayout>
