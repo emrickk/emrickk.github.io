@@ -2,6 +2,7 @@
 import { Image, getImage } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from './FormattedDate.astro';
+import LangTitle from './LangTitle.astro';
 import { withBase } from '../utils/paths';
 
 type PostEntry = CollectionEntry<'posts'>;
@@ -88,7 +89,14 @@ const imagePlaceholderStyle = (src: string | undefined) =>
             <p class="featured-post-card-date">
               <FormattedDate date={post.data.pubDate} />
             </p>
-            <h3 class="featured-post-card-title">{post.data.title}</h3>
+            <LangTitle
+              tag="h3"
+              class="featured-post-card-title"
+              zh={post.data.titleZh}
+              en={post.data.titleEn}
+              orig={post.data.lang ?? 'zh'}
+              fallback={post.data.title}
+            />
             {post.data.description && (
               <p class="featured-post-card-desc">{post.data.description}</p>
             )}

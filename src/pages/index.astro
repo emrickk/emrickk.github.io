@@ -4,6 +4,7 @@ import { Image, getImage } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import FeaturedPostGrid from '../components/FeaturedPostGrid.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import LangTitle from '../components/LangTitle.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { DATE_LOCALE, SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getUiText } from '../ui';
@@ -87,7 +88,14 @@ const featuredPlaceholderStyle = featuredPlaceholder
                   return (
                     <a href={withBase(`/posts/${post.id}/`)} class="hero-recent-item">
                       <span class="hero-recent-main">
-                        <span class="hero-recent-title">{post.data.title}</span>
+                        <LangTitle
+                          tag="span"
+                          class="hero-recent-title"
+                          zh={post.data.titleZh}
+                          en={post.data.titleEn}
+                          orig={post.data.lang ?? 'zh'}
+                          fallback={post.data.title}
+                        />
                         <span class="hero-recent-arrow" aria-hidden="true">
                           ↗
                         </span>
@@ -120,7 +128,14 @@ const featuredPlaceholderStyle = featuredPlaceholder
               <p class="featured-meta">
                 <FormattedDate date={featured.data.pubDate} />
               </p>
-              <h2 class="featured-title">{featured.data.title}</h2>
+              <LangTitle
+                tag="h2"
+                class="featured-title"
+                zh={featured.data.titleZh}
+                en={featured.data.titleEn}
+                orig={featured.data.lang ?? 'zh'}
+                fallback={featured.data.title}
+              />
               {featured.data.description && (
                 <p class="featured-desc">{featured.data.description}</p>
               )}

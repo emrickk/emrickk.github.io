@@ -9,6 +9,9 @@ const posts = (await getCollection('posts'))
 
 const items = posts.map((post) => ({
   title: post.data.title,
+  titleZh: post.data.titleZh ?? post.data.title,
+  titleEn: post.data.titleEn ?? post.data.title,
+  lang: post.data.lang ?? 'zh',
   description: post.data.description,
   category: post.data.category ?? 'Post',
   href: withBase(`/posts/${post.id}/`),

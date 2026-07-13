@@ -4,6 +4,7 @@ import config from '../../astro-theme-config';
 import { getUiText } from '../ui';
 import { withBase } from '../utils/paths';
 import FormattedDate from './FormattedDate.astro';
+import LangTitle from './LangTitle.astro';
 
 type PostEntry = CollectionEntry<'posts'>;
 
@@ -52,7 +53,6 @@ const filters = categories.map((category) => ({
   label: category,
   count: posts.filter((post) => post.data.category === category).length,
 }));
-const Heading = headingLevel;
 ---
 
 <section
@@ -153,13 +153,20 @@ const Heading = headingLevel;
           class="feed-item"
           data-feed-item
           data-category={post.data.category ?? ''}
-          data-search={`${post.data.title} ${post.data.description} ${post.data.category ?? ''}`.toLocaleLowerCase()}
+          data-search={`${post.data.title} ${post.data.titleZh ?? ''} ${post.data.titleEn ?? ''} ${post.data.description} ${post.data.category ?? ''}`.toLocaleLowerCase()}
           data-index={index}
         >
           <a href={withBase(`${basePath}/${postSlug(post.id)}/`)} class="feed-link">
             <FormattedDate class="feed-date" date={post.data.pubDate} />
             <div class="feed-body">
-              <Heading class="feed-title">{post.data.title}</Heading>
+              <LangTitle
+                tag={headingLevel}
+                class="feed-title"
+                zh={post.data.titleZh}
+                en={post.data.titleEn}
+                orig={post.data.lang ?? 'zh'}
+                fallback={post.data.title}
+              />
               {post.data.description && <p class="feed-desc">{post.data.description}</p>}
               {post.data.category && (
                 <div class="feed-meta">

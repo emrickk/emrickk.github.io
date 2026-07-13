@@ -1,5 +1,8 @@
 type SearchItem = {
   title: string;
+  titleZh?: string;
+  titleEn?: string;
+  lang?: 'zh' | 'en';
   description: string;
   category: string;
   href: string;
@@ -26,14 +29,17 @@ function getItems(): SearchItem[] {
 
 function scoreItem(item: SearchItem, query: string) {
   if (!query) return 1;
-  const title = normalize(item.title);
+  // Match against both language titles so search works in either language.
+  const titles = [item.title, item.titleZh ?? '', item.titleEn ?? '']
+    .map(normalize)
+    .filter(Boolean);
   const category = normalize(item.category);
   const description = normalize(item.description);
-  const haystack = `${title} ${category} ${description}`;
+  const haystack = `${titles.join(' ')} ${category} ${description}`;
 
-  if (title === query) return 100;
-  if (title.startsWith(query)) return 80;
-  if (title.includes(query)) return 60;
+  if (titles.some((t) => t === query)) return 100;
+  if (titles.some((t) => t.startsWith(query))) return 80;
+  if (titles.some((t) => t.includes(query))) return 60;
   if (category.includes(query)) return 40;
   if (description.includes(query)) return 20;
   if (query.split(/\s+/).every((part) => haystack.includes(part))) return 10;
@@ -51,6 +57,18 @@ function escapeHtml(value: string) {
     };
     return map[char];
   });
+}
+
+// Both-language title spans; global lang.css hides the inactive one and the
+// toggle updates it live without re-rendering.
+function titleSpans(item: SearchItem) {
+  const orig = item.lang === 'en' ? 'en' : 'zh';
+  const zh = escapeHtml(item.titleZh ?? item.title);
+  const en = escapeHtml(item.titleEn ?? item.title);
+  return (
+    `<span class="lang lang-zh"${orig === 'zh' ? ' data-orig' : ''}>${zh}</span>` +
+    `<span class="lang lang-en"${orig === 'en' ? ' data-orig' : ''}>${en}</span>`
+  );
 }
 
 export function mountSearchPalette(root: ParentNode = document) {
@@ -100,7 +118,7 @@ export function mountSearchPalette(root: ParentNode = document) {
             data-index="${index}"
           >
             <span class="search-palette-item-main">
-              <span class="search-palette-item-title">${escapeHtml(item.title)}</span>
+              <span class="search-palette-item-title">${titleSpans(item)}</span>
               <span class="search-palette-item-desc">${escapeHtml(item.description)}</span>
             </span>
             <span class="search-palette-item-meta">${escapeHtml(item.category)}</span>
