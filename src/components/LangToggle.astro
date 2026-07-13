@@ -1,0 +1,102 @@
+---
+// Language switch: pick EN or 中文. Mirrors ThemeToggle's data-attr +
+// localStorage pattern. Sets `data-lang` on <html>; CSS (lang.css) shows the
+// active language. aria-pressed is managed by script so it also reflects the
+// resolved language in `auto` mode.
+---
+
+<div class="lang-toggle" role="group" aria-label="Language / 语言">
+  <button type="button" class="lang-opt" data-set-lang="en" aria-pressed="false">EN</button>
+  <span class="lang-sep" aria-hidden="true">·</span>
+  <button type="button" class="lang-opt" data-set-lang="zh" aria-pressed="false">中</button>
+</div>
+
+<script is:inline>
+  (function () {
+    function resolved(root) {
+      var l = root.getAttribute('data-lang');
+      if (l === 'zh' || l === 'en') return l;
+      var nav = '';
+      try {
+        nav = (navigator.language || '').toLowerCase();
+      } catch (e) {}
+      return nav.indexOf('zh') === 0 ? 'zh' : 'en';
+    }
+
+    function mount() {
+      var root = document.documentElement;
+      var group = document.querySelector('.lang-toggle');
+      if (!group || group.dataset.langReady === 'true') return;
+      group.dataset.langReady = 'true';
+      var buttons = group.querySelectorAll('[data-set-lang]');
+
+      function sync() {
+        var active = resolved(root);
+        buttons.forEach(function (b) {
+          b.setAttribute('aria-pressed', String(b.getAttribute('data-set-lang') === active));
+        });
+      }
+      sync();
+
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var lang = b.getAttribute('data-set-lang');
+          root.setAttribute('data-lang', lang);
+          try {
+            localStorage.setItem('lang', lang);
+          } catch (e) {}
+          sync();
+        });
+      });
+
+      var obs = new MutationObserver(sync);
+      obs.observe(root, { attributes: true, attributeFilter: ['data-lang'] });
+    }
+
+    if (document.readyState === 'loading')
+      document.addEventListener('DOMContentLoaded', mount, { once: true });
+    else mount();
+  })();
+</script>
+
+<style>
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  flex-shrink: 0;
+  color: var(--label-secondary);
+  font-size: var(--text-footnote, 0.8rem);
+  line-height: 1;
+}
+
+.lang-opt {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.15rem;
+  color: var(--label-secondary);
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: var(--weight-medium, 500);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.lang-opt:hover {
+  color: var(--label-primary);
+}
+
+.lang-opt[aria-pressed='true'] {
+  color: var(--label-primary);
+  font-weight: var(--weight-semibold, 600);
+}
+
+.lang-opt:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 0.2rem;
+}
+
+.lang-sep {
+  opacity: 0.5;
+}
+</style>

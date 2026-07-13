@@ -113,6 +113,30 @@ const websiteJsonLd =
   })();
 </script>
 
+<!-- Language init — runs early to prevent a flash of both languages -->
+<script is:inline>
+  (function () {
+    let lang;
+    try {
+      lang = localStorage.getItem('lang');
+    } catch {
+      lang = null;
+    }
+    if (lang !== 'zh' && lang !== 'en') {
+      let nav = '';
+      try {
+        nav = (navigator.language || '').toLowerCase();
+      } catch {
+        nav = '';
+      }
+      if (nav.indexOf('zh') === 0) lang = 'zh';
+      else if (nav.indexOf('en') === 0) lang = 'en';
+      else lang = 'auto';
+    }
+    document.documentElement.setAttribute('data-lang', lang);
+  })();
+</script>
+
 <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} sizes="any" />
 <link rel="icon" type="image/png" href={withBase('/favicon-32x32.png')} sizes="32x32" />
 <link rel="icon" type="image/png" href={withBase('/favicon-16x16.png')} sizes="16x16" />

@@ -1,0 +1,21 @@
+/* Bilingual language toggle visibility.
+   `data-lang` on <html> is one of: zh | en | auto (default when unset).
+   `.lang` wraps a language section (post body div or title span); the
+   original-language element is tagged `data-orig`. */
+
+/* Default / auto / no-JS: show only the original-language content. */
+.lang:not([data-orig]) {
+  display: none;
+}
+
+/* Explicit selection overrides the default. `revert` restores the element's
+   natural display (block for body <div>, inline for title <span>). */
+:root[data-lang='en'] .lang-en,
+:root[data-lang='zh'] .lang-zh {
+  display: revert;
+}
+
+:root[data-lang='en'] .lang-zh,
+:root[data-lang='zh'] .lang-en {
+  display: none;
+}
