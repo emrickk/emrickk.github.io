@@ -114,19 +114,27 @@ const config = {
     careerLabel: { zh: '关于我', en: 'About Me' },
     career: [
       {
-        period: { zh: '2005 至今', en: '2005 to now' },
-        title: { zh: '一直在写', en: 'Still writing' },
+        period: { zh: '2005', en: '2005' },
+        title: { zh: '开始写博客', en: 'Started the blog' },
         description: {
-          zh: '从学生时代写到现在，断断续续，很多年了：博客还在，人也还在。',
-          en: 'Writing since my student days, on and off, for many years now: the blog is still here, and so am I.',
+          zh: '一切从这里开始。',
+          en: 'Where all of this began.',
         },
       },
       {
-        period: { zh: '日常', en: 'Day to day' },
-        title: { zh: '碎碎念', en: 'Asides' },
+        period: { zh: '2018', en: '2018' },
+        title: { zh: '传送到地球另一端', en: 'Teleported across the Earth' },
         description: {
-          zh: '生活里随手记下的想法和琐事，没什么章法，也不追热点。',
-          en: 'Thoughts and small things jotted down from everyday life, with no particular method and no chasing of trends.',
+          zh: '把自己传送到了地球的另一边，落在一所叫 MIT 的大学。',
+          en: 'Teleported myself to the other side of the Earth, landing at a university called MIT.',
+        },
+      },
+      {
+        period: { zh: '2026', en: '2026' },
+        title: { zh: '为下一代造产品', en: 'Building for the next generation' },
+        description: {
+          zh: '在做一些为下一代准备的事：打造下一代的产品。',
+          en: 'Doing something for the next generation: building next-generation products.',
         },
       },
     ],
