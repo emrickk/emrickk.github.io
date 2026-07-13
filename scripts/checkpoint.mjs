@@ -120,6 +120,25 @@ export function save(root, { label, trigger = 'manual', quiet = false } = {}) {
   return { id, created: true }
 }
 
+export function resolveId(root, query) {
+  if (!query) throw new Error('missing checkpoint id (run: npm run checkpoint list)')
+  const all = listCheckpoints(root)
+  const exact = all.find((c) => c.id === query)
+  if (exact) return exact
+  const matches = all.filter((c) => c.id.includes(query))
+  if (matches.length === 1) return matches[0]
+  if (matches.length === 0) throw new Error(`no checkpoint matches "${query}" (run: npm run checkpoint list)`)
+  throw new Error(`"${query}" is ambiguous, matches: ${matches.map((c) => c.id).join(', ')}`)
+}
+
+export function diffCheckpoint(root, query, { full = false, paths = [] } = {}) {
+  const ckpt = resolveId(root, query)
+  const cur = workingTreeHash(root)
+  const args = ['diff', '--no-renames', ...(full ? [] : ['--stat']), `${ckpt.sha}^{tree}`, cur]
+  if (paths.length) args.push('--', ...paths)
+  return git(args, { cwd: root })
+}
+
 export function prune(root, { keep = KEEP_COUNT, days = KEEP_DAYS, quiet = false } = {}) {
   const all = listCheckpoints(root)
   const cutoff = Date.now() - days * 24 * 60 * 60 * 1000

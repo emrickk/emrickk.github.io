@@ -5,7 +5,7 @@ import { readFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { makeFixtureRepo, cleanup, run, write } from './test-helpers.mjs'
-import { save, listCheckpoints } from './checkpoint.mjs'
+import { save, listCheckpoints, resolveId, diffCheckpoint } from './checkpoint.mjs'
 
 test('save captures tracked changes and untracked files, excludes ignored', (t) => {
   const root = makeFixtureRepo()
@@ -75,4 +75,29 @@ test('list returns newest first with metadata', (t) => {
   assert.equal(list[0].trigger, 'session-start')
   assert.equal(list[0].branch, 'main')
   assert.equal(list[1].label, 'alpha')
+})
+
+test('resolveId matches exact, substring, rejects ambiguous and missing', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'tracked.md', 'v2\n')
+  const a = save(root, { label: 'before-merge', quiet: true })
+  write(root, 'tracked.md', 'v3\n')
+  save(root, { label: 'before-rewrite', quiet: true })
+  assert.equal(resolveId(root, a.id).id, a.id)
+  assert.equal(resolveId(root, 'merge').id, a.id)
+  assert.throws(() => resolveId(root, 'before'), /ambiguous/)
+  assert.throws(() => resolveId(root, 'nope-xyz'), /no checkpoint matches/)
+})
+
+test('diffCheckpoint reports changes between checkpoint and working tree', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const { id } = save(root, { label: 'base', quiet: true })
+  write(root, 'tracked.md', 'changed after checkpoint\n')
+  const stat = diffCheckpoint(root, id)
+  assert.match(stat, /tracked\.md/)
+  assert.match(stat, /1 file changed/)
+  const full = diffCheckpoint(root, id, { full: true })
+  assert.match(full, /\+changed after checkpoint/)
 })
