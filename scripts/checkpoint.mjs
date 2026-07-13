@@ -234,3 +234,73 @@ export function prune(root, { keep = KEEP_COUNT, days = KEEP_DAYS, quiet = false
   if (!quiet && doomed.length) console.log(`pruned ${doomed.length} checkpoint(s)`)
   return doomed.length
 }
+
+const USAGE = `usage: node scripts/checkpoint.mjs <command>
+
+  save [label] [--auto <trigger>] [--quiet]   snapshot the working tree
+  list                                        show checkpoints, newest first
+  diff <id> [--full] [-- <path>...]           compare checkpoint to current files
+  restore <id> [--yes] [-- <path>...]         make files match the checkpoint
+  prune [--keep <n>] [--days <d>]             delete old checkpoints (floor: 5 newest)
+
+<id> accepts the full id from list or any unique substring of it.
+Via npm, flags only reach the script after a double dash: npm run checkpoint -- restore <id> --yes`
+
+function ago(date) {
+  const mins = Math.round((Date.now() - date.getTime()) / 60000)
+  if (mins < 60) return `${mins}m ago`
+  if (mins < 1440) return `${Math.round(mins / 60)}h ago`
+  return `${Math.round(mins / 1440)}d ago`
+}
+
+function splitPathArgs(argv) {
+  const sep = argv.indexOf('--')
+  return sep === -1 ? { args: argv, paths: [] } : { args: argv.slice(0, sep), paths: argv.slice(sep + 1) }
+}
+
+function flagValue(args, flag) {
+  const i = args.indexOf(flag)
+  return i === -1 ? null : args[i + 1]
+}
+
+async function main(argv) {
+  const { args, paths } = splitPathArgs(argv)
+  const [command, ...rest] = args
+  const quiet = args.includes('--quiet')
+  const root = repoRoot()
+  if (command === 'save') {
+    const label = rest.find((a) => !a.startsWith('--') && a !== flagValue(args, '--auto'))
+    save(root, { label, trigger: flagValue(args, '--auto') || 'manual', quiet })
+  } else if (command === 'list') {
+    const list = listCheckpoints(root)
+    if (list.length === 0) return console.log('no checkpoints yet (npm run checkpoint save)')
+    const cur = workingTreeHash(root)
+    for (const c of list) {
+      const stat = git(['diff', '--shortstat', `${c.sha}^{tree}`, cur], { cwd: root })
+      const drift = stat ? stat.trim() : 'matches current state'
+      console.log(`${c.id}  ${ago(c.date)}  [${c.trigger}]  branch ${c.branch}  ${drift}`)
+    }
+  } else if (command === 'diff') {
+    console.log(diffCheckpoint(root, rest.filter((a) => !a.startsWith('--'))[0], { full: args.includes('--full'), paths }))
+  } else if (command === 'restore') {
+    await restore(root, rest.filter((a) => !a.startsWith('--'))[0], { yes: args.includes('--yes'), quiet, paths })
+  } else if (command === 'prune') {
+    const n = prune(root, {
+      keep: flagValue(args, '--keep') ? Number(flagValue(args, '--keep')) : undefined,
+      days: flagValue(args, '--days') ? Number(flagValue(args, '--days')) : undefined,
+      quiet,
+    })
+    if (!quiet && n === 0) console.log('nothing to prune')
+  } else {
+    console.error(USAGE)
+    process.exit(command ? 1 : 0)
+  }
+}
+
+// CLI entry (pathToFileURL handles spaces in the repo path)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main(process.argv.slice(2)).catch((err) => {
+    console.error(err.message)
+    process.exit(1)
+  })
+}

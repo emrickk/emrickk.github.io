@@ -5,7 +5,7 @@ import { readFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { makeFixtureRepo, cleanup, run, write } from './test-helpers.mjs'
-import { save, listCheckpoints, resolveId, diffCheckpoint, restore } from './checkpoint.mjs'
+import { save, listCheckpoints, resolveId, diffCheckpoint, restore, prune } from './checkpoint.mjs'
 
 test('save captures tracked changes and untracked files, excludes ignored', (t) => {
   const root = makeFixtureRepo()
@@ -167,4 +167,21 @@ test('restore is a no-op when tree already matches', async (t) => {
   const { id } = save(root, { label: 'base', quiet: true })
   const result = await restore(root, id, { yes: true, quiet: true })
   assert.equal(result.restored, 0)
+})
+
+test('prune keeps the newest N and honors the 5-newest floor', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  for (let i = 0; i < 8; i++) {
+    write(root, 'tracked.md', `v${i}\n`)
+    save(root, { label: `cp${i}`, quiet: true })
+  }
+  assert.equal(prune(root, { keep: 0, days: 30, quiet: true }), 0)
+  assert.equal(prune(root, { keep: 0, days: 0, quiet: true }), 3)
+  assert.equal(listCheckpoints(root).length, 5)
+})
+
+test('CLI usage error exits non-zero', () => {
+  const cli = fileURLToPath(new URL('./checkpoint.mjs', import.meta.url))
+  assert.throws(() => execFileSync('node', [cli, 'bogus-command'], { encoding: 'utf8' }))
 })
