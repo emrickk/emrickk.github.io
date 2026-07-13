@@ -1,5 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
+import { createServer } from 'node:http'
 import { join } from 'node:path'
 import { makeFixtureRepo, makeFixtureDist, cleanup, run, write } from './test-helpers.mjs'
 import {
@@ -8,6 +9,10 @@ import {
   collectSecretScanSources,
   shannonEntropy,
   checkDistDir,
+  extractCdnUrls,
+  verifyUrls,
+  extractInternalRefs,
+  resolveInternalRef,
 } from './release-check.mjs'
 
 test('findForbiddenPaths flags tracked or staged forbidden files', (t) => {
@@ -114,4 +119,54 @@ test('checkDistDir enforces the minimum page count', (t) => {
   const dist = makeFixtureDist(root)
   const { failures } = checkDistDir(dist, { minPages: 300 })
   assert.ok(failures.some((f) => f.includes('expected at least 300')))
+})
+
+test('extractCdnUrls finds unique CDN URLs across markup', () => {
+  const html = `
+    <img src="https://cdn.anping.us/2020/02/a.webp">
+    <img src="https://cdn.anping.us/2020/02/a.webp">
+    <a href="https://cdn.anping.us/2023/03/b.webp?ssl=1">x</a>
+    <a href="https://example.com/c.webp">not ours</a>`
+  const urls = extractCdnUrls(html)
+  assert.deepEqual(urls.sort(), [
+    'https://cdn.anping.us/2020/02/a.webp',
+    'https://cdn.anping.us/2023/03/b.webp?ssl=1',
+  ])
+})
+
+test('verifyUrls reports non-200s and passes 200s', async (t) => {
+  const server = createServer((req, res) => {
+    res.statusCode = req.url === '/ok.webp' ? 200 : 404
+    res.end()
+  })
+  await new Promise((r) => server.listen(0, '127.0.0.1', r))
+  t.after(() => server.close())
+  const base = `http://127.0.0.1:${server.address().port}`
+  const failures = await verifyUrls([`${base}/ok.webp`, `${base}/missing.webp`], { retries: 0 })
+  assert.equal(failures.length, 1)
+  assert.match(failures[0].url, /missing\.webp/)
+  assert.match(failures[0].error, /404/)
+})
+
+test('extractInternalRefs keeps root-relative refs, drops externals and fragments', () => {
+  const html = `
+    <a href="/posts/a/">a</a>
+    <a href="/about#top">about</a>
+    <a href="https://example.com/x">ext</a>
+    <a href="//cdn.example.com/y">protocol-relative</a>
+    <a href="#local">frag</a>
+    <img src="/pagefind/pagefind.js">`
+  assert.deepEqual(extractInternalRefs(html).sort(), ['/about', '/pagefind/pagefind.js', '/posts/a/'])
+})
+
+test('resolveInternalRef maps directory URLs to index.html and blocks traversal', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const dist = makeFixtureDist(root)
+  assert.equal(resolveInternalRef('/', dist), true)
+  assert.equal(resolveInternalRef('/posts/a/', dist), true)
+  assert.equal(resolveInternalRef('/posts/a', dist), true)
+  assert.equal(resolveInternalRef('/pagefind/pagefind.js', dist), true)
+  assert.equal(resolveInternalRef('/missing/', dist), false)
+  assert.equal(resolveInternalRef('/../outside', dist), false)
 })

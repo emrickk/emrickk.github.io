@@ -192,6 +192,93 @@ function checkBuiltOutput(root) {
   return { status: 'PASS', detail: `${htmlCount} pages, rss + sitemap + pagefind present, no stale references` }
 }
 
+export function extractCdnUrls(text) {
+  const urls = new Set()
+  for (const m of text.matchAll(/https:\/\/cdn\.anping\.us\/[^\s"'<>()\\]+/g)) urls.add(m[0])
+  return [...urls]
+}
+
+export async function verifyUrls(urls, { concurrency = 10, retries = 2, timeoutMs = 10000 } = {}) {
+  const queue = [...urls]
+  const failures = []
+  async function worker() {
+    while (queue.length) {
+      const url = queue.shift()
+      let lastErr = null
+      for (let attempt = 0; attempt <= retries; attempt++) {
+        try {
+          const res = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: AbortSignal.timeout(timeoutMs) })
+          if (res.status === 200) { lastErr = null; break }
+          lastErr = `HTTP ${res.status}`
+        } catch (err) {
+          lastErr = err.name === 'TimeoutError' ? 'timeout' : err.message
+        }
+        if (attempt < retries) await new Promise((r) => setTimeout(r, 500 * (attempt + 1)))
+      }
+      if (lastErr) failures.push({ url, error: lastErr })
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(concurrency, urls.length) || 1 }, worker))
+  return failures
+}
+
+export function extractInternalRefs(html) {
+  const refs = new Set()
+  for (const m of html.matchAll(/(?:href|src)=["']([^"']+)["']/g)) {
+    const v = m[1]
+    if (!v.startsWith('/') || v.startsWith('//')) continue
+    const clean = v.split('#')[0].split('?')[0]
+    if (clean) refs.add(clean)
+  }
+  return [...refs]
+}
+
+export function resolveInternalRef(ref, dist) {
+  let decoded
+  try {
+    decoded = decodeURIComponent(ref)
+  } catch {
+    return false
+  }
+  const abs = resolve(join(dist, ...decoded.split('/').filter(Boolean)))
+  const distAbs = resolve(dist)
+  if (abs !== distAbs && !abs.startsWith(distAbs + sep)) return false
+  if (existsSync(abs)) {
+    return statSync(abs).isDirectory() ? existsSync(join(abs, 'index.html')) : true
+  }
+  return existsSync(abs + '.html')
+}
+
+async function checkCdnImages(root) {
+  const dist = join(root, 'dist')
+  if (!existsSync(dist)) return { status: 'FAIL', detail: 'dist/ missing (build first)' }
+  const urls = new Set()
+  for (const p of walkFiles(dist, ['.html', '.xml'])) {
+    for (const u of extractCdnUrls(readFileSync(p, 'utf8'))) urls.add(u)
+  }
+  const failures = await verifyUrls([...urls])
+  if (failures.length) {
+    return { status: 'FAIL', detail: failures.slice(0, 20).map((f) => `${f.error} ${f.url}`).join('\n') }
+  }
+  return { status: 'PASS', detail: `${urls.size} CDN URLs all return 200` }
+}
+
+function checkInternalLinks(root) {
+  const dist = join(root, 'dist')
+  if (!existsSync(dist)) return { status: 'FAIL', detail: 'dist/ missing (build first)' }
+  const broken = []
+  for (const p of walkFiles(dist, ['.html'])) {
+    const rel = p.slice(dist.length + 1)
+    for (const ref of extractInternalRefs(readFileSync(p, 'utf8'))) {
+      if (!resolveInternalRef(ref, dist)) broken.push(`${rel}: ${ref}`)
+    }
+  }
+  if (broken.length) {
+    return { status: 'FAIL', detail: broken.slice(0, 20).join('\n') + (broken.length > 20 ? `\n... and ${broken.length - 20} more` : '') }
+  }
+  return { status: 'PASS', detail: 'all internal links resolve' }
+}
+
 export const CHECKS = [
   { num: 1, name: 'checkpoint', run: checkCheckpoint },
   { num: 2, name: 'git hygiene', run: checkHygiene },
@@ -201,6 +288,8 @@ export const CHECKS = [
   { num: 6, name: 'build', run: (root) => npmRun(root, 'build') },
   { num: 7, name: 'image tests', run: (root) => npmRun(root, 'test:images') },
   { num: 8, name: 'built output', run: checkBuiltOutput },
+  { num: 9, name: 'CDN images', full: true, run: checkCdnImages },
+  { num: 10, name: 'internal links', full: true, run: checkInternalLinks },
 ]
 
 export async function runChecks(root, { full = false } = {}) {
