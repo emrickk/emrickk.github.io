@@ -13,7 +13,7 @@ type NavItem = {
 const config = {
   site: {
     /** Production origin, used for canonical links, sitemap, and Open Graph metadata. */
-    url: 'https://emrickk.github.io',
+    url: 'https://anping.us',
     /** Subpath such as '/repo-name'. Keep empty when deploying at a domain root. */
     base: '',
     lang: 'zh-CN',

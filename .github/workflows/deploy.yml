@@ -26,14 +26,9 @@ jobs:
           cache: npm
       - uses: actions/configure-pages@v6
       - name: Configure Astro for GitHub Pages
-        run: |
-          repo_name="${GITHUB_REPOSITORY#*/}"
-          echo "ASTRO_SITE_URL=https://${GITHUB_REPOSITORY_OWNER}.github.io" >> "$GITHUB_ENV"
-          if [ "$repo_name" = "${GITHUB_REPOSITORY_OWNER}.github.io" ]; then
-            echo "ASTRO_SITE_BASE=" >> "$GITHUB_ENV"
-          else
-            echo "ASTRO_SITE_BASE=/$repo_name" >> "$GITHUB_ENV"
-          fi
+        # Custom domain (anping.us) served at the apex root: take the site URL
+        # from astro-theme-config.ts and deploy at the domain root (empty base).
+        run: echo "ASTRO_SITE_BASE=" >> "$GITHUB_ENV"
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v5
