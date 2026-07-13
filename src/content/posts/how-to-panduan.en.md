@@ -8,11 +8,11 @@ Toutiao is still pushing me all kinds of car news even after I've bought the car
 
 Gave the solution some thought
 
-**----Summary****----**
+**----Summary----**
 
 Score the user's browsing and interaction behaviors across different topics/channels, weight the scores by "time elapsed until now," and use the resulting scores to judge the user's behavioral trajectory and points of interest. When a score changes abruptly, combine it with the prior trajectory to judge whether the user has "completed the car purchase" and adjust the recommended news accordingly.
 
-**----****Full Version----**
+**----Full Version----**
 
 **User pain point**: the app does a poor job of recognizing when a long-running interest ends abruptly. This document takes car buying as its example. **Rough idea:** use two typical user behaviors to judge whether the car-buying process has ended
 
@@ -35,7 +35,7 @@ Score the user's browsing and interaction behaviors across different topics/chan
 | Moving the channel toward the back of the list | -20 | Time spent reading comments in the channel/topic | Unit time \* 5 |
 | Deleting saved items from the channel/topic | -20 | User trajectory score | 0.8 |
 
-*\***Chinese users generally have no habit of actively disliking content, so when it does happen it is necessarily a strong act of content intervention, which is why it scores highest; channel-level browsing is the most direct signal of whether a user's interest has shifted, so it also scores high; browsing of individual news items comes in such huge volume that the data changes slowly, hence the low per-unit score*
+*Chinese users generally have no habit of actively disliking content, so when it does happen it is necessarily a strong act of content intervention, which is why it scores highest; channel-level browsing is the most direct signal of whether a user's interest has shifted, so it also scores high; browsing of individual news items comes in such huge volume that the data changes slowly, hence the low per-unit score*
 
 * While the user keeps browsing car news, the channel's score, weighted by how recently each behavior occurred, keeps climbing, and shifts in the content they read allow the user's trajectory to be judged. If the user has already completed the browsing trajectory in idea 1, lower the weight of related news and be ready for the user to complete the purchase and for demand to plunge
 

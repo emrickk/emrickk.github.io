@@ -28,7 +28,7 @@ The sister program of Product Management (that's what the official FAQ says). It
 * 12 or 16 months; you can also do it Part-time, over 2 years
 * The 12-month option runs 69k in tuition
 
-**\*One more word about CMU...**First, CMU has something like ten thousand master's programs.. Other programs such as MSTV/MSIS or even MHCI (I'll get to the HCI-versus-IS choice later) also feel workable as continuing education for product managers; look into them yourselves. Second, as a CS powerhouse, CMU's coding atmosphere is just so~ thick! Friends, please think your career plans through, and don't drift muddle-headedly into switching to code, hahaha...
+**\*One more word about CMU...** First, CMU has something like ten thousand master's programs.. Other programs such as MSTV/MSIS or even MHCI (I'll get to the HCI-versus-IS choice later) also feel workable as continuing education for product managers; look into them yourselves. Second, as a CS powerhouse, CMU's coding atmosphere is just so~ thick! Friends, please think your career plans through, and don't drift muddle-headedly into switching to code, hahaha...
 
 **IIT Master of Design + MBA**
 

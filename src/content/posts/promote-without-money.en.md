@@ -26,23 +26,23 @@ The speaker also brought up Wumii as a counterexample here; I won't go into it
 
 **How to do promotion in the internet age**
 
-**1****) Find the key people, not the key media**
+**1) Find the key people, not the key media**
 
 The order of thinking runs like this: the scenario of hardest need–the core crowd–the key people. Don't think about "splashing over onto" them; go make direct contact and get them to actually try it. What does this mean? An example: say you're pushing Cheetah WiFi. The scenario of hardest need is obviously using it at school, so the core crowd is obviously students. Getting this far is fairly easy.
 
 So how do you reach the student crowd? A mediocre marketer might think of buying ads on Renren; that is "splashing over onto" them (honestly I don't know a better way to describe this word; take it to mean letting your audience learn what you want them to know through indirect means). A first-rate marketer makes direct contact. Simple: since it's students who need to know, go straight to the students and let them try it. Roll into the dorms, get Cheetah WiFi installed, done and dusted. Word of mouth, that. Or for a ride-hailing product: go to the airport, go to the taxi depots, find the drivers, get the app installed and tried, and get them sharing it. Not buying ads by the roadside.
 
-**2****) Make sharing part of the experience**
+**2) Make sharing part of the experience**
 
 This brings us to how you get the key people to actually try the product. The speaker split the experience into three kinds: 1.0, handing out money or goods outright. The most primitive level, like Taobao sellers' cash back for good reviews, or the red-envelope rebates some apps give for referrals. Crude and simple, but not the best way. 2.0, discounts. Coupons, say. I give you a 100-60 coupon, and in most cases the consumer will come back and use it. Cheaper than 1.0, and it works better~ 3.0, the share itself becomes content. Think about it: content a user created themselves, versus a shared ad page, which one is more convincing?
 
-**3****) The tiers of promotion**
+**3) The tiers of promotion**
 
 Here the speaker graded promotion by its effect: phenomenon-tier, like Zuji or MYOTee; master-tier, like Chai Jing (the smog lecture) or Lao Luo (Smartisan); campaign-tier, like Uber (the "one-tap helicopter" series of stunts) or DJI drones (Wang Feng's marriage proposal)…sorry, I zoned out during this part. Personally, though, I think phenomenon-tier apps are to some degree impossible to replicate and impossible to reach through deliberate human effort. The public's attention is genuinely hard to fathom. Campaign-tier work is the easiest to replicate: it doesn't even need to be real. Grabbing users' eyeballs with copy (the "one tap" Uber keeps hammering on) and staged events (like the DJI drone that crashed into the White House) is comparatively much simpler. Of course the impact is much smaller too.
 
-**4****) Summary: principles for planning a campaign event** Stay centered on the core function; say only one thing per event/series; generate content offline, spread it online; replicable is best; the product is its own medium
+**4) Summary: principles for planning a campaign event** Stay centered on the core function; say only one thing per event/series; generate content offline, spread it online; replicable is best; the product is its own medium
 
-**Ps:****Free but effective channels**
+**Ps:Free but effective channels**
 
 Your contact list, Weibo recommendations, relevant influencers, resource swaps done in passing, yourself
 

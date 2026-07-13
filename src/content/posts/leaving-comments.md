@@ -2,6 +2,7 @@
 title: 'Leaving Comments?'
 description: ''
 pubDate: '2020-10-22'
+heroImage: '../../assets/hero/2020/10/leaving-comments-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'leaving-comments'
