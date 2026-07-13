@@ -30,6 +30,10 @@ category: 'Journal'
 Body in Markdown. Images go in `public/uploads/` and are referenced as `/uploads/...`.
 ```
 
+## Images
+
+Blog images are served from Cloudflare R2 (`cdn.anping.us`) with originals archived to the NAS. See [docs/images.md](docs/images.md) for setup and daily workflow.
+
 ## License
 
 Theme source code: MIT (see `LICENSE`, © Tone contributors).
