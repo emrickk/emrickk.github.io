@@ -2,6 +2,7 @@
 title: 'Disruptive Technology Company User Research 101'
 description: ''
 pubDate: '2023-02-25'
+heroImage: '../../assets/hero/2023/02/user-research-101-cover.jpg'
 category: 'Things'
 lang: 'en'
 translationKey: 'tusimple-user-research-101'

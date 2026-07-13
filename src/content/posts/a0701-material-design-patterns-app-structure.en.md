@@ -28,7 +28,7 @@ This post is a translation of the App structure chapter in the Patterns section 
 * Apps used to complete fairly consistent tasks
 * Apps that don't see heavy use
 
-**Tabs (TABS)**Tabs are meant for use between a small number of equally important views (view, which you could also translate as concept; take the gist). This thing can boost top-level navigation's presence in an APP with a shallow hierarchy or one without many functions. Tabs occupy a very prominent position, so we recommend keeping tab text relatively short. **This approach is recommended for:**
+**Tabs (TABS)** Tabs are meant for use between a small number of equally important views (view, which you could also translate as concept; take the gist). This thing can boost top-level navigation's presence in an APP with a shallow hierarchy or one without many functions. Tabs occupy a very prominent position, so we recommend keeping tab text relatively short. **This approach is recommended for:**
 
 * Apps that switch views frequently
 * Apps with a small number of top-level views
@@ -41,7 +41,7 @@ This post is a translation of the App structure chapter in the Patterns section 
 * Apps with deep navigation structures
 * Apps that don't want rarely visited pages hogging the spotlight
 
-**Use on mobile and tablets**The navigation drawer is normally closed, and only opens temporarily when selected (meaning once you've picked, it tucks itself back away (as if that needed saying **Use on desktop devices**Not much use for it; to be filled in later (I suspect this will be left unfinished **Combined navigation bar strategies****In-context navigation***(In-context navigation; it really ought to mean navigation where "what you tap opens as a new page of content," or navigation linked to content. I don't know how to translate it)*When used together with tabs and drawer navigation, in-context navigation lets users move quickly within a set of related data (or images and such). Used for:
+**Use on mobile and tablets**The navigation drawer is normally closed, and only opens temporarily when selected (meaning once you've picked, it tucks itself back away (as if that needed saying **Use on desktop devices**Not much use for it; to be filled in later (I suspect this will be left unfinished **Combined navigation bar strategies** **In-context navigation** *(In-context navigation; it really ought to mean navigation where "what you tap opens as a new page of content," or navigation linked to content. I don't know how to translate it)* When used together with tabs and drawer navigation, in-context navigation lets users move quickly within a set of related data (or images and such). Used for:
 
 * Linking songs to an artist
 * Moving around between recent items and history
