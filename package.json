@@ -39,7 +39,7 @@
     "lint:css": "stylelint \"src/**/*.{css,astro}\"",
     "images": "node scripts/images/process.mjs",
     "images:migrate": "node scripts/images/migrate.mjs",
-    "test:images": "node --test scripts/images/"
+    "test:images": "node --test \"scripts/images/*.test.mjs\""
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.3",
