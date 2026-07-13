@@ -268,7 +268,7 @@ optimization part, we use a series of pictures taken by our camera to calculate
 and estimate the depth of the field in order to estimate the distance between
 users and obstacles.
 
-![](/uploads/2020/02/Visually-Impaired1.jpg)
+![](https://cdn.anping.us/2020/02/Visually-Impaired1.webp)
 
 Figure4.1
 Process Procedure of SLAM system
@@ -284,7 +284,7 @@ system, got relatively high evaluation in Github.
 
 ## 4.2Accuracy Navigation
 
-![](/uploads/2020/02/Visually-Impaired2.jpg)
+![](https://cdn.anping.us/2020/02/Visually-Impaired2.webp)
 
 We
 plan to use beacon+ crowdsourcing maps to do this accuracy navigation. The
@@ -317,7 +317,7 @@ the spot users are looking for.
 
 ### 4.2.1Beacons
 
-![](/uploads/2020/02/Visually-Impaired3.jpg)
+![](https://cdn.anping.us/2020/02/Visually-Impaired3.webp)
 
 We
 would use Bluetooth Low Energy (BLE) as our beacons. To ensure the reliability
@@ -365,7 +365,7 @@ This bus stop is three feet away from the curb
 -   
 This bus stop is on grass
 
-![](/uploads/2020/02/Visually-Impaired4.jpg)
+![](https://cdn.anping.us/2020/02/Visually-Impaired4.webp)
 
 Overall
 processing procedures are as follows.
@@ -386,7 +386,7 @@ detailed information about current locations to our users.
 
 ## 4.3Human-computer Interaction
 
-![](/uploads/2020/02/Visually-Impaired5.jpg)
+![](https://cdn.anping.us/2020/02/Visually-Impaired5.webp)
 
 As
 we discussed before, from the aspect of bulk, the main component of our system

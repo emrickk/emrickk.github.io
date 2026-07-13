@@ -49,4 +49,4 @@ category: 'Things'
 * 在最近项目和历史记录里头转移
 * 把用户的投稿（post）关联到他们的资料页面
 
-向上箭头用来回到之前的层级 **结合标签的边侧导航**有两个层级的导航可以用边侧导航和标签结合的方式来进行一个展现 图例：[![patterns_navigation_threelevel1](/uploads/2020/02/patterns_navigation_threelevel1.png)    ![patterns_navigation_threelevel2](/uploads/2020/02/patterns_navigation_threelevel2.png)](/uploads/2020/02/patterns_navigation_threelevel1.png) *左边这货就是In-context navigation，右边图左上方就是..向上按钮（ up arrow ）*
+向上箭头用来回到之前的层级 **结合标签的边侧导航**有两个层级的导航可以用边侧导航和标签结合的方式来进行一个展现 图例：[![patterns_navigation_threelevel1](https://cdn.anping.us/2020/02/patterns_navigation_threelevel1.webp)    ![patterns_navigation_threelevel2](https://cdn.anping.us/2020/02/patterns_navigation_threelevel2.webp)](https://cdn.anping.us/2020/02/patterns_navigation_threelevel1.webp) *左边这货就是In-context navigation，右边图左上方就是..向上按钮（ up arrow ）*

@@ -16,9 +16,9 @@ category: 'Things'
 
 * 离职人员通知..毕竟一天到晚也没什么新消息
 
-![lanxin-pic2](/uploads/2020/02/lanxin-pic2.png)
+![lanxin-pic2](https://cdn.anping.us/2020/02/lanxin-pic2.webp)
 
 * 传送文件提醒..毕竟传送文件的时候十有八九是要失败的...看到有个文件传过来，问问是啥然后传网盘就可以了..
 * 会议签到功能demo...为什么是demo...谁特么会用这么傻的东西啊！
 
-好了，你问我为什么上面两条没有图...![lanxin-pic](/uploads/2020/02/lanxin-pic.png) 这傻逼玩意儿又挂了啊！
+好了，你问我为什么上面两条没有图...![lanxin-pic](https://cdn.anping.us/2020/02/lanxin-pic.webp) 这傻逼玩意儿又挂了啊！
