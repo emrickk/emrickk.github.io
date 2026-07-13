@@ -443,7 +443,7 @@ git commit -m "feat(safety): checkpoint id resolution and diff"
 
 - [ ] **Step 3.1: Write failing tests**
 
-Append (add `restore` to the import; also `import { execFileSync } from 'node:child_process'` at top if not present):
+Append (add `restore` to the import; also add `import { execFileSync } from 'node:child_process'` and `import { fileURLToPath } from 'node:url'` at the top of the test file). Subprocess spawns must use `fileURLToPath`, never `URL.pathname`: this repo's path contains a space ("AI Space") which `.pathname` leaves percent-encoded and node then cannot find the module.
 
 ```js
 test('full restore round-trips: modified reverted, new file deleted', async (t) => {
@@ -491,8 +491,7 @@ test('restore refuses during an in-progress merge', async (t) => {
   const root = makeFixtureRepo()
   t.after(() => cleanup(root))
   const { id } = save(root, { label: 'base', quiet: true })
-  const gitDir = run(root, ['rev-parse', '--absolute-git-dir'])
-  write(root, join(gitDir, 'MERGE_HEAD').slice(root.length + 1), 'deadbeef\n')
+  write(root, '.git/MERGE_HEAD', 'deadbeef\n')
   await assert.rejects(() => restore(root, id, { yes: true, quiet: true }), /MERGE_HEAD/)
 })
 
@@ -501,7 +500,7 @@ test('restore without --yes aborts on non-TTY and changes nothing', (t) => {
   t.after(() => cleanup(root))
   const { id } = save(root, { label: 'base', quiet: true })
   write(root, 'tracked.md', 'unconfirmed edit\n')
-  const cli = new URL('./checkpoint.mjs', import.meta.url).pathname
+  const cli = fileURLToPath(new URL('./checkpoint.mjs', import.meta.url))
   assert.throws(() => execFileSync('node', [cli, 'restore', id], { cwd: root, encoding: 'utf8' }))
   assert.equal(readFileSync(join(root, 'tracked.md'), 'utf8'), 'unconfirmed edit\n')
 })
@@ -515,7 +514,7 @@ test('restore is a no-op when tree already matches', async (t) => {
 })
 ```
 
-Note for the MERGE_HEAD test: `write` joins against the repo root, so pass the path of the git dir relative to root (`.git/MERGE_HEAD` computed via slice). If the slice expression proves brittle, replace with `write(root, '.git/MERGE_HEAD', 'deadbeef\n')`, which is equivalent for a top-level fixture repo.
+Note for the MERGE_HEAD test: writing to the literal `.git/MERGE_HEAD` is correct for a top-level fixture repo. Do not compute the git dir via `rev-parse --absolute-git-dir` and slice against the fixture root: on macOS the tmpdir is a symlink (`/var` vs `/private/var`) and the slice produces a garbage path.
 
 - [ ] **Step 3.2: Run tests to verify the new ones fail**
 
@@ -608,7 +607,7 @@ export async function restore(root, query, { paths = [], yes = false, quiet = fa
   }
   if (!quiet) {
     console.log(`restored ${changes.length} file(s) from ${ckpt.id}`)
-    console.log(`undo with: npm run checkpoint restore ${pre.id}`)
+    console.log(`undo with: node scripts/checkpoint.mjs restore ${pre.id}`)
   }
   return { restored: changes.length, preRestoreId: pre.id }
 }
@@ -655,7 +654,7 @@ test('prune keeps the newest N and honors the 5-newest floor', (t) => {
 })
 
 test('CLI usage error exits non-zero', () => {
-  const cli = new URL('./checkpoint.mjs', import.meta.url).pathname
+  const cli = fileURLToPath(new URL('./checkpoint.mjs', import.meta.url))
   assert.throws(() => execFileSync('node', [cli, 'bogus-command'], { encoding: 'utf8' }))
 })
 ```
@@ -672,7 +671,7 @@ Expected: CLI test FAILS (no entry point yet, command exits 0 doing nothing). Pr
 Append to `scripts/checkpoint.mjs`:
 
 ```js
-const USAGE = `usage: npm run checkpoint <command>
+const USAGE = `usage: node scripts/checkpoint.mjs <command>
 
   save [label] [--auto <trigger>] [--quiet]   snapshot the working tree
   list                                        show checkpoints, newest first
@@ -680,7 +679,15 @@ const USAGE = `usage: npm run checkpoint <command>
   restore <id> [--yes] [-- <path>...]         make files match the checkpoint
   prune [--keep <n>] [--days <d>]             delete old checkpoints (floor: 5 newest)
 
-<id> accepts the full id from list or any unique substring of it.`
+<id> accepts the full id from list or any unique substring of it.
+Via npm, flags only reach the script after a double dash: npm run checkpoint -- restore <id> --yes`
+
+function ago(date) {
+  const mins = Math.round((Date.now() - date.getTime()) / 60000)
+  if (mins < 60) return `${mins}m ago`
+  if (mins < 1440) return `${Math.round(mins / 60)}h ago`
+  return `${Math.round(mins / 1440)}d ago`
+}
 
 function splitPathArgs(argv) {
   const sep = argv.indexOf('--')
@@ -707,7 +714,7 @@ async function main(argv) {
     for (const c of list) {
       const stat = git(['diff', '--shortstat', `${c.sha}^{tree}`, cur], { cwd: root })
       const drift = stat ? stat.trim() : 'matches current state'
-      console.log(`${c.id}  [${c.trigger}]  branch ${c.branch}  ${drift}`)
+      console.log(`${c.id}  ${ago(c.date)}  [${c.trigger}]  branch ${c.branch}  ${drift}`)
     }
   } else if (command === 'diff') {
     console.log(diffCheckpoint(root, rest.filter((a) => !a.startsWith('--'))[0], { full: args.includes('--full'), paths }))
@@ -809,16 +816,16 @@ Snapshots of the entire working tree (tracked and untracked files, `.gitignore` 
 | --- | --- |
 | `npm run checkpoint save [label]` | Snapshot now (no-op if nothing changed) |
 | `npm run checkpoint list` | Show checkpoints, newest first, with drift vs current files |
-| `npm run checkpoint diff <id>` | What changed since the checkpoint (`--full` for the patch) |
-| `npm run checkpoint restore <id> --yes` | Make all files match the snapshot |
-| `npm run checkpoint restore <id> --yes -- <path>` | Restore only the named paths |
+| `node scripts/checkpoint.mjs diff <id>` | What changed since the checkpoint (`--full` for the patch) |
+| `node scripts/checkpoint.mjs restore <id> --yes` | Make all files match the snapshot |
+| `node scripts/checkpoint.mjs restore <id> --yes -- <path>` | Restore only the named paths |
 
-`<id>` is any unique substring of an id from `list`.
+`<id>` is any unique substring of an id from `list`. For `diff` and `restore`, invoke the script with `node` directly as shown: plain `npm run checkpoint restore <id> --yes` does NOT work because npm swallows `--yes` and the first `--`, which can silently turn a partial restore into a full one. (`npm run checkpoint -- restore <id> --yes -- <path>` also works.)
 
 ## Rules for agents
 
 1. Save a checkpoint (with a descriptive label) before: mass rewrites of posts, merges, dependency upgrades, or running any script that edits many files.
-2. A full restore deletes files created after the snapshot. Restore always saves a `pre-restore` checkpoint first, so a mistaken restore is itself undoable: `npm run checkpoint restore <pre-restore-id>`.
+2. A full restore deletes files created after the snapshot. Restore always saves a `pre-restore` checkpoint first, so a mistaken restore is itself undoable: `node scripts/checkpoint.mjs restore <pre-restore-id> --yes`.
 3. Restores are refused mid-merge/rebase. Finish or abort that operation first.
 4. Auto-checkpoints happen at session start (hook) and at the start of every release check. Do not rely on them for labeled save points.
 ```
@@ -898,7 +905,7 @@ Expected: FAIL (module not found).
 import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, resolve, sep } from 'node:path'
-import { pathToFileURL } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 
 export const FORBIDDEN_PATHS = [
   { name: 'env file', re: /^\.env(?!\.example$)/ },
@@ -926,7 +933,7 @@ export function findForbiddenPaths(root) {
 }
 
 function checkCheckpoint(root) {
-  const cli = new URL('./checkpoint.mjs', import.meta.url).pathname
+  const cli = fileURLToPath(new URL('./checkpoint.mjs', import.meta.url))
   const out = execFileSync('node', [cli, 'save', 'release-check', '--auto', 'release-check'], {
     cwd: root, encoding: 'utf8',
   }).trim()
@@ -1082,12 +1089,14 @@ export const SECRET_PATTERNS = [
   { name: 'private-key', re: /-----BEGIN [A-Z ]*PRIVATE KEY-----/g },
   {
     name: 'credential-assignment',
-    re: /\b(?:SECRET|TOKEN|PASSWORD|PASSWD|API_KEY|ACCESS_KEY|PRIVATE_KEY)[A-Z0-9_]*\s*[=:]\s*['"][A-Za-z0-9+/_=-]{16,}['"]/gi,
+    re: /\b[A-Z0-9_]*(?:SECRET|TOKEN|PASSWORD|PASSWD|API_KEY|ACCESS_KEY|PRIVATE_KEY)[A-Z0-9_]*\s*[=:]\s*['"][A-Za-z0-9+/_=-]{16,}['"]/gi,
   },
   { name: 'high-entropy', re: /\b[A-Za-z0-9+/=_-]{40,}\b/g, entropy: 4.5 },
 ]
 
-const SCAN_SKIP = /(?:^|\/)(?:package-lock\.json|.*\.lock)$|\.(?:png|jpe?g|webp|gif|ico|woff2?|ttf|otf|pdf|zip|gz|mp[34])$/i
+// docs/superpowers/ and the release-check test file contain planted example
+// tokens by design; excluding them avoids guaranteed false positives.
+const SCAN_SKIP = /^docs\/superpowers\/|^scripts\/release-check\.test\.mjs$|(?:^|\/)(?:package-lock\.json|.*\.lock)$|\.(?:png|jpe?g|webp|gif|ico|woff2?|ttf|otf|pdf|zip|gz|mp[34])$/i
 
 export function shannonEntropy(s) {
   const freq = {}
@@ -1634,9 +1643,8 @@ Expected: exit 0, under 2 seconds. Then `npm run checkpoint list` shows the sess
 
 ```bash
 npm run checkpoint save rehearsal
-echo "scratch" > /tmp/does-not-matter 2>/dev/null || true
 printf 'temp line\n' >> README.md
-npm run checkpoint restore rehearsal -- --yes 2>/dev/null || npm run checkpoint restore rehearsal --yes
+node scripts/checkpoint.mjs restore rehearsal --yes
 git diff --stat README.md   # expect: no diff, README.md restored
 ```
 
