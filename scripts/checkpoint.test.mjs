@@ -5,7 +5,7 @@ import { readFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { makeFixtureRepo, cleanup, run, write } from './test-helpers.mjs'
-import { save, listCheckpoints, resolveId, diffCheckpoint } from './checkpoint.mjs'
+import { save, listCheckpoints, resolveId, diffCheckpoint, restore } from './checkpoint.mjs'
 
 test('save captures tracked changes and untracked files, excludes ignored', (t) => {
   const root = makeFixtureRepo()
@@ -100,4 +100,71 @@ test('diffCheckpoint reports changes between checkpoint and working tree', (t) =
   assert.match(stat, /1 file changed/)
   const full = diffCheckpoint(root, id, { full: true })
   assert.match(full, /\+changed after checkpoint/)
+})
+
+test('full restore round-trips: modified reverted, new file deleted', async (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'tracked.md', 'good state\n')
+  write(root, 'keeper.md', 'exists at checkpoint\n')
+  const { id } = save(root, { label: 'good', quiet: true })
+  write(root, 'tracked.md', 'bad edit\n')
+  write(root, 'junk.md', 'created after checkpoint\n')
+  write(root, 'ignored.txt', 'ignored survives restore\n')
+  const result = await restore(root, id, { yes: true, quiet: true })
+  assert.ok(result.restored >= 2)
+  assert.equal(readFileSync(join(root, 'tracked.md'), 'utf8'), 'good state\n')
+  assert.equal(readFileSync(join(root, 'keeper.md'), 'utf8'), 'exists at checkpoint\n')
+  assert.ok(!existsSync(join(root, 'junk.md')))
+  assert.ok(existsSync(join(root, 'ignored.txt')))
+})
+
+test('partial restore only touches named paths', async (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'a.md', 'a1\n')
+  write(root, 'b.md', 'b1\n')
+  const { id } = save(root, { label: 'base', quiet: true })
+  write(root, 'a.md', 'a2\n')
+  write(root, 'b.md', 'b2\n')
+  await restore(root, id, { yes: true, quiet: true, paths: ['a.md'] })
+  assert.equal(readFileSync(join(root, 'a.md'), 'utf8'), 'a1\n')
+  assert.equal(readFileSync(join(root, 'b.md'), 'utf8'), 'b2\n')
+})
+
+test('restore creates a pre-restore checkpoint first', async (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const { id } = save(root, { label: 'base', quiet: true })
+  write(root, 'tracked.md', 'about to be reverted\n')
+  const result = await restore(root, id, { yes: true, quiet: true })
+  assert.ok(result.preRestoreId)
+  const pre = run(root, ['show', `refs/checkpoints/${result.preRestoreId}:tracked.md`])
+  assert.equal(pre, 'about to be reverted')
+})
+
+test('restore refuses during an in-progress merge', async (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const { id } = save(root, { label: 'base', quiet: true })
+  write(root, '.git/MERGE_HEAD', 'deadbeef\n')
+  await assert.rejects(() => restore(root, id, { yes: true, quiet: true }), /MERGE_HEAD/)
+})
+
+test('restore without --yes aborts on non-TTY and changes nothing', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const { id } = save(root, { label: 'base', quiet: true })
+  write(root, 'tracked.md', 'unconfirmed edit\n')
+  const cli = fileURLToPath(new URL('./checkpoint.mjs', import.meta.url))
+  assert.throws(() => execFileSync('node', [cli, 'restore', id], { cwd: root, encoding: 'utf8' }))
+  assert.equal(readFileSync(join(root, 'tracked.md'), 'utf8'), 'unconfirmed edit\n')
+})
+
+test('restore is a no-op when tree already matches', async (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const { id } = save(root, { label: 'base', quiet: true })
+  const result = await restore(root, id, { yes: true, quiet: true })
+  assert.equal(result.restored, 0)
 })

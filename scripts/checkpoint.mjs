@@ -139,6 +139,92 @@ export function diffCheckpoint(root, query, { full = false, paths = [] } = {}) {
   return git(args, { cwd: root })
 }
 
+export function assertNoOperationInProgress(root) {
+  const gitDir = git(['rev-parse', '--absolute-git-dir'], { cwd: root })
+  for (const marker of ['MERGE_HEAD', 'CHERRY_PICK_HEAD', 'BISECT_LOG', 'rebase-merge', 'rebase-apply']) {
+    if (existsSync(join(gitDir, marker))) {
+      throw new Error(`refusing to restore: ${marker} present (finish or abort that operation first)`)
+    }
+  }
+}
+
+export function restorePlan(root, query, paths = []) {
+  const ckpt = resolveId(root, query)
+  const cur = workingTreeHash(root)
+  const args = ['diff', '--no-renames', '--name-status', cur, `${ckpt.sha}^{tree}`]
+  if (paths.length) args.push('--', ...paths)
+  const out = git(args, { cwd: root })
+  const changes = !out
+    ? []
+    : out.split('\n').map((line) => {
+        const [status, ...rest] = line.split('\t')
+        return { status: status[0], path: rest[rest.length - 1] }
+      })
+  return { ckpt, changes }
+}
+
+function chunk(arr, size) {
+  const out = []
+  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size))
+  return out
+}
+
+function removeEmptyDirs(root, rel) {
+  let dir = rel
+  while (dir && dir !== '.' && dir !== '/') {
+    try {
+      rmdirSync(join(root, dir))
+    } catch {
+      return
+    }
+    dir = dirname(dir)
+  }
+}
+
+export async function restore(root, query, { paths = [], yes = false, quiet = false } = {}) {
+  assertNoOperationInProgress(root)
+  const { ckpt, changes } = restorePlan(root, query, paths)
+  if (changes.length === 0) {
+    if (!quiet) console.log('working tree already matches the checkpoint')
+    return { restored: 0 }
+  }
+  if (!quiet) {
+    const counts = { M: 0, A: 0, D: 0 }
+    for (const c of changes) counts[c.status] = (counts[c.status] || 0) + 1
+    console.log(`restore from ${ckpt.id} (${ckpt.trigger}, branch ${ckpt.branch}):`)
+    console.log(`  ${counts.M || 0} overwritten, ${counts.A || 0} recreated, ${counts.D || 0} deleted`)
+    for (const c of changes.slice(0, 20)) console.log(`  ${c.status} ${c.path}`)
+    if (changes.length > 20) console.log(`  ... and ${changes.length - 20} more`)
+  }
+  if (!yes) {
+    if (!process.stdin.isTTY) {
+      throw new Error('refusing to restore without confirmation, re-run with --yes')
+    }
+    const rl = createInterface({ input: process.stdin, output: process.stdout })
+    const answer = (await rl.question(`Restore ${changes.length} file(s)? [y/N] `)).trim().toLowerCase()
+    rl.close()
+    if (answer !== 'y' && answer !== 'yes') {
+      console.log('aborted')
+      return { restored: 0, aborted: true }
+    }
+  }
+  const pre = save(root, { label: 'pre-restore', trigger: 'pre-restore', quiet: true })
+  const writeBack = changes.filter((c) => c.status !== 'D').map((c) => c.path)
+  const remove = changes.filter((c) => c.status === 'D').map((c) => c.path)
+  for (const batch of chunk(writeBack, 200)) {
+    git(['restore', '--worktree', `--source=${ckpt.sha}`, '--', ...batch], { cwd: root })
+  }
+  for (const p of remove) {
+    rmSync(join(root, p), { force: true })
+    removeEmptyDirs(root, dirname(p))
+  }
+  if (!quiet) {
+    console.log(`restored ${changes.length} file(s) from ${ckpt.id}`)
+    console.log(`undo with: node scripts/checkpoint.mjs restore ${pre.id}`)
+  }
+  return { restored: changes.length, preRestoreId: pre.id }
+}
+
 export function prune(root, { keep = KEEP_COUNT, days = KEEP_DAYS, quiet = false } = {}) {
   const all = listCheckpoints(root)
   const cutoff = Date.now() - days * 24 * 60 * 60 * 1000
