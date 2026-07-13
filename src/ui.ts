@@ -6,7 +6,7 @@ const ui = {
   allPosts: 'All Posts →',
   postsEyebrow: 'Archive',
   postsTitle: 'All Posts',
-  heroTitle: 'Keep notes.',
+  heroTitle: 'Keep thinking.',
   heroTitleLine2: '',
   viewAll: 'All Posts →',
   readLink: 'Read →',

@@ -23,8 +23,8 @@ const config = {
     logoLabel: 'NeVeRtheLeSs',
     description: '2005 年至今的个人博客 · personal blog since 2005',
     /** Language-specific descriptions shown on the homepage hero; they swap with the EN·中 toggle. */
-    descriptionZh: '2005 年至今的个人博客',
-    descriptionEn: 'Personal blog since 2005',
+    descriptionZh: '这里是思考的一些成果：不太丑、不太随机、也不太混乱。',
+    descriptionEn: 'Here are some of the outcomes: not too ugly, not too random, not too chaotic.',
     author: 'NeVeRtheLeSs',
     /** Optional absolute or root-relative image URL for homepage/search/about social previews. */
     defaultOgImage: '/og.png',
@@ -96,37 +96,47 @@ const config = {
     /** Profile image URL. Leave empty to use the text-only About layout. */
     profileImage: '',
     name: 'NeVeRtheLeSs',
-    role: '懒癌晚期 · terminally lazy',
-    location: '互联网某处 · Somewhere online',
-    focus: '生活、想法与碎碎念 · life, thoughts, and asides',
-    lead: '一个从 2005 年断断续续写到现在的个人博客。写的东西其实不想被你看，但既然来了 —— still waters run deep。',
+    /** Every {zh, en} pair below swaps with the EN·中 toggle. */
+    role: { zh: '懒癌晚期', en: 'Terminally lazy' },
+    location: { zh: '地球某处', en: 'Somewhere on Earth' },
+    focus: { zh: '生活、想法与碎碎念', en: 'Life, thoughts, and asides' },
+    lead: {
+      zh: '一个从 2005 年写到现在的个人博客。写了二十多年，内容却比你想象的少得多，所以其实也没那么深。',
+      en: "Started in 2005, yet with far less here than you would expect from a blog past twenty. So, not that deep after all.",
+    },
     headline: ['Still waters', 'run deep.'],
-    statementLabel: '关于博客 · About',
-    statementTitle: '写的东西其实不想被你看',
-    statement:
-      '这里是 NeVeRtheLeSs，一个从 2005 年写到现在的个人博客。没什么正经主题，随手记下生活、想法和一些碎碎念。断更是常态（懒癌晚期），但一直没舍得删。',
-    careerLabel: '关于我 · About Me',
+    statementLabel: { zh: '关于博客', en: 'About the Blog' },
+    statementTitle: { zh: '写的东西其实不想被你看', en: 'Not really meant to be read' },
+    statement: {
+      zh: '这里没有固定的主题，只是我随手写下在想什么、在做什么，以及对生活的一些总结和反思。而且你从最新一篇文章大概也能看出来：取决于你来的时间，这个博客多半已经停更几个月了。',
+      en: 'No fixed topics here. I just write down whatever I am thinking about, whatever I am doing, and the occasional summing-up or reflection on life. And as the latest post probably shows, depending on when you visit, this blog has most likely been on pause for a few months already.',
+    },
+    careerLabel: { zh: '关于我', en: 'About Me' },
     career: [
       {
-        period: '2005 至今',
-        title: '一直在写 · Still writing',
-        description:
-          '从学生时代写到现在，断断续续，很多年了 —— 博客还在，人也还在。',
+        period: { zh: '2005 至今', en: '2005 to now' },
+        title: { zh: '一直在写', en: 'Still writing' },
+        description: {
+          zh: '从学生时代写到现在，断断续续，很多年了：博客还在，人也还在。',
+          en: 'Writing since my student days, on and off, for many years now: the blog is still here, and so am I.',
+        },
       },
       {
-        period: '日常',
-        title: '碎碎念 · Notes',
-        description:
-          '生活里随手记下的想法和琐事，没什么章法，也不追热点。',
+        period: { zh: '日常', en: 'Day to day' },
+        title: { zh: '碎碎念', en: 'Asides' },
+        description: {
+          zh: '生活里随手记下的想法和琐事，没什么章法，也不追热点。',
+          en: 'Thoughts and small things jotted down from everyday life, with no particular method and no chasing of trends.',
+        },
       },
     ],
     interests: [
-      '把想说的话写下来，哪怕没人看',
-      '慢慢写、慢慢更新的那点耐心',
-      '过去很多年里留下来的旧文字',
+      { zh: '把想说的话写下来，哪怕没人看', en: 'Writing down what I want to say, even if nobody reads it' },
+      { zh: '慢慢写、慢慢更新的那点耐心', en: 'The patience to write slowly and update slowly' },
+      { zh: '过去很多年里留下来的旧文字', en: 'Old words left behind from many years past' },
     ],
-    interestsLabel: '关于 · Notes',
-    interestsHeading: '这里都写些什么',
+    interestsLabel: { zh: '关于', en: 'Notes' },
+    interestsHeading: { zh: '这里都写些什么', en: 'What gets written here' },
   },
 };
 

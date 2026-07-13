@@ -1,0 +1,11 @@
+---
+// Renders a {zh, en} text pair as toggle-aware spans; lang.css shows the one
+// matching the EN·中 toggle. The zh span is `data-orig` so auto/no-JS keeps
+// the site default language.
+interface Props {
+  text: { zh: string; en: string };
+}
+const { text } = Astro.props;
+---
+
+<span class="lang lang-zh" data-orig>{text.zh}</span><span class="lang lang-en">{text.en}</span>

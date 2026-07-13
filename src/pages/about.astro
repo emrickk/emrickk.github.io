@@ -1,6 +1,7 @@
 ---
 import '../styles/pages/about.css';
 import config from '../../astro-theme-config';
+import LangText from '../components/LangText.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const profileImageUrl = config.about.profileImage.trim();
@@ -39,7 +40,7 @@ const profileLinks = [
 ].filter((link) => link.href);
 ---
 
-<BaseLayout title="About" description={profileLead}>
+<BaseLayout title="About" description={`${profileLead.zh} · ${profileLead.en}`}>
   <main id="main-content" class="about-main">
     <section class="about-hero" aria-labelledby="about-title">
       <div class="about-intro">
@@ -48,7 +49,7 @@ const profileLinks = [
           {headlineSecond}
         </h1>
         <p class="about-lead">
-          {profileLead}
+          <LangText text={profileLead} />
         </p>
       </div>
 
@@ -72,21 +73,23 @@ const profileLinks = [
         }
         <div class="profile-summary">
           <p class="profile-name">{profileName}</p>
-          <p class="profile-role">{profileRole}</p>
+          <p class="profile-role"><LangText text={profileRole} /></p>
         </div>
         <dl class="profile-meta">
           <div>
-            <dt>Location</dt>
-            <dd>{profileLocation}</dd>
+            <dt><LangText text={{ zh: '位置', en: 'Location' }} /></dt>
+            <dd><LangText text={profileLocation} /></dd>
           </div>
           <div>
-            <dt>Focus</dt>
-            <dd>{profileFocus}</dd>
+            <dt><LangText text={{ zh: '关注', en: 'Focus' }} /></dt>
+            <dd><LangText text={profileFocus} /></dd>
           </div>
           {
             profileLinks.length > 0 && (
               <div>
-                <dt>Links</dt>
+                <dt>
+                  <LangText text={{ zh: '链接', en: 'Links' }} />
+                </dt>
                 <dd class="profile-links">
                   {profileLinks.map((link) => (
                     <a
@@ -106,25 +109,31 @@ const profileLinks = [
     </section>
 
     <section class="about-section about-statement" aria-labelledby="about-statement">
-      <p class="section-label">{statementLabel}</p>
+      <p class="section-label"><LangText text={statementLabel} /></p>
       <div>
         <h2 id="about-statement" class="section-heading">
-          {statementTitle}
+          <LangText text={statementTitle} />
         </h2>
-        <p>{statement}</p>
+        <p><LangText text={statement} /></p>
       </div>
     </section>
 
-    <section class="about-section" aria-label={careerLabel}>
-      <p class="section-label">{careerLabel}</p>
+    <section class="about-section" aria-label={careerLabel.en}>
+      <p class="section-label"><LangText text={careerLabel} /></p>
       <div class="career-list">
         {
           careerItems.map((item) => (
             <article class="career-item">
-              <time>{item.period}</time>
+              <time>
+                <LangText text={item.period} />
+              </time>
               <div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <h3>
+                  <LangText text={item.title} />
+                </h3>
+                <p>
+                  <LangText text={item.description} />
+                </p>
               </div>
             </article>
           ))
@@ -133,11 +142,17 @@ const profileLinks = [
     </section>
 
     <section class="about-section" aria-labelledby="about-focus">
-      <p class="section-label">{interestsLabel}</p>
+      <p class="section-label"><LangText text={interestsLabel} /></p>
       <div>
-        <h2 id="about-focus" class="section-heading">{interestsHeading}</h2>
+        <h2 id="about-focus" class="section-heading"><LangText text={interestsHeading} /></h2>
         <ul class="focus-list">
-          {focusItems.map((item) => <li>{item}</li>)}
+          {
+            focusItems.map((item) => (
+              <li>
+                <LangText text={item} />
+              </li>
+            ))
+          }
         </ul>
       </div>
     </section>
