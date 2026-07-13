@@ -1,0 +1,20 @@
+---
+// Renders a post title in both languages; CSS shows the active one.
+// The original-language span is tagged `data-orig` so `auto` mode can show it.
+interface Props {
+  zh?: string;
+  en?: string;
+  orig: 'zh' | 'en';
+  fallback: string;
+  tag?: keyof HTMLElementTagNameMap;
+  class?: string;
+}
+const { zh, en, orig, fallback, tag: Tag = 'span', class: cls } = Astro.props;
+const zhText = zh ?? fallback;
+const enText = en ?? fallback;
+---
+
+<Tag class:list={['lang-title', cls]}>
+  <span class="lang lang-zh" data-orig={orig === 'zh' ? '' : undefined}>{zhText}</span
+  ><span class="lang lang-en" data-orig={orig === 'en' ? '' : undefined}>{enText}</span>
+</Tag>
