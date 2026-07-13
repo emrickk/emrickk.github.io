@@ -132,10 +132,75 @@ function checkHygiene(root) {
   return { status: 'PASS', detail: `branch ${branch}, ${state}` }
 }
 
+function npmRun(root, script) {
+  try {
+    execFileSync('npm', ['run', script], {
+      cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 64 * 1024 * 1024,
+    })
+    return { status: 'PASS', detail: `npm run ${script}` }
+  } catch (err) {
+    const tail = [String(err.stdout || ''), String(err.stderr || '')].join('\n').trim().split('\n').slice(-15).join('\n')
+    return { status: 'FAIL', detail: `npm run ${script} failed:\n${tail}` }
+  }
+}
+
+function checkLint(root) {
+  const eslint = npmRun(root, 'lint')
+  if (eslint.status === 'FAIL') return eslint
+  const css = npmRun(root, 'lint:css')
+  if (css.status === 'FAIL') return css
+  return { status: 'PASS', detail: 'eslint and stylelint' }
+}
+
+export function walkFiles(dir, exts) {
+  const out = []
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, entry.name)
+    if (entry.isDirectory()) out.push(...walkFiles(p, exts))
+    else if (exts.some((e) => entry.name.endsWith(e))) out.push(p)
+  }
+  return out
+}
+
+export function checkDistDir(dist, { minPages = 300 } = {}) {
+  const failures = []
+  if (!existsSync(dist)) return { failures: ['dist/ missing (build first)'], htmlCount: 0 }
+  const htmlFiles = walkFiles(dist, ['.html'])
+  if (htmlFiles.length < minPages) {
+    failures.push(`only ${htmlFiles.length} HTML pages, expected at least ${minPages}`)
+  }
+  for (const rel of ['rss.xml', 'sitemap-index.xml']) {
+    const p = join(dist, rel)
+    if (!existsSync(p) || statSync(p).size === 0) failures.push(`${rel} missing or empty`)
+  }
+  if (!existsSync(join(dist, 'pagefind', 'pagefind.js'))) failures.push('pagefind index missing')
+  const scanFiles = [...htmlFiles, ...walkFiles(dist, ['.xml'])]
+  for (const p of scanFiles) {
+    const text = readFileSync(p, 'utf8')
+    const rel = p.slice(dist.length + 1)
+    if (text.includes('/uploads/')) failures.push(`${rel}: stale /uploads/ reference`)
+    if (/(?:href|src)=["']https?:\/\/(?:localhost|127\.0\.0\.1)/.test(text)) failures.push(`${rel}: localhost URL`)
+  }
+  return { failures, htmlCount: htmlFiles.length }
+}
+
+function checkBuiltOutput(root) {
+  const { failures, htmlCount } = checkDistDir(join(root, 'dist'))
+  if (failures.length) {
+    return { status: 'FAIL', detail: failures.slice(0, 20).join('\n') + (failures.length > 20 ? `\n... and ${failures.length - 20} more` : '') }
+  }
+  return { status: 'PASS', detail: `${htmlCount} pages, rss + sitemap + pagefind present, no stale references` }
+}
+
 export const CHECKS = [
   { num: 1, name: 'checkpoint', run: checkCheckpoint },
   { num: 2, name: 'git hygiene', run: checkHygiene },
   { num: 3, name: 'secret scan', run: checkSecrets },
+  { num: 4, name: 'types (astro check)', run: (root) => npmRun(root, 'check') },
+  { num: 5, name: 'lint', run: checkLint },
+  { num: 6, name: 'build', run: (root) => npmRun(root, 'build') },
+  { num: 7, name: 'image tests', run: (root) => npmRun(root, 'test:images') },
+  { num: 8, name: 'built output', run: checkBuiltOutput },
 ]
 
 export async function runChecks(root, { full = false } = {}) {

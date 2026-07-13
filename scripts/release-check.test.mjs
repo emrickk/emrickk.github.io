@@ -7,6 +7,7 @@ import {
   scanTextForSecrets,
   collectSecretScanSources,
   shannonEntropy,
+  checkDistDir,
 } from './release-check.mjs'
 
 test('findForbiddenPaths flags tracked or staged forbidden files', (t) => {
@@ -69,4 +70,48 @@ test('collectSecretScanSources includes untracked files, skips binaries and lock
   assert.ok(files.includes('draft.md'))
   assert.ok(!files.includes('package-lock.json'))
   assert.ok(!files.includes('photo.webp'))
+})
+
+test('checkDistDir passes a clean fixture dist', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const dist = makeFixtureDist(root)
+  assert.deepEqual(checkDistDir(dist, { minPages: 1 }).failures, [])
+})
+
+test('checkDistDir fails on stale /uploads/ references', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const dist = makeFixtureDist(root, {
+    extraHtml: { 'posts/bad/index.html': '<img src="/uploads/2020/02/old.jpg">' },
+  })
+  const { failures } = checkDistDir(dist, { minPages: 1 })
+  assert.ok(failures.some((f) => f.includes('/uploads/')))
+})
+
+test('checkDistDir fails on localhost URLs in attributes', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const dist = makeFixtureDist(root, {
+    extraHtml: { 'posts/bad/index.html': '<a href="http://localhost:4321/x">dev</a>' },
+  })
+  const { failures } = checkDistDir(dist, { minPages: 1 })
+  assert.ok(failures.some((f) => f.includes('localhost')))
+})
+
+test('checkDistDir fails on missing rss, sitemap, or pagefind', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const dist = makeFixtureDist(root, { omit: ['rss.xml', 'pagefind/pagefind.js'] })
+  const { failures } = checkDistDir(dist, { minPages: 1 })
+  assert.ok(failures.some((f) => f.includes('rss.xml')))
+  assert.ok(failures.some((f) => f.includes('pagefind')))
+})
+
+test('checkDistDir enforces the minimum page count', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const dist = makeFixtureDist(root)
+  const { failures } = checkDistDir(dist, { minPages: 300 })
+  assert.ok(failures.some((f) => f.includes('expected at least 300')))
 })
