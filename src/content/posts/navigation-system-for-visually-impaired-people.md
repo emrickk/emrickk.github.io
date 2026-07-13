@@ -4,6 +4,8 @@ description: ''
 pubDate: '2018-11-16'
 heroImage: '../../assets/hero/2020/02/Visually-Impaired1.jpg'
 category: 'Things'
+lang: 'en'
+translationKey: 'navigation-system-for-visually-impaired-people'
 ---
 
 Two problems blind people often encounter when walking are colliding with obstacles and overshooting or missing completely their intended destinations. Our solution is to combine collision-avoidance measures with navigation guidance systems, using the locations of our users with beacons installed as geology fences at key locations which need high navigation accuracy.

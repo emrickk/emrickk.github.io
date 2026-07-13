@@ -3,6 +3,8 @@ title: '论如何拒绝'
 description: ''
 pubDate: '2014-10-01'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'how-to-refuse-borrow-your-bike'
 ---
 
 从永远不会拒绝有啥事自己纠结进阶到学会拒绝他人后一个严重的问题横亘在了我面前：如何拒绝“如何拒绝”是一句缺乏宾语的病句。

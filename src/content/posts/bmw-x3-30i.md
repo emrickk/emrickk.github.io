@@ -4,6 +4,8 @@ description: ''
 pubDate: '2023-03-01'
 heroImage: '../../assets/hero/2023/03/BMW-X3-14.jpeg'
 category: 'Prodigal'
+lang: 'en'
+translationKey: 'bmw-x3-30i'
 ---
 
 > "Don't be fooled, it's just the Clark Kent of X3s, secretly wishing it was a superhero X3M."

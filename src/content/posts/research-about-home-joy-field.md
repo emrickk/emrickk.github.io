@@ -3,6 +3,8 @@ title: '为什么每次回家都不能学习'
 description: ''
 pubDate: '2017-02-05'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'research-about-home-joy-field'
 ---
 
 远在2007年我就问过自己这个问题了，没错十年前人生卢瑟不是白当的今天我来严肃认真的思考一下这个世界性难题

@@ -3,6 +3,8 @@ title: '2015-03-10'
 description: ''
 pubDate: '2015-03-10'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'memory-about-student-career'
 ---
 
 今天看到一个挺有意思的文。一路看下去就到了豆瓣。

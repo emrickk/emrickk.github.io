@@ -3,6 +3,8 @@ title: '好产品，没钱推广怎么办'
 description: ''
 pubDate: '2015-05-22'
 category: 'Things'
+lang: 'zh'
+translationKey: 'promote-without-money'
 ---
 
 下午听了莎莎姐主讲的公司内部讲座。感觉干货颇多且对具体工作方向性指导有很大帮助，于是整理了一下笔记。

@@ -3,6 +3,8 @@ title: '消费在日本亚马逊'
 description: ''
 pubDate: '2013-05-10'
 category: 'Prodigal'
+lang: 'zh'
+translationKey: 'amazon-japan-shopping'
 ---
 
 挑了个表，在AmazonJP...是的..明年我也可以说 去年我买了个表了=。=

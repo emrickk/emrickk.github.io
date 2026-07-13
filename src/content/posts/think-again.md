@@ -3,6 +3,8 @@ title: '2015-12-04'
 description: ''
 pubDate: '2015-12-04'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'think-again'
 ---
 
 吾日三省吾身

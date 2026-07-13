@@ -4,6 +4,8 @@ description: ''
 pubDate: '2018-12-12'
 heroImage: '../../assets/hero/2020/02/coaster1.jpg'
 category: 'Things'
+lang: 'en'
+translationKey: 'mit-coasters'
 ---
 
 * [![](/uploads/2020/02/coaster1.jpg)](http://emrick.us/?attachment_id=725)

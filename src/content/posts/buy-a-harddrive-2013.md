@@ -4,6 +4,8 @@ description: ''
 pubDate: '2013-03-21'
 heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kQzFlSmFEekoxOWt0UERtUldTK0pMTHJ2ZWQyUkZ5NzhnPT0.jpg'
 category: 'Prodigal'
+lang: 'zh'
+translationKey: 'buy-a-harddrive-2013'
 ---
 
 好久没写东西了 今天来把欠下来的全补上

@@ -3,6 +3,8 @@ title: '2013-04-07'
 description: ''
 pubDate: '2013-04-07'
 category: 'Repost'
+lang: 'en'
+translationKey: 'andifonlyonethin'
 ---
 
 And if only one thing had happened differently,

@@ -3,6 +3,8 @@ title: 'Human Factors study in Voice Interactive Systems'
 description: ''
 pubDate: '2019-12-10'
 category: 'Things'
+lang: 'en'
+translationKey: 'human-factors-study-in-voice-interactive-systems'
 ---
 
 **Human Factors study in Voice Interactive Systems**

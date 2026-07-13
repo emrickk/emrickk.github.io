@@ -4,6 +4,8 @@ description: ''
 pubDate: '2015-07-21'
 heroImage: '../../assets/hero/2020/02/patterns_navigation_threelevel1.png'
 category: 'Things'
+lang: 'zh'
+translationKey: 'a0701-material-design-patterns-app-structure'
 ---
 
 本文是对Material Design Pattern部分中App structure章节的翻译，本文没有搬运相应的图片，请自行前往原页面围观图片（[传送门](https://www.google.com/design/spec/patterns/app-structure.html#app-structure-top-level-navigation-strategies)）**前言：应用结构**你想要展示给你的用户的内容和任务影响着你应用的结构。比如说：

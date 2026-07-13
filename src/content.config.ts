@@ -3,8 +3,12 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const posts = defineCollection({
-  // Load Markdown and MDX files in the `src/content/posts/` directory.
-  loader: glob({ base: './src/content/posts', pattern: '**/*.{md,mdx}' }),
+  // Primary posts only — exclude `*.en.md` / `*.zh.md` sibling translations so
+  // routes, list views, and RSS come from primaries and URLs stay unchanged.
+  loader: glob({
+    base: './src/content/posts',
+    pattern: ['**/*.{md,mdx}', '!**/*.{en,zh}.{md,mdx}'],
+  }),
   // Type-check frontmatter using a schema
   schema: ({ image }) =>
     z.object({
@@ -20,7 +24,27 @@ const posts = defineCollection({
       homeHeroOrder: z.number().int().positive().optional(),
       homeOrder: z.number().int().positive().optional(),
       draft: z.boolean().default(false),
+      // Bilingual support. `lang` is the post's original language.
+      // `titleZh` / `titleEn` are optional so the site builds at any partial
+      // translation state; the theme falls back to `title` when one is missing.
+      lang: z.enum(['zh', 'en']).optional(),
+      translationKey: z.string().optional(),
+      titleZh: z.string().optional(),
+      titleEn: z.string().optional(),
     }),
 });
 
-export const collections = { posts };
+const translations = defineCollection({
+  // Sibling translation bodies: `<slug>.en.md` / `<slug>.zh.md`.
+  loader: glob({
+    base: './src/content/posts',
+    pattern: '**/*.{en,zh}.{md,mdx}',
+  }),
+  schema: z.object({
+    translationKey: z.string(),
+    lang: z.enum(['zh', 'en']),
+    title: z.string().optional(),
+  }),
+});
+
+export const collections = { posts, translations };

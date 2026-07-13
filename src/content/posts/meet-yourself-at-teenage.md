@@ -3,6 +3,8 @@ title: '遇见20岁的自己'
 description: ''
 pubDate: '2016-08-13'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'meet-yourself-at-teenage'
 ---
 
 在你的二十岁，面对这个世界，人生还有无限种可能和选择

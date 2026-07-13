@@ -3,6 +3,8 @@ title: '雏菊'
 description: ''
 pubDate: '2011-09-08'
 category: 'Words'
+lang: 'zh'
+translationKey: 'daisy'
 ---
 
 我爱着，什么也不说，只看你在对面微笑；

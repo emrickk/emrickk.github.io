@@ -3,6 +3,8 @@ title: '2015-08-11'
 description: ''
 pubDate: '2015-08-11'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'not-god-of-the-world'
 ---
 
 做产品的时候上帝模式开多了，很容易代入到生活中去

@@ -4,6 +4,8 @@ description: ''
 pubDate: '2015-09-02'
 heroImage: '../../assets/hero/2020/02/dell001.jpg'
 category: 'Prodigal'
+lang: 'zh'
+translationKey: 'new-inspiron-13-7352-v2-0'
 ---
 
 **DELL New Inspiron 13 Special Edition**

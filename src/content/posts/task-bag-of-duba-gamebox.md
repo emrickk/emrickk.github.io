@@ -3,6 +3,8 @@ title: '2014-11-16'
 description: ''
 pubDate: '2014-11-16'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'task-bag-of-duba-gamebox'
 ---
 
 好久没有坐下来认认真真的梳理最近发生的事情，写一篇博客了。最近最烦恼我的自然是膝盖的问题。（为什么一上来就是烦恼？看来工作之后顺心的事情确实不多，值得反思）

@@ -3,6 +3,8 @@ title: '因為愛'
 description: ''
 pubDate: '2008-08-14'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'coz-love'
 ---
 
 你的手永遠張開   比這世界還要大   但我卻   要離開\

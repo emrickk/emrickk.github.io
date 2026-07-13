@@ -3,6 +3,8 @@ title: '无题'
 description: ''
 pubDate: '2016-03-01'
 category: 'Words'
+lang: 'zh'
+translationKey: 'kou-suo-dog'
 ---
 
 啊

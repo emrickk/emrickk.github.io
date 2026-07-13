@@ -3,6 +3,8 @@ title: '异地恋算恋爱吗？'
 description: ''
 pubDate: '2013-09-25'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'does-yidilian-love'
 ---
 
 转自知乎日报

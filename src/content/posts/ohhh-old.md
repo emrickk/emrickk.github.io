@@ -3,6 +3,8 @@ title: '有点害怕'
 description: ''
 pubDate: '2016-09-19'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'ohhh-old'
 ---
 
 天气凉了

@@ -4,6 +4,8 @@ description: ''
 pubDate: '2013-05-04'
 heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOS80MkFFeW9jQ1RqWk5MNEczOEFpL05lakRzMXFKajBUVUt0RTQ1a0kxd05RPT0.jpg'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'time-in-baoji'
 ---
 
 最近净更新减肥日记了 好久没有写日志 来一发。

@@ -3,6 +3,8 @@ title: 'Product Management Methodology for Internal Tools'
 description: ''
 pubDate: '2022-06-05'
 category: 'Things'
+lang: 'en'
+translationKey: 'tusimple-pm-methodology'
 ---
 
 *I wrote this document on my TuSimple anniversary. I revised it and posted it here as today is already my second anniversary at TuSimple. Time flies!*

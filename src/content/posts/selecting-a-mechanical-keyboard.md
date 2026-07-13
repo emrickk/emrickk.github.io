@@ -3,6 +3,8 @@ title: 'Shopping Mechanical Keyboards'
 description: ''
 pubDate: '2020-11-22'
 category: 'Prodigal'
+lang: 'en'
+translationKey: 'selecting-a-mechanical-keyboard'
 ---
 
 Before we begin, there are a few things we need to consider before selecting a keyboard:

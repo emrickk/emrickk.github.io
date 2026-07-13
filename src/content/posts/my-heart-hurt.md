@@ -3,6 +3,8 @@ title: '我的心曾经悲伤七次'
 description: ''
 pubDate: '2013-03-23'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'my-heart-hurt'
 ---
 
 第一次，当它本可进取时，却故作谦卑；

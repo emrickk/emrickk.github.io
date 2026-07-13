@@ -4,6 +4,8 @@ description: ''
 pubDate: '2008-04-05'
 heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzNEVvekZLSUVlV1dCVEdRUmVQdndwTFZWdzhWV29rU21BPT0.jpg'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'winter-tree'
 ---
 
 整个周末我都在思索冬天的表达式，这很容易，冰雪堆积的树，阴冷的天空，低温，雪花，等等。这些只属于冬，让人们认识到冬天的样子，年复一年。尽管每个细节都从未相同，但是他们足够相似，让我们足以区分。

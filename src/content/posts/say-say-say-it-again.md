@@ -4,6 +4,8 @@ description: ''
 pubDate: '2016-01-03'
 heroImage: '../../assets/hero/2020/02/64-1.png'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'say-say-say-it-again'
 ---
 
 从高中的第一个周末就开始往家里带很多参考书，决心每个在家的周末都不能够浪费然而我的日历清晰的记录了高中三年的一百四十多个周末，没有一个是看过书的![64](/uploads/2020/02/64-1.png)

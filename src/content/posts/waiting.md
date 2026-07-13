@@ -3,6 +3,8 @@ title: '耐'
 description: ''
 pubDate: '2008-04-03'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'waiting'
 ---
 
 耐、心无旁骛，是我在看《大家》栏目国学大师饶宗颐听到的。

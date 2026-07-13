@@ -3,6 +3,8 @@ title: '解放你的双手'
 description: ''
 pubDate: '2016-09-09'
 category: 'Prodigal'
+lang: 'zh'
+translationKey: 'free-you-hands-nas'
 ---
 
 这个文是说我用了一个多月群晖NAS之后的感受。不过这个标题其实可以用在包括电动马桶圈的任何电子产品上...

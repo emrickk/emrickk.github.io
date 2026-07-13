@@ -3,6 +3,8 @@ title: 'Leaving Comments?'
 description: ''
 pubDate: '2020-10-22'
 category: 'Journal'
+lang: 'en'
+translationKey: 'leaving-comments'
 ---
 
 Look at the message input box, how elegant.

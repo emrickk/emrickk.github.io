@@ -3,6 +3,8 @@ title: '一个人的状态'
 description: ''
 pubDate: '2013-07-13'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'one-lonely-man'
 ---
 
 「一個人」的狀態，總是最糟的。 我覺得說一些我的個人經驗，於你無用，因為環境機遇不同。（多一半，還有自我吹噓的潛意識存在）。但，我可以給你一個，我母親給過我的，非常好的建議。

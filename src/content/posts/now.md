@@ -3,6 +3,8 @@ title: '现在'
 description: ''
 pubDate: '2014-08-09'
 category: 'Words'
+lang: 'zh'
+translationKey: 'now'
 ---
 
 每个人在过去都有过各种各样不同的遭遇，可是他们中的有些看起来却无比快乐。因为他们都很清楚，如果被过去的事情牵绊而不去享受现在，这是多么不划算的事情。

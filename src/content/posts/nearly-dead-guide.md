@@ -3,6 +3,8 @@ title: '作死的烂尾减肥攻略'
 description: ''
 pubDate: '2014-03-20'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'nearly-dead-guide'
 ---
 
 夏天又要到来了~本着造福广大群众的原则我也来发一则减肥指南吧

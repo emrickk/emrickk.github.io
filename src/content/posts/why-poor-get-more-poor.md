@@ -3,6 +3,8 @@ title: '为什么富人越来越富，穷人越来越穷？'
 description: ''
 pubDate: '2016-02-06'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'why-poor-get-more-poor'
 ---
 
 从生活中的体现，在个体的层面说一下这个问题

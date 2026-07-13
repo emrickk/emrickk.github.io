@@ -3,6 +3,8 @@ title: '有趣是第一生产力 '
 description: ''
 pubDate: '2014-07-27'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'funny-is-power'
 ---
 
 作者：小井岩  

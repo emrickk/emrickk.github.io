@@ -3,6 +3,8 @@ title: '2014-01-01'
 description: ''
 pubDate: '2014-01-01'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'mistake-pointed-out'
 ---
 
 先指出你的一个误区。“进化”这个概念跟你这辈子已经没什么关系了，你并不是一直会趋向更健康、更美貌的人，如果你的期待增长了，也不是因为进化。所以不要把这个想成你不可抗拒的本性。

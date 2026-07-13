@@ -3,6 +3,8 @@ title: '一个经验'
 description: ''
 pubDate: '2015-08-31'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'how-to-get-rid-of-stupid-guys'
 ---
 
 **千万不要给那些和你不太熟的五六十岁的“长辈”们科普知识=。=**

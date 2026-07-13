@@ -3,6 +3,8 @@ title: '水'
 description: ''
 pubDate: '2006-10-03'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'be-water'
 ---
 
 折戟沉沙铁未消，自将磨洗认前朝。\

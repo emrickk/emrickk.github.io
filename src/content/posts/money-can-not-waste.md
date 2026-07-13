@@ -3,6 +3,8 @@ title: '2015-05-22'
 description: ''
 pubDate: '2015-05-22'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'money-can-not-waste'
 ---
 
 一直懒得写博文。可是域名的钱不能浪费。上一次写是三月上旬，现在是五月中了。这两个月发生了什么我来流水账一下。

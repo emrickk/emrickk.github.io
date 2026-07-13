@@ -3,6 +3,8 @@ title: '记一次电话会议'
 description: ''
 pubDate: '2014-08-18'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'a-phone-meeting'
 ---
 
 今天和JJ的同学进行了一次电话会议..经验总结如下（时间顺序

@@ -3,6 +3,8 @@ title: '瞎想'
 description: ''
 pubDate: '2020-02-16'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'just-thinking'
 ---
 
 一个还有5页paper要due的夜晚

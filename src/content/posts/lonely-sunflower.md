@@ -3,6 +3,8 @@ title: '向日葵的寂寞'
 description: ''
 pubDate: '2005-09-18'
 category: 'Words'
+lang: 'zh'
+translationKey: 'lonely-sunflower'
 ---
 
 今天从家门口那条长长的巷子走过  

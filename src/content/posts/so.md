@@ -3,6 +3,8 @@ title: '所以'
 description: ''
 pubDate: '2014-10-14'
 category: 'Words'
+lang: 'zh'
+translationKey: 'so'
 ---
 
 就在这样和煦的阳光下我走了过去

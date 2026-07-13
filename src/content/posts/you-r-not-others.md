@@ -3,6 +3,8 @@ title: '2021-02-24'
 description: ''
 pubDate: '2021-02-24'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'you-r-not-others'
 ---
 
 Your body is just time, time that never stops passing.

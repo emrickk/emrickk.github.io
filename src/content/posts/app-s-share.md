@@ -3,6 +3,8 @@ title: '2015-11-09'
 description: ''
 pubDate: '2015-11-09'
 category: 'Words'
+lang: 'zh'
+translationKey: 'app-s-share'
 ---
 
 趁着中午没事，分享一下我手机里的APP们。用的APP还是比较少，体验也比较粗浅。仅简单分类和介绍，谨作抛砖引玉。

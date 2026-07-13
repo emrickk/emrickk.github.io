@@ -3,6 +3,8 @@ title: '路痴'
 description: ''
 pubDate: '2014-08-21'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'road-poor'
 ---
 
 出门买一根甘蔗

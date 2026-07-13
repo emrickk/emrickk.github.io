@@ -4,6 +4,8 @@ description: ''
 pubDate: '2015-06-21'
 heroImage: '../../assets/hero/2020/02/6143431-14348198816402268-Robert-Edwards.png'
 category: 'Things'
+lang: 'zh'
+translationKey: 'we-should-know-soon-if-the-2015-natural-gas-market-is-going-higher-like-2012-or-going-to-roll-over-like-2009'
 ---
 
 **我们很快就会知道天然气是会像2012年那样走高,还是像09年那样持续下跌了**

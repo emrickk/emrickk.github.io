@@ -3,6 +3,8 @@ title: '励志段子'
 description: ''
 pubDate: '2016-04-11'
 category: 'Words'
+lang: 'zh'
+translationKey: 'lizhi-duanzi'
 ---
 
 写励志段子非常容易

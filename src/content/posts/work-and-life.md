@@ -3,6 +3,8 @@ title: '工作与生活是否应该保持真性情？'
 description: ''
 pubDate: '2013-09-25'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'work-and-life'
 ---
 
 转自知乎日报

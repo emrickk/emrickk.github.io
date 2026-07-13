@@ -3,6 +3,8 @@ title: '意义'
 description: ''
 pubDate: '2013-03-23'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'meaning'
 ---
 
 白天我寄居别人的肉体内，以填补我苍白的空虚。晚上我飘在城市的最高点，享受着夜的宁静。

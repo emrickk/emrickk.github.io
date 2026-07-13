@@ -3,6 +3,8 @@ title: '露露的功课'
 description: ''
 pubDate: '2009-08-01'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'lulus-homework'
 ---
 
 露露不会游泳、不会飞，她的鸭子也是。\

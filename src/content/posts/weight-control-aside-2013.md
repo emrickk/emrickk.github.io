@@ -3,6 +3,8 @@ title: '减肥日记'
 description: ''
 pubDate: '2013-07-20'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'weight-control-aside-2013'
 ---
 
 -----------------------------减肥第一阶段-----------------------------

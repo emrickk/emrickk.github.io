@@ -3,6 +3,8 @@ title: '3X天然气我一般这么玩'
 description: ''
 pubDate: '2015-07-20'
 category: 'Things'
+lang: 'zh'
+translationKey: 'how-to-play-nat-gas-3x-etn'
 ---
 
 最近一直玩Velocityshares的天然气ETN，在亏亏赚赚之中总结出一丢丢经验。贴在这里。

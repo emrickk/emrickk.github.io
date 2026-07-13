@@ -3,6 +3,8 @@ title: '「最最喜欢你，绿子。」'
 description: ''
 pubDate: '2014-01-10'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'like-you-most'
 ---
 
 「最最喜欢你，绿子。」

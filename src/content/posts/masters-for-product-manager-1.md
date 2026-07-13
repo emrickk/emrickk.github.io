@@ -3,6 +3,8 @@ title: '[第一弹]产品狗要读硕士，该读什么项目？'
 description: ''
 pubDate: '2018-04-22'
 category: 'Things'
+lang: 'zh'
+translationKey: 'masters-for-product-manager-1'
 ---
 
 产品狗要读硕士，该读什么项目？

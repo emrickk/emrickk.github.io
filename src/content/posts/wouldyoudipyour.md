@@ -3,6 +3,8 @@ title: 'Would you dip your finger in my coffee?'
 description: ''
 pubDate: '2013-05-22'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'wouldyoudipyour'
 ---
 
 - Would you dip your finger in my coffee?\

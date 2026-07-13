@@ -3,6 +3,8 @@ title: '北京博物馆漫游指南 - 东城区篇'
 description: ''
 pubDate: '2018-07-25'
 category: 'Things'
+lang: 'zh'
+translationKey: 'beijing-museum-dongcheng'
 ---
 
 北京博物馆漫游指南 - 东城区篇

@@ -3,6 +3,8 @@ title: '2014-09-21·2'
 description: ''
 pubDate: '2014-09-21'
 category: 'Fiona'
+lang: 'zh'
+translationKey: 'if-life-without-you'
 ---
 
 如果没有遇见你

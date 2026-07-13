@@ -4,6 +4,8 @@ description: ''
 pubDate: '2013-06-04'
 heroImage: '../../assets/hero/2020/02/3166874963071725311.jpg'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'six4flower'
 ---
 
 *[![3166874963071725311](/uploads/2020/02/3166874963071725311.jpg)](/uploads/2020/02/3166874963071725311.jpg)*

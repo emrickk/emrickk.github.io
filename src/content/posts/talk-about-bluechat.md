@@ -4,6 +4,8 @@ description: ''
 pubDate: '2016-02-06'
 heroImage: '../../assets/hero/2020/02/lanxin-pic2.png'
 category: 'Things'
+lang: 'zh'
+translationKey: 'talk-about-bluechat'
 ---
 
 先说说看为什么要有蓝信吧。

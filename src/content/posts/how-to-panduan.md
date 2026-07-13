@@ -3,6 +3,8 @@ title: '兴趣点失去了，怎么判断？'
 description: ''
 pubDate: '2015-07-20'
 category: 'Journal'
+lang: 'zh'
+translationKey: 'how-to-panduan'
 ---
 
 今日头条在买完车之后还是不断给我推各种汽车新闻..

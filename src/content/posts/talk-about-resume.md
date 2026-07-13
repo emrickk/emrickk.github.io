@@ -3,6 +3,8 @@ title: '也说一下简历怎么写'
 description: ''
 pubDate: '2016-08-11'
 category: 'Things'
+lang: 'zh'
+translationKey: 'talk-about-resume'
 ---
 
 我就简单说一下产品的简历怎么写，五分钟。

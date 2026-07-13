@@ -3,6 +3,8 @@ title: '路由器选购记'
 description: ''
 pubDate: '2013-02-26'
 category: 'Prodigal'
+lang: 'zh'
+translationKey: 'router-select-2013'
 ---
 
 DR超市买的实际支付两百多实际价值七十元坑爹TPLINK路由越来越不中用了

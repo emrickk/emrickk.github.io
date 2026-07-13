@@ -3,6 +3,8 @@ title: '好好学习'
 description: ''
 pubDate: '2009-01-20'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'goodstudy'
 ---
 
 好好学习

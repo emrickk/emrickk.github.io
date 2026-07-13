@@ -3,6 +3,8 @@ title: 'I loved you once'
 description: ''
 pubDate: '2008-04-03'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'ilovedyouonce'
 ---
 
 我曾如此深爱你

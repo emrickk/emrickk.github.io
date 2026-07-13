@@ -3,6 +3,8 @@ title: '2007-08-15'
 description: ''
 pubDate: '2007-08-15'
 category: 'Repost'
+lang: 'zh'
+translationKey: 'sketch'
 ---
 
 天欲雨，淅沥声仿佛是从山的背面来的\

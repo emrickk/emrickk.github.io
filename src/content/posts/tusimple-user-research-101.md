@@ -3,6 +3,8 @@ title: 'Disruptive Technology Company User Research 101'
 description: ''
 pubDate: '2023-02-25'
 category: 'Things'
+lang: 'en'
+translationKey: 'tusimple-user-research-101'
 ---
 
 *The document was a small piece I wrote for the junior designers in my team when I was in TuSimple*

@@ -3,6 +3,8 @@ title: 'The Pitfalls of Blindly Following in China'
 description: ''
 pubDate: '2017-03-05'
 category: 'Words'
+lang: 'zh'
+translationKey: 'opinions-opinions'
 ---
 
 Chinese people: would you care about how an Indian scholar understands China? Most ordinary people probably wouldn't care. But when European and American scholars or even journalists talk about China from their perspectives, many people will care, become nervous, and even revise their own views and behaviors based on their opinions. Of course, some people will agree and say, "Yes, it is indeed unreasonable and absurd, and I have already thought so."
