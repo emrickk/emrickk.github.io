@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tone">
-  <defs>
-    <linearGradient id="tone-mark" x1="14" y1="12" x2="50" y2="52" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f8f8f8" />
-      <stop offset="0.58" stop-color="#d7d7d7" />
-      <stop offset="1" stop-color="#9a9a9a" />
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="48" height="48" rx="12" fill="url(#tone-mark)" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NeVeRtheLeSs">
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="#faf9f5" stroke="#d5d3c9" stroke-width="1.5" />
+  <path
+    d="M8,47 C13,21 23,19 26,33 C29,47 34,13 40,25 C44,33 48,27 56,18"
+    fill="none"
+    stroke="#d97757"
+    stroke-width="6.5"
+    stroke-linecap="round"
+  />
 </svg>
