@@ -2,6 +2,7 @@
 title: 'Don''t Make Me Think (About My Job): Sincerity, Expertise, and B2B Product Design'
 description: ''
 pubDate: '2025-08-17'
+heroImage: '../../assets/hero/2025/08/dont-make-me-think-cover.webp'
 category: 'Things'
 lang: 'en'
 translationKey: 'dont-make-me-think-about-my-job'
