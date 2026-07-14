@@ -1,5 +1,5 @@
 ---
-title: 'so...'
+title: '所以……'
 description: ''
 pubDate: '2015-03-10'
 category: 'Words'

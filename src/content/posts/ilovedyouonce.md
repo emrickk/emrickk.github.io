@@ -1,5 +1,5 @@
 ---
-title: 'I loved you once'
+title: '我曾经爱过你'
 description: ''
 pubDate: '2008-04-03'
 category: 'Repost'

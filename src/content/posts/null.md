@@ -1,5 +1,5 @@
 ---
-title: 'null'
+title: '坦率与孤独'
 description: ''
 pubDate: '2013-03-13'
 category: 'Words'
