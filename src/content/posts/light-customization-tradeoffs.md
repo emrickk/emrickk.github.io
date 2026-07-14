@@ -2,6 +2,7 @@
 title: 'Balancing Capability and Product Compromise in Light Customization'
 description: ''
 pubDate: '2024-06-01'
+heroImage: '../../assets/hero/2024/06/light-customization-tradeoffs-cover.jpg'
 category: 'Things'
 lang: 'en'
 translationKey: 'light-customization-tradeoffs'
