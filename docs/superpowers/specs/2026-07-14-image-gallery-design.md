@@ -16,7 +16,7 @@ Photo runs exist in two authoring shapes today:
 
    Renders as `<ul><li><img></li>...</ul>`: full-width images with stray list bullets.
 
-2. **Bare image paragraphs** separated by blank lines (bmw-x3-30i: one run of 14; bmw-330i: runs of 4 and 2; remarkable-2-review: 66 images in runs up to 18; plus their .zh/.en siblings):
+2. **Bare image paragraphs** separated by blank lines (bmw-x3-30i: one run of 14; bmw-330i: one run of 4 plus three separate 2-image pairs, so that post upgrades partially by design; remarkable-2-review: 66 images in runs up to 18; plus their .zh/.en siblings):
 
    ```markdown
    ![](https://cdn.anping.us/2020/09/a.webp)
@@ -53,7 +53,7 @@ New file `scripts/rehype/image-gallery.mjs`, registered in `astro.config.mjs` `m
 
 **Escape hatches for authors:** add any text to a list item (rule A) or between paragraphs (rule B) and the images render as ordinary full-width prose images.
 
-The plugin applies to `.md`, `.mdx`, and translation sibling bodies (`*.zh.md` / `*.en.md`), since all flow through the same markdown pipeline. RSS output gains a class attribute and, for rule B, a list where paragraphs used to be; feed readers render a plain sequence of images either way.
+The plugin applies to `.md`, `.mdx`, and translation sibling bodies (`*.zh.md` / `*.en.md`), since all flow through the same markdown pipeline. RSS is unaffected: the feed (`src/pages/rss.xml.js`) emits only title, description, date, and link, never rendered post bodies.
 
 ### 2. CSS: the grid
 
@@ -73,7 +73,7 @@ Changes to `src/scripts/image-lightbox.ts` and `src/components/ImageLightbox.ast
 
 - When an image inside `ul.image-gallery` is opened, the lightbox records the ordered list of that gallery's images and the current index.
 - New prev/next buttons in the dialog (chevron icons, styled like the existing close button) and ArrowLeft/ArrowRight key handling. Navigation wraps around.
-- A counter, for example `3 / 6`, renders in the caption area beneath the image; per-image `alt` and `em` captions still swap in as today.
+- A counter, for example `3 / 6`, renders as its own element beneath the caption paragraph (a sibling, so caption text and counter never share a line); per-image `alt` and `em` captions still swap in as today.
 - Prev/next buttons are hidden when the lightbox is opened from a standalone (non-gallery) image; behavior there is unchanged.
 - The existing focus trap (currently Tab always refocuses the close button) cycles across close/prev/next when the nav is visible.
 
