@@ -179,10 +179,6 @@ For the different tasks, users generally preferred simple tasks (Task 1, 2, and 
 
 **5. DISCUSSION**
 
-***---under construction---***
-
-***Include voice as an interface modal first, mental model and memory constraints highlight, Alexa help commands - training and help***
-
 **Speech as an interface modality**
 
 In voice interfaces, spoken language is primarily the method of input and output. This means that users speak to interact with the system distinctly differentiating them from graphic user interfaces (GUIs). Voice interfaces are sequential, dynamic, given the nature of the spoken language, and transient. In contract GUIs are simultaneous (multiple sets of information can be presented to the user), static and permanent. This consequentially suggests that voice interfaces would be better suited for certain kinds of tasks while visuals displays like a smartphone or desktop would better serve some tasks. This was reflected in our experiment. Tasks such as finding the weather were completed with ease and on the first try, unlike tasks that required more imagination in terms of framing inputs. These included identifying theatres at a given location, finding out show timings for a movie, etc.
@@ -225,23 +221,11 @@ Our experiment and discussion were primarily based on five tasks assigned in inc
 
 ---
 
-[1]
-
 [2] A mental model is a representation of something in the real world and how it is done from the user’s perspective.
 
 [3] A ‘signifier’ is some sort of indicator or signal of what an object does.
 
 [4] In this study task complexity is defined as those that rely on working memory and high cognitive load.
-
----
-
-[i] Verbal signifiers of various devices can be found in the appendix.
-
----
-
-[1] A mental model is a representation of something in the real world and how it is done from the user’s perspective.
-
-[2] A ‘signifier’ is some sort of indicator or signal of what an object does.
 
 ---
 
