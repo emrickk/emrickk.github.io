@@ -18,6 +18,7 @@ const posts = defineCollection({
       pubDate: z.coerce.date(),
       updatedDate: z.coerce.date().optional(),
       heroImage: z.optional(image()),
+      showHero: z.boolean().default(false),
       focusEffect: z.literal('scroll-dark').optional(),
       category: z.string().optional(),
       homeFeatured: z.boolean().default(false),
