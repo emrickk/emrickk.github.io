@@ -1,5 +1,5 @@
 ---
-title: 'once'
+title: '一生至少该有一次'
 description: ''
 pubDate: '2011-08-23'
 category: 'Words'

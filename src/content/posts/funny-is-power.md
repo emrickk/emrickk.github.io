@@ -1,5 +1,5 @@
 ---
-title: '有趣是第一生产力 '
+title: '有趣是第一生产力'
 description: ''
 pubDate: '2014-07-27'
 category: 'Repost'

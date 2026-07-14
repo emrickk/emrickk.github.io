@@ -1,5 +1,5 @@
 ---
-title: 'The Pitfalls of Blindly Following in China'
+title: '盲从的陷阱'
 description: ''
 pubDate: '2017-03-05'
 category: 'Words'
