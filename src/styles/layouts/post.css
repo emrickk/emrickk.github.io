@@ -240,6 +240,14 @@
   }
 }
 
+/* Upstream toc-rail clamps links to 2 lines, but overflow: hidden clips at the
+   padding edge, so headings that wrap to 3+ lines bleed a sliver of the hidden
+   line into the 4px bottom padding. Keep the spacing as margin instead. */
+.toc-rail__link {
+  padding-bottom: 0;
+  margin-bottom: 4px;
+}
+
 /* ── Tablet ─────────────────────────────── */
 @media (max-width: 900px) {
   .post-title {
