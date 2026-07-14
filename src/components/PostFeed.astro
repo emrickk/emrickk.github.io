@@ -4,6 +4,7 @@ import config from '../../astro-theme-config';
 import { getUiText } from '../ui';
 import { withBase } from '../utils/paths';
 import FormattedDate from './FormattedDate.astro';
+import LangText from './LangText.astro';
 import LangTitle from './LangTitle.astro';
 
 type PostEntry = CollectionEntry<'posts'>;
@@ -48,9 +49,11 @@ const categories = [
       .filter((category): category is string => Boolean(category))
   ),
 ].sort(sortByCategoryOrder);
+const categoryLabels = config.content.categoryLabels;
+const categoryLabel = (category: string) => categoryLabels[category] ?? { zh: category, en: category };
 const filters = categories.map((category) => ({
   key: `category:${category}`,
-  label: category,
+  label: categoryLabel(category),
   count: posts.filter((post) => post.data.category === category).length,
 }));
 ---
@@ -125,7 +128,9 @@ const filters = categories.map((category) => ({
                   data-feed-filter={filter.key}
                   aria-pressed="false"
                 >
-                  <span>{filter.label}</span>
+                  <span>
+                    <LangText text={filter.label} />
+                  </span>
                   <span class="feed-filter-count">{filter.count}</span>
                 </button>
               ))}
@@ -153,7 +158,7 @@ const filters = categories.map((category) => ({
           class="feed-item"
           data-feed-item
           data-category={post.data.category ?? ''}
-          data-search={`${post.data.title} ${post.data.titleZh ?? ''} ${post.data.titleEn ?? ''} ${post.data.description} ${post.data.category ?? ''}`.toLocaleLowerCase()}
+          data-search={`${post.data.title} ${post.data.titleZh ?? ''} ${post.data.titleEn ?? ''} ${post.data.description} ${post.data.category ? `${categoryLabel(post.data.category).zh} ${categoryLabel(post.data.category).en}` : ''}`.toLocaleLowerCase()}
           data-index={index}
         >
           <a href={withBase(`${basePath}/${postSlug(post.id)}/`)} class="feed-link">
@@ -170,7 +175,9 @@ const filters = categories.map((category) => ({
               {post.data.description && <p class="feed-desc">{post.data.description}</p>}
               {post.data.category && (
                 <div class="feed-meta">
-                  <span class="feed-category">{post.data.category}</span>
+                  <span class="feed-category">
+                    <LangText text={categoryLabel(post.data.category)} />
+                  </span>
                 </div>
               )}
             </div>
