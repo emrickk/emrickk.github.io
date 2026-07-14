@@ -96,4 +96,4 @@ Changes to `src/scripts/image-lightbox.ts` and `src/components/ImageLightbox.ast
 ## Risks
 
 - Rule B rewrites structure (paragraphs become a list) across legacy posts. Blast radius measured 2026-07-14: at threshold 3 the affected set is exactly bmw-x3-30i, bmw-330i, remarkable-2-review and their siblings. The escape hatches make any future exception a one-line author fix.
-- The current checkout is the `bilingual-toggle` branch, which is behind `origin/main`. Branch choice for implementation (fresh branch off `main` vs stacking on `bilingual-toggle`) is decided with Anping before implementation starts.
+- Concurrent agent sessions share this checkout on `main` (single-branch workflow, repo rules 6 to 8). Implementation commits land on `main` with explicit paths in single stage-and-commit steps; nothing is pushed without Anping's go-ahead, so local commits cannot deploy.
