@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/checkpoint.mjs save session-start --auto session-start --quiet || true",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
