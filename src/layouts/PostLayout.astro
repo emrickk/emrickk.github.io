@@ -19,6 +19,8 @@ type Props = CollectionEntry<'posts'>['data'] & {
   slug?: string;
   readingTime?: number;
   relatedPosts?: CollectionEntry<'posts'>[];
+  olderPost?: CollectionEntry<'posts'>;
+  newerPost?: CollectionEntry<'posts'>;
 };
 
 const {
@@ -34,6 +36,8 @@ const {
   readingTime,
   focusEffect,
   relatedPosts = [],
+  olderPost,
+  newerPost,
 } = Astro.props;
 
 const tr = getUiText();
@@ -117,6 +121,39 @@ const jsonLd = serializeScriptJson({
       <div class="prose" id="prose-content">
         <slot />
       </div>
+
+      {
+        (olderPost || newerPost) && (
+          <nav class="post-nav" aria-label={tr.postNav.label} data-pagefind-ignore="all">
+            {olderPost && (
+              <a href={`${postsBase}/${olderPost.id}/`} class="post-nav-card post-nav-older">
+                <span class="post-nav-label">{tr.postNav.older}</span>
+                <LangTitle
+                  class="post-nav-title"
+                  zh={olderPost.data.titleZh}
+                  en={olderPost.data.titleEn}
+                  orig={olderPost.data.lang ?? 'zh'}
+                  fallback={olderPost.data.title}
+                />
+                <FormattedDate class="post-nav-date" date={olderPost.data.pubDate} />
+              </a>
+            )}
+            {newerPost && (
+              <a href={`${postsBase}/${newerPost.id}/`} class="post-nav-card post-nav-newer">
+                <span class="post-nav-label">{tr.postNav.newer}</span>
+                <LangTitle
+                  class="post-nav-title"
+                  zh={newerPost.data.titleZh}
+                  en={newerPost.data.titleEn}
+                  orig={newerPost.data.lang ?? 'zh'}
+                  fallback={newerPost.data.title}
+                />
+                <FormattedDate class="post-nav-date" date={newerPost.data.pubDate} />
+              </a>
+            )}
+          </nav>
+        )
+      }
 
       {
         relatedPosts.length > 0 && (
