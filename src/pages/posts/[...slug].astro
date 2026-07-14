@@ -9,19 +9,26 @@ export async function getStaticPaths() {
     .filter((p) => !p.data.draft)
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-  return allPosts.map((post) => {
+  return allPosts.map((post, index) => {
     const slug = post.id;
     return {
       params: { slug },
       props: {
         post,
+        // allPosts is sorted newest-first, so neighbors are chronological.
+        newerPost: allPosts[index - 1],
+        olderPost: allPosts[index + 1],
         relatedPosts: allPosts
           .filter((p) => p.id !== post.id)
           .sort((a, b) => {
             const sameCategoryA = a.data.category && a.data.category === post.data.category ? 1 : 0;
             const sameCategoryB = b.data.category && b.data.category === post.data.category ? 1 : 0;
             if (sameCategoryA !== sameCategoryB) return sameCategoryB - sameCategoryA;
-            return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+            // Within the category, prefer posts closest in time to this one so
+            // every post gets its own trio instead of the category's newest 3.
+            const distA = Math.abs(a.data.pubDate.valueOf() - post.data.pubDate.valueOf());
+            const distB = Math.abs(b.data.pubDate.valueOf() - post.data.pubDate.valueOf());
+            return distA - distB;
           })
           .slice(0, 3),
       },
@@ -32,9 +39,11 @@ export async function getStaticPaths() {
 interface Props {
   post: CollectionEntry<'posts'>;
   relatedPosts: CollectionEntry<'posts'>[];
+  olderPost?: CollectionEntry<'posts'>;
+  newerPost?: CollectionEntry<'posts'>;
 }
 
-const { post, relatedPosts } = Astro.props;
+const { post, relatedPosts, olderPost, newerPost } = Astro.props;
 const orig = post.data.lang ?? 'zh';
 const otherLang = orig === 'zh' ? 'en' : 'zh';
 
@@ -55,6 +64,8 @@ const readingTime = Math.max(1, Math.round(readingTimeLib(post.body ?? '').minut
   readingTime={readingTime}
   focusEffect={post.data.focusEffect}
   relatedPosts={relatedPosts}
+  olderPost={olderPost}
+  newerPost={newerPost}
 >
   {
     Sibling ? (

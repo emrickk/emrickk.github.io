@@ -4,6 +4,11 @@ const ui = {
   updated: 'Updated',
   relatedPosts: 'Related',
   allPosts: 'All Posts →',
+  postNav: {
+    label: 'Post navigation',
+    older: '← Older',
+    newer: 'Newer →',
+  },
   postsEyebrow: 'Archive',
   postsTitle: 'All Posts',
   heroTitle: 'Keep thinking.',
