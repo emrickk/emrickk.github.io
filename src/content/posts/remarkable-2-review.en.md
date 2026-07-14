@@ -92,17 +92,17 @@ The back is designed with four non-slip footpads, which is very thoughtful. Of c
 
 **Hands-On Experience**
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-1-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-02-1-min.webp)
 
-![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-2-min.webp?ssl=1)![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-3-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-02-2-min.webp)![](https://cdn.anping.us/2021/03/Remarkable-02-3-min.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-4-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-02-4-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-5-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-02-5-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-6-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-02-6-min.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-02-7-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-02-7-min.webp)
 
 ![](https://cdn.anping.us/2021/03/Remarkable-02-1-min.webp)
 
@@ -126,27 +126,27 @@ This is the complete interface. There is a screen that summarizes all files, a n
 
 **Screen Quality and User Experience**
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-1-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-1-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-2-min.webp?ssl=1)![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-3-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-2-min.webp)![](https://cdn.anping.us/2021/03/Remarkable-03-3-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-4-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-4-min.webp)
 
-![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-5-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-5-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-6-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-6-min.webp)
 
-![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-7-min.webp?ssl=1)![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-8-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-7-min.webp)![](https://cdn.anping.us/2021/03/Remarkable-03-8-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-9-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-9-min.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-10-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-10-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-11-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-11-min.webp)
 
-![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-12-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-12-min.webp)
 
-![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-13-min.webp?ssl=1)![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-03-14-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-03-13-min.webp)![](https://cdn.anping.us/2021/03/Remarkable-03-14-min.webp)
 
 Let's talk about the writing experience first.
 
@@ -170,33 +170,33 @@ Finally, let's talk about the screen. It is a 226DPI screen, and in my normal us
 
 **The Official Folio**
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-1-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-04-1-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-2-min.webp?ssl=1)![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-3-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-04-2-min.webp)![](https://cdn.anping.us/2021/03/Remarkable-04-3-min.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-4-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-04-4-min.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-5-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-04-5-min.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-6-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-04-6-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-04-7-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-04-7-min.webp)
 
 I have a polymer-woven case, but the official website also offers a genuine leather option for an extra $50. However, I felt that was a bit too expensive. As for the case itself, I don't have much to say other than it has the same level of precision in engineering design as the device, fits perfectly, and has a good hand feel. The only issue is that after using this case, the device doesn't automatically sleep or wake up, so I have to manually press the power button each time I want to start writing. Hopefully, this issue can be fixed with a software update in the future.
 
 **The Pen**
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-1-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-05-1-min.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-2-min.webp?ssl=1)![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-3-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-05-2-min.webp)![](https://cdn.anping.us/2021/03/Remarkable-05-3-min.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-4-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-05-4-min.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-5-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-05-5-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-6-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-05-6-min.webp)
 
-![](https://i2.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-05-7-min.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-05-7-min.webp)
 
 I purchased the $99 pen with an eraser, but the official website also offers a white option without the eraser for $49.
 
@@ -206,9 +206,9 @@ Furthermore, the pen has a nice matte finish, feels comfortable to hold, and is 
 
 **Companion Software and More**
 
-![](https://i1.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-06-01-scaled.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-06-01-scaled.webp)
 
-![](https://i0.wp.com/emrick.us/wp-contenthttps://cdn.anping.us/2021/03/Remarkable-06-02.webp?ssl=1)
+![](https://cdn.anping.us/2021/03/Remarkable-06-02.webp)
 
 Finally, let me talk about the accompanying software. ReMarkable provides synchronization and management software for Mac, Windows, and mobile devices, and the platform support is quite good. In actual use, the performance is also very good. Dragging twenty or thirty PDFs at once won't crash or be unresponsive, and the transfer speed is also very fast. I have a 1G broadband at home, and the transfer speed is estimated to be around 30m/s (upload + download). The software design also conforms to modern aesthetics.
 
