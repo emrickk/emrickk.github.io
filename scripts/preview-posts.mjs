@@ -6,7 +6,8 @@
 // This script never pushes and never approves on its own.
 
 import { execFileSync } from 'node:child_process'
-import { existsSync, readFileSync } from 'node:fs'
+import { createHash } from 'node:crypto'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 // Image-heavy exemplar reviewed whenever a site-wide file changes. Update it
@@ -100,4 +101,49 @@ export function reviewTargets(root, changeSet) {
     }
   }
   return [...targets].sort()
+}
+
+export function hashChangeSet(root, changeSet) {
+  const files = {}
+  for (const path of changeSet) {
+    const p = join(root, path)
+    files[path] = existsSync(p)
+      ? createHash('sha256').update(readFileSync(p)).digest('hex')
+      : 'deleted'
+  }
+  return files
+}
+
+function manifestPath(root) {
+  return join(root, '.preview', 'manifest.json')
+}
+
+// approvedAt and baseRef are informational only; enforcement compares the
+// files map exclusively.
+export function writeManifest(root, files, { baseRef }) {
+  mkdirSync(join(root, '.preview'), { recursive: true })
+  writeFileSync(manifestPath(root), JSON.stringify({ approvedAt: new Date().toISOString(), baseRef, files }, null, 2) + '\n')
+}
+
+export function readManifest(root) {
+  try {
+    const parsed = JSON.parse(readFileSync(manifestPath(root), 'utf8'))
+    return parsed && parsed.files && typeof parsed.files === 'object' ? parsed : null
+  } catch {
+    return null
+  }
+}
+
+// Empty result means the approved map exactly equals the current one.
+export function manifestDiff(currentFiles, manifest) {
+  const approved = manifest.files
+  const problems = []
+  for (const [path, hash] of Object.entries(currentFiles)) {
+    if (!(path in approved)) problems.push(`${path}: not covered by the approval`)
+    else if (approved[path] !== hash) problems.push(`${path}: changed since approval`)
+  }
+  for (const path of Object.keys(approved)) {
+    if (!(path in currentFiles)) problems.push(`${path}: approved but no longer in the change set`)
+  }
+  return problems
 }

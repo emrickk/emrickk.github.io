@@ -7,12 +7,16 @@ import test from 'node:test'
 import {
   classifyPath,
   computeChangeSet,
+  hashChangeSet,
   isDraftPost,
+  manifestDiff,
   primaryPostPath,
+  readManifest,
   REPRESENTATIVE_POST,
   resolveBaseRef,
   reviewTargets,
   slugForPostFile,
+  writeManifest,
 } from './preview-posts.mjs'
 import { cleanup, makeFixtureRepo, run, write } from './test-helpers.mjs'
 
@@ -132,4 +136,51 @@ test('reviewTargets: site-wide changes add homepage and the representative post'
     reviewTargets(root, ['src/content/posts/alpha.md', 'src/styles/x.css']),
     ['/', '/posts/alpha/', `/posts/${REPRESENTATIVE_POST}/`],
   )
+})
+
+test('hashChangeSet: sha256 per file, deleted sentinel for missing files', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/alpha.md', 'abc')
+  const files = hashChangeSet(root, ['src/content/posts/alpha.md', 'src/content/posts/gone.md'])
+  // sha256 of "abc"
+  assert.equal(files['src/content/posts/alpha.md'], 'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad')
+  assert.equal(files['src/content/posts/gone.md'], 'deleted')
+})
+
+test('manifest round-trip and exact-match comparison', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/alpha.md', 'v1')
+  const files = hashChangeSet(root, ['src/content/posts/alpha.md'])
+  writeManifest(root, files, { baseRef: 'HEAD' })
+  const manifest = readManifest(root)
+  assert.equal(manifest.baseRef, 'HEAD')
+  assert.ok(manifest.approvedAt)
+  assert.deepEqual(manifestDiff(files, manifest), [])
+})
+
+test('manifestDiff reports edits, additions, and removals', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/alpha.md', 'v1')
+  write(root, 'src/content/posts/beta.md', 'v1')
+  writeManifest(root, hashChangeSet(root, ['src/content/posts/alpha.md', 'src/content/posts/beta.md']), { baseRef: 'HEAD' })
+  const manifest = readManifest(root)
+  write(root, 'src/content/posts/alpha.md', 'v2')
+  const current = hashChangeSet(root, ['src/content/posts/alpha.md', 'src/content/posts/gamma.md'])
+  const problems = manifestDiff(current, manifest)
+  assert.deepEqual(problems.sort(), [
+    'src/content/posts/alpha.md: changed since approval',
+    'src/content/posts/beta.md: approved but no longer in the change set',
+    'src/content/posts/gamma.md: not covered by the approval',
+  ])
+})
+
+test('readManifest returns null when missing or invalid', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  assert.equal(readManifest(root), null)
+  write(root, '.preview/manifest.json', 'not json')
+  assert.equal(readManifest(root), null)
 })
