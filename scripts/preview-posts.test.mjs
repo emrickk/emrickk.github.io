@@ -5,6 +5,7 @@ import { rmSync } from 'node:fs'
 import { join } from 'node:path'
 import test from 'node:test'
 import {
+  checkPostPreview,
   classifyPath,
   computeChangeSet,
   hashChangeSet,
@@ -183,4 +184,26 @@ test('readManifest returns null when missing or invalid', (t) => {
   assert.equal(readManifest(root), null)
   write(root, '.preview/manifest.json', 'not json')
   assert.equal(readManifest(root), null)
+})
+
+test('checkPostPreview: SKIP, FAIL without approval, PASS after, FAIL after edit', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const opts = { baseRef: 'HEAD' }
+
+  assert.equal(checkPostPreview(root, opts).status, 'SKIP')
+
+  write(root, 'src/content/posts/alpha.md', FM + 'v1\n')
+  const noManifest = checkPostPreview(root, opts)
+  assert.equal(noManifest.status, 'FAIL')
+  assert.match(noManifest.detail, /npm run preview-posts/)
+
+  writeManifest(root, hashChangeSet(root, computeChangeSet(root, opts)), { baseRef: 'HEAD' })
+  const approved = checkPostPreview(root, opts)
+  assert.equal(approved.status, 'PASS')
+
+  write(root, 'src/content/posts/alpha.md', FM + 'v2\n')
+  const stale = checkPostPreview(root, opts)
+  assert.equal(stale.status, 'FAIL')
+  assert.match(stale.detail, /changed since approval/)
 })

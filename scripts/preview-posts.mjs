@@ -147,3 +147,22 @@ export function manifestDiff(currentFiles, manifest) {
   }
   return problems
 }
+
+const REMEDIATION = 'run npm run preview-posts, review in the browser, then npm run preview-posts -- --approve'
+
+// Release-check check 12. Cheap: git plus hashing, no build or server.
+export function checkPostPreview(root, { baseRef } = {}) {
+  const changeSet = computeChangeSet(root, baseRef ? { baseRef } : {})
+  if (changeSet.length === 0) return { status: 'SKIP', detail: 'no preview-relevant changes' }
+  const manifest = readManifest(root)
+  if (!manifest) {
+    return { status: 'FAIL', detail: `${changeSet.length} preview-relevant change(s) with no approval; ${REMEDIATION}` }
+  }
+  const problems = manifestDiff(hashChangeSet(root, changeSet), manifest)
+  if (problems.length) {
+    const shown = problems.slice(0, 10).join('\n')
+    const more = problems.length > 10 ? `\n... and ${problems.length - 10} more` : ''
+    return { status: 'FAIL', detail: `${shown}${more}\n${REMEDIATION}` }
+  }
+  return { status: 'PASS', detail: `${changeSet.length} changed file(s) covered by preview approval` }
+}
