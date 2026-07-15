@@ -66,7 +66,75 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 
 同期群分析是我们研究的核心。我们拥有相对完善的数据收集体系，而通过用户数据来评估用户与应用的交互方式，是发现问题、确定后续研究方向的最佳方法之一。
 
-![](https://cdn.anping.us/2026/07/r360-weekly-user-constitution.webp)
+<div style="overflow-x: auto; margin: var(--space-8) 0;">
+<svg viewBox="0 0 1200 585" role="img" aria-label="堆叠柱状图，每周用户构成：新用户占比从10月第一周的59%降至3月第一周的29%，跨周连续活跃用户占比上升。" style="font-family: var(--font-sans); display: block; width: 100%; min-width: 720px;">
+<title>堆叠柱状图，每周用户构成：新用户占比从10月第一周的59%降至3月第一周的29%，跨周连续活跃用户占比上升。</title>
+<text x="1180" y="34" text-anchor="end" font-size="20" fill="var(--label-secondary)">每周用户构成</text>
+<line x1="95" y1="470" x2="1180" y2="470" stroke="var(--separator)" stroke-width="1"/>
+<text x="85" y="475" text-anchor="end" font-size="14" fill="var(--label-tertiary)">0%</text>
+<line x1="95" y1="370" x2="1180" y2="370" stroke="var(--separator)" stroke-width="1"/>
+<text x="85" y="375" text-anchor="end" font-size="14" fill="var(--label-tertiary)">25%</text>
+<line x1="95" y1="270" x2="1180" y2="270" stroke="var(--separator)" stroke-width="1"/>
+<text x="85" y="275" text-anchor="end" font-size="14" fill="var(--label-tertiary)">50%</text>
+<line x1="95" y1="170" x2="1180" y2="170" stroke="var(--separator)" stroke-width="1"/>
+<text x="85" y="175" text-anchor="end" font-size="14" fill="var(--label-tertiary)">75%</text>
+<line x1="95" y1="70" x2="1180" y2="70" stroke="var(--separator)" stroke-width="1"/>
+<text x="85" y="75" text-anchor="end" font-size="14" fill="var(--label-tertiary)">100%</text>
+<rect x="153.4" y="464.8" width="64" height="5.2" fill="#d04040"/>
+<rect x="153.4" y="435.2" width="64" height="29.6" fill="#de5b3d"/>
+<rect x="153.4" y="402.8" width="64" height="32.4" fill="#ec7940"/>
+<rect x="153.4" y="311.6" width="64" height="91.2" fill="#f0934d"/>
+<rect x="153.4" y="305.6" width="64" height="6.0" fill="#f3b465"/>
+<rect x="153.4" y="70.0" width="64" height="235.6" fill="#f7d373"/>
+<text x="185.4" y="496" text-anchor="middle" font-size="14" font-style="italic" fill="var(--label-secondary)">10月第一周</text>
+<rect x="334.3" y="450.0" width="64" height="20.0" fill="#d04040"/>
+<rect x="334.3" y="417.6" width="64" height="32.4" fill="#de5b3d"/>
+<rect x="334.3" y="379.2" width="64" height="38.4" fill="#ec7940"/>
+<rect x="334.3" y="332.0" width="64" height="47.2" fill="#f0934d"/>
+<rect x="334.3" y="305.6" width="64" height="26.4" fill="#f3b465"/>
+<rect x="334.3" y="70.0" width="64" height="235.6" fill="#f7d373"/>
+<text x="366.3" y="496" text-anchor="middle" font-size="14" font-style="italic" fill="var(--label-secondary)">11月第一周</text>
+<rect x="515.1" y="447.2" width="64" height="22.8" fill="#d04040"/>
+<rect x="515.1" y="432.4" width="64" height="14.8" fill="#de5b3d"/>
+<rect x="515.1" y="417.6" width="64" height="14.8" fill="#ec7940"/>
+<rect x="515.1" y="332.0" width="64" height="85.6" fill="#f0934d"/>
+<rect x="515.1" y="267.2" width="64" height="64.8" fill="#f3b465"/>
+<rect x="515.1" y="70.0" width="64" height="197.2" fill="#f7d373"/>
+<text x="547.1" y="496" text-anchor="middle" font-size="14" font-style="italic" fill="var(--label-secondary)">12月第一周</text>
+<rect x="695.9" y="447.2" width="64" height="22.8" fill="#d04040"/>
+<rect x="695.9" y="438.4" width="64" height="8.8" fill="#de5b3d"/>
+<rect x="695.9" y="412.0" width="64" height="26.4" fill="#ec7940"/>
+<rect x="695.9" y="300.0" width="64" height="112.0" fill="#f0934d"/>
+<rect x="695.9" y="244.0" width="64" height="56.0" fill="#f3b465"/>
+<rect x="695.9" y="70.0" width="64" height="174.0" fill="#f7d373"/>
+<text x="727.9" y="496" text-anchor="middle" font-size="14" font-style="italic" fill="var(--label-secondary)">1月第一周</text>
+<rect x="876.8" y="429.2" width="64" height="40.8" fill="#d04040"/>
+<rect x="876.8" y="367.2" width="64" height="62.0" fill="#de5b3d"/>
+<rect x="876.8" y="337.6" width="64" height="29.6" fill="#ec7940"/>
+<rect x="876.8" y="231.6" width="64" height="106.0" fill="#f0934d"/>
+<rect x="876.8" y="205.2" width="64" height="26.4" fill="#f3b465"/>
+<rect x="876.8" y="70.0" width="64" height="135.2" fill="#f7d373"/>
+<text x="908.8" y="496" text-anchor="middle" font-size="14" font-style="italic" fill="var(--label-secondary)">2月第一周</text>
+<rect x="1057.6" y="405.6" width="64" height="64.4" fill="#d04040"/>
+<rect x="1057.6" y="379.2" width="64" height="26.4" fill="#de5b3d"/>
+<rect x="1057.6" y="326.0" width="64" height="53.2" fill="#ec7940"/>
+<rect x="1057.6" y="222.8" width="64" height="103.2" fill="#f0934d"/>
+<rect x="1057.6" y="187.6" width="64" height="35.2" fill="#f3b465"/>
+<rect x="1057.6" y="70.0" width="64" height="117.6" fill="#f7d373"/>
+<text x="1089.6" y="496" text-anchor="middle" font-size="14" font-style="italic" fill="var(--label-secondary)">3月第一周</text>
+<rect x="110" y="512" width="16" height="16" fill="#f7d373"/>
+<text x="132" y="525" font-size="14" font-style="italic" fill="var(--label-secondary)">新用户</text>
+<rect x="207" y="512" width="16" height="16" fill="#f3b465"/>
+<text x="229" y="525" font-size="14" font-style="italic" fill="var(--label-secondary)">昨日用户</text>
+<rect x="319" y="512" width="16" height="16" fill="#f0934d"/>
+<text x="341" y="525" font-size="14" font-style="italic" fill="var(--label-secondary)">本周回流用户</text>
+<rect x="110" y="545" width="16" height="16" fill="#ec7940"/>
+<rect x="132" y="545" width="16" height="16" fill="#de5b3d"/>
+<rect x="154" y="545" width="16" height="16" fill="#d04040"/>
+<text x="182" y="558" font-size="14" font-style="italic" fill="var(--label-secondary)">跨周连续活跃用户</text>
+<text x="1180" y="525" text-anchor="end" font-size="14" font-style="italic" fill="var(--label-tertiary)">*每周新增用户的绝对数量保持稳定</text>
+</svg>
+</div>
 
 - 新用户占比低于预期。新用户比例的下行趋势说明，新用户对初始功能的满意率正在下降。
 - 功能使用频率偏低也是一个可能的原因，它会导致两周和四周的存续用户占比偏低、回流用户占比偏高。
@@ -111,7 +179,12 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 
 在研读了艾瑞、QuestMobile、易观和TalkingData发布的报告后，我们对当前的市场格局和用户需求有了新的认识。
 
-![](https://cdn.anping.us/2026/07/r360-industrial-analysis.webp)
+<div style="display: flex; flex-wrap: wrap; gap: var(--space-4); margin: var(--space-8) 0;">
+<div style="flex: 1 1 280px; background: var(--fill-tertiary); border-radius: var(--radius-lg); padding: var(--space-4) var(--space-5);"><div style="font-weight: var(--weight-semibold); font-size: var(--text-subheadline); color: var(--color-accent); margin-bottom: var(--space-2);">iResearch 艾瑞</div><div style="font-size: var(--text-callout); line-height: var(--leading-relaxed); color: var(--label-secondary);">用 <em>Apple HIG</em> 来设计 Android 应用，比使用 <em>MD 规范</em>更加流行。</div></div>
+<div style="flex: 1 1 280px; background: var(--fill-tertiary); border-radius: var(--radius-lg); padding: var(--space-4) var(--space-5);"><div style="font-weight: var(--weight-semibold); font-size: var(--text-subheadline); color: var(--color-accent); margin-bottom: var(--space-2);">QuestMobile</div><div style="font-size: var(--text-callout); line-height: var(--leading-relaxed); color: var(--label-secondary);">系统级的用户需求正在快速衰减。用户比以往更关注内容，也更不愿意去思考功能的逻辑。</div></div>
+<div style="flex: 1 1 280px; background: var(--fill-tertiary); border-radius: var(--radius-lg); padding: var(--space-4) var(--space-5);"><div style="font-weight: var(--weight-semibold); font-size: var(--text-subheadline); color: var(--color-accent); margin-bottom: var(--space-2);">TalkingData</div><div style="font-size: var(--text-callout); line-height: var(--leading-relaxed); color: var(--label-secondary);">4G 网络的普及与多样化的流量套餐，让用户越来越有必要关注流量管理。设备平均性能的提升，也让常驻在线的功能成为可能。</div></div>
+<div style="flex: 1 1 280px; background: var(--fill-tertiary); border-radius: var(--radius-lg); padding: var(--space-4) var(--space-5);"><div style="font-weight: var(--weight-semibold); font-size: var(--text-subheadline); color: var(--color-accent); margin-bottom: var(--space-2);">易观 Analysys</div><div style="font-size: var(--text-callout); line-height: var(--leading-relaxed); color: var(--label-secondary);">年轻人更愿意使用腾讯手机管家，或者干脆不使用手机安全类应用，而不是选择 360 手机卫士。</div></div>
+</div>
 
 ## 分析与愿景：让解决方案与创新想法相结合
 
@@ -183,7 +256,47 @@ _7.0版本主页上的新功能页签。_
 
 测试版上线后，我们每周分析一次数据表现。五周之后……
 
-![](https://cdn.anping.us/2026/07/r360-data-performance.webp)
+<div style="display: flex; flex-direction: column; gap: var(--space-4); margin: var(--space-8) 0;">
+<div style="background: var(--fill-quaternary); border-radius: var(--radius-xl); padding: var(--space-5) var(--space-6);"><div style="margin: 0 0 var(--space-3); font-size: var(--text-title-3); font-weight: var(--weight-bold); color: var(--label-primary);">DAU / 回流用户改善</div><div style="font-size: var(--text-headline); font-style: italic; color: var(--label-secondary); margin: var(--space-1) 0;">回流用户占比<strong>提升 11%</strong></div><div style="font-size: var(--text-headline); font-style: italic; color: var(--label-secondary); margin: var(--space-1) 0;">DAU 由下滑 15% 转为<strong>增长 1.1%</strong></div></div>
+<div style="background: var(--fill-quaternary); border-radius: var(--radius-xl); padding: var(--space-5) var(--space-6);"><div style="margin: 0 0 var(--space-3); font-size: var(--text-title-3); font-weight: var(--weight-bold); color: var(--label-primary);">留存改善</div><div style="overflow-x: auto;"><svg viewBox="0 0 1080 350" role="img" aria-label="分组柱状图，留存改善：次日留存 7.0 Beta 版 39.1%，6.x 版 33.9%，行业平均 30.0%；7日留存 18.1%、13.7%、11.0%；30日留存 8.9%、5.0%、5.5%。" style="font-family: var(--font-sans); display: block; width: 100%; min-width: 620px;">
+<title>分组柱状图，留存改善：次日留存 7.0 Beta 版 39.1%，6.x 版 33.9%，行业平均 30.0%；7日留存 18.1%、13.7%、11.0%；30日留存 8.9%、5.0%、5.5%。</title>
+<line x1="40" y1="300" x2="1040" y2="300" stroke="var(--separator)" stroke-width="1.5"/>
+<rect x="129.7" y="58.0" width="46" height="242.0" fill="#01b1c0"/>
+<text x="152.7" y="48.0" text-anchor="middle" font-size="15" fill="var(--label-secondary)">39.1%</text>
+<rect x="183.7" y="90.1" width="46" height="209.9" fill="#e3573c"/>
+<text x="206.7" y="80.1" text-anchor="middle" font-size="15" fill="var(--label-secondary)">33.9%</text>
+<rect x="237.7" y="114.3" width="46" height="185.7" fill="#ffa600"/>
+<text x="260.7" y="104.3" text-anchor="middle" font-size="15" fill="var(--label-secondary)">30.0%</text>
+<text x="206.7" y="328" text-anchor="middle" font-size="15" fill="var(--label-secondary)">次日留存</text>
+<rect x="463.0" y="188.0" width="46" height="112.0" fill="#01b1c0"/>
+<text x="486.0" y="178.0" text-anchor="middle" font-size="15" fill="var(--label-secondary)">18.1%</text>
+<rect x="517.0" y="215.2" width="46" height="84.8" fill="#e3573c"/>
+<text x="540.0" y="205.2" text-anchor="middle" font-size="15" fill="var(--label-secondary)">13.7%</text>
+<rect x="571.0" y="231.9" width="46" height="68.1" fill="#ffa600"/>
+<text x="594.0" y="221.9" text-anchor="middle" font-size="15" fill="var(--label-secondary)">11.0%</text>
+<text x="540.0" y="328" text-anchor="middle" font-size="15" fill="var(--label-secondary)">7日留存</text>
+<rect x="796.3" y="244.9" width="46" height="55.1" fill="#01b1c0"/>
+<text x="819.3" y="234.9" text-anchor="middle" font-size="15" fill="var(--label-secondary)">8.9%</text>
+<rect x="850.3" y="269.0" width="46" height="31.0" fill="#e3573c"/>
+<text x="873.3" y="259.0" text-anchor="middle" font-size="15" fill="var(--label-secondary)">5.0%</text>
+<rect x="904.3" y="266.0" width="46" height="34.0" fill="#ffa600"/>
+<text x="927.3" y="256.0" text-anchor="middle" font-size="15" fill="var(--label-secondary)">5.5%</text>
+<text x="873.3" y="328" text-anchor="middle" font-size="15" fill="var(--label-secondary)">30日留存</text>
+</svg></div><div style="margin-top: var(--space-2);"><span style="display: inline-flex; align-items: center; gap: 6px; margin-right: var(--space-4); font-size: var(--text-footnote); color: var(--label-secondary);"><span style="width: 11px; height: 11px; border-radius: 50%; background: #01b1c0; display: inline-block;"></span>7.0 Beta 版留存率</span><span style="display: inline-flex; align-items: center; gap: 6px; margin-right: var(--space-4); font-size: var(--text-footnote); color: var(--label-secondary);"><span style="width: 11px; height: 11px; border-radius: 50%; background: #e3573c; display: inline-block;"></span>6.x 版留存率</span><span style="display: inline-flex; align-items: center; gap: 6px; margin-right: var(--space-4); font-size: var(--text-footnote); color: var(--label-secondary);"><span style="width: 11px; height: 11px; border-radius: 50%; background: #ffa600; display: inline-block;"></span>行业平均</span></div></div>
+<div style="background: var(--fill-quaternary); border-radius: var(--radius-xl); padding: var(--space-5) var(--space-6);"><div style="margin: 0 0 var(--space-3); font-size: var(--text-title-3); font-weight: var(--weight-bold); color: var(--label-primary);">用户积极行为改善</div><div style="display: flex; flex-wrap: wrap; gap: var(--space-4); margin-bottom: var(--space-4);">
+<div style="flex: 1 1 220px;"><span style="font-size: 1.9rem; font-weight: var(--weight-bold); color: var(--label-primary);">4.1</span> <span style="font-size: var(--text-headline); color: var(--label-primary);">个活跃功能</span><div style="font-size: var(--text-footnote); font-style: italic; color: var(--label-tertiary); margin-top: 2px;">7.0 Beta 版人均功能使用</div></div>
+<div style="flex: 1 1 220px;"><span style="font-size: 1.9rem; font-weight: var(--weight-bold); color: var(--label-primary);">2.9</span> <span style="font-size: var(--text-headline); color: var(--label-primary);">个活跃功能</span><div style="font-size: var(--text-footnote); font-style: italic; color: var(--label-tertiary); margin-top: 2px;">6.x 版人均功能使用</div></div>
+</div><svg viewBox="0 0 460 230" role="img" aria-label="柱状对比图，功能使用频次改善：改版前每天 2.6 次，改版后每天 3.9 次。" style="font-family: var(--font-sans); display: block; width: 100%; max-width: 340px;">
+<title>柱状对比图，功能使用频次改善：改版前每天 2.6 次，改版后每天 3.9 次。</title>
+<line x1="20" y1="190" x2="440" y2="190" stroke="var(--separator)" stroke-width="1.5"/>
+<rect x="130" y="97.1" width="64" height="92.9" fill="#ffa600"/>
+<text x="162" y="69.1" text-anchor="middle" font-size="17" font-weight="600" font-style="italic" fill="var(--label-primary)">改版前</text>
+<text x="162" y="87.1" text-anchor="middle" font-size="14" font-style="italic" fill="var(--label-secondary)">2.6 次/天</text>
+<rect x="280" y="50.7" width="64" height="139.3" fill="#e3573c"/>
+<text x="312" y="22.7" text-anchor="middle" font-size="17" font-weight="600" font-style="italic" fill="var(--label-primary)">改版后</text>
+<text x="312" y="40.7" text-anchor="middle" font-size="14" font-style="italic" fill="var(--label-secondary)">3.9 次/天</text>
+</svg><div style="text-align: center; font-size: var(--text-subheadline); font-weight: var(--weight-semibold); color: var(--label-primary); margin-top: var(--space-1);">功能使用频次改善</div></div>
+</div>
 
 我们成功止住了日活跃用户的下滑，DAU甚至比原先增长了3.1%。
 
