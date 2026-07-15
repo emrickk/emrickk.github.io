@@ -1,7 +1,7 @@
 ---
 translationKey: 'two-days-in-the-redwoods'
 lang: 'zh'
-title: '红杉林两日'
+title: '另一种时间'
 ---
 
 去年七月，我们在加州最北端的海岸边待了一个周末，那里是红杉生长的地方。照片在文件夹里躺了一年，如今翻出来整理，那两天却比想象中清晰：一家老旅馆，数不清的蕨类，还有一场怎么也不肯散的雾。
@@ -10,10 +10,7 @@ title: '红杉林两日'
 
 我们住在一家老旅馆里。客厅大概一百年都没怎么变过：花纹墙纸，贴着瓷砖的壁炉，壁炉架上立着烛台。窗下那张书桌，晚上坐下来写几行字刚刚好。
 
-<div class="img-grid">
-  <img src="https://cdn.anping.us/2026/07/redwood-inn-parlor.webp" alt="旅馆客厅，瓷砖壁炉和老墙纸" loading="lazy" />
-  <img src="https://cdn.anping.us/2026/07/redwood-inn-desk.webp" alt="在旅馆书桌前写字" loading="lazy" />
-</div>
+![旅馆客厅，瓷砖壁炉和老墙纸](https://cdn.anping.us/2026/07/redwood-inn-parlor.webp)
 
 下午我们走进林子。照片其实没法让人对这些树的尺度有任何准备：树干像墙一样立起来，光被切成一块一块落下来，蕨类在齐肩的高度把小径盖住。
 
