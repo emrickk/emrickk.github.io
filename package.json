@@ -40,6 +40,7 @@
     "images": "node scripts/images/process.mjs",
     "images:migrate": "node scripts/images/migrate.mjs",
     "test:images": "node --test \"scripts/images/*.test.mjs\"",
+    "test:rehype": "node --test \"scripts/rehype/*.test.mjs\"",
     "checkpoint": "node scripts/checkpoint.mjs",
     "release-check": "node scripts/release-check.mjs",
     "test:safety": "node --test scripts/checkpoint.test.mjs scripts/release-check.test.mjs"
