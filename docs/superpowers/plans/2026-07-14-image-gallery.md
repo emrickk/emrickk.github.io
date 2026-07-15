@@ -693,11 +693,21 @@ Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" -- src/components/ImageL
 
 ---
 
-### Task 4: Documentation
+### Task 4: Documentation and review follow-ups
 
 **Files:**
 - Modify: `CLAUDE.md` (commands table)
 - Modify: `docs/images.md` (authoring flow)
+- Modify: `.claude/skills/release-check/SKILL.md` (stale check numbering after Task 2's renumbering)
+- Modify: `scripts/rehype/image-gallery.mjs` and its test (accessibility follow-up)
+
+- [ ] **Step 0a: Fix release-check SKILL.md numbering**
+
+Task 2 renumbered the CHECKS array. In `.claude/skills/release-check/SKILL.md`: line 12's quick-mode description must say checks 1 to 9 and include "rehype tests" in the enumeration; line 17's full-mode description must reference checks 10 (CDN images) and 11 (internal links).
+
+- [ ] **Step 0b: Restore list semantics for VoiceOver**
+
+`list-style: none` strips the list role in WebKit. In `scripts/rehype/image-gallery.mjs`, set `role: 'list'` on gallery lists: in `addGalleryClass`, also set `props.role = 'list'` (rename the helper to `markAsGallery` if clearer), and in `buildGallery` add `role: 'list'` to the built ul's properties. Update the affected test assertions (rule A class assertions stay; add assertions that `properties.role === 'list'` on tagged and built galleries). Run `npm run test:rehype`: all pass.
 
 - [ ] **Step 1: Add the test command to CLAUDE.md**
 
@@ -719,7 +729,11 @@ gallery with lightbox navigation (2+ images). Legacy runs of 3+ bare
 image paragraphs are auto-converted at build time. To keep images
 full-width instead, add any text to a list item or between paragraphs.
 Linked images never become gallery tiles. Detection lives in
-`scripts/rehype/image-gallery.mjs`.
+`scripts/rehype/image-gallery.mjs`. For a deliberate side-by-side
+pair inside prose (charts, before/after), the manual
+`<div class="img-grid">` wrapper is still the right tool: it keeps
+original aspect ratios and collapses to one column on phones, while
+galleries crop to 16:9 and stay two-up everywhere.
 ```
 
 - [ ] **Step 3: Commit**
@@ -728,7 +742,10 @@ Linked images never become gallery tiles. Detection lives in
 git branch --show-current
 git commit -m "Document the photo gallery convention and test command
 
-Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" -- CLAUDE.md docs/images.md
+Also fix stale release-check skill numbering and restore the list
+role on gallery uls for VoiceOver (Task 2 review follow-ups).
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" -- CLAUDE.md docs/images.md .claude/skills/release-check/SKILL.md scripts/rehype/image-gallery.mjs scripts/rehype/image-gallery.test.mjs
 ```
 
 ---
