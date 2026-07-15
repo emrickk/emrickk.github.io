@@ -1,22 +1,22 @@
 ---
-title: 'reMarkable 2'
+title: 'reMarkable 2 使用体验'
 description: ''
 pubDate: '2021-03-14'
 heroImage: '../../assets/hero/2021/03/Remarkable-01-1-min.jpeg'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'remarkable-2-review'
-titleZh: 'reMarkable 2'
+titleZh: 'reMarkable 2 使用体验'
 titleEn: 'reMarkable 2'
 ---
 
-I have a habit of keeping everything, including my thoughts, on notes for a long time. However, after losing three of my notebooks last year when I moved to California, I started forcing myself to scan all my notes every night before sleeping. Scanning plus OCR is sufficient for saving and retrieving notes, but it is painful to roll the immense boulder up the hill like Sisyphus every night. So, I had the idea to digitalize my note-taking process.
+我一直有把所有东西（包括各种想法）都记在笔记本上的习惯。但去年搬来加州的时候弄丢了三本笔记本，之后我开始强迫自己每天睡前把所有笔记扫描一遍。扫描加 OCR 用来保存和检索笔记是够用了，但每天晚上都像西西弗斯推巨石上山，实在太痛苦了。于是我动了把记笔记这件事数字化的念头。
 
-I tried the iPad and Apple Pencil solution, but the writing experience was not quite good. The screen was too hard and slippery, and attaching a 'paper-like cover' on the screen made the display blurry, so I paused the plan. However, after a heavy giant book smashed me in the face while I was watching it in bed last week, I finally decided to order the ReMarkable 2 notebook.
+我试过 iPad 加 Apple Pencil 的方案，但书写体验并不好。屏幕太硬太滑，贴上「类纸膜」之后屏幕又变得模糊，所以这个计划就搁置了。直到上周，我躺在床上看书的时候被一本巨厚的书砸到了脸，终于下定决心下单了 reMarkable 2。
 
-Don't ask me about my decision-making process... I bought it simply because The Verge gave it the highest rating (at least to me) among all the e-ink notebooks. I bought the ReMarkable 2 (USD 399), the pencil with an eraser (USD 99, and the funny thing is that I had to pay an extra 50 dollars to get the digital eraser... I miss the time when erasers were only 0.5 dollars each), and the polymer weaver folio from the official website. ReMarkable is very efficient, and I received all of my items only four days after I placed my order. They were shipped from China (of course...).
+别问我的决策过程……我买它单纯是因为 The Verge 给了它（至少在我看来）所有电子墨水笔记本里最高的评价。我在官网买了 reMarkable 2（399 美元）、带橡皮擦的笔（99 美元，好笑的是我得多花 50 美元才能买到这块数字橡皮……真怀念橡皮五毛钱一块的年代），还有聚合物编织保护壳。reMarkable 的效率很高，下单四天后所有东西就都到了。发货地是中国（当然了……）。
 
-**Packaging and Industrial Design**
+**包装和工业设计**
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-1-min.webp)
 
@@ -54,47 +54,47 @@ Don't ask me about my decision-making process... I bought it simply because The 
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-1-min.webp)
 
-Book +Stylus+Folios. The packaging design is pretty good tho.
+本体、笔和保护壳。包装设计还挺好看的。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-3-min.webp)
 
-The description of the thickness of the book. Pretty proud of the thickness ha
+包装上关于机身厚度的说明，看来他们对这个厚度相当自豪哈
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-4-min.webp)
 
-Tear!
+拆！
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-2-min.webp)
 
-A black inner box about open the first layer
+打开第一层，是一个黑色的内盒
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-5-min.webp)
 
-Book, cable, quick start guide
+本体、数据线、快速入门指南
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-8-min.webp)
 
-The cable is also 'tangle-free', but I decided not to open it since I already have too many Type-C cables laying around in my apartment.
+数据线也是「防缠绕」的，不过我家里的 Type-C 线已经太多了，决定不拆了。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-10-min.webp)
 
-Regarding the book itself, the screen does not consume any power if the image displayed on it is still. Therefore, the screen displays the welcome information by itself instead of a sticker or other alternative.
+至于本体，由于电子墨水屏在显示静态画面时不耗电，所以欢迎信息直接显示在屏幕上，而不是用贴纸之类的替代品。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-11-min.webp)
 
-The part of the border used for gripping is made of metal, with a slightly frosted feel, and the grip is very comfortable. My hands are of normal male size, and the width is also comfortable to hold.
+边框上用来握持的部分是金属材质，略带磨砂手感，握起来很舒服。我的手是正常男性的尺寸，这个宽度握着也舒服。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-13-min.webp)
 
-The power button in the upper right corner is harmoniously placed and looks good, but it's really too far away to reach and touch...
+右上角的电源键放得挺和谐，也好看，但真的太远了，根本够不着……
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-13-min.webp)
 
-On the side, you can see that it is really thin at 4.7mm. Compared with a small bottle of Coca-cola, it is basically the height of the base part. Thanks to its thin and lightweight (400g) design, it feels good to hold in your hand. You can hold it with one hand and write with the other hand, or put it on your lap to write and it feels stable. Even after a long time, you won't feel tired. I haven't used it to view things for a long time, but I feel that it shouldn't be too tiring.
+从侧面可以看到它是真的薄，只有 4.7mm，和一小瓶可口可乐比，基本就是瓶底那一圈的高度。得益于轻薄的设计（400g），它拿在手里的感觉很好：可以一只手拿着另一只手写，也可以放在腿上写，都很稳，写很久也不会累。我还没有长时间用它看过东西，但感觉应该也不会太累。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-01-16-min.webp)
 
-The back is designed with four non-slip footpads, which is very thoughtful. Of course, if you use a case, there is not much difference...
+背面设计了四个防滑脚垫，很贴心。当然，套上保护壳之后就没什么区别了……
 
 **上手体验**
 
@@ -112,23 +112,23 @@ The back is designed with four non-slip footpads, which is very thoughtful. Of c
 
 ![](https://cdn.anping.us/2021/03/Remarkable-02-1-min.webp)
 
-The getting started guide process of ReMarkable 2 is quite comprehensive, basically covering all the functions and content that the system can provide. However, the process is not lengthy, and you won't have to go through dozens of annoying new user guides as with some software during the first startup. Of course, this is also related to the fact that ReMarkable has basically no extra functions...
+reMarkable 2 的新手引导做得相当全面，基本涵盖了系统能提供的所有功能和内容。但流程并不冗长，不会像某些软件第一次启动时那样，让你点掉几十个烦人的新手提示。当然，这也和 reMarkable 基本没什么多余功能有关……
 
 ![](https://cdn.anping.us/2021/03/Remarkable-02-2-min.webp)
 
-This page allows you to experience what it feels like when the e-ink screen is fully refreshed... But to be honest, the screen quality of ReMarkable is already very good. I compared it with a 13-inch e-reader from Onyx and Kindle Oasis at my friend's house, and I feel that ReMarkable looks the most comfortable.
+这一页让你体验一下电子墨水屏全刷新是什么感觉……不过说实话，reMarkable 的屏幕素质已经非常好了。我在朋友家对比过文石的 13 寸阅读器和 Kindle Oasis，感觉还是 reMarkable 看着最舒服。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-02-3-min.webp)
 
-Cloud service setup. Yes... ReMarkable does not support any third-party services... Uploading files or backing up notes written on the device requires the use of its own cloud service. Considering that ReMarkable is a start-up company that focuses on a very niche market, there are still concerns about the reliability and continuity of the service... I estimate that after using it for a while, I will need to consider exporting notes through methods such as Rehackable.
+云服务设置。是的……reMarkable 不支持任何第三方服务……往设备里传文件，或者备份在设备上写的笔记，都得用它自家的云服务。考虑到 reMarkable 是一家专注于非常小众市场的创业公司，这项服务的可靠性和持续性还是让人有点担心……我估计用一阵子之后，就得研究通过 Rehackable 之类的方式导出笔记了。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-02-4-min.webp)
 
-After entering the system, there is an introduction to various buttons... It's written in detail, but I don't think anyone will read it.
+进入系统之后是各种按键的介绍……写得很详细，但我觉得不会有人看。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-02-7-min.webp)
 
-This is the complete interface. There is a screen that summarizes all files, a note browsing interface, a PDF browsing interface, and an EPUB browsing interface. That's it.
+这就是全部界面了：一个汇总所有文件的页面、一个笔记浏览界面、一个 PDF 浏览界面、一个 EPUB 浏览界面。没了。
 
 **屏幕素质和用户体验**
 
@@ -154,27 +154,27 @@ This is the complete interface. There is a screen that summarizes all files, a n
 
 ![](https://cdn.anping.us/2021/03/Remarkable-03-13-min.webp)![](https://cdn.anping.us/2021/03/Remarkable-03-14-min.webp)
 
-Let's talk about the writing experience first.
+先说书写体验。
 
-The ReMarkable 2 website mentions that the writing latency is 21 ms, but from my usage experience, there is actually almost no delay. The pen strokes are very consistent with the pen, basically the same as writing on real paper. Of course, numerically, the latency is still higher than that of the Apple Pencil or Samsung's stylus, but personally, I feel that unless you put the two devices together for comparison, you can't really feel the difference.
+reMarkable 2 的官网说书写延迟是 21 毫秒，但从我的实际体验来看，几乎感觉不到延迟，笔迹非常跟手，基本和在真纸上写字一样。当然，从数字上看，这个延迟还是比 Apple Pencil 或者三星的手写笔高，但我个人觉得，除非把两台设备放在一起对比，否则根本感觉不出差别。
 
-Regarding the writing experience, the slightly frosted screen of ReMarkable 2 and the interaction with the pen tip are also very natural. I can simulate my writing habits with my real signature pen (I use a 0.5mm Mitsubishi water-based pen) and paper and get a very similar writing experience and results. Of course, this may also be because the tip of the pen I use is relatively thin, so my writing posture is already somewhat limited by my real pen.
+书写手感方面，reMarkable 2 略带磨砂的屏幕和笔尖的交互也非常自然。我可以按平时用真笔（我用的是 0.5mm 的三菱水笔）在纸上写字的习惯来写，得到非常接近的书写体验和效果。当然，这也可能是因为我用的笔尖本来就比较细，书写姿势早就被真笔限制住了。
 
-However, the pressure sensitivity of ReMarkable 2 seems a bit strange. The website mentions 4096 levels of pressure sensitivity, but in actual use, the force seems to have little effect on the writing results.
+不过 reMarkable 2 的压感有点奇怪。官网说有 4096 级压感，但实际用下来，力度对书写效果似乎没什么影响。
 
-Overall, I am quite satisfied with the writing experience of ReMarkable 2. I can't say that it completely replicates real writing, but at least it's about 90% in line with my writing habits.
+总体来说，我对 reMarkable 2 的书写体验相当满意。不能说它完全复刻了真实书写，但至少 90% 符合我的书写习惯。
 
-Now let's talk about the user experience of the software and hardware.
+再说说软硬件的使用体验。
 
-The ReMarkable 2 hardware is quite weak... With only 1GB of RAM, it can actually lag when opening larger PDFs. In addition, the system's support for reading is very, very limited, and the summary of system functions outside of writing is "can open PDF and EPUB," nothing more. Functions like adjusting font size and line spacing are not included. ReMarkable said this is a deliberate trade-off and hopes users can focus on writing. But I am already very focused on writing, and basically just use it as a paper notebook. Sometimes, I am shocked by the system's simplicity and slow response when I want to read something. The overall system response cannot be called "laggy," but it is definitely far from "very smooth."
+reMarkable 2 的硬件相当孱弱……只有 1GB 内存，打开大一点的 PDF 真的会卡。另外，系统对阅读的支持非常非常有限，书写之外的系统功能总结起来就是「能打开 PDF 和 EPUB」，仅此而已，连调字号、调行距这种功能都没有。reMarkable 说这是刻意的取舍，希望用户能专注于书写。可我已经非常专注于书写了，基本就把它当纸质笔记本用，只是偶尔想读点东西的时候，还是会被系统的简陋和迟缓震惊到。整个系统的响应速度不能说「卡顿」，但离「非常流畅」绝对差得远。
 
-Regarding software related to writing, ReMarkable has two functions that I really like. One is that it provides a lot of background options. You can see from my attached picture that there are various grids to meet different needs. In addition, when writing, ReMarkable has a concept of layers similar to Photoshop, which means you can annotate your notes or just separate the images and text. This function is very effective when I need to repeatedly modify and consider a certain problem.
+与书写相关的软件方面，reMarkable 有两个我非常喜欢的功能。一是它提供了很多背景模板，从我附的图里可以看到，各种格子应有尽有，能满足不同的需求。二是书写时 reMarkable 有类似 Photoshop 的图层概念，也就是说，你可以在笔记上做批注，或者把图和文字分开。在我需要反复修改、琢磨某个问题的时候，这个功能非常好用。
 
-ReMarkable has basically provided all the other functions related to writing, such as note recognition, note organization and classification, and tags. It is still a qualified notebook...
+其他与书写相关的功能，比如笔迹识别、笔记的整理分类、标签，reMarkable 基本都提供了。还是一个合格的笔记本的……
 
-Finally, let's talk about the screen. It is a 226DPI screen, and in my normal usage scenario, there is definitely no noticeable graininess. The screen grayscale is sufficient, and the displayed images are sharp enough. I have attached two screenshots below. Of course, this is a black-and-white screen, so I won't talk about color accuracy. When reading, I often forget that I'm staring at an electronic screen. However, a drawback is that the screen does not support backlighting, which can be interpreted as a way of staying true to the original intention of replicating the experience of reading a physical book. But every time I think about its $399 price tag, I can't convince myself.
+最后说说屏幕。这是一块 226 DPI 的屏幕，在我的正常使用场景下，绝对看不出颗粒感。屏幕灰阶足够，显示的图片也足够锐利，下面附了两张截图。当然，这是块黑白屏幕，色准就不谈了。阅读的时候，我经常忘记自己盯着的是一块电子屏幕。不过有个缺点：屏幕不支持背光。这可以理解为坚持「还原纸质书阅读体验」的初心，但每次想到它 399 美元的价格，我就没法说服自己。
 
-**原状保护壳**
+**原装保护壳**
 
 ![](https://cdn.anping.us/2021/03/Remarkable-04-1-min.webp)
 
@@ -188,7 +188,7 @@ Finally, let's talk about the screen. It is a 226DPI screen, and in my normal us
 
 ![](https://cdn.anping.us/2021/03/Remarkable-04-7-min.webp)
 
-I have a polymer-woven case, but the official website also offers a genuine leather option for an extra $50. However, I felt that was a bit too expensive. As for the case itself, I don't have much to say other than it has the same level of precision in engineering design as the device, fits perfectly, and has a good hand feel. The only issue is that after using this case, the device doesn't automatically sleep or wake up, so I have to manually press the power button each time I want to start writing. Hopefully, this issue can be fixed with a software update in the future.
+我买的是聚合物编织款的保护壳，官网还有真皮的选项，要多加 50 美元，但我觉得有点太贵了。保护壳本身没什么好说的：工程设计和设备本体一样精密，严丝合缝，手感也好。唯一的问题是套上这个壳之后，设备不会自动休眠和唤醒，每次想写点东西都得手动按一下电源键。希望以后的软件更新能修掉这个问题。
 
 **笔**
 
@@ -204,11 +204,11 @@ I have a polymer-woven case, but the official website also offers a genuine leat
 
 ![](https://cdn.anping.us/2021/03/Remarkable-05-7-min.webp)
 
-I purchased the $99 pen with an eraser, but the official website also offers a white option without the eraser for $49.
+我买的是 99 美元带橡皮擦的笔，官网还有 49 美元不带橡皮擦的白色款。
 
-Firstly, the eraser is a somewhat useless feature. It doesn't feel natural when interacting with the screen and gives the impression that it might scratch the screen. If you're not obsessed with having a black pen, the $49 pen without the eraser is a better choice. Additionally, the eraser function on the Remarkable 2 itself works well. You can erase by stroke, by area, or like a real eraser, only erasing the area touched by the pen.
+先说橡皮擦，这是个有点鸡肋的功能。它和屏幕的交互并不自然，还总给人一种要刮花屏幕的感觉。如果你不执着于黑色的笔，49 美元不带橡皮擦的那款是更好的选择。况且 reMarkable 2 系统自带的橡皮擦功能就很好用：可以按笔画擦、按区域擦，也可以像真橡皮一样，只擦掉笔尖碰到的地方。
 
-Furthermore, the pen has a nice matte finish, feels comfortable to hold, and is a good size for my normal-sized male hand. The grip is much better than the Apple Pencil.
+另外，这支笔的磨砂质感很不错，握着舒服，对我这双正常尺寸的男性的手来说，粗细也合适，握持感比 Apple Pencil 好多了。
 
 **配套软件和其他**
 
@@ -216,36 +216,36 @@ Furthermore, the pen has a nice matte finish, feels comfortable to hold, and is 
 
 ![](https://cdn.anping.us/2021/03/Remarkable-06-02.webp)
 
-Finally, let me talk about the accompanying software. ReMarkable provides synchronization and management software for Mac, Windows, and mobile devices, and the platform support is quite good. In actual use, the performance is also very good. Dragging twenty or thirty PDFs at once won't crash or be unresponsive, and the transfer speed is also very fast. I have a 1G broadband at home, and the transfer speed is estimated to be around 30m/s (upload + download). The software design also conforms to modern aesthetics.
+最后说说配套软件。reMarkable 提供了 Mac、Windows 和移动端的同步管理软件，平台支持相当不错。实际用起来表现也很好：一次拖二三十个 PDF 进去不会崩溃或者无响应，传输速度也很快，我家里是 1G 宽带，传输速度估计在 30m/s 左右（上传加下载）。软件的设计也符合现代审美。
 
-ReMarkable also provides a clipper plugin for Chrome, which I won't go into detail about, but it is very useful.
+reMarkable 还提供了一个 Chrome 剪藏插件，这里就不展开了，但确实很好用。
 
-Finally x2, I would like to talk about the support for Chinese.
+最后的最后，说说中文支持。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-02-6-min.webp)
 
-ReMarkable supports handwriting recognition for nearly 30 languages, but Chinese, both simplified and traditional, is not included. The menu language is also not available in Chinese. There is a high probability that imported Chinese EPUB and PDF files will display as various squares. It seems that ReMarkable is determined not to enter the Chinese market. Well...
+reMarkable 支持将近 30 种语言的手写识别，但简体和繁体中文都不在其中，菜单语言也没有中文，导入的中文 EPUB 和 PDF 大概率会显示成各种方块。看来 reMarkable 是铁了心不打算进中国市场了。行吧……
 
 **总结**
 
-Pros:
+优点：
 
-* Excellent digital writing tool that provides near-perfect replication of writing on paper
+* 出色的数字书写工具，几乎完美还原了在纸上书写的体验
 
-- Great screen, despite not being designed primarily for reading, provides a visually pleasing experience
+- 屏幕素质很好，虽然不是为阅读设计的，但观感很舒服
 
-- Exceptional industrial design, striking a great balance between weight, size, and materials
+- 工业设计出众，在重量、尺寸和材质之间取得了很好的平衡
 
-Cons:
+缺点：
 
-* Non-writing functionalities are severely limited, with no third-party software support and an apparent lack of future support
+* 书写之外的功能极其有限，没有第三方软件支持，而且看起来以后也不会有
 
-- Limited storage space that cannot be expanded
+- 存储空间有限，且无法扩展
 
-- High price tag with low value proposition
+- 价格高，性价比低
 
-- Poor support for Chinese language
+- 中文支持很差
 
-In summary, the ReMarkable 2 is a device that many people would not recommend, yet many who have bought it find it to be a valuable tool. It is a device that garners attention from those who see it being used, but it also has some significant drawbacks, such as limited storage, high price, and poor support for non-writing functionalities and Chinese language.
+总的来说，reMarkable 2 是一台很多人都不会推荐、但很多买了的人都觉得值的设备。它是一台会让旁边看到的人好奇围观的设备，但也有一些明显的缺点，比如存储有限、价格偏高，以及对非书写功能和中文的支持都很差。
 
 ![](https://cdn.anping.us/2021/03/Remarkable-07.webp)
