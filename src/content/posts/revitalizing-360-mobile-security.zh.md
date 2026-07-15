@@ -16,7 +16,51 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 
 我们必须在45天内发布第一个测试版。一份周密的排期表对达成目标大有裨益。
 
-![](https://cdn.anping.us/2026/07/r360-timeline.webp)
+<div style="overflow-x: auto; margin: var(--space-8) 0;">
+<svg viewBox="0 0 1200 430" role="img" aria-label="项目排期甘特图，4月12日至5月27日：研究、设计、开发三条线并行推进，5月3日进入质量阶段，5月27日测试版发布。" style="font-family: var(--font-sans); display: block; width: 100%; min-width: 760px;">
+<title>项目排期甘特图，4月12日至5月27日：研究、设计、开发三条线并行推进，5月3日进入质量阶段，5月27日测试版发布。</title>
+<rect x="131" y="84" width="1063" height="290" fill="var(--fill-quaternary)"/>
+<text x="171" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">4月</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">12日</tspan></text>
+<text x="345" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">4月</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">15日</tspan></text>
+<text x="528" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">4月</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">20日</tspan></text>
+<text x="669" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">4月</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">22日</tspan></text>
+<text x="879" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">5月</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">3日</tspan></text>
+<text x="1113" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">5月</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">27日</tspan></text>
+<text x="118" y="108" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">研究</text>
+<text x="118" y="192" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">设计</text>
+<text x="118" y="286" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">开发</text>
+<line x1="898" y1="84" x2="898" y2="374" stroke="rgba(235, 106, 97, 0.55)" stroke-width="1.5"/>
+<line x1="1065" y1="84" x2="1065" y2="374" stroke="rgba(235, 106, 97, 0.55)" stroke-width="1.5"/>
+<text x="888" y="108" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">质量</text>
+<text x="1194" y="398" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">测试版发布</text>
+<rect x="134" y="96" width="26" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="169" y="102.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">启动与排期</text>
+<rect x="162" y="129" width="141" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="312" y="135.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">现状调研</text>
+<rect x="354" y="96" width="180" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="543" y="102.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">用户研究</text>
+<rect x="507" y="129" width="93" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="609" y="135.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">市场研究</text>
+<rect x="963" y="96" width="99" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="1071" y="102.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">QA</text>
+<rect x="540" y="182" width="99" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="589.5" y="172" text-anchor="middle" font-size="14" fill="var(--label-secondary)">分析与愿景</text>
+<rect x="654" y="182" width="330" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="993" y="188.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">交互 / 逻辑设计</text>
+<rect x="303" y="216" width="108" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="420" y="222.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">旧版设计回顾</text>
+<rect x="633" y="216" width="279" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="921" y="222.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">原型与迭代</text>
+<rect x="393" y="269" width="150" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="468" y="259" text-anchor="middle" font-size="14" fill="var(--label-secondary)">技术预研</text>
+<rect x="675" y="269" width="369" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="1053" y="275.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">界面开发</text>
+<rect x="552" y="299" width="366" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="927" y="305.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">服务端开发</text>
+<rect x="411" y="329" width="339" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="759" y="335.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">性能开发</text>
+</svg>
+</div>
 
 ## 深入数据：发现现存问题
 

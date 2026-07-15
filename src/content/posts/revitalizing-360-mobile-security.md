@@ -22,7 +22,51 @@ I was the product management lead for the reviving project. Along with my design
 
 We have to ship out our first beta version in 45 days. A thorough schedule would significantly benefit us in achieving our goal.
 
-![](https://cdn.anping.us/2026/07/r360-timeline.webp)
+<div style="overflow-x: auto; margin: var(--space-8) 0;">
+<svg viewBox="0 0 1200 430" role="img" aria-label="Project timeline Gantt chart, April 12 to May 27: research, design, and development tracks running in parallel, with a quality gate on May 3 and the beta version shipped on May 27." style="font-family: var(--font-sans); display: block; width: 100%; min-width: 760px;">
+<title>Project timeline Gantt chart, April 12 to May 27: research, design, and development tracks running in parallel, with a quality gate on May 3 and the beta version shipped on May 27.</title>
+<rect x="131" y="84" width="1063" height="290" fill="var(--fill-quaternary)"/>
+<text x="171" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">APR.</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">12</tspan></text>
+<text x="345" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">APR.</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">15</tspan></text>
+<text x="528" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">APR.</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">20</tspan></text>
+<text x="669" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">APR.</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">22</tspan></text>
+<text x="879" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">MAY.</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">03</tspan></text>
+<text x="1113" y="48" text-anchor="middle"><tspan font-size="13" fill="var(--label-tertiary)">MAY.</tspan><tspan font-size="20" font-weight="600" fill="var(--label-secondary)">27</tspan></text>
+<text x="118" y="108" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">Research</text>
+<text x="118" y="192" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">Design</text>
+<text x="118" y="286" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">Develop</text>
+<line x1="898" y1="84" x2="898" y2="374" stroke="rgba(235, 106, 97, 0.55)" stroke-width="1.5"/>
+<line x1="1065" y1="84" x2="1065" y2="374" stroke="rgba(235, 106, 97, 0.55)" stroke-width="1.5"/>
+<text x="888" y="108" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">Quality</text>
+<text x="1194" y="398" text-anchor="end" font-size="15" font-weight="600" fill="var(--label-primary)">Beta Version Shipped</text>
+<rect x="134" y="96" width="26" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="169" y="102.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">Kick Off & Schedule</text>
+<rect x="162" y="129" width="141" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="312" y="135.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">Actuality Research</text>
+<rect x="354" y="96" width="180" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="543" y="102.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">User Research</text>
+<rect x="507" y="129" width="93" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="609" y="135.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">Market Research</text>
+<rect x="963" y="96" width="99" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="1071" y="102.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">QA</text>
+<rect x="540" y="182" width="99" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="589.5" y="172" text-anchor="middle" font-size="14" fill="var(--label-secondary)">Analysis & Vision</text>
+<rect x="654" y="182" width="330" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="993" y="188.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">UX / Logic Design</text>
+<rect x="303" y="216" width="108" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="420" y="222.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">Former Design Review</text>
+<rect x="633" y="216" width="279" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="921" y="222.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">Prototyping & Iteration</text>
+<rect x="393" y="269" width="150" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="468" y="259" text-anchor="middle" font-size="14" fill="var(--label-secondary)">Technology Probe</text>
+<rect x="675" y="269" width="369" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="1053" y="275.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">Interface Dev.</text>
+<rect x="552" y="299" width="366" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="927" y="305.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">Server Dev.</text>
+<rect x="411" y="329" width="339" height="13" rx="6.5" fill="#7fd1dc" fill-opacity="0.65"/>
+<text x="759" y="335.5" dominant-baseline="central" font-size="14" fill="var(--label-secondary)">Performance Dev.</text>
+</svg>
+</div>
 
 ## Look into Data: Discover Existing Problems
 
