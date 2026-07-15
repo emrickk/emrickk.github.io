@@ -59,7 +59,12 @@ const pinnedGridPosts = gridCandidates
     if (orderDelta !== 0) return orderDelta;
     return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
   });
-const fallbackGridPosts = gridCandidates.filter((post) => !post.data.homeOrder);
+// Unpinned grid fill skips posts already linked in the hero list, so the
+// homepage never repeats a post; explicit homeOrder pins may still repeat.
+const heroIds = new Set(heroPosts.map((post) => post.id));
+const fallbackGridPosts = gridCandidates.filter(
+  (post) => !post.data.homeOrder && !heroIds.has(post.id)
+);
 const gridPosts = [...pinnedGridPosts, ...fallbackGridPosts].slice(0, 3);
 const featuredPlaceholderEntries = await Promise.all(
   featuredPosts.map(
