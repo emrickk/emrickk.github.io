@@ -177,9 +177,16 @@ export function checkPostPreview(root, { baseRef } = {}) {
   return { status: 'PASS', detail: `${changeSet.length} changed file(s) covered by preview approval` }
 }
 
+function escapeHtml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+}
+
 export function renderReviewPage(targets, { host, port }) {
   const items = targets
-    .map((t) => `      <li><a href="http://${host}:${port}${t}" target="_blank">${t}</a></li>`)
+    .map((t) => {
+      const safe = escapeHtml(t)
+      return `      <li><a href="http://${host}:${port}${safe}" target="_blank">${safe}</a></li>`
+    })
     .join('\n')
   return `<!doctype html>
 <html lang="en">
@@ -221,14 +228,21 @@ function localIp() {
 
 // CLI entry (pathToFileURL handles spaces in the repo path)
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const { values } = parseArgs({
-    options: {
-      approve: { type: 'boolean', default: false },
-      port: { type: 'string', default: '4322' },
-      host: { type: 'boolean', default: false },
-      'no-open': { type: 'boolean', default: false },
-    },
-  })
+  let values
+  try {
+    ({ values } = parseArgs({
+      options: {
+        approve: { type: 'boolean', default: false },
+        port: { type: 'string', default: '4322' },
+        host: { type: 'boolean', default: false },
+        'no-open': { type: 'boolean', default: false },
+      },
+    }))
+  } catch (err) {
+    console.error(err.message)
+    console.error('usage: npm run preview-posts [-- --approve] [-- --port N] [-- --host] [-- --no-open]')
+    process.exit(1)
+  }
   const root = git(['rev-parse', '--show-toplevel'])
   const baseRef = resolveBaseRef(root)
   const changeSet = computeChangeSet(root, { baseRef })
@@ -238,8 +252,11 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       console.error('nothing to approve: no preview-relevant changes vs ' + baseRef)
       process.exit(1)
     }
+    console.log(`approving ${changeSet.length} file(s) vs ${baseRef}:`)
+    for (const p of changeSet) console.log('  ' + p)
     writeManifest(root, hashChangeSet(root, changeSet), { baseRef })
-    console.log(`approved ${changeSet.length} file(s); release-check check 12 passes until any of them change`)
+    console.log('approval recorded; release-check check 12 passes until any of these files change')
+    console.log('caution: this covers every preview-relevant change in the tree, including any from other sessions; make sure the list matches what was reviewed')
     process.exit(0)
   }
 
@@ -253,7 +270,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   console.log('\nbuilding production output...')
   const build = spawnSync('npm', ['run', 'build'], { cwd: root, stdio: 'inherit' })
   if (build.status !== 0) {
-    console.error('build failed; fix it before previewing')
+    if (build.error) console.error('could not run npm: ' + build.error.message)
+    else console.error('build failed; fix it before previewing')
     process.exit(build.status ?? 1)
   }
 
@@ -266,6 +284,10 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const serverArgs = ['astro', 'preview', '--port', values.port]
   if (values.host) serverArgs.push('--host')
   const server = spawn('npx', serverArgs, { cwd: root, stdio: 'inherit' })
+  server.on('error', (err) => {
+    console.error('could not start the preview server: ' + err.message)
+    process.exit(1)
+  })
 
   console.log(`\nreview page: ${reviewFile}`)
   console.log(`server: http://${host}:${values.port}/`)

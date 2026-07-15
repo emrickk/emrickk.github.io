@@ -283,3 +283,10 @@ test('renderReviewPage links every target against the given host and port', () =
   assert.match(html, /language/i)
   assert.doesNotMatch(html, /\u2014/) // no em-dashes in user-facing copy
 })
+
+test('renderReviewPage escapes HTML metacharacters in targets', () => {
+  const html = renderReviewPage(['/posts/x"><script>alert(1)</script>/'], { host: 'localhost', port: '4322' })
+  assert.ok(!html.includes('<script>'), 'raw <script> must not appear')
+  assert.ok(html.includes('&quot;'), 'quotes must be escaped')
+  assert.ok(html.includes('&lt;script&gt;'), 'angle brackets must be escaped')
+})
