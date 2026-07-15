@@ -74,13 +74,13 @@ The cohort analysis was the principal part of our research. We have a relatively
 
 ![](https://cdn.anping.us/2026/07/r360-weekly-user-constitution.webp)
 
-* The percentage of new users was less than anticipated. A downtrend in the percentage of new users indicates that the rate of initial function satisfaction among new users was falling.
-* A low frequency of functional usage was also a possible reason that could lead to the low two-week and four-week succession user percentages and the high return user percentage.
+- The percentage of new users was less than anticipated. A downtrend in the percentage of new users indicates that the rate of initial function satisfaction among new users was falling.
+- A low frequency of functional usage was also a possible reason that could lead to the low two-week and four-week succession user percentages and the high return user percentage.
 
 ![](https://cdn.anping.us/2026/07/r360-freshness-degree.webp)
 
-* We conducted more in-depth research with the help of the freshness degree of users. The steadiness of the 30th-day freshness user rate indicates that most active users are satisfied with our products.
-* The previous second-day freshness user rate declined sharply compared to the first-day freshness user rate, but the +4 and later day freshness user rates were relatively steady. We suggest that it was the unfriendly function guides that caused new users to leave.
+- We conducted more in-depth research with the help of the freshness degree of users. The steadiness of the 30th-day freshness user rate indicates that most active users are satisfied with our products.
+- The previous second-day freshness user rate declined sharply compared to the first-day freshness user rate, but the +4 and later day freshness user rates were relatively steady. We suggest that it was the unfriendly function guides that caused new users to leave.
 
 ![](https://cdn.anping.us/2026/07/r360-user-access-pattern.webp)
 
@@ -98,10 +98,10 @@ We synthesized our user research and user data and identified four insights that
 
 ![](https://cdn.anping.us/2026/07/r360-four-insights.webp)
 
-* Some users did not know when or how they should use 360 Mobile Security.
-* Users became upset when a function was the reason they installed our app.
-* Users experienced a lag on their phones after installing 360 Mobile Security.
-* Some users complained that our product lacks functions that they want or that our competitors have.
+- Some users did not know when or how they should use 360 Mobile Security.
+- Users became upset when a function was the reason they installed our app.
+- Users experienced a lag on their phones after installing 360 Mobile Security.
+- Some users complained that our product lacks functions that they want or that our competitors have.
 
 Malfunction and performance problems can influence the retention rate and can be fixed by our R&D and QA teams alone without changes in the logic and user interface after we describe the specific situation (we made these problems our priority). Product managers then move forward to identify additional problems and new improvement points.
 
@@ -135,9 +135,9 @@ We sketched medium-fi prototypes and completed usability tests with each iterati
 
 In our eighth usability test:
 
-* 81% of users went directly to their desired functions instead of spending time searching for them.
-* The +3 click function reach rate dropped from 22% to 6%.
-* The bounce rate of the main page decreased from 32% to 17%.
+- 81% of users went directly to their desired functions instead of spending time searching for them.
+- The +3 click function reach rate dropped from 22% to 6%.
+- The bounce rate of the main page decreased from 32% to 17%.
 
 Afterward, we created the Hi-Fi version of our designs and sent them to the development team.
 
@@ -149,7 +149,7 @@ We redesigned our main page to be waterfall-like in order to make young users fe
 
 ![](https://cdn.anping.us/2026/07/r360-mainpage-feed.webp)
 
-*The 7.0 version main page feed.*
+_The 7.0 version main page feed._
 
 **Ideogram:** We removed all unnecessary copywriting and redesigned the icons to be more concise. Our aim was to indicate the places where users want to go more clearly.
 
@@ -159,11 +159,11 @@ Structure revision makes functions easier to get in touch with.
 
 ![](https://cdn.anping.us/2026/07/r360-old-version.webp)
 
-*Old function entry in the 6.x version.*
+_Old function entry in the 6.x version._
 
 ![](https://cdn.anping.us/2026/07/r360-new-mainpage.webp)
 
-*New function tab on the 7.0 version main page.*
+_New function tab on the 7.0 version main page._
 
 ### Skins for Young Users
 
@@ -175,9 +175,9 @@ We represented brightness not only in our designs but also in our functions. We 
 
 Additionally, we redefined the functions we provided, positioning ourselves as a true and sincere friend and phone manager.
 
-* Users can customize their desired functions in the toolbox.
-* Suitable features will be promoted based on user tags and operating behaviors.
-* In the 6.x version, functions were hidden in a drawer menu and were unchangeable.
+- Users can customize their desired functions in the toolbox.
+- Suitable features will be promoted based on user tags and operating behaviors.
+- In the 6.x version, functions were hidden in a drawer menu and were unchangeable.
 
 ![](https://cdn.anping.us/2026/07/r360-freshness-push.webp)
 
