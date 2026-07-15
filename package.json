@@ -29,6 +29,7 @@
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
+    "preview-posts": "node scripts/preview-posts.mjs",
     "astro": "astro",
     "check": "astro check",
     "format": "prettier --write \"src/**/*.{astro,ts,css,md,mdx}\"",
@@ -40,7 +41,7 @@
     "test:rehype": "node --test \"scripts/rehype/*.test.mjs\"",
     "checkpoint": "node scripts/checkpoint.mjs",
     "release-check": "node scripts/release-check.mjs",
-    "test:safety": "node --test scripts/checkpoint.test.mjs scripts/release-check.test.mjs"
+    "test:safety": "node --test scripts/checkpoint.test.mjs scripts/release-check.test.mjs scripts/preview-posts.test.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.3",

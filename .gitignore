@@ -40,6 +40,7 @@ scripts/migrate/.venv/
 private-posts/
 __pycache__/
 .pytest_cache/
+.preview/
 
 # blog image pipeline
 image-staging/
