@@ -17,11 +17,11 @@ Early morning in Florence belongs to the locals. The light on the flagstones is 
 
 ![](https://cdn.anping.us/2026/07/florence-street-cargo-bike.webp)
 
-To understand this city, you first have to climb stairs. Giotto's bell tower spirals up through four hundred some steps, and the higher you go, the narrower the staircase and the smaller the windows. Right at the point where you start questioning your life choices, light suddenly pours through a wire-caged window, and the red dome is right there across from you. She stopped by the window and closed her eyes in the sun for a while.
+To understand this city, you first have to climb stairs. Giotto's bell tower spirals up through four hundred some steps, and the higher you go, the narrower the staircase and the smaller the windows. Right at the point where you start questioning your life choices, light suddenly pours through a wire-caged window, and the red dome is right there across from you.
 
 <div class="img-grid">
 <img src="https://cdn.anping.us/2026/07/florence-duomo-from-campanile.webp" alt="">
-<img src="https://cdn.anping.us/2026/07/florence-campanile-window-light.webp" alt="">
+<img src="https://cdn.anping.us/2026/07/florence-caged-window-duomo.webp" alt="">
 </div>
 
 Down from the tower, we queued again for the dome itself. The climb threads right through the frescoes: the Last Judgment that Vasari began and Zuccari finished. From the cathedral floor it is just a distant ring of color; walking the inner gallery, suddenly every angel and every demon has a face.
@@ -32,7 +32,7 @@ Down from the tower, we queued again for the dome itself. The climb threads righ
 
 Then the stairs end, the sky opens with a rush of light, and all of Florence lies at your feet: red tiles, mountains, the river. The wind is strong. Nobody says a word.
 
-![](https://cdn.anping.us/2026/07/florence-terrace-overlook.webp)
+![](https://cdn.anping.us/2026/07/florence-arno-bridges-from-above.webp)
 
 In the courtyard of the Palazzo Vecchio, frescoes climb from the walls all the way up into the vaults. The rooms upstairs are dark, and through one Gothic window the dome sits perfectly framed, like a painting that has hung there for five hundred years.
 
@@ -69,7 +69,7 @@ She stood by the river taking photo after photo with her phone, and I stood behi
 
 ![](https://cdn.anping.us/2026/07/florence-arno-phone-photo.webp)
 
-![](https://cdn.anping.us/2026/07/florence-arno-sunset-portrait.webp)
+![](https://cdn.anping.us/2026/07/florence-san-frediano-golden.webp)
 
 An hour before sunset, the whole city climbs toward Piazzale Michelangelo. The steps and railings fill up with people who sit quietly, waiting for something that happens every single day.
 

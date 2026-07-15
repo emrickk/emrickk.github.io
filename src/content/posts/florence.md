@@ -23,11 +23,11 @@ titleEn: 'Sunset in Florence'
 
 ![](https://cdn.anping.us/2026/07/florence-street-cargo-bike.webp)
 
-想看懂这座城，得先爬楼梯。乔托钟楼四百多级台阶盘旋而上，越往上楼梯越窄，窗越小。喘到怀疑人生的时候，一扇铁网窗突然透进光来，红色的穹顶就在对面。她在窗边停下来，闭着眼睛晒了一会儿太阳。
+想看懂这座城，得先爬楼梯。乔托钟楼四百多级台阶盘旋而上，越往上楼梯越窄，窗越小。喘到怀疑人生的时候，一扇铁网窗突然透进光来，红色的穹顶就在对面。
 
 <div class="img-grid">
 <img src="https://cdn.anping.us/2026/07/florence-duomo-from-campanile.webp" alt="">
-<img src="https://cdn.anping.us/2026/07/florence-campanile-window-light.webp" alt="">
+<img src="https://cdn.anping.us/2026/07/florence-caged-window-duomo.webp" alt="">
 </div>
 
 下了钟楼又排进穹顶的队。爬穹顶的路从壁画中间穿过去：瓦萨里开笔、祖卡里完成的《末日审判》。站在教堂地面上抬头，它只是一圈模糊的颜色；贴着夹层走廊走到近处，天使和魔鬼忽然都有了表情。
@@ -38,7 +38,7 @@ titleEn: 'Sunset in Florence'
 
 再往上，楼梯到头，天光哗地打开，整个佛罗伦萨在脚下：红瓦，山，河。风很大，谁都不说话。
 
-![](https://cdn.anping.us/2026/07/florence-terrace-overlook.webp)
+![](https://cdn.anping.us/2026/07/florence-arno-bridges-from-above.webp)
 
 老宫的院子里，壁画从墙面一直爬到拱顶。楼上房间很暗，从一扇哥特式的窗望出去，穹顶正好嵌在窗框里，像一幅挂了五百年的画。
 
@@ -75,7 +75,7 @@ titleEn: 'Sunset in Florence'
 
 ![](https://cdn.anping.us/2026/07/florence-arno-phone-photo.webp)
 
-![](https://cdn.anping.us/2026/07/florence-arno-sunset-portrait.webp)
+![](https://cdn.anping.us/2026/07/florence-san-frediano-golden.webp)
 
 日落前一个小时，全城的人都往米开朗基罗广场爬。台阶上、栏杆上坐满了人，安安静静地，等一件每天都会发生的事。
 
