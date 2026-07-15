@@ -53,3 +53,9 @@ galleries crop to 16:9 and stay two-up everywhere.
 - **Images 404 on cdn.anping.us:** custom domain not connected, or DNS not yet "Active".
 - **`Missing required env vars`:** `.env.local` absent or incomplete.
 - **Originals landing in `originals/` instead of the NAS:** `NAS_ARCHIVE_PATH` unset or the SMB share isn't mounted.
+
+Note: Astro caches rendered markdown in `node_modules/.astro` and `.astro`.
+Edits to `scripts/rehype/image-gallery.mjs` do NOT invalidate that cache,
+so after changing the plugin, delete both cache folders before trusting
+`npm run build` output (verified 2026-07-14: a stale cache shipped builds
+without a plugin change that the dev server was already showing).
