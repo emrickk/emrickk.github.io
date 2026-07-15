@@ -4,8 +4,6 @@ lang: 'en'
 title: 'Two Days in Venice'
 ---
 
-*Previous stop: [Sunset in Florence](/posts/florence/).*
-
 The train from Florence spends its last few minutes running on the sea: water on both sides of the causeway, and then straight into Santa Lucia station. Down the front steps, and there is the Grand Canal. Venice gives you no time to ease in; the moment you step out, you get all of it at once. She stood at the water's edge for a long time.
 
 ![](https://cdn.anping.us/2026/07/venice-arrival-grand-canal.webp)

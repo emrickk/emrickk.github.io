@@ -10,8 +10,6 @@ titleZh: '威尼斯两日'
 titleEn: 'Two Days in Venice'
 ---
 
-*上一站：[《翡冷翠的日落》](/posts/florence/)。*
-
 从佛罗伦萨过来的火车，最后几分钟是在海上开的：长堤两边都是水，然后一头扎进圣露西亚车站。出了站，台阶底下就是大运河。威尼斯不给人缓冲的时间，一出门就是全部。她站在水边看了很久。
 
 ![](https://cdn.anping.us/2026/07/venice-arrival-grand-canal.webp)
