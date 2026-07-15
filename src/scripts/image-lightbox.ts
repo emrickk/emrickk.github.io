@@ -37,7 +37,7 @@ export function mountImageLightbox() {
   };
 
   const sourceFor = (img: HTMLImageElement) =>
-    img.getAttribute('data-src') ?? img.currentSrc ?? img.src;
+    img.getAttribute('data-src') ?? (img.currentSrc || img.src);
 
   const captionFor = (img: HTMLImageElement) =>
     img.nextElementSibling?.tagName === 'EM'
@@ -58,6 +58,7 @@ export function mountImageLightbox() {
   };
 
   const showAt = (index: number) => {
+    if (gallery.length < 2) return;
     galleryIndex = (index + gallery.length) % gallery.length;
     showImage(gallery[galleryIndex]);
   };
@@ -65,7 +66,9 @@ export function mountImageLightbox() {
   const openLightbox = (img: HTMLImageElement) => {
     previousFocus = document.activeElement;
     const galleryRoot = img.closest('ul.image-gallery');
-    gallery = galleryRoot ? [...galleryRoot.querySelectorAll<HTMLImageElement>('img')] : [];
+    gallery = galleryRoot
+      ? [...galleryRoot.querySelectorAll<HTMLImageElement>('img')].filter((i) => !i.closest('a'))
+      : [];
     galleryIndex = Math.max(0, gallery.indexOf(img));
     showImage(img);
     dialog.showModal();
@@ -100,7 +103,13 @@ export function mountImageLightbox() {
     if (event.target === dialog) closeLightbox();
   });
   dialog.addEventListener('keydown', (event) => {
-    if (gallery.length > 1 && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+    if (
+      gallery.length > 1 &&
+      (event.key === 'ArrowLeft' || event.key === 'ArrowRight') &&
+      !event.altKey &&
+      !event.metaKey &&
+      !event.ctrlKey
+    ) {
       event.preventDefault();
       showAt(event.key === 'ArrowLeft' ? galleryIndex - 1 : galleryIndex + 1);
       return;

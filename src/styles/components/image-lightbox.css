@@ -81,6 +81,10 @@
   transition: background var(--duration-fast) var(--ease-out);
 }
 
+.lightbox-nav[hidden] {
+  display: none;
+}
+
 .lightbox-nav:hover {
   background: rgba(255, 255, 255, 0.26);
 }
@@ -123,7 +127,7 @@
 .lightbox-counter {
   margin: 0;
   font-size: var(--text-footnote);
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.55);
   text-align: center;
 }
 
