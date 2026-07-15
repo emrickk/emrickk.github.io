@@ -407,12 +407,22 @@ Run the dev server via the `blog-dev` launch config (this repo's `.claude/launch
 - `/posts/aiyou-user-growth/`: chart pairs unchanged, full-width.
 - Toggle dark mode and a 375px viewport on the animal-crossing post.
 
-- [ ] **Step 4: Run checks**
+- [ ] **Step 4: Gate the plugin tests in release-check**
 
-Run: `npm run lint:css` and `npm run check`
-Expected: both clean
+Now that the plugin affects production builds, its tests must gate releases. In `scripts/release-check.mjs`, in the `CHECKS` array after the `image tests` entry (line 289), add:
 
-- [ ] **Step 5: Commit**
+```js
+  { num: 8, name: 'rehype tests', run: (root) => npmRun(root, 'test:rehype') },
+```
+
+and renumber the subsequent entries (built output 9, CDN images 10, internal links 11). Run `npm run test:safety` afterward; if any release-check test pins the old numbering, update it to match.
+
+- [ ] **Step 5: Run checks**
+
+Run: `npm run lint:css` and `npm run check` and `npm run test:safety`
+Expected: all clean
+
+- [ ] **Step 6: Commit**
 
 ```bash
 git branch --show-current
@@ -420,9 +430,9 @@ git commit -m "Render auto-detected photo galleries as 2-column grids
 
 Register the rehype plugin and style ul.image-gallery next to the
 existing img-grid helper: 16:9 crops, object-fit cover, two columns
-at every viewport width.
+at every viewport width. Release-check now runs the plugin tests.
 
-Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" -- astro.config.mjs src/styles/prose.css
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" -- astro.config.mjs src/styles/prose.css scripts/release-check.mjs
 ```
 
 ---
