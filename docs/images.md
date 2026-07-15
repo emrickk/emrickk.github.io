@@ -40,6 +40,27 @@ pair inside prose (charts, before/after), the manual
 original aspect ratios and collapses to one column on phones, while
 galleries crop to 16:9 and stay two-up everywhere.
 
+### Hero covers (`src/assets/hero/`)
+
+Hero covers live in the repo (not on R2) and feed three surfaces at once:
+the post page (784px column), the og:image, and the home cards. The home
+cards crop covers with `object-fit: cover` into tall boxes, so a cover
+needs enough pixel height, not just width, to stay sharp on retina
+screens.
+
+Minimum spec for a new cover:
+
+- At least 2400x1260 for wide covers (keep 1.91:1 if it should look good
+  as an og:image), or 1600x1600 for square ones. The binding constraint
+  is roughly 1200px of image height for the big home-grid card.
+- Export lightly compressed (JPEG quality 90+ or WebP quality 90+). Astro
+  re-encodes at build time, so an already-crunchy source compounds into
+  visible mush.
+- Undersized or over-compressed covers will render blurry in the large
+  home-grid slot; this exact bug was fixed in July 2026 by regenerating
+  two covers and making the cards' `sizes` attributes account for the
+  cover crop (see `src/components/FeaturedPostGrid.astro`).
+
 ## One-time migration of existing images
 
 1. `npm run images:migrate` (dry-run): review the planned uploads/edits.

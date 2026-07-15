@@ -1,4 +1,5 @@
 ---
+import type { ImageMetadata } from 'astro';
 import { Image, getImage } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from './FormattedDate.astro';
@@ -36,6 +37,17 @@ const placeholderEntries = await Promise.all(
 const imagePlaceholderById = new Map<string, string | undefined>(placeholderEntries);
 const imagePlaceholderStyle = (src: string | undefined) =>
   src ? `--tone-image-placeholder: url("${src}");` : undefined;
+// Slot 1 is a tall card (about 550x580 CSS on desktop, two stacked rows on
+// phones) that crops wide covers with object-fit: cover, so the image renders
+// at the box height times the source aspect. `sizes` must report that
+// effective width, not the layout column, or the browser picks a srcset
+// variant that retina screens then upscale into blur.
+const slot1Sizes = (img: ImageMetadata) => {
+  const aspect = img.width / img.height;
+  const desktop = Math.round(580 * Math.max(0.96, aspect));
+  const mobile = Math.round(352 * Math.max(0.9, aspect));
+  return `(max-width: 600px) ${mobile}px, ${desktop}px`;
+};
 ---
 
 <div class:list={['featured-post-grid', `featured-post-grid--${variant}`]}>
@@ -65,11 +77,13 @@ const imagePlaceholderStyle = (src: string | undefined) =>
                 src={post.data.heroImage}
                 alt={post.data.title}
                 class="featured-post-card-img"
-                widths={[320, 480, 700, 960, 1280, 1600]}
+                widths={
+                  index > 0 ? [320, 480, 700, 960, 1280, 1600] : [320, 480, 700, 960, 1280, 1600, 2000, 2400]
+                }
                 sizes={
                   index > 0
                     ? '(max-width: 339px) calc(100vw - 32px), (max-width: 600px) calc((100vw - 44px) / 2), (max-width: 900px) 32rem, 45vw'
-                    : '(max-width: 600px) calc(100vw - 32px), (max-width: 900px) 32rem, 45vw'
+                    : slot1Sizes(post.data.heroImage)
                 }
                 quality={88}
               />

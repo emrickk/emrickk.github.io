@@ -1,5 +1,6 @@
 ---
 import '../styles/pages/home.css';
+import type { ImageMetadata } from 'astro';
 import { Image, getImage } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import FeaturedPostGrid from '../components/FeaturedPostGrid.astro';
@@ -83,6 +84,12 @@ const featuredPlaceholderStyle = (id: string) => {
   const src = featuredPlaceholderById.get(id);
   return src ? `--tone-image-placeholder: url("${src}");` : undefined;
 };
+// The thumb column is 360px wide but crops with object-fit: cover in a 6/7
+// box, so the image renders at the box height (420px) times the source
+// aspect. `sizes` must report that effective width, not the column width,
+// or retina screens get an upscaled srcset variant.
+const featuredThumbSizes = (img: ImageMetadata) =>
+  `(max-width: 600px) calc(100vw - 32px), ${Math.round(420 * Math.max(6 / 7, img.width / img.height))}px`;
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -179,8 +186,8 @@ const featuredPlaceholderStyle = (id: string) => {
                     src={post.data.heroImage}
                     alt={post.data.title}
                     class="featured-thumb"
-                    widths={[400, 720, 960, 1280]}
-                    sizes="(max-width: 600px) calc(100vw - 32px), 360px"
+                    widths={[400, 720, 960, 1280, 1600]}
+                    sizes={featuredThumbSizes(post.data.heroImage)}
                     quality={88}
                     loading="lazy"
                   />
