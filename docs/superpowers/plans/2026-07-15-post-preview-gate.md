@@ -6,7 +6,7 @@
 
 **Architecture:** One new script `scripts/preview-posts.mjs` holds all logic: pure classification/slug helpers, git-based change-set computation, review-target mapping, sha256 manifest handling, the release-check check function, and a thin CLI (build, serve `dist/` with `astro preview`, write a review page, or `--approve`). `scripts/release-check.mjs` imports the check function and adds it to `CHECKS`. Tests follow the existing `node:test` + fixture-repo pattern in `scripts/test-helpers.mjs`.
 
-**Tech Stack:** Node 22 built-ins only (`node:child_process`, `node:crypto`, `node:fs`, `node:os`, `node:util`), git, existing `astro build`/`astro preview`. No new dependencies.
+**Tech Stack:** Node 22 built-ins only (`node:child_process`, `node:crypto`, `node:fs`, `node:os`, `node:path`, `node:url`, `node:util`), git, existing `astro build`/`astro preview`. No new dependencies.
 
 **Spec:** `docs/superpowers/specs/2026-07-15-post-preview-gate-design.md` (read it first; decisions there are settled).
 
@@ -474,7 +474,7 @@ export function writeManifest(root, files, { baseRef }) {
 export function readManifest(root) {
   try {
     const parsed = JSON.parse(readFileSync(manifestPath(root), 'utf8'))
-    return parsed && typeof parsed.files === 'object' ? parsed : null
+    return parsed && parsed.files && typeof parsed.files === 'object' ? parsed : null
   } catch {
     return null
   }
@@ -661,7 +661,7 @@ test('renderReviewPage links every target against the given host and port', () =
   assert.match(html, /href="http:\/\/localhost:4322\/posts\/alpha\/"/)
   assert.match(html, /dark mode/i)
   assert.match(html, /language/i)
-  assert.doesNotMatch(html, /—/) // no em-dashes in user-facing copy
+  assert.doesNotMatch(html, /\u2014/) // no em-dashes in user-facing copy
 })
 ```
 
@@ -784,12 +784,17 @@ Manual smoke test in the real repo (do NOT run `--approve`):
 
 ```bash
 node scripts/preview-posts.mjs --no-open --port 4323 &
-sleep 25
-curl -s -o /dev/null -w "%{http_code}\n" http://localhost:4323/
+code=000
+for i in $(seq 1 60); do
+  code=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:4323/ || true)
+  [ "$code" = "200" ] && break
+  sleep 5
+done
+echo "status=$code"
 kill %1
 ```
 
-Expected: the script lists the current change set (this checkout usually has post edits in flight), runs a full build (takes a minute or two), prints the review page path and server URL, and curl prints `200`. Also `cat .preview/review.html` and confirm the target list looks sane.
+Expected: the script lists the current change set (this checkout usually has post edits in flight), runs a full build (can take a few minutes, hence the poll loop), prints the review page path and server URL, and the loop ends with `status=200`. Also `cat .preview/review.html` and confirm the target list looks sane.
 
 - [ ] **Step 5: Commit**
 
@@ -907,8 +912,8 @@ Add to the Safety section, after the release checklist bullet:
 
 - [ ] **Step 4: Verify docs render sanely and contain no em-dashes**
 
-Run: `grep -n $'—' CLAUDE.md .claude/skills/preview-posts/SKILL.md .claude/skills/release-check/SKILL.md docs/superpowers/plans/2026-07-15-post-preview-gate.md; echo "exit=$?"`
-Expected: no matches, `exit=1`
+Run: `grep -n $'\xe2\x80\x94' CLAUDE.md .claude/skills/preview-posts/SKILL.md .claude/skills/release-check/SKILL.md docs/superpowers/plans/2026-07-15-post-preview-gate.md; echo "exit=$?"`
+Expected: no matches, `exit=1` (the grep pattern is the em-dash as escaped UTF-8 bytes so neither this plan nor the command itself can self-match)
 
 - [ ] **Step 5: Commit**
 
