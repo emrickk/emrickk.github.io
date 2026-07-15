@@ -309,6 +309,33 @@
   }
 }
 
+/* Auto-detected photo galleries: image-only lists and long image runs.
+   Classes are added at build time by scripts/rehype/image-gallery.mjs. */
+.prose ul.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin-block: var(--space-6);
+  padding: 0;
+  list-style: none;
+}
+
+.prose ul.image-gallery li {
+  margin: 0;
+  padding: 0;
+}
+
+.prose ul.image-gallery li p {
+  margin: 0;
+}
+
+.prose ul.image-gallery img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: 0;
+}
+
 /* Callout boxes.
    Usage: <div class="callout callout-tip"> ... </div>
    Types: callout-tip / callout-warning / callout-note */

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Release checklist: deterministic pre-push checks with a go/no-go verdict.
-// Quick mode: checks 1-8. Full mode (--full): adds CDN and internal link checks.
+// Quick mode: checks 1-9. Full mode (--full): adds CDN and internal link checks.
 // This script never pushes, merges, or tags.
 import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
@@ -287,9 +287,10 @@ export const CHECKS = [
   { num: 5, name: 'lint', run: checkLint },
   { num: 6, name: 'build', run: (root) => npmRun(root, 'build') },
   { num: 7, name: 'image tests', run: (root) => npmRun(root, 'test:images') },
-  { num: 8, name: 'built output', run: checkBuiltOutput },
-  { num: 9, name: 'CDN images', full: true, run: checkCdnImages },
-  { num: 10, name: 'internal links', full: true, run: checkInternalLinks },
+  { num: 8, name: 'rehype tests', run: (root) => npmRun(root, 'test:rehype') },
+  { num: 9, name: 'built output', run: checkBuiltOutput },
+  { num: 10, name: 'CDN images', full: true, run: checkCdnImages },
+  { num: 11, name: 'internal links', full: true, run: checkInternalLinks },
 ]
 
 export async function runChecks(root, { full = false } = {}) {
