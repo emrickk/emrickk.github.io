@@ -30,6 +30,12 @@ test('rule A: tight image list of 2 gains the gallery class', () => {
   assert.deepEqual(classes(list), ['image-gallery']);
 });
 
+test('rule A: a tagged gallery list keeps role="list" for VoiceOver', () => {
+  const list = ul(li(img()), li(img()));
+  run(root(list));
+  assert.equal(list.properties.role, 'list');
+});
+
 test('rule A: loose list (p-wrapped images) gains the gallery class', () => {
   const list = ul(li(p(img())), li(p(img())), li(p(img())));
   run(root(list));
@@ -78,6 +84,13 @@ test('rule B: a run of 3 image paragraphs becomes a gallery list', () => {
     gallery.children.map((item) => item.children[0].properties.src),
     ['a', 'b', 'c'],
   );
+});
+
+test('rule B: a built gallery list has role="list" for VoiceOver', () => {
+  const tree = root(p(img('a')), text('\n'), p(img('b')), text('\n'), p(img('c')));
+  run(tree);
+  const gallery = tree.children.find((c) => c.type === 'element');
+  assert.equal(gallery.properties.role, 'list');
 });
 
 test('rule B: a run of 2 image paragraphs is left alone', () => {

@@ -61,13 +61,16 @@ function addGalleryClass(node) {
   } else {
     props.className = [GALLERY_CLASS];
   }
+  // list-style: none strips the list semantics in WebKit/VoiceOver; restore
+  // it explicitly so the gallery still announces as a list.
+  props.role = 'list';
 }
 
 function buildGallery(paragraphs) {
   return {
     type: 'element',
     tagName: 'ul',
-    properties: { className: [GALLERY_CLASS] },
+    properties: { className: [GALLERY_CLASS], role: 'list' },
     children: paragraphs.map((paragraph) => ({
       type: 'element',
       tagName: 'li',

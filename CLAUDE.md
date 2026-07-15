@@ -15,6 +15,7 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English i
 | `npm run images` | Daily image pipeline: optimize + upload staged photos (see below) |
 | `npm run images:migrate` | One-time backfill CLI, already executed; dry-run by default |
 | `npm run test:images` | Image pipeline test suite (`node:test`); the R2 live test self-skips without credentials |
+| `npm run test:rehype` | Rehype plugin test suite (image gallery detection) |
 | `npm run checkpoint` | Working-tree snapshots: `save` / `list` / `diff` / `restore` (see Safety) |
 | `npm run release-check` | Pre-push checklist, `-- --full` adds CDN + link verification (see Safety) |
 | `npm run test:safety` | Test suite for the two safety CLIs |

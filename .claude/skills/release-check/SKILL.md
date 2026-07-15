@@ -9,12 +9,12 @@ Pushing to `main` deploys to https://anping.us within minutes. This checklist is
 
 ## Quick mode (default)
 
-1. Run `npm run release-check` from the repo root. It saves a checkpoint, then runs git hygiene, secret scan, types, lint, build, image tests, and built-output verification (checks 1 to 8).
+1. Run `npm run release-check` from the repo root. It saves a checkpoint, then runs git hygiene, secret scan, types, lint, build, image tests, rehype tests, and built-output verification (checks 1 to 9).
 2. Report the per-check results and the verdict.
 
 ## Full mode
 
-1. Run `npm run release-check -- --full` (adds check 9: every cdn.anping.us URL in the built site must return HTTP 200, and check 10: every internal link must resolve).
+1. Run `npm run release-check -- --full` (adds check 10: every cdn.anping.us URL in the built site must return HTTP 200, and check 11: every internal link must resolve).
 2. After the script passes, smoke-test the production build in a browser. Serve `dist/` with `npm run preview` (never the dev server), then verify:
    - homepage renders with the post list
    - one image-heavy post loads and its images come from cdn.anping.us

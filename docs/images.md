@@ -27,6 +27,19 @@
 2. `npm run images`: archives originals to the NAS, uploads optimized WebP to R2, prints markdown snippets.
 3. Paste the snippets into your post, delete the staged files, commit the post.
 
+### Photo galleries
+
+A markdown list where every item is a bare image renders as a 2-column
+gallery with lightbox navigation (2+ images). Legacy runs of 3+ bare
+image paragraphs are auto-converted at build time. To keep images
+full-width instead, add any text to a list item or between paragraphs.
+Linked images never become gallery tiles. Detection lives in
+`scripts/rehype/image-gallery.mjs`. For a deliberate side-by-side
+pair inside prose (charts, before/after), the manual
+`<div class="img-grid">` wrapper is still the right tool: it keeps
+original aspect ratios and collapses to one column on phones, while
+galleries crop to 16:9 and stay two-up everywhere.
+
 ## One-time migration of existing images
 
 1. `npm run images:migrate` (dry-run): review the planned uploads/edits.
