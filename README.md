@@ -36,5 +36,5 @@ Blog images are served from Cloudflare R2 (`cdn.anping.us`) with originals archi
 
 ## License
 
-Theme source code: MIT (see `LICENSE`, © Tone contributors).
-**All blog content — posts under `src/content/posts/`, archived comments under `src/data/comments/`, and media served from `cdn.anping.us` — is © the blog owner, all rights reserved.** The MIT license does not apply to the content.
+Source code: MIT (see `LICENSE`; theme © Tone contributors, blog-specific code © NeVeRtheLeSs).
+**All blog content (posts under `src/content/posts/`, archived comments under `src/data/comments/`, and media served from `cdn.anping.us`) is © NeVeRtheLeSs, all rights reserved.** The MIT license does not apply to the content.

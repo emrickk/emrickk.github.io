@@ -1,9 +1,13 @@
 MIT License
 
 Copyright (c) 2026 Tone contributors
+Copyright (c) 2026 NeVeRtheLeSs (theneverless.com), for blog-specific code
+and modifications
 
-This license applies to Tone source code unless a file or notice states
-otherwise. Bundled demo assets are documented in the Third-Party and Demo
+This license applies to Tone source code and this repository's blog-specific
+code unless a file or notice states otherwise. It does NOT apply to blog
+content (posts, archived comments, and media), which is all rights reserved;
+see README. Bundled demo assets are documented in the Third-Party and Demo
 Asset Notices section below.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
