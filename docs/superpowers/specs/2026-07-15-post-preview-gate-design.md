@@ -35,7 +35,7 @@ A CLI with two modes.
 **Approve mode** (`npm run preview-posts -- --approve`):
 
 1. Recompute the change set. If empty, say so and exit 1.
-2. Write `.preview/manifest.json`: `{ approvedAt, baseRef: "origin/main", files: { "<repo-relative path>": "<sha256>" } }`. Deleted files record the sentinel value `"deleted"`.
+2. Write `.preview/manifest.json`: `{ approvedAt, baseRef: "origin/main", files: { "<repo-relative path>": "<sha256>" } }`. Deleted files record the sentinel value `"deleted"`. `approvedAt` and `baseRef` are informational only; the check 12 comparison uses the `files` map exclusively.
 
 No server or build is required for approve mode; it hashes the files as they are on disk.
 
@@ -43,9 +43,9 @@ No server or build is required for approve mode; it hashes the files as they are
 
 Exported from `scripts/preview-posts.mjs` so release-check imports the exact same logic.
 
-The change set is the union of `git diff origin/main --name-only` (covers commits ahead of origin plus tracked working-tree edits) and untracked files from `git status --porcelain`, filtered to preview-relevant paths:
+The change set is the union of `git diff origin/main --name-only` (covers commits ahead of origin plus tracked working-tree edits) and untracked files from `git status --porcelain`, filtered to preview-relevant paths. When `origin/main` does not exist (test fixture repos), fall back to `HEAD`, matching the precedent in `scripts/release-check.mjs`; the base ref is injectable for tests.
 
-- **Post content**: `src/content/posts/*.md` and `*.mdx`. The slug is the filename minus extension, with a trailing `.en` or `.zh` stripped (sibling translation bodies map to the primary post's page). Each changed or added post contributes the review target `/posts/<slug>/`. A deleted post contributes the homepage instead (it should disappear from lists).
+- **Post content**: `src/content/posts/*.md` and `*.mdx`. The slug is the filename minus extension, with a trailing `.en` or `.zh` stripped (sibling translation bodies map to the primary post's page). Each changed or added post contributes the review target `/posts/<slug>/`. A deleted post contributes the homepage instead (it should disappear from lists). A post whose current frontmatter has `draft: true` is not preview-relevant at all (no target, no hash entry): it is excluded from the build, so there is nothing to review; flipping `draft` back to false re-includes the file as a normal change.
 - **Site-wide**: any other change under `src/` or `public/`, or to `astro.config.mjs`, `package.json`, or `package-lock.json`. Any site-wide change adds two review targets: the homepage `/` and one designated image-heavy representative post (a named constant in the script, currently `springtime-in-patagonia`; update it when a better exemplar exists).
 - Everything else (`docs/`, `scripts/`, `.github/`, dotfiles) is not preview-relevant.
 
@@ -78,7 +78,8 @@ Instructions for agent sessions: when post or template work is heading toward a 
 `scripts/preview-posts.test.mjs`, run with `node --test`, added to the `test:safety` npm script alongside the checkpoint and release-check suites. Coverage:
 
 - Path classification: post files, sibling `.en`/`.zh` files, site-wide paths, irrelevant paths.
-- Slug derivation, including names containing dots and the `.en`/`.zh` suffix rule.
+- Slug derivation, including the `.en`/`.zh` suffix rule. For filenames containing other dots, assert against the ids Astro's glob loader actually generates rather than assuming "filename minus extension" (no current post has a dotted basename, but the test oracle should match Astro, not the spec's shorthand).
+- Draft handling: a changed post with `draft: true` produces no target and no hash entry.
 - Review-target mapping, including the deleted-post and site-wide cases.
 - Manifest write, hash comparison, and invalidation when a file changes or the change set gains or loses a file. Use temp git repos, following the pattern in `scripts/checkpoint.test.mjs`.
 - Check 12 behavior: SKIP on empty set, FAIL on missing or stale manifest, PASS on exact match.
