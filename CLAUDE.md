@@ -11,6 +11,7 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English i
 | Command | Action |
 | --- | --- |
 | `npm run dev` / `build` / `preview` | Standard Astro workflow (build also runs Pagefind) |
+| `npm run preview-posts` | Build and serve the site for owner review of changed posts; `-- --approve` records the approval (see Safety) |
 | `npm run check` / `lint` / `lint:css` / `format` | Type check, ESLint, Stylelint, Prettier |
 | `npm run images` | Daily image pipeline: optimize + upload staged photos (see below) |
 | `npm run images:migrate` | One-time backfill CLI, already executed; dry-run by default |
@@ -32,6 +33,7 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English i
 
 - **Checkpoints** (`npm run checkpoint`, skill: `.claude/skills/checkpoint/`): file-level snapshots of the working tree in hidden local refs. Auto-saved at session start (hook in `.claude/settings.json`) and by every release check. Restore before push mistakes become deploy mistakes.
 - **Release checklist** (`npm run release-check`, skill: `.claude/skills/release-check/`): required before any push to `main`. Ends in GO / NO-GO; pushing remains a human decision (rule 5).
+- **Post preview gate** (`npm run preview-posts`, skill: `.claude/skills/preview-posts/`): the owner reviews every changed post in the browser against the production build; approval is hash-keyed in git-ignored `.preview/` and release-check check 12 is NO-GO without it.
 - **Post-deploy rollback**: `git revert` the bad commit(s) on `main` and push; the Pages workflow redeploys the previous good state.
 
 ## Project status (last updated 2026-07-14)

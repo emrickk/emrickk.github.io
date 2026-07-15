@@ -9,8 +9,10 @@ Pushing to `main` deploys to https://anping.us within minutes. This checklist is
 
 ## Quick mode (default)
 
-1. Run `npm run release-check` from the repo root. It saves a checkpoint, then runs git hygiene, secret scan, types, lint, build, image tests, rehype tests, and built-output verification (checks 1 to 9).
+1. Run `npm run release-check` from the repo root. It saves a checkpoint, then runs git hygiene, secret scan, types, lint, build, image tests, rehype tests, and built-output verification (checks 1 to 9, plus check 12: post preview approval).
 2. Report the per-check results and the verdict.
+
+If check 12 fails, preview-relevant files changed without an owner-approved preview: run `npm run preview-posts`, let the owner review in the browser, then `npm run preview-posts -- --approve` once they approve (see the preview-posts skill).
 
 ## Full mode
 
