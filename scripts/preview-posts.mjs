@@ -82,3 +82,22 @@ export function computeChangeSet(root, { baseRef = resolveBaseRef(root) } = {}) 
     })
     .sort()
 }
+
+// Pages the owner must look at for a given change set. A deleted primary post
+// sends review to the homepage (the post should vanish from lists); a deleted
+// sibling still renders on the surviving primary page. Site-wide changes get
+// the homepage plus one image-heavy exemplar. Sorted and deduplicated, '/'
+// first.
+export function reviewTargets(root, changeSet) {
+  const targets = new Set()
+  for (const path of changeSet) {
+    if (classifyPath(path) === 'post') {
+      if (existsSync(join(root, primaryPostPath(path)))) targets.add(`/posts/${slugForPostFile(path)}/`)
+      else targets.add('/')
+    } else {
+      targets.add('/')
+      targets.add(`/posts/${REPRESENTATIVE_POST}/`)
+    }
+  }
+  return [...targets].sort()
+}

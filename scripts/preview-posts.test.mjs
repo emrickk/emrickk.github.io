@@ -9,7 +9,9 @@ import {
   computeChangeSet,
   isDraftPost,
   primaryPostPath,
+  REPRESENTATIVE_POST,
   resolveBaseRef,
+  reviewTargets,
   slugForPostFile,
 } from './preview-posts.mjs'
 import { cleanup, makeFixtureRepo, run, write } from './test-helpers.mjs'
@@ -97,4 +99,37 @@ test('resolveBaseRef falls back to HEAD without origin/main', (t) => {
   const root = makeFixtureRepo()
   t.after(() => cleanup(root))
   assert.equal(resolveBaseRef(root), 'HEAD')
+})
+
+test('reviewTargets: posts map to their pages, siblings to the primary page', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/alpha.md', FM)
+  write(root, 'src/content/posts/beta.md', FM)
+  write(root, 'src/content/posts/beta.en.md', 'english\n')
+  assert.deepEqual(
+    reviewTargets(root, ['src/content/posts/alpha.md', 'src/content/posts/beta.en.md']),
+    ['/posts/alpha/', '/posts/beta/'],
+  )
+})
+
+test('reviewTargets: deleted primary goes to the homepage, deleted sibling to the post', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/beta.md', FM)
+  // gone.md does not exist on disk; beta.en.md does not exist but beta.md does
+  assert.deepEqual(
+    reviewTargets(root, ['src/content/posts/gone.md', 'src/content/posts/beta.en.md']),
+    ['/', '/posts/beta/'],
+  )
+})
+
+test('reviewTargets: site-wide changes add homepage and the representative post', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/alpha.md', FM)
+  assert.deepEqual(
+    reviewTargets(root, ['src/content/posts/alpha.md', 'src/styles/x.css']),
+    ['/', '/posts/alpha/', `/posts/${REPRESENTATIVE_POST}/`],
+  )
 })
