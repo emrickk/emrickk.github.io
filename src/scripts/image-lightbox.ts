@@ -5,34 +5,69 @@ export function mountImageLightbox() {
 
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCap = document.getElementById('lightbox-caption');
+  const lightboxCount = document.getElementById('lightbox-counter');
   const closeBtn = dialog.querySelector('.lightbox-close');
+  const prevBtn = dialog.querySelector('.lightbox-prev');
+  const nextBtn = dialog.querySelector('.lightbox-next');
 
   if (
     !(lightboxImg instanceof HTMLImageElement) ||
     !(lightboxCap instanceof HTMLParagraphElement) ||
-    !(closeBtn instanceof HTMLButtonElement)
+    !(lightboxCount instanceof HTMLParagraphElement) ||
+    !(closeBtn instanceof HTMLButtonElement) ||
+    !(prevBtn instanceof HTMLButtonElement) ||
+    !(nextBtn instanceof HTMLButtonElement)
   ) {
     return;
   }
 
   let previousFocus: Element | null = null;
+  let gallery: HTMLImageElement[] = [];
+  let galleryIndex = 0;
 
   const restorePage = () => {
     document.body.style.overflow = '';
     if (previousFocus instanceof HTMLElement) previousFocus.focus({ preventScroll: true });
     previousFocus = null;
+    gallery = [];
   };
 
   const closeLightbox = () => {
     if (dialog.open) dialog.close();
   };
 
-  const openLightbox = (src: string, alt: string, caption: string) => {
-    previousFocus = document.activeElement;
-    lightboxImg.src = src;
-    lightboxImg.alt = alt;
+  const sourceFor = (img: HTMLImageElement) =>
+    img.getAttribute('data-src') ?? img.currentSrc ?? img.src;
+
+  const captionFor = (img: HTMLImageElement) =>
+    img.nextElementSibling?.tagName === 'EM'
+      ? ((img.nextElementSibling as HTMLElement).textContent ?? '')
+      : '';
+
+  const showImage = (img: HTMLImageElement) => {
+    lightboxImg.src = sourceFor(img);
+    lightboxImg.alt = img.alt;
+    const caption = captionFor(img);
     lightboxCap.textContent = caption;
     lightboxCap.hidden = !caption;
+    const inGallery = gallery.length > 1;
+    lightboxCount.textContent = inGallery ? `${galleryIndex + 1} / ${gallery.length}` : '';
+    lightboxCount.hidden = !inGallery;
+    prevBtn.hidden = !inGallery;
+    nextBtn.hidden = !inGallery;
+  };
+
+  const showAt = (index: number) => {
+    galleryIndex = (index + gallery.length) % gallery.length;
+    showImage(gallery[galleryIndex]);
+  };
+
+  const openLightbox = (img: HTMLImageElement) => {
+    previousFocus = document.activeElement;
+    const galleryRoot = img.closest('ul.image-gallery');
+    gallery = galleryRoot ? [...galleryRoot.querySelectorAll<HTMLImageElement>('img')] : [];
+    galleryIndex = Math.max(0, gallery.indexOf(img));
+    showImage(img);
     dialog.showModal();
     document.body.style.overflow = 'hidden';
     closeBtn.focus({ preventScroll: true });
@@ -47,14 +82,7 @@ export function mountImageLightbox() {
     img.setAttribute('aria-haspopup', 'dialog');
     img.setAttribute('aria-label', `${img.alt || 'Image'} preview`);
 
-    const open = () => {
-      const src = img.getAttribute('data-src') ?? img.currentSrc ?? img.src;
-      const caption =
-        img.nextElementSibling?.tagName === 'EM'
-          ? ((img.nextElementSibling as HTMLElement).textContent ?? '')
-          : '';
-      openLightbox(src, img.alt, caption);
-    };
+    const open = () => openLightbox(img);
 
     img.addEventListener('click', open);
     img.addEventListener('keydown', (event) => {
@@ -66,13 +94,23 @@ export function mountImageLightbox() {
   });
 
   closeBtn.addEventListener('click', closeLightbox);
+  prevBtn.addEventListener('click', () => showAt(galleryIndex - 1));
+  nextBtn.addEventListener('click', () => showAt(galleryIndex + 1));
   dialog.addEventListener('click', (event) => {
     if (event.target === dialog) closeLightbox();
   });
   dialog.addEventListener('keydown', (event) => {
+    if (gallery.length > 1 && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+      event.preventDefault();
+      showAt(event.key === 'ArrowLeft' ? galleryIndex - 1 : galleryIndex + 1);
+      return;
+    }
     if (event.key !== 'Tab') return;
     event.preventDefault();
-    closeBtn.focus({ preventScroll: true });
+    const controls = [closeBtn, prevBtn, nextBtn].filter((button) => !button.hidden);
+    const at = controls.indexOf(document.activeElement as HTMLButtonElement);
+    const step = event.shiftKey ? -1 : 1;
+    controls[(at + step + controls.length) % controls.length].focus({ preventScroll: true });
   });
   dialog.addEventListener('close', restorePage);
 }

@@ -12,6 +12,26 @@ import '../styles/components/image-lightbox.css';
         ></path>
       </svg>
     </button>
+    <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous image" hidden>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path
+          d="M10 2 4 8l6 6"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </button>
+    <button type="button" class="lightbox-nav lightbox-next" aria-label="Next image" hidden>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path
+          d="m6 2 6 6-6 6"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </button>
     <img
       id="lightbox-img"
       class="lightbox-img"
@@ -19,6 +39,7 @@ import '../styles/components/image-lightbox.css';
       alt=""
     />
     <p id="lightbox-caption" class="lightbox-caption"></p>
+    <p id="lightbox-counter" class="lightbox-counter" hidden></p>
   </div>
 </dialog>
 
