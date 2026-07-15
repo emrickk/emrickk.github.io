@@ -1,6 +1,6 @@
 ---
 name: preview-posts
-description: Serve the production build so the owner can review changed posts in their own browser before anything ships. Use whenever post or template work is heading toward a push to main; release-check check 12 is NO-GO without an approval from this flow.
+description: Serve the production build so the owner can review changed posts in their own browser before anything ships. Use whenever post or template work is heading toward a push to main; release-check check 12 is NO-GO when preview-relevant files changed without an approval from this flow.
 ---
 
 # Post preview
@@ -9,7 +9,7 @@ The owner reviews every preview-relevant change in a real browser against the re
 
 ## Workflow
 
-1. Run `npm run preview-posts`. It builds, serves `dist/` on port 4322, and opens `.preview/review.html` listing every page to review. Use `--host` to print a LAN URL for review on a real phone, `--port` to avoid a collision, `--no-open` in headless sessions.
+1. Run `npm run preview-posts`. It builds, serves `dist/` on port 4322, and opens `.preview/review.html` listing every page to review. Use `npm run preview-posts -- --host` to print a LAN URL for review on a real phone, `-- --port N` to avoid a collision, `-- --no-open` in headless sessions.
 2. Hand the owner the review link(s). They browse the actual site: both languages, dark mode, narrow width.
 3. Apply any edits the owner requests, then run the preview again (rebuild picks up the changes). Repeat until the owner is satisfied.
 4. Only after the owner explicitly approves (for example says "approved" in chat), run `npm run preview-posts -- --approve`. Never approve unprompted, and never approve changes the owner has not seen.
