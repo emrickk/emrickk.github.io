@@ -5,10 +5,13 @@
 // ships unseen. Design: docs/superpowers/specs/2026-07-15-post-preview-gate-design.md
 // This script never pushes and never approves on its own.
 
-import { execFileSync } from 'node:child_process'
+import { execFileSync, spawn, spawnSync } from 'node:child_process'
 import { createHash } from 'node:crypto'
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { networkInterfaces } from 'node:os'
 import { join } from 'node:path'
+import { pathToFileURL } from 'node:url'
+import { parseArgs } from 'node:util'
 
 // Image-heavy exemplar reviewed whenever a site-wide file changes. Update it
 // when a better exemplar post exists.
@@ -172,4 +175,103 @@ export function checkPostPreview(root, { baseRef } = {}) {
     return { status: 'FAIL', detail: `${shown}${more}\n${REMEDIATION}` }
   }
   return { status: 'PASS', detail: `${changeSet.length} changed file(s) covered by preview approval` }
+}
+
+export function renderReviewPage(targets, { host, port }) {
+  const items = targets
+    .map((t) => `      <li><a href="http://${host}:${port}${t}" target="_blank">${t}</a></li>`)
+    .join('\n')
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Post preview review</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; }
+  li { margin: 0.4rem 0; }
+</style>
+</head>
+<body>
+<h1>Review these pages</h1>
+<ul>
+${items}
+</ul>
+<h2>Checklist</h2>
+<ul>
+  <li>Both languages (use the language toggle)</li>
+  <li>Dark mode and light mode</li>
+  <li>A narrow window or a real phone</li>
+  <li>Images load and grids lay out correctly</li>
+</ul>
+<p>When everything looks right, approve with: <code>npm run preview-posts -- --approve</code></p>
+</body>
+</html>
+`
+}
+
+function localIp() {
+  for (const addrs of Object.values(networkInterfaces())) {
+    for (const a of addrs || []) {
+      if (a.family === 'IPv4' && !a.internal) return a.address
+    }
+  }
+  return null
+}
+
+// CLI entry (pathToFileURL handles spaces in the repo path)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const { values } = parseArgs({
+    options: {
+      approve: { type: 'boolean', default: false },
+      port: { type: 'string', default: '4322' },
+      host: { type: 'boolean', default: false },
+      'no-open': { type: 'boolean', default: false },
+    },
+  })
+  const root = git(['rev-parse', '--show-toplevel'])
+  const baseRef = resolveBaseRef(root)
+  const changeSet = computeChangeSet(root, { baseRef })
+
+  if (values.approve) {
+    if (changeSet.length === 0) {
+      console.error('nothing to approve: no preview-relevant changes vs ' + baseRef)
+      process.exit(1)
+    }
+    writeManifest(root, hashChangeSet(root, changeSet), { baseRef })
+    console.log(`approved ${changeSet.length} file(s); release-check check 12 passes until any of them change`)
+    process.exit(0)
+  }
+
+  if (changeSet.length === 0) {
+    console.log('nothing to preview: no preview-relevant changes vs ' + baseRef)
+    process.exit(0)
+  }
+  console.log(`preview-relevant changes vs ${baseRef} (${changeSet.length}):`)
+  for (const p of changeSet) console.log('  ' + p)
+
+  console.log('\nbuilding production output...')
+  const build = spawnSync('npm', ['run', 'build'], { cwd: root, stdio: 'inherit' })
+  if (build.status !== 0) {
+    console.error('build failed; fix it before previewing')
+    process.exit(build.status ?? 1)
+  }
+
+  const host = values.host ? localIp() || 'localhost' : 'localhost'
+  const targets = reviewTargets(root, changeSet)
+  const reviewFile = join(root, '.preview', 'review.html')
+  mkdirSync(join(root, '.preview'), { recursive: true })
+  writeFileSync(reviewFile, renderReviewPage(targets, { host, port: values.port }))
+
+  const serverArgs = ['astro', 'preview', '--port', values.port]
+  if (values.host) serverArgs.push('--host')
+  const server = spawn('npx', serverArgs, { cwd: root, stdio: 'inherit' })
+
+  console.log(`\nreview page: ${reviewFile}`)
+  console.log(`server: http://${host}:${values.port}/`)
+  console.log('when everything looks right: npm run preview-posts -- --approve')
+  console.log('stop the server with Ctrl+C\n')
+  if (!values['no-open']) spawnSync('open', [reviewFile])
+
+  server.on('exit', (code) => process.exit(code ?? 0))
 }

@@ -13,6 +13,7 @@ import {
   manifestDiff,
   primaryPostPath,
   readManifest,
+  renderReviewPage,
   REPRESENTATIVE_POST,
   resolveBaseRef,
   reviewTargets,
@@ -272,4 +273,13 @@ test('release-check exposes post preview as quick-mode check 12', async () => {
   assert.ok(entry, 'check 12 missing from CHECKS')
   assert.equal(entry.name, 'post preview')
   assert.notEqual(entry.full, true)
+})
+
+test('renderReviewPage links every target against the given host and port', () => {
+  const html = renderReviewPage(['/', '/posts/alpha/'], { host: 'localhost', port: '4322' })
+  assert.match(html, /href="http:\/\/localhost:4322\/"/)
+  assert.match(html, /href="http:\/\/localhost:4322\/posts\/alpha\/"/)
+  assert.match(html, /dark mode/i)
+  assert.match(html, /language/i)
+  assert.doesNotMatch(html, /—/) // no em-dashes in user-facing copy
 })
