@@ -381,6 +381,11 @@ In `src/styles/prose.css`, directly after the `.img-grid` mobile media query (cl
 
 .prose ul.image-gallery li {
   margin: 0;
+  padding: 0;
+}
+
+.prose ul.image-gallery li p {
+  margin: 0;
 }
 
 .prose ul.image-gallery img {
@@ -393,7 +398,7 @@ In `src/styles/prose.css`, directly after the `.img-grid` mobile media query (cl
 
 - [ ] **Step 3: Verify in the dev server**
 
-The `blog-dev-b` launch config runs the dev server (preview tools). Check:
+Run the dev server via the `blog-dev` launch config (this repo's `.claude/launch.json`, port 4399; the AI Space root launch.json also has `blog-dev-b` with autoPort). Check:
 
 - `/posts/animal-crossing-is-a-good-game/`: six photos render as a 2-column grid, no list bullets (rule A).
 - `/posts/bmw-x3-30i/`: the 14-photo run renders as a grid (rule B).
