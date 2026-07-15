@@ -240,7 +240,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     }))
   } catch (err) {
     console.error(err.message)
-    console.error('usage: npm run preview-posts [-- --approve] [-- --port N] [-- --host] [-- --no-open]')
+    console.error('usage: npm run preview-posts -- [--approve] [--port N] [--host] [--no-open]')
     process.exit(1)
   }
   const root = git(['rev-parse', '--show-toplevel'])
