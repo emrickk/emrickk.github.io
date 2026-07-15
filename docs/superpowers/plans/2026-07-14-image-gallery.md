@@ -474,7 +474,7 @@ In `src/components/ImageLightbox.astro`, inside `.lightbox-inner`, after the clo
 After the `<p id="lightbox-caption" ...>` line, add the counter as a sibling (spec: caption and counter never share a line):
 
 ```astro
-    <p id="lightbox-counter" class="lightbox-counter" hidden></p>
+    <p id="lightbox-counter" class="lightbox-counter" aria-live="polite" hidden></p>
 ```
 
 - [ ] **Step 2: Style the nav buttons and counter**
@@ -506,6 +506,11 @@ In `src/styles/components/image-lightbox.css`, after the `.lightbox-close:hover`
   background: rgba(255, 255, 255, 0.26);
 }
 
+/* The display rule above beats the UA [hidden] rule; restore it. */
+.lightbox-nav[hidden] {
+  display: none;
+}
+
 .lightbox-prev {
   left: -22px;
 }
@@ -531,7 +536,7 @@ After the `.lightbox-caption` rule (line 79), add:
 .lightbox-counter {
   margin: 0;
   font-size: var(--text-footnote);
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.55);
   text-align: center;
 }
 ```
@@ -580,7 +585,7 @@ export function mountImageLightbox() {
   };
 
   const sourceFor = (img: HTMLImageElement) =>
-    img.getAttribute('data-src') ?? img.currentSrc ?? img.src;
+    img.getAttribute('data-src') ?? (img.currentSrc || img.src);
 
   const captionFor = (img: HTMLImageElement) =>
     img.nextElementSibling?.tagName === 'EM'
@@ -601,6 +606,7 @@ export function mountImageLightbox() {
   };
 
   const showAt = (index: number) => {
+    if (gallery.length < 2) return;
     galleryIndex = (index + gallery.length) % gallery.length;
     showImage(gallery[galleryIndex]);
   };
@@ -608,7 +614,9 @@ export function mountImageLightbox() {
   const openLightbox = (img: HTMLImageElement) => {
     previousFocus = document.activeElement;
     const galleryRoot = img.closest('ul.image-gallery');
-    gallery = galleryRoot ? [...galleryRoot.querySelectorAll<HTMLImageElement>('img')] : [];
+    gallery = galleryRoot
+      ? [...galleryRoot.querySelectorAll<HTMLImageElement>('img')].filter((i) => !i.closest('a'))
+      : [];
     galleryIndex = Math.max(0, gallery.indexOf(img));
     showImage(img);
     dialog.showModal();
@@ -643,7 +651,13 @@ export function mountImageLightbox() {
     if (event.target === dialog) closeLightbox();
   });
   dialog.addEventListener('keydown', (event) => {
-    if (gallery.length > 1 && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+    if (
+      gallery.length > 1 &&
+      (event.key === 'ArrowLeft' || event.key === 'ArrowRight') &&
+      !event.altKey &&
+      !event.metaKey &&
+      !event.ctrlKey
+    ) {
       event.preventDefault();
       showAt(event.key === 'ArrowLeft' ? galleryIndex - 1 : galleryIndex + 1);
       return;
