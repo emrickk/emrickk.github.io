@@ -16,10 +16,7 @@ titleEn: 'Two Days in Venice'
 
 上午沿着朱代卡运河走。对岸的老磨坊改成了酒店，木船突突地从水面开过去。拐进小巷，忽然一个人都没有了：橘红色的墙，树荫把石板路铺满。在威尼斯，安静和热闹只隔一个转角。
 
-<div class="img-grid">
-<img src="https://cdn.anping.us/2026/07/venice-giudecca-canal.webp" alt="">
-<img src="https://cdn.anping.us/2026/07/venice-quiet-lane.webp" alt="">
-</div>
+![](https://cdn.anping.us/2026/07/venice-giudecca-canal.webp)
 
 中午走到学院桥。桥中央的风景大概是威尼斯被拍得最多的一张明信片：安康圣母教堂的圆顶收住大运河的尽头。我们赶上的这一班，还有一队划艇正好从桥下经过。
 
@@ -34,8 +31,6 @@ titleEn: 'Two Days in Venice'
 
 阳光从拱窗斜进来。她靠在窗边，又闭着眼睛晒了一会儿太阳，和在乔托钟楼上一模一样。
 
-![](https://cdn.anping.us/2026/07/venice-campanile-sunlight.webp)
-
 总督宫的柱廊里凉快。从柱子中间望出去，圣乔治马焦雷岛像一条停在水上的船。旁边的小运河里，贡多拉排着队从叹息桥下钻过去。
 
 <div class="img-grid">
@@ -44,8 +39,6 @@ titleEn: 'Two Days in Venice'
 </div>
 
 傍晚的威尼斯是另一座城。游客像退潮一样散去，光变成金色。咖啡馆旁边的一面墙上，风车茉莉开得毫无节制，她凑过去，把脸埋进花里。
-
-![](https://cdn.anping.us/2026/07/venice-jasmine.webp)
 
 沿着扎特雷长堤往回走。路灯一盏一盏亮起来，对岸救主堂的圆顶沉进暮色里，皮划艇从水道中间划过去。
 
@@ -59,8 +52,6 @@ titleEn: 'Two Days in Venice'
 ![](https://cdn.anping.us/2026/07/venice-golden-canal.webp)
 
 晚饭在户外。太阳落在遮阳伞后面，晃得人睁不开眼，谁也不肯换位子。
-
-![](https://cdn.anping.us/2026/07/venice-dinner-sunset.webp)
 
 第二天上午坐贡多拉。船夫把我们摇进只容得下一条船的水道，桥洞一个接一个从头顶滑过去。快到终点的时候，墙壁忽然敞开，我们汇进大运河，像从后台走上舞台。
 
@@ -82,10 +73,7 @@ titleEn: 'Two Days in Venice'
 
 运河边泊着小船，桥拱下面全是倒影。她在广场上眯着眼睛笑。
 
-<div class="img-grid">
-<img src="https://cdn.anping.us/2026/07/burano-piazza-smile.webp" alt="">
-<img src="https://cdn.anping.us/2026/07/burano-canal.webp" alt="">
-</div>
+![](https://cdn.anping.us/2026/07/burano-canal.webp)
 
 傍晚回到本岛，又赶上一个金色时刻。贡多拉船夫在暮光里摇桨，海鸥掠过大运河。走过的最后一条小巷尽头，一只蓝色的小船安安静静地停在墙影里，好像已经停了一百年。
 

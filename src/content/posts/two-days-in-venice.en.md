@@ -10,10 +10,7 @@ The train from Florence spends its last few minutes running on the sea: water on
 
 In the morning we walked along the Giudecca canal. The old flour mill on the far bank is a hotel now, and wooden boats puttered across the water. One turn into a side lane and suddenly there was nobody at all: orange walls, tree shade covering the paving stones. In Venice, quiet and crowded are always one corner apart.
 
-<div class="img-grid">
-<img src="https://cdn.anping.us/2026/07/venice-giudecca-canal.webp" alt="">
-<img src="https://cdn.anping.us/2026/07/venice-quiet-lane.webp" alt="">
-</div>
+![](https://cdn.anping.us/2026/07/venice-giudecca-canal.webp)
 
 By noon we reached the Accademia Bridge. The view from the middle is probably the most photographed postcard in Venice: the domes of the Salute closing off the far end of the Grand Canal. In our showing, a line of rowers happened to be passing underneath.
 
@@ -28,8 +25,6 @@ After four hundred steps in Florence, Venice was far more polite: the Campanile 
 
 Sunlight came slanting through the arched windows. She leaned there and closed her eyes in the sun for a while, exactly the way she had on Giotto's tower.
 
-![](https://cdn.anping.us/2026/07/venice-campanile-sunlight.webp)
-
 The colonnade of the Doge's Palace was cool. Between the columns, San Giorgio Maggiore looked like a ship at anchor in the middle of the water. In the little canal around the corner, gondolas filed one by one under the Bridge of Sighs.
 
 <div class="img-grid">
@@ -38,8 +33,6 @@ The colonnade of the Doge's Palace was cool. Between the columns, San Giorgio Ma
 </div>
 
 In the evening Venice becomes a different city. The tourists drain away like a tide and the light turns to gold. On a wall beside a cafe, the star jasmine was blooming with no restraint whatsoever, and she walked over and buried her face in it.
-
-![](https://cdn.anping.us/2026/07/venice-jasmine.webp)
 
 We walked back along the Zattere. The lamps came on one by one, the dome of the Redentore sank into dusk across the water, and kayakers cut down the middle of the channel.
 
@@ -53,8 +46,6 @@ The last of the sun burned the houses along the canal gold.
 ![](https://cdn.anping.us/2026/07/venice-golden-canal.webp)
 
 Dinner was outdoors. The sun sat right behind the umbrellas, too bright to look at, and nobody was willing to switch seats.
-
-![](https://cdn.anping.us/2026/07/venice-dinner-sunset.webp)
 
 The next morning we took a gondola. The gondolier rowed us into waterways with room for exactly one boat, bridge after bridge sliding past overhead. Near the end the walls suddenly opened and we slipped out onto the Grand Canal, like stepping from backstage into the theater.
 
@@ -76,10 +67,7 @@ Murano is the island of glass; Burano is the island of color. It made sense the 
 
 Small boats moored along the canal, the arches of the bridges full of reflections. She squinted into the sun in the piazza and laughed.
 
-<div class="img-grid">
-<img src="https://cdn.anping.us/2026/07/burano-piazza-smile.webp" alt="">
-<img src="https://cdn.anping.us/2026/07/burano-canal.webp" alt="">
-</div>
+![](https://cdn.anping.us/2026/07/burano-canal.webp)
 
 By evening we were back on the main island, just in time for one more golden hour. A gondolier rowed through the dusk light, a seagull crossed the Grand Canal, and at the end of our last alley a small blue boat sat quietly in the shadow of the walls, as if it had been there for a hundred years.
 
