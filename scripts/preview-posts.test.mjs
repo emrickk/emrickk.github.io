@@ -281,5 +281,5 @@ test('renderReviewPage links every target against the given host and port', () =
   assert.match(html, /href="http:\/\/localhost:4322\/posts\/alpha\/"/)
   assert.match(html, /dark mode/i)
   assert.match(html, /language/i)
-  assert.doesNotMatch(html, /—/) // no em-dashes in user-facing copy
+  assert.doesNotMatch(html, /\u2014/) // no em-dashes in user-facing copy
 })
