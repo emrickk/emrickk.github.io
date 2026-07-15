@@ -1,29 +1,26 @@
 {
-  "name": "astro-tone",
-  "description": "Typography-first Astro blog starter with quiet design, built-in search, and publishing defaults.",
+  "name": "theneverless",
+  "description": "NeVeRtheLeSs, a bilingual personal blog since 2005. Built with Astro and the astro-tone theme.",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "license": "MIT",
-  "author": "hanityx",
+  "author": "NeVeRtheLeSs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hanityx/astro-tone.git"
+    "url": "git+https://github.com/emrickk/emrickk.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/hanityx/astro-tone/issues"
+    "url": "https://github.com/emrickk/emrickk.github.io/issues"
   },
-  "homepage": "https://hanityx.github.io/astro-tone/",
+  "homepage": "https://theneverless.com",
   "keywords": [
     "astro",
-    "withastro",
-    "astro-theme",
-    "astro-starter",
     "blog",
+    "personal-blog",
+    "bilingual",
     "markdown",
-    "mdx",
-    "pagefind",
-    "typography"
+    "pagefind"
   ],
   "engines": {
     "node": ">=22.12.0"
