@@ -2,6 +2,8 @@
 title: 'Alibaba.com Seller Ecosystem and Decision-Making Observation'
 description: ''
 pubDate: '2023-12-01'
+heroImage: '../../assets/hero/2023/12/alibaba-seller-ecosystem-cover.webp'
+showHero: true
 category: 'Things'
 lang: 'en'
 translationKey: 'alibaba-seller-ecosystem'
