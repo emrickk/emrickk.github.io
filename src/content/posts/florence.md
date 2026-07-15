@@ -8,6 +8,8 @@ lang: 'zh'
 translationKey: 'florence'
 titleZh: '翡冷翠的日落'
 titleEn: 'Sunset in Florence'
+descriptionZh: '五月底的佛罗伦萨：爬不完的台阶，晒不够的太阳，和一场全城见证的求婚。'
+descriptionEn: 'Florence at the end of May: stairs that never end, sun you never get enough of, and a proposal the whole city watched.'
 ---
 
 徐志摩把 Firenze 译作"翡冷翠"。到了才明白这三个字有多准：五月底的佛罗伦萨，白天热得像盛夏，太阳一落风就起来，整座城凉下来，像一块温润的玉。
