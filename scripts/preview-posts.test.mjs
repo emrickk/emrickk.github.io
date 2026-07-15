@@ -106,6 +106,21 @@ test('resolveBaseRef falls back to HEAD without origin/main', (t) => {
   assert.equal(resolveBaseRef(root), 'HEAD')
 })
 
+test('resolveBaseRef returns origin/main when it exists', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  run(root, ['remote', 'add', 'origin', root])
+  run(root, ['fetch', '-q', 'origin'])
+  assert.equal(resolveBaseRef(root), 'origin/main')
+})
+
+test('isDraftPost handles CRLF frontmatter', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/crlf.md', '---\r\ntitle: T\r\ndraft: true\r\n---\r\nbody\r\n')
+  assert.equal(isDraftPost(root, 'src/content/posts/crlf.md'), true)
+})
+
 test('reviewTargets: posts map to their pages, siblings to the primary page', (t) => {
   const root = makeFixtureRepo()
   t.after(() => cleanup(root))
@@ -186,6 +201,16 @@ test('readManifest returns null when missing or invalid', (t) => {
   assert.equal(readManifest(root), null)
 })
 
+test('computeChangeSet: non-ASCII filenames survive git path quoting', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/停了一百年的船.md', FM + 'body\n')
+  assert.deepEqual(computeChangeSet(root, { baseRef: 'HEAD' }), [
+    'src/content/posts/停了一百年的船.md',
+  ])
+  assert.equal(checkPostPreview(root, { baseRef: 'HEAD' }).status, 'FAIL')
+})
+
 test('checkPostPreview: SKIP, FAIL without approval, PASS after, FAIL after edit', (t) => {
   const root = makeFixtureRepo()
   t.after(() => cleanup(root))
@@ -206,4 +231,37 @@ test('checkPostPreview: SKIP, FAIL without approval, PASS after, FAIL after edit
   const stale = checkPostPreview(root, opts)
   assert.equal(stale.status, 'FAIL')
   assert.match(stale.detail, /changed since approval/)
+})
+
+test('checkPostPreview truncates long problem lists', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const opts = { baseRef: 'HEAD' }
+  const names = []
+  for (let i = 0; i < 12; i++) {
+    const name = `src/content/posts/post-${String(i).padStart(2, '0')}.md`
+    names.push(name)
+    write(root, name, FM + 'v1\n')
+  }
+  writeManifest(root, hashChangeSet(root, computeChangeSet(root, opts)), { baseRef: 'HEAD' })
+  for (const name of names) write(root, name, FM + 'v2\n')
+  const stale = checkPostPreview(root, opts)
+  assert.equal(stale.status, 'FAIL')
+  assert.match(stale.detail, /and 2 more/)
+})
+
+test('checkPostPreview: approved deletion passes until the file returns', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const opts = { baseRef: 'HEAD' }
+  write(root, 'src/content/posts/doomed.md', FM + 'body\n')
+  run(root, ['add', 'src/content/posts/doomed.md'])
+  run(root, ['commit', '-q', '-m', 'add doomed'])
+  rmSync(join(root, 'src/content/posts/doomed.md'))
+  const files = hashChangeSet(root, computeChangeSet(root, opts))
+  assert.equal(files['src/content/posts/doomed.md'], 'deleted')
+  writeManifest(root, files, { baseRef: 'HEAD' })
+  assert.equal(checkPostPreview(root, opts).status, 'PASS')
+  write(root, 'src/content/posts/doomed.md', FM + 'back from the dead\n')
+  assert.equal(checkPostPreview(root, opts).status, 'FAIL')
 })

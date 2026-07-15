@@ -25,6 +25,9 @@ export function classifyPath(path) {
   return null
 }
 
+// Must track Astro's glob-loader id generation (the route is post.id). For
+// dotted or nested filenames, check what ids Astro actually generates rather
+// than trusting this filename-minus-extension shorthand.
 export function slugForPostFile(path) {
   return path
     .split('/')
@@ -69,11 +72,15 @@ export function resolveBaseRef(root) {
 
 // Preview-relevant files changed relative to the base ref: committed-ahead
 // and working-tree edits (git diff) plus untracked files. Sorted for stable
-// output and manifest comparison.
+// output and manifest comparison. -z output with NUL splitting keeps
+// non-ASCII paths verbatim (default core.quotepath=true would C-quote them
+// and they would silently fail classifyPath). The diff call fails closed:
+// a git error throws, and release-check turns the throw into a FAIL, rather
+// than shrinking the change set to untracked-only.
 export function computeChangeSet(root, { baseRef = resolveBaseRef(root) } = {}) {
-  const diff = git(['diff', '--no-renames', '--name-only', baseRef], { cwd: root, allowFail: true }) || ''
-  const untracked = git(['ls-files', '--others', '--exclude-standard'], { cwd: root }) || ''
-  const all = new Set([...diff.split('\n'), ...untracked.split('\n')].filter(Boolean))
+  const diff = git(['diff', '--no-renames', '--name-only', '-z', baseRef], { cwd: root }) || ''
+  const untracked = git(['ls-files', '--others', '--exclude-standard', '-z'], { cwd: root }) || ''
+  const all = new Set([...diff.split('\0'), ...untracked.split('\0')].filter(Boolean))
   return [...all]
     .filter((path) => {
       const kind = classifyPath(path)
