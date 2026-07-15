@@ -2,6 +2,8 @@
 title: 'Product Methodology Systemization Playbook'
 description: ''
 pubDate: '2024-05-01'
+heroImage: '../../assets/hero/2024/05/product-methodology-playbook-cover.webp'
+showHero: true
 category: 'Things'
 lang: 'en'
 translationKey: 'product-methodology-playbook'
