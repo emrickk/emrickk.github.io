@@ -29,10 +29,7 @@ title: '另一种时间'
 
 越靠近海，森林就越不一样。云杉接替了红杉，每根树干都裹着一层厚厚的苔藓，看起来不再像加州，倒像是一片雨林。
 
-<div class="img-grid">
-  <img src="https://cdn.anping.us/2026/07/redwood-mossy-trail.webp" alt="海岸森林里长满苔藓的小径" loading="lazy" />
-  <img src="https://cdn.anping.us/2026/07/redwood-sitting-in-ferns.webp" alt="坐在蕨类中间" loading="lazy" />
-</div>
+![海岸森林里长满苔藓的小径](https://cdn.anping.us/2026/07/redwood-mossy-trail.webp)
 
 睡前我们走到水边。对岸的房子一盏一盏亮起灯，一只海鸥一路在潮线上走在我们前面。回到旅馆，房间里那盏灯是我们最后关掉的东西。
 

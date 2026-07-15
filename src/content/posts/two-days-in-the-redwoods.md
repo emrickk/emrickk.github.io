@@ -37,10 +37,7 @@ At a pullout we stood above the road for a while and watched cars slip in and ou
 
 Closer to the ocean the forest changes. Spruce takes over from redwood and every trunk wears a coat of moss, so that it stops looking like California at all and starts looking like a rainforest.
 
-<div class="img-grid">
-  <img src="https://cdn.anping.us/2026/07/redwood-mossy-trail.webp" alt="A mossy trail through the coastal forest" loading="lazy" />
-  <img src="https://cdn.anping.us/2026/07/redwood-sitting-in-ferns.webp" alt="Sitting among the ferns" loading="lazy" />
-</div>
+![A mossy trail through the coastal forest](https://cdn.anping.us/2026/07/redwood-mossy-trail.webp)
 
 Before turning in we walked down to the water. The houses across the inlet were lighting up one by one, and a gull worked the tide line ahead of us the whole way. Back at the inn, the lamp in the room was the last thing we turned off.
 
