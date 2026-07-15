@@ -265,3 +265,11 @@ test('checkPostPreview: approved deletion passes until the file returns', (t) =>
   write(root, 'src/content/posts/doomed.md', FM + 'back from the dead\n')
   assert.equal(checkPostPreview(root, opts).status, 'FAIL')
 })
+
+test('release-check exposes post preview as quick-mode check 12', async () => {
+  const { CHECKS } = await import('./release-check.mjs')
+  const entry = CHECKS.find((c) => c.num === 12)
+  assert.ok(entry, 'check 12 missing from CHECKS')
+  assert.equal(entry.name, 'post preview')
+  assert.notEqual(entry.full, true)
+})

@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 // Release checklist: deterministic pre-push checks with a go/no-go verdict.
-// Quick mode: checks 1-9. Full mode (--full): adds CDN and internal link checks.
+// Quick mode: checks 1-9 and 12. Full mode (--full): adds CDN and internal link checks.
 // This script never pushes, merges, or tags.
 import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, resolve, sep } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
+import { checkPostPreview } from './preview-posts.mjs'
 
 export const FORBIDDEN_PATHS = [
   { name: 'env file', re: /^\.env(?!\.example$)/ },
@@ -291,6 +292,7 @@ export const CHECKS = [
   { num: 9, name: 'built output', run: checkBuiltOutput },
   { num: 10, name: 'CDN images', full: true, run: checkCdnImages },
   { num: 11, name: 'internal links', full: true, run: checkInternalLinks },
+  { num: 12, name: 'post preview', run: (root) => checkPostPreview(root) },
 ]
 
 export async function runChecks(root, { full = false } = {}) {
