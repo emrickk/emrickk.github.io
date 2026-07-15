@@ -177,7 +177,16 @@ const featuredThumbSizes = (img: ImageMetadata) =>
                   orig={post.data.lang ?? 'zh'}
                   fallback={post.data.title}
                 />
-                {post.data.description && <p class="featured-desc">{post.data.description}</p>}
+                {post.data.description && (
+                  <p class="featured-desc">
+                    <LangTitle
+                      zh={post.data.descriptionZh}
+                      en={post.data.descriptionEn}
+                      orig={post.data.lang ?? 'zh'}
+                      fallback={post.data.description}
+                    />
+                  </p>
+                )}
                 <span class="featured-cta">{tr.readLink}</span>
               </div>
               {post.data.heroImage && (

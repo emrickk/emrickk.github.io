@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'springtime-in-patagonia'
 titleZh: '巴塔哥尼亚的春天'
 titleEn: 'Springtime in Patagonia'
+descriptionZh: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满酒店窗户的百内山群，佩霍埃湖，Laguna Amarga的长椅，和要等到晚上十点的日落。'
+descriptionEn: 'A photo journal from Chilean Patagonia at the end of November: Puerto Natales, the Paine massif filling a hotel window, Lago Pehoé, the bench at Laguna Amarga, and sunsets that last until ten at night.'
 ---
 
 At the end of November 2024 we went about as far south as roads go: Puerto Natales and Torres del Paine, in Chilean Patagonia. It was late spring down there, which in Patagonia means green meadows, snow on every summit, flowers in the fences, and wind that you can lean into.

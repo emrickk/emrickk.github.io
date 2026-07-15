@@ -158,7 +158,7 @@ const filters = categories.map((category) => ({
           class="feed-item"
           data-feed-item
           data-category={post.data.category ?? ''}
-          data-search={`${post.data.title} ${post.data.titleZh ?? ''} ${post.data.titleEn ?? ''} ${post.data.description} ${post.data.category ? `${categoryLabel(post.data.category).zh} ${categoryLabel(post.data.category).en}` : ''}`.toLocaleLowerCase()}
+          data-search={`${post.data.title} ${post.data.titleZh ?? ''} ${post.data.titleEn ?? ''} ${post.data.description} ${post.data.descriptionZh ?? ''} ${post.data.descriptionEn ?? ''} ${post.data.category ? `${categoryLabel(post.data.category).zh} ${categoryLabel(post.data.category).en}` : ''}`.toLocaleLowerCase()}
           data-index={index}
         >
           <a href={withBase(`${basePath}/${postSlug(post.id)}/`)} class="feed-link">
@@ -172,7 +172,16 @@ const filters = categories.map((category) => ({
                 orig={post.data.lang ?? 'zh'}
                 fallback={post.data.title}
               />
-              {post.data.description && <p class="feed-desc">{post.data.description}</p>}
+              {post.data.description && (
+                <p class="feed-desc">
+                  <LangTitle
+                    zh={post.data.descriptionZh}
+                    en={post.data.descriptionEn}
+                    orig={post.data.lang ?? 'zh'}
+                    fallback={post.data.description}
+                  />
+                </p>
+              )}
               {post.data.category && (
                 <div class="feed-meta">
                   <span class="feed-category">
@@ -573,7 +582,9 @@ const filters = categories.map((category) => ({
   color: var(--label-secondary);
   font-size: var(--text-callout);
   line-height: var(--leading-normal);
-  overflow-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .feed-meta {

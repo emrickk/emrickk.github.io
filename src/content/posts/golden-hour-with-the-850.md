@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'golden-hour-with-the-850'
 titleZh: '黄昏里的850'
 titleEn: 'The 850 at Golden Hour'
+descriptionZh: '2024年8月的一个周六傍晚：空旷的停车场，最后一小时的阳光，和一场以M850i Gran Coupe为模特的肖像拍摄。'
+descriptionEn: 'A Saturday evening in August 2024: an empty parking lot, the last hour of sun, and a portrait session with the M850i Gran Coupe.'
 ---
 
 One Saturday at the beginning of August 2024, I spent the day in San Francisco with the camera: cable cars, cafe windows, the crowds along Market Street. But the frames I was really saving the light for came in the evening, back in the South Bay. On summer weekends the office-park lots there empty out completely, which turns them into the quietest photo studios you could ask for. The model that evening was the 850.

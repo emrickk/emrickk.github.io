@@ -31,6 +31,8 @@ const {
   titleEn,
   lang: origLang = 'zh',
   description,
+  descriptionZh,
+  descriptionEn,
   pubDate,
   updatedDate,
   heroImage,
@@ -115,7 +117,13 @@ const jsonLd = serializeScriptJson({
           fallback={title}
           meta={title}
         />
-        {description && <p class="post-description">{description}</p>}
+        {
+          description && (
+            <p class="post-description">
+              <LangTitle zh={descriptionZh} en={descriptionEn} orig={origLang} fallback={description} />
+            </p>
+          )
+        }
       </header>
 
       {

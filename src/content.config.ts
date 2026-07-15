@@ -32,6 +32,8 @@ const posts = defineCollection({
       translationKey: z.string().optional(),
       titleZh: z.string().optional(),
       titleEn: z.string().optional(),
+      descriptionZh: z.string().optional(),
+      descriptionEn: z.string().optional(),
     }),
 });
 
