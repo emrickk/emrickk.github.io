@@ -77,6 +77,39 @@ test('collectSecretScanSources includes untracked files, skips binaries and lock
   assert.ok(!files.includes('photo.webp'))
 })
 
+// Git C-quotes non-ASCII paths when core.quotepath=true (the default), which
+// used to hide Chinese-named files from the scan and hygiene checks.
+test('collectSecretScanSources sees added lines in non-ASCII filenames despite quotepath', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  run(root, ['config', 'core.quotepath', 'true'])
+  write(root, '测试.md', 'clean line\n')
+  run(root, ['add', '测试.md'])
+  run(root, ['commit', '-q', '-m', 'add zh-named post'])
+  write(root, '测试.md', 'clean line\nghp_0123456789abcdefghijABCDEFGHIJ456789\n')
+  const hit = collectSecretScanSources(root).find((s) => s.file === '测试.md')
+  assert.ok(hit, 'zh-named tracked file must appear in scan sources')
+  assert.ok(hit.text.includes('ghp_0123456789abcdefghijABCDEFGHIJ456789'))
+})
+
+test('collectSecretScanSources includes untracked non-ASCII filenames despite quotepath', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  run(root, ['config', 'core.quotepath', 'true'])
+  write(root, '草稿.md', 'ghp_0123456789abcdefghijABCDEFGHIJ456789\n')
+  const files = collectSecretScanSources(root).map((s) => s.file)
+  assert.ok(files.includes('草稿.md'))
+})
+
+test('findForbiddenPaths flags forbidden paths with non-ASCII names despite quotepath', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  run(root, ['config', 'core.quotepath', 'true'])
+  write(root, 'image-staging/照片.jpg', 'binary-ish\n')
+  run(root, ['add', '-f', 'image-staging/照片.jpg'])
+  assert.ok(findForbiddenPaths(root).includes('image-staging/照片.jpg'))
+})
+
 test('checkDistDir passes a clean fixture dist', (t) => {
   const root = makeFixtureRepo()
   t.after(() => cleanup(root))

@@ -26,10 +26,12 @@ function git(args, { cwd, allowFail = false } = {}) {
   }
 }
 
+// -z output with NUL splitting keeps non-ASCII paths verbatim (default
+// core.quotepath=true would C-quote them and break the regex matches).
 export function findForbiddenPaths(root) {
-  const tracked = git(['ls-files'], { cwd: root })
-  const staged = git(['diff', '--cached', '--name-only'], { cwd: root })
-  const all = new Set([...tracked.split('\n'), ...staged.split('\n')].filter(Boolean))
+  const tracked = git(['ls-files', '-z'], { cwd: root })
+  const staged = git(['diff', '--cached', '--name-only', '-z'], { cwd: root })
+  const all = new Set([...tracked.split('\0'), ...staged.split('\0')].filter(Boolean))
   return [...all].filter((p) => FORBIDDEN_PATHS.some((f) => f.re.test(p))).sort()
 }
 
@@ -85,7 +87,9 @@ export function loadAllowlist(root) {
 export function collectSecretScanSources(root) {
   const sources = []
   const base = git(['rev-parse', '--verify', '-q', 'origin/main'], { cwd: root, allowFail: true }) ? 'origin/main' : 'HEAD'
-  const diff = git(['diff', '--no-renames', '--unified=0', base], { cwd: root, allowFail: true }) || ''
+  // core.quotepath=off keeps non-ASCII paths raw in the +++ b/ headers; the
+  // default C-quoting would make them unparseable and skip those files.
+  const diff = git(['-c', 'core.quotepath=off', 'diff', '--no-renames', '--unified=0', base], { cwd: root, allowFail: true }) || ''
   let file = null
   const added = new Map()
   for (const line of diff.split('\n')) {
@@ -96,8 +100,8 @@ export function collectSecretScanSources(root) {
     }
   }
   for (const [f, text] of added) sources.push({ file: f, text })
-  const untracked = git(['ls-files', '--others', '--exclude-standard'], { cwd: root }) || ''
-  for (const f of untracked.split('\n').filter(Boolean)) {
+  const untracked = git(['ls-files', '--others', '--exclude-standard', '-z'], { cwd: root }) || ''
+  for (const f of untracked.split('\0').filter(Boolean)) {
     if (SCAN_SKIP.test(f)) continue
     const p = join(root, f)
     if (!existsSync(p) || statSync(p).size > 1024 * 1024) continue
