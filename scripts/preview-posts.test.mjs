@@ -90,6 +90,58 @@ test('computeChangeSet: draft posts and their siblings are excluded', (t) => {
   assert.deepEqual(computeChangeSet(root, { baseRef: 'HEAD' }), ['src/content/posts/live.md'])
 })
 
+// Deploys run npm ci && npm run build, so npm script edits other than
+// "build" cannot change the deployed site and need no preview.
+function commitPackageJson(root, pkg) {
+  write(root, 'package.json', JSON.stringify(pkg, null, 2) + '\n')
+  run(root, ['add', 'package.json'])
+  run(root, ['commit', '-q', '-m', 'pkg'])
+}
+
+const BASE_PKG = {
+  name: 'x',
+  scripts: { build: 'astro build', dev: 'astro dev' },
+  dependencies: { astro: '^6.0.0' },
+}
+
+test('computeChangeSet: package.json with only npm script edits is not preview-relevant', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  commitPackageJson(root, BASE_PKG)
+  const pkg = structuredClone(BASE_PKG)
+  pkg.scripts['preview-posts'] = 'node scripts/preview-posts.mjs'
+  write(root, 'package.json', JSON.stringify(pkg, null, 2) + '\n')
+  assert.deepEqual(computeChangeSet(root, { baseRef: 'HEAD' }), [])
+})
+
+test('computeChangeSet: package.json dependency changes stay preview-relevant', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  commitPackageJson(root, BASE_PKG)
+  const pkg = structuredClone(BASE_PKG)
+  pkg.dependencies.astro = '^7.0.0'
+  write(root, 'package.json', JSON.stringify(pkg, null, 2) + '\n')
+  assert.deepEqual(computeChangeSet(root, { baseRef: 'HEAD' }), ['package.json'])
+})
+
+test('computeChangeSet: package.json build script changes stay preview-relevant', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  commitPackageJson(root, BASE_PKG)
+  const pkg = structuredClone(BASE_PKG)
+  pkg.scripts.build = 'astro build && pagefind --site dist'
+  write(root, 'package.json', JSON.stringify(pkg, null, 2) + '\n')
+  assert.deepEqual(computeChangeSet(root, { baseRef: 'HEAD' }), ['package.json'])
+})
+
+test('computeChangeSet: unparseable package.json fails closed as preview-relevant', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  commitPackageJson(root, BASE_PKG)
+  write(root, 'package.json', '{ not json\n')
+  assert.deepEqual(computeChangeSet(root, { baseRef: 'HEAD' }), ['package.json'])
+})
+
 test('isDraftPost reads the primary frontmatter, missing file is not draft', (t) => {
   const root = makeFixtureRepo()
   t.after(() => cleanup(root))

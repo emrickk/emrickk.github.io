@@ -73,6 +73,25 @@ export function resolveBaseRef(root) {
     : 'HEAD'
 }
 
+// Deploys run npm ci && npm run build, so npm script edits other than
+// "build" cannot change the deployed site; every other package.json field
+// (dependencies, overrides, engines) can. Fails closed: a parse error or a
+// missing base version counts as site-affecting. JSON.stringify comparison
+// is key-order sensitive, which can only over-flag, never under-flag.
+export function packageJsonAffectsSite(root, baseRef) {
+  try {
+    const significant = (raw) => {
+      const { scripts = {}, ...rest } = JSON.parse(raw)
+      return JSON.stringify({ ...rest, buildScript: scripts.build })
+    }
+    const base = git(['show', `${baseRef}:package.json`], { cwd: root })
+    const current = readFileSync(join(root, 'package.json'), 'utf8')
+    return significant(base) !== significant(current)
+  } catch {
+    return true
+  }
+}
+
 // Preview-relevant files changed relative to the base ref: committed-ahead
 // and working-tree edits (git diff) plus untracked files. Sorted for stable
 // output and manifest comparison. -z output with NUL splitting keeps
@@ -89,6 +108,7 @@ export function computeChangeSet(root, { baseRef = resolveBaseRef(root) } = {}) 
       const kind = classifyPath(path)
       if (kind === null) return false
       if (kind === 'post' && isDraftPost(root, path)) return false
+      if (path === 'package.json' && !packageJsonAffectsSite(root, baseRef)) return false
       return true
     })
     .sort()
