@@ -57,9 +57,9 @@ chat message; the policy guard for obtaining that approval lives in the skill te
 digest binds it to content in code.
 
 **The digest**: the first 12 hex characters of a sha256 over the sorted
-`path:content-hash` entries of `hashChangeSet(root, changeSet)`. Identical trees produce
-identical digests; any post edit, addition, or deletion after review changes it. It is a
-freshness token, not a security boundary.
+`path:content-hash` entries of `hashChangeSet(root, changeSet)`, joined with newlines.
+Identical trees produce identical digests; any post edit, addition, or deletion after
+review changes it. It is a freshness token, not a security boundary.
 
 ### Step 1: preflight (abort early, change nothing)
 
@@ -166,8 +166,8 @@ preview gate's meaning identical across both entry points.
 ## Error handling
 
 Every abort prints one plain-language paragraph: what was found, why ship stopped, what to
-do next. Abort exit code is 1 for real failures (dirty preflight, NO-GO, build failure) and
-0 for clean declines (nothing to ship, answered N). The review server always stops on exit
+do next. Abort exit code is 1 for real failures (dirty preflight, stale digest, NO-GO,
+build failure) and 0 for clean declines (nothing to ship, answered N). The review server always stops on exit
 (try/finally). Ship never touches files outside `.preview/` and git state, and its only git
 mutations are the single commit and the push in step 4.
 
