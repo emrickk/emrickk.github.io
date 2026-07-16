@@ -50,4 +50,21 @@ const translations = defineCollection({
   }),
 });
 
-export const collections = { posts, translations };
+const notes = defineCollection({
+  // Microblog notes imported from the X/Twitter archive by
+  // scripts/migrate/tweets_import.py. One file per tweet or self-thread,
+  // keyed by tweetId; bodies are verbatim tweet text (mechanical
+  // transforms only). No titles, no drafts, no bilingual siblings.
+  loader: glob({
+    base: './src/content/notes',
+    pattern: '**/*.md',
+  }),
+  schema: z.object({
+    date: z.coerce.date(),
+    tweetId: z.string(),
+    source: z.string().url(),
+    tweetCount: z.number().int().positive(),
+  }),
+});
+
+export const collections = { posts, translations, notes };

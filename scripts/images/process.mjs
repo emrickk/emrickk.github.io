@@ -29,6 +29,8 @@ export async function run({
   config = null,
   now = new Date(),
   log = console.log,
+  prefix = null,
+  archive = true,
 } = {}) {
   const files = listStaged(stagingDir)
   const base = config?.publicBase ?? DEFAULT_BASE
@@ -45,8 +47,8 @@ export async function run({
       snippets.push(snippetFor(key, base))
       continue
     }
-    const key = deriveKey(path.basename(file), now)
-    if (!dryRun && config) {
+    const key = deriveKey(path.basename(file), now, prefix)
+    if (!dryRun && config && archive) {
       const arch = archiveOriginal(file, config)
       log(`  archived original -> ${arch.dest} (${arch.location})`)
     }
@@ -67,13 +69,22 @@ export async function run({
 
 // CLI entry (pathToFileURL handles spaces in the repo path)
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const argValue = (flag) => {
+    const i = process.argv.indexOf(flag)
+    return i !== -1 && process.argv[i + 1] ? process.argv[i + 1] : null
+  }
+
   const dryRun = process.argv.includes('--dry-run')
+  const stagingDir = argValue('--staging-dir') ?? DEFAULT_STAGING
+  const manifestPath = argValue('--manifest') ?? DEFAULT_MANIFEST
+  const prefix = argValue('--prefix')
+  const archive = !process.argv.includes('--no-archive')
   loadEnvFile()
   const config = dryRun ? null : loadConfig()
-  run({ dryRun, config })
+  run({ dryRun, config, stagingDir, manifestPath, prefix, archive })
     .then(({ snippets, count }) => {
       if (count === 0) {
-        console.log(`No images in ${DEFAULT_STAGING}/. Drop .jpg/.jpeg/.png there and re-run.`)
+        console.log(`No images in ${stagingDir}/. Drop .jpg/.jpeg/.png there and re-run.`)
         return
       }
       console.log('\nPaste into your post:\n')

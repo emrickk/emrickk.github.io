@@ -10,10 +10,12 @@ function outExtFor(ext) {
   return CONVERT_EXT.has(ext.toLowerCase()) ? '.webp' : ext.toLowerCase()
 }
 
-// For NEW uploads: sanitized basename under the current year/month.
-export function deriveKey(originalName, date) {
+// For NEW uploads: sanitized basename under the current year/month, or under
+// a fixed key prefix (e.g. 'notes') when one is given.
+export function deriveKey(originalName, date, prefix = null) {
   const ext = path.extname(originalName)
   const base = sanitize(path.basename(originalName, ext))
+  if (prefix) return `${prefix.replace(/\/+$/, '')}/${base}${outExtFor(ext)}`
   const yyyy = String(date.getUTCFullYear())
   const mm = String(date.getUTCMonth() + 1).padStart(2, '0')
   return `${yyyy}/${mm}/${base}${outExtFor(ext)}`

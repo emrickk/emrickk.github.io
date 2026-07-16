@@ -1,0 +1,65 @@
+---
+import '../../styles/pages/notes.css';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getUiText } from '../../ui';
+
+const tr = getUiText();
+
+const notes = (await getCollection('notes')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+type Rendered = Awaited<ReturnType<typeof render>>;
+type Entry = { note: CollectionEntry<'notes'>; Content: Rendered['Content'] };
+
+const entries: Entry[] = [];
+for (const note of notes) {
+  const { Content } = await render(note);
+  entries.push({ note, Content });
+}
+
+const byYear = new Map<number, Entry[]>();
+for (const entry of entries) {
+  const year = entry.note.data.date.getUTCFullYear();
+  const group = byYear.get(year);
+  if (group) group.push(entry);
+  else byYear.set(year, [entry]);
+}
+const years = [...byYear.keys()];
+---
+
+<BaseLayout title={tr.notes.title} description={tr.notes.description}>
+  <main id="main-content" class="notes-main">
+    <div class="notes-header">
+      <p class="notes-label eyebrow-accent">{tr.notes.eyebrow}</p>
+      <h1 class="notes-title">{tr.notes.title}</h1>
+    </div>
+    <div class="notes-timeline">
+      {
+        years.map((year) => (
+          <section class="notes-year-group" aria-label={String(year)}>
+            <h2 class="notes-year">{year}</h2>
+            {(byYear.get(year) ?? []).map(({ note, Content }) => (
+              <article class="note" id={note.data.tweetId}>
+                <header class="note-meta">
+                  <a class="note-anchor" href={`#${note.data.tweetId}`}>
+                    <FormattedDate date={note.data.date} />
+                  </a>
+                  <a class="note-source" href={note.data.source} target="_blank" rel="noopener noreferrer">
+                    {tr.notes.onX}
+                  </a>
+                </header>
+                <div class="note-body">
+                  <Content />
+                </div>
+              </article>
+            ))}
+          </section>
+        ))
+      }
+      {entries.length === 0 && <p class="notes-empty">{tr.notes.empty}</p>}
+    </div>
+  </main>
+</BaseLayout>

@@ -60,3 +60,33 @@ def uploads_root():
 
 def private_posts_dir():
     return os.path.join(backup_root(), 'private-posts')
+
+
+def twitter_archive_root():
+    """Return the extracted X/Twitter archive root (must contain data/tweets.js).
+
+    Resolution order (first hit wins):
+      1. env TWITTER_ARCHIVE_ROOT                       -- explicit override
+      2. <repo>/../../Backup/twitter-archive            -- current layout:
+         repo under Personal Website/Personal Blog/, archive extracted at
+         Personal Website/Backup/twitter-archive
+
+    Raises RuntimeError listing every path tried if none match.
+    """
+    candidates = []
+    env = os.environ.get('TWITTER_ARCHIVE_ROOT')
+    if env:
+        candidates.append(('env TWITTER_ARCHIVE_ROOT', os.path.abspath(env)))
+    candidates.append(('<repo>/../../Backup/twitter-archive',
+                       os.path.abspath(os.path.join(REPO, '..', '..', 'Backup', 'twitter-archive'))))
+    tried = []
+    for label, path in candidates:
+        tried.append(f'{label} -> {path}')
+        if os.path.isfile(os.path.join(path, 'data', 'tweets.js')):
+            return path
+    raise RuntimeError(
+        'Could not locate the extracted X/Twitter archive (looked for data/tweets.js under):\n  '
+        + '\n  '.join(tried)
+        + '\nExtract the X archive ZIP to Personal Website/Backup/twitter-archive/ '
+        'or set TWITTER_ARCHIVE_ROOT to override.'
+    )

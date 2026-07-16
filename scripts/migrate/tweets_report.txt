@@ -1,0 +1,11 @@
+archive_total: 228
+kept_tweets: 158
+notes_emitted: 158
+retweets_dropped: 6
+replies_dropped: 64
+chain_dropped: 0
+empties_flagged: 0
+orphan_roots: 0
+media_photos: 9
+media_missing: 0
+media_skipped_nonphoto: 0

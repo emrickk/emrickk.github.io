@@ -57,3 +57,43 @@ def test_repo_parent_backup_candidate_is_found(tmp_path, monkeypatch):
     assert root == os.path.abspath(str(tmp_path / 'Personal Website' / 'Backup'))
     assert backup_paths.uploads_root() == os.path.join(root, 'site', 'wp-content', 'uploads')
     assert backup_paths.private_posts_dir() == os.path.join(root, 'private-posts')
+
+
+def _make_twitter_archive(root):
+    data_dir = root / 'data'
+    data_dir.mkdir(parents=True, exist_ok=True)
+    (data_dir / 'tweets.js').write_text('window.YTD.tweets.part0 = []\n', encoding='utf-8')
+    return str(root)
+
+
+def test_twitter_archive_env_override_wins(tmp_path, monkeypatch):
+    fake_repo = tmp_path / 'nowhere' / 'repo'
+    fake_repo.mkdir(parents=True)
+    monkeypatch.setattr(backup_paths, 'REPO', str(fake_repo))
+    env_root = tmp_path / 'env-archive'
+    _make_twitter_archive(env_root)
+    monkeypatch.setenv('TWITTER_ARCHIVE_ROOT', str(env_root))
+    assert backup_paths.twitter_archive_root() == os.path.abspath(str(env_root))
+
+
+def test_twitter_archive_backup_sibling_found(tmp_path, monkeypatch):
+    monkeypatch.delenv('TWITTER_ARCHIVE_ROOT', raising=False)
+    repo = tmp_path / 'Personal Website' / 'Personal Blog' / 'blog'
+    repo.mkdir(parents=True)
+    _make_twitter_archive(tmp_path / 'Personal Website' / 'Backup' / 'twitter-archive')
+    monkeypatch.setattr(backup_paths, 'REPO', str(repo))
+    root = backup_paths.twitter_archive_root()
+    assert root.endswith(os.path.join('Backup', 'twitter-archive'))
+
+
+def test_twitter_archive_missing_raises_friendly_error(tmp_path, monkeypatch):
+    monkeypatch.delenv('TWITTER_ARCHIVE_ROOT', raising=False)
+    fake_repo = tmp_path / 'nowhere' / 'repo'
+    fake_repo.mkdir(parents=True)
+    monkeypatch.setattr(backup_paths, 'REPO', str(fake_repo))
+    with pytest.raises(RuntimeError) as exc_info:
+        backup_paths.twitter_archive_root()
+    message = str(exc_info.value)
+    assert 'twitter-archive' in message
+    assert 'TWITTER_ARCHIVE_ROOT' in message
+    assert 'data/tweets.js' in message

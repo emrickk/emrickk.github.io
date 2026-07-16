@@ -1,6 +1,7 @@
 ---
 import config from '../../astro-theme-config';
 import HeaderLink from './HeaderLink.astro';
+import LangText from './LangText.astro';
 import LangToggle from './LangToggle.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import { withBase } from '../utils/paths';
@@ -17,7 +18,13 @@ const navItems = config.nav;
     <a href={withBase('/')} class="nav-logo">{headerTitle}</a>
     <div class="nav-right">
       <div class="nav-links">
-        {navItems.map((item) => <HeaderLink href={item.href}>{item.label}</HeaderLink>)}
+        {
+          navItems.map((item) => (
+            <HeaderLink href={item.href}>
+              {item.labelZh ? <LangText text={{ zh: item.labelZh, en: item.label }} /> : item.label}
+            </HeaderLink>
+          ))
+        }
       </div>
       <LangToggle />
       <ThemeToggle />

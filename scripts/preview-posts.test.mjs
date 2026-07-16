@@ -40,6 +40,13 @@ test('classifyPath: site-wide files', () => {
   assert.equal(classifyPath('package-lock.json'), 'site')
 })
 
+test('classifyPath: note content files', () => {
+  assert.equal(classifyPath('src/content/notes/20140724-093000.md'), 'note')
+  assert.equal(classifyPath('src/content/notes/20140724-093000-2.md'), 'note')
+  // Nested or non-markdown paths fall back to the site-wide bucket.
+  assert.equal(classifyPath('src/content/notes/nested/x.md'), 'site')
+})
+
 test('classifyPath: irrelevant files', () => {
   assert.equal(classifyPath('docs/images.md'), null)
   assert.equal(classifyPath('scripts/release-check.mjs'), null)
@@ -207,6 +214,22 @@ test('reviewTargets: site-wide changes add homepage and the representative post'
   )
 })
 
+test('reviewTargets: note changes map to the notes timeline', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/alpha.md', FM)
+  assert.deepEqual(
+    reviewTargets(root, ['src/content/notes/20100805-090000.md', 'src/content/posts/alpha.md']),
+    ['/notes/', '/posts/alpha/'],
+  )
+})
+
+test('reviewTargets: a deleted note still reviews the timeline', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  assert.deepEqual(reviewTargets(root, ['src/content/notes/20100805-090000.md']), ['/notes/'])
+})
+
 test('hashChangeSet: sha256 per file, deleted sentinel for missing files', (t) => {
   const root = makeFixtureRepo()
   t.after(() => cleanup(root))
@@ -317,6 +340,13 @@ test('checkPostPreview: approved deletion passes until the file returns', (t) =>
   assert.equal(checkPostPreview(root, opts).status, 'PASS')
   write(root, 'src/content/posts/doomed.md', FM + 'back from the dead\n')
   assert.equal(checkPostPreview(root, opts).status, 'FAIL')
+})
+
+test('checkPostPreview: an unapproved note change fails', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/notes/20100805-090000.md', "---\ndate: '2010-08-05T09:00:00.000Z'\ntweetId: '9001'\nsource: 'https://x.com/u/status/9001'\ntweetCount: 1\n---\n\nbody\n")
+  assert.equal(checkPostPreview(root, { baseRef: 'HEAD' }).status, 'FAIL')
 })
 
 test('release-check exposes post preview as quick-mode check 12', async () => {

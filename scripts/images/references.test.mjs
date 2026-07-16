@@ -35,3 +35,9 @@ test('rewriteUploads rewrites only /uploads refs, leaves others', () => {
   assert.match(out, /\[link\]\(\/about\)/)          // untouched
   assert.match(out, /\.\.\/\.\.\/assets\/hero\/2020\/02\/x\.jpg/) // hero untouched
 })
+
+test('deriveKey with a prefix replaces the date path', () => {
+  assert.equal(deriveKey('123-1.jpg', JULY, 'notes'), 'notes/123-1.webp')
+  assert.equal(deriveKey('123-2.PNG', JULY, 'notes/'), 'notes/123-2.webp')
+  assert.equal(deriveKey('IMG 1.JPG', JULY, null), '2026/07/IMG-1.webp')
+})

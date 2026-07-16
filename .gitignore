@@ -46,3 +46,4 @@ __pycache__/
 image-staging/
 originals/
 scripts/images/.manifest.json
+scripts/images/.manifest-notes.json

@@ -18,12 +18,15 @@ import { parseArgs } from 'node:util'
 export const REPRESENTATIVE_POST = 'springtime-in-patagonia'
 
 const POST_RE = /^src\/content\/posts\/[^/]+\.(?:md|mdx)$/
+const NOTE_RE = /^src\/content\/notes\/[^/]+\.(?:md|mdx)$/
 const SITE_RE = /^(?:src|public)\/|^(?:astro\.config\.mjs|package\.json|package-lock\.json)$/
 
-// 'post' renders at /posts/<slug>/; 'site' can change any page; null never
-// affects the deployed site. Post files must win over the src/ prefix rule.
+// 'post' renders at /posts/<slug>/; 'note' renders on the /notes/ timeline;
+// 'site' can change any page; null never affects the deployed site. Content
+// files must win over the generic src/ prefix rule.
 export function classifyPath(path) {
   if (POST_RE.test(path)) return 'post'
+  if (NOTE_RE.test(path)) return 'note'
   if (SITE_RE.test(path)) return 'site'
   return null
 }
@@ -116,15 +119,19 @@ export function computeChangeSet(root, { baseRef = resolveBaseRef(root) } = {}) 
 
 // Pages the owner must look at for a given change set. A deleted primary post
 // sends review to the homepage (the post should vanish from lists); a deleted
-// sibling still renders on the surviving primary page. Site-wide changes get
-// the homepage plus one image-heavy exemplar. Sorted and deduplicated, '/'
-// first.
+// sibling still renders on the surviving primary page. Notes have no per-note
+// page, so any note change, including a deletion, reviews the /notes/
+// timeline. Site-wide changes get the homepage plus one image-heavy exemplar.
+// Sorted and deduplicated, '/' first.
 export function reviewTargets(root, changeSet) {
   const targets = new Set()
   for (const path of changeSet) {
-    if (classifyPath(path) === 'post') {
+    const kind = classifyPath(path)
+    if (kind === 'post') {
       if (existsSync(join(root, primaryPostPath(path)))) targets.add(`/posts/${slugForPostFile(path)}/`)
       else targets.add('/')
+    } else if (kind === 'note') {
+      targets.add('/notes/')
     } else {
       targets.add('/')
       targets.add(`/posts/${REPRESENTATIVE_POST}/`)

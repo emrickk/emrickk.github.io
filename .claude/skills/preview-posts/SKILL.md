@@ -5,7 +5,7 @@ description: Serve the production build so the owner can review changed posts in
 
 # Post preview
 
-The owner reviews every preview-relevant change in a real browser against the real production build before it can ship. Approval is recorded as content hashes in `.preview/manifest.json` (git-ignored); any later edit voids it automatically.
+The owner reviews every preview-relevant change in a real browser against the real production build before it can ship. Approval is recorded as content hashes in `.preview/manifest.json` (git-ignored); any later edit voids it automatically. Changed notes under src/content/notes/ review at /notes/ (the timeline is their only page).
 
 ## Workflow
 

@@ -25,6 +25,13 @@ const ui = {
     more: 'Load more',
     read: 'Read',
   },
+  notes: {
+    eyebrow: 'Microblog',
+    title: 'Notes',
+    description: '2010 年至今的微博客存档 · microblog archive from X/Twitter',
+    onX: 'on X',
+    empty: 'No notes yet.',
+  },
 };
 
 export function getUiText() {
