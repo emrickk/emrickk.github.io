@@ -12,7 +12,7 @@ import { deriveKey, snippetFor } from './references.mjs'
 const DEFAULT_STAGING = 'image-staging'
 const DEFAULT_MANIFEST = 'scripts/images/.manifest.json'
 const IMG_RE = /\.(jpe?g|png)$/i
-const DEFAULT_BASE = 'https://cdn.anping.us'
+const DEFAULT_BASE = 'https://cdn.theneverless.com'
 
 function listStaged(dir) {
   if (!existsSync(dir)) return []
@@ -50,7 +50,7 @@ export async function run({
       const arch = archiveOriginal(file, config)
       log(`  archived original -> ${arch.dest} (${arch.location})`)
     }
-    const { buffer, width, bytes } = await optimizeToWebp(file)
+    const { buffer, width, bytes } = await optimizeToWebp(file, { watermark: true })
     if (dryRun || !config) {
       log(`  [dry-run] ${key} (${width}px, ${(bytes / 1024).toFixed(0)} KB)`)
     } else {

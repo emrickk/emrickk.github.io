@@ -25,3 +25,28 @@ test('optimizeToWebp does not enlarge small images', async () => {
   const out = await optimizeToWebp(small)
   assert.equal(out.width, 300)
 })
+
+test('optimizeToWebp embeds copyright EXIF', async () => {
+  const img = await sharp({
+    create: { width: 400, height: 300, channels: 3, background: { r: 60, g: 60, b: 60 } },
+  }).png().toBuffer()
+  const out = await optimizeToWebp(img)
+  const meta = await sharp(out.buffer).metadata()
+  assert.ok(meta.exif, 'webp should carry an EXIF chunk')
+  assert.ok(meta.exif.toString('binary').includes('Emrick'), 'EXIF should name the author')
+})
+
+test('optimizeToWebp watermark marks the bottom-right corner', async () => {
+  const img = await sharp({
+    create: { width: 1200, height: 900, channels: 3, background: { r: 20, g: 20, b: 20 } },
+  }).png().toBuffer()
+  const plain = await optimizeToWebp(img)
+  const marked = await optimizeToWebp(img, { watermark: true })
+  assert.equal(marked.width, plain.width, 'watermark must not change dimensions')
+  const corner = { left: 700, top: 800, width: 480, height: 80 }
+  const [a, b] = await Promise.all([
+    sharp(plain.buffer).extract(corner).raw().toBuffer(),
+    sharp(marked.buffer).extract(corner).raw().toBuffer(),
+  ])
+  assert.notDeepEqual(a, b, 'bottom-right pixels should differ once marked')
+})
