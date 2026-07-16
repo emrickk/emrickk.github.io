@@ -131,6 +131,7 @@ export function handleApiRequest(root, { method, url, body = null }) {
     return readPostFile(root, parsed.searchParams.get('path') ?? '')
   }
   if (method === 'PUT' && parsed.pathname === '/api/file') {
+    if (typeof body !== 'string') return { status: 400, body: { error: 'invalid JSON body' } }
     let payload
     try {
       payload = JSON.parse(body)

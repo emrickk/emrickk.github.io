@@ -237,6 +237,7 @@ test('router rejects bad JSON and unknown endpoints', () => {
   const root = makePostsFixture()
   try {
     assert.equal(handleApiRequest(root, { method: 'PUT', url: '/api/file', body: '{oops' }).status, 400)
+    assert.equal(handleApiRequest(root, { method: 'PUT', url: '/api/file' }).status, 400)
     assert.equal(handleApiRequest(root, { method: 'GET', url: '/api/nope' }).status, 404)
     assert.equal(handleApiRequest(root, { method: 'DELETE', url: '/api/file' }).status, 404)
   } finally {
