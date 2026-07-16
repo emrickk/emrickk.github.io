@@ -10,13 +10,14 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English i
 
 | Command | Action |
 | --- | --- |
-| `npm run dev` / `build` / `preview` | Standard Astro workflow (build also runs Pagefind) |
+| `npm run dev` / `build` / `preview` | Standard Astro workflow (build also runs Pagefind); dev server also serves the local post editor at /_edit |
 | `npm run preview-posts` | Build and serve the site for owner review of changed posts; `-- --approve` records the approval (see Safety) |
 | `npm run check` / `lint` / `lint:css` / `format` | Type check, ESLint, Stylelint, Prettier |
 | `npm run images` | Daily image pipeline: optimize + upload staged photos (see below) |
 | `npm run images:migrate` | One-time backfill CLI, already executed; dry-run by default |
 | `npm run test:images` | Image pipeline test suite (`node:test`); the R2 live test self-skips without credentials |
 | `npm run test:rehype` | Rehype plugin test suite (image gallery detection) |
+| `npm run test:editor` | Post editor API test suite (`node:test`) |
 | `npm run checkpoint` | Working-tree snapshots: `save` / `list` / `diff` / `restore` (see Safety) |
 | `npm run release-check` | Pre-push checklist, `-- --full` adds CDN + link verification (see Safety) |
 | `npm run test:safety` | Test suite for the three safety CLIs |
@@ -28,6 +29,7 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English i
 - Exception: hero images in `src/assets/hero/` are Astro-optimized at build time and are deliberately outside the R2 pipeline. New covers must meet the minimum size spec in [docs/images.md](docs/images.md) (roughly 2400x1260 wide or 1600x1600 square, lightly compressed) or they render blurry in the home cards.
 - Pipeline credentials go in `.env.local` (git-ignored); the variable names are documented in `.env.example`. Without credentials, dry-run modes and all but one test still work.
 - `scripts/migrate/` is finished WordPress-migration tooling (Python). Design history lives in `docs/`, including `docs/superpowers/specs/` and `docs/superpowers/plans/`.
+- **Local post editor**: `/_edit` on the dev server (dev-only Astro integration in `scripts/post-editor/`, zero build footprint). Runbook: [docs/post-editor.md](docs/post-editor.md).
 
 ## Safety
 
