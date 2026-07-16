@@ -8,6 +8,7 @@ const state = {
   tab: null,
   files: {},
   activePath: null,
+  saving: false,
 }
 
 const $ = (id) => document.getElementById(id)
@@ -132,12 +133,16 @@ async function openTab(which) {
   if (!confirmDiscard()) return
   const post = state.post
   const path = tabPath(post, which)
+  const prevTab = state.tab
+  const prevPath = state.activePath
   state.tab = which
   state.activePath = path
   if (!state.files[path]) {
     const { status, body } = await api('/file?path=' + encodeURIComponent(path))
     if (status !== 200) {
       showBanner('Could not load ' + path + ': ' + body.error)
+      state.tab = prevTab
+      state.activePath = prevPath
       return
     }
     state.files[path] = { hash: body.hash, savedContent: body.content }
@@ -198,33 +203,40 @@ async function save() {
   const path = state.activePath
   const f = state.files[path]
   if (!f || !isDirty()) return
-  const { status, body } = await api('/file', {
-    method: 'PUT',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ path, content: editorEl.value, baseHash: f.hash }),
-  })
-  if (status === 409) {
-    showConflict(path, body)
-    return
-  }
-  if (status !== 200) {
-    showBanner('Save failed: ' + body.error)
-    return
-  }
-  f.hash = body.hash
-  f.savedContent = editorEl.value
-  hideBanner()
-  updateDirtyUi()
-  refreshChanged()
-  // HMR usually reloads the post page on its own; this delayed reload is the
-  // fallback that guarantees the preview never goes stale.
-  setTimeout(() => {
-    try {
-      previewEl.contentWindow.location.reload()
-    } catch {
-      previewEl.src = previewEl.src
+  if (state.saving) return
+  state.saving = true
+  saveEl.disabled = true
+  try {
+    const { status, body } = await api('/file', {
+      method: 'PUT',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ path, content: editorEl.value, baseHash: f.hash }),
+    })
+    if (status === 409) {
+      showConflict(path, body)
+      return
     }
-  }, 600)
+    if (status !== 200) {
+      showBanner('Save failed: ' + body.error)
+      return
+    }
+    f.hash = body.hash
+    f.savedContent = editorEl.value
+    hideBanner()
+    refreshChanged()
+    // HMR usually reloads the post page on its own; this delayed reload is the
+    // fallback that guarantees the preview never goes stale.
+    setTimeout(() => {
+      try {
+        previewEl.contentWindow.location.reload()
+      } catch {
+        previewEl.src = previewEl.src
+      }
+    }, 600)
+  } finally {
+    state.saving = false
+    updateDirtyUi()
+  }
 }
 
 async function init() {

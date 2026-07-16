@@ -28,9 +28,9 @@ function readBody(req) {
 async function handle(root, req, res) {
   const url = req.url === '' ? '/' : req.url
   if (url.startsWith('/api/')) {
-    const body = req.method === 'PUT' ? await readBody(req) : null
     let result
     try {
+      const body = req.method === 'PUT' ? await readBody(req) : null
       result = handleApiRequest(root, { method: req.method, url, body })
     } catch (err) {
       // Keep API responses JSON even when a handler throws (disk errors);
