@@ -1,13 +1,13 @@
 ---
-title: 'Red Rocks and Blueprints'
+title: 'Sedona, Arizona'
 description: "Three days in the Arizona high desert in November: last light on the Sedona buttes, the crater where NASA rehearsed the Moon, and a morning at Taliesin West, the desert camp Frank Lloyd Wright built at seventy."
 pubDate: '2026-07-15'
 heroImage: '../../assets/hero/2026/07/sedona-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'red-rocks-and-blueprints'
-titleZh: '红岩与蓝图'
-titleEn: 'Red Rocks and Blueprints'
+titleZh: '塞多纳'
+titleEn: 'Sedona, Arizona'
 descriptionZh: '十一月的亚利桑那高原三日：塞多纳红岩上的最后一道光，NASA排练登月的陨石坑，以及赖特七十岁那年为自己搭起的沙漠营地，西塔里埃森。'
 descriptionEn: "Three days in the Arizona high desert in November: last light on the Sedona buttes, the crater where NASA rehearsed the Moon, and a morning at Taliesin West, the desert camp Frank Lloyd Wright built at seventy."
 ---
@@ -20,12 +20,9 @@ Sedona sits under a wall of red sandstone, and the town's real event is schedule
 
 ![A Sedona butte at dusk, framed by juniper](https://cdn.theneverless.com/2026/07/sedona-dusk-juniper.webp)
 
-By the overlook the slickrock was already dotted with people, sitting far apart, saying nothing, all facing the same direction, the way an audience does. We joined them until the last butte went out.
+By the overlook the slickrock was already dotted with people, all facing the same direction, the way an audience does. We joined them until the last butte went out.
 
-<div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/sedona-sunset-watcher.webp" alt="Watching the last sun on the red rocks from the slickrock" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/sedona-last-light.webp" alt="The last light climbing off a butte at dusk" loading="lazy" />
-</div>
+![Watching the last sun on the red rocks from the slickrock](https://cdn.theneverless.com/2026/07/sedona-sunset-watcher.webp)
 
 ## A hole in the ground
 

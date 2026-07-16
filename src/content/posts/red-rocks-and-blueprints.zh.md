@@ -1,7 +1,7 @@
 ---
 translationKey: 'red-rocks-and-blueprints'
 lang: 'zh'
-title: '红岩与蓝图'
+title: '塞多纳'
 ---
 
 十一月初，我们飞到凤凰城，提了车，一路向北开进高原沙漠。行程表上写的是去看红岩，走着走着却变成了一趟关于蓝图的旅行：好像每一个爱上这片沙漠的人，来的时候手里都攥着一张。建筑师带来了他的冬季营地，他的学徒带来了一整座城，一位雕塑家带来了她揣了二十年的教堂，NASA带来的是月亮。
@@ -12,12 +12,9 @@ title: '红岩与蓝图'
 
 ![黄昏时分，杜松枝影里的塞多纳红岩](https://cdn.theneverless.com/2026/07/sedona-dusk-juniper.webp)
 
-到观景台的时候，光滑的红石坡上已经坐了不少人，彼此隔得很远，谁也不说话，全都朝着同一个方向，像一场演出的观众。我们也坐下，一直坐到最后一座山头熄灭。
+到观景台的时候，光滑的红石坡上已经坐了不少人，全都朝着同一个方向，像一场演出的观众。我们也坐下，一直坐到最后一座山头熄灭。
 
-<div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/sedona-sunset-watcher.webp" alt="坐在红石坡上看最后一道光落在山头" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/sedona-last-light.webp" alt="暮色里正从山体上撤走的最后一道光" loading="lazy" />
-</div>
+![坐在红石坡上看最后一道光落在山头](https://cdn.theneverless.com/2026/07/sedona-sunset-watcher.webp)
 
 ## 地上的一个洞
 

@@ -1,20 +1,20 @@
 ---
-title: 'The Future He Drew'
+title: 'Marin County Civic Center'
 description: 'A detour on the road north to the redwoods: Frank Lloyd Wright''s last commission, the Marin County Civic Center, where the hallways are gardens, the ceiling is a skylight, and 1962 still looks like the future.'
 pubDate: '2026-07-15'
 heroImage: '../../assets/hero/2026/07/marin-civic-center-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'marin-county-civic-center'
-titleZh: '他画下的未来'
-titleEn: 'The Future He Drew'
+titleZh: '马林县市政中心'
+titleEn: 'Marin County Civic Center'
 descriptionZh: '去红杉林路上的一次绕道：赖特的最后一件作品，马林县市政中心。走廊是花园，天花板是天窗，1962年在这里仍然是未来的样子。'
 descriptionEn: 'A detour on the road north to the redwoods: Frank Lloyd Wright''s last commission, the Marin County Civic Center, where the hallways are gardens, the ceiling is a skylight, and 1962 still looks like the future.'
 ---
 
-One year ago, almost to the day, we were driving north out of San Francisco toward [the redwoods](/posts/two-days-in-the-redwoods/), and before the trees we finally kept a promise I had been making myself for years: ten minutes off the 101 in San Rafael, Frank Lloyd Wright's last commission, the Marin County Civic Center. I had known this building from photographs for a long time. The photographs, it turns out, undersell it.
+One year ago, almost to the day, we were driving north out of San Francisco toward [the redwoods](/posts/two-days-in-the-redwoods/), and before the trees we finally kept a promise I had been making myself for years: ten minutes off the 101 in San Rafael, Frank Lloyd Wright's last commission, the Marin County Civic Center.
 
-Wright drew it in 1957, at ninety. He died in the spring of 1959, before ground was broken, and the county spent the sixties finishing it without him: two long wings riding from hilltop to hilltop, a sky-blue roof, a gold spire, and, in place of a ceiling, a skylight running the entire length of each wing. It is still a working government building. People come here to pay property taxes, file permits, get married, return library books. That is exactly what makes walking in so hard to believe.
+Wright drew it in 1957, at ninety. He died in the spring of 1959, before ground was broken, and the county spent the sixties finishing it without him: two long wings riding from hilltop to hilltop, a sky-blue roof, a gold spire, and, in place of a ceiling, a skylight running the entire length of each wing. It is still a working government building.
 
 ![The gold anodized gates of the civic center lobby, a woman waiting on a bench in the sun](https://cdn.theneverless.com/2026/07/civic-center-gold-gates.webp)
 
