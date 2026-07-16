@@ -102,7 +102,48 @@ export function mountImageLightbox() {
   closeBtn.addEventListener('click', closeLightbox);
   prevBtn.addEventListener('click', () => showAt(galleryIndex - 1));
   nextBtn.addEventListener('click', () => showAt(galleryIndex + 1));
+
+  // Threshold swipe for touch screens: single finger, mostly horizontal,
+  // at least 48px. A completed swipe suppresses the click that can follow
+  // touchend so it never hits the backdrop-close below. A second finger
+  // cancels the gesture and suppresses nothing.
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchActive = false;
+  let suppressClick = false;
+
+  dialog.addEventListener(
+    'touchstart',
+    (event) => {
+      suppressClick = false;
+      touchActive = event.touches.length === 1;
+      if (!touchActive) return;
+      touchStartX = event.touches[0].clientX;
+      touchStartY = event.touches[0].clientY;
+    },
+    { passive: true },
+  );
+
+  dialog.addEventListener(
+    'touchend',
+    (event) => {
+      if (!touchActive) return;
+      touchActive = false;
+      if (gallery.length < 2) return;
+      const dx = event.changedTouches[0].clientX - touchStartX;
+      const dy = event.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) < 48 || Math.abs(dx) <= 1.5 * Math.abs(dy)) return;
+      suppressClick = true;
+      showAt(dx < 0 ? galleryIndex + 1 : galleryIndex - 1);
+    },
+    { passive: true },
+  );
+
   dialog.addEventListener('click', (event) => {
+    if (suppressClick) {
+      suppressClick = false;
+      return;
+    }
     if (event.target === dialog) closeLightbox();
   });
   dialog.addEventListener('keydown', (event) => {
