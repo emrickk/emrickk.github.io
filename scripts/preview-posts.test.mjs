@@ -16,6 +16,7 @@ import {
   renderReviewPage,
   REPRESENTATIVE_POST,
   resolveBaseRef,
+  resolveDiffBase,
   reviewTargets,
   slugForPostFile,
   writeManifest,
@@ -172,6 +173,84 @@ test('resolveBaseRef returns origin/main when it exists', (t) => {
   run(root, ['remote', 'add', 'origin', root])
   run(root, ['fetch', '-q', 'origin'])
   assert.equal(resolveBaseRef(root), 'origin/main')
+})
+
+// Simulates a worktree branched before another session pushed: origin/main
+// holds a post commit (remote-only.md) that HEAD does not have, while HEAD
+// sits one commit back on a branch of its own. alpha.md exists on both sides
+// so tracked local edits can be tested.
+function makeBehindFixture(t) {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/alpha.md', FM + 'v1\n')
+  run(root, ['add', 'src/content/posts/alpha.md'])
+  run(root, ['commit', '-q', '-m', 'alpha'])
+  write(root, 'src/content/posts/remote-only.md', FM + 'pushed by another session\n')
+  run(root, ['add', 'src/content/posts/remote-only.md'])
+  run(root, ['commit', '-q', '-m', 'remote post'])
+  run(root, ['remote', 'add', 'origin', root])
+  run(root, ['fetch', '-q', 'origin'])
+  run(root, ['checkout', '-q', '-b', 'work', 'HEAD~1'])
+  return root
+}
+
+test('resolveDiffBase: up to date with the base ref keeps it as-is', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  run(root, ['remote', 'add', 'origin', root])
+  run(root, ['fetch', '-q', 'origin'])
+  assert.deepEqual(resolveDiffBase(root, 'origin/main'), { ref: 'origin/main', headBehind: false })
+  assert.deepEqual(resolveDiffBase(root, 'HEAD'), { ref: 'HEAD', headBehind: false })
+})
+
+test('resolveDiffBase: HEAD behind origin/main resolves to the merge-base', (t) => {
+  const root = makeBehindFixture(t)
+  const { ref, headBehind } = resolveDiffBase(root, 'origin/main')
+  assert.equal(headBehind, true)
+  assert.equal(ref, run(root, ['rev-parse', 'HEAD']))
+})
+
+test('computeChangeSet: commits only on origin/main are not local changes', (t) => {
+  const root = makeBehindFixture(t)
+  assert.deepEqual(computeChangeSet(root, { baseRef: 'origin/main' }), [])
+})
+
+test('computeChangeSet: local edits still count when HEAD is behind origin/main', (t) => {
+  const root = makeBehindFixture(t)
+  write(root, 'src/content/posts/alpha.md', FM + 'v2\n') // modified tracked
+  write(root, 'src/content/posts/beta.md', FM + 'new\n') // untracked
+  assert.deepEqual(computeChangeSet(root, { baseRef: 'origin/main' }), [
+    'src/content/posts/alpha.md',
+    'src/content/posts/beta.md',
+  ])
+})
+
+test('computeChangeSet: local commits ahead of the merge-base stay in the change set', (t) => {
+  const root = makeBehindFixture(t)
+  write(root, 'src/content/posts/local-work.md', FM + 'committed locally\n')
+  run(root, ['add', 'src/content/posts/local-work.md'])
+  run(root, ['commit', '-q', '-m', 'local post'])
+  assert.deepEqual(computeChangeSet(root, { baseRef: 'origin/main' }), [
+    'src/content/posts/local-work.md',
+  ])
+})
+
+test('checkPostPreview: clean tree behind origin/main is SKIP and says why', (t) => {
+  const root = makeBehindFixture(t)
+  const result = checkPostPreview(root)
+  assert.equal(result.status, 'SKIP')
+  assert.match(result.detail, /has commits not in HEAD/)
+  assert.match(result.detail, /merge-base/)
+  assert.doesNotMatch(result.detail, /\u2014/) // no em-dashes in user-facing copy
+})
+
+test('checkPostPreview: unapproved local change behind origin/main is FAIL and says why', (t) => {
+  const root = makeBehindFixture(t)
+  write(root, 'src/content/posts/beta.md', FM + 'new\n')
+  const result = checkPostPreview(root)
+  assert.equal(result.status, 'FAIL')
+  assert.match(result.detail, /1 preview-relevant change\(s\) with no approval/)
+  assert.match(result.detail, /has commits not in HEAD/)
 })
 
 test('isDraftPost handles CRLF frontmatter', (t) => {
