@@ -73,6 +73,21 @@ export function resolveBaseRef(root) {
     : 'HEAD'
 }
 
+// A checkout can lag origin/main when another session pushes (a worktree
+// branched before the push, for example). Diffing the working tree straight
+// against origin/main would then report the remote-only commits as phantom
+// local changes, so diff against the merge-base of HEAD and the base ref
+// instead: working-tree edits and local commits ahead of the merge-base
+// still count, already-deployed content does not. Fails closed: when the
+// merge-base cannot be determined, keep the full diff against the base ref.
+export function resolveDiffBase(root, baseRef) {
+  if (baseRef === 'HEAD') return { ref: 'HEAD', headBehind: false }
+  const baseSha = git(['rev-parse', '--verify', '-q', `${baseRef}^{commit}`], { cwd: root, allowFail: true })
+  const mergeBase = baseSha && git(['merge-base', 'HEAD', baseSha], { cwd: root, allowFail: true })
+  if (!mergeBase || mergeBase === baseSha) return { ref: baseRef, headBehind: false }
+  return { ref: mergeBase, headBehind: true }
+}
+
 // Deploys run npm ci && npm run build, so npm script edits other than
 // "build" cannot change the deployed site; every other package.json field
 // (dependencies, overrides, engines) can. Fails closed: a parse error or a
@@ -92,7 +107,8 @@ export function packageJsonAffectsSite(root, baseRef) {
   }
 }
 
-// Preview-relevant files changed relative to the base ref: committed-ahead
+// Preview-relevant files changed relative to the base ref (resolved through
+// resolveDiffBase, so remote-only commits never count): committed-ahead
 // and working-tree edits (git diff) plus untracked files. Sorted for stable
 // output and manifest comparison. -z output with NUL splitting keeps
 // non-ASCII paths verbatim (default core.quotepath=true would C-quote them
@@ -100,7 +116,8 @@ export function packageJsonAffectsSite(root, baseRef) {
 // a git error throws, and release-check turns the throw into a FAIL, rather
 // than shrinking the change set to untracked-only.
 export function computeChangeSet(root, { baseRef = resolveBaseRef(root) } = {}) {
-  const diff = git(['diff', '--no-renames', '--name-only', '-z', baseRef], { cwd: root }) || ''
+  const diffBase = resolveDiffBase(root, baseRef).ref
+  const diff = git(['diff', '--no-renames', '--name-only', '-z', diffBase], { cwd: root }) || ''
   const untracked = git(['ls-files', '--others', '--exclude-standard', '-z'], { cwd: root }) || ''
   const all = new Set([...diff.split('\0'), ...untracked.split('\0')].filter(Boolean))
   return [...all]
@@ -108,7 +125,7 @@ export function computeChangeSet(root, { baseRef = resolveBaseRef(root) } = {}) 
       const kind = classifyPath(path)
       if (kind === null) return false
       if (kind === 'post' && isDraftPost(root, path)) return false
-      if (path === 'package.json' && !packageJsonAffectsSite(root, baseRef)) return false
+      if (path === 'package.json' && !packageJsonAffectsSite(root, diffBase)) return false
       return true
     })
     .sort()
@@ -181,20 +198,27 @@ export function manifestDiff(currentFiles, manifest) {
 const REMEDIATION = 'run npm run preview-posts, review in the browser, then npm run preview-posts -- --approve'
 
 // Release-check check 12. Cheap: git plus hashing, no build or server.
+// When the base ref has commits HEAD lacks, every verdict says so: the
+// change set was computed against the merge-base, and the operator should
+// know the comparison base is not origin/main itself.
 export function checkPostPreview(root, { baseRef } = {}) {
-  const changeSet = computeChangeSet(root, baseRef ? { baseRef } : {})
-  if (changeSet.length === 0) return { status: 'SKIP', detail: 'no preview-relevant changes' }
+  const base = baseRef ?? resolveBaseRef(root)
+  const note = resolveDiffBase(root, base).headBehind
+    ? ` (${base} has commits not in HEAD; change set is local work vs their merge-base)`
+    : ''
+  const changeSet = computeChangeSet(root, { baseRef: base })
+  if (changeSet.length === 0) return { status: 'SKIP', detail: `no preview-relevant changes${note}` }
   const manifest = readManifest(root)
   if (!manifest) {
-    return { status: 'FAIL', detail: `${changeSet.length} preview-relevant change(s) with no approval; ${REMEDIATION}` }
+    return { status: 'FAIL', detail: `${changeSet.length} preview-relevant change(s) with no approval; ${REMEDIATION}${note}` }
   }
   const problems = manifestDiff(hashChangeSet(root, changeSet), manifest)
   if (problems.length) {
     const shown = problems.slice(0, 10).join('\n')
     const more = problems.length > 10 ? `\n... and ${problems.length - 10} more` : ''
-    return { status: 'FAIL', detail: `${shown}${more}\n${REMEDIATION}` }
+    return { status: 'FAIL', detail: `${shown}${more}\n${REMEDIATION}${note}` }
   }
-  return { status: 'PASS', detail: `${changeSet.length} changed file(s) covered by preview approval` }
+  return { status: 'PASS', detail: `${changeSet.length} changed file(s) covered by preview approval${note}` }
 }
 
 function escapeHtml(s) {
@@ -265,26 +289,31 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   }
   const root = git(['rev-parse', '--show-toplevel'])
   const baseRef = resolveBaseRef(root)
+  const { headBehind } = resolveDiffBase(root, baseRef)
+  const baseLabel = headBehind ? `the merge-base of HEAD and ${baseRef}` : baseRef
+  if (headBehind) {
+    console.log(`note: ${baseRef} has commits not in HEAD (another session may have pushed); comparing against their merge-base so only local changes count`)
+  }
   const changeSet = computeChangeSet(root, { baseRef })
 
   if (values.approve) {
     if (changeSet.length === 0) {
-      console.error('nothing to approve: no preview-relevant changes vs ' + baseRef)
+      console.error('nothing to approve: no preview-relevant changes vs ' + baseLabel)
       process.exit(1)
     }
-    console.log(`approving ${changeSet.length} file(s) vs ${baseRef}:`)
+    console.log(`approving ${changeSet.length} file(s) vs ${baseLabel}:`)
     for (const p of changeSet) console.log('  ' + p)
-    writeManifest(root, hashChangeSet(root, changeSet), { baseRef })
+    writeManifest(root, hashChangeSet(root, changeSet), { baseRef: baseLabel })
     console.log('approval recorded; release-check check 12 passes until any of these files change')
     console.log('caution: this covers every preview-relevant change in the tree, including any from other sessions; make sure the list matches what was reviewed')
     process.exit(0)
   }
 
   if (changeSet.length === 0) {
-    console.log('nothing to preview: no preview-relevant changes vs ' + baseRef)
+    console.log('nothing to preview: no preview-relevant changes vs ' + baseLabel)
     process.exit(0)
   }
-  console.log(`preview-relevant changes vs ${baseRef} (${changeSet.length}):`)
+  console.log(`preview-relevant changes vs ${baseLabel} (${changeSet.length}):`)
   for (const p of changeSet) console.log('  ' + p)
 
   console.log('\nbuilding production output...')
