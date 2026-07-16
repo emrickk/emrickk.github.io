@@ -82,11 +82,31 @@ export function loadAllowlist(root) {
   return JSON.parse(readFileSync(p, 'utf8')).allow.map((s) => new RegExp(s))
 }
 
+// A checkout can lag origin/main when another session pushes (a worktree
+// branched before the push, for example). Diffing the working tree straight
+// against origin/main would then present the older, already-replaced upstream
+// content as "+" lines and scan content that is not local work. Diff against
+// the merge-base of HEAD and the base ref instead: working-tree edits and
+// local commits ahead of the merge-base still count, remote-only history does
+// not. Fails closed: when the merge-base cannot be determined, keep the full
+// diff against the base ref (over-scan, never under-scan). Mirrors
+// resolveDiffBase in preview-posts.mjs (check 12 had the same root cause).
+export function resolveDiffBase(root, baseRef) {
+  if (baseRef === 'HEAD') return { ref: 'HEAD', headBehind: false }
+  const baseSha = git(['rev-parse', '--verify', '-q', `${baseRef}^{commit}`], { cwd: root, allowFail: true })
+  const mergeBase = baseSha && git(['merge-base', 'HEAD', baseSha], { cwd: root, allowFail: true })
+  if (!mergeBase || mergeBase === baseSha) return { ref: baseRef, headBehind: false }
+  return { ref: mergeBase, headBehind: true }
+}
+
 // Scan scope: lines added relative to origin/main (committed or not) plus
-// every untracked file. Falls back to HEAD when origin/main is absent.
+// every untracked file. The diff base is resolved through resolveDiffBase, so
+// a checkout behind origin/main scans only local work, never remote-only
+// history. Falls back to HEAD when origin/main is absent.
 export function collectSecretScanSources(root) {
   const sources = []
-  const base = git(['rev-parse', '--verify', '-q', 'origin/main'], { cwd: root, allowFail: true }) ? 'origin/main' : 'HEAD'
+  const baseRef = git(['rev-parse', '--verify', '-q', 'origin/main'], { cwd: root, allowFail: true }) ? 'origin/main' : 'HEAD'
+  const base = resolveDiffBase(root, baseRef).ref
   // core.quotepath=off keeps non-ASCII paths raw in the +++ b/ headers; the
   // default C-quoting would make them unparseable and skip those files.
   const diff = git(['-c', 'core.quotepath=off', 'diff', '--no-renames', '--unified=0', base], { cwd: root, allowFail: true }) || ''
