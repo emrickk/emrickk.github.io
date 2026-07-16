@@ -6,7 +6,16 @@ import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'nod
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { createHash } from 'node:crypto'
-import { listPosts, parseFrontmatter, readPostFile, sha256, validatePostPath, writePostFile } from './api.mjs'
+import {
+  changedPostPaths,
+  listPosts,
+  parseFrontmatter,
+  readPostFile,
+  sha256,
+  validatePostPath,
+  writePostFile,
+} from './api.mjs'
+import { cleanup, makeFixtureRepo, write } from '../test-helpers.mjs'
 
 test('validatePostPath accepts post markdown paths', () => {
   assert.equal(validatePostPath('src/content/posts/foo.md'), true)
@@ -162,6 +171,26 @@ test('writePostFile validates inputs', () => {
       writePostFile(root, { path: 'src/content/posts/nope.md', content: 'x', baseHash: 'h' }).status,
       404,
     )
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('changedPostPaths returns changed post paths only', () => {
+  const root = makeFixtureRepo()
+  try {
+    write(root, 'src/content/posts/new-post.md', '---\ntitle: t\npubDate: 2026-01-01\n---\nbody\n')
+    write(root, 'docs/notes.md', 'not a post\n')
+    assert.deepEqual(changedPostPaths(root), ['src/content/posts/new-post.md'])
+  } finally {
+    cleanup(root)
+  }
+})
+
+test('changedPostPaths degrades to empty outside a git repo', () => {
+  const root = mkdtempSync(join(tmpdir(), 'post-editor-nogit-'))
+  try {
+    assert.deepEqual(changedPostPaths(root), [])
   } finally {
     rmSync(root, { recursive: true, force: true })
   }

@@ -105,3 +105,16 @@ export function writePostFile(root, { path, content, baseHash } = {}) {
   writeFileSync(abs, content)
   return { status: 200, body: { path, hash: sha256(content) } }
 }
+
+// computeChangeSet throws on git errors by design (the release gate must
+// fail closed); for a sidebar an empty Changed group is the right
+// degradation. It also excludes draft posts, which matches the review-gate
+// semantics it was built for: drafts do not render, so there is nothing to
+// review. An edited draft is reachable through the All posts list instead.
+export function changedPostPaths(root) {
+  try {
+    return computeChangeSet(root).filter((p) => p.startsWith(POSTS_DIR + '/'))
+  } catch {
+    return []
+  }
+}
