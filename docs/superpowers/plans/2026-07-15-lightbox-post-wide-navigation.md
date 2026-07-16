@@ -78,7 +78,7 @@ Expected: both pass with no new errors.
 
 Start the dev server and open a bilingual travel post, for example `/posts/springtime-in-patagonia/`. Verify:
 
-1. Click a standalone captioned photo mid-post: arrows and a counter appear (previously they did not), and the counter total equals the number of photos in the post body.
+1. Click a standalone captioned photo mid-post: arrows and a counter appear (previously they did not), and the counter total equals the number of unlinked photos in the visible language body (link-wrapped images do not count).
 2. ArrowRight/ArrowLeft walk photos in reading order, crossing captions and prose; captions swap per photo and hide for photos without one.
 3. Next from the last photo wraps to the first.
 4. Toggle language, reopen a photo: the counter total is that body's own photo count, not the sum of both.
@@ -187,7 +187,9 @@ With the lightbox open on a multi-photo post, run in the browser console (or `pr
 })();
 ```
 
-Expected: `afterLeft` is `before` advanced by one (wrapping at the end), `afterVertical` equals `afterLeft`, and `dialogStillOpen` is `true`. Then repeat the first pair with `fire('touchend', 420, 410)` and confirm the counter goes back (swipe right = previous). Finally click the backdrop (the dialog element itself, outside the image) and confirm the lightbox still closes: suppression must not eat real clicks.
+Expected: `afterLeft` is `before` advanced by one (wrapping at the end), `afterVertical` equals `afterLeft`, and `dialogStillOpen` is `true`. Then repeat the first pair with `fire('touchend', 420, 410)` and confirm the counter goes back (swipe right = previous).
+
+Before the final check, fire one neutral tap to clear the suppression flag: `fire('touchstart', 300, 400); fire('touchend', 300, 400);`. Synthetic touches produce no follow-up click, so after a synthetic swipe the flag stays set and would intentionally eat the next click; without the neutral tap the backdrop check below fails against correct code. Then click the backdrop (the dialog element itself, outside the image) and confirm the lightbox closes: suppression must not eat clicks in normal use.
 
 - [ ] **Step 4: Commit**
 
