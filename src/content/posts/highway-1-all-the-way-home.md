@@ -8,6 +8,7 @@ lang: 'en'
 translationKey: 'highway-1-all-the-way-home'
 titleZh: '一号公路，然后回家'
 titleEn: 'Highway 1, All the Way Home'
+descriptionZh: '2017年的一首歌问：一号公路上那座桥断了，我们还去吗？今年一月，海岸线三年来第一次从头通到尾。我们去了，然后开车回家，家里的南瓜已经摆出来了。'
 descriptionEn: 'A song from 2017 asked: the bridge on Highway 1 is down, do we still go? This January the coast reopened end to end for the first time in three years. We went, and then we drove home, where the pumpkins were already out.'
 ---
 
