@@ -11,9 +11,19 @@ commit and push). `npm run ship` chains the existing gates in order with one hum
 confirmation in the middle. It automates the sequence, not the judgment: the owner still
 looks at the production build and still says yes.
 
+There are two entry points sharing one implementation:
+
+- **Terminal**: the owner runs `npm run ship` and answers the interactive prompt.
+- **Conversation**: the owner opens any Claude Code session and says "push my edits" (or
+  similar). A repo skill, `ship-posts`, encodes the runbook: the session gives the owner the
+  production-build review link, waits for their approval in chat, then drives the same
+  pipeline via a `--yes` flag.
+
 Explicitly out of scope (YAGNI): shipping anything other than post files (no hero images,
 notes, templates, config, or dependency changes), auto-rebase or merge when origin/main has
-moved, non-interactive or CI mode, partial shipping (choosing a subset of changed posts).
+moved, fully unattended operation (cron, CI; `--yes` still requires a human approval
+recorded in the conversation that invokes it), partial shipping (choosing a subset of
+changed posts).
 
 ## Constraints
 
@@ -23,8 +33,9 @@ moved, non-interactive or CI mode, partial shipping (choosing a subset of change
   browser before approving, exactly like `npm run preview-posts`.
 - Reuse the existing safety tooling as libraries; do not fork their logic. Everything needed
   is already exported: `computeChangeSet`, `reviewTargets`, `renderReviewPage`,
-  `hashChangeSet`, `writeManifest` (scripts/preview-posts.mjs), `runChecks`, `verdict`
-  (scripts/release-check.mjs), `save` and `repoRoot` (scripts/checkpoint.mjs).
+  `hashChangeSet`, `writeManifest`, `slugForPostFile` (scripts/preview-posts.mjs),
+  `runChecks`, `verdict` (scripts/release-check.mjs), `save` and `repoRoot`
+  (scripts/checkpoint.mjs).
 - Repo rules: explicit-path staging only, no em-dashes anywhere, scripts/ code style
   (no semicolons, single quotes).
 - Several agent sessions share this checkout; ship must never sweep up their work.
@@ -33,7 +44,12 @@ moved, non-interactive or CI mode, partial shipping (choosing a subset of change
 
 `npm run ship` runs `node scripts/ship.mjs`. Flags: `--message <msg>` overrides the commit
 message; `--port <n>` overrides the review server port (default 4322, matching preview-posts);
-`--no-open` skips opening the browser (prints the URL instead).
+`--no-open` skips opening the browser (prints the URL instead); `--preflight` runs step 1
+only and exits (agent sessions use it to fail fast before involving the owner); `--yes`
+skips step 2 entirely (no build-and-serve, no stdin prompt) and treats the approval as
+already given, running steps 1, 3, and 4 straight through. `--yes` exists solely for the
+ship-posts skill flow, where the owner's approval is a chat message; the policy guard lives
+in the skill text, not in code.
 
 ### Step 1: preflight (abort early, change nothing)
 
@@ -44,7 +60,10 @@ message; `--port <n>` overrides the review server port (default 4322, matching p
    `git pull --rebase` when comfortable). Ship never rewrites history.
 4. Purity check, on the RAW diff, not the filtered change set: collect
    `git diff --no-renames --name-only -z origin/main` plus untracked files
-   (`git ls-files --others --exclude-standard -z`), with no classification filter. If any
+   (`git ls-files --others --exclude-standard -z`) plus the committed-only view
+   `git diff --no-renames --name-only -z origin/main...HEAD` (this last one catches an
+   unpushed commit whose working-tree content was reverted without resetting the commit;
+   the push would still carry it), with no classification filter. If any
    path in that union falls outside `src/content/posts/`, abort listing those paths and
    naming the fallback (a Claude session). This is the guarantee that ship only ever
    publishes post content. `computeChangeSet` cannot serve here: its `classifyPath` filter
@@ -95,6 +114,29 @@ message; `--port <n>` overrides the review server port (default 4322, matching p
    watch times out, print the Actions URL and exit 0 anyway; the push already succeeded and
    the deploy outcome is observable there.
 
+## Conversational entry point: the ship-posts skill
+
+A repo skill at `.claude/skills/ship-posts/SKILL.md`, following the format of the existing
+checkpoint, release-check, and preview-posts skills. Its description triggers on requests
+like "push my edits", "ship my posts", "publish what I changed in the editor". The skill is
+a runbook for the session, not new machinery:
+
+1. Run `npm run ship -- --preflight`. If it aborts (wrong branch, origin moved, non-post
+   changes), surface the message and fall back to the normal session workflow; do not
+   improvise around it.
+2. Run `npm run preview-posts` on an explicit free port and hand the owner the review link
+   listing their changed posts (the production build, not the dev render).
+3. Wait for the owner's explicit approval in chat ("approved", "push", "ship it") AFTER
+   they have the link. The initial "push my edits" request is the request, not the
+   approval; never treat it as both.
+4. Stop the preview server, then run `npm run ship -- --yes`, which records the approval,
+   runs release-check, commits the post files, pushes, and watches the deploy.
+5. Report the per-check results and the live post URLs.
+
+The skill also states the hard rule for agents: `--yes` may only ever follow an owner
+approval message in the same conversation, given after step 2's link. This keeps the
+preview gate's meaning identical across both entry points.
+
 ## Error handling
 
 Every abort prints one plain-language paragraph: what was found, why ship stopped, what to
@@ -108,11 +150,13 @@ mutations are the single commit and the push in step 4.
 `scripts/ship.test.mjs` (`node:test`, fixture repos from scripts/test-helpers.mjs), added to
 the `test:safety` suite, covering the pure decision logic:
 
-- Change-set partition: posts-only sets pass; mixed sets abort with the offending paths.
+- Purity check: posts-only sets pass; mixed sets abort with the offending paths; a
+  committed non-post change that was reverted in the working tree still aborts (the
+  origin/main...HEAD union catches it).
 - Commit message generation: single post, multiple posts, primary + sibling deduplication,
   `--message` override.
 - Preflight: non-main branch aborts; behind origin/main aborts; empty change set is a clean
-  exit.
+  exit; `--preflight` stops after step 1 in both outcomes.
 
 The interactive path (serve, prompt, push) is exercised manually; the components it chains
 (preview approval hashing, release checks) already have their own suites.
@@ -120,5 +164,10 @@ The interactive path (serve, prompt, push) is exercised manually; the components
 ## Documentation
 
 - docs/post-editor.md: replace the manual publish description with a "Shipping your edits"
-  section centered on `npm run ship` (keeping the manual steps as a fallback footnote).
-- CLAUDE.md commands table: one row for `npm run ship`.
+  section presenting both entry points: `npm run ship` in a terminal, or "push my edits" to
+  any Claude Code session (keeping the manual steps as a fallback footnote).
+- CLAUDE.md commands table: one row for `npm run ship`; the Safety section gains a line for
+  the ship flow and its skill, alongside the existing checkpoint, release-check, and
+  preview-gate entries.
+- The ship-posts skill file itself (`.claude/skills/ship-posts/SKILL.md`) doubles as the
+  agent-facing documentation.
