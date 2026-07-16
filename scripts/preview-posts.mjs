@@ -188,16 +188,20 @@ export function readManifest(root) {
   }
 }
 
-// Empty result means the approved map exactly equals the current one.
+// Empty result means every current change is covered by the approval.
+// Approved entries absent from the current change set are deliberately not
+// problems: a file only leaves the change set when its content settles back
+// into the base ref (the approved bytes were committed and deployed under
+// this same gate, or the edit was reverted), when it becomes a draft, or when
+// package.json stops being site-significant. In every case nothing unreviewed
+// can ship from it, and re-editing it puts it back in the change set where
+// the drift checks below apply.
 export function manifestDiff(currentFiles, manifest) {
   const approved = manifest.files
   const problems = []
   for (const [path, hash] of Object.entries(currentFiles)) {
     if (!(path in approved)) problems.push(`${path}: not covered by the approval`)
     else if (approved[path] !== hash) problems.push(`${path}: changed since approval`)
-  }
-  for (const path of Object.keys(approved)) {
-    if (!(path in currentFiles)) problems.push(`${path}: approved but no longer in the change set`)
   }
   return problems
 }
@@ -219,13 +223,16 @@ export function checkPostPreview(root, { baseRef } = {}) {
   if (!manifest) {
     return { status: 'FAIL', detail: `${changeSet.length} preview-relevant change(s) with no approval; ${REMEDIATION}${note}` }
   }
-  const problems = manifestDiff(hashChangeSet(root, changeSet), manifest)
+  const currentFiles = hashChangeSet(root, changeSet)
+  const problems = manifestDiff(currentFiles, manifest)
   if (problems.length) {
     const shown = problems.slice(0, 10).join('\n')
     const more = problems.length > 10 ? `\n... and ${problems.length - 10} more` : ''
     return { status: 'FAIL', detail: `${shown}${more}\n${REMEDIATION}${note}` }
   }
-  return { status: 'PASS', detail: `${changeSet.length} changed file(s) covered by preview approval${note}` }
+  const settled = Object.keys(manifest.files).filter((path) => !(path in currentFiles)).length
+  const settledNote = settled ? `; ${settled} approved file(s) already committed or reverted` : ''
+  return { status: 'PASS', detail: `${changeSet.length} changed file(s) covered by preview approval${settledNote}${note}` }
 }
 
 function escapeHtml(s) {

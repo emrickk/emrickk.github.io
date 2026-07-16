@@ -13,7 +13,7 @@ The owner reviews every preview-relevant change in a real browser against the re
 2. Hand the owner the review link(s). They browse the actual site: both languages, dark mode, narrow width.
 3. Apply any edits the owner requests, then run the preview again (rebuild picks up the changes). Repeat until the owner is satisfied.
 4. Only after the owner explicitly approves (for example says "approved" in chat), run `npm run preview-posts -- --approve`. Never approve unprompted, and never approve changes the owner has not seen.
-5. Release-check check 12 verifies the approval covers the exact current files. It SKIPs when nothing preview-relevant changed.
+5. Release-check check 12 verifies every current preview-relevant change is covered by the approval with matching content hashes. It SKIPs when nothing preview-relevant changed. Approved files that have since left the change set (committed with the approved bytes, or reverted) do not void the approval; only editing a file after approval does.
 
 ## Rules
 

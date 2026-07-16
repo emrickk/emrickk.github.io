@@ -331,7 +331,7 @@ test('manifest round-trip and exact-match comparison', (t) => {
   assert.deepEqual(manifestDiff(files, manifest), [])
 })
 
-test('manifestDiff reports edits, additions, and removals', (t) => {
+test('manifestDiff reports edits and additions, ignores settled approvals', (t) => {
   const root = makeFixtureRepo()
   t.after(() => cleanup(root))
   write(root, 'src/content/posts/alpha.md', 'v1')
@@ -339,11 +339,12 @@ test('manifestDiff reports edits, additions, and removals', (t) => {
   writeManifest(root, hashChangeSet(root, ['src/content/posts/alpha.md', 'src/content/posts/beta.md']), { baseRef: 'HEAD' })
   const manifest = readManifest(root)
   write(root, 'src/content/posts/alpha.md', 'v2')
+  // beta.md is approved but absent from the current change set (committed or
+  // reverted since approval); that must not be a problem on its own.
   const current = hashChangeSet(root, ['src/content/posts/alpha.md', 'src/content/posts/gamma.md'])
   const problems = manifestDiff(current, manifest)
   assert.deepEqual(problems.sort(), [
     'src/content/posts/alpha.md: changed since approval',
-    'src/content/posts/beta.md: approved but no longer in the change set',
     'src/content/posts/gamma.md: not covered by the approval',
   ])
 })
@@ -403,6 +404,67 @@ test('checkPostPreview truncates long problem lists', (t) => {
   const stale = checkPostPreview(root, opts)
   assert.equal(stale.status, 'FAIL')
   assert.match(stale.detail, /and 2 more/)
+})
+
+// Committing approved files with identical content moves them out of the
+// change set once the base ref advances (modeled here with baseRef HEAD).
+// The owner-reviewed bytes are unchanged, so the approval must survive.
+test('checkPostPreview: approval survives committing approved files unchanged', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const opts = { baseRef: 'HEAD' }
+  write(root, 'src/content/posts/alpha.md', FM + 'v1\n')
+  write(root, 'src/content/posts/beta.md', FM + 'v1\n')
+  writeManifest(root, hashChangeSet(root, computeChangeSet(root, opts)), { baseRef: 'HEAD' })
+
+  run(root, ['add', 'src/content/posts/alpha.md'])
+  run(root, ['commit', '-q', '-m', 'ship alpha'])
+  const partial = checkPostPreview(root, opts)
+  assert.equal(partial.status, 'PASS')
+  assert.match(partial.detail, /1 changed file/)
+  assert.match(partial.detail, /1 approved file\(s\) already committed or reverted/)
+
+  run(root, ['add', 'src/content/posts/beta.md'])
+  run(root, ['commit', '-q', '-m', 'ship beta'])
+  assert.equal(checkPostPreview(root, opts).status, 'SKIP')
+})
+
+// Content drift stays conservative: an approved file edited after approval
+// must fail, whether or not the approved version was committed in between.
+test('checkPostPreview: edit after approval fails even when committed first', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const opts = { baseRef: 'HEAD' }
+  write(root, 'src/content/posts/alpha.md', FM + 'v1\n')
+  writeManifest(root, hashChangeSet(root, computeChangeSet(root, opts)), { baseRef: 'HEAD' })
+  run(root, ['add', 'src/content/posts/alpha.md'])
+  run(root, ['commit', '-q', '-m', 'ship alpha'])
+  write(root, 'src/content/posts/alpha.md', FM + 'v2\n')
+  const res = checkPostPreview(root, opts)
+  assert.equal(res.status, 'FAIL')
+  assert.match(res.detail, /changed since approval/)
+})
+
+// Reverting an approved file removes it from the change set; nothing
+// unreviewed can ship from it, so the rest of the approval stays valid.
+test('checkPostPreview: reverting an approved file does not invalidate the rest', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const opts = { baseRef: 'HEAD' }
+  write(root, 'src/content/posts/alpha.md', FM + 'v1\n')
+  run(root, ['add', 'src/content/posts/alpha.md'])
+  run(root, ['commit', '-q', '-m', 'base alpha'])
+  write(root, 'src/content/posts/alpha.md', FM + 'v2\n')
+  write(root, 'src/content/posts/beta.md', FM + 'v1\n')
+  writeManifest(root, hashChangeSet(root, computeChangeSet(root, opts)), { baseRef: 'HEAD' })
+
+  write(root, 'src/content/posts/alpha.md', FM + 'v1\n') // revert to base
+  const res = checkPostPreview(root, opts)
+  assert.equal(res.status, 'PASS')
+  assert.match(res.detail, /1 approved file\(s\) already committed or reverted/)
+
+  rmSync(join(root, 'src/content/posts/beta.md')) // revert the rest
+  assert.equal(checkPostPreview(root, opts).status, 'SKIP')
 })
 
 test('checkPostPreview: approved deletion passes until the file returns', (t) => {
