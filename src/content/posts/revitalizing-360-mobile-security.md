@@ -1,6 +1,6 @@
 ---
 title: 'Revitalizing 360 Mobile Security: From a Mere Tool to an Emotional Companion'
-description: ''
+description: 'A product case study: five weeks to revitalize 360 Mobile Security, from cohort research to a redesigned 7.0 that turned DAU and retention around.'
 pubDate: '2018-05-01'
 heroImage: '../../assets/hero/2018/05/revitalizing-360-mobile-security-cover.png'
 category: 'Things'
@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'revitalizing-360-mobile-security'
 titleZh: '焕新360手机卫士：从工具到情感伙伴'
 titleEn: 'Revitalizing 360 Mobile Security: From a Mere Tool to an Emotional Companion'
+descriptionZh: '一份产品复盘：用五周时间焕新360手机卫士，从数据研究到7.0改版，让日活和留存重新回升。'
+descriptionEn: 'A product case study: five weeks to revitalize 360 Mobile Security, from cohort research to a redesigned 7.0 that turned DAU and retention around.'
 ---
 
 ## Context
@@ -16,7 +18,7 @@ The daily active users for 360 Mobile Security, a one-stop application that cons
 
 I was the product management lead for the reviving project. Along with my design and dev team, we finished the entire project in 5 weeks.
 
-![](https://cdn.anping.us/2026/07/r360-vision-transition.webp)
+![](https://cdn.theneverless.com/2026/07/r360-vision-transition.webp)
 
 ## Get Ready: Project Timeline
 
@@ -145,12 +147,12 @@ The cohort analysis was the principal part of our research. We have a relatively
 - The percentage of new users was less than anticipated. A downtrend in the percentage of new users indicates that the rate of initial function satisfaction among new users was falling.
 - A low frequency of functional usage was also a possible reason that could lead to the low two-week and four-week succession user percentages and the high return user percentage.
 
-![](https://cdn.anping.us/2026/07/r360-freshness-degree.webp)
+![](https://cdn.theneverless.com/2026/07/r360-freshness-degree.webp)
 
 - We conducted more in-depth research with the help of the freshness degree of users. The steadiness of the 30th-day freshness user rate indicates that most active users are satisfied with our products.
 - The previous second-day freshness user rate declined sharply compared to the first-day freshness user rate, but the +4 and later day freshness user rates were relatively steady. We suggest that it was the unfriendly function guides that caused new users to leave.
 
-![](https://cdn.anping.us/2026/07/r360-user-access-pattern.webp)
+![](https://cdn.theneverless.com/2026/07/r360-user-access-pattern.webp)
 
 The sharp decline in the 2nd to 3rd step user access pattern further confirmed our hypothesis.
 
@@ -160,11 +162,11 @@ Most functions require 3+ clicks to reach, which makes the learning cost of our 
 
 At this phase of user research, we focused more on the use cases of our audience in addition to data, such as their usage habits, the problems they encountered, and their emotional feedback. Moreover, we hope to gather more ideas from users.
 
-![](https://cdn.anping.us/2026/07/r360-research-methods.webp)
+![](https://cdn.theneverless.com/2026/07/r360-research-methods.webp)
 
 We synthesized our user research and user data and identified four insights that led to the heart of the matter. These realizations helped us refine our hypothesis and determine the specific areas and issues that our solution needs to target.
 
-![](https://cdn.anping.us/2026/07/r360-four-insights.webp)
+![](https://cdn.theneverless.com/2026/07/r360-four-insights.webp)
 
 - Some users did not know when or how they should use 360 Mobile Security.
 - Users became upset when a function was the reason they installed our app.
@@ -179,7 +181,7 @@ Malfunction and performance problems can influence the retention rate and can be
 
 We analyzed our main competitors and identified their strengths and weaknesses. We paid additional attention to their new features and experiences that are lacking in our product.
 
-![](https://cdn.anping.us/2026/07/r360-competitor-analysis.webp)
+![](https://cdn.theneverless.com/2026/07/r360-competitor-analysis.webp)
 
 ### Industrial Analysis
 
@@ -196,7 +198,7 @@ We discovered several current market and user demand situations after reviewing 
 
 We revised our current functions by combining user emotion with their potential demands. When new ideas emerged during our research, we found the direction for our new version.
 
-![](https://cdn.anping.us/2026/07/r360-true-needs.webp)
+![](https://cdn.theneverless.com/2026/07/r360-true-needs.webp)
 
 ## Prototyping & Usability Test: Do We Have the Same View as the Audience?
 
@@ -204,7 +206,7 @@ We redesigned our app structure by making function levels flatter and creating a
 
 We sketched medium-fi prototypes and completed usability tests with each iteration. We primarily used hotspot maps and path maps to evaluate our design. The prototypes for the eighth iteration are as follows.
 
-![](https://cdn.anping.us/2026/07/r360-prototypes.webp)
+![](https://cdn.theneverless.com/2026/07/r360-prototypes.webp)
 
 In our eighth usability test:
 
@@ -220,7 +222,7 @@ Afterward, we created the Hi-Fi version of our designs and sent them to the deve
 
 We redesigned our main page to be waterfall-like in order to make young users feel more comfortable exploring new features and their phone statuses.
 
-![](https://cdn.anping.us/2026/07/r360-mainpage-feed.webp)
+![](https://cdn.theneverless.com/2026/07/r360-mainpage-feed.webp)
 
 _The 7.0 version main page feed._
 
@@ -230,21 +232,21 @@ _The 7.0 version main page feed._
 
 Structure revision makes functions easier to get in touch with.
 
-![](https://cdn.anping.us/2026/07/r360-old-version.webp)
+![](https://cdn.theneverless.com/2026/07/r360-old-version.webp)
 
 _Old function entry in the 6.x version._
 
-![](https://cdn.anping.us/2026/07/r360-new-mainpage.webp)
+![](https://cdn.theneverless.com/2026/07/r360-new-mainpage.webp)
 
 _New function tab on the 7.0 version main page._
 
 ### Skins for Young Users
 
-![](https://cdn.anping.us/2026/07/r360-skins.webp)
+![](https://cdn.theneverless.com/2026/07/r360-skins.webp)
 
 We represented brightness not only in our designs but also in our functions. We made our functions customizable.
 
-![](https://cdn.anping.us/2026/07/r360-toolbox.webp)
+![](https://cdn.theneverless.com/2026/07/r360-toolbox.webp)
 
 Additionally, we redefined the functions we provided, positioning ourselves as a true and sincere friend and phone manager.
 
@@ -252,7 +254,7 @@ Additionally, we redefined the functions we provided, positioning ourselves as a
 - Suitable features will be promoted based on user tags and operating behaviors.
 - In the 6.x version, functions were hidden in a drawer menu and were unchangeable.
 
-![](https://cdn.anping.us/2026/07/r360-freshness-push.webp)
+![](https://cdn.theneverless.com/2026/07/r360-freshness-push.webp)
 
 Combined with real-time detection and our push system, our users no longer have to worry about when to clean their phones, check for software updates, or deal with other annoying issues.
 
@@ -308,6 +310,6 @@ We were able to prevent our Daily Active Users from declining, and our DAUs even
 
 Finally, our 30th Day Retention Rate also increased by 3.9%, indicating that three million more users kept the 360 Mobile Security app on their phones after 30 days.
 
-![](https://cdn.anping.us/2026/07/r360-the-end.webp)
+![](https://cdn.theneverless.com/2026/07/r360-the-end.webp)
 
 Please feel free to try 360 Mobile Security 7.x [here](http://msoftdl.360.cn/mobile/shouji360/360safesis/360MobileSafe_7.7.4.1038.apk) with an Android phone!

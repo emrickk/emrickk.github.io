@@ -1,6 +1,6 @@
 ---
 title: 'Leaving Comments?'
-description: ''
+description: 'Why people skip the elegant feedback box: we are obsessed with replies, afraid our words vanish unread, and that is why read receipts exist.'
 pubDate: '2020-10-22'
 heroImage: '../../assets/hero/2020/10/leaving-comments-cover.webp'
 showHero: true
@@ -9,6 +9,8 @@ lang: 'en'
 translationKey: 'leaving-comments'
 titleZh: '留言？'
 titleEn: 'Leaving Comments?'
+descriptionZh: '为什么没人用优雅的留言框：人们执念于回复，害怕写下的话没人读到，「已读」回执因此而生。'
+descriptionEn: 'Why people skip the elegant feedback box: we are obsessed with replies, afraid our words vanish unread, and that is why read receipts exist.'
 ---
 
 Look at the message input box, how elegant.

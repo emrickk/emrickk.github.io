@@ -1,12 +1,14 @@
 ---
 title: '素描'
-description: ''
+description: '转载的一首诗《素描》：关于雨天与回忆的安静素描。'
 pubDate: '2007-08-15'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'sketch'
 titleZh: '素描'
 titleEn: 'Sketch'
+descriptionZh: '转载的一首诗《素描》：关于雨天与回忆的安静素描。'
+descriptionEn: 'A reposted poem titled "Sketch", a quiet study of rain and memory.'
 ---
 
 天欲雨，淅沥声仿佛是从山的背面来的\

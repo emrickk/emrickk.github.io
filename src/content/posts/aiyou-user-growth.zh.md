@@ -8,7 +8,7 @@ title: '从0到20万日活：爱游穿梭机的用户增长之旅'
 
 爱游穿梭机（下文简称爱游）是一款游戏辅助应用，通过读屏和模拟点击帮助用户完成重复性的游戏任务，同时不破坏游戏平衡。
 
-![](https://cdn.anping.us/2026/07/aiyou-auto-task.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-auto-task.webp)
 
 上线之初，我们自然增长了约5万名用户。但随着用户基数扩大，新用户占比开始下滑。要保持健康的增长，我们必须开拓新的获客渠道。
 
@@ -34,7 +34,7 @@ title: '从0到20万日活：爱游穿梭机的用户增长之旅'
 
 到准备开始推广时，我们的次日留存率已超过30%，远高于行业平均水平。从新用户的角度看，产品已经准备好迎接规模化了。
 
-![](https://cdn.anping.us/2026/07/aiyou-retention-data.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-retention-data.webp)
 
 在活跃用户侧，游戏相关功能的日均使用次数达到3.1次，说明用户对产品相当满意。活跃用户的高参与度让我们确信，此刻正是推广和扩张的好时机。
 
@@ -46,13 +46,13 @@ title: '从0到20万日活：爱游穿梭机的用户增长之旅'
 
 我们仔细挑选了问卷的入口和问题，避免干扰用户的下一步操作，尤其是在用户并非奔着某个功能而来的场景里。
 
-![](https://cdn.anping.us/2026/07/aiyou-flow-sketch.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-flow-sketch.webp)
 
-![](https://cdn.anping.us/2026/07/aiyou-whiteboard.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-whiteboard.webp)
 
 我们分析了产品的用户流程和数据，找到了两处适合放置问卷的位置。
 
-![](https://cdn.anping.us/2026/07/aiyou-survey-entrances.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-survey-entrances.webp)
 
 我们利用云端配置搭建横幅入口，并用React Native开发了详情页，让更新能在几小时内推送给用户。
 
@@ -85,7 +85,7 @@ title: '从0到20万日活：爱游穿梭机的用户增长之旅'
 
 ### 用户画像
 
-![](https://cdn.anping.us/2026/07/aiyou-persona.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-persona.webp)
 
 典型用户：
 
@@ -107,7 +107,7 @@ title: '从0到20万日活：爱游穿梭机的用户增长之旅'
 
 我们用MICE框架（匹配度Match、影响力Impact、成本Cost、易用性Ease）分析用户反馈和数据后，圈定了几款短视频应用，包括月活超10亿的快手，以及类似Reddit的贴吧。经过评估，我们选择快手作为第一个投放平台。日活数据来源于QuestMobile。
 
-![](https://cdn.anping.us/2026/07/aiyou-platform-comparison.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-platform-comparison.webp)
 
 *上图为我们对比过的平台。*
 
@@ -117,7 +117,7 @@ title: '从0到20万日活：爱游穿梭机的用户增长之旅'
 
 为了弄清哪些因素决定了视频的受欢迎程度，我们采用控制变量法排除无关变量：挑选五位粉丝数和风格相近的上传者，每条视频只改变一个因素（比如风格、文案或推广的功能），以分离每个变量的影响。快手上主流的视频风格往往并不精致，却深受二三线城市用户的喜爱。
 
-![](https://cdn.anping.us/2026/07/aiyou-kwai-videos.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-kwai-videos.webp)
 
 我们为视频建立了一套KPI体系，包括播放量、分享量和点击率。为了优化视频、验证效果，我们围绕所推广的功能做A/B测试并不断修改，尝试了不同的脚本、背景和互动元素，寻找最有效的组合。
 
@@ -149,7 +149,7 @@ title: '从0到20万日活：爱游穿梭机的用户增长之旅'
 
 为了解决这个问题，我们上线了一个名为「我要当网红」的H5活动，吸引和招募有才华的主播，帮我们优化推广方式、降低成本。
 
-![](https://cdn.anping.us/2026/07/aiyou-influencer-poster.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-influencer-poster.webp)
 
 [我要当网红（点击阅读全文）](/posts/wanna-be-creator/)
 
@@ -171,9 +171,9 @@ title: '从0到20万日活：爱游穿梭机的用户增长之旅'
 
 结果是，虽然活动的分享率达到了13%，页面浏览量也很高，新增用户却低于最初的预期。这段经历让我们明白：活动必须与产品的价值主张和核心功能结合得更紧密才行。
 
-![](https://cdn.anping.us/2026/07/aiyou-chiji-sketch.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-chiji-sketch.webp)
 
-![](https://cdn.anping.us/2026/07/aiyou-chiji-screens.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-chiji-screens.webp)
 
 *我们设计了8道题目和6种测试结果。很多用户为了看到不同结果，反复测试了3次以上。*
 
@@ -183,7 +183,7 @@ title: '从0到20万日活：爱游穿梭机的用户增长之旅'
 
 不过我们也意识到，这个活动的成功部分依赖于持续产出新奇有趣的创意，而这很难长期维持。它能在短期内带来新用户，但从长远看，我们需要更可持续、可规模化的推广方法。
 
-![](https://cdn.anping.us/2026/07/aiyou-pubg-screens.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-pubg-screens.webp)
 
 我们帮用户生成带有自己用户名的个性化获胜截图，并在活动的最后一页鼓励观众下载产品，承诺借助爱游，他们也能成为游戏里真正的赢家。
 

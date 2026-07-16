@@ -1,12 +1,14 @@
 ---
 title: '我只在乎你'
-description: ''
+description: '邓丽君《我只在乎你》的歌词。'
 pubDate: '2014-09-21'
 category: 'Fiona'
 lang: 'zh'
 translationKey: 'if-life-without-you'
 titleZh: '我只在乎你'
 titleEn: 'I Only Care About You'
+descriptionZh: '邓丽君《我只在乎你》的歌词。'
+descriptionEn: 'The lyrics of Teresa Teng''s song "I Only Care About You".'
 ---
 
 如果没有遇见你

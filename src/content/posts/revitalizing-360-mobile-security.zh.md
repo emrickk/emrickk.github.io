@@ -10,7 +10,7 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 
 我是这个焕新项目的产品负责人。带着设计和开发团队，我们用5周时间完成了整个项目。
 
-![](https://cdn.anping.us/2026/07/r360-vision-transition.webp)
+![](https://cdn.theneverless.com/2026/07/r360-vision-transition.webp)
 
 ## 准备就绪：项目排期
 
@@ -139,12 +139,12 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 - 新用户占比低于预期。新用户比例的下行趋势说明，新用户对初始功能的满意率正在下降。
 - 功能使用频率偏低也是一个可能的原因，它会导致两周和四周的存续用户占比偏低、回流用户占比偏高。
 
-![](https://cdn.anping.us/2026/07/r360-freshness-degree.webp)
+![](https://cdn.theneverless.com/2026/07/r360-freshness-degree.webp)
 
 - 我们借助用户新鲜度指标做了更深入的研究。第30日新鲜度用户比例保持平稳，说明大多数活跃用户对我们的产品是满意的。
 - 相比第1日，第2日的新鲜度用户比例出现骤降，但第4日及之后的数据相对平稳。我们推测，是不友好的功能引导把新用户劝退了。
 
-![](https://cdn.anping.us/2026/07/r360-user-access-pattern.webp)
+![](https://cdn.theneverless.com/2026/07/r360-user-access-pattern.webp)
 
 用户访问路径中第2步到第3步的急剧下滑，进一步验证了我们的假设。
 
@@ -154,11 +154,11 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 
 在这个阶段的用户研究中，除了数据，我们更关注用户的使用场景，比如他们的使用习惯、遇到的问题以及情绪反馈。同时，我们也希望从用户那里收集更多的想法。
 
-![](https://cdn.anping.us/2026/07/r360-research-methods.webp)
+![](https://cdn.theneverless.com/2026/07/r360-research-methods.webp)
 
 我们把用户研究与用户数据加以综合，提炼出四个直指问题核心的洞察。这些洞察帮助我们修正了假设，明确了解决方案需要瞄准的具体方向和问题。
 
-![](https://cdn.anping.us/2026/07/r360-four-insights.webp)
+![](https://cdn.theneverless.com/2026/07/r360-four-insights.webp)
 
 - 一些用户不知道什么时候、该怎么使用360手机卫士。
 - 当某个功能正是用户装机的理由时，它出问题会让用户格外恼火。
@@ -173,7 +173,7 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 
 我们分析了主要竞争对手，梳理出它们的优势与短板，并格外留意那些我们产品尚且缺失的新功能和新体验。
 
-![](https://cdn.anping.us/2026/07/r360-competitor-analysis.webp)
+![](https://cdn.theneverless.com/2026/07/r360-competitor-analysis.webp)
 
 ### 行业分析
 
@@ -190,7 +190,7 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 
 我们把用户情感与潜在需求结合起来，修订了现有功能。研究过程中不断涌现的新想法，也为新版本指明了方向。
 
-![](https://cdn.anping.us/2026/07/r360-true-needs.webp)
+![](https://cdn.theneverless.com/2026/07/r360-true-needs.webp)
 
 ## 原型与可用性测试：我们和用户看到的是同一个产品吗？
 
@@ -198,7 +198,7 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 
 我们绘制了中保真原型，并在每次迭代后进行可用性测试，主要用热点图和路径图来评估设计。第八轮迭代的原型如下。
 
-![](https://cdn.anping.us/2026/07/r360-prototypes.webp)
+![](https://cdn.theneverless.com/2026/07/r360-prototypes.webp)
 
 在第八轮可用性测试中：
 
@@ -214,7 +214,7 @@ title: '焕新360手机卫士：从工具到情感伙伴'
 
 我们把主页重新设计成瀑布流式，让年轻用户能更自在地探索新功能和手机状态。
 
-![](https://cdn.anping.us/2026/07/r360-mainpage-feed.webp)
+![](https://cdn.theneverless.com/2026/07/r360-mainpage-feed.webp)
 
 _7.0版本的主页信息流。_
 
@@ -224,21 +224,21 @@ _7.0版本的主页信息流。_
 
 结构上的修订让功能更加触手可及。
 
-![](https://cdn.anping.us/2026/07/r360-old-version.webp)
+![](https://cdn.theneverless.com/2026/07/r360-old-version.webp)
 
 _6.x旧版本的功能入口。_
 
-![](https://cdn.anping.us/2026/07/r360-new-mainpage.webp)
+![](https://cdn.theneverless.com/2026/07/r360-new-mainpage.webp)
 
 _7.0版本主页上的新功能页签。_
 
 ### 为年轻用户准备的皮肤
 
-![](https://cdn.anping.us/2026/07/r360-skins.webp)
+![](https://cdn.theneverless.com/2026/07/r360-skins.webp)
 
 我们不仅在设计上体现明快，也把这种明快带进了功能：我们让功能变得可定制。
 
-![](https://cdn.anping.us/2026/07/r360-toolbox.webp)
+![](https://cdn.theneverless.com/2026/07/r360-toolbox.webp)
 
 同时，我们重新定义了所提供的功能，把自己定位成一位真诚的朋友和手机管家。
 
@@ -246,7 +246,7 @@ _7.0版本主页上的新功能页签。_
 - 系统会根据用户标签和操作行为，推荐合适的功能。
 - 而在6.x版本中，功能都藏在抽屉菜单里，且无法更改。
 
-![](https://cdn.anping.us/2026/07/r360-freshness-push.webp)
+![](https://cdn.theneverless.com/2026/07/r360-freshness-push.webp)
 
 配合实时检测和推送系统，用户再也不用操心什么时候清理手机、检查软件更新，或者处理其他烦人的琐事。
 
@@ -302,6 +302,6 @@ _7.0版本主页上的新功能页签。_
 
 最终，第30日留存率也提升了3.9%，这意味着有三百万名用户在30天后仍把360手机卫士留在手机里。
 
-![](https://cdn.anping.us/2026/07/r360-the-end.webp)
+![](https://cdn.theneverless.com/2026/07/r360-the-end.webp)
 
 欢迎用安卓手机[点击这里](http://msoftdl.360.cn/mobile/shouji360/360safesis/360MobileSafe_7.7.4.1038.apk)体验360手机卫士7.x！

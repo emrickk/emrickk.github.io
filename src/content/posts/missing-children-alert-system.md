@@ -1,6 +1,6 @@
 ---
 title: "Missing Children Alert System: China's First AMBER-Alert-Like System"
-description: ''
+description: 'A missing-children alert system built on 360 Mobile Security''s push channel, reaching the right users without disturbing them: 109 children rescued by 2019.'
 pubDate: '2016-05-01'
 heroImage: '../../assets/hero/2016/05/missing-children-alert-system-cover.png'
 category: 'Things'
@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'missing-children-alert-system'
 titleZh: '失踪儿童告警系统：中国第一个类「安珀警报」系统'
 titleEn: "Missing Children Alert System: China's First AMBER-Alert-Like System"
+descriptionZh: '基于360手机卫士推送体系的失踪儿童告警系统：精准触达而不打扰用户，截至2019年协助救回109名儿童。'
+descriptionEn: 'A missing-children alert system built on 360 Mobile Security''s push channel, reaching the right users without disturbing them: 109 children rescued by 2019.'
 ---
 
 An AMBER-Alert-like notification system for lost-found children, based on the push message system of 360 Mobile Security.
@@ -18,7 +20,7 @@ In 2015, 1,427 children were reported missing in China. Unfortunately, law enfor
 
 I was part of the product team that initiated the project. My part was to design the notification logic.
 
-![](https://cdn.anping.us/2026/07/mcas-alert-scenario.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-alert-scenario.webp)
 
 ## Before Start: Previous Efforts and Initiatives
 
@@ -36,7 +38,7 @@ To effectively rescue more missing children, an alert system must incorporate th
 
 We have diligently worked to ensure our design is both clear and concise.
 
-![](https://cdn.anping.us/2026/07/mcas-design-versions.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-design-versions.webp)
 
 *From left to right: the 1st, 2nd, and 3rd versions.*
 
@@ -52,18 +54,18 @@ On the other hand, being overly cautious may lead to reduced system effectivenes
 
 Based on the time the child went missing and the hypothetical vehicle they could take, we can figure out several possible areas, and pick users from those areas to send our customized push messages.
 
-![](https://cdn.anping.us/2026/07/mcas-scope-identification.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-scope-identification.webp)
 
 ### Identifying Other Elements
 
 We can obtain user tags based on the apps they have installed and their in-app behavior within the 360 suite of applications. The selection covers behavioral, occupational, social, and psychological attributes, together with emergency level identifications.
 
-![](https://cdn.anping.us/2026/07/mcas-user-attributes.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-user-attributes.webp)
 
 Upon a child being reported missing, the initial notification will be dispatched to users within a specified range. Subsequent push notifications will be selectively sent to users, taking into consideration their specific characteristics and the degree of urgency.
 
 ## Final Product: Distinct Push Notifications for Varied Users
 
-![](https://cdn.anping.us/2026/07/mcas-persona-notifications.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-persona-notifications.webp)
 
 Since the launch of our system, we have successfully assisted in rescuing **109 children** as of 2019! Among them, 9 were rescued thanks to the proactive efforts of our dedicated users.

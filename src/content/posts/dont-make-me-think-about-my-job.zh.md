@@ -24,7 +24,7 @@ title: '别让我思考（我的工作）：真诚、专业与 B2B 产品设计'
 
 来看 CE 认证的例子：
 
-![](https://cdn.anping.us/2026/07/b2b-ce-certificate.webp)
+![](https://cdn.theneverless.com/2026/07/b2b-ce-certificate.webp)
 
 在商品详情页上，CE 区块放着一大段「什么是 CE」的说明，读完大约要 40 秒（按每分钟 150 词计）。但它帮不到任何人：
 
@@ -86,7 +86,7 @@ title: '别让我思考（我的工作）：真诚、专业与 B2B 产品设计'
 
 这样做出来的，就是史蒂夫·克鲁格所说的「不诚实的设计」。比如：
 
-![](https://cdn.anping.us/2026/07/b2b-shipping-options.webp)
+![](https://cdn.theneverless.com/2026/07/b2b-shipping-options.webp)
 
 它看起来很棒，八成还在 A/B 测试里提升过转化。但从功能上看呢？
 
@@ -101,7 +101,7 @@ title: '别让我思考（我的工作）：真诚、专业与 B2B 产品设计'
 
 在我们的 LLM 功能里，这个问题更严重。很多功能是怕错过 AI 浪潮而匆忙上线的。结果呢？拥挤的界面、糟糕的体验，以及零真实帮助。
 
-![](https://cdn.anping.us/2026/07/b2b-llm-description.webp)
+![](https://cdn.theneverless.com/2026/07/b2b-llm-description.webp)
 
 举个例子：一段自动生成的 79 个词的商品描述，读完要 30 秒。
 

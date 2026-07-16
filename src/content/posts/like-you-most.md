@@ -1,12 +1,14 @@
 ---
 title: '「最最喜欢你，绿子。」'
-description: ''
+description: '转载：村上春树《挪威的森林》里关于春天的熊的那段对话。'
 pubDate: '2014-01-10'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'like-you-most'
 titleZh: '「最最喜欢你，绿子。」'
 titleEn: 'I Like You the Very Most, Midori'
+descriptionZh: '转载：村上春树《挪威的森林》里关于春天的熊的那段对话。'
+descriptionEn: 'A repost of the bear-in-spring dialogue from Haruki Murakami''s Norwegian Wood.'
 ---
 
 「最最喜欢你，绿子。」

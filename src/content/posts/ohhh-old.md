@@ -1,12 +1,14 @@
 ---
 title: '有点害怕'
-description: ''
+description: '凉下来的天气把我拉回2013年的校园夜晚，而现在只觉得被时间拖着奔向中年，时间越来越少了。'
 pubDate: '2016-09-19'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'ohhh-old'
 titleZh: '有点害怕'
 titleEn: 'A Little Scared'
+descriptionZh: '凉下来的天气把我拉回2013年的校园夜晚，而现在只觉得被时间拖着奔向中年，时间越来越少了。'
+descriptionEn: 'Cooling weather pulls me back to a campus evening in 2013, while time drags me on toward middle age: less and less of it left.'
 ---
 
 天气凉了

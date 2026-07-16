@@ -1,6 +1,6 @@
 ---
 title: 'Don''t Make Me Think (About My Job): Sincerity, Expertise, and B2B Product Design'
-description: ''
+description: 'How "don''t make me think" gets misapplied on Alibaba.com: define the buyer''s decision, earn domain expertise, and build sincere B2B products.'
 pubDate: '2025-08-17'
 heroImage: '../../assets/hero/2025/08/dont-make-me-think-cover.webp'
 category: 'Things'
@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'dont-make-me-think-about-my-job'
 titleZh: '别让我思考（我的工作）：真诚、专业与 B2B 产品设计'
 titleEn: 'Don''t Make Me Think (About My Job): Sincerity, Expertise, and B2B Product Design'
+descriptionZh: '《别让我思考》在 B2B 平台常被用错：真正的可用性是围绕采购决策做设计，而简化的资格要靠专业赢得。'
+descriptionEn: 'How "don''t make me think" gets misapplied on Alibaba.com: define the buyer''s decision, earn domain expertise, and build sincere B2B products.'
 ---
 
 > *Originally shared internally with the Alibaba.com product team. All examples are based on public information, and any sensitive data has been anonymized.*
@@ -30,7 +32,7 @@ Without clearly defining that decision, we start designing for a "phantom user":
 
 Let's look at the CE certificate example:
 
-![](https://cdn.anping.us/2026/07/b2b-ce-certificate.webp)
+![](https://cdn.theneverless.com/2026/07/b2b-ce-certificate.webp)
 
 On the product detail page, the CE section features a long explanation of what CE is. It takes about 40 seconds to read (150 words/min). But this doesn't help anyone:
 
@@ -92,7 +94,7 @@ Too often, we build with growth-hack logic: "How can we make the number go up? N
 
 That's how we get what Steve Krug calls "dishonest design." For example:
 
-![](https://cdn.anping.us/2026/07/b2b-shipping-options.webp)
+![](https://cdn.theneverless.com/2026/07/b2b-shipping-options.webp)
 
 It looks great. It probably increased conversion in an A/B test. But functionally?
 
@@ -107,7 +109,7 @@ This is what real usability looks like.
 
 The problem is even worse in our LLM features. Many of these were rushed out of fear of missing the AI wave. The result? Cluttered screens, weak UX, and zero real help.
 
-![](https://cdn.anping.us/2026/07/b2b-llm-description.webp)
+![](https://cdn.theneverless.com/2026/07/b2b-llm-description.webp)
 
 Here's one example: an auto-generated 79-word description that takes 30 seconds to read.
 

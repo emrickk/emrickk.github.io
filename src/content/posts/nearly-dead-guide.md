@@ -1,12 +1,14 @@
 ---
 title: '作死的烂尾减肥攻略'
-description: ''
+description: '从80公斤减到54公斤的减肥攻略：苹果餐、五公里慢跑加郑多燕减肥操，写到一半就烂尾了。'
 pubDate: '2014-03-20'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'nearly-dead-guide'
 titleZh: '作死的烂尾减肥攻略'
 titleEn: 'A Reckless, Unfinished Weight-Loss Guide'
+descriptionZh: '从80公斤减到54公斤的减肥攻略：苹果餐、五公里慢跑加郑多燕减肥操，写到一半就烂尾了。'
+descriptionEn: 'A weight-loss guide from 80kg down to 54kg: apple meals, slow five-kilometer runs, and Jung Da-yeon''s aerobics, left unfinished halfway.'
 ---
 
 夏天又要到来了~本着造福广大群众的原则我也来发一则减肥指南吧

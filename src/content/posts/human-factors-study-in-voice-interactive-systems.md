@@ -1,12 +1,14 @@
 ---
 title: 'Human Factors study in Voice Interactive Systems'
-description: ''
+description: 'A human factors study comparing Alexa with a phone across five tasks: voice wins on simple commands and loses as mental workload climbs.'
 pubDate: '2019-12-10'
 category: 'Things'
 lang: 'en'
 translationKey: 'human-factors-study-in-voice-interactive-systems'
 titleZh: '语音交互系统中的人因研究'
 titleEn: 'Human Factors study in Voice Interactive Systems'
+descriptionZh: '一项让Alexa与手机对比完成五项任务的人因研究：语音设备擅长简单指令，心理负荷一高便败下阵来。'
+descriptionEn: 'A human factors study comparing Alexa with a phone across five tasks: voice wins on simple commands and loses as mental workload climbs.'
 ---
 
 **Human Factors study in Voice Interactive Systems**

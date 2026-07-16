@@ -1,12 +1,14 @@
 ---
 title: '无题'
-description: ''
+description: '一首关于「抠唆狗」的打油诗：人要是抠唆，就会变成抠唆狗。'
 pubDate: '2016-03-01'
 category: 'Words'
 lang: 'zh'
 translationKey: 'kou-suo-dog'
 titleZh: '无题'
 titleEn: 'Untitled'
+descriptionZh: '一首关于「抠唆狗」的打油诗：人要是抠唆，就会变成抠唆狗。'
+descriptionEn: 'A bit of doggerel about the cheapskate dog: if a person is a cheapskate, they turn into a cheapskate dog.'
 ---
 
 啊

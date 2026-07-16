@@ -1,12 +1,14 @@
 ---
 title: '你不是世界的上帝'
-description: ''
+description: '做产品上帝模式开多了，看什么都像旁观者，可你并不是世界的上帝：被假乞丐骗了五十块钱之后的自我安慰。'
 pubDate: '2015-08-11'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'not-god-of-the-world'
 titleZh: '你不是世界的上帝'
 titleEn: 'Not the God of the World'
+descriptionZh: '做产品上帝模式开多了，看什么都像旁观者，可你并不是世界的上帝：被假乞丐骗了五十块钱之后的自我安慰。'
+descriptionEn: 'Playing god too much at product work, then getting scammed out of fifty yuan by a fake beggar: you are not the god of this world.'
 ---
 
 做产品的时候上帝模式开多了，很容易代入到生活中去

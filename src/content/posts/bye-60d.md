@@ -1,6 +1,6 @@
 ---
 title: '沙扬娜拉 60D'
-description: ''
+description: '告别用了八个月的佳能60D：第一支定焦、给同学拍过的照片，和一件一件出掉的过程。'
 pubDate: '2013-03-21'
 heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzN1ZTYXFIZ254WEgrd0l4b1hYem1sb09LdnBaVElXM21RPT0.jpg'
 category: 'Journal'
@@ -8,6 +8,8 @@ lang: 'zh'
 translationKey: 'bye-60d'
 titleZh: '沙扬娜拉 60D'
 titleEn: 'Sayonara, 60D'
+descriptionZh: '告别用了八个月的佳能60D：第一支定焦、给同学拍过的照片，和一件一件出掉的过程。'
+descriptionEn: 'Saying sayonara to the Canon 60D after eight months: a first prime lens, photos taken for classmates, and selling it off piece by piece.'
 ---
 
 “沙扬娜拉”，一句日语，它不只是再见的意思。
@@ -18,7 +20,7 @@ titleEn: 'Sayonara, 60D'
 
 2012年7月中旬购入60D 在2013年3月21日买家确认付款之后 永远的离开了我。
 
-![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzN1ZTYXFIZ254WEgrd0l4b1hYem1sb09LdnBaVElXM21RPT0.webp)
+![](https://cdn.theneverless.com/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzN1ZTYXFIZ254WEgrd0l4b1hYem1sb09LdnBaVElXM21RPT0.webp)
 
 特地挑了一张当时认为得意之作的片子 严重过曝 哈哈 还是觉得自己技术很牛X 至少会用
 
@@ -30,7 +32,7 @@ titleEn: 'Sayonara, 60D'
 
 差的太多了
 
-![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzMWJJNFdxNjE2K05ad1lUTUJFUTlxaGlSYkxwTC9hcUVBPT0.webp)
+![](https://cdn.theneverless.com/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzMWJJNFdxNjE2K05ad1lUTUJFUTlxaGlSYkxwTC9hcUVBPT0.webp)
 
 上面是刚拿到手拍的照片 觉得焦外真美
 

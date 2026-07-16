@@ -1,12 +1,14 @@
 ---
 title: '我只过农历新年，所以只在农历新年有对自己每年都一样的期望'
-description: ''
+description: '农历新年的老纠结：本已决定浑浑噩噩过日子，突然又要奋斗，那瞎玩掉的时光怎么办。'
 pubDate: '2017-01-28'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'shut-your-mouth-up'
 titleZh: '我只过农历新年，所以只在农历新年有对自己每年都一样的期望'
 titleEn: 'The Same Hopes Every Lunar New Year'
+descriptionZh: '农历新年的老纠结：本已决定浑浑噩噩过日子，突然又要奋斗，那瞎玩掉的时光怎么办。'
+descriptionEn: 'The same Lunar New Year knot: having settled into muddling through, how to start striving again without disowning the wasted years.'
 ---
 
 现在陷入一个纠结本来我已经决定大口吃肥肉，浑浑噩噩过短命的生活了。

@@ -1,6 +1,6 @@
 ---
 title: 'Alibaba.com Seller Ecosystem and Decision-Making Observation'
-description: ''
+description: 'Observations from interviews with 12 Alibaba.com sellers in Shenzhen and Yiwu: how traffic costs drive seller decisions, plus a three-type seller taxonomy.'
 pubDate: '2023-12-01'
 heroImage: '../../assets/hero/2023/12/alibaba-seller-ecosystem-cover.webp'
 showHero: true
@@ -9,6 +9,8 @@ lang: 'en'
 translationKey: 'alibaba-seller-ecosystem'
 titleZh: 'Alibaba.com 卖家生态与决策观察'
 titleEn: 'Alibaba.com Seller Ecosystem and Decision-Making Observation'
+descriptionZh: '基于深圳和义乌12家卖家访谈的观察：流量成本如何主导卖家决策，以及三类典型卖家画像。'
+descriptionEn: 'Observations from interviews with 12 Alibaba.com sellers in Shenzhen and Yiwu: how traffic costs drive seller decisions, plus a three-type seller taxonomy.'
 ---
 
 ### Goals

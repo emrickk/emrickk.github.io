@@ -10,7 +10,7 @@ title: '我要当网红：让用户主动推广爱游的活动'
 
 到2018年1月，我们的日活用户已达到15万，主页横幅的日浏览量增长到了40万次。然而我们发现，随着规模扩大，推广成本也在水涨船高。我们必须找到一种既能降低成本、又能持续获取新用户的办法。
 
-![](https://cdn.anping.us/2026/07/wbc-poster.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-poster.webp)
 
 ## 再补充一点背景：为什么要设计这个活动？
 
@@ -34,29 +34,29 @@ title: '我要当网红：让用户主动推广爱游的活动'
 
 ### 草稿
 
-![](https://cdn.anping.us/2026/07/wbc-logic-sketch.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-logic-sketch.webp)
 
 *活动逻辑草图。为了便于理解，我补充了英文说明。*
 
 正式上线的H5页面如下。
 
-![](https://cdn.anping.us/2026/07/wbc-h5-pages.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-h5-pages.webp)
 
 我们还为活动制作了横幅和弹窗，最初的风格与活动主页保持一致，之后做了一些调整，让它们更醒目、更有效。
 
-![](https://cdn.anping.us/2026/07/wbc-banners-first.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-banners-first.webp)
 
 *最初制作的横幅。*
 
 我们发现这版横幅的点击率远低于以往的横幅。遗憾的是，受时间和排期所限，之前的横幅只是用文字和一些从Google搜来的图片拼成的。
 
-![](https://cdn.anping.us/2026/07/wbc-banners-former.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-banners-former.webp)
 
 *以往点击率很高的横幅。*
 
 我们由此发现，对青少年用户来说，横幅的内容远比样式重要，关键是突出奖品的价值。于是，我们制作了强调奖品价值的新横幅。
 
-![](https://cdn.anping.us/2026/07/wbc-banners-revised.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-banners-revised.webp)
 
 *修改后的横幅。*
 

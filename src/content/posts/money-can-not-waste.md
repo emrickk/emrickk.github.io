@@ -1,12 +1,14 @@
 ---
 title: '域名的钱不能浪费'
-description: ''
+description: '域名的钱不能浪费，于是流水账一下这两个月：又胖了，抓了白蚁，开始做CM Security的国内版。'
 pubDate: '2015-05-22'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'money-can-not-waste'
 titleZh: '域名的钱不能浪费'
 titleEn: 'The Domain Fee Must Not Go to Waste'
+descriptionZh: '域名的钱不能浪费，于是流水账一下这两个月：又胖了，抓了白蚁，开始做CM Security的国内版。'
+descriptionEn: 'The domain fee must not go to waste, so a two-month ledger: fat again, termites dispatched, and starting on the domestic version of CM Security.'
 ---
 
 一直懒得写博文。可是域名的钱不能浪费。上一次写是三月上旬，现在是五月中了。这两个月发生了什么我来流水账一下。

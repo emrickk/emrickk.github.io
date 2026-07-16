@@ -12,7 +12,7 @@ title: '失踪儿童告警系统：中国第一个类「安珀警报」系统'
 
 我是这个项目发起团队的产品成员之一，负责设计通知逻辑。
 
-![](https://cdn.anping.us/2026/07/mcas-alert-scenario.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-alert-scenario.webp)
 
 ## 开始之前：此前的努力与尝试
 
@@ -30,7 +30,7 @@ title: '失踪儿童告警系统：中国第一个类「安珀警报」系统'
 
 我们反复打磨，确保设计清晰而简洁。
 
-![](https://cdn.anping.us/2026/07/mcas-design-versions.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-design-versions.webp)
 
 *从左至右：第一版、第二版与第三版设计。*
 
@@ -46,18 +46,18 @@ title: '失踪儿童告警系统：中国第一个类「安珀警报」系统'
 
 根据儿童失踪的时间，以及他们可能乘坐的交通工具，我们可以推算出若干可能的区域，再从这些区域中挑选用户，发送定制化的推送消息。
 
-![](https://cdn.anping.us/2026/07/mcas-scope-identification.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-scope-identification.webp)
 
 ### 识别其他要素
 
 我们可以根据用户安装的应用，以及他们在360系列应用内的行为，获得用户标签。筛选维度涵盖行为属性、职业属性、社会属性和心理属性，并结合紧急程度分级。
 
-![](https://cdn.anping.us/2026/07/mcas-user-attributes.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-user-attributes.webp)
 
 当一名儿童被报告失踪后，第一波通知会发送给指定范围内的用户；后续的推送则会结合用户的具体特征和事件的紧急程度，有选择地发送。
 
 ## 最终产品：为不同用户推送不同的通知
 
-![](https://cdn.anping.us/2026/07/mcas-persona-notifications.webp)
+![](https://cdn.theneverless.com/2026/07/mcas-persona-notifications.webp)
 
 系统上线以来，截至2019年，我们已经协助救回了**109名儿童**！其中有9名孩子，正是因为我们用户的主动行动而获救。

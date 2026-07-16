@@ -1,12 +1,14 @@
 ---
 title: 'Gender and Power'
-description: ''
+description: 'Why female product managers in China stall between PM and senior PM: promotion timing collides with childbirth pressure and an alcohol-fueled business culture.'
 pubDate: '2020-02-18'
 category: 'Things'
 lang: 'en'
 translationKey: 'gender-and-power'
 titleZh: '性别与权力'
 titleEn: 'Gender and Power'
+descriptionZh: '为什么中国的女性产品经理晋升更难：晋升时点与生育压力相撞，还有酒桌文化下的跨部门合作。'
+descriptionEn: 'Why female product managers in China stall between PM and senior PM: promotion timing collides with childbirth pressure and an alcohol-fueled business culture.'
 ---
 
 According to the PMWB 2017 report, approximately 39% of product managers in China are female[[1]](#_ftn1). In terms of the level distribution of my former company, approximately 61% of associate product managers are female, yet only 21% of senior product managers (SPM) and 16% of product directors (PD) are females. Notably, there are also very few famous female product managers in the industry. The intervention of maternity and job duty changes are potential reasons for the steep decline in the percentage of female SPMs as well as PDs.

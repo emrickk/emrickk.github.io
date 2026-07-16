@@ -1,12 +1,14 @@
 ---
 title: '所以'
-description: ''
+description: '一首小诗：九路车的站台，阳光，和造物主留下的破绽。'
 pubDate: '2014-10-14'
 category: 'Words'
 lang: 'zh'
 translationKey: 'so'
 titleZh: '所以'
 titleEn: 'So'
+descriptionZh: '一首小诗：九路车的站台，阳光，和造物主留下的破绽。'
+descriptionEn: 'A short poem: the number nine bus platform, mild sunlight, and the seam the Creator left showing.'
 ---
 
 就在这样和煦的阳光下我走了过去

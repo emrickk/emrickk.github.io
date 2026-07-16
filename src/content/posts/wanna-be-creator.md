@@ -16,7 +16,7 @@ titleEn: 'I Wanna Be a Creator: An Activity That Attracts Users to Promote Aiyou
 
 As of January 2018, our daily active user count had reached 150,000, and the page view count of the banners on our main page had increased to 400,000 per day. However, we found that as we continued to grow, our promotion costs were also increasing. We realized that we needed to find a way to lower our costs while continuing to attract new users.
 
-![](https://cdn.anping.us/2026/07/wbc-poster.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-poster.webp)
 
 ## A Little Bit More Context: Why We Designed This Activity
 
@@ -40,29 +40,29 @@ In terms of design, Designer Yu and I ensured that the page style was similar to
 
 ### Draft
 
-![](https://cdn.anping.us/2026/07/wbc-logic-sketch.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-logic-sketch.webp)
 
 *Sketch of the logic. For a better understanding, I added English explanations.*
 
 Our released H5 pages are as follows.
 
-![](https://cdn.anping.us/2026/07/wbc-h5-pages.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-h5-pages.webp)
 
 We created banners and pop-ups for our activity, starting with a style that matched the main page of our activity. However, we made some changes to ensure they were more eye-catching and effective.
 
-![](https://cdn.anping.us/2026/07/wbc-banners-first.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-banners-first.webp)
 
 *Banners we made at first.*
 
 We discovered that the click-through rate of this banner was much lower than that of our previous banners. Unfortunately, due to time and schedule constraints, the other banners were only created using text and some pictures from Google Search.
 
-![](https://cdn.anping.us/2026/07/wbc-banners-former.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-banners-former.webp)
 
 *Former banners with a high click rate.*
 
 We discovered that the content of the banner was more important to our teenage users than the style. It became clear that emphasizing the value of the prizes was key. As a result, we created new banners that emphasized the value of the prizes.
 
-![](https://cdn.anping.us/2026/07/wbc-banners-revised.webp)
+![](https://cdn.theneverless.com/2026/07/wbc-banners-revised.webp)
 
 *Banners we revised.*
 

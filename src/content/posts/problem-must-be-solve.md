@@ -1,6 +1,6 @@
 ---
 title: '工作中暴露出来的问题要及时改，这自然是必须的'
-description: ''
+description: '一份为了不忘却的工作总结：与人交往要客观、独立、公开、友善，先看看明天能不能全做到。'
 pubDate: '2015-12-11'
 category: 'Journal'
 lang: 'zh'

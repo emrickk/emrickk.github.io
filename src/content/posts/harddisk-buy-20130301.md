@@ -1,12 +1,14 @@
 ---
 title: '储存方案选购记'
-description: ''
+description: '盘算着买一块3T硬盘，方案比来比去，最后在淘宝一眼看中了LaCie Minimus。'
 pubDate: '2013-03-01'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'harddisk-buy-20130301'
 titleZh: '储存方案选购记'
 titleEn: 'Shopping for a Storage Solution'
+descriptionZh: '盘算着买一块3T硬盘，方案比来比去，最后在淘宝一眼看中了LaCie Minimus。'
+descriptionEn: 'Shopping for a 3TB storage plan, weighing bare drives and enclosures, then falling at first sight for a LaCie Minimus on Taobao.'
 ---
 
 原来的2T希捷睿翼出给EJJ了 于是盘算着买一个新的3T盘

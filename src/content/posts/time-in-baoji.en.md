@@ -6,7 +6,7 @@ title: 'Time in Baoji'
 
 Lately it's been nothing but weight-loss diary updates. Haven't written a proper entry in ages, so here's one.
 
-![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOS80MkFFeW9jQ1RqWk5MNEczOEFpL05lakRzMXFKajBUVUt0RTQ1a0kxd05RPT0.webp)This trip to Baoji, then, was to go have some fun with Brother Ye, or rather, to pay Brother Ye a visit. And who is Brother Ye? A seriously impressive character. I'll say no more here, and save the details for next time.
+![](https://cdn.theneverless.com/2020/02/T0w0THg0dEJNOS80MkFFeW9jQ1RqWk5MNEczOEFpL05lakRzMXFKajBUVUt0RTQ1a0kxd05RPT0.webp)This trip to Baoji, then, was to go have some fun with Brother Ye, or rather, to pay Brother Ye a visit. And who is Brother Ye? A seriously impressive character. I'll say no more here, and save the details for next time.
 
 And who set this one off? JQ. Who is JQ? JQ is also a seriously impressive character, or rather, a person whose social network is highly developed for this age bracket. Also saved for a proper telling next time.
 

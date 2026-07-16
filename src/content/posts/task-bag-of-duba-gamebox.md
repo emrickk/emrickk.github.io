@@ -1,12 +1,14 @@
 ---
 title: '动机与方向'
-description: ''
+description: '膝盖伤后的自省，加上任务背包新版数据不佳的检讨：动机要对，方向要把握住。'
 pubDate: '2014-11-16'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'task-bag-of-duba-gamebox'
 titleZh: '动机与方向'
 titleEn: 'Motive and Direction'
+descriptionZh: '膝盖伤后的自省，加上任务背包新版数据不佳的检讨：动机要对，方向要把握住。'
+descriptionEn: 'Reflections on a protesting knee and a lackluster task bag launch: get the motive right, and hold the direction.'
 ---
 
 好久没有坐下来认认真真的梳理最近发生的事情，写一篇博客了。最近最烦恼我的自然是膝盖的问题。（为什么一上来就是烦恼？看来工作之后顺心的事情确实不多，值得反思）

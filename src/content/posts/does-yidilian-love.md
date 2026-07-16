@@ -1,12 +1,14 @@
 ---
 title: '异地恋算恋爱吗？'
-description: ''
+description: '转载自知乎日报：一位异地恋亲历者谈为什么距离不能用来评判一段感情。'
 pubDate: '2013-09-25'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'does-yidilian-love'
 titleZh: '异地恋算恋爱吗？'
 titleEn: 'Does Long-Distance Count as Love?'
+descriptionZh: '转载自知乎日报：一位异地恋亲历者谈为什么距离不能用来评判一段感情。'
+descriptionEn: 'A repost from Zhihu Daily: a long-distance partner on why distance is no measure of a relationship.'
 ---
 
 转自知乎日报

@@ -1,12 +1,14 @@
 ---
 title: '总结一下抢票和红包项目'
-description: ''
+description: '复盘抢票和红包两个项目：项目管理、跨部门沟通，和立项前把目标想清楚的重要性。'
 pubDate: '2017-01-29'
 category: 'Things'
 lang: 'zh'
 translationKey: 'sum-up-about-qp-hb'
 titleZh: '总结一下抢票和红包项目'
 titleEn: 'Wrapping Up the Ticket-Grabbing and Red Packet Projects'
+descriptionZh: '复盘抢票和红包两个项目：项目管理、跨部门沟通，和立项前把目标想清楚的重要性。'
+descriptionEn: 'A retrospective on the ticket-grabbing and red packet projects: project management, cross-team communication, and knowing your goals before you start.'
 ---
 
 红包和抢票项目分别是什么这里就暂且不表了，反正这个博客没人看，也没人在意我到底写了什么。说起来抢票项目一路执行下来，确实一地的鸡毛，最终的数据效果也欠佳。红包项目虽然目前还没有看到数据，但是单凭用户的热情我也知道数据效果大概会是怎么样所以我就先过来总结一下，反思一下哪些是问题，怎么优化；哪些是长处，怎么发扬--我真特么是个罗里吧嗦的人

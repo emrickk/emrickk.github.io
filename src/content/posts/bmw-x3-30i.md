@@ -1,6 +1,6 @@
 ---
 title: 'The Clark Kent of X3s'
-description: ''
+description: 'Ordering a BMW X3 30i in full M Sport dress: a Clark Kent that secretly wishes it were an X3M, with delivery photos.'
 pubDate: '2023-03-01'
 heroImage: '../../assets/hero/2023/03/BMW-X3-14.jpeg'
 category: 'Prodigal'
@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'bmw-x3-30i'
 titleZh: 'X3 中的克拉克·肯特'
 titleEn: 'The Clark Kent of X3s'
+descriptionZh: '订一台选满M运动套件的宝马X3 30i：一台暗自想成为X3M的克拉克·肯特，附提车照片。'
+descriptionEn: 'Ordering a BMW X3 30i in full M Sport dress: a Clark Kent that secretly wishes it were an X3M, with delivery photos.'
 ---
 
 > "Don't be fooled, it's just the Clark Kent of X3s, secretly wishing it was a superhero X3M."
@@ -42,30 +44,30 @@ Added some other comfortable features, and the MSRP went from $47,000 to $55,000
 
 The X3 is pretty much the car of the people now, so I won't go into too much detail. The BMW interior, except for the hideous iDrive 8, is pretty much the same across all the ID7 models, so no need to show pictures.
 
-![](https://cdn.anping.us/2023/03/BMW-X3-14.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-14.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-13.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-13.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-12.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-12.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-9.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-9.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-11.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-11.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-10.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-10.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-8.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-8.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-7.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-7.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-1.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-1.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-6.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-6.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-3.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-3.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-5.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-5.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-2.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-2.webp)
 
-![](https://cdn.anping.us/2023/03/BMW-X3-4.webp)
+![](https://cdn.theneverless.com/2023/03/BMW-X3-4.webp)

@@ -1,12 +1,14 @@
 ---
 title: '挑战者无畏'
-description: ''
+description: '学生时代的一篇议论文：从富兰克林的风筝到麦哲伦的环球航行，挑战者为何无畏。'
 pubDate: '2006-10-03'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'challengers-fear-nothing'
 titleZh: '挑战者无畏'
 titleEn: 'Challengers Fear Nothing'
+descriptionZh: '学生时代的一篇议论文：从富兰克林的风筝到麦哲伦的环球航行，挑战者为何无畏。'
+descriptionEn: 'A school-days essay on why challengers fear nothing, from Franklin''s kite to Magellan''s voyage.'
 ---
 
 每一个人都可能会有自己畏惧的东西，但有种人就没有——勇敢的挑战者。

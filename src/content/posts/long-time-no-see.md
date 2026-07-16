@@ -1,12 +1,14 @@
 ---
 title: '好久没写了之第一弹'
-description: ''
+description: '好久没写了之第一弹：终于打破了在家没法学术的魔咒，为了一个好学校也是拼了。'
 pubDate: '2018-02-20'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'long-time-no-see'
 titleZh: '好久没写了之第一弹'
 titleEn: 'Haven''t Written in Ages, Part One'
+descriptionZh: '好久没写了之第一弹：终于打破了在家没法学术的魔咒，为了一个好学校也是拼了。'
+descriptionEn: 'Part one after a long silence: the curse of never studying at home is finally broken, all for a shot at a good school.'
 ---
 
 要分两弹的原因是我要写的时候突然想到一件事情

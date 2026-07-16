@@ -8,7 +8,7 @@ Haven't written anything in ages. Today I'm paying off the whole backlog
 
 Picking a hard drive is honestly a pretty simple job: whatever's cheap, buy it. But my dumbass genes had to act up, and I insisted on a LaCie. Expensive, for one, and when it arrived I found a scratch on it. Truly a faint, ball-aching sorrow. After the return I steeled myself, gritted my teeth, and bought a Seagate 4T desktop drive
 
-![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kQzFlSmFEekoxOWt0UERtUldTK0pMTHJ2ZWQyUkZ5NzhnPT0.webp)
+![](https://cdn.theneverless.com/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kQzFlSmFEekoxOWt0UERtUldTK0pMTHJ2ZWQyUkZ5NzhnPT0.webp)
 
 What I didn't expect when buying: by the iron law that gambling on low-probability events must end in failure, the drive I got ran with a strange noise and hit temperatures as high as 70 degrees
 
@@ -30,7 +30,7 @@ As for this ORICO dock, never have I seen a drive dock with build quality this a
 
 And it has a seven-color marquee light show, holy crap! Do I look like I'm into that twee aesthetic!! (facepalm
 
-![](https://cdn.anping.us/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kSEJLU2N0QjB2SWZpd3krNzdQR0JRdW9pWWtOZUc5SDZnPT0.webp)
+![](https://cdn.theneverless.com/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kSEJLU2N0QjB2SWZpd3krNzdQR0JRdW9pWWtOZUc5SDZnPT0.webp)
 
 Alright, that's the end of the hard drive griping. I did also consider a 3T\*2 setup, but gave it up over value for money
 

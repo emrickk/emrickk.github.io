@@ -1,12 +1,14 @@
 ---
 title: '好的产品经理/糟糕的产品经理'
-description: ''
+description: '转载：戴雨森的《好的产品经理/糟糕的产品经理》，逐条对比两种产品经理的差异。'
 pubDate: '2014-08-14'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'good-bad-pm'
 titleZh: '好的产品经理/糟糕的产品经理'
 titleEn: 'Good Product Manager/Bad Product Manager'
+descriptionZh: '转载：戴雨森的《好的产品经理/糟糕的产品经理》，逐条对比两种产品经理的差异。'
+descriptionEn: 'A repost of Dai Yusen''s "Good Product Manager/Bad Product Manager", contrasting the two line by line.'
 ---
 
 文：戴雨森

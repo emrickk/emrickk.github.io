@@ -1,12 +1,14 @@
 ---
 title: '励志段子'
-description: ''
+description: '写励志段子非常容易，越琢磨越有道理，但知道这个道理对你的人生没有任何帮助。'
 pubDate: '2016-04-11'
 category: 'Words'
 lang: 'zh'
 translationKey: 'lizhi-duanzi'
 titleZh: '励志段子'
 titleEn: 'Inspirational One-Liners'
+descriptionZh: '写励志段子非常容易，越琢磨越有道理，但知道这个道理对你的人生没有任何帮助。'
+descriptionEn: 'Inspirational one-liners are easy to write, sound wiser the longer you chew on them, and help your life not at all.'
 ---
 
 写励志段子非常容易

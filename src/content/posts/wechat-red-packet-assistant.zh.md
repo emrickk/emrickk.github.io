@@ -26,23 +26,23 @@ title: '红包助手：让抢红包更有乐趣'
 
 我们采用「研究学习螺旋」的方法，收集了 121 位年龄在 22 到 40 岁之间的典型微信用户的行为数据。我们仔细观察了用户在与微信互动前后的行为和情绪变化，以找出他们的痛点。
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-user-journey.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-user-journey.webp)
 
 ## 功能地图：让功能对齐用户需求
 
 我们先确立了核心功能，再进一步展开次级功能，首要目标是保证主要组件以及与微信之间的交互顺畅无碍。
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-function-map.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-function-map.webp)
 
 ## 使用场景：变现与推广
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-use-cases.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-use-cases.webp)
 
 ## 落地实现：制作原型，选出最优方案
 
 我们制作了多个原型，结合中保真原型 A/B 测试的结果与技术实现上的难点，最终选定了下面这个方案作为最优解。红包助手作为 360手机卫士中的一项功能上线，当用户抢红包时，我们通过悬浮窗与微信进行交互。
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-prototypes.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-prototypes.webp)
 
 ### 独一无二的红包通知
 
@@ -70,7 +70,7 @@ title: '红包助手：让抢红包更有乐趣'
 * 分享活动
 * 成就系统
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-final-design.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-final-design.webp)
 
 ## 数据表现：我们真的给用户带来快乐了吗？
 
@@ -80,7 +80,7 @@ title: '红包助手：让抢红包更有乐趣'
 * 2017 年春节期间**抢到的红包数量**：**251,002,000 个**
 * 2017 年**发出的表情包数量**：**8,890,000 次**
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-data-performance.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-data-performance.webp)
 
 除了分析数据表现之外，我可以骄傲地说，真正产生深远影响的，是来自用户的反馈：
 

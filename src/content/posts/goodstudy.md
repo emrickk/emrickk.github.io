@@ -1,12 +1,14 @@
 ---
 title: '好好学习'
-description: ''
+description: '转载：一组流传甚广的中英双语爱情语录。'
 pubDate: '2009-01-20'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'goodstudy'
 titleZh: '好好学习'
 titleEn: 'Study Hard'
+descriptionZh: '转载：一组流传甚广的中英双语爱情语录。'
+descriptionEn: 'A repost of a widely circulated set of bilingual Chinese and English sayings about love.'
 ---
 
 好好学习

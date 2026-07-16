@@ -1,12 +1,14 @@
 ---
 title: '我曾经爱过你'
-description: ''
+description: '转载：普希金的诗《我曾经爱过你》，英汉对照。'
 pubDate: '2008-04-03'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'ilovedyouonce'
 titleZh: '我曾经爱过你'
 titleEn: 'I loved you once'
+descriptionZh: '转载：普希金的诗《我曾经爱过你》，英汉对照。'
+descriptionEn: 'A repost of Pushkin''s poem "I Loved You Once", with English and Chinese lines interleaved.'
 ---
 
 我曾如此深爱你

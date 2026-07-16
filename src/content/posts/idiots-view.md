@@ -1,12 +1,14 @@
 ---
 title: '贫乏的知识，莫名的勇气'
-description: ''
+description: '知识越贫乏的人，越容易拥有莫名其妙的勇气：因为他们从未听过与自己相对立的看法。'
 pubDate: '2020-04-26'
 category: 'Words'
 lang: 'zh'
 translationKey: 'idiots-view'
 titleZh: '贫乏的知识，莫名的勇气'
 titleEn: 'Scant Knowledge, Baseless Courage'
+descriptionZh: '知识越贫乏的人，越容易拥有莫名其妙的勇气：因为他们从未听过与自己相对立的看法。'
+descriptionEn: 'The scanter the knowledge, the more absolute the conviction: baseless courage comes from never hearing an opposing view.'
 ---
 
 知识越贫乏的人，越容易拥有莫名其妙的勇气和自豪感。知识越贫乏，所相信的东西就越绝对 - 因为他们根本没有听过和见过与他们的观点相对立的看法

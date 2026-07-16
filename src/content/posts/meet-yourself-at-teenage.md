@@ -1,12 +1,14 @@
 ---
 title: '遇见20岁的自己'
-description: ''
+description: '转载和菜头的文章：如果能穿越时光之雾，站在20岁的自己面前，会对他说些什么。'
 pubDate: '2016-08-13'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'meet-yourself-at-teenage'
 titleZh: '遇见20岁的自己'
 titleEn: 'Meeting Your Twenty-Year-Old Self'
+descriptionZh: '转载和菜头的文章：如果能穿越时光之雾，站在20岁的自己面前，会对他说些什么。'
+descriptionEn: 'A repost of Hecaitou''s essay on standing before your twenty-year-old self, and what you would, and would not, tell him.'
 ---
 
 在你的二十岁，面对这个世界，人生还有无限种可能和选择

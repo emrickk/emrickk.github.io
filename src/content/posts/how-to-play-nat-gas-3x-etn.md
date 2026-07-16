@@ -1,12 +1,14 @@
 ---
 title: '3X天然气我一般这么玩'
-description: ''
+description: '玩三倍天然气ETN攒下的一点经验：入场、止损、止盈和几条小提示，不构成投资建议。'
 pubDate: '2015-07-20'
 category: 'Things'
 lang: 'zh'
 translationKey: 'how-to-play-nat-gas-3x-etn'
 titleZh: '3X天然气我一般这么玩'
 titleEn: 'How I Usually Play 3x Natural Gas'
+descriptionZh: '玩三倍天然气ETN攒下的一点经验：入场、止损、止盈和几条小提示，不构成投资建议。'
+descriptionEn: 'Some hard-won notes on trading 3x natural gas ETNs: entries, stop-losses, profit-taking, and a few tips, none of it investment advice.'
 ---
 
 最近一直玩Velocityshares的天然气ETN，在亏亏赚赚之中总结出一丢丢经验。贴在这里。

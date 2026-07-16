@@ -266,7 +266,7 @@ Google Maps 之类的导航服务来引导他们前往目的地，
 和估算景深，从而估算
 用户与障碍物之间的距离。
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired1.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired1.webp)
 
 图4.1
 SLAM系统的处理流程
@@ -282,7 +282,7 @@ SLAM系统的处理流程
 
 ## 4.2精准导航
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired2.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired2.webp)
 
 我们
 计划使用信标+众包地图来实现这种精准导航。
@@ -315,7 +315,7 @@ SLAM系统的处理流程
 
 ### 4.2.1信标
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired3.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired3.webp)
 
 我们
 将使用低功耗蓝牙（BLE）作为信标。为了确保信标的
@@ -363,7 +363,7 @@ SLAM系统的处理流程
 -   
 这个公交站位于草地上
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired4.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired4.webp)
 
 总体
 处理流程如下。
@@ -384,7 +384,7 @@ SLAM系统的处理流程
 
 ## 4.3人机交互
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired5.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired5.webp)
 
 如前所述，
 从体积的角度看，我们系统的主要部件

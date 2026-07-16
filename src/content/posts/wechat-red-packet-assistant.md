@@ -32,23 +32,23 @@ Our product aims to strike a balance between these aspects, enabling our users t
 
 We gathered behavioral data from 121 typical WeChat users aged between 22 and 40 using a research learning spiral approach. We closely observed user behavior and emotional changes before and after their interactions with WeChat to identify their pain points.
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-user-journey.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-user-journey.webp)
 
 ## Function Map: Aligning Our Features with User Needs
 
 We established our core functionalities and further developed secondary features, with the primary objective of ensuring the seamless performance of the main components and interactions with WeChat.
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-function-map.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-function-map.webp)
 
 ## Use Cases: Monetization and Promotions
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-use-cases.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-use-cases.webp)
 
 ## Realization: Creating Prototypes and Selecting the Optimal Solution
 
 We created several prototypes, and by combining the results of the medium-fidelity prototype A/B tests with the technical implementation challenges, we selected the following plan as our optimal solution. The assistant shipped as a feature within 360 Mobile Security, and we use a floating window to interact with WeChat when users are grabbing red packets.
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-prototypes.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-prototypes.webp)
 
 ### Unique Red Packet Notifications
 
@@ -76,7 +76,7 @@ We implemented the following features to enhance user experience:
 * Sharing activities
 * Achievements
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-final-design.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-final-design.webp)
 
 ## Data Performance: Have We Really Brought Happiness to Our Users?
 
@@ -86,7 +86,7 @@ We analyzed our data performance after the release of our product.
 * **Number of red packets grabbed** during Chinese New Year 2017: **251,002,000 packets**
 * **Number of emojis and memes sent out** in 2017: **8,890,000 times**
 
-![](https://cdn.anping.us/2026/07/wechat-rpa-data-performance.webp)
+![](https://cdn.theneverless.com/2026/07/wechat-rpa-data-performance.webp)
 
 In addition to analyzing our data performance, I am proud to say that it's the feedback from our users that has made a significant impact:
 

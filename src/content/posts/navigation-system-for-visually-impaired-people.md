@@ -1,6 +1,6 @@
 ---
 title: 'Navigation System for Visually Impaired People'
-description: ''
+description: 'A design study for a navigation system for visually impaired people: SLAM-based collision avoidance plus beacons and crowdsourced maps for precise guidance.'
 pubDate: '2018-11-16'
 heroImage: '../../assets/hero/2020/02/Visually-Impaired1.jpg'
 category: 'Things'
@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'navigation-system-for-visually-impaired-people'
 titleZh: '视障人士导航系统'
 titleEn: 'Navigation System for Visually Impaired People'
+descriptionZh: '一份视障人士导航系统的设计研究：以SLAM与双目相机避障，配合信标与众包地图实现精准导航。'
+descriptionEn: 'A design study for a navigation system for visually impaired people: SLAM-based collision avoidance plus beacons and crowdsourced maps for precise guidance.'
 ---
 
 Two problems blind people often encounter when walking are colliding with obstacles and overshooting or missing completely their intended destinations. Our solution is to combine collision-avoidance measures with navigation guidance systems, using the locations of our users with beacons installed as geology fences at key locations which need high navigation accuracy.
@@ -272,7 +274,7 @@ optimization part, we use a series of pictures taken by our camera to calculate
 and estimate the depth of the field in order to estimate the distance between
 users and obstacles.
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired1.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired1.webp)
 
 Figure4.1
 Process Procedure of SLAM system
@@ -288,7 +290,7 @@ system, got relatively high evaluation in Github.
 
 ## 4.2Accuracy Navigation
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired2.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired2.webp)
 
 We
 plan to use beacon+ crowdsourcing maps to do this accuracy navigation. The
@@ -321,7 +323,7 @@ the spot users are looking for.
 
 ### 4.2.1Beacons
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired3.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired3.webp)
 
 We
 would use Bluetooth Low Energy (BLE) as our beacons. To ensure the reliability
@@ -369,7 +371,7 @@ This bus stop is three feet away from the curb
 -   
 This bus stop is on grass
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired4.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired4.webp)
 
 Overall
 processing procedures are as follows.
@@ -390,7 +392,7 @@ detailed information about current locations to our users.
 
 ## 4.3Human-computer Interaction
 
-![](https://cdn.anping.us/2020/02/Visually-Impaired5.webp)
+![](https://cdn.theneverless.com/2020/02/Visually-Impaired5.webp)
 
 As
 we discussed before, from the aspect of bulk, the main component of our system

@@ -1,6 +1,6 @@
 ---
 title: 'MD设计中的应用结构'
-description: ''
+description: '对Material Design规范中App Structure一章的翻译：开始屏幕、顶级导航与组合导航的策略。'
 pubDate: '2015-07-21'
 heroImage: '../../assets/hero/2020/02/patterns_navigation_threelevel1.png'
 category: 'Things'
@@ -8,6 +8,8 @@ lang: 'zh'
 translationKey: 'a0701-material-design-patterns-app-structure'
 titleZh: 'MD设计中的应用结构'
 titleEn: 'App Structure in Material Design'
+descriptionZh: '对Material Design规范中App Structure一章的翻译：开始屏幕、顶级导航与组合导航的策略。'
+descriptionEn: 'A Chinese translation of the App Structure chapter from Material Design''s Patterns section: start screens, top-level navigation, and combined navigation strategies.'
 ---
 
 本文是对Material Design Pattern部分中App structure章节的翻译，本文没有搬运相应的图片，请自行前往原页面围观图片（[传送门](https://www.google.com/design/spec/patterns/app-structure.html#app-structure-top-level-navigation-strategies)）**前言：应用结构**你想要展示给你的用户的内容和任务影响着你应用的结构。比如说：
@@ -53,4 +55,4 @@ titleEn: 'App Structure in Material Design'
 * 在最近项目和历史记录里头转移
 * 把用户的投稿（post）关联到他们的资料页面
 
-向上箭头用来回到之前的层级 **结合标签的边侧导航**有两个层级的导航可以用边侧导航和标签结合的方式来进行一个展现 图例：[![patterns_navigation_threelevel1](https://cdn.anping.us/2020/02/patterns_navigation_threelevel1.webp)    ![patterns_navigation_threelevel2](https://cdn.anping.us/2020/02/patterns_navigation_threelevel2.webp)](https://cdn.anping.us/2020/02/patterns_navigation_threelevel1.webp) *左边这货就是In-context navigation，右边图左上方就是..向上按钮（ up arrow ）*
+向上箭头用来回到之前的层级 **结合标签的边侧导航**有两个层级的导航可以用边侧导航和标签结合的方式来进行一个展现 图例：[![patterns_navigation_threelevel1](https://cdn.theneverless.com/2020/02/patterns_navigation_threelevel1.webp)    ![patterns_navigation_threelevel2](https://cdn.theneverless.com/2020/02/patterns_navigation_threelevel2.webp)](https://cdn.theneverless.com/2020/02/patterns_navigation_threelevel1.webp) *左边这货就是In-context navigation，右边图左上方就是..向上按钮（ up arrow ）*

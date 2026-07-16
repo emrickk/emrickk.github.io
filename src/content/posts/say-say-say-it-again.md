@@ -1,6 +1,6 @@
 ---
 title: '这些话又又又要说一遍了'
-description: ''
+description: '从高中的参考书到大学的flag再到工作后：在家从来学不进去，此计无解。'
 pubDate: '2016-01-03'
 heroImage: '../../assets/hero/2020/02/64-1.png'
 category: 'Journal'
@@ -8,12 +8,14 @@ lang: 'zh'
 translationKey: 'say-say-say-it-again'
 titleZh: '这些话又又又要说一遍了'
 titleEn: 'Saying This Again, Again, and Again'
+descriptionZh: '从高中的参考书到大学的flag再到工作后：在家从来学不进去，此计无解。'
+descriptionEn: 'From high-school weekends to holiday resolutions to working life: studying at home never happens, and there is no fix.'
 ---
 
-从高中的第一个周末就开始往家里带很多参考书，决心每个在家的周末都不能够浪费然而我的日历清晰的记录了高中三年的一百四十多个周末，没有一个是看过书的![64](https://cdn.anping.us/2020/02/64-1.webp)
+从高中的第一个周末就开始往家里带很多参考书，决心每个在家的周末都不能够浪费然而我的日历清晰的记录了高中三年的一百四十多个周末，没有一个是看过书的![64](https://cdn.theneverless.com/2020/02/64-1.webp)
 
 上了大学之后，每个假期都给自己立下许多flag，包括但不限于街头套圈套到大奖，探索宇宙终极奥义，通过N1考试然而我的大脑明确的告诉我，不管是套圈一等奖的劣质小礼物还是宇宙奥义，我通通都没有get到
 
-![64](https://cdn.anping.us/2020/02/64-1.webp)--工作之后..家里真的太舒适太安逸啊！天然不适合努力啊！
+![64](https://cdn.theneverless.com/2020/02/64-1.webp)--工作之后..家里真的太舒适太安逸啊！天然不适合努力啊！
 
 此计无解

@@ -1,6 +1,6 @@
 ---
 title: 'From 0 to 200,000 DAUs: The User Growth Journey of Aiyou'
-description: ''
+description: 'How the game-assistance app Aiyou grew from zero to 200,000 daily active users: retention checks, user surveys, and low-cost growth experiments starting with Kwai.'
 pubDate: '2018-12-01'
 heroImage: '../../assets/hero/2018/12/aiyou-user-growth-cover.png'
 category: 'Things'
@@ -8,13 +8,15 @@ lang: 'en'
 translationKey: 'aiyou-user-growth'
 titleZh: '从0到20万日活：爱游穿梭机的用户增长之旅'
 titleEn: 'From 0 to 200,000 DAUs: The User Growth Journey of Aiyou'
+descriptionZh: '爱游穿梭机如何从0做到20万日活：留存验证、用户调研，和以快手为起点的低成本增长实验。'
+descriptionEn: 'How the game-assistance app Aiyou grew from zero to 200,000 daily active users: retention checks, user surveys, and low-cost growth experiments starting with Kwai.'
 ---
 
 ## Before We Start: Some Contexts
 
 Aiyou (Chinese name: 爱游穿梭机) is a game-assistance app that uses screen reading and touch simulation to help users perform repetitive tasks, without disrupting game balance.
 
-![](https://cdn.anping.us/2026/07/aiyou-auto-task.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-auto-task.webp)
 
 At launch, we gained around 50,000 organic users. However, as the user base expanded, the percentage of new users began to decline. To maintain healthy growth, we needed to explore new acquisition channels.
 
@@ -40,7 +42,7 @@ As we continued to fix bugs and expand compatibility across more phone models, o
 
 By the time we were ready to promote the app, our day-two retention rate had surpassed 30%, well above the industry average. From a new user perspective, the product was ready for scale.
 
-![](https://cdn.anping.us/2026/07/aiyou-retention-data.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-retention-data.webp)
 
 On the active user side, the average usage of game-related features reached 3.1 times per day, indicating strong satisfaction with the product. With high engagement among active users, we saw this as the right time to promote and expand our reach.
 
@@ -52,13 +54,13 @@ The survey had two parts: one for key users, and one for general users. We share
 
 We carefully selected survey entry points and questions to avoid interfering with the user's next action, especially in cases where users weren't navigating toward a specific function.
 
-![](https://cdn.anping.us/2026/07/aiyou-flow-sketch.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-flow-sketch.webp)
 
-![](https://cdn.anping.us/2026/07/aiyou-whiteboard.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-whiteboard.webp)
 
 We analyzed the user flow and data of our product, finding two places where we could place our questionnaires.
 
-![](https://cdn.anping.us/2026/07/aiyou-survey-entrances.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-survey-entrances.webp)
 
 We utilized cloud configuration to set up our banner and developed a detailed page using React Native, enabling us to push updates to users within a few hours.
 
@@ -91,7 +93,7 @@ To us, acquiring active users is the ultimate goal, and thus, the new active use
 
 ### Persona
 
-![](https://cdn.anping.us/2026/07/aiyou-persona.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-persona.webp)
 
 Typical user:
 
@@ -113,7 +115,7 @@ To effectively reach our teenage target audience, we discovered that conventiona
 
 After analyzing user feedback and data using the MICE framework (Match, Impact, Cost, and Ease), we opted for several short video apps, including Kwai, which has over 1 billion monthly active users, and Tieba, a Reddit-like app. Based on our evaluation, we selected Kwai as our first advertising platform. Daily active user data was sourced from Questmobile.
 
-![](https://cdn.anping.us/2026/07/aiyou-platform-comparison.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-platform-comparison.webp)
 
 *Above are platforms we compared.*
 
@@ -123,7 +125,7 @@ Kwai's algorithm gives priority to videos uploaded by a user's followers, and vi
 
 To determine which factors contribute to the popularity or lack thereof of our videos, we utilized the variables-control method to eliminate unrelated variables. We selected five uploaders with similar numbers of fans and styles, and varied only one factor per video (such as style, copywriting, or promoting functions) to isolate the effects of each variable. Kwai's primary video styles are often unrefined but popular among users in second- and third-tier cities.
 
-![](https://cdn.anping.us/2026/07/aiyou-kwai-videos.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-kwai-videos.webp)
 
 We established a set of key performance indicators (KPIs) for our videos, including views, shares, and click-through rates. To optimize our videos and test their effectiveness, we conducted A/B tests and made revisions based on the function being promoted. We experimented with different scripts, backgrounds, and interactive features to identify the most effective approach.
 
@@ -155,7 +157,7 @@ By January 2018, our daily active user count had reached 150,000, with 400,000 b
 
 To solve this problem, we launched an H5 activity called 'I wanna be a creator' to attract and recruit talented streamers who can optimize our promotion methods and reduce costs.
 
-![](https://cdn.anping.us/2026/07/aiyou-influencer-poster.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-influencer-poster.webp)
 
 [I Want to Be an Influencer (click to read more)](/posts/wanna-be-creator/)
 
@@ -177,9 +179,9 @@ We utilized the popularity of Chiji, a famous mobile game in China, to develop a
 
 Consequently, while the share ratio of this activity reached 13%, the number of new users we gained was lower than our initial expectations, despite the high page view count of the activity. This experience taught us the significance of creating activities that are more closely aligned with our product's value proposition and essential features.
 
-![](https://cdn.anping.us/2026/07/aiyou-chiji-sketch.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-chiji-sketch.webp)
 
-![](https://cdn.anping.us/2026/07/aiyou-chiji-screens.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-chiji-screens.webp)
 
 *We designed 8 questions and 6 results depending on the choice of answers. A large number of users who viewed this activity tried more than 3 times to see different results.*
 
@@ -189,7 +191,7 @@ We obtained valuable insights from our 'What Kind of Chiji Player Are You' test 
 
 However, we recognize that the success of this activity was due in part to our ability to generate unique and engaging ideas, which can be difficult to sustain over time. While this activity brought in new users for a limited period, we need to develop more sustainable and scalable methods for promoting our product in the long term.
 
-![](https://cdn.anping.us/2026/07/aiyou-pubg-screens.webp)
+![](https://cdn.theneverless.com/2026/07/aiyou-pubg-screens.webp)
 
 We assisted our users in creating personalized winning screenshots that included their usernames. On the final page of the activity, we encouraged viewers to download our product by promising that with the help of Aiyou, they could become actual winners in their games.
 

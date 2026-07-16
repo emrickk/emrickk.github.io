@@ -1,12 +1,14 @@
 ---
 title: '打碎了牙和血吞'
-description: ''
+description: '一则自我告诫：多数苦果是自作自受，但要打碎了牙和血吞，管住言行与脾气。'
 pubDate: '2014-08-26'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'recumbent'
 titleZh: '打碎了牙和血吞'
 titleEn: 'Swallow the Broken Teeth'
+descriptionZh: '一则自我告诫：多数苦果是自作自受，但要打碎了牙和血吞，管住言行与脾气。'
+descriptionEn: 'A note to self: most of it is self-inflicted, but swallow the broken teeth with the blood and guard your words and temper.'
 ---
 
 大部分时候往往这样的结果是自作自受 或者说 是由于这些显然会导致自作自受的行为 导致了这种自作自受的结果
