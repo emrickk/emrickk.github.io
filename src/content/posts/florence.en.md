@@ -1,10 +1,10 @@
 ---
 translationKey: 'florence'
 lang: 'en'
-title: 'Sunset in Florence'
+title: 'Florence, a never-ending summer'
 ---
 
-The poet Xu Zhimo once translated Firenze into Chinese as "翡冷翠", roughly "cold emerald jade". You only understand how precise that is once you arrive: in late May, Florence burns like midsummer all day, and the moment the sun drops, a wind rises and the whole city cools down, like a piece of smooth, cold jade.
+The poet Xu Zhimo once translated Firenze into Chinese as "翡冷翠", roughly "cold emerald jade". In late May, Florence is hot as midsummer all day; the moment the sun drops, a wind rises and the city cools down fast. He did not get the "cold" part wrong.
 
 We stayed in the old town, where opening the window meant looking straight into the neighbors' shutters and a tree's worth of green. On the wall of our room hung a strange painting: a noblewoman in full dress, her face completely hidden behind a cloud. She saw us off like that every morning, and I never knew whether to say good morning or sorry.
 
@@ -13,56 +13,54 @@ We stayed in the old town, where opening the window meant looking straight into 
 <img src="https://cdn.theneverless.com/2026/07/florence-hotel-morning-light.webp" alt="">
 </div>
 
-Early morning in Florence belongs to the locals. The light on the flagstones is still low; a mother pedals a cargo bike through the crossing with two kids in the front bucket. The tourists are not awake yet, and the city has already started its day without them.
+Out early, the light on the flagstones was still low. A mother pedaled a cargo bike through the crossing, two kids in the front bucket. The tourists were not up yet.
 
 ![](https://cdn.theneverless.com/2026/07/florence-street-cargo-bike.webp)
 
-To understand this city, you first have to climb stairs. Giotto's bell tower spirals up through four hundred some steps, and the higher you go, the narrower the staircase and the smaller the windows. Right at the point where you start questioning your life choices, light suddenly pours through a wire-caged window, and the red dome is right there across from you.
+Giotto's bell tower spirals up through four hundred some steps, and the higher you go, the narrower the staircase and the smaller the windows. Right when I started questioning my life choices, light came through a wire-caged window, and the red dome was there across from us.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-duomo-from-campanile.webp" alt="">
 <img src="https://cdn.theneverless.com/2026/07/florence-caged-window-duomo.webp" alt="">
 </div>
 
-Down from the tower, we queued again for the dome itself. The climb threads right through the frescoes: the Last Judgment that Vasari began and Zuccari finished. From the cathedral floor it is just a distant ring of color; walking the inner gallery, suddenly every angel and every demon has a face.
+Down from the tower, we queued again for the dome. The climb threads right through the frescoes: the Last Judgment that Vasari began and Zuccari finished. From the cathedral floor it is just a ring of blurry color. From the gallery, the angels and the demons have faces.
 
 ![](https://cdn.theneverless.com/2026/07/florence-last-judgment-fresco.webp)
 
 ![](https://cdn.theneverless.com/2026/07/florence-cupola-oculus.webp)
 
-Then the stairs end, the sky opens with a rush of light, and all of Florence lies at your feet: red tiles, mountains, the river. The wind is strong. Nobody says a word.
+Farther up, the stairs run out and you squeeze out onto the top of the dome. Red tiles spread all the way to the hills, with the Arno cutting through the middle. The wind up there is strong.
 
-In the courtyard of the Palazzo Vecchio, frescoes climb from the walls all the way up into the vaults. The rooms upstairs are dark, and through one Gothic window the dome sits perfectly framed, like a painting that has hung there for five hundred years.
+In the courtyard of the Palazzo Vecchio, frescoes climb from the walls all the way up into the vaults. The rooms upstairs are dark, and through one Gothic window the dome sits wedged exactly inside the window frame.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-palazzo-vecchio-courtyard.webp" alt="">
 <img src="https://cdn.theneverless.com/2026/07/florence-duomo-gothic-window.webp" alt="">
 </div>
 
-In the Accademia, the hallway is lined with Michelangelo's unfinished Prisoners, bodies still struggling half-trapped in stone. At the end of the hall, David stands under the skylight. I had seen this statue in pictures a hundred times, and still froze in front of it: he is far taller than you imagine, and far younger.
+In the Accademia, the hallway is lined with Michelangelo's unfinished Prisoners, bodies still half inside the stone. At the end of the hall, David stands under the skylight. I had seen this statue in pictures a hundred times and still stopped short in front of it: over five meters tall, and much younger than I imagined.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-accademia-david-hall.webp" alt="">
 <img src="https://cdn.theneverless.com/2026/07/florence-david.webp" alt="">
 </div>
 
-Right next to David there is a room that almost everyone misses: an entire plaster-cast workshop, hundreds of figures crowded together, walls hung solid with busts.
+The room next to David is an entire plaster workshop. Hundreds of casts crowd together, and the walls are hung solid with busts, most of them by the nineteenth-century sculptor Lorenzo Bartolini.
 
 ![](https://cdn.theneverless.com/2026/07/florence-gipsoteca.webp)
 
-The Uffizi was wall-to-wall people. Titian's Venus of Urbino is shown behind glass now, set against a whole wall of green, which somehow makes her feel even more like a carefully kept secret.
+The Uffizi was wall-to-wall people. Titian's Venus of Urbino hangs behind glass now, against a full wall of green.
 
 ![](https://cdn.theneverless.com/2026/07/florence-uffizi-venus-urbino.webp)
 
-The corridors themselves are worth the ticket: the tower of the Palazzo Vecchio and the dome crowd into the same frame. The windows of the west corridor look straight down onto the Ponte Vecchio, goldsmiths' signs baking in the sun. For a few hundred years now, this bridge has sold more or less the same thing.
+From the corridor windows, the tower of the Palazzo Vecchio and the dome stand almost on top of each other. The west corridor looks straight down onto the Ponte Vecchio, goldsmiths' signs baking in the sun. At the end of the sixteenth century, the Medici ordered the butchers off the bridge and let only goldsmiths stay; what the bridge sells has not changed much since.
 
 ![](https://cdn.theneverless.com/2026/07/florence-uffizi-tower-view.webp)
 
 ![](https://cdn.theneverless.com/2026/07/florence-ponte-vecchio-shops.webp)
 
-In Florence, watching the sunset is serious business. We attended twice: once from a bridge, once from the hill.
-
-The first was on the bridge. The sun slid slowly down the length of the Arno and the whole river turned to gold. The parapet filled with people: an arm around a shoulder here, a phone held up there, some simply sitting cross-legged on the stone. Nobody spoke. Everyone watched their own sunset.
+In the evening we walked onto a bridge to watch the sunset. The sun came down along the Arno and the river slowly turned gold. The parapet filled up with people; some just sat cross-legged on the stone.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-bridge-sunset-couple.webp" alt="">
@@ -71,42 +69,38 @@ The first was on the bridge. The sun slid slowly down the length of the Arno and
 
 ![](https://cdn.theneverless.com/2026/07/florence-san-frediano-golden.webp)
 
-After the sun went down, the wind died with it. The river turned into a mirror and the bridges and houses all fell into the water. A small boat rowed through the middle of the reflection, quietly slicing the whole river open.
+After the sun was gone, the wind stopped with it. The river went flat, and the bridges and houses fell into the water. A small rowboat crossed through the middle of the reflection.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-arno-mirror.webp" alt="">
 <img src="https://cdn.theneverless.com/2026/07/florence-arno-rowboat.webp" alt="">
 </div>
 
-The second was on the hill. An hour before sunset, the whole city climbs toward Piazzale Michelangelo. Halfway up, you look back and the dome and the bell tower are already showing through gaps in the leaves.
+Another evening, we followed the crowd up toward Piazzale Michelangelo. Looking back on the way up, the dome and the bell tower were showing through gaps in the leaves.
 
 ![](https://cdn.theneverless.com/2026/07/florence-piazzale-skyline.webp)
 
-From the edge of the square, the Arno carries its bridges away one after another, all the way to the horizon.
+From the edge of the square, the bridges on the Arno line up one after another, out past the edge of the city. The steps and railings were already full.
 
 ![](https://cdn.theneverless.com/2026/07/florence-arno-bridges-from-above.webp)
 
 ![](https://cdn.theneverless.com/2026/07/florence-piazzale-sunset.webp)
 
-The steps and railings fill up with people who sit quietly, waiting for something that happens every single day. Just as the sun was about to slip behind the mountains, a stir ran through the crowd. Someone unrolled a hand-painted banner: MI VUOI SPOSARE? (Will you marry me?) Below the question, drawn with complete seriousness, were two checkboxes: SI and NO. She checked SI through her tears, balloons went up, and a square full of strangers cheered as one.
-
-The sunset that evening was only the supporting act.
+Just as the sun was about to drop behind the hills, a stir went through the crowd. Someone unrolled a hand-painted banner: MI VUOI SPOSARE? (Will you marry me?) Below the question, drawn with complete seriousness, were two checkboxes: SI and NO. She checked SI through her tears, balloons went up, and a whole square of strangers cheered.
 
 ![](https://cdn.theneverless.com/2026/07/florence-piazzale-proposal.webp)
 
-The way down leads through the rose garden, its lawns covered with picnics. Nobody hurries to leave. The sun will set again tomorrow anyway.
+The way down leads through the rose garden, its lawns covered with picnics. We were in no hurry to leave either.
 
 ![](https://cdn.theneverless.com/2026/07/florence-rose-garden.webp)
 
-At night we came back to a different hotel by the river, every light in it warm. The stairs climbed, the paintings seen, the sun soaked up during the day, all of it sank together into the sofa.
+At night we came back to a different hotel by the river, every light in it warm. We sat down on the sofa and did not feel like getting up again.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-hotel-lamp-evening.webp" alt="">
 <img src="https://cdn.theneverless.com/2026/07/florence-hotel-night.webp" alt="">
 </div>
 
-Before leaving, I climbed up to the terrace one more time to look at the dome. When Brunelleschi started building it, nobody believed it could be done; now it just sits there calmly in a sea of red tiles, as if it had never been a miracle at all.
-
-Maybe that is the thing Florence teaches you: how to turn the impossible into the everyday.
+Before leaving, I climbed up to the terrace one more time to look at the dome. When construction started, nobody believed the thing could be built; Brunelleschi had to invent the crane that lifted the stones. Six hundred years on, there it sits, in the middle of the red tiles.
 
 ![](https://cdn.theneverless.com/2026/07/florence-rooftops-duomo.webp)

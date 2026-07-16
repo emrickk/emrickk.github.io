@@ -1,7 +1,7 @@
 ---
 title: 'Lands End, San Francisco'
 description: 'An October evening at Lands End: a building that is a camera, the set tables of Louis'', the ruins of Sutro Baths, and the sun going down behind Seal Rocks.'
-pubDate: '2026-07-15'
+pubDate: '2025-10-19'
 heroImage: '../../assets/hero/2026/07/lands-end-cover.webp'
 category: 'Journal'
 lang: 'en'
@@ -12,7 +12,7 @@ descriptionZh: '十月傍晚的Lands End：一栋本身就是相机的房子，L
 descriptionEn: 'An October evening at Lands End: a building that is a camera, the set tables of Louis'', the ruins of Sutro Baths, and the sun going down behind Seal Rocks.'
 ---
 
-October is San Francisco's real summer: the fog takes a few weeks off, and the city remembers it lives on an ocean. One clear evening in October 2024 we went out to Lands End, the corner where the city plainly runs out of land, to do what everyone goes there to do: watch the sun go down.
+October is San Francisco's real summer: the fog takes a few weeks off, and the city remembers it lives on an ocean. One clear evening in October 2025 we went out to Lands End, the corner where the city plainly runs out of land, to do what everyone goes there to do: watch the sun go down.
 
 The first stop is a window nobody gets seated at anymore. Louis', the diner above the rocks, opened in 1937 and closed in 2020, eighty-three years and three generations of the same family later. The tables are still set. The Cliff House next door, the bigger act, went dark a few months after it.
 

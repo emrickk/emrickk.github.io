@@ -1,13 +1,13 @@
 ---
-title: 'This Time, We Stayed'
+title: 'A stay in Big Sur'
 description: 'We usually visit Big Sur with an eye on the drive home. This time we had a room at Alila Ventana, and sunset no longer meant it was time to leave.'
-pubDate: '2026-07-15'
+pubDate: '2025-07-13'
 heroImage: '../../assets/hero/2026/07/big-sur-long-light-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'the-long-light-at-big-sur'
-titleZh: '这次住下来'
-titleEn: 'This Time, We Stayed'
+titleZh: '在大苏尔住一晚'
+titleEn: 'A stay in Big Sur'
 descriptionZh: '以前去大苏尔，总要惦记回家的车程。这次在 Alila Ventana 住一晚，日落终于不再意味着该走了。'
 descriptionEn: 'We usually visit Big Sur with an eye on the drive home. This time we had a room at Alila Ventana, and sunset no longer meant it was time to leave.'
 ---

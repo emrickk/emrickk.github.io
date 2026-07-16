@@ -1,13 +1,13 @@
 ---
-title: 'The 850 at Golden Hour'
+title: 'A portrait session with M850i'
 description: 'A Saturday evening in August 2024: an empty parking lot, the last hour of sun, and a portrait session with the M850i Gran Coupe.'
-pubDate: '2026-07-15'
+pubDate: '2024-08-05'
 heroImage: '../../assets/hero/2026/07/bmw-850-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'golden-hour-with-the-850'
-titleZh: '黄昏里的850'
-titleEn: 'The 850 at Golden Hour'
+titleZh: '给M850i拍一组肖像'
+titleEn: 'A portrait session with M850i'
 descriptionZh: '2024年8月的一个周六傍晚：空旷的停车场，最后一小时的阳光，和一场以M850i Gran Coupe为模特的肖像拍摄。'
 descriptionEn: 'A Saturday evening in August 2024: an empty parking lot, the last hour of sun, and a portrait session with the M850i Gran Coupe.'
 ---

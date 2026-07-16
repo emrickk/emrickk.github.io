@@ -1,7 +1,7 @@
 ---
 translationKey: 'yosemite-falls'
 lang: 'en'
-title: 'A National Park on a Summer Day'
+title: 'Yosemite on a summer day'
 ---
 
 On a Sunday in early June I drove into Yosemite Valley. The snowmelt was still coming down from the high country and the falls were running full; plenty of cloud, good light.

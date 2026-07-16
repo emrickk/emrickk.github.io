@@ -1,13 +1,13 @@
 ---
-title: '停了一百年的船'
+title: '威尼斯的日落'
 description: '五月底的威尼斯：数不清的桥，坐不腻的船，和一座用颜色盖成的岛。'
-pubDate: '2026-07-15'
+pubDate: '2026-06-10'
 heroImage: '../../assets/hero/2026/07/venice-cover.webp'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'two-days-in-venice'
-titleZh: '停了一百年的船'
-titleEn: 'Two Days in Venice'
+titleZh: '威尼斯的日落'
+titleEn: 'Sunset in Venice'
 descriptionZh: '五月底的威尼斯：数不清的桥，坐不腻的船，和一座用颜色盖成的岛。'
 descriptionEn: 'Venice at the end of May: more bridges than you can count, boat rides you never tire of, and an island built out of color.'
 ---

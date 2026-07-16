@@ -1,7 +1,7 @@
 ---
 title: 'Rome, 9 Hours or 900 Years Behind?'
 description: 'The camera was 9 hours slow; Rome is 900 years behind. Four days in May: the Colosseum with nobody around, St. Peter''s built for God, a palace of statues all to ourselves, and the sun coming through the roof of the Pantheon.'
-pubDate: '2026-07-15'
+pubDate: '2026-06-02'
 heroImage: '../../assets/hero/2026/07/nine-hours-slow-cover.webp'
 category: 'Journal'
 lang: 'en'

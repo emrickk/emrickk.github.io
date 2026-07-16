@@ -1,18 +1,18 @@
 ---
-title: 'Rapa Nui'
+title: 'Rapa Nui, or Easter Island?'
 description: 'A photo journal from four days on Rapa Nui: the unfinished giants of Rano Raraku, three straight sunsets at Ahu Tahai, horses grazing among the ruins, and dawn behind the fifteen moai of Ahu Tongariki.'
-pubDate: '2026-07-15'
+pubDate: '2025-12-02'
 heroImage: '../../assets/hero/2026/07/rapa-nui-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'they-never-see-the-sunrise'
-titleZh: '拉帕努伊'
-titleEn: 'Rapa Nui'
+titleZh: '拉帕努伊，还是复活节岛？'
+titleEn: 'Rapa Nui, or Easter Island?'
 descriptionZh: '拉帕努伊四天的照片日记：拉诺拉拉库山坡上未完工的巨人，塔海连续三晚的日落，废墟之间随意吃草的马，和通加里基十五尊摩艾身后升起的太阳。'
 descriptionEn: 'A photo journal from four days on Rapa Nui: the unfinished giants of Rano Raraku, three straight sunsets at Ahu Tahai, horses grazing among the ruins, and dawn behind the fifteen moai of Ahu Tongariki.'
 ---
 
-Everyone meets the moai as a child. They stand in the history textbook, on the puzzle box, in the cartoons, filed in the same drawer of the mind as pyramids and dinosaurs, things you know perfectly well are real and never actually expect to see. That, more or less, is why we went. In late November 2024, on our way to Patagonia, we flew five hours west from Santiago into the open Pacific, and just when the ocean seemed to have no other plan, it produced a runway.
+Everyone meets the moai as a child. They stand in the history textbook, on the puzzle box, in the cartoons, filed in the same drawer of the mind as pyramids and dinosaurs, things you know perfectly well are real and never actually expect to see. That, more or less, is why we went. In late November 2025, on our way to Patagonia, we flew five hours west from Santiago into the open Pacific, and just when the ocean seemed to have no other plan, it produced a runway.
 
 Rapa Nui is one of the most remote inhabited places on earth: a grassy triangle of old volcanoes about 3,500 kilometers off the Chilean coast, with one small town, one real road, and roughly nine hundred giant statues. You can drive across the whole island in forty minutes. We stayed four days.
 

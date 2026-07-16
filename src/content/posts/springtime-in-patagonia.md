@@ -1,7 +1,7 @@
 ---
 title: 'Springtime in Patagonia'
 description: 'A photo journal from Chilean Patagonia at the end of November: Puerto Natales, the Paine massif filling a hotel window, Lago Pehoé, the bench at Laguna Amarga, and sunsets that last until ten at night.'
-pubDate: '2026-07-15'
+pubDate: '2025-12-09'
 heroImage: '../../assets/hero/2026/07/patagonia-cover.webp'
 category: 'Journal'
 lang: 'en'
@@ -12,7 +12,7 @@ descriptionZh: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满�
 descriptionEn: 'A photo journal from Chilean Patagonia at the end of November: Puerto Natales, the Paine massif filling a hotel window, Lago Pehoé, the bench at Laguna Amarga, and sunsets that last until ten at night.'
 ---
 
-At the end of November 2024 we went about as far south as roads go: Puerto Natales and Torres del Paine, in Chilean Patagonia. It was late spring down there, which in Patagonia means green meadows, snow on every summit, flowers in the fences, and wind that you can lean into.
+At the end of November 2025 we went about as far south as roads go: Puerto Natales and Torres del Paine, in Chilean Patagonia. It was late spring down there, which in Patagonia means green meadows, snow on every summit, flowers in the fences, and wind that you can lean into.
 
 ## Puerto Natales
 

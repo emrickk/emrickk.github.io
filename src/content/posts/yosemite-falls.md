@@ -1,13 +1,13 @@
 ---
-title: '夏天的国家公园'
+title: '优胜美地夏日'
 description: '六月的优胜美地：树很绿，太阳不烈，停车场不挤，到处是刚放暑假的孩子。'
-pubDate: '2026-07-15'
+pubDate: '2026-06-14'
 heroImage: '../../assets/hero/2026/07/yosemite-cover.webp'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'yosemite-falls'
-titleZh: '夏天的国家公园'
-titleEn: 'A National Park on a Summer Day'
+titleZh: '优胜美地夏日'
+titleEn: 'Yosemite on a summer day'
 descriptionZh: '六月的优胜美地：树很绿，太阳不烈，停车场不挤，到处是刚放暑假的孩子。'
 descriptionEn: 'Yosemite on a Sunday in June: green trees, gentle sun, a parking lot with room left, kids just out of school.'
 ---
