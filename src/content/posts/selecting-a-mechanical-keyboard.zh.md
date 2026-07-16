@@ -28,21 +28,21 @@ title: '选购机械键盘'
 
 ## 按键数量（尺寸）
 
-![](https://lh3.googleusercontent.com/9UmmVgb6Mj1RUVBgyVed2CVBwB6K6CQ_EKtLhfsJjbqr-tSzaJuRznymDLqtJtiGuAEdgkoGyOyBGHcagQ1FDaMsURGWsi5i0VQkYsezNT7-HCrPD1Ncakq0bOn7LMDase1JdWsC)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-01.webp)
 
 全尺寸。基本上要啥有啥
 
-![](https://lh4.googleusercontent.com/8zWoSSq1AfF7GGAfc7kI8F8eGGULDNlbH0zQ8rqqO-sg16Ttl7LAQkMpNbhTiP6LK_ACoyIqgSkf_r9lget9tBDaDrAKhWJtpFLszdG5mUFb6dcmpmqJVTkidr7_eT1xXgRwa-KB)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-02.webp)
 
 无数字区。把数字小键盘砍掉！
 
-![](https://lh5.googleusercontent.com/JY6xb4S5mbpJcE5blfw3vMJTHz6kXV8MwxPkB2QGijHSIslmGRB0MI3X_ho_EQLNNXsSePvUHEhDZAZwmfgZY4_JAdE5oApzFFaiZqyzvk7k5QwhB_W9P138w4M4OWKsAh30Ktxb)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-03.webp)
 
 紧凑型。我的键盘大多都是这一种。
 
 其他。我提到的这三种是最经典的布局，但总有法外之徒。比如下面这把：
 
-![](https://lh6.googleusercontent.com/pdHxhKtCr7xVrVJhy-QEF7t9MS7SW7ioGt2q1P7HjTnFD4sdu7tK25t2xXehwGixxXZSvk7NA0oExXD1hidYwi5C2NCIOxP_cPaimisi4BljwIUCmSsWV7P48B5JQEg1kda0S9F-)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-04.webp)
 
 *没有数字区的尺寸，却带着一个数字小键盘。*
 
@@ -66,7 +66,7 @@ title: '选购机械键盘'
 
 Filco 的键盘还极其耐用。我的第一把 Filco，也就是我现在用来敲这篇文章的这把，已经八岁了，依然运转如常。
 
-![](https://lh6.googleusercontent.com/fykQlwqQWotxbUBp-rS25BbNEu8eJJUwzGXEtK0MbAdal3kp5_76io4ZTbF99_q6fF-nfmiF43EYYBg76KIVSQw6mfiSMD-05TDkEYdC4LC704BRqMdfbNESBKnagbs1diYJTDo9)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-05.webp)
 
 Filco 每个尺寸只有一个型号，所以想买 Filco 的话，选好轴体和尺寸，你就知道该买哪把了！
 
@@ -84,7 +84,7 @@ iQunix 用的也是 Cherry 轴，所以打字体验尽可放心。
 
 冲着它时髦的设计，我强烈推荐！我个人非常喜欢这一款：
 
-![](https://lh4.googleusercontent.com/CcRJVCRXRq3w3vD_kuUX2zVSNRGtYCFHWgdvReVWhWDQSs16pnHT8pcaEqMH03SWWVCRw6JhVNOkSkqC7bT33kPXSx57XqnDkRUkIIzmnzwoU8lwaaoZ0FCd83Sxfezm9SmSSsOo)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-06.webp)
 
 ##### **Logitech**
 

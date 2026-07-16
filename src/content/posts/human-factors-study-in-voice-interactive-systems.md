@@ -63,7 +63,7 @@ The primary participants are students from MIT. We recruited 12 participants for
 
 The experiment involved both qualitative and quantitative data collection. Each subject was provided with two sets of tasks: One control and One Test. The tasks are selected randomly from a set of two tasks. The control set used their mobile phones to complete the task as opposed to voice control devices in the test category. The following are the tasks used for the experiment:
 
-![](https://lh6.googleusercontent.com/2f1aMDNB8ezBqiwJri2lmrio-9UPuAikrwIa5HdOLvh40bVD9ymStMeloXd7fUwooXIOsug8f1oUj8C9t2Gxph5f-Bf60u93ZHrkMRDd9ecV8M6A2Tqg8gdVqToq_beYPNn-ZxIn)
+![](https://cdn.theneverless.com/2020/11/hf-voice-01.webp)
 
 **Fig 3.1 Experiment process using Alexa and Smart Phone**
 
@@ -137,7 +137,7 @@ To assess the differences, one-tailed t-tests (paired two samples for means) wer
 
 **4.1 Efficiency**
 
-![](https://lh6.googleusercontent.com/2LmKBkcF9IpfdkS-pLVfXXTzZdW_evFepBavf6kDUJC1_eqve6myQtzqqjYobj_8HRxLvpoSl07AnIKx7wYVVqpy6NOsMLsOYDbDWxQe6u0Y5cLfd8yk02ee3uZyMqPW_fLPLt7h)
+![](https://cdn.theneverless.com/2020/11/hf-voice-02.webp)
 
 *Figure 4.1 Task efficiency - Voice device vs. phone devices*
 
@@ -159,7 +159,7 @@ Thus, we could know that task completion time is lower for voice devices than mo
 
 **4.2 Difficulty and Satisfaction**
 
-![](https://lh4.googleusercontent.com/R8pN7Tupgv93PNh6byyub8HrmcMEAuZbDn-7U0jFIlets8QWeuyMduWH0GxSKtuGRaNF7prsPyZn8ClInSpNBXKu32OIbYmLqU3xnxl42wVW-9leqomDIHaGAi87fPaAPgoGi5-7)
+![](https://cdn.theneverless.com/2020/11/hf-voice-03.webp)
 
 *Figure 4.2.1 Mean and linear trends on perceived levels of task completion difficulty on voice and phone devices on a Likert scale (1 = very easy and 5 = very difficult) (n = 12). Task 1 = weather check; task 2 = set timer; task 3 = play song; task 4 = find movie theaters; task 5 = find showtimes.*
 
@@ -167,7 +167,7 @@ Figure 4.2.1 shows the difficulty to complete the task (y-axis) during the Test 
 
 For perceived levels of task completion difficulty, only for Task 5 (find movie showtimes), the null hypothesis was rejected (t-value=-3.03, p=.0056, result significant, Table a2.2). There is a positive correlation between increased task complexity and perceived level of difficulty on both voice and phone devices (Figure 4.2).
 
-![](https://lh4.googleusercontent.com/KmIjHxoXs-gjyLoczRVF4mN96ZD0tveO-Kb1t_XLioz1uIUvNdfU5jW_GyARsAsy5XtA40aSAOJH_nJnF8OejW63XANwo5FEEm5hkaqYAxgsf_UCavnGXE7qAFmzg8uGpojX0T6P)
+![](https://cdn.theneverless.com/2020/11/hf-voice-04.webp)
 
 *Figure 4.2.2 Mean and linear trends on perceived levels of task complete* satisfaction on voice and phone devices on a Likert *scale (1 = very unsatisfied and 5 = very satisfied) (n = 12). Task 1 = weather check; task 2 = set timer; task 3 = play song; task 4 = find movie theaters; task 5 = find showtimes.*
 
@@ -201,7 +201,7 @@ At the grassroots level for a user to successfully learn how to use a system, it
 
 Efficiency as an attribute to build usability can be seen as reducing the number of steps in a process to complete a task. From a voice design perspective, this is where the ambiguity comes it. Since speech is the only interface modal to provide input it is essentially the responsibility of the user to give the right command to complete a task efficiently. For example, in the study, one of the tasks was to find out which is the closest theatre to the participant. The most common command was, ‘Hey Alexa which is the closest theatre?’. This prompted the device to list a number of cinemas unceasingly. The serial presentation of such information places high demands on the user’s working memory and the result was that the user would often have to ask the device to repeat the first output or repeat the command with more specifics such as, ‘Hey Alexa what theatre is within 2 miles?’. This reiterates the above-mentioned conclusion that some tasks are better suited for devices with visual displays. We can also see from the figure 5.1 that the average failures for voice devices is also higher than phone devices in Task and Task 5. The time is taken for our participants to scan through a list of theatres on their phone and identify the closest one was less than the time taken to use a voice device to gather the same information.
 
-![](https://lh3.googleusercontent.com/JqQpTWVuzdGI3rwhZXAvrKoG8SZSfb4ntfOa5OUgwXHAQKjCIPPFCAHfXh-1W3LBlxJ37-8eQifJtFqlN7qIW_a8USl5MZ9niRs2da71DnRzfQSCIYFTenHxeRNEL2u3VDAZx7cS)
+![](https://cdn.theneverless.com/2020/11/hf-voice-05.webp)
 
 *Figure 5.1 task failures for voice devices and phone devices*
 

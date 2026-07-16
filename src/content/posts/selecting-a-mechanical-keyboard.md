@@ -35,21 +35,21 @@ Here is a very good article to start with: [link](https://www.mechanical-keyboar
 
 ## Number of Buttons (Size)
 
-![](https://lh3.googleusercontent.com/9UmmVgb6Mj1RUVBgyVed2CVBwB6K6CQ_EKtLhfsJjbqr-tSzaJuRznymDLqtJtiGuAEdgkoGyOyBGHcagQ1FDaMsURGWsi5i0VQkYsezNT7-HCrPD1Ncakq0bOn7LMDase1JdWsC)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-01.webp)
 
 Full size. you basically got everything
 
-![](https://lh4.googleusercontent.com/8zWoSSq1AfF7GGAfc7kI8F8eGGULDNlbH0zQ8rqqO-sg16Ttl7LAQkMpNbhTiP6LK_ACoyIqgSkf_r9lget9tBDaDrAKhWJtpFLszdG5mUFb6dcmpmqJVTkidr7_eT1xXgRwa-KB)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-02.webp)
 
 Tenkeyless. Get rid of the number pad!
 
-![](https://lh5.googleusercontent.com/JY6xb4S5mbpJcE5blfw3vMJTHz6kXV8MwxPkB2QGijHSIslmGRB0MI3X_ho_EQLNNXsSePvUHEhDZAZwmfgZY4_JAdE5oApzFFaiZqyzvk7k5QwhB_W9P138w4M4OWKsAh30Ktxb)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-03.webp)
 
 Compact. Most of my keyboards are in this type.
 
 Others. The three types I mentioned are the most classic ones, but there are always outlaws. Like the one below:
 
-![](https://lh6.googleusercontent.com/pdHxhKtCr7xVrVJhy-QEF7t9MS7SW7ioGt2q1P7HjTnFD4sdu7tK25t2xXehwGixxXZSvk7NA0oExXD1hidYwi5C2NCIOxP_cPaimisi4BljwIUCmSsWV7P48B5JQEg1kda0S9F-)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-04.webp)
 
 *Number-pad-less size but with a number pad.*
 
@@ -73,7 +73,7 @@ Well, I'm using a Filco keyboard, so this is definitely the first brand I will r
 
 Filco keyboards are also extremely durable. My first Filco keyboard, which I'm using to type this article, is eight years old and still works perfectly.
 
-![](https://lh6.googleusercontent.com/fykQlwqQWotxbUBp-rS25BbNEu8eJJUwzGXEtK0MbAdal3kp5_76io4ZTbF99_q6fF-nfmiF43EYYBg76KIVSQw6mfiSMD-05TDkEYdC4LC704BRqMdfbNESBKnagbs1diYJTDo9)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-05.webp)
 
 Filco only has one model for each size so if you want a Filco just select the switch and size and then you know what to buy!
 
@@ -91,7 +91,7 @@ iQunix also uses Cherry switches, so you can rest assured about the typing exper
 
 I highly recommend it for its stylish design! I personally love this model very much:
 
-![](https://lh4.googleusercontent.com/CcRJVCRXRq3w3vD_kuUX2zVSNRGtYCFHWgdvReVWhWDQSs16pnHT8pcaEqMH03SWWVCRw6JhVNOkSkqC7bT33kPXSx57XqnDkRUkIIzmnzwoU8lwaaoZ0FCd83Sxfezm9SmSSsOo)
+![](https://cdn.theneverless.com/2015/09/mech-keyboard-06.webp)
 
 ##### **Logitech**
 
