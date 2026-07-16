@@ -8,6 +8,7 @@ import { join } from 'node:path'
 import { createHash } from 'node:crypto'
 import {
   changedPostPaths,
+  handleApiRequest,
   listPosts,
   parseFrontmatter,
   readPostFile,
@@ -191,6 +192,53 @@ test('changedPostPaths degrades to empty outside a git repo', () => {
   const root = mkdtempSync(join(tmpdir(), 'post-editor-nogit-'))
   try {
     assert.deepEqual(changedPostPaths(root), [])
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('router serves posts list with changed set', () => {
+  const root = makePostsFixture()
+  try {
+    const res = handleApiRequest(root, { method: 'GET', url: '/api/posts' })
+    assert.equal(res.status, 200)
+    assert.equal(res.body.posts.length, 2)
+    assert.deepEqual(res.body.changed, [])
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('router serves and writes files', () => {
+  const root = makePostsFixture()
+  try {
+    const get = handleApiRequest(root, {
+      method: 'GET',
+      url: '/api/file?path=' + encodeURIComponent('src/content/posts/beta.md'),
+    })
+    assert.equal(get.status, 200)
+    const put = handleApiRequest(root, {
+      method: 'PUT',
+      url: '/api/file',
+      body: JSON.stringify({
+        path: 'src/content/posts/beta.md',
+        content: 'replaced\n',
+        baseHash: get.body.hash,
+      }),
+    })
+    assert.equal(put.status, 200)
+    assert.equal(readFileSync(join(root, 'src/content/posts/beta.md'), 'utf8'), 'replaced\n')
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('router rejects bad JSON and unknown endpoints', () => {
+  const root = makePostsFixture()
+  try {
+    assert.equal(handleApiRequest(root, { method: 'PUT', url: '/api/file', body: '{oops' }).status, 400)
+    assert.equal(handleApiRequest(root, { method: 'GET', url: '/api/nope' }).status, 404)
+    assert.equal(handleApiRequest(root, { method: 'DELETE', url: '/api/file' }).status, 404)
   } finally {
     rmSync(root, { recursive: true, force: true })
   }

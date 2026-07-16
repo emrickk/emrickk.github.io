@@ -118,3 +118,26 @@ export function changedPostPaths(root) {
     return []
   }
 }
+
+// Router for everything under /_edit/api/. url arrives with the /_edit
+// mount prefix already stripped by connect. Synchronous on purpose: every
+// handler is sync, and the adapter in integration.mjs stays trivial.
+export function handleApiRequest(root, { method, url, body = null }) {
+  const parsed = new URL(url, 'http://localhost')
+  if (method === 'GET' && parsed.pathname === '/api/posts') {
+    return { status: 200, body: { posts: listPosts(root), changed: changedPostPaths(root) } }
+  }
+  if (method === 'GET' && parsed.pathname === '/api/file') {
+    return readPostFile(root, parsed.searchParams.get('path') ?? '')
+  }
+  if (method === 'PUT' && parsed.pathname === '/api/file') {
+    let payload
+    try {
+      payload = JSON.parse(body)
+    } catch {
+      return { status: 400, body: { error: 'invalid JSON body' } }
+    }
+    return writePostFile(root, payload)
+  }
+  return { status: 404, body: { error: 'unknown endpoint' } }
+}
