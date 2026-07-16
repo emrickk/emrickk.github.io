@@ -1,4 +1,4 @@
-import { S3Client, PutObjectCommand, HeadObjectCommand } from '@aws-sdk/client-s3'
+import { S3Client, PutObjectCommand, HeadObjectCommand, DeleteObjectCommand } from '@aws-sdk/client-s3'
 
 export function makeClient(config) {
   return new S3Client({
@@ -31,4 +31,8 @@ export async function putObject(client, bucket, key, buffer, contentType) {
       CacheControl: 'public, max-age=31536000, immutable',
     }),
   )
+}
+
+export async function deleteObject(client, bucket, key) {
+  await client.send(new DeleteObjectCommand({ Bucket: bucket, Key: key }))
 }
