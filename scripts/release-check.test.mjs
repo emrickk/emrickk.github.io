@@ -13,6 +13,7 @@ import {
   verifyUrls,
   extractInternalRefs,
   resolveInternalRef,
+  resolveDiffBase,
 } from './release-check.mjs'
 
 test('findForbiddenPaths flags tracked or staged forbidden files', (t) => {
@@ -99,6 +100,65 @@ test('collectSecretScanSources includes untracked non-ASCII filenames despite qu
   write(root, '草稿.md', 'ghp_0123456789abcdefghijABCDEFGHIJ456789\n')
   const files = collectSecretScanSources(root).map((s) => s.file)
   assert.ok(files.includes('草稿.md'))
+})
+
+// Simulates a worktree branched before another session pushed: origin/main
+// replaced notes.md content that HEAD still has. Diffing the working tree
+// straight against origin/main presents HEAD's older, already-replaced lines
+// as "+" additions, so the scan would cover content that is not local work.
+function makeBehindFixture(t) {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'notes.md', 'stale ghp_0123456789abcdefghijABCDEFGHIJ456789\n')
+  run(root, ['add', 'notes.md'])
+  run(root, ['commit', '-q', '-m', 'old notes'])
+  write(root, 'notes.md', 'cleaned up, token removed upstream\n')
+  run(root, ['add', 'notes.md'])
+  run(root, ['commit', '-q', '-m', 'remote cleanup'])
+  run(root, ['remote', 'add', 'origin', root])
+  run(root, ['fetch', '-q', 'origin'])
+  run(root, ['checkout', '-q', '-b', 'work', 'HEAD~1'])
+  return root
+}
+
+test('resolveDiffBase: up to date with the base ref keeps it as-is', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  run(root, ['remote', 'add', 'origin', root])
+  run(root, ['fetch', '-q', 'origin'])
+  assert.deepEqual(resolveDiffBase(root, 'origin/main'), { ref: 'origin/main', headBehind: false })
+  assert.deepEqual(resolveDiffBase(root, 'HEAD'), { ref: 'HEAD', headBehind: false })
+})
+
+test('resolveDiffBase: HEAD behind origin/main resolves to the merge-base', (t) => {
+  const root = makeBehindFixture(t)
+  const { ref, headBehind } = resolveDiffBase(root, 'origin/main')
+  assert.equal(headBehind, true)
+  assert.equal(ref, run(root, ['rev-parse', 'HEAD']))
+})
+
+test('collectSecretScanSources: content replaced on origin/main is not local work and not scanned', (t) => {
+  const root = makeBehindFixture(t)
+  assert.deepEqual(collectSecretScanSources(root), [])
+})
+
+test('collectSecretScanSources: local edits still count when HEAD is behind origin/main', (t) => {
+  const root = makeBehindFixture(t)
+  write(root, 'tracked.md', 'original\nghp_0123456789abcdefghijABCDEFGHIJ456789\n') // modified tracked
+  write(root, 'draft.md', 'AKIAIOSFODNN7EXAMPLE\n') // untracked
+  const sources = collectSecretScanSources(root)
+  const files = sources.map((s) => s.file).sort()
+  assert.deepEqual(files, ['draft.md', 'tracked.md'])
+  assert.ok(sources.find((s) => s.file === 'tracked.md').text.includes('ghp_'))
+})
+
+test('collectSecretScanSources: local commits ahead of the merge-base stay in scope', (t) => {
+  const root = makeBehindFixture(t)
+  write(root, 'local-work.md', 'ghp_0123456789abcdefghijABCDEFGHIJ456789\n')
+  run(root, ['add', 'local-work.md'])
+  run(root, ['commit', '-q', '-m', 'local commit with token'])
+  const files = collectSecretScanSources(root).map((s) => s.file)
+  assert.ok(files.includes('local-work.md'))
 })
 
 test('findForbiddenPaths flags forbidden paths with non-ASCII names despite quotepath', (t) => {
