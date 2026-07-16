@@ -8,6 +8,7 @@ import process from 'node:process';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import rehypeImageGallery from './scripts/rehype/image-gallery.mjs';
+import postEditor from './scripts/post-editor/integration.mjs';
 import config from './astro-theme-config.ts';
 import { toneExpressiveCodeOptions } from './src/config/expressive-code.ts';
 
@@ -35,6 +36,7 @@ export default defineConfig({
     sitemap({
       filter: (page) => !sitemapExcludedPaths.has(withoutConfiguredBase(new URL(page).pathname)),
     }),
+    postEditor(),
   ],
   build: {
     inlineStylesheets: 'always',
