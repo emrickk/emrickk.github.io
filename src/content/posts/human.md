@@ -2,7 +2,7 @@
 title: '成熟的人'
 description: '关于成熟的一段话：能区分自己与他人，守住清楚的自我界限，也不在家人的生活里迷失自己。'
 pubDate: '2013-12-16'
-category: '随笔'
+category: 'Words'
 lang: 'zh'
 translationKey: 'human'
 titleZh: '成熟的人'
