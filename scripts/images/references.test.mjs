@@ -36,6 +36,19 @@ test('rewriteUploads rewrites only /uploads refs, leaves others', () => {
   assert.match(out, /\.\.\/\.\.\/assets\/hero\/2020\/02\/x\.jpg/) // hero untouched
 })
 
+test('deriveKey: lossy sanitize gets the content hash, lossless names stay clean', () => {
+  const h1 = '0123456789abcdef'
+  const h2 = 'fedcba9876543210'
+  // ASCII names never pick up a hash suffix, even when one is available.
+  assert.equal(deriveKey('IMG 1.JPG', JULY, null, h1), '2026/07/IMG-1.webp')
+  // Distinct CJK names used to sanitize to the same degenerate key.
+  assert.equal(deriveKey('北京 01.jpg', JULY, null, h1), '2026/07/01-01234567.webp')
+  assert.notEqual(deriveKey('北京 01.jpg', JULY, null, h1), deriveKey('上海 01.jpg', JULY, null, h2))
+  // A fully-stripped name is carried by the hash alone; without one, 'img'.
+  assert.equal(deriveKey('照片.jpg', JULY, null, h1), '2026/07/01234567.webp')
+  assert.equal(deriveKey('照片.jpg', JULY), '2026/07/img.webp')
+})
+
 test('deriveKey with a prefix replaces the date path', () => {
   assert.equal(deriveKey('123-1.jpg', JULY, 'notes'), 'notes/123-1.webp')
   assert.equal(deriveKey('123-2.PNG', JULY, 'notes/'), 'notes/123-2.webp')

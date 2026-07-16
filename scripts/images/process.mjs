@@ -5,7 +5,7 @@ import { pathToFileURL } from 'node:url'
 import { loadEnvFile, loadConfig } from './config.mjs'
 import { optimizeToWebp } from './optimize.mjs'
 import { archiveOriginal } from './archive.mjs'
-import { makeClient, putObject } from './r2.mjs'
+import { makeClient, putObject, objectExists } from './r2.mjs'
 import { loadManifest, saveManifest, hasHash, addEntry, hashBuffer } from './manifest.mjs'
 import { deriveKey, snippetFor } from './references.mjs'
 
@@ -47,10 +47,18 @@ export async function run({
       snippets.push(snippetFor(key, base))
       continue
     }
-    const key = deriveKey(path.basename(file), now, prefix)
+    const key = deriveKey(path.basename(file), now, prefix, hash)
+    // A key that already exists on R2 but is not in the manifest belongs to
+    // some OTHER image (a filename collision); uploading would silently
+    // replace it on the live CDN.
+    if (!dryRun && config && (await objectExists(client, config.bucket, key))) {
+      throw new Error(
+        `refusing to overwrite existing R2 object ${key} (from ${path.basename(file)}); rename the file and re-run`,
+      )
+    }
     if (!dryRun && config && archive) {
       const arch = archiveOriginal(file, config)
-      log(`  archived original -> ${arch.dest} (${arch.location})`)
+      log(`  archived original -> ${arch.dest} (${arch.location})${arch.skipped ? ' [already archived]' : ''}`)
     }
     const { buffer, width, bytes } = await optimizeToWebp(file, { watermark: true })
     if (dryRun || !config) {
@@ -58,12 +66,14 @@ export async function run({
     } else {
       await putObject(client, config.bucket, key, buffer, 'image/webp')
       addEntry(manifest, hash, key, now.toISOString())
+      // Saved per upload, not once at the end: a mid-batch failure must not
+      // lose the dedupe entries of files already on the CDN.
+      saveManifest(manifestPath, manifest)
       log(`  ✓ uploaded ${key} (${width}px, ${(bytes / 1024).toFixed(0)} KB)`)
     }
     snippets.push(snippetFor(key, base))
   }
 
-  if (!dryRun && config) saveManifest(manifestPath, manifest)
   return { snippets, count: files.length }
 }
 
