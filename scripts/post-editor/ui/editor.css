@@ -112,6 +112,9 @@ body {
   color: #777;
   cursor: default;
 }
+#banner[hidden] {
+  display: none;
+}
 #banner {
   display: flex;
   gap: 8px;
