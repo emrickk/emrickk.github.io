@@ -35,7 +35,7 @@ const config = {
   // The logo already links to `/`. Add items here if you want visible header links.
   // Example: [{ label: 'Posts', href: '/posts' }, { label: 'About', href: '/about' }]
   nav: [
-    { label: 'Posts', href: '/posts' },
+    { label: 'Posts', labelZh: '文章', href: '/posts' },
     { label: 'Notes', labelZh: '随记', href: '/notes' },
   ] as NavItem[],
 
