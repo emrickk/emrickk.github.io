@@ -657,7 +657,14 @@ async function handle(root, req, res) {
   const url = req.url === '' ? '/' : req.url
   if (url.startsWith('/api/')) {
     const body = req.method === 'PUT' ? await readBody(req) : null
-    const result = handleApiRequest(root, { method: req.method, url, body })
+    let result
+    try {
+      result = handleApiRequest(root, { method: req.method, url, body })
+    } catch (err) {
+      // Keep API responses JSON even when a handler throws (disk errors);
+      // Vite's HTML error page would break the UI's res.json() calls.
+      result = { status: 500, body: { error: String(err && err.message ? err.message : err) } }
+    }
     res.statusCode = result.status
     res.setHeader('content-type', 'application/json; charset=utf-8')
     res.end(JSON.stringify(result.body))
@@ -1291,6 +1298,8 @@ In the commands table, after the `npm run test:rehype` row, add:
 ```markdown
 | `npm run test:editor` | Post editor API test suite (`node:test`) |
 ```
+
+Also extend the existing `npm run dev` row's Action cell with: `; dev server also serves the local post editor at /_edit`.
 
 In the Architecture section, add a bullet after the `scripts/migrate/` bullet:
 
