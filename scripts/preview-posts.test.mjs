@@ -41,6 +41,12 @@ test('classifyPath: site-wide files', () => {
   assert.equal(classifyPath('package-lock.json'), 'site')
 })
 
+test('classifyPath: build inputs imported by astro.config.mjs are site-wide', () => {
+  assert.equal(classifyPath('astro-theme-config.ts'), 'site')
+  assert.equal(classifyPath('scripts/rehype/image-gallery.mjs'), 'site')
+  assert.equal(classifyPath('scripts/rehype/image-gallery.test.mjs'), 'site')
+})
+
 test('classifyPath: note content files', () => {
   assert.equal(classifyPath('src/content/notes/20140724-093000.md'), 'note')
   assert.equal(classifyPath('src/content/notes/20140724-093000-2.md'), 'note')
@@ -96,6 +102,28 @@ test('computeChangeSet: draft posts and their siblings are excluded', (t) => {
   write(root, 'src/content/posts/wip.en.md', 'english body\n')
   write(root, 'src/content/posts/live.md', FM + 'body\n')
   assert.deepEqual(computeChangeSet(root, { baseRef: 'HEAD' }), ['src/content/posts/live.md'])
+})
+
+test('computeChangeSet: a post edited while draft at the base ref stays excluded', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/wip.md', '---\ntitle: T\ndraft: true\n---\nv1\n')
+  run(root, ['add', 'src/content/posts/wip.md'])
+  run(root, ['commit', '-q', '-m', 'draft'])
+  write(root, 'src/content/posts/wip.md', '---\ntitle: T\ndraft: true\n---\nv2\n')
+  assert.deepEqual(computeChangeSet(root, { baseRef: 'HEAD' }), [])
+})
+
+test('computeChangeSet: a published post flipped to draft stays in the change set and reviews at /', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  write(root, 'src/content/posts/live.md', FM + 'body\n')
+  run(root, ['add', 'src/content/posts/live.md'])
+  run(root, ['commit', '-q', '-m', 'publish'])
+  write(root, 'src/content/posts/live.md', '---\ntitle: T\ndraft: true\n---\nbody\n')
+  const changeSet = computeChangeSet(root, { baseRef: 'HEAD' })
+  assert.deepEqual(changeSet, ['src/content/posts/live.md'])
+  assert.deepEqual(reviewTargets(root, changeSet), ['/'])
 })
 
 // Deploys run npm ci && npm run build, so npm script edits other than

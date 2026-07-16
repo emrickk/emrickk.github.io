@@ -19,7 +19,11 @@ export const REPRESENTATIVE_POST = 'springtime-in-patagonia'
 
 const POST_RE = /^src\/content\/posts\/[^/]+\.(?:md|mdx)$/
 const NOTE_RE = /^src\/content\/notes\/[^/]+\.(?:md|mdx)$/
-const SITE_RE = /^(?:src|public)\/|^(?:astro\.config\.mjs|package\.json|package-lock\.json)$/
+// astro-theme-config.ts and scripts/rehype/ are imported by astro.config.mjs
+// and change every rendered page, so they are site-wide despite living
+// outside src/.
+const SITE_RE =
+  /^(?:src|public)\/|^scripts\/rehype\/|^(?:astro\.config\.mjs|astro-theme-config\.ts|package\.json|package-lock\.json)$/
 
 // 'post' renders at /posts/<slug>/; 'note' renders on the /notes/ timeline;
 // 'site' can change any page; null never affects the deployed site. Content
@@ -59,12 +63,24 @@ function git(args, { cwd, allowFail = false } = {}) {
   }
 }
 
-// Drafts are excluded from the build, so there is nothing to review; a draft
-// flip back to false re-enters the change set as a normal edit.
+// Drafts are excluded from the build, so a post that was already a draft at
+// the base ref has nothing to review; a draft flip back to false re-enters
+// the change set as a normal edit.
 export function isDraftPost(root, path) {
   const p = join(root, primaryPostPath(path))
   if (!existsSync(p)) return false
   const fm = readFileSync(p, 'utf8').match(/^---\r?\n([\s\S]*?)\r?\n---/)
+  return fm ? /^draft:\s*true\s*$/m.test(fm[1]) : false
+}
+
+// A published post flipped to draft REMOVES a live page, which is exactly
+// what the gate exists to review, so only posts that were also drafts at the
+// base ref (or did not exist there: brand-new drafts) leave the change set.
+export function wasDraftAtBase(root, path, baseRef) {
+  const primary = primaryPostPath(path)
+  const content = git(['show', `${baseRef}:${primary}`], { cwd: root, allowFail: true })
+  if (content === null) return true
+  const fm = content.match(/^---\r?\n([\s\S]*?)\r?\n---/)
   return fm ? /^draft:\s*true\s*$/m.test(fm[1]) : false
 }
 
@@ -127,7 +143,7 @@ export function computeChangeSet(root, { baseRef = resolveBaseRef(root) } = {}) 
     .filter((path) => {
       const kind = classifyPath(path)
       if (kind === null) return false
-      if (kind === 'post' && isDraftPost(root, path)) return false
+      if (kind === 'post' && isDraftPost(root, path) && wasDraftAtBase(root, path, diffBase)) return false
       if (path === 'package.json' && !packageJsonAffectsSite(root, diffBase)) return false
       return true
     })
@@ -145,7 +161,10 @@ export function reviewTargets(root, changeSet) {
   for (const path of changeSet) {
     const kind = classifyPath(path)
     if (kind === 'post') {
-      if (existsSync(join(root, primaryPostPath(path)))) targets.add(`/posts/${slugForPostFile(path)}/`)
+      // A currently-draft post has no page of its own (a published-to-draft
+      // flip removes one), so review goes to the homepage like a deletion.
+      if (existsSync(join(root, primaryPostPath(path))) && !isDraftPost(root, path))
+        targets.add(`/posts/${slugForPostFile(path)}/`)
       else targets.add('/')
     } else if (kind === 'note') {
       targets.add('/notes/')
@@ -192,10 +211,10 @@ export function readManifest(root) {
 // Approved entries absent from the current change set are deliberately not
 // problems: a file only leaves the change set when its content settles back
 // into the base ref (the approved bytes were committed and deployed under
-// this same gate, or the edit was reverted), when it becomes a draft, or when
-// package.json stops being site-significant. In every case nothing unreviewed
-// can ship from it, and re-editing it puts it back in the change set where
-// the drift checks below apply.
+// this same gate, or the edit was reverted) or when package.json stops being
+// site-significant. In every case nothing unreviewed can ship from it, and
+// re-editing it puts it back in the change set where the drift checks below
+// apply.
 export function manifestDiff(currentFiles, manifest) {
   const approved = manifest.files
   const problems = []
