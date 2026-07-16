@@ -127,6 +127,16 @@ test('checkDistDir fails on stale /uploads/ references', (t) => {
   assert.ok(failures.some((f) => f.includes('/uploads/')))
 })
 
+test('checkDistDir fails on stale cdn.anping.us references', (t) => {
+  const root = makeFixtureRepo()
+  t.after(() => cleanup(root))
+  const dist = makeFixtureDist(root, {
+    extraHtml: { 'posts/bad/index.html': '<img src="https://cdn.anping.us/2020/02/old.webp">' },
+  })
+  const { failures } = checkDistDir(dist, { minPages: 1 })
+  assert.ok(failures.some((f) => f.includes('cdn.anping.us')))
+})
+
 test('checkDistDir fails on localhost URLs in attributes', (t) => {
   const root = makeFixtureRepo()
   t.after(() => cleanup(root))
@@ -156,14 +166,14 @@ test('checkDistDir enforces the minimum page count', (t) => {
 
 test('extractCdnUrls finds unique CDN URLs across markup', () => {
   const html = `
-    <img src="https://cdn.anping.us/2020/02/a.webp">
-    <img src="https://cdn.anping.us/2020/02/a.webp">
-    <a href="https://cdn.anping.us/2023/03/b.webp?ssl=1">x</a>
+    <img src="https://cdn.theneverless.com/2020/02/a.webp">
+    <img src="https://cdn.theneverless.com/2020/02/a.webp">
+    <a href="https://cdn.theneverless.com/2023/03/b.webp?ssl=1">x</a>
     <a href="https://example.com/c.webp">not ours</a>`
   const urls = extractCdnUrls(html)
   assert.deepEqual(urls.sort(), [
-    'https://cdn.anping.us/2020/02/a.webp',
-    'https://cdn.anping.us/2023/03/b.webp?ssl=1',
+    'https://cdn.theneverless.com/2020/02/a.webp',
+    'https://cdn.theneverless.com/2023/03/b.webp?ssl=1',
   ])
 })
 

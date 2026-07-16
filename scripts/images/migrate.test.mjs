@@ -20,7 +20,7 @@ test('planMigration maps uploads to webp keys and finds markdown edits', () => {
     )
     writeFileSync(join(contentDir, 'posts', 'p2.md'), 'no images here\n')
 
-    const { uploads, edits } = planMigration({ uploadsDir, contentDir, base: 'https://cdn.anping.us' })
+    const { uploads, edits } = planMigration({ uploadsDir, contentDir, base: 'https://cdn.theneverless.com' })
     assert.deepEqual(uploads.map((u) => u.key).sort(), ['2020/02/bar.webp', '2020/02/foo.webp'])
     assert.equal(edits.length, 1)
     assert.equal(edits[0].replacements, 2)

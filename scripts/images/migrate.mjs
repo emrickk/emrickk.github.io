@@ -21,7 +21,7 @@ function walk(dir, keep) {
   return out
 }
 
-export function planMigration({ uploadsDir = 'public/uploads', contentDir = 'src/content', base = 'https://cdn.anping.us' } = {}) {
+export function planMigration({ uploadsDir = 'public/uploads', contentDir = 'src/content', base = 'https://cdn.theneverless.com' } = {}) {
   const uploads = walk(uploadsDir, (p) => IMG_RE.test(p)).map((file) => ({
     file,
     key: keyFromUploadPath(path.relative(uploadsDir, file)),

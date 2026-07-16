@@ -4,7 +4,7 @@ Guidance for AI agents and new contributors working in this repository.
 
 ## What this is
 
-Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English in progress). Astro 6 + the astro-tone theme. Deploys to GitHub Pages via `.github/workflows/deploy.yml` on every push to `main`; served at https://theneverless.com (DNS on Cloudflare, registration at GoDaddy; anping.us 301-redirects here, and images stay on https://cdn.anping.us).
+Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English in progress). Astro 6 + the astro-tone theme. Deploys to GitHub Pages via `.github/workflows/deploy.yml` on every push to `main`; served at https://theneverless.com (DNS on Cloudflare, registration at GoDaddy; anping.us 301-redirects here but will be allowed to expire, so nothing may reference it; images are on https://cdn.theneverless.com).
 
 ## Commands
 
@@ -24,7 +24,7 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English i
 ## Architecture
 
 - **Posts** live in `src/content/posts/*.md`.
-- **Images are NOT in this repo.** They are served from Cloudflare R2 at `https://cdn.anping.us` (bucket `anping-blog-images`). Full-resolution originals are archived outside the repo (NAS or a local git-ignored `originals/` folder). The pipeline lives in `scripts/images/`; the complete runbook, including the daily authoring flow and Cloudflare setup, is [docs/images.md](docs/images.md).
+- **Images are NOT in this repo.** They are served from Cloudflare R2 at `https://cdn.theneverless.com` (bucket `anping-blog-images`). Full-resolution originals are archived outside the repo (NAS or a local git-ignored `originals/` folder). The pipeline lives in `scripts/images/`; the complete runbook, including the daily authoring flow and Cloudflare setup, is [docs/images.md](docs/images.md).
 - Exception: hero images in `src/assets/hero/` are Astro-optimized at build time and are deliberately outside the R2 pipeline. New covers must meet the minimum size spec in [docs/images.md](docs/images.md) (roughly 2400x1260 wide or 1600x1600 square, lightly compressed) or they render blurry in the home cards.
 - Pipeline credentials go in `.env.local` (git-ignored); the variable names are documented in `.env.example`. Without credentials, dry-run modes and all but one test still work.
 - `scripts/migrate/` is finished WordPress-migration tooling (Python). Design history lives in `docs/`, including `docs/superpowers/specs/` and `docs/superpowers/plans/`.
@@ -38,7 +38,7 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English i
 
 ## Project status (last updated 2026-07-14)
 
-- **Image storage on R2: complete.** All post images (217 objects) are on R2, every post references `cdn.anping.us`, and `public/uploads/` has been removed from the repo.
+- **Image storage on R2: complete.** All post images (217 objects) are on R2, every post references `cdn.theneverless.com`, and `public/uploads/` has been removed from the repo.
 - **Bilingual toggle: complete and live.** Every post has zh/en titles and sibling bodies. The long-lived `bilingual-toggle` branch was merged and deleted on 2026-07-14; do not recreate it.
 - **Single-branch workflow.** All day-to-day work happens on `main` in this checkout. A long-running independent track gets its own branch in its own worktree (`git worktree add`), like `tweets-notes`; it never shares this checkout.
 

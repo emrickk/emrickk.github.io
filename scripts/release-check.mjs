@@ -184,6 +184,7 @@ export function checkDistDir(dist, { minPages = 300 } = {}) {
     const text = readFileSync(p, 'utf8')
     const rel = p.slice(dist.length + 1)
     if (text.includes('/uploads/')) failures.push(`${rel}: stale /uploads/ reference`)
+    if (text.includes('cdn.anping.us')) failures.push(`${rel}: stale cdn.anping.us reference (domain expires; use cdn.theneverless.com)`)
     if (/(?:href|src)=["']https?:\/\/(?:localhost|127\.0\.0\.1)/.test(text)) failures.push(`${rel}: localhost URL`)
   }
   return { failures, htmlCount: htmlFiles.length }
@@ -199,7 +200,7 @@ function checkBuiltOutput(root) {
 
 export function extractCdnUrls(text) {
   const urls = new Set()
-  for (const m of text.matchAll(/https:\/\/cdn\.anping\.us\/[^\s"'<>()\\]+/g)) urls.add(m[0])
+  for (const m of text.matchAll(/https:\/\/cdn\.theneverless\.com\/[^\s"'<>()\\]+/g)) urls.add(m[0])
   return [...urls]
 }
 

@@ -26,7 +26,7 @@ test('run() dry-run yields cdn webp snippets without creds', async () => {
       log: () => {},
     })
     assert.equal(res.count, 1)
-    assert.equal(res.snippets[0], '![](https://cdn.anping.us/2026/07/My-Photo.webp)')
+    assert.equal(res.snippets[0], '![](https://cdn.theneverless.com/2026/07/My-Photo.webp)')
   } finally {
     rmSync(work, { recursive: true, force: true })
   }

@@ -38,7 +38,7 @@ export function makeFixtureDist(root, { omit = [], extraHtml = {} } = {}) {
   const files = {
     'index.html': '<html><body><a href="/posts/a/">a</a></body></html>',
     'posts/a/index.html':
-      '<html><body><img src="https://cdn.anping.us/2020/02/foo.webp"><a href="/">home</a></body></html>',
+      '<html><body><img src="https://cdn.theneverless.com/2020/02/foo.webp"><a href="/">home</a></body></html>',
     'rss.xml': '<rss><channel><title>t</title></channel></rss>',
     'sitemap-index.xml': '<sitemapindex></sitemapindex>',
     'pagefind/pagefind.js': '// pagefind stub',

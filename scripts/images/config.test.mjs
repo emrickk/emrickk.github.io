@@ -7,12 +7,12 @@ const good = {
   R2_ACCESS_KEY_ID: 'key',
   R2_SECRET_ACCESS_KEY: 'secret',
   R2_BUCKET: 'anping-blog-images',
-  R2_PUBLIC_BASE: 'https://cdn.anping.us/',
+  R2_PUBLIC_BASE: 'https://cdn.theneverless.com/',
 }
 
 test('loadConfig normalizes and returns config', () => {
   const c = loadConfig(good)
-  assert.equal(c.publicBase, 'https://cdn.anping.us') // trailing slash stripped
+  assert.equal(c.publicBase, 'https://cdn.theneverless.com') // trailing slash stripped
   assert.equal(c.bucket, 'anping-blog-images')
   assert.equal(c.accountId, 'acct')
   assert.equal(c.nasArchivePath, null) // NAS_ARCHIVE_PATH unset
