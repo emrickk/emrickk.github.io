@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Post editor</title>
+    <link rel="stylesheet" href="/_edit/editor.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar">
+        <h1>Post editor</h1>
+        <input id="filter" type="search" placeholder="Filter posts" />
+        <div id="post-list"></div>
+      </aside>
+      <main id="main">
+        <div id="toolbar">
+          <div id="tabs"></div>
+          <button id="save" type="button" disabled>Save</button>
+        </div>
+        <div id="banner" hidden></div>
+        <div id="panes">
+          <textarea id="editor" spellcheck="false" disabled placeholder="Pick a post from the list."></textarea>
+          <iframe id="preview" title="Post preview"></iframe>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/_edit/editor.js"></script>
+  </body>
+</html>
