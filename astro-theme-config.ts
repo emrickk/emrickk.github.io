@@ -35,7 +35,7 @@ const config = {
   // The logo already links to `/`. Add items here if you want visible header links.
   // Example: [{ label: 'Posts', href: '/posts' }, { label: 'About', href: '/about' }]
   nav: [
-    { label: 'Posts', href: '/posts' },
+    { label: 'Posts', labelZh: '文章', href: '/posts' },
     { label: 'Notes', labelZh: '随记', href: '/notes' },
   ] as NavItem[],
 
@@ -48,15 +48,12 @@ const config = {
 
   content: {
     categoryOrder: [
-      'Design',
-      'Getting Started',
-      'Markdown',
-      'Open Source',
-      'Systems',
-      'Notes',
-      'Research',
-      'Performance',
-      'MDX',
+      'Journal',
+      'Things',
+      'Prodigal',
+      'Words',
+      'Repost',
+      'Fiona',
     ],
     /**
      * Bilingual display names for post categories; they swap with the EN·中
@@ -68,8 +65,7 @@ const config = {
       Journal: { zh: '日志', en: 'Journal' },
       Repost: { zh: '转载', en: 'Repost' },
       Things: { zh: '东西', en: 'Things' },
-      Prodigal: { zh: '败家', en: 'Prodigal' },
-      随笔: { zh: '随笔', en: 'Essays' },
+      Prodigal: { zh: '败家', en: 'Splurges' },
     } as Record<string, { zh: string; en: string }>,
   },
 
