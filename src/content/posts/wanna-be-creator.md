@@ -1,6 +1,6 @@
 ---
 title: 'I Wanna Be a Creator: An Activity That Attracts Users to Promote Aiyou'
-description: ''
+description: 'A product case study of "I Wanna Be a Creator", an activity that got Aiyou users to make promotional videos in exchange for in-app exposure and prizes.'
 pubDate: '2018-03-01'
 heroImage: '../../assets/hero/2018/03/wanna-be-creator-cover.png'
 category: 'Things'
@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'wanna-be-creator'
 titleZh: '我要当网红：让用户主动推广爱游的活动'
 titleEn: 'I Wanna Be a Creator: An Activity That Attracts Users to Promote Aiyou'
+descriptionZh: '一篇产品案例：让用户主动为爱游制作推广视频、换取站内曝光和奖品的“我要当网红”活动。'
+descriptionEn: 'A product case study of "I Wanna Be a Creator", an activity that got Aiyou users to make promotional videos in exchange for in-app exposure and prizes.'
 ---
 
 *This is a companion piece to [From 0 to 200,000 DAUs: The User Growth Journey of Aiyou](/posts/aiyou-user-growth/).*

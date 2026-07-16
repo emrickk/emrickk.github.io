@@ -1,6 +1,6 @@
 ---
 title: 'TRIGON'
-description: ''
+description: '晒单：TRIGON入门级碳纤维公路车TR886的购车经历与开箱照片。'
 pubDate: '2014-12-20'
 heroImage: '../../assets/hero/2020/02/QQE688AAE59BBE20141220170454.jpg'
 category: 'Prodigal'
@@ -8,6 +8,8 @@ lang: 'zh'
 translationKey: 'trigon-tr886'
 titleZh: 'TRIGON'
 titleEn: 'TRIGON'
+descriptionZh: '晒单：TRIGON入门级碳纤维公路车TR886的购车经历与开箱照片。'
+descriptionEn: 'A purchase story and unboxing of the TRIGON TR886, an entry-level carbon fiber road bike.'
 ---
 
 TRIGON是一个代工起家的自行车厂牌，近十年前以“碳纤维”作为突破点，开始自己的自行车品牌之路。这次要晒单的就是TRIGON的入门级碳纤维公路车-TRIGON TR886。

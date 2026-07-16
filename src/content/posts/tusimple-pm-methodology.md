@@ -1,12 +1,14 @@
 ---
 title: 'Product Management Methodology for Internal Tools'
-description: ''
+description: 'A product management methodology for internal tools, written during my time at TuSimple: the best tool is no tool, and efficiency is the only guide.'
 pubDate: '2022-06-05'
 category: 'Things'
 lang: 'en'
 translationKey: 'tusimple-pm-methodology'
 titleZh: '内部工具的产品管理方法论'
 titleEn: 'Product Management Methodology for Internal Tools'
+descriptionZh: '在图森未来时写下的内部工具产品管理方法论：最好的工具是没有工具，一切以效率为导向。'
+descriptionEn: 'A product management methodology for internal tools, written during my time at TuSimple: the best tool is no tool, and efficiency is the only guide.'
 ---
 
 *I wrote this document on my TuSimple anniversary. I revised it and posted it here as today is already my second anniversary at TuSimple. Time flies!*

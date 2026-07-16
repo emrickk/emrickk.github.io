@@ -1,6 +1,6 @@
 ---
 title: '天然气何去何从'
-description: ''
+description: '一篇Robert Edwards在SeekingAlpha发布的英文博文的中文译文：2015年的天然气会像2012年那样走高，还是像2009年那样掉头向下。'
 pubDate: '2015-06-21'
 heroImage: '../../assets/hero/2020/02/6143431-14348198816402268-Robert-Edwards.png'
 category: 'Things'
@@ -8,6 +8,8 @@ lang: 'zh'
 translationKey: 'we-should-know-soon-if-the-2015-natural-gas-market-is-going-higher-like-2012-or-going-to-roll-over-like-2009'
 titleZh: '天然气何去何从'
 titleEn: 'Where Is Natural Gas Headed'
+descriptionZh: '一篇Robert Edwards在SeekingAlpha发布的英文博文的中文译文：2015年的天然气会像2012年那样走高，还是像2009年那样掉头向下。'
+descriptionEn: 'A Chinese translation of a SeekingAlpha post by Robert Edwards on whether the 2015 natural gas market will go higher like 2012 or roll over like 2009.'
 ---
 
 **我们很快就会知道天然气是会像2012年那样走高,还是像09年那样持续下跌了**

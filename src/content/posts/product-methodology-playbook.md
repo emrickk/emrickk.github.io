@@ -1,6 +1,6 @@
 ---
 title: 'Product Methodology Systemization Playbook'
-description: ''
+description: 'A playbook for systemizing product methodology: recording failures and successes so decisions rest on evidence instead of memory.'
 pubDate: '2024-05-01'
 heroImage: '../../assets/hero/2024/05/product-methodology-playbook-cover.webp'
 showHero: true
@@ -9,6 +9,8 @@ lang: 'en'
 translationKey: 'product-methodology-playbook'
 titleZh: '产品方法论体系化手册'
 titleEn: 'Product Methodology Systemization Playbook'
+descriptionZh: '一份产品方法论体系化手册：把失败和成功都记录下来，让决策依靠证据而不是记忆。'
+descriptionEn: 'A playbook for systemizing product methodology: recording failures and successes so decisions rest on evidence instead of memory.'
 ---
 
 ### What We Want

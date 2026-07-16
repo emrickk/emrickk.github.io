@@ -1,6 +1,6 @@
 ---
 title: 'Red Packet Assistant: Making Red Packet Grabbing Even More Fun'
-description: ''
+description: 'A product case study of Red Packet Assistant, a tool built in early 2017 to help people enjoy grabbing WeChat red packets without neglecting family time.'
 pubDate: '2017-02-01'
 heroImage: '../../assets/hero/2017/02/wechat-red-packet-assistant-cover.png'
 category: 'Things'
@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'wechat-red-packet-assistant'
 titleZh: '红包助手：让抢红包更有乐趣'
 titleEn: 'Red Packet Assistant: Making Red Packet Grabbing Even More Fun'
+descriptionZh: '一篇产品案例：2017年初做的红包助手，让人们在春节抢微信红包的同时不冷落家人。'
+descriptionEn: 'A product case study of Red Packet Assistant, a tool built in early 2017 to help people enjoy grabbing WeChat red packets without neglecting family time.'
 ---
 
 ## Context

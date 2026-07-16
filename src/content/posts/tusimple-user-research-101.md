@@ -1,6 +1,6 @@
 ---
 title: 'Disruptive Technology Company User Research 101'
-description: ''
+description: 'A user research primer written for the junior designers on my team at TuSimple.'
 pubDate: '2023-02-25'
 heroImage: '../../assets/hero/2023/02/user-research-101-cover.jpg'
 category: 'Things'
@@ -8,6 +8,8 @@ lang: 'en'
 translationKey: 'tusimple-user-research-101'
 titleZh: '颠覆性技术公司用户研究入门'
 titleEn: 'Disruptive Technology Company User Research 101'
+descriptionZh: '在图森未来时写给团队初级设计师的一份用户研究入门。'
+descriptionEn: 'A user research primer written for the junior designers on my team at TuSimple.'
 ---
 
 *The document was a small piece I wrote for the junior designers in my team when I was in TuSimple*

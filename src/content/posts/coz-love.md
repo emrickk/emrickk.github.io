@@ -1,12 +1,14 @@
 ---
 title: '因為愛'
-description: ''
+description: '转载：歌曲《因為愛》的歌词。'
 pubDate: '2008-08-14'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'coz-love'
 titleZh: '因為愛'
 titleEn: 'Because of Love'
+descriptionZh: '转载：歌曲《因為愛》的歌词。'
+descriptionEn: 'A repost of the lyrics to the song "Because of Love".'
 ---
 
 你的手永遠張開   比這世界還要大   但我卻   要離開\

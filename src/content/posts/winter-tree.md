@@ -1,6 +1,6 @@
 ---
 title: '冬 树'
-description: ''
+description: '转载Dimchevski的小桔子摄影作品《冬，树》，附一段关于冬天符号的随想。'
 pubDate: '2008-04-05'
 heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzNEVvekZLSUVlV1dCVEdRUmVQdndwTFZWdzhWV29rU21BPT0.jpg'
 category: 'Repost'
@@ -8,6 +8,8 @@ lang: 'zh'
 translationKey: 'winter-tree'
 titleZh: '冬 树'
 titleEn: 'Winter, Tree'
+descriptionZh: '转载Dimchevski的小桔子摄影作品《冬，树》，附一段关于冬天符号的随想。'
+descriptionEn: 'A repost of Dimchevski''s tangerine photo series "Winter, Tree", with a short musing on winter as a symbol.'
 ---
 
 整个周末我都在思索冬天的表达式，这很容易，冰雪堆积的树，阴冷的天空，低温，雪花，等等。这些只属于冬，让人们认识到冬天的样子，年复一年。尽管每个细节都从未相同，但是他们足够相似，让我们足以区分。

@@ -1,12 +1,14 @@
 ---
 title: 'Product Discussions'
-description: ''
+description: 'Notes on how to run product discussions: separating factual judgments from value judgments and deciding which debates are worth the time.'
 pubDate: '2023-11-01'
 category: 'Things'
 lang: 'en'
 translationKey: 'product-discussions'
 titleZh: '产品讨论'
 titleEn: 'Product Discussions'
+descriptionZh: '一篇关于如何开产品讨论会的笔记：区分事实判断与价值判断，想清楚哪些讨论值得花时间。'
+descriptionEn: 'Notes on how to run product discussions: separating factual judgments from value judgments and deciding which debates are worth the time.'
 ---
 
 Here, we discuss how to hold product strategy and design discussions, or, put more concretely, *how to run a meeting*.
