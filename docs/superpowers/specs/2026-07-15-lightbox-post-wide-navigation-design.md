@@ -28,7 +28,7 @@ All changes live in `src/scripts/image-lightbox.ts`. No markup, CSS, or rehype p
 `openLightbox` builds the browse set fresh at open time instead of reading the surrounding gallery:
 
 - Browse root: the clicked image's `closest('.lang')` container when the post is bilingual, otherwise the `.prose` container. The reader can only click a visible image, so this is always the language they are reading.
-- Browse set: the root's bound images (the bind pass already marks every unlinked `.prose img` with `data-lightbox-bound`), in `querySelectorAll` document order, which matches reading order.
+- Browse set: `img[data-lightbox-bound]` within that root (the bind pass already marks every unlinked `.prose img` with `data-lightbox-bound`), in `querySelectorAll` document order, which matches reading order. Hidden-language images are bound too; they are excluded by the root scoping, not by attribute.
 - `galleryIndex` is the clicked image's position in that set.
 
 Consequences:
@@ -44,8 +44,8 @@ Consequences:
 
 A touch handler on the dialog:
 
-- Single finger only; a second finger cancels the gesture so pinch behavior is untouched.
-- On release, navigate prev/next when the horizontal displacement is at least 48px and clearly dominates the vertical (roughly `|dx| > 1.5 * |dy|`); otherwise do nothing.
+- Single finger only; a second finger cancels the gesture so pinch behavior is untouched. A cancelled gesture suppresses nothing: any click that follows keeps normal tap semantics.
+- On release, navigate when the horizontal displacement is at least 48px and clearly dominates the vertical (roughly `|dx| > 1.5 * |dy|`); otherwise do nothing. Swipe left (finger moves left, dx negative) advances to the next photo; swipe right goes to the previous one, matching the native photo-viewer convention.
 - A completed swipe suppresses the click event that follows `touchend`, so a swipe can never trigger the existing tap-on-backdrop-to-close handler.
 - No drag-follow animation: the image swaps instantly, exactly as with arrows and keys. Drag physics is where library-grade complexity starts and is out of scope.
 
