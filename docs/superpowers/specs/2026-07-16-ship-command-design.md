@@ -42,20 +42,27 @@ message; `--port <n>` overrides the review server port (default 4322, matching p
 3. `git fetch origin`. If origin/main is ahead of or diverged from local main, abort with:
    the count of remote commits and the advice to reconcile in a Claude session (or
    `git pull --rebase` when comfortable). Ship never rewrites history.
-4. Change set: `computeChangeSet(root)` (vs origin/main; includes committed-ahead commits,
-   working-tree edits, and untracked files).
-   - Empty: print "nothing to ship" and exit 0.
-   - Partition into post files (paths under `src/content/posts/`) and everything else.
-     If "everything else" is non-empty, abort listing those paths and naming the fallback
-     (a Claude session). This guarantees ship only ever publishes post content.
-5. Local commits that are already on main but unpushed (committed-ahead state) are allowed
-   only if they also touch only `src/content/posts/`; otherwise the partition above catches
-   them and ship aborts. (The diff vs origin/main sees committed and uncommitted changes
-   identically, so no extra logic is needed; this line documents the behavior.)
+4. Purity check, on the RAW diff, not the filtered change set: collect
+   `git diff --no-renames --name-only -z origin/main` plus untracked files
+   (`git ls-files --others --exclude-standard -z`), with no classification filter. If any
+   path in that union falls outside `src/content/posts/`, abort listing those paths and
+   naming the fallback (a Claude session). This is the guarantee that ship only ever
+   publishes post content. `computeChangeSet` cannot serve here: its `classifyPath` filter
+   drops docs/, scripts/, .github/, CLAUDE.md and similar paths entirely, and rule 5 makes
+   unpushed commits touching such paths a routine state of this repo; `git push` would
+   publish them regardless of any filter, so the purity check must see everything the push
+   would carry.
+5. Change set for review and approval: `computeChangeSet(root)` (vs origin/main). This is
+   the preview-gate view of the same diff; note it deliberately excludes draft posts
+   (nothing renders, nothing to review), so a draft-only edit yields an empty set here.
+   - Empty: print "nothing to ship" and exit 0 (the purity check has already passed, so
+     anything excluded was posts-only, such as draft edits).
 
 ### Step 2: review (build, serve, look)
 
 1. Build: run `npm run build` (production build including Pagefind); abort on failure.
+   The build runs again later inside release-check (check 6); that duplication is the
+   accepted cost of reusing the gates unmodified, do not optimize it away.
 2. Serve `dist/` on the chosen port with a minimal static file server (same behavior as
    preview-posts' internal server: path-safe, index.html resolution, 404 otherwise).
 3. Write the review page via `reviewTargets` + `renderReviewPage` to `.preview/review.html`
@@ -78,8 +85,9 @@ message; `--port <n>` overrides the review server port (default 4322, matching p
    paths only. Default message: `post: update <slug>` for one post (slug via
    `slugForPostFile`), `post: update <slug1>, <slug2>, ...` for several, deduplicated when a
    primary and its sibling both changed. `--message` overrides. The commit body carries the
-   standard Co-Authored-By trailer only when ship is driven by an agent; when the owner runs
-   it directly there is no trailer (plain authored commit).
+   standard Co-Authored-By trailer only when ship is driven by an agent, detected via the
+   `CLAUDECODE` environment variable Claude Code sets in its shell; when the owner runs it
+   directly there is no trailer (plain authored commit).
 2. Push `origin main`.
 3. Watch the GitHub Pages deploy: poll `gh run list --workflow deploy.yml` for the pushed
    SHA until completed (timeout 5 minutes), then print the live URL of each shipped post
