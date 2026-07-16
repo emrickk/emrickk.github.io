@@ -37,15 +37,19 @@ const pinnedHeroPosts = posts
   });
 const fallbackHeroPosts = heroCandidates.filter((post) => !post.data.homeHeroOrder);
 const heroPosts = [...pinnedHeroPosts, ...fallbackHeroPosts].slice(0, 2);
+// Date-only pubDates parse as UTC midnight; pin the display timezone to UTC
+// so local dev renders the same day as the CI build (which runs in UTC).
 const heroDateFormatter = new Intl.DateTimeFormat(DATE_LOCALE, {
   year: 'numeric',
   month: 'short',
   day: '2-digit',
+  timeZone: 'UTC',
 });
 const heroDateFormatterEn = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
+  timeZone: 'UTC',
 });
 const getHeroDateParts = (date: Date) => ({
   zhParts: heroDateFormatter.formatToParts(date),
