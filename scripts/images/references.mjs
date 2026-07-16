@@ -3,7 +3,7 @@ import path from 'node:path'
 const CONVERT_EXT = new Set(['.jpg', '.jpeg', '.png'])
 
 function sanitize(name) {
-  return name.normalize('NFC').replace(/\s+/g, '-').replace(/[^\w.\-]/g, '')
+  return name.normalize('NFC').replace(/\s+/g, '-').replace(/[^\w.-]/g, '')
 }
 
 function outExtFor(ext) {

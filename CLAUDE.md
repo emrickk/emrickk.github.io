@@ -4,7 +4,7 @@ Guidance for AI agents and new contributors working in this repository.
 
 ## What this is
 
-Personal blog "NeVeRtheLeSs" (2005 to present, 318 posts, Chinese with English in progress). Astro 6 + the astro-tone theme. Deploys to GitHub Pages via `.github/workflows/deploy.yml` on every push to `main`; served at https://theneverless.com (DNS on Cloudflare, registration at GoDaddy; anping.us 301-redirects here but will be allowed to expire, so nothing may reference it; images are on https://cdn.theneverless.com).
+Personal blog "NeVeRtheLeSs" (2005 to present, 347 posts, bilingual zh/en). Astro 6 + the astro-tone theme. Deploys to GitHub Pages via `.github/workflows/deploy.yml` on every push to `main`; served at https://theneverless.com (DNS on Cloudflare, registration at GoDaddy; anping.us 301-redirects here but will be allowed to expire, so nothing may reference it; images are on https://cdn.theneverless.com).
 
 ## Commands
 

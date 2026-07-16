@@ -1,5 +1,7 @@
 # Tweets to Notes Implementation Plan
 
+> **Historical note (2026-07-16):** this plan predates the CDN domain migration. Where it says `cdn.anping.us`, the live domain is `https://cdn.theneverless.com`; do not copy CDN URLs from this document.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Import the owner's X/Twitter archive (228 tweets, 2010 to 2026) into a new `/notes` microblog section: importer + verifier in Python, a `notes` content collection, a single-page timeline with nav entry and RSS, media on R2 under `notes/`, and preview-gate awareness, ending in an owner browser review of the real imported notes.

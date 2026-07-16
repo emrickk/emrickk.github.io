@@ -206,11 +206,14 @@ async function save() {
   if (state.saving) return
   state.saving = true
   saveEl.disabled = true
+  // Captured once: keystrokes typed during the round trip must stay dirty,
+  // so savedContent below gets this snapshot, never a re-read of the editor.
+  const content = editorEl.value
   try {
     const { status, body } = await api('/file', {
       method: 'PUT',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ path, content: editorEl.value, baseHash: f.hash }),
+      body: JSON.stringify({ path, content, baseHash: f.hash }),
     })
     if (status === 409) {
       showConflict(path, body)
@@ -221,7 +224,7 @@ async function save() {
       return
     }
     f.hash = body.hash
-    f.savedContent = editorEl.value
+    f.savedContent = content
     hideBanner()
     refreshChanged()
     // HMR usually reloads the post page on its own; this delayed reload is the
@@ -230,7 +233,9 @@ async function save() {
       try {
         previewEl.contentWindow.location.reload()
       } catch {
-        previewEl.src = previewEl.src
+        // Cross-origin fallback: re-setting src reloads the iframe.
+        const src = previewEl.src
+        previewEl.src = src
       }
     }, 600)
   } finally {

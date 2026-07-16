@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node scripts/checkpoint.mjs save session-start --auto session-start --quiet || true",
+            "command": "node scripts/checkpoint.mjs save session-start --auto session-start --quiet || echo 'session-start checkpoint FAILED: the working tree is NOT snapshotted' >&2",
             "timeout": 30
           }
         ]

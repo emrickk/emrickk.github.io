@@ -1,7 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { createServer } from 'node:http'
-import { join } from 'node:path'
 import { makeFixtureRepo, makeFixtureDist, cleanup, run, write } from './test-helpers.mjs'
 import {
   findForbiddenPaths,

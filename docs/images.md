@@ -5,17 +5,17 @@
 1. **Cloudflare account**: create/sign in at dash.cloudflare.com.
 2. **Enable R2** (R2 -> Overview -> add a payment card; the free tier is $0: 10 GB, zero egress).
 3. **Create bucket** named `anping-blog-images`.
-4. **Move anping.us DNS to Cloudflare:** add the site in Cloudflare, then recreate these records, all **DNS only (grey cloud)**:
+4. **Site DNS on Cloudflare:** the `theneverless.com` zone lives in Cloudflare (registration stays at GoDaddy, nameservers point at Cloudflare). The records that serve the site, all **DNS only (grey cloud)**:
 
-   | Type  | Name        | Value               |
-   |-------|-------------|---------------------|
-   | A     | `anping.us` | `185.199.108.153`   |
-   | A     | `anping.us` | `185.199.109.153`   |
-   | A     | `anping.us` | `185.199.110.153`   |
-   | A     | `anping.us` | `185.199.111.153`   |
-   | CNAME | `www`       | `emrickk.github.io` |
+   | Type  | Name               | Value               |
+   |-------|--------------------|---------------------|
+   | A     | `theneverless.com` | `185.199.108.153`   |
+   | A     | `theneverless.com` | `185.199.109.153`   |
+   | A     | `theneverless.com` | `185.199.110.153`   |
+   | A     | `theneverless.com` | `185.199.111.153`   |
+   | CNAME | `www`              | `emrickk.github.io` |
 
-   Then at GoDaddy, change the nameservers to the two Cloudflare nameservers shown in the dashboard. Wait for "Active", confirm https://anping.us still loads.
+   After any DNS change, wait for "Active" and confirm https://theneverless.com still loads.
 5. **Connect the custom domain** to the bucket: R2 -> `anping-blog-images` -> Settings -> Custom Domains -> add `cdn.theneverless.com` (Cloudflare auto-creates the DNS record).
 6. **Create an API token:** R2 -> Manage API Tokens -> Object Read & Write, scoped to `anping-blog-images`. Copy the Account ID, Access Key ID, Secret.
 7. **Local creds:** `cp .env.example .env.local` and fill `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`. Optionally set `NAS_ARCHIVE_PATH` to your mounted SMB share (e.g. `/Volumes/photo/blog-originals`).
