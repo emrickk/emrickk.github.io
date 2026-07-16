@@ -65,10 +65,13 @@ export function mountImageLightbox() {
 
   const openLightbox = (img: HTMLImageElement) => {
     previousFocus = document.activeElement;
-    const galleryRoot = img.closest('ul.image-gallery');
-    gallery = galleryRoot
-      ? [...galleryRoot.querySelectorAll<HTMLImageElement>('img')].filter((i) => !i.closest('a'))
-      : [];
+    // Browse every bound photo in the language body being read. Bilingual posts
+    // render both bodies into .prose; only the visible one can be clicked, so
+    // scoping to the clicked image's .lang container avoids double-counting.
+    const browseRoot = img.closest('.lang') ?? img.closest('.prose');
+    gallery = browseRoot
+      ? [...browseRoot.querySelectorAll<HTMLImageElement>('img[data-lightbox-bound]')]
+      : [img];
     galleryIndex = Math.max(0, gallery.indexOf(img));
     showImage(img);
     dialog.showModal();
