@@ -46,11 +46,15 @@ so they are unit-testable without a server. The middleware is a thin adapter.
   Returns the post list: for each primary post (`src/content/posts/*.md`, excluding `*.en.md` and
   `*.zh.md` siblings), the repo-relative path, slug, `title`, `titleZh`, `titleEn`, `pubDate`,
   `category`, `lang`, `draft`, and the sibling path when a `<slug>.en.md` or `<slug>.zh.md`
-  translation file exists. Frontmatter is read with a minimal YAML-frontmatter parse (string and
-  boolean scalar fields only, which is all the schema uses); no new dependency.
+  translation file exists. Listing globs `*.md` and `*.mdx`. Frontmatter is read with a minimal
+  YAML-frontmatter parse (string and boolean scalars cover every field this API returns); no new
+  dependency.
   Also returns `changed`: the set of repo-relative paths that differ from `origin/main`, computed
   by importing `computeChangeSet` from `scripts/preview-posts.mjs` (already exported), filtered to
-  `src/content/posts/`. Falls back to an empty set if git or `origin/main` is unavailable.
+  `src/content/posts/`. Note `computeChangeSet` throws on git errors by design, so the editor API
+  wraps the call in try/catch and falls back to an empty set when git or `origin/main` is
+  unavailable. It also filters out draft posts, so an edited draft never appears in the "Changed"
+  group; that matches the review-gate semantics it was built for and is intended, not a bug.
 
 - `GET /_edit/api/file?path=<repo-relative>`
   Returns `{ path, content, hash }` where `hash` is the SHA-256 of the raw file bytes.
@@ -89,9 +93,10 @@ Single page, three regions:
   goes stale. Frontmatter or schema mistakes surface as Astro's own dev error overlay inside the
   iframe, which is accurate feedback.
 
-Conflict handling in the UI: a 409 response shows a banner naming the file, with two actions,
-"Reload from disk" (replaces editor content, keeps a copy of your text on the clipboard is NOT
-promised; it simply warns first) and "Overwrite" (re-sends with the fresh hash). No merge UI.
+Conflict handling in the UI: a 409 response shows a banner naming the file, with two actions.
+"Reload from disk" warns that it will replace your editor text, then loads the current file
+content (no copy of the discarded text is kept). "Overwrite" re-sends the save with the fresh
+hash. No merge UI.
 
 Styling is self-contained in the editor page and does not import site CSS.
 
