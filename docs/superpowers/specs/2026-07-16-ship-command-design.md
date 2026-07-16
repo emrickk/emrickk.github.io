@@ -27,8 +27,11 @@ changed posts).
 
 ## Constraints
 
-- Rule 5: pushing to main is a human decision. The owner running ship and answering `y` is
-  that decision; ship never runs unattended and aborts on anything but an explicit `y`.
+- Rule 5: pushing to main is a human decision. In interactive mode that decision is the
+  explicit `y` on stdin; in `--yes` mode it is an explicit owner approval message in the
+  invoking conversation, as governed by the ship-posts skill. Ship never runs unattended,
+  and in both modes the approval binds to the exact reviewed content via the digest check
+  below.
 - The preview gate's meaning is preserved: the owner reviews the real production build in a
   browser before approving, exactly like `npm run preview-posts`.
 - Reuse the existing safety tooling as libraries; do not fork their logic. Everything needed
@@ -45,11 +48,18 @@ changed posts).
 `npm run ship` runs `node scripts/ship.mjs`. Flags: `--message <msg>` overrides the commit
 message; `--port <n>` overrides the review server port (default 4322, matching preview-posts);
 `--no-open` skips opening the browser (prints the URL instead); `--preflight` runs step 1
-only and exits (agent sessions use it to fail fast before involving the owner); `--yes`
-skips step 2 entirely (no build-and-serve, no stdin prompt) and treats the approval as
-already given, running steps 1, 3, and 4 straight through. `--yes` exists solely for the
-ship-posts skill flow, where the owner's approval is a chat message; the policy guard lives
-in the skill text, not in code.
+only, prints the change set and its digest, and exits (agent sessions use it to fail fast
+before involving the owner); `--yes --digest <d>` skips step 2 entirely (no build-and-serve,
+no stdin prompt) and treats the approval as already given for the reviewed state identified
+by `<d>`, running steps 1, 3, and 4 straight through. `--yes` without `--digest` is a usage
+error. `--yes` exists solely for the ship-posts skill flow, where the owner's approval is a
+chat message; the policy guard for obtaining that approval lives in the skill text, and the
+digest binds it to content in code.
+
+**The digest**: the first 12 hex characters of a sha256 over the sorted
+`path:content-hash` entries of `hashChangeSet(root, changeSet)`. Identical trees produce
+identical digests; any post edit, addition, or deletion after review changes it. It is a
+freshness token, not a security boundary.
 
 ### Step 1: preflight (abort early, change nothing)
 
@@ -76,6 +86,7 @@ in the skill text, not in code.
    (nothing renders, nothing to review), so a draft-only edit yields an empty set here.
    - Empty: print "nothing to ship" and exit 0 (the purity check has already passed, so
      anything excluded was posts-only, such as draft edits).
+6. Print the change-set file list and its digest. In `--preflight` mode, exit 0 here.
 
 ### Step 2: review (build, serve, look)
 
@@ -87,16 +98,26 @@ in the skill text, not in code.
 3. Write the review page via `reviewTargets` + `renderReviewPage` to `.preview/review.html`
    and open it (macOS `open`), unless `--no-open`.
 4. Prompt on stdin: `approve these N file(s) and ship? [y/N]` after printing the exact file
-   list. Any answer except `y` stops the server and exits 0 with nothing recorded.
+   list and digest. Any answer except `y` stops the server and exits 0 with nothing
+   recorded.
 
 ### Step 3: gate
 
-1. On `y`: record the approval, `writeManifest(root, hashChangeSet(root, changeSet),
-   { baseRef })`, identical to `npm run preview-posts -- --approve`.
-2. Stop the review server, then run `runChecks(root)` (quick mode) and print the per-check
-   table like the release-check CLI does. If `verdict(results)` is not GO, print the failing
-   checks and abort. Nothing has been committed at this point; the recorded approval is
-   harmless (it voids itself on the next file change).
+1. Freshness check, both modes: recompute the change set and digest from the tree now.
+   Interactive mode compares against the digest displayed at the prompt; `--yes` mode
+   compares against the `--digest` argument. On mismatch, abort with a plain message (the
+   tree changed since the review, likely another session; re-run the flow) and record
+   nothing. This closes the window in which a concurrent session's post edit could ride
+   along self-approved and unseen, and it is the same rule the preview-posts skill states
+   for approvals ("stop if the list contains changes the owner has not seen"), enforced in
+   code.
+2. Record the approval, `writeManifest(root, hashChangeSet(root, changeSet), { baseRef })`,
+   identical to `npm run preview-posts -- --approve`.
+3. Stop the review server if one is running (there is none in `--yes` mode), then run
+   `runChecks(root)` (quick mode) and print the per-check table like the release-check CLI
+   does. If `verdict(results)` is not GO, print the failing checks and abort. Nothing has
+   been committed at this point; the recorded approval is harmless (it voids itself on the
+   next file change).
 
 ### Step 4: ship
 
@@ -123,14 +144,19 @@ a runbook for the session, not new machinery:
 
 1. Run `npm run ship -- --preflight`. If it aborts (wrong branch, origin moved, non-post
    changes), surface the message and fall back to the normal session workflow; do not
-   improvise around it.
+   improvise around it. On success, note the printed file list and digest.
 2. Run `npm run preview-posts` on an explicit free port and hand the owner the review link
-   listing their changed posts (the production build, not the dev render).
+   listing their changed posts (the production build, not the dev render), together with
+   the file list from step 1.
 3. Wait for the owner's explicit approval in chat ("approved", "push", "ship it") AFTER
    they have the link. The initial "push my edits" request is the request, not the
    approval; never treat it as both.
-4. Stop the preview server, then run `npm run ship -- --yes`, which records the approval,
-   runs release-check, commits the post files, pushes, and watches the deploy.
+4. Stop the preview server, then run `npm run ship -- --yes --digest <d>` with the digest
+   from step 1. Ship re-verifies the tree still matches and aborts otherwise (for example,
+   another session edited a post meanwhile); on a digest abort, start over from step 1
+   rather than retrying with a fresh digest the owner has not reviewed. On success it
+   records the approval, runs release-check, commits the post files, pushes, and watches
+   the deploy.
 5. Report the per-check results and the live post URLs.
 
 The skill also states the hard rule for agents: `--yes` may only ever follow an owner
@@ -157,6 +183,9 @@ the `test:safety` suite, covering the pure decision logic:
   `--message` override.
 - Preflight: non-main branch aborts; behind origin/main aborts; empty change set is a clean
   exit; `--preflight` stops after step 1 in both outcomes.
+- Digest: stable across recomputation on an unchanged tree; changes when any post file
+  changes; `--yes` with a stale digest aborts before writing the approval manifest;
+  `--yes` without `--digest` is a usage error.
 
 The interactive path (serve, prompt, push) is exercised manually; the components it chains
 (preview approval hashing, release checks) already have their own suites.
@@ -171,3 +200,6 @@ The interactive path (serve, prompt, push) is exercised manually; the components
   preview-gate entries.
 - The ship-posts skill file itself (`.claude/skills/ship-posts/SKILL.md`) doubles as the
   agent-facing documentation.
+- One cross-reference line in `.claude/skills/preview-posts/SKILL.md` noting that
+  `npm run ship` records the same manifest-based approval, so readers know there are two
+  writers of `.preview/manifest.json`.
