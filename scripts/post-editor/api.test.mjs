@@ -6,7 +6,7 @@ import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'nod
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { createHash } from 'node:crypto'
-import { listPosts, parseFrontmatter, sha256, validatePostPath } from './api.mjs'
+import { listPosts, parseFrontmatter, readPostFile, sha256, validatePostPath, writePostFile } from './api.mjs'
 
 test('validatePostPath accepts post markdown paths', () => {
   assert.equal(validatePostPath('src/content/posts/foo.md'), true)
@@ -89,6 +89,79 @@ test('listPosts pairs siblings, skips them as primaries, sorts newest first', ()
     assert.equal(beta.siblingPath, null)
     assert.equal(beta.draft, true)
     assert.equal(beta.lang, 'zh')
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('readPostFile returns content and hash', () => {
+  const root = makePostsFixture()
+  try {
+    const res = readPostFile(root, 'src/content/posts/beta.md')
+    assert.equal(res.status, 200)
+    assert.equal(res.body.content, readFileSync(join(root, 'src/content/posts/beta.md'), 'utf8'))
+    assert.equal(res.body.hash, sha256(res.body.content))
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('readPostFile rejects invalid and missing paths', () => {
+  const root = makePostsFixture()
+  try {
+    assert.equal(readPostFile(root, '../outside.md').status, 400)
+    assert.equal(readPostFile(root, 'src/content/posts/nope.md').status, 404)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('writePostFile writes when baseHash matches', () => {
+  const root = makePostsFixture()
+  try {
+    const abs = join(root, 'src/content/posts/beta.md')
+    const before = readFileSync(abs, 'utf8')
+    const res = writePostFile(root, {
+      path: 'src/content/posts/beta.md',
+      content: before + 'more\n',
+      baseHash: sha256(before),
+    })
+    assert.equal(res.status, 200)
+    assert.equal(readFileSync(abs, 'utf8'), before + 'more\n')
+    assert.equal(res.body.hash, sha256(before + 'more\n'))
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('writePostFile returns 409 on stale hash and does not write', () => {
+  const root = makePostsFixture()
+  try {
+    const abs = join(root, 'src/content/posts/beta.md')
+    const onDisk = readFileSync(abs, 'utf8')
+    const res = writePostFile(root, {
+      path: 'src/content/posts/beta.md',
+      content: 'my edit\n',
+      baseHash: sha256('what I loaded earlier\n'),
+    })
+    assert.equal(res.status, 409)
+    assert.equal(res.body.currentContent, onDisk)
+    assert.equal(res.body.currentHash, sha256(onDisk))
+    assert.equal(readFileSync(abs, 'utf8'), onDisk)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('writePostFile validates inputs', () => {
+  const root = makePostsFixture()
+  try {
+    assert.equal(writePostFile(root, { path: '/etc/x.md', content: '', baseHash: 'h' }).status, 400)
+    assert.equal(writePostFile(root, { path: 'src/content/posts/beta.md' }).status, 400)
+    assert.equal(
+      writePostFile(root, { path: 'src/content/posts/nope.md', content: 'x', baseHash: 'h' }).status,
+      404,
+    )
   } finally {
     rmSync(root, { recursive: true, force: true })
   }

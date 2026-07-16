@@ -74,3 +74,34 @@ export function listPosts(root) {
   }
   return posts.sort((a, b) => (a.pubDate < b.pubDate ? 1 : a.pubDate > b.pubDate ? -1 : 0))
 }
+
+export function readPostFile(root, path) {
+  if (!validatePostPath(path)) return { status: 400, body: { error: 'invalid path' } }
+  const abs = join(root, path)
+  if (!existsSync(abs)) return { status: 404, body: { error: 'file not found' } }
+  const content = readFileSync(abs, 'utf8')
+  return { status: 200, body: { path, content, hash: sha256(content) } }
+}
+
+// The editor never creates files, so the target must exist. A stale baseHash
+// means another session wrote the file after this one loaded it; return the
+// current state so the UI can offer reload or overwrite instead of silently
+// clobbering (an overwrite is simply a second PUT with the fresh hash).
+export function writePostFile(root, { path, content, baseHash } = {}) {
+  if (!validatePostPath(path)) return { status: 400, body: { error: 'invalid path' } }
+  if (typeof content !== 'string' || typeof baseHash !== 'string') {
+    return { status: 400, body: { error: 'content and baseHash are required' } }
+  }
+  const abs = join(root, path)
+  if (!existsSync(abs)) return { status: 404, body: { error: 'file not found' } }
+  const current = readFileSync(abs, 'utf8')
+  const currentHash = sha256(current)
+  if (currentHash !== baseHash) {
+    return {
+      status: 409,
+      body: { error: 'file changed on disk', currentContent: current, currentHash },
+    }
+  }
+  writeFileSync(abs, content)
+  return { status: 200, body: { path, hash: sha256(content) } }
+}
