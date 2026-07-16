@@ -23,3 +23,54 @@ export function validatePostPath(path) {
 export function sha256(content) {
   return createHash('sha256').update(content).digest('hex')
 }
+
+// Minimal frontmatter scalars: one `key: value` per line, optional single or
+// double quotes. Covers every field this API returns; the full zod schema
+// also has numbers and coerced dates, which the editor does not need.
+export function parseFrontmatter(raw) {
+  const block = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+  const data = {}
+  if (!block) return data
+  for (const line of block[1].split(/\r?\n/)) {
+    const kv = line.match(/^(\w+):\s*(.*)$/)
+    if (!kv) continue
+    let value = kv[2].trim()
+    const quoted = value.match(/^(['"])([\s\S]*)\1$/)
+    if (quoted) {
+      value = quoted[1] === '"' ? quoted[2].replace(/\\"/g, '"') : quoted[2].replace(/''/g, "'")
+    }
+    data[kv[1]] = value
+  }
+  return data
+}
+
+// Primary posts with the fields the sidebar needs. Siblings (*.en.md /
+// *.zh.md) are attached to their primary, never listed on their own. Posts
+// are flat files in src/content/posts today; this listing relies on that.
+// pubDate strings are ISO dates, so lexicographic sort is date sort.
+export function listPosts(root) {
+  const files = readdirSync(join(root, POSTS_DIR)).filter((f) => /\.(md|mdx)$/.test(f))
+  const siblings = new Set(files.filter((f) => /\.(en|zh)\.(md|mdx)$/.test(f)))
+  const posts = []
+  for (const file of files) {
+    if (siblings.has(file)) continue
+    const slug = slugForPostFile(file)
+    const fm = parseFrontmatter(readFileSync(join(root, POSTS_DIR, file), 'utf8'))
+    const sibling = ['en.md', 'zh.md', 'en.mdx', 'zh.mdx']
+      .map((ext) => `${slug}.${ext}`)
+      .find((f) => siblings.has(f))
+    posts.push({
+      slug,
+      path: `${POSTS_DIR}/${file}`,
+      siblingPath: sibling ? `${POSTS_DIR}/${sibling}` : null,
+      title: fm.title ?? slug,
+      titleZh: fm.titleZh ?? null,
+      titleEn: fm.titleEn ?? null,
+      pubDate: fm.pubDate ?? '',
+      category: fm.category ?? null,
+      lang: fm.lang ?? 'zh',
+      draft: fm.draft === 'true',
+    })
+  }
+  return posts.sort((a, b) => (a.pubDate < b.pubDate ? 1 : a.pubDate > b.pubDate ? -1 : 0))
+}
