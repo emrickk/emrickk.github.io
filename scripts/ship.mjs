@@ -258,7 +258,7 @@ export async function main(values) {
         await rl.question(`\napprove these ${pre.changeSet.length} file(s) and ship? [y/N] `)
       ).trim()
       rl.close()
-      if (answer !== 'y') {
+      if (answer.toLowerCase() !== 'y') {
         console.log('not approved; nothing recorded')
         return 0
       }

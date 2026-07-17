@@ -32,7 +32,8 @@ text is not kept anywhere), "Overwrite" saves your text over the newer file.
 Two ways, one pipeline:
 
 - **Terminal**: `npm run ship`. It verifies only post files changed, builds the
-  production site and opens the review page, asks one `approve and ship? [y/N]`,
+  production site and opens the review page, asks one `approve these N file(s)
+  and ship? [y/N]`,
   then runs the release checklist, commits your post files, pushes, and watches
   the deploy until your posts are live.
 - **Conversation**: open any Claude Code session and say "push my edits". The
