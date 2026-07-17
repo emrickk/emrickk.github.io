@@ -1,7 +1,7 @@
 ---
-translationKey: 'highway-1-all-the-way-home'
-lang: 'zh'
-title: '一号公路，然后回家'
+title: 一号公路
+lang: zh
+translationKey: highway-1-all-the-way-home
 ---
 
 2017年春天，一号公路断了。大苏尔的Pfeiffer Canyon桥二月被判了死刑，三月拆除，那一年剩下的日子里，这条全世界最有名的海岸公路就是过不去的。同一个春天，太平洋另一边上映了电影《喜欢你》，片尾曲是陈绮贞唱的，韩寒写的词：

@@ -8,7 +8,7 @@ lang: 'en'
 translationKey: 'highway-1-all-the-way-home'
 titleZh: '一号公路'
 titleEn: 'Highway 1, All the Way Home'
-descriptionZh: '一月还不是一号公路最好的季节，却是加州海岸偷偷藏起来的春天：雨季过后，山坡绿成一种活不到六月的绿，我们开车来刚修好的一号公路'
+descriptionZh: '趁着一号公路难得不断，我们偷偷去了一次'
 descriptionEn: 'A song from 2017 asked: the bridge on Highway 1 is down, do we still go? This January the coast reopened end to end for the first time in three years. We went, and then we drove home, where the pumpkins were already out.'
 ---
 
