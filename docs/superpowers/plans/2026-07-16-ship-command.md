@@ -48,7 +48,7 @@ Create `scripts/ship.test.mjs`:
 // is never touched.
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { changeSetDigest, commitMessageFor, partitionPurity } from './ship.mjs'
@@ -131,8 +131,8 @@ const USAGE =
 
 export function partitionPurity(paths) {
   return {
-    posts: paths.filter((p) => p.startsWith(POSTS_PREFIX)),
-    other: paths.filter((p) => !p.startsWith(POSTS_PREFIX)),
+    posts: paths.filter((p) => p.startsWith(POSTS_PREFIX)).sort(),
+    other: paths.filter((p) => !p.startsWith(POSTS_PREFIX)).sort(),
   }
 }
 
@@ -176,7 +176,7 @@ Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" -- scripts/ship.mjs scri
 
 - [ ] **Step 1: Write the failing tests**
 
-Append to `scripts/ship.test.mjs` (imports go at the top: add `originStatus, rawDiffPaths` to the ship.mjs import, and add `import { cleanup, makeFixtureRepo, run, write } from '../test-helpers.mjs'` wait, ship.test.mjs lives in scripts/, so the correct path is `./test-helpers.mjs`):
+Append to `scripts/ship.test.mjs` (imports go at the top: add `originStatus, rawDiffPaths` to the ship.mjs import, plus `import { cleanup, makeFixtureRepo, run, write } from './test-helpers.mjs'`; ship.test.mjs lives in scripts/, so the helper path is `./test-helpers.mjs`):
 
 ```js
 import { originStatus, rawDiffPaths } from './ship.mjs'
@@ -532,6 +532,8 @@ Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" -- scripts/ship.mjs scri
 - [ ] **Step 1: Write the failing CLI-level tests**
 
 Append to `scripts/ship.test.mjs`. These run the CLI as a child process against fixtures; they exercise flag handling, the preflight exit, and the stale-digest abort (which must happen before the approval manifest is written). Add to the top imports: `import { execFileSync } from 'node:child_process'` and `import { fileURLToPath } from 'node:url'`.
+
+Deliberate omission: the `--message` override is not CLI-tested because exercising it end to end requires a real push; the message parameter itself is covered by the Task 4 `commitAndPush` tests, and the flag is a one-expression fallback in `main`.
 
 ```js
 const SHIP = fileURLToPath(new URL('./ship.mjs', import.meta.url))
