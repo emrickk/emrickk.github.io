@@ -1,6 +1,6 @@
 ---
 title: '优胜美地夏日'
-description: '六月的优胜美地：树很绿，太阳不烈，停车场不挤，到处是刚放暑假的孩子。'
+description: '六月的优胜美地刚刚好。树很绿，太阳不烈，停车场不挤，到处是刚放暑假的孩子。'
 pubDate: '2026-06-14'
 heroImage: '../../assets/hero/2026/07/yosemite-cover.webp'
 category: 'Journal'
@@ -8,11 +8,11 @@ lang: 'zh'
 translationKey: 'yosemite-falls'
 titleZh: '优胜美地夏日'
 titleEn: 'Yosemite on a summer day'
-descriptionZh: '六月的优胜美地：树很绿，太阳不烈，停车场不挤，到处是刚放暑假的孩子。'
+descriptionZh: '六月的优胜美地树很绿，太阳不烈，停车场不挤，我心中的好公园。'
 descriptionEn: 'Yosemite on a Sunday in June: green trees, gentle sun, a parking lot with room left, kids just out of school.'
 ---
 
-六月上旬的一个星期天，开车进了优胜美地的山谷。高处的融雪还在下来，瀑布喂得很饱，云不少，光很好。
+六月上旬的一个星期天，我们决定开进优胜美地的山谷。高处的融雪还在下来，瀑布喂得很饱，云不少，光很好。
 
 ![停车场上方的优胜美地瀑布](https://cdn.theneverless.com/2026/07/yosemite-falls-parking-lot.webp)
 
