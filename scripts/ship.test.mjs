@@ -2,9 +2,11 @@
 // is never touched.
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
+import { execFileSync } from 'node:child_process'
 import { existsSync, mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import {
   changeSetDigest,
   commitAndPush,
@@ -198,6 +200,71 @@ test('commitAndPush adds the agent trailer when asked', () => {
     write(root, 'src/content/posts/new.md', POST_BODY)
     commitAndPush(root, ['src/content/posts/new.md'], { message: 'post: update new', trailer: true })
     assert.match(run(root, ['log', '-1', '--format=%B']), /Co-Authored-By: Claude Fable 5/)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+const SHIP = fileURLToPath(new URL('./ship.mjs', import.meta.url))
+
+function runShip(root, args) {
+  try {
+    const stdout = execFileSync('node', [SHIP, ...args], { cwd: root, encoding: 'utf8' })
+    return { code: 0, stdout, stderr: '' }
+  } catch (err) {
+    return { code: err.status, stdout: String(err.stdout || ''), stderr: String(err.stderr || '') }
+  }
+}
+
+test('cli: --yes without --digest is a usage error', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const res = runShip(fx.root, ['--yes'])
+    assert.equal(res.code, 1)
+    assert.match(res.stderr, /--yes requires --digest/)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('cli: --preflight prints the change set and digest, writes no manifest', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    write(root, 'src/content/posts/new.md', POST_BODY)
+    const res = runShip(root, ['--preflight'])
+    assert.equal(res.code, 0)
+    assert.match(res.stdout, /src\/content\/posts\/new\.md/)
+    assert.match(res.stdout, /changeset digest: [0-9a-f]{12}/)
+    assert.equal(existsSync(join(root, '.preview', 'manifest.json')), false)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('cli: --yes with a stale digest aborts before writing the manifest', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    write(root, 'src/content/posts/new.md', POST_BODY)
+    const res = runShip(root, ['--yes', '--digest', '000000000000'])
+    assert.equal(res.code, 1)
+    assert.match(res.stderr, /tree changed since the review/)
+    assert.equal(existsSync(join(root, '.preview', 'manifest.json')), false)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('cli: --preflight aborts with exit 1 on mixed changes', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    write(root, 'src/content/posts/new.md', POST_BODY)
+    write(root, 'docs/notes.md', 'not a post\n')
+    const res = runShip(root, ['--preflight'])
+    assert.equal(res.code, 1)
+    assert.match(res.stderr, /docs\/notes\.md/)
   } finally {
     cleanupWithOrigin(fx)
   }

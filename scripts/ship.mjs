@@ -134,3 +134,154 @@ export function commitAndPush(
   if (push) git(['push', '-q', 'origin', 'main'], { cwd: root })
   return sha
 }
+
+async function watchDeploy(root, sha, slugs) {
+  const deadline = Date.now() + 5 * 60 * 1000
+  while (Date.now() < deadline) {
+    let runs
+    try {
+      runs = JSON.parse(
+        execFileSync(
+          'gh',
+          ['run', 'list', '--workflow', 'deploy.yml', '--limit', '1', '--json', 'status,conclusion,headSha'],
+          { cwd: root, encoding: 'utf8' },
+        ),
+      )
+    } catch {
+      console.log('gh unavailable; watch the deploy at ' + ACTIONS_URL)
+      return
+    }
+    const run = runs[0]
+    if (run && run.headSha === sha && run.status === 'completed') {
+      if (run.conclusion === 'success') {
+        console.log('deploy complete:')
+        for (const slug of slugs) console.log(`  https://theneverless.com/posts/${slug}/`)
+      } else {
+        console.log(`deploy finished with conclusion ${run.conclusion}; inspect ${ACTIONS_URL}`)
+      }
+      return
+    }
+    await new Promise((resolve) => setTimeout(resolve, 10000))
+  }
+  console.log('deploy watch timed out after 5 minutes; check ' + ACTIONS_URL)
+}
+
+export async function main(values) {
+  const root = git(['rev-parse', '--show-toplevel'])
+  if (values.yes && !values.digest) {
+    console.error('--yes requires --digest <d> from a prior --preflight run')
+    console.error(USAGE)
+    return 1
+  }
+  save(root, { trigger: 'ship', quiet: true })
+  const pre = preflight(root)
+  if (pre.status === 'abort') {
+    console.error(pre.detail)
+    return 1
+  }
+  if (pre.status === 'empty') {
+    console.log(pre.detail)
+    return 0
+  }
+  console.log(`post change(s) vs ${pre.baseRef} (${pre.changeSet.length}):`)
+  for (const p of pre.changeSet) console.log('  ' + p)
+  console.log(`changeset digest: ${pre.digest}`)
+  if (values.preflight) return 0
+
+  let server = null
+  try {
+    if (!values.yes) {
+      // The build also runs inside release-check later; the duplication is
+      // the accepted cost of reusing the gates unmodified.
+      console.log('\nbuilding production output...')
+      const build = spawnSync('npm', ['run', 'build'], { cwd: root, stdio: 'inherit' })
+      if (build.status !== 0) {
+        console.error('build failed; fix it before shipping')
+        return 1
+      }
+      const reviewFile = join(root, '.preview', 'review.html')
+      mkdirSync(join(root, '.preview'), { recursive: true })
+      writeFileSync(
+        reviewFile,
+        renderReviewPage(reviewTargets(root, pre.changeSet), { host: 'localhost', port: values.port }),
+      )
+      server = spawn('npx', ['astro', 'preview', '--port', values.port], {
+        cwd: root,
+        stdio: ['ignore', 'ignore', 'inherit'],
+      })
+      console.log(`\nreview page: ${reviewFile}`)
+      console.log(`server: http://localhost:${values.port}/`)
+      if (!values['no-open']) spawnSync('open', [reviewFile])
+      const rl = createInterface({ input: process.stdin, output: process.stdout })
+      const answer = (
+        await rl.question(`\napprove these ${pre.changeSet.length} file(s) and ship? [y/N] `)
+      ).trim()
+      rl.close()
+      if (answer !== 'y') {
+        console.log('not approved; nothing recorded')
+        return 0
+      }
+    }
+
+    // Freshness check, both modes: the approval binds to exactly the
+    // reviewed content. A concurrent session's post edit (or any new
+    // non-post change) landing after the review aborts here.
+    const approved = values.yes ? values.digest : pre.digest
+    const now = preflight(root, { fetch: false })
+    if (now.status !== 'ok' || now.digest !== approved) {
+      console.error(
+        'the tree changed since the review (another session?); nothing recorded, start over',
+      )
+      return 1
+    }
+    writeManifest(root, hashChangeSet(root, now.changeSet), { baseRef: now.baseRef })
+    console.log('approval recorded')
+    if (server) {
+      server.kill()
+      server = null
+    }
+
+    console.log('\nrunning release checks...')
+    const results = await runChecks(root)
+    const summary = verdict(results)
+    console.log('\n' + summary)
+    if (!summary.startsWith('VERDICT: GO')) return 1
+
+    const sha = commitAndPush(root, now.changeSet, {
+      message: values.message || commitMessageFor(now.changeSet),
+    })
+    console.log(`pushed ${sha.slice(0, 7)} to origin/main`)
+    await watchDeploy(root, sha, [...new Set(now.changeSet.map((p) => slugForPostFile(p)))])
+    return 0
+  } finally {
+    if (server) server.kill()
+  }
+}
+
+// CLI entry (pathToFileURL handles spaces in the repo path)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  let values
+  try {
+    ({ values } = parseArgs({
+      options: {
+        message: { type: 'string' },
+        port: { type: 'string', default: '4322' },
+        'no-open': { type: 'boolean', default: false },
+        preflight: { type: 'boolean', default: false },
+        yes: { type: 'boolean', default: false },
+        digest: { type: 'string' },
+      },
+    }))
+  } catch (err) {
+    console.error(err.message)
+    console.error(USAGE)
+    process.exit(1)
+  }
+  main(values).then(
+    (code) => process.exit(code),
+    (err) => {
+      console.error(err.message)
+      process.exit(1)
+    },
+  )
+}
