@@ -27,6 +27,24 @@ it, the save returns a conflict banner instead of overwriting: "Reload from
 disk" replaces your editor text with the file on disk (it warns first; your
 text is not kept anywhere), "Overwrite" saves your text over the newer file.
 
+## Shipping your edits
+
+Two ways, one pipeline:
+
+- **Terminal**: `npm run ship`. It verifies only post files changed, builds the
+  production site and opens the review page, asks one `approve and ship? [y/N]`,
+  then runs the release checklist, commits your post files, pushes, and watches
+  the deploy until your posts are live.
+- **Conversation**: open any Claude Code session and say "push my edits". The
+  ship-posts skill walks the same gates: you get the production review link,
+  you say "approved" (or "push"), and it ships.
+
+Either way the approval is bound to exactly the content you reviewed: if
+anything changes in between (say another session edits a post), ship aborts
+instead of publishing something unseen. Manual fallback, should you ever need
+it: `npm run preview-posts`, then `npm run preview-posts -- --approve`, then
+`npm run release-check`, then commit the post files and push.
+
 ## Interaction with the preview gate
 
 Saving a post changes its content hash, which invalidates any preview-posts

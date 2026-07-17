@@ -20,6 +20,7 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 343 posts, bilingual zh/en). Astr
 | `npm run test:editor` | Post editor API test suite (`node:test`) |
 | `npm run checkpoint` | Working-tree snapshots: `save` / `list` / `diff` / `restore` (see Safety) |
 | `npm run release-check` | Pre-push checklist, `-- --full` adds CDN + link verification (see Safety) |
+| `npm run ship` | One-command publish for post edits: review, approve, release-check, commit, push (see Safety) |
 | `npm run test:safety` | Test suite for the three safety CLIs |
 
 ## Architecture
@@ -36,6 +37,7 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 343 posts, bilingual zh/en). Astr
 - **Checkpoints** (`npm run checkpoint`, skill: `.claude/skills/checkpoint/`): file-level snapshots of the working tree in hidden local refs. Auto-saved at session start (hook in `.claude/settings.json`) and by every release check. Restore before push mistakes become deploy mistakes.
 - **Release checklist** (`npm run release-check`, skill: `.claude/skills/release-check/`): required before any push to `main`. Ends in GO / NO-GO; pushing remains a human decision (rule 5).
 - **Post preview gate** (`npm run preview-posts`, skill: `.claude/skills/preview-posts/`): the owner reviews every changed post in the browser against the production build; approval is hash-keyed in git-ignored `.preview/` and release-check check 12 is NO-GO when preview-relevant files changed without it.
+- **Ship** (`npm run ship`, skill: `.claude/skills/ship-posts/`): one-command publish for changes that touch only `src/content/posts/`; chains checkpoint, preview review, approval, release-check, commit, and push with the approval digest-bound to the reviewed content. Anything beyond post files still goes through the full manual flow.
 - **Post-deploy rollback**: `git revert` the bad commit(s) on `main` and push; the Pages workflow redeploys the previous good state.
 
 ## Project status (last updated 2026-07-14)
