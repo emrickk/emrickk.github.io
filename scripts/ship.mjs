@@ -116,3 +116,21 @@ export function preflight(root, { fetch = true } = {}) {
   }
   return { status: 'ok', baseRef, changeSet, digest: changeSetDigest(hashChangeSet(root, changeSet)) }
 }
+
+// The only git mutations in ship: one explicit-path commit and one push.
+// The trailer marks agent-driven runs (CLAUDECODE is set in Claude Code's
+// shell); owner-run ships produce a plain authored commit.
+export function commitAndPush(
+  root,
+  changeSet,
+  { message, trailer = Boolean(process.env.CLAUDECODE), push = true } = {},
+) {
+  const body = trailer
+    ? `${message}\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>`
+    : message
+  git(['add', '--', ...changeSet], { cwd: root })
+  git(['commit', '-q', '-m', body, '--', ...changeSet], { cwd: root })
+  const sha = git(['rev-parse', 'HEAD'], { cwd: root })
+  if (push) git(['push', '-q', 'origin', 'main'], { cwd: root })
+  return sha
+}

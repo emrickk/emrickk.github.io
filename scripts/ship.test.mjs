@@ -7,6 +7,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import {
   changeSetDigest,
+  commitAndPush,
   commitMessageFor,
   originStatus,
   partitionPurity,
@@ -164,6 +165,39 @@ test('preflight returns empty on a clean tree and ok with digest on post changes
     assert.equal(res.status, 'ok')
     assert.deepEqual(res.changeSet, ['src/content/posts/new.md'])
     assert.match(res.digest, /^[0-9a-f]{12}$/)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('commitAndPush commits exactly the given paths and pushes to origin', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root, bare } = fx
+    write(root, 'src/content/posts/new.md', POST_BODY)
+    write(root, 'src/content/posts/other.md', POST_BODY)
+    const sha = commitAndPush(root, ['src/content/posts/new.md'], {
+      message: 'post: update new',
+      trailer: false,
+    })
+    assert.equal(run(bare, ['rev-parse', 'main']), sha)
+    const committed = run(root, ['show', '--name-only', '--format=', 'HEAD']).split('\n').filter(Boolean)
+    assert.deepEqual(committed, ['src/content/posts/new.md'])
+    const status = run(root, ['status', '--porcelain'])
+    assert.match(status, /other\.md/)
+    assert.doesNotMatch(run(root, ['log', '-1', '--format=%B']), /Co-Authored-By/)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('commitAndPush adds the agent trailer when asked', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    write(root, 'src/content/posts/new.md', POST_BODY)
+    commitAndPush(root, ['src/content/posts/new.md'], { message: 'post: update new', trailer: true })
+    assert.match(run(root, ['log', '-1', '--format=%B']), /Co-Authored-By: Claude Fable 5/)
   } finally {
     cleanupWithOrigin(fx)
   }
