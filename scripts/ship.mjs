@@ -49,3 +49,28 @@ export function commitMessageFor(changeSet) {
   const slugs = [...new Set(changeSet.map((p) => slugForPostFile(p)))]
   return `post: update ${slugs.join(', ')}`
 }
+
+// Everything a push would carry, unfiltered: worktree diff vs the base ref,
+// untracked files, and the committed-only view (which catches a commit whose
+// working-tree content was reverted without resetting the commit; the diff
+// shows nothing for it, the push still carries it).
+export function rawDiffPaths(root, baseRef) {
+  const list = (args) => (git(args, { cwd: root }) || '').split('\0').filter(Boolean)
+  return [
+    ...new Set([
+      ...list(['diff', '--no-renames', '--name-only', '-z', baseRef]),
+      ...list(['ls-files', '--others', '--exclude-standard', '-z']),
+      ...list(['diff', '--no-renames', '--name-only', '-z', `${baseRef}...HEAD`]),
+    ]),
+  ].sort()
+}
+
+// ahead counts commits that exist only on origin/main.
+export function originStatus(root) {
+  const hasOrigin = Boolean(
+    git(['rev-parse', '--verify', '-q', 'origin/main'], { cwd: root, allowFail: true }),
+  )
+  if (!hasOrigin) return { hasOrigin, ahead: 0 }
+  const counts = git(['rev-list', '--left-right', '--count', 'origin/main...main'], { cwd: root })
+  return { hasOrigin, ahead: Number(counts.split(/\s+/)[0] || '0') }
+}
