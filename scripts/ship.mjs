@@ -137,8 +137,8 @@ export function commitAndPush(
 
 // Tracks the currently spawned preview server so a signal (Ctrl+C, external
 // SIGTERM) can still stop it even though it bypasses the `finally` in main.
-// Only ever set by the CLI entry's signal handlers; importing this module
-// for its exports never touches it.
+// Set by main at spawn time and read by the CLI entry's signal handlers;
+// importing this module for its exports never touches it.
 let activeServer = null
 
 // The preview server is spawned detached (its own process group) because npx
