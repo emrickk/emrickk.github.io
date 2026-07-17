@@ -14,10 +14,10 @@
       "port": 4398
     },
     {
-      "name": "blog-dev-auto",
+      "name": "blog-editor",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "autoPort": true
+      "runtimeArgs": ["run", "dev", "--", "--port", "4321"],
+      "port": 4321
     }
   ]
 }

@@ -58,6 +58,35 @@ Saving a post changes its content hash, which invalidates any preview-posts
 approval covering that file. That is the intended gate behavior: edited
 posts need a fresh review before release-check goes GO.
 
+## Troubleshooting (for owners and agents)
+
+Learned the hard way on 2026-07-17; read this before debugging a "stale
+preview" report.
+
+- **Editor saves do not depend on the OS file watcher.** The save API emits a
+  synthetic watcher event for its own writes, so an editor save syncs the
+  content store even when macOS fsevents has died. If the editor still shows
+  the 8-second warning banner, something worse than a wedged watcher is going
+  on: check that the dev server process is actually alive.
+- **The dev server watcher can die silently under multi-session load.**
+  Symptom: pages serve fine but changes made OUTSIDE the editor (shell, git,
+  another session) stop appearing, and the server log shows no reload or sync
+  lines for them. Only fix: restart your own dev server. Editor saves keep
+  working through it (see above).
+- **Run the dev server as a plain process.** `npm run dev -- --port 4321` in
+  a terminal (or the `blog-editor` launch.json entry). Do not use an
+  autoPort launch entry: the Browser-pane preview tool misreports its port
+  and has silently killed such servers mid-session (the old `blog-dev-auto`
+  entry was removed for this). If port 4321 is taken, pick a free one; the
+  editor works on any port.
+- **"Save failed" or a connection error in the editor tab** means the dev
+  server died, not that the edit was lost: every successful save is already
+  on disk, and an unsaved buffer stays in the browser tab. Restart the
+  server and save again.
+- **Conflict banner (file changed on disk)** is the cross-session guard
+  working: another session or agent wrote the file after you loaded it.
+  Reload from disk to take theirs, or Overwrite to keep yours.
+
 ## Where things live
 
 - `scripts/post-editor/integration.mjs`: dev-server middleware (the only
