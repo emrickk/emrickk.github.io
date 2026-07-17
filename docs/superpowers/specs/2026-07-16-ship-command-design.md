@@ -93,8 +93,8 @@ review changes it. It is a freshness token, not a security boundary.
 1. Build: run `npm run build` (production build including Pagefind); abort on failure.
    The build runs again later inside release-check (check 6); that duplication is the
    accepted cost of reusing the gates unmodified, do not optimize it away.
-2. Serve `dist/` on the chosen port with a minimal static file server (same behavior as
-   preview-posts' internal server: path-safe, index.html resolution, 404 otherwise).
+2. Serve `dist/` on the chosen port exactly the way preview-posts does: spawn
+   `npx astro preview --port <n>` as a child process (no hand-rolled static server).
 3. Write the review page via `reviewTargets` + `renderReviewPage` to `.preview/review.html`
    and open it (macOS `open`), unless `--no-open`.
 4. Prompt on stdin: `approve these N file(s) and ship? [y/N]` after printing the exact file
