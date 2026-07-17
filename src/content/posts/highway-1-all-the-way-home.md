@@ -12,7 +12,7 @@ descriptionZh: '一月还不是一号公路最好的季节，却是加州海岸�
 descriptionEn: 'A song from 2017 asked: the bridge on Highway 1 is down, do we still go? This January the coast reopened end to end for the first time in three years. We went, and then we drove home, where the pumpkins were already out.'
 ---
 
-In the spring of 2017, Highway 1 lost a bridge. The Pfeiffer Canyon Bridge in Big Sur was condemned in February and torn down in March, and for the rest of that year the most famous coastal road in the world simply did not go through. That same spring, on the other side of the Pacific, a romantic comedy called This Is Not What I Expected came out, and its closing song (Cheer Chen singing Han Han's words) had a verse that was not a metaphor at all:
+In the spring of 2017, Highway 1 broke. The Pfeiffer Canyon Bridge in Big Sur was condemned in February and torn down in March, and for the rest of that year the most famous coastal road in the world simply did not go through. That same spring, on the other side of the Pacific, a romantic comedy called This Is Not What I Expected came out, and its closing song was Cheer Chen singing Han Han's words:
 
 > 说一号公路上 那座桥断了 我们还去吗\
 > 要不再说呢 会修一年吧\
@@ -22,43 +22,38 @@ In the spring of 2017, Highway 1 lost a bridge. The Pfeiffer Canyon Bridge in Bi
 > Or maybe some other time. It will take a year to fix.\
 > Can we wait a year? Would you still go? Do you like it?
 
-The bridge was rebuilt in eight months, which for once beat the song's estimate. But Highway 1 kept breaking. In February 2024 a whole hillside near Lucia let go, half a million cubic yards of mountain sitting on the road, and it became the longest closure in the highway's ninety-year history. This January 14, Caltrans finally opened the last stretch. For the first time in three years, you could drive the coast end to end.
+The bridge was rebuilt in eight months, which for once beat the song's estimate. But Highway 1 kept breaking. In February 2024 a whole hillside near Lucia let go, and it became the longest closure in the highway's ninety-year history. This January 14, Caltrans finally opened the last stretch. For the first time in three years, you could drive the coast end to end.
 
 ## Do we still go
 
-Of course we go. Ten days later, we were on the road.
+Go, of course we go. Ten days later we were on the road. January is not Highway 1's best season, but it is the California coast's secret spring: after the rains the hills turn a green that will not survive June, and the tour buses have not figured this out yet. Good views, few people, the kind of road where you pull over halfway and climb onto the rocks.
 
-January is the coast's secret spring: after the rains the hills turn a green that will not survive June, and the tour buses have not figured this out yet.
+It barely counts as early spring, and the surf is heavy. Each set arrives as a chill you feel through the rock under your feet before you hear it, the ocean and the hills pushing toward spring one wave at a time. Pull your eyes back from the water, and you find the hills wearing the green velvet they get for two months a year.
 
-Halfway down we pulled over and climbed onto the rocks. The surf was heavy, and you could feel each set arrive through the rock before you heard it.
 
 ![The green winter hills of Big Sur in the side mirror](https://cdn.theneverless.com/2026/07/hills-in-the-side-mirror.webp)
 
-Most of the drive looks like this now: one eye on the road, one eye on the mirror, the hills wearing their two good months of velvet.
 
 ![Dusk on Highway 1: the curve, a bare tree, the last pink light](https://cdn.theneverless.com/2026/07/highway-1-dusk-curve.webp)
 
-Then dusk. The road emptied out, a bare tree stood in the last of the pink, and we turned around and drove home in the dark with the radio low: two hours of taillights.
+Highway 1 is not close to home, and a little more driving usually lands you in dusk. The road gets emptier. Sometimes a bare tree stands in the last of the pink, and that is your cue to turn around. The drive back is behind other sightseers of the same persuasion, or small-town commuters just off work; either way, two hours of taillights.
 
 ## Then home
 
-![The living room in February: a red mug, a teddy bear chair, trees in every window](https://cdn.theneverless.com/2026/07/teddy-bear-chair-living-room.webp)
+![The living room in February: red mugs, a teddy bear chair, trees in every window](https://cdn.theneverless.com/2026/07/teddy-bear-chair-living-room.webp)
 
-The honest part of this story is that home was new before the road was. We had moved that fall, and by the weekend the clocks fell back, the pumpkins were already out.
+This is the other side of the story. While Highway 1 was being repaired, we moved house (is that even connected?). We moved in the fall, and by the weekend the clocks fell back, the place was put together and the pumpkins were already out.
 
 ![The corner of the new home: dried flowers and crocheted pumpkins in the afternoon sun](https://cdn.theneverless.com/2026/07/new-home-pumpkin-corner.webp)
-
-The print leaned against the wall for weeks, because hammering a nail felt like a bigger commitment than the lease. 😂
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/lilies-on-the-dining-table.webp" alt="White lilies on the dining table by the window" loading="lazy" />
   <img src="https://cdn.theneverless.com/2026/07/bulldog-in-evening-light.webp" alt="The leather bulldog standing in a blade of evening light" loading="lazy" />
 </div>
 
-The lilies came from the grocery store. The bulldog is leather and has never barked once; he stands wherever the evening light lands, and takes it as his due.
+The apartment is rented. The flowers are from the grocery store. The bulldog is made of leather. None of it bothers the dog; real or not, his sense of entitlement runs high, high enough that the leather one considers this particular blade of afternoon light reserved for him.
 
 ![The lounge chair, the bookshelf, and the bulldog headed for the balcony](https://cdn.theneverless.com/2026/07/bulldog-and-lounge-chair.webp)
 
-By February the apartment had stopped being new: a mug on the table, trees in every window, and a chair shaped like a bear that every guest laughs at and then refuses to give up.
 
-Highway 1 will break again, it always has. When it does we will wait and go once it is fixed. The waiting happens at home now.
+In February Highway 1 broke again; it always does. When it breaks, wait; when it is fixed, go again. And anyway, I am waiting somewhere comfortable: home.
