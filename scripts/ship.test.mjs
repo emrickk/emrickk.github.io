@@ -5,7 +5,14 @@ import { test } from 'node:test'
 import { existsSync, mkdtempSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { changeSetDigest, commitMessageFor, originStatus, partitionPurity, rawDiffPaths } from './ship.mjs'
+import {
+  changeSetDigest,
+  commitMessageFor,
+  originStatus,
+  partitionPurity,
+  preflight,
+  rawDiffPaths,
+} from './ship.mjs'
 import { cleanup, makeFixtureRepo, run, write } from './test-helpers.mjs'
 
 // Fixture repo with a local bare origin, pushed and fetched, so origin/main
@@ -103,6 +110,60 @@ test('originStatus reports missing origin and remote-ahead counts', () => {
     run(root, ['reset', '-q', '--hard', 'HEAD~1'])
     run(root, ['fetch', '-q', 'origin'])
     assert.deepEqual(originStatus(root), { hasOrigin: true, ahead: 1 })
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+const POST_BODY = "---\ntitle: 'New post'\npubDate: '2026-07-16'\n---\n\nbody\n"
+
+test('preflight aborts off main and when origin is ahead', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    run(root, ['checkout', '-q', '-b', 'topic'])
+    const offMain = preflight(root, { fetch: false })
+    assert.equal(offMain.status, 'abort')
+    assert.match(offMain.detail, /branch topic/)
+    run(root, ['checkout', '-q', 'main'])
+    write(root, 'tracked.md', 'remote-only\n')
+    run(root, ['add', 'tracked.md'])
+    run(root, ['commit', '-q', '-m', 'remote-only'])
+    run(root, ['push', '-q', 'origin', 'main'])
+    run(root, ['reset', '-q', '--hard', 'HEAD~1'])
+    const behind = preflight(root)
+    assert.equal(behind.status, 'abort')
+    assert.match(behind.detail, /origin\/main has 1 commit/)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('preflight aborts on non-post changes, listing them', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    write(root, 'src/content/posts/new.md', POST_BODY)
+    write(root, 'docs/notes.md', 'not a post\n')
+    const res = preflight(root)
+    assert.equal(res.status, 'abort')
+    assert.match(res.detail, /docs\/notes\.md/)
+    assert.doesNotMatch(res.detail, /new\.md/)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('preflight returns empty on a clean tree and ok with digest on post changes', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    assert.equal(preflight(root).status, 'empty')
+    write(root, 'src/content/posts/new.md', POST_BODY)
+    const res = preflight(root)
+    assert.equal(res.status, 'ok')
+    assert.deepEqual(res.changeSet, ['src/content/posts/new.md'])
+    assert.match(res.digest, /^[0-9a-f]{12}$/)
   } finally {
     cleanupWithOrigin(fx)
   }

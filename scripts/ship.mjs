@@ -74,3 +74,45 @@ export function originStatus(root) {
   const counts = git(['rev-list', '--left-right', '--count', 'origin/main...main'], { cwd: root })
   return { hasOrigin, ahead: Number(counts.split(/\s+/)[0] || '0') }
 }
+
+// Spec step 1. Returns a plain result so every branch is testable:
+// status 'abort' (exit 1), 'empty' (exit 0), or 'ok' with changeSet and
+// digest. Fetch failures warn and fall back to the last-known origin/main.
+export function preflight(root, { fetch = true } = {}) {
+  const branch = git(['rev-parse', '--abbrev-ref', 'HEAD'], { cwd: root })
+  if (branch !== 'main') {
+    return { status: 'abort', detail: `on branch ${branch}; ship only runs on main` }
+  }
+  if (fetch && originStatus(root).hasOrigin) {
+    try {
+      git(['fetch', 'origin'], { cwd: root })
+    } catch {
+      console.error('warning: could not fetch origin; comparing against the last-known origin/main')
+    }
+  }
+  const { hasOrigin, ahead } = originStatus(root)
+  if (hasOrigin && ahead > 0) {
+    return {
+      status: 'abort',
+      detail:
+        `origin/main has ${ahead} commit(s) not in local main; ` +
+        'reconcile in a Claude session (or git pull --rebase when comfortable) before shipping',
+    }
+  }
+  const baseRef = resolveBaseRef(root)
+  const { other } = partitionPurity(rawDiffPaths(root, baseRef))
+  if (other.length > 0) {
+    return {
+      status: 'abort',
+      detail:
+        'ship only publishes post edits, but these changed too:\n  ' +
+        other.join('\n  ') +
+        '\nhandle this in a Claude session instead',
+    }
+  }
+  const changeSet = computeChangeSet(root, { baseRef })
+  if (changeSet.length === 0) {
+    return { status: 'empty', detail: 'nothing to ship', baseRef }
+  }
+  return { status: 'ok', baseRef, changeSet, digest: changeSetDigest(hashChangeSet(root, changeSet)) }
+}
