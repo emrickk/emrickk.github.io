@@ -16,9 +16,15 @@ frontmatter included, with a tab for the sibling translation when one
 exists. The right pane is the real rendered post from the same dev server;
 it follows the language of the file you are editing.
 
-Save with the button or Cmd+S. The preview reloads on save. Frontmatter
-mistakes show up as Astro's own error overlay in the preview, which is the
-same error the build would give.
+Save with the button or Cmd+S. The preview reloads as soon as the dev server
+serves the new content, usually within a second or two. Frontmatter mistakes
+show up as Astro's own error overlay in the preview, which is the same error
+the build would give.
+
+If a banner says the preview has not picked up a change after 8 seconds, the
+save is safely on disk but the dev server's file watcher is wedged (a known
+gotcha when several sessions run dev servers against this checkout). Restart
+your own dev server to get live previews back.
 
 ## Conflicts
 

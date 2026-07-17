@@ -199,6 +199,50 @@ function showConflict(path, body) {
   bannerEl.hidden = false
 }
 
+function reloadPreview() {
+  try {
+    previewEl.contentWindow.location.reload()
+  } catch {
+    // Cross-origin fallback: re-setting src reloads the iframe.
+    const src = previewEl.src
+    previewEl.src = src
+  }
+}
+
+async function pageHtml(url) {
+  try {
+    const res = await fetch(url, { cache: 'no-store' })
+    return await res.text()
+  } catch {
+    return null
+  }
+}
+
+// When the dev server's watcher is healthy, Astro HMR reloads the page on
+// its own within a second or two. This poll makes the fallback exact (reload
+// once the server actually serves different content) and turns a wedged
+// watcher, a known gotcha when several sessions run dev servers, into a
+// visible warning instead of a silently stale preview.
+async function refreshPreviewAfterSave(url, htmlBeforeSave) {
+  if (htmlBeforeSave === null) {
+    setTimeout(reloadPreview, 1000)
+    return
+  }
+  for (let waited = 0; waited < 8000; waited += 500) {
+    await new Promise((resolve) => setTimeout(resolve, 500))
+    const now = await pageHtml(url)
+    if (now !== null && now !== htmlBeforeSave) {
+      reloadPreview()
+      return
+    }
+  }
+  reloadPreview()
+  showBanner(
+    'The preview has not picked up this change after 8 seconds. The save is on disk, ' +
+      'but the dev server watcher looks wedged: restart your dev server to get live previews back.',
+  )
+}
+
 async function save() {
   const path = state.activePath
   const f = state.files[path]
@@ -209,6 +253,8 @@ async function save() {
   // Captured once: keystrokes typed during the round trip must stay dirty,
   // so savedContent below gets this snapshot, never a re-read of the editor.
   const content = editorEl.value
+  const previewUrl = state.post ? '/posts/' + state.post.slug + '/' : null
+  const htmlBeforeSave = previewUrl ? await pageHtml(previewUrl) : null
   try {
     const { status, body } = await api('/file', {
       method: 'PUT',
@@ -227,17 +273,7 @@ async function save() {
     f.savedContent = content
     hideBanner()
     refreshChanged()
-    // HMR usually reloads the post page on its own; this delayed reload is the
-    // fallback that guarantees the preview never goes stale.
-    setTimeout(() => {
-      try {
-        previewEl.contentWindow.location.reload()
-      } catch {
-        // Cross-origin fallback: re-setting src reloads the iframe.
-        const src = previewEl.src
-        previewEl.src = src
-      }
-    }, 600)
+    if (previewUrl) refreshPreviewAfterSave(previewUrl, htmlBeforeSave)
   } finally {
     state.saving = false
     updateDirtyUi()
