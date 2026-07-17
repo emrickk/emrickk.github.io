@@ -25,7 +25,7 @@ function readBody(req) {
   })
 }
 
-async function handle(root, req, res) {
+async function handle(root, req, res, notifyChange = () => {}) {
   const url = req.url === '' ? '/' : req.url
   if (url.startsWith('/api/')) {
     let result
@@ -36,6 +36,13 @@ async function handle(root, req, res) {
       // Keep API responses JSON even when a handler throws (disk errors);
       // Vite's HTML error page would break the UI's res.json() calls.
       result = { status: 500, body: { error: String(err && err.message ? err.message : err) } }
+    }
+    // Tell the dev server about our own writes instead of trusting the OS
+    // file watcher: macOS fsevents dies silently on this checkout under
+    // multi-session churn, and a wedged watcher otherwise leaves the content
+    // store, and therefore the preview, frozen on stale bytes.
+    if (req.method === 'PUT' && result.status === 200 && result.body && result.body.path) {
+      notifyChange(result.body.path)
     }
     res.statusCode = result.status
     res.setHeader('content-type', 'application/json; charset=utf-8')
@@ -60,8 +67,19 @@ export default function postEditor() {
     hooks: {
       'astro:server:setup': ({ server }) => {
         const root = server.config.root
+        // Synthetic chokidar event: fires the same content-layer and HMR
+        // handlers a real file event would, but does not depend on fsevents
+        // actually delivering one.
+        const notifyChange = (relPath) => {
+          try {
+            server.watcher.emit('change', join(root, relPath))
+          } catch {
+            // Best effort: without it the preview falls back to the poll
+            // and its wedged-watcher warning.
+          }
+        }
         server.middlewares.use('/_edit', (req, res, next) => {
-          handle(root, req, res).catch(next)
+          handle(root, req, res, notifyChange).catch(next)
         })
       },
     },
