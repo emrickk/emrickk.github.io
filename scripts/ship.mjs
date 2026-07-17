@@ -135,6 +135,33 @@ export function commitAndPush(
   return sha
 }
 
+// The preview server is spawned detached (its own process group) because npx
+// is the direct child and astro the grandchild; killing just npx orphans the
+// server on the port. Killing the negated pid signals the whole group.
+function stopServer(server) {
+  if (!server || server.exitCode !== null) return
+  try {
+    process.kill(-server.pid, 'SIGTERM')
+  } catch {
+    server.kill()
+  }
+}
+
+// Poll until the preview server answers, so the review link works when it is
+// printed. Never fatal: the owner can still decline if it never comes up.
+async function waitForServer(url, { intervalMs = 500, timeoutMs = 15000 } = {}) {
+  const deadline = Date.now() + timeoutMs
+  while (Date.now() < deadline) {
+    try {
+      await fetch(url, { signal: AbortSignal.timeout(intervalMs) })
+      return true
+    } catch {
+      await new Promise((resolve) => setTimeout(resolve, intervalMs))
+    }
+  }
+  return false
+}
+
 async function watchDeploy(root, sha, slugs) {
   const deadline = Date.now() + 5 * 60 * 1000
   while (Date.now() < deadline) {
@@ -208,7 +235,14 @@ export async function main(values) {
       server = spawn('npx', ['astro', 'preview', '--port', values.port], {
         cwd: root,
         stdio: ['ignore', 'ignore', 'inherit'],
+        detached: true,
       })
+      server.on('error', (err) => {
+        console.error(`could not start the preview server: ${err.message}`)
+      })
+      if (!(await waitForServer(`http://localhost:${values.port}/`))) {
+        console.error('warning: the review server did not come up; you can still answer N')
+      }
       console.log(`\nreview page: ${reviewFile}`)
       console.log(`server: http://localhost:${values.port}/`)
       if (!values['no-open']) spawnSync('open', [reviewFile])
@@ -237,7 +271,7 @@ export async function main(values) {
     writeManifest(root, hashChangeSet(root, now.changeSet), { baseRef: now.baseRef })
     console.log('approval recorded')
     if (server) {
-      server.kill()
+      stopServer(server)
       server = null
     }
 
@@ -254,7 +288,7 @@ export async function main(values) {
     await watchDeploy(root, sha, [...new Set(now.changeSet.map((p) => slugForPostFile(p)))])
     return 0
   } finally {
-    if (server) server.kill()
+    stopServer(server)
   }
 }
 
