@@ -135,11 +135,17 @@ export function commitAndPush(
   return sha
 }
 
+// Tracks the currently spawned preview server so a signal (Ctrl+C, external
+// SIGTERM) can still stop it even though it bypasses the `finally` in main.
+// Only ever set by the CLI entry's signal handlers; importing this module
+// for its exports never touches it.
+let activeServer = null
+
 // The preview server is spawned detached (its own process group) because npx
 // is the direct child and astro the grandchild; killing just npx orphans the
 // server on the port. Killing the negated pid signals the whole group.
 function stopServer(server) {
-  if (!server || server.exitCode !== null) return
+  if (!server || server.exitCode !== null || server.signalCode !== null) return
   try {
     process.kill(-server.pid, 'SIGTERM')
   } catch {
@@ -240,6 +246,7 @@ export async function main(values) {
       server.on('error', (err) => {
         console.error(`could not start the preview server: ${err.message}`)
       })
+      activeServer = server
       if (!(await waitForServer(`http://localhost:${values.port}/`))) {
         console.error('warning: the review server did not come up; you can still answer N')
       }
@@ -273,6 +280,7 @@ export async function main(values) {
     if (server) {
       stopServer(server)
       server = null
+      activeServer = null
     }
 
     console.log('\nrunning release checks...')
@@ -289,6 +297,7 @@ export async function main(values) {
     return 0
   } finally {
     stopServer(server)
+    activeServer = null
   }
 }
 
@@ -310,6 +319,15 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     console.error(err.message)
     console.error(USAGE)
     process.exit(1)
+  }
+  // A signal death (Ctrl+C at the prompt, an external SIGTERM) bypasses the
+  // `finally` in main; stop the detached preview server here so it never
+  // gets orphaned on the port.
+  for (const signal of ['SIGINT', 'SIGTERM']) {
+    process.once(signal, () => {
+      stopServer(activeServer)
+      process.exit(130)
+    })
   }
   main(values).then(
     (code) => process.exit(code),
