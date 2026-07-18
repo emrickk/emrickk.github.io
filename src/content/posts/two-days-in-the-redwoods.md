@@ -6,7 +6,7 @@ heroImage: '../../assets/hero/2026/07/redwood-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'two-days-in-the-redwoods'
-titleZh: '迷失海岸，迷失红杉林'
+titleZh: '迷失 Redwood'
 titleEn: 'Lost coast, and lost in the redwoods'
 descriptionZh: '七月的一个周末在海岸红杉林：吱呀作响的维多利亚旅馆，蕨类夹道的小径，从海岸公路的雾里驶出的大众巴士，和穿过巨树的归途。'
 descriptionEn: 'A photo journal among the coast redwoods.'
@@ -16,11 +16,11 @@ Last July we spent a weekend on the far north coast of California, where the red
 
 ## Day one: into the groves
 
-We stayed at an old inn, the kind of place where the parlor cannot have changed much in a hundred years: patterned wallpaper, a tiled fireplace, candlesticks on the mantel. The desk under the window turned out to be a good spot to sit down in the evening and write a few lines.
+The drive to Redwood National Park takes seven hours, so the night before we stayed at an old inn in Ferndale, a town along the way built full of Gothic Revival and Queen Anne houses. The Gingerbread Mansion, where we stayed, is no exception. The parlor cannot have changed much in a hundred years: patterned wallpaper, a tiled fireplace, candlesticks on the mantel. It really is of that era. The desk under the window turned out to be a good spot to sit down in the evening and write a few lines.
 
 ![The parlor of the inn, with its tiled fireplace and old wallpaper](https://cdn.theneverless.com/2026/07/redwood-inn-parlor.webp)
 
-In the afternoon we walked into the groves. Photographs do not really prepare you for the scale of these trees. The trunks go up like walls, the light comes down in pieces, and the ferns close over the trail at shoulder height.
+In the afternoon we walked into the groves. Human scale shrinks the moment you step in. Photographs do not really prepare you for the scale of these trees. The trunks go up like walls, the light comes down in pieces, and the ferns close over the trail at shoulder height.
 
 ![Twin redwood trunks beside the trail](https://cdn.theneverless.com/2026/07/redwood-twin-trunks.webp)
 
@@ -31,19 +31,15 @@ In the afternoon we walked into the groves. Photographs do not really prepare yo
 
 ![Walking among the redwoods](https://cdn.theneverless.com/2026/07/redwood-walk-in-grove.webp)
 
-At a pullout we stood above the road for a while and watched cars slip in and out of the trees, small as toys.
-
-![The road through the forest seen from above](https://cdn.theneverless.com/2026/07/redwood-road-from-above.webp)
-
-Closer to the ocean the forest changes. Spruce takes over from redwood and every trunk wears a coat of moss, so that it stops looking like California at all and starts looking like a rainforest.
+Closer to the ocean the forest changes. Spruce takes over from redwood and every trunk wears a coat of moss, so that it stops looking like the California you have in mind and starts looking like a rainforest.
 
 ![A mossy trail through the coastal forest](https://cdn.theneverless.com/2026/07/redwood-mossy-trail.webp)
 
-Before turning in we walked down to the water. The houses across the inlet were lighting up one by one, and a gull worked the tide line ahead of us the whole way. Back at the inn, the lamp in the room was the last thing we turned off.
+We walked Trillium Falls Trail, and in the evening came back to the water near our Airbnb. The houses across the inlet were lighting up one by one, and a gull worked the tide line ahead of us the whole way. Back in the room, the lamp was the last thing we turned off.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/redwood-beach-dusk.webp" alt="Dusk on the shore, with a gull ahead on the tide line" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/redwood-room-lamp.webp" alt="The lamp in our room at the inn" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/redwood-room-lamp.webp" alt="The lamp in the room" loading="lazy" />
 </div>
 
 ## Day two: fog on the highway

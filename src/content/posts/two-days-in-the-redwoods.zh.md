@@ -1,18 +1,18 @@
 ---
-translationKey: 'two-days-in-the-redwoods'
-lang: 'zh'
-title: '迷失海岸，迷失红杉林'
+title: 迷失 Redwood
+lang: zh
+translationKey: two-days-in-the-redwoods
 ---
 
-去年七月，我们在加州最北端的海岸边待了一个周末，那里是红杉生长的地方。100 年前美国人在这里砍来砍去，现在当时的城市已经衰败，但是红杉和数不清的蕨类，还有一场怎么也不肯散的雾都还在。
+去年七月，我们在加州最北端的海岸边待了一个周末，那里是红杉生长的地方。100 年前美国人在这里砍来砍去，现在当时的城市已经衰败，但是红杉和数不清的蕨类还在，当然还有那场怎么也不肯散的雾。
 
 ## 第一天：走进红杉林
 
-我们住在一家老旅馆里。客厅大概一百年都没怎么变过：花纹墙纸，贴着瓷砖的壁炉，壁炉架上立着烛台。
+开到 Redwood 国家公园要 7 个小时。所以前一晚我们住在路上 Ferndale 一家老旅馆里。这里建满了 Gothic Revival 和 Queen Anne 风格的房子。我们住的这家 Gingerbread Mansion 也不例外，客厅大概一百年都没怎么变过：花纹墙纸，贴着瓷砖的壁炉，壁炉架上立着烛台。确实是那个时代。
 
 ![旅馆客厅，瓷砖壁炉和老墙纸](https://cdn.theneverless.com/2026/07/redwood-inn-parlor.webp)
 
-下午我们走进林子。照片其实没法让人对这些树的尺度有任何准备：树干像墙一样立起来，光被切成一块一块落下来，蕨类在齐肩的高度把小径盖住。
+下午我们走进林子。人的尺度瞬间变小。照片其实没法让人对这些树的尺度有任何准备：树干像墙一样立起来，光被切成一块一块落下来，蕨类在齐肩的高度把小径盖住。
 
 ![小径旁并立的两株红杉](https://cdn.theneverless.com/2026/07/redwood-twin-trunks.webp)
 
@@ -23,19 +23,15 @@ title: '迷失海岸，迷失红杉林'
 
 ![走在红杉之间](https://cdn.theneverless.com/2026/07/redwood-walk-in-grove.webp)
 
-在一处观景点，我们站在公路上方看了好一会儿：汽车钻进树林又钻出来，小得像玩具。
-
-![从高处俯瞰穿过森林的公路](https://cdn.theneverless.com/2026/07/redwood-road-from-above.webp)
-
-越靠近海，森林就越不一样。云杉接替了红杉，每根树干都裹着一层厚厚的苔藓，看起来不再像加州，倒像是一片雨林。
+越靠近海，森林就越不一样。云杉接替了红杉，每根树干都裹着一层厚厚的苔藓，看起来不再像印象里的加州，倒像是一片雨林。
 
 ![海岸森林里长满苔藓的小径](https://cdn.theneverless.com/2026/07/redwood-mossy-trail.webp)
 
-睡前我们走到水边。对岸的房子一盏一盏亮起灯，一只海鸥一路在潮线上走在我们前面。回到旅馆，房间里那盏灯是我们最后关掉的东西。
+走过 Trillium Falls Trail，傍晚我们回到 Airbnb 附近的水边。对岸的房子一盏一盏亮起灯，一只海鸥一路在潮线上走在我们前面。回到房间，房间里那盏灯是我们最后关掉的东西。
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/redwood-beach-dusk.webp" alt="黄昏的岸边，海鸥走在潮线上" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/redwood-room-lamp.webp" alt="旅馆房间里的台灯" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/redwood-room-lamp.webp" alt="房间里的台灯" loading="lazy" />
 </div>
 
 ## 第二天：公路上的雾
