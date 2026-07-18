@@ -1,35 +1,35 @@
 ---
-title: "California's little Patagonia"
+title: 'October, US 395'
 description: "Mid-October on US 395: the turquoise lakes and Temple Crag of Big Pine, golden aspens up Bishop Creek, the tufa towers of Mono Lake, and a loaf of sheepherder bread."
 pubDate: '2024-10-13'
 heroImage: '../../assets/hero/2026/07/us395-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'california-little-patagonia'
-titleZh: '加州的小巴塔哥尼亚'
-titleEn: "California's little Patagonia"
+titleZh: '10 月, 395 公路'
+titleEn: 'October, US 395'
 descriptionZh: '十月中的 395 号公路：Big Pine 的绿松石湖水和 Temple Crag，Bishop Creek 金黄的白杨，Mono 湖的石灰华塔，和一条牧羊人面包。'
 descriptionEn: "Mid-October on US 395: the turquoise lakes and Temple Crag of Big Pine, golden aspens up Bishop Creek, the tufa towers of Mono Lake, and a loaf of sheepherder bread."
 ---
 
-The Bay Area does autumn reluctantly: the trees put it off until December, and then it rains. For the real thing you drive east for half a day, over the crest of the Sierra, and come down the far side. On a Saturday in mid October 2024, that is what we did.
+The Bay Area does autumn reluctantly: the trees put it off until December, and then it rains, so there is basically no autumn at all. For the real thing you drive east for half a day, over the crest of the Sierra, and come down the far side. On a Saturday in mid October 2024, I set out.
 
 ## South on 395
 
-US 395 runs along the east side of the range, snow mountains on one hand, desert on the other. In the morning we passed a roadside place with STEAKS on the white awning, ICE COLD BEER hand-painted on the door, and an old pickup parked outside with dust on its wheels. We didn't go in. One photo, and back on the road.
+US 395 runs along the east side of the range, snow mountains on one hand, desert on the other. Bridgeport is the last town before the stretch I had come for. The buildings and the maples could pass for New England, but the vegetation and the architecture kept reminding me this was California. I kept driving.
 
 ![A roadside diner with STEAKS on the awning and an old pickup out front](https://cdn.theneverless.com/2026/07/us395-roadside-diner.webp)
 
-Farther south the highway climbs over a pass and Mono Lake spreads out below, a dirt road running dead straight for the shore. Past Bishop, past Big Pine, we turned off onto a side road into the mountains. The navigation ended at a trailhead.
+Farther south the highway climbs over a pass and Mono Lake spreads out below, a dirt road running dead straight for the shore. Past Bishop, past Big Pine, I turned off onto a side road into the mountains. The navigation ended at a trailhead, and I started hiking.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/road-down-to-mono-lake.webp" alt="A dirt road running straight toward Mono Lake, seen from the pass" loading="lazy" />
   <img src="https://cdn.theneverless.com/2026/07/owens-valley-sierra-crest.webp" alt="The Sierra crest behind desert scrub" loading="lazy" />
 </div>
 
-## California's little Patagonia
+## California's little Patagonia?
 
-The trail follows Big Pine Creek: pine forest first, then talus, and the climbing almost never lets up. The aspens in the canyon had gone fully gold, and a waterfall hung out of a crack in the rock. We had started at one in the afternoon, and we were racing the sun the whole way.
+The trail follows Big Pine Creek: pine forest first, then talus, and the climbing almost never lets up. The aspens in the canyon had gone fully gold, and a waterfall hung out of a crack in the rock. Something of the flavor was already there. No lakes yet.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/big-pine-trailhead-pines.webp" alt="Pines at the start of the trail" loading="lazy" />
@@ -45,7 +45,7 @@ Over the last rise, the first lake. The naming here is thrifty: First Lake, Seco
 
 ![The turquoise water of First Lake](https://cdn.theneverless.com/2026/07/first-lake-turquoise.webp)
 
-Twenty minutes on, Second Lake appeared, and Temple Crag appeared with it: a wall of granite hundreds of meters high, standing straight out of the water, a row of spires along the top. We named it California's little Patagonia. Neither of us had seen the real one; the name went on anyway.
+Twenty minutes on, Second Lake appeared, and Temple Crag appeared with it: a wall of granite hundreds of meters high, standing straight out of the water, a row of spires along the top. ok... Patagonia? I hadn't seen the real one back then, but the water was blue enough. The name went on first.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/first-lake-orange-snag.webp" alt="An orange snag at the edge of the lake" loading="lazy" />
@@ -54,14 +54,12 @@ Twenty minutes on, Second Lake appeared, and Temple Crag appeared with it: a wal
 
 ![The granite wall of Temple Crag above Second Lake](https://cdn.theneverless.com/2026/07/temple-crag-second-lake.webp)
 
-By the time we started down, the sun was on the ridgeline. The moon came out first, hanging in a sky that was still bright. It was tiring for real, and worth it for real. When we reached the car, night had closed all the way in.
+By the time I started down, the sun was on the ridgeline. The moon came out first, hanging in a sky that was still bright. It was tiring for real, and worth it for real. When I reached the car, night had closed all the way in.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/two-hikers-above-second-lake.webp" alt="Two hikers sitting on the rocks above Second Lake" loading="lazy" />
   <img src="https://cdn.theneverless.com/2026/07/moon-over-the-ridge.webp" alt="A half moon over the darkening ridge" loading="lazy" />
 </div>
-
-![The trail down in the dusk](https://cdn.theneverless.com/2026/07/descending-at-dusk.webp)
 
 ## Hot water, bread, aspens
 
@@ -69,7 +67,7 @@ Hot Creek, first thing the next morning: a stream winding through a gorge of vol
 
 ![Hot Creek gorge in the morning, the stream in slow bends](https://cdn.theneverless.com/2026/07/hot-creek-morning.webp)
 
-Out of the gorge and into Bishop, we bought a loaf at the old bakery: Sheepherder Bread. An honest name on an honest-looking loaf.
+Out of the gorge and into Bishop, I bought a loaf at the old bakery: Sheepherder Bread. An honest name on an honest-looking loaf.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/hot-creek-teal-pool.webp" alt="A teal pool on Hot Creek, the Sierra crest beyond" loading="lazy" />
@@ -90,16 +88,11 @@ At North Lake the mountain lay in the water, right side up and upside down, equa
   <img src="https://cdn.theneverless.com/2026/07/lake-sabrina-boat.webp" alt="A small boat moored in the middle of Lake Sabrina" loading="lazy" />
 </div>
 
-On the gravel bank by Sabrina she lay down and made a snow angel. No snow yet, so she practiced with scree 😂
-
-<div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/gravel-angel.webp" alt="Lying in the scree, arms out in a snow-angel pose" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/aspen-road-15mph.webp" alt="An aspen-lined road with a 15 mph speed limit sign" loading="lazy" />
-</div>
+![An aspen-lined road with a 15 mph speed limit sign](https://cdn.theneverless.com/2026/07/aspen-road-15mph.webp)
 
 ## Mono Lake
 
-In the afternoon we got back on 395 and drove north to Mono Lake. The water is too salty for fish; what grows in it is stone. Tufa towers form underwater, a little at a time, and they stand exposed now because Los Angeles drew the lake down. There was no wind that afternoon. The water lay flat as glass, and a few birds crossed above the towers.
+In the afternoon I got back on 395 and drove north, and finally saw Mono Lake up close. The water is too salty for fish; what grows in it is stone. Tufa towers form underwater, a little at a time, and they stand exposed now because Los Angeles drew the lake down. There was no wind that afternoon. The water lay flat as glass, and a few birds crossed above the towers.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/mono-lake-tufa-reflection.webp" alt="Tufa towers and their reflections in Mono Lake" loading="lazy" />
@@ -108,10 +101,10 @@ In the afternoon we got back on 395 and drove north to Mono Lake. The water is t
 
 ## Home
 
-We went home on Highway 120, up past Lee Vining to Tioga Pass, through Yosemite's back door.
+I went home on Highway 120, up past Lee Vining to Tioga Pass, through Yosemite's back door.
 
 ![The road climbing toward Tioga under a wall of rock](https://cdn.theneverless.com/2026/07/climbing-toward-tioga.webp)
 
-Over the crest, the light began to go. Above the fields at the foot of the western slope, the sun turned into an orange ball with no rays at all, and we followed it west. As for what the real Patagonia looks like, we put it on the list.
+Over the crest, the light began to go. Above the fields at the foot of the western slope, the sun turned into an orange ball with no rays at all, and I followed it west. As for what the real Patagonia looks like, I put it on the list.
 
 ![The sun going down outside the car window, one taillight glowing in the corner](https://cdn.theneverless.com/2026/07/sunset-taillight.webp)
