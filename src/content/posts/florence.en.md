@@ -4,63 +4,51 @@ lang: 'en'
 title: 'A day in Florence'
 ---
 
-The poet Xu Zhimo once translated Firenze into Chinese as "翡冷翠", roughly "cold emerald jade". As far as I could tell, Florence in May had nothing to do with cold or with jade. A European heat wave made the days as hot as midsummer this year. But even after the sun went down, the locals and the tourists kept the city alive until eleven at night.
+Xu Zhimo translated Firenze into Chinese as "翡冷翠", roughly "cold emerald jade", but Florence in May had nothing to do with either. A European heat wave burned the days up to midsummer temperatures, and after sunset the city refused to close, staying loud until eleven at night.
 
-My Florence starts with where we stayed. It was in the old town: open the window and you got the neighbors' shutters and a tree's worth of green. On the wall hung a strange painting, a noblewoman in full dress, her face and ears sealed off behind a cloud. Every morning the noise from the street woke us, and she was the first thing I saw. I still don't know whether she was wishing us good morning or apologizing 😂
+We stayed in the old town, where opening the window got you the neighbors' shutters and a tree's worth of green. Two strange paintings hung in the room, and in both of them the sitters' eyes were blotted out by dark clouds. I never worked out what the paintings meant. I only know that in a place like Florence, the last thing you should cover is your eyes.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-hotel-portrait.webp" alt="">
 <img src="https://cdn.theneverless.com/2026/07/florence-hotel-morning-light.webp" alt="">
 </div>
 
-However many tourists there are, early morning Florence belongs to the locals. The light on the flagstones was still low. A mother pedaled a cargo bike through the crossing, two kids in the front bucket. The tourists were not up yet; the commuters had already gotten the city's day going.
-
-![](https://cdn.theneverless.com/2026/07/florence-street-cargo-bike.webp)
-
-To read this city you first have to climb its stairs. Giotto's bell tower spirals up through four hundred some steps, and the higher you go, the narrower the staircase and the smaller the windows. Right when I started questioning my life choices, light came through a wire-caged window, and the red dome of Santa Maria del Fiore was there across from us. Brunelleschi finished it in 1436, and it is still the most recognizable thing in Florence. The dome predates the Medici family's arrival on the city's stage. In a city that hangs the Medici name on everything, the most iconic building is, of all things, not theirs.
+To see this city you climb stairs first. Giotto's bell tower winds up through four hundred some steps, the staircase tightening and the windows shrinking, and right when I was questioning my life choices, a wire-caged window let the light in: the red dome of Santa Maria del Fiore, startlingly close, straight across. Brunelleschi finished it in 1436; when construction started, the Medici had not yet had their turn at power. In a city with the Medici name hung on everything, the most dazzling building in it owes nothing to their taste.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-duomo-from-campanile.webp" alt="">
 <img src="https://cdn.theneverless.com/2026/07/florence-caged-window-duomo.webp" alt="">
 </div>
 
-Down from the tower, we queued again for the dome. The climb threads right through the frescoes: the Last Judgment that Vasari began and Zuccari finished. From the cathedral floor it is just a ring of blurry color. From the walkway between the shells, the angels and the demons have faces.
+Down from the tower, straight into the dome queue. The way up cuts between the shells, through the Last Judgment that Vasari began and Zuccari finished. From the cathedral floor it is a blurred ring of color; from the walkway, the angels and the demons have faces.
 
 ![](https://cdn.theneverless.com/2026/07/florence-last-judgment-fresco.webp)
 
 ![](https://cdn.theneverless.com/2026/07/florence-cupola-oculus.webp)
 
-Higher still, the stairs ran out and the sky opened all at once, the whole of Florence underfoot: red roofs, hills, the river. The wind was strong. Palazzo Vecchio, Ponte Vecchio, the Uffizi. Touring Florence is mostly touring the Medici family's offices and homes.
+Higher up the stairs run out and the sky opens all at once, all of Florence spread underfoot: red tiles, hills, the river, and wind enough to make you grip the railing. Palazzo Vecchio, Ponte Vecchio, the Uffizi: one look around, and most of it is Medici real estate. Touring this city is mostly touring their offices and their living rooms.
 
-From the dome we walked to Palazzo Vecchio, where they used to live. The frescoes in the courtyard climb from the walls all the way up the vaults. The rooms upstairs are dark; look out through a Gothic window and there is the dome again, set exactly in the frame, like a painting that has hung there for five hundred years.
+From the dome, first to Palazzo Vecchio, where they lived. The courtyard frescoes climb from the walls onto the vaults. The rooms upstairs are dark, and one Gothic window faces the dome dead on, framing it exactly, like a painting that has hung there five hundred years without being changed. When the Medici looked up inside their own house, they too saw the one thing in the city that owed them nothing.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-palazzo-vecchio-courtyard.webp" alt="">
 <img src="https://cdn.theneverless.com/2026/07/florence-duomo-gothic-window.webp" alt="">
 </div>
 
-From Palazzo Vecchio we walked on to the Accademia. Michelangelo's unfinished Prisoners stand along both sides of the corridor, bodies still struggling out of the stone. At the end of it, David stands under a skylight. I had seen this statue in photos a hundred times and still froze in front of it: he is much taller than you expect, and much younger. What does he have to do with the Medici? He was originally meant for the top of Santa Maria del Fiore.
+Then the Accademia. Michelangelo's unfinished Prisoners line the corridor, figures still fighting out of the stone, and at the end, under the skylight, David. I had seen him in photos a hundred times and still stopped cold: far taller than you expect, and far younger. What does he have to do with the Medici? Nothing, really. He was meant to stand on the roof of Santa Maria del Fiore, and ended up standing at the Medici's front door.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-accademia-david-hall.webp" alt="">
 <img src="https://cdn.theneverless.com/2026/07/florence-david.webp" alt="">
 </div>
 
-Next to David there is one more room, an entire plaster workshop, most of it by the nineteenth-century sculptor Bartolini. That's fine. He is not in our main quest.
-
-![](https://cdn.theneverless.com/2026/07/florence-gipsoteca.webp)
-
-Then on to the Uffizi. The Uffizi was the Medici family's offices; it is a museum now, packed wall to wall. Compared with Primavera and The Birth of Venus, Titian's Venus of Urbino now sits behind glass with a full wall of green behind her, more like a secret someone keeps carefully.
-
-![](https://cdn.theneverless.com/2026/07/florence-uffizi-venus-urbino.webp)
-
-The gallery's corridors are also worth the visit on their own: the town hall tower and the dome crowd into the same frame. The Vasari Corridor that branches off the west wing used to be reserved for the family; now a reservation gets you in. The windows face Ponte Vecchio straight on, the goldsmiths' signs baking in the sun. What this bridge sells has barely changed in a few hundred years.
+Out of the Accademia and on to the Uffizi, once the family's offices, now a museum packed wall to wall. The corridors deserve a slow walk: the town hall tower and the dome crowd into one window frame. The Vasari Corridor off the west wing was once for the family alone; now a ticket lets anyone through. Its windows face Ponte Vecchio, the goldsmiths' signs baking in the sun. This bridge has sold the same things for a few hundred years, and the selling has never stopped.
 
 ![](https://cdn.theneverless.com/2026/07/florence-uffizi-tower-view.webp)
 
 ![](https://cdn.theneverless.com/2026/07/florence-ponte-vecchio-shops.webp)
 
-Out of the museum, down to the river. Dusk is the Arno's home game, and the river belongs to the whole city. The wind stopped, the water went flat as a mirror, and the bridges and houses fell into it. Someone rowed a small boat right through the reflections and split the whole river gently open.
+Out of the museum and down to the river. Dusk is the Arno's home game, and it is the ordinary Florentines' turn on the field. The wind died, the water flattened into a mirror, bridges and houses dropped whole into it, and someone rowed a small boat through the reflections, splitting the river gently open.
 
 <div class="img-grid">
 <img src="https://cdn.theneverless.com/2026/07/florence-bridge-sunset-couple.webp" alt="">
@@ -74,24 +62,28 @@ Out of the museum, down to the river. Dusk is the Arno's home game, and the rive
 <img src="https://cdn.theneverless.com/2026/07/florence-arno-rowboat.webp" alt="">
 </div>
 
-The thing to do then is follow the crowd uphill to Piazzale Michelangelo, because the sun is about to go down. On the way up, look back: the dome and the bell tower are showing through the gaps in the leaves.
+Follow the crowd up toward Piazzale Michelangelo; the sun is nearly down. Look back halfway up and the dome and the bell tower show through the gaps in the leaves.
 
 ![](https://cdn.theneverless.com/2026/07/florence-piazzale-skyline.webp)
 
-From the edge of the square, the bridges over the Arno line up one after another, all the way out of the city. The steps and the railings were packed.
+From the edge of the square, the bridges on the Arno line up one after another all the way out of the city, and the steps and railings are packed solid.
 
 ![](https://cdn.theneverless.com/2026/07/florence-arno-bridges-from-above.webp)
 
 ![](https://cdn.theneverless.com/2026/07/florence-piazzale-sunset.webp)
 
-A scene like that does not lack for romance. Just as the sun was about to drop behind the hills, a stir went through the crowd. Someone unrolled a handwritten banner: MI VUOI SPOSARE? (Will you marry me?) The banner even came with two options, drawn in all seriousness: SI and NO. She checked SI in tears, the balloons went up, and a whole square of strangers cheered together.
+A scene like this never lacks romance. Just as the sun touched the ridge, a stir ran through the crowd: someone unrolled a handwritten banner, MI VUOI SPOSARE? (Will you marry me?), with two boxes drawn on it in all seriousness, SI and NO. She ticked SI in tears, the balloons went up, and a whole square of strangers cheered for them.
 
 ![](https://cdn.theneverless.com/2026/07/florence-piazzale-proposal.webp)
 
-The way down cuts through the rose garden, picnickers all over the grass. No need to hurry. The sun hangs half set, and the light after it lasts a long time.
+The way down cuts through the rose garden, the grass covered in picnics, nobody in any hurry. The sun hangs half set and stays there; everyone here is long used to it. The day still has a long way to run.
 
 ![](https://cdn.theneverless.com/2026/07/florence-rose-garden.webp)
 
-On the last day, before leaving, I climbed up to a terrace for one more look at the dome. Six hundred some years ago, nobody believed it could be built. Now everyone is used to it. The three hundred years of Medici rule that followed the dome have been over for almost three hundred years now; the ruling and the vanishing, everyone is used to those too.
+The day we left, I was up very early. Early morning Florence is not for tourists: the light lay low on the flagstones, and a mother pedaled a cargo bike through the crossing, two kids in the front bucket. The visitors were still asleep; the city's day opened for business the way it always does.
+
+![](https://cdn.theneverless.com/2026/07/florence-street-cargo-bike.webp)
+
+Before we left I climbed up to a terrace for one more look at the dome. Six hundred years ago nobody believed it could be built; by now everyone is used to the sight of it. The Medici were dazzling for three hundred years and have been finished for almost three hundred more, and everyone is used to that too, the way they are used to the sunrise, the sunset, and the heat of this city. Only the ordinary days are still being lived, and the dome that owes nothing to their taste is still standing where it was.
 
 ![](https://cdn.theneverless.com/2026/07/florence-rooftops-duomo.webp)
