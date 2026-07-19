@@ -12,7 +12,16 @@ function markPending(img: HTMLImageElement) {
   img.closest(mediaContainerSelector)?.classList.add('is-image-pending');
 }
 
+let unlockListenerBound = false;
+
 export function mountImageLoadingStates() {
+  if (!unlockListenerBound) {
+    unlockListenerBound = true;
+    // Protected posts insert their images after decryption; re-run for them.
+    // Already-handled images are skipped by the per-image guard below.
+    document.addEventListener('protected-post:unlocked', mountImageLoadingStates);
+  }
+
   document.querySelectorAll<HTMLImageElement>('main img').forEach((img) => {
     if (img.dataset.loadingStateReady === 'true') return;
     img.dataset.loadingStateReady = 'true';

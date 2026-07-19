@@ -7,13 +7,21 @@ import { defineConfig } from 'astro/config';
 import process from 'node:process';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
+import { loadEnv } from 'vite';
 import rehypeImageGallery from './scripts/rehype/image-gallery.mjs';
+import rehypeProtectedContent from './scripts/rehype/protected-content.mjs';
 import postEditor from './scripts/post-editor/integration.mjs';
 import config from './astro-theme-config.ts';
 import { toneExpressiveCodeOptions } from './src/config/expressive-code.ts';
 
 // https://astro.build/config
 const sitemapExcludedPaths = new Set(['/search/']);
+// Password for posts with `protected: true` frontmatter. Read from the
+// process env (CI secret) or .env.local (local builds); never committed.
+const postPassword =
+  process.env.POST_PASSWORD ||
+  loadEnv(process.env.NODE_ENV ?? 'production', process.cwd(), '').POST_PASSWORD;
+
 const configuredSite = process.env.ASTRO_SITE_URL || config.site.url;
 const configuredBaseValue = process.env.ASTRO_SITE_BASE ?? config.site.base;
 const configuredBase =
@@ -54,6 +62,8 @@ export default defineConfig({
         },
       ],
       rehypeImageGallery,
+      // Keep last: encrypts the fully processed tree of protected posts.
+      [rehypeProtectedContent, { password: postPassword }],
     ],
   },
 });

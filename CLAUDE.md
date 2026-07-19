@@ -31,6 +31,7 @@ Personal blog "NeVeRtheLeSs" (2005 to present, 343 posts, bilingual zh/en). Astr
 - Pipeline credentials go in `.env.local` (git-ignored); the variable names are documented in `.env.example`. Without credentials, dry-run modes and all but one test still work.
 - `scripts/migrate/` is finished WordPress-migration tooling (Python). Design history lives in `docs/`, including `docs/superpowers/specs/` and `docs/superpowers/plans/`.
 - **Local post editor**: `/_edit` on the dev server (dev-only Astro integration in `scripts/post-editor/`, zero build footprint). Runbook: [docs/post-editor.md](docs/post-editor.md).
+- **Protected posts**: `protected: true` in frontmatter (primary AND sibling translation) encrypts the post body at build time; the password comes from `POST_PASSWORD` (`.env.local` locally, GitHub Actions secret in deploys). Title, description, and hero stay public, and the markdown source is readable in this public repo. Runbook: [docs/protected-posts.md](docs/protected-posts.md).
 
 ## Safety
 

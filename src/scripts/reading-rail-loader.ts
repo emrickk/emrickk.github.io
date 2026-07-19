@@ -1,4 +1,4 @@
-import { mountReadingRailForPosts } from './reading-rail';
+import { initReadingRail, mountReadingRailForPosts } from './reading-rail';
 
 const railQuery = '(min-width: 1220px)';
 let mounted = false;
@@ -18,5 +18,9 @@ export function mountReadingRailLoader() {
   listening = true;
   railMediaQuery.addEventListener('change', (event) => {
     if (event.matches) mountReadingRailWhenWide();
+  });
+  // Protected posts add their headings after decryption; rebuild the rail.
+  document.addEventListener('protected-post:unlocked', () => {
+    if (mounted) initReadingRail();
   });
 }

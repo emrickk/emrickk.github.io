@@ -55,6 +55,16 @@ const sibling = post.data.translationKey
   : undefined;
 const Sibling = sibling ? (await render(sibling)).Content : null;
 
+// A protected post and its translation must both carry the flag: each file
+// declares it in its own frontmatter so the content-layer cache invalidates
+// correctly, and this guard fails the build before a half-flagged pair can
+// ship one body as plaintext.
+if (sibling && post.data.protected !== sibling.data.protected) {
+  throw new Error(
+    `Protected flag mismatch for "${post.id}": set protected: true in both the primary post and its ${otherLang} sibling, or in neither.`
+  );
+}
+
 const readingTime = Math.max(1, Math.round(readingTimeLib(post.body ?? '').minutes));
 ---
 

@@ -25,6 +25,10 @@ const posts = defineCollection({
       homeHeroOrder: z.number().int().positive().optional(),
       homeOrder: z.number().int().positive().optional(),
       draft: z.boolean().default(false),
+      // Password-protected body: encrypted at build time by
+      // scripts/rehype/protected-content.mjs. Bilingual posts must set this
+      // in the sibling translation too. Runbook: docs/protected-posts.md.
+      protected: z.boolean().default(false),
       // Bilingual support. `lang` is the post's original language.
       // `titleZh` / `titleEn` are optional so the site builds at any partial
       // translation state; the theme falls back to `title` when one is missing.
@@ -47,6 +51,8 @@ const translations = defineCollection({
     translationKey: z.string(),
     lang: z.enum(['zh', 'en']),
     title: z.string().optional(),
+    // Must match the primary post's flag; posts/[...slug].astro enforces it.
+    protected: z.boolean().default(false),
   }),
 });
 

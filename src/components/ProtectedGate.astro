@@ -1,0 +1,98 @@
+---
+// Unlock form for password-protected posts. PostLayout renders this when the
+// post frontmatter has `protected: true`; the encrypted body blocks it
+// unlocks are produced at build time by scripts/rehype/protected-content.mjs.
+---
+
+<div class="protected-gate" data-protected-gate data-pagefind-ignore="all">
+  <p class="protected-gate-lede">这篇文章设置了密码。 · This post is password protected.</p>
+  <form class="protected-gate-form">
+    <input
+      id="protected-gate-password"
+      type="password"
+      autocomplete="off"
+      placeholder="密码 · Password"
+      aria-label="密码 · Password"
+      required
+    />
+    <button type="submit">解锁 · Unlock</button>
+  </form>
+  <p class="protected-gate-error" data-gate-error hidden>
+    密码不对，再试一次。 · Wrong password, try again.
+  </p>
+  <noscript
+    ><p class="protected-gate-error">
+      阅读这篇文章需要启用 JavaScript。 · Enable JavaScript to read this post.
+    </p></noscript
+  >
+</div>
+
+<script>
+  import { onReady } from '../scripts/mount';
+  import { mountProtectedPost } from '../scripts/protected-post';
+
+  onReady(mountProtectedPost);
+</script>
+
+<style>
+  .protected-gate {
+    margin: 2.5rem 0;
+    padding: 2rem 1.5rem;
+    border: 1px solid var(--separator);
+    border-radius: var(--radius-lg);
+    background: var(--fill-quaternary);
+    text-align: center;
+  }
+
+  .protected-gate-lede {
+    margin: 0 0 1.25rem;
+    color: var(--label-secondary);
+  }
+
+  .protected-gate-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .protected-gate-form input {
+    min-width: 0;
+    width: min(16rem, 100%);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--separator);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--label-primary);
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  .protected-gate-form input:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 1px;
+  }
+
+  .protected-gate-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--color-accent);
+    color: #fff;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: var(--weight-medium, 500);
+    cursor: pointer;
+  }
+
+  .protected-gate-form button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
+  .protected-gate-error {
+    margin: 1rem 0 0;
+    color: var(--label-secondary);
+    font-size: 0.9em;
+  }
+</style>

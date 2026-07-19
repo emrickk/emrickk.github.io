@@ -9,6 +9,7 @@ import FeaturedPostGrid from '../components/FeaturedPostGrid.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import LangTitle from '../components/LangTitle.astro';
 import ImageLightbox from '../components/ImageLightbox.astro';
+import ProtectedGate from '../components/ProtectedGate.astro';
 import ScrollFocus from '../components/ScrollFocus.astro';
 import BaseLayout from './BaseLayout.astro';
 import { SITE_AUTHOR, SITE_LANG, SITE_TITLE } from '../consts';
@@ -39,6 +40,7 @@ const {
   showHero,
   readingTime,
   focusEffect,
+  protected: isProtected = false,
   relatedPosts = [],
   olderPost,
   newerPost,
@@ -120,7 +122,12 @@ const jsonLd = serializeScriptJson({
         {
           description && (
             <p class="post-description">
-              <LangTitle zh={descriptionZh} en={descriptionEn} orig={origLang} fallback={description} />
+              <LangTitle
+                zh={descriptionZh}
+                en={descriptionEn}
+                orig={origLang}
+                fallback={description}
+              />
             </p>
           )
         }
@@ -145,6 +152,7 @@ const jsonLd = serializeScriptJson({
       <div class="post-divider"></div>
 
       <div class="prose" id="prose-content">
+        {isProtected && <ProtectedGate />}
         <slot />
       </div>
 

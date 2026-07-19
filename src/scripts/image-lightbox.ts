@@ -79,25 +79,31 @@ export function mountImageLightbox() {
     closeBtn.focus({ preventScroll: true });
   };
 
-  document.querySelectorAll<HTMLImageElement>('.prose img').forEach((img) => {
-    if (img.closest('a') || img.dataset.lightboxBound === 'true') return;
-    img.dataset.lightboxBound = 'true';
-    img.classList.add('is-zoomable');
-    img.setAttribute('tabindex', '0');
-    img.setAttribute('role', 'button');
-    img.setAttribute('aria-haspopup', 'dialog');
-    img.setAttribute('aria-label', `${img.alt || 'Image'} preview`);
+  const bindProseImages = () => {
+    document.querySelectorAll<HTMLImageElement>('.prose img').forEach((img) => {
+      if (img.closest('a') || img.dataset.lightboxBound === 'true') return;
+      img.dataset.lightboxBound = 'true';
+      img.classList.add('is-zoomable');
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-haspopup', 'dialog');
+      img.setAttribute('aria-label', `${img.alt || 'Image'} preview`);
 
-    const open = () => openLightbox(img);
+      const open = () => openLightbox(img);
 
-    img.addEventListener('click', open);
-    img.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        open();
-      }
+      img.addEventListener('click', open);
+      img.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          open();
+        }
+      });
     });
-  });
+  };
+
+  bindProseImages();
+  // Protected posts insert their body after decryption.
+  document.addEventListener('protected-post:unlocked', bindProseImages);
 
   closeBtn.addEventListener('click', closeLightbox);
   prevBtn.addEventListener('click', () => showAt(galleryIndex - 1));
@@ -121,7 +127,7 @@ export function mountImageLightbox() {
       touchStartX = event.touches[0].clientX;
       touchStartY = event.touches[0].clientY;
     },
-    { passive: true },
+    { passive: true }
   );
 
   dialog.addEventListener(
@@ -136,7 +142,7 @@ export function mountImageLightbox() {
       suppressClick = true;
       showAt(dx < 0 ? galleryIndex + 1 : galleryIndex - 1);
     },
-    { passive: true },
+    { passive: true }
   );
 
   dialog.addEventListener('click', (event) => {
