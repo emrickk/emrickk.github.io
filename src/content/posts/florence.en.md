@@ -2,6 +2,7 @@
 translationKey: 'florence'
 lang: 'en'
 title: 'A day in Florence'
+description: 'A day in Florence: a Medici family theme park, a sunset that would not end, and a marriage proposal the whole square joined.'
 ---
 
 Xu Zhimo translated Firenze into Chinese as "翡冷翠", roughly "cold emerald jade", but Florence in May had nothing to do with either. A European heat wave burned the days up to midsummer temperatures, and after sunset the city refused to close, staying loud until eleven at night.

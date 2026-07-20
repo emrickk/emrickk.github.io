@@ -6,10 +6,6 @@ heroImage: ../../assets/hero/2026/07/florence-cover.webp
 category: Journal
 lang: zh
 translationKey: florence
-titleZh: 翡冷翠一天
-titleEn: A day in Florence
-descriptionZh: 佛罗伦萨一日：美第奇家族的主题乐园，不结束的日落，和一场全民参与的求婚
-descriptionEn: 'A day in Florence: a Medici family theme park, a sunset that would not end, and a marriage proposal the whole square joined.'
 ---
 
 徐志摩把 Firenze 译成"翡冷翠"，可五月的佛罗伦萨和冷、和翡翠都扯不上关系。欧洲的热浪把白天烧得像盛夏，太阳落了山，城里的热闹也不散场，要一直闹到晚上11点。
