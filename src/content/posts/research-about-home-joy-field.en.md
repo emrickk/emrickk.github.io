@@ -2,6 +2,7 @@
 translationKey: 'research-about-home-joy-field'
 lang: 'en'
 title: 'Why Can I Never Study When I Go Home'
+description: 'A mock-serious look at why studying at home never works: overestimating yourself, underplanning the holiday, and the cure of concrete milestones and deadlines.'
 ---
 
 As far back as 2007 I was already asking myself this question. That's right, ten years spent as a certified loser were not spent in vain, and today I shall give this worldwide conundrum some serious, earnest thought

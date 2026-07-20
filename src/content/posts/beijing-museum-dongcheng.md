@@ -5,10 +5,6 @@ pubDate: '2018-07-25'
 category: 'Things'
 lang: 'zh'
 translationKey: 'beijing-museum-dongcheng'
-titleZh: '北京博物馆漫游指南 - 东城区篇'
-titleEn: 'A Roaming Guide to Beijing Museums: Dongcheng'
-descriptionZh: '北京博物馆漫游指南的东城区篇：国博、故宫、海关博物馆等的评分与参观建议。'
-descriptionEn: 'The Dongcheng installment of a Beijing museum guide: ratings and visiting tips for the National Museum, the Palace Museum, and more.'
 ---
 
 北京博物馆漫游指南 - 东城区篇

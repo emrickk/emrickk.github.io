@@ -2,6 +2,7 @@
 translationKey: 'long-time-no-see'
 lang: 'en'
 title: 'Haven''t Written in Ages, Part One'
+description: 'Part one after a long silence: the curse of never studying at home is finally broken, all for a shot at a good school.'
 ---
 
 The reason there have to be two installments is that just as I was about to write, something suddenly came to mind

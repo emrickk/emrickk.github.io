@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2025/08/dont-make-me-think-cover.webp'
 category: 'Things'
 lang: 'en'
 translationKey: 'dont-make-me-think-about-my-job'
-titleZh: '别让我思考（我的工作）：真诚、专业与 B2B 产品设计'
-titleEn: 'Don''t Make Me Think (About My Job): Sincerity, Expertise, and B2B Product Design'
-descriptionZh: '《别让我思考》在 B2B 平台常被用错：真正的可用性是围绕采购决策做设计，而简化的资格要靠专业赢得。'
-descriptionEn: 'How "don''t make me think" gets misapplied on Alibaba.com: define the buyer''s decision, earn domain expertise, and build sincere B2B products.'
 ---
 
 > *Originally shared internally with the Alibaba.com product team. All examples are based on public information, and any sensitive data has been anonymized.*

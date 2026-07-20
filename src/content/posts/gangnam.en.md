@@ -2,6 +2,7 @@
 translationKey: 'gangnam'
 lang: 'en'
 title: 'Large Format Is Beautiful'
+description: 'One outing with the master and a single shot fit to look at: large format really is beautiful.'
 ---
 
 [![20130911](https://cdn.theneverless.com/2020/02/20130911.webp)](https://cdn.theneverless.com/2020/02/20130911.webp)

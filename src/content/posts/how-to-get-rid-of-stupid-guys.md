@@ -5,10 +5,6 @@ pubDate: '2015-08-31'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'how-to-get-rid-of-stupid-guys'
-titleZh: '一个经验'
-titleEn: 'A Lesson Learned'
-descriptionZh: '一个经验：千万不要给不太熟的“长辈”们科普，他们只是想输出自己的价值观。'
-descriptionEn: 'A lesson learned: never lecture half-familiar "elders" with facts; they only want to air their own values.'
 ---
 
 **千万不要给那些和你不太熟的五六十岁的“长辈”们科普知识=。=**

@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2026/07/venice-cover.webp'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'two-days-in-venice'
-titleZh: '威尼斯的日落'
-titleEn: 'Sunset in Venice'
-descriptionZh: '五月底的威尼斯：数不清的桥，坐不腻的船，和一座用颜色盖成的岛。'
-descriptionEn: 'Venice at the end of May: more bridges than you can count, boat rides you never tire of, and an island built out of color.'
 ---
 
 从佛罗伦萨过来的火车，最后几分钟是在海上开的：长堤两边都是水，然后一头扎进圣露西亚车站。出了站，台阶底下就是大运河。威尼斯不给人缓冲的时间，一出门就是全部。做好了失望准备的人，还是被它镇住了。她站在水边看了很久。

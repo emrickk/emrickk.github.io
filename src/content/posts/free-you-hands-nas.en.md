@@ -2,6 +2,7 @@
 translationKey: 'free-you-hands-nas'
 lang: 'en'
 title: 'Free Your Hands'
+description: 'A month and more with a Synology NAS: backups, a personal sync drive, an auto-transcoding photo album, and the gulf between usable and nice to use.'
 ---
 
 This post is about my impressions after a month and more of using a Synology NAS. That said, the title would honestly work for any electronic product, heated toilet seats included...

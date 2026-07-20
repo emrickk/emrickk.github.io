@@ -2,6 +2,7 @@
 translationKey: 'work-and-life'
 lang: 'en'
 title: 'Should You Keep Your True Self at Work and in Life?'
+description: 'A repost from Zhihu Daily on the "work face" and whether to keep your true self at work and in life.'
 ---
 
 Reposted from Zhihu Daily

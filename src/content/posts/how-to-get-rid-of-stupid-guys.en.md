@@ -2,6 +2,7 @@
 translationKey: 'how-to-get-rid-of-stupid-guys'
 lang: 'en'
 title: 'A Lesson Learned'
+description: 'A lesson learned: never lecture half-familiar "elders" with facts; they only want to air their own values.'
 ---
 
 **Never, ever try to educate those fifty- or sixty-something "elders" you barely know =。=**

@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2026/07/nine-hours-slow-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'nine-hours-slow'
-titleZh: '罗马，慢九小时还是九百年？'
-titleEn: 'Rome, 9 Hours or 900 Years Behind?'
-descriptionZh: '相机慢了九小时，罗马慢了九百年。五月的四天：清晨没有人的斗兽场，给神造的圣彼得，只剩我们和雕像的宫殿，万神殿顶上漏下来的太阳。'
-descriptionEn: 'The camera was 9 hours slow; Rome is 900 years behind. Four days in May: the Colosseum with nobody around, St. Peter''s built for God, a palace of statues all to ourselves, and the sun coming through the roof of the Pantheon.'
 ---
 
 In mid May we spent four days in Rome. The camera's clock was still on California time, nine hours slow, and I only noticed on the second morning, so everything from the first day and a half is stamped wrong: the Colosseum at seven in the morning says ten o'clock the night before.

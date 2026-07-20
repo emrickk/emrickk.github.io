@@ -2,6 +2,7 @@
 translationKey: 'wanna-be-creator'
 lang: 'zh'
 title: '我要当网红：让用户主动推广爱游的活动'
+description: '一篇产品案例：让用户主动为爱游制作推广视频、换取站内曝光和奖品的“我要当网红”活动。'
 ---
 
 *本文是[《从0到20万日活：爱游穿梭机的用户增长之旅》](/posts/aiyou-user-growth/)的姊妹篇。*

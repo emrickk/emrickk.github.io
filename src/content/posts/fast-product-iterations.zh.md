@@ -2,6 +2,7 @@
 translationKey: 'fast-product-iterations'
 lang: 'zh'
 title: '构建快速的产品问题解决迭代'
+description: '在 TuSimple 构建快速的产品问题解决迭代：对齐上下文，最大化参与决策，快速实验，管理预期。'
 ---
 
 ### 本文范围

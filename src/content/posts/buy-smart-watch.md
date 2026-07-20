@@ -5,10 +5,6 @@ pubDate: '2014-09-03'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'buy-smart-watch'
-titleZh: '智能手表选购记'
-titleEn: 'Shopping for a Smartwatch'
-descriptionZh: '398元特价入手Galaxy Gear：配置不俗，可玩性高，玩了几天还是束之高阁。'
-descriptionEn: 'Picking up a Galaxy Gear on a 398-yuan special: solid specs, plenty to tinker with, and a shelf spot a few days later.'
 ---
 
 想要购买一只智能手表已经好久了，苦于大厂的所谓智能手表价格一直高高在上，没能狠下心下手（谁让我是穷人呢

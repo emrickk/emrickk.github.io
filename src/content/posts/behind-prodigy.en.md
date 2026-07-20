@@ -2,6 +2,7 @@
 translationKey: 'behind-prodigy'
 lang: 'en'
 title: 'Behind the Genius''s Fame, Mountains of Drafts'
+description: 'A repost of Zhang Jiawei''s essay: from Raphael''s sketches to Bach and Hemingway, the diligent work behind every genius.'
 ---
 
 Author: Zhang Jiawei, new book: Representative Works and Works Represented

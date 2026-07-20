@@ -2,6 +2,7 @@
 translationKey: 'problem-must-be-solve'
 lang: 'en'
 title: 'Problems Exposed at Work Must Be Fixed Promptly, Of Course'
+description: 'A work summary written so as not to forget: deal with people objectively, independently, openly, and kindly, and see if tomorrow I can do all four.'
 ---
 
 The longer I have been at the company and the wider my circle of dealings has grown, the more severely my problems in dealing with people have been exposed.

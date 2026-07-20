@@ -2,6 +2,7 @@
 translationKey: 'kou-suo-dog'
 lang: 'en'
 title: 'Untitled'
+description: 'A bit of doggerel about the cheapskate dog: if a person is a cheapskate, they turn into a cheapskate dog.'
 ---
 
 Ah

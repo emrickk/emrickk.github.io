@@ -2,6 +2,7 @@
 translationKey: 'talk-about-bluechat'
 lang: 'en'
 title: 'A Word About Lanxin'
+description: 'A snarky look at Lanxin, the company''s official IM: why it exists, and the features that mostly do not work.'
 ---
 
 First, let's talk about why there needs to be a Lanxin at all.

@@ -5,10 +5,6 @@ pubDate: '2014-01-12'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'behind-prodigy'
-titleZh: '天才盛名背后，那些巍巍如山的草稿'
-titleEn: 'Behind the Genius''s Fame, Mountains of Drafts'
-descriptionZh: '转载：张佳玮的文章，从拉斐尔的草稿讲到巴赫与海明威，天才背后都是勤恳的工作。'
-descriptionEn: 'A repost of Zhang Jiawei''s essay: from Raphael''s sketches to Bach and Hemingway, the diligent work behind every genius.'
 ---
 
 作者：张佳玮， 新书：代表作和被代表作

@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2023/01/fast-product-iterations-cover.jpg'
 category: 'Things'
 lang: 'en'
 translationKey: 'fast-product-iterations'
-titleZh: '构建快速的产品问题解决迭代'
-titleEn: 'Forming Fast Product Problem-solving Iterations'
-descriptionZh: '在 TuSimple 构建快速的产品问题解决迭代：对齐上下文，最大化参与决策，快速实验，管理预期。'
-descriptionEn: 'Forming fast product problem-solving iterations at TuSimple: shared context, maximized participation in decision-making, quick experiments, and expectation management.'
 ---
 
 ### Scope of the Article

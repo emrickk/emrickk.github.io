@@ -2,6 +2,7 @@
 translationKey: 'been-cought'
 lang: 'en'
 title: 'On Getting Caught in an Exam'
+description: 'A self-mocking note on getting thrown out of an exam hall for the first time.'
 ---
 
 Well, about that. All these years this old campaigner has swept across the battlefield, and this is the first time I've been kicked out of an exam hall. Mostly I just underestimated the enemy =。=

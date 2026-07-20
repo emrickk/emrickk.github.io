@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/64-1.png'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'say-say-say-it-again'
-titleZh: '这些话又又又要说一遍了'
-titleEn: 'Saying This Again, Again, and Again'
-descriptionZh: '从高中的参考书到大学的flag再到工作后：在家从来学不进去，此计无解。'
-descriptionEn: 'From high-school weekends to holiday resolutions to working life: studying at home never happens, and there is no fix.'
 ---
 
 从高中的第一个周末就开始往家里带很多参考书，决心每个在家的周末都不能够浪费然而我的日历清晰的记录了高中三年的一百四十多个周末，没有一个是看过书的![64](https://cdn.theneverless.com/2020/02/64-1.webp)

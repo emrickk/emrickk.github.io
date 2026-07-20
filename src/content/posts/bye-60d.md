@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOSt6Z25keS90YkwzN1ZTYXFIZ254WE
 category: 'Journal'
 lang: 'zh'
 translationKey: 'bye-60d'
-titleZh: '沙扬娜拉 60D'
-titleEn: 'Sayonara, 60D'
-descriptionZh: '告别用了八个月的佳能60D：第一支定焦、给同学拍过的照片，和一件一件出掉的过程。'
-descriptionEn: 'Saying sayonara to the Canon 60D after eight months: a first prime lens, photos taken for classmates, and selling it off piece by piece.'
 ---
 
 “沙扬娜拉”，一句日语，它不只是再见的意思。

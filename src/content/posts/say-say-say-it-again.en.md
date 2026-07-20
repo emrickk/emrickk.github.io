@@ -2,6 +2,7 @@
 translationKey: 'say-say-say-it-again'
 lang: 'en'
 title: 'Saying This Again, Again, and Again'
+description: 'From high-school weekends to holiday resolutions to working life: studying at home never happens, and there is no fix.'
 ---
 
 From the very first weekend of high school I started hauling stacks of reference books home, determined not to let a single weekend at home go to waste. Yet my calendar clearly recorded the hundred-forty-odd weekends of those three high school years, and not one of them ever saw me open a book![64](https://cdn.theneverless.com/2020/02/64-1.webp)

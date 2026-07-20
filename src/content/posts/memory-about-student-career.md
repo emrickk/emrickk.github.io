@@ -5,10 +5,6 @@ pubDate: '2015-03-10'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'memory-about-student-career'
-titleZh: '虚度的青春'
-titleEn: 'Squandered Youth'
-descriptionZh: '偶然点回豆瓣才发现，大学爱上的网站都不爱上了：不是舍不得大学，是对虚度青春的悔恨。'
-descriptionEn: 'Stumbling back onto Douban and realizing the college-era sites are all abandoned: not missing school, but regretting a squandered youth.'
 ---
 
 今天看到一个挺有意思的文。一路看下去就到了豆瓣。

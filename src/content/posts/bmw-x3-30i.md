@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2023/03/BMW-X3-14.jpeg'
 category: 'Prodigal'
 lang: 'en'
 translationKey: 'bmw-x3-30i'
-titleZh: 'X3 中的克拉克·肯特'
-titleEn: 'The Clark Kent of X3s'
-descriptionZh: '订一台选满M运动套件的宝马X3 30i：一台暗自想成为X3M的克拉克·肯特，附提车照片。'
-descriptionEn: 'Ordering a BMW X3 30i in full M Sport dress: a Clark Kent that secretly wishes it were an X3M, with delivery photos.'
 ---
 
 > "Don't be fooled, it's just the Clark Kent of X3s, secretly wishing it was a superhero X3M."

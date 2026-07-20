@@ -5,10 +5,6 @@ pubDate: '2014-07-27'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'funny-is-power'
-titleZh: '有趣是第一生产力'
-titleEn: 'Being Interesting Is the Primary Productive Force'
-descriptionZh: '转载：小井岩谈男人的品位，最高体现是分寸与克制。'
-descriptionEn: 'A repost of Xiao Jingyan''s short essay on taste in men, summed up as proportion and restraint.'
 ---
 
 作者：小井岩  

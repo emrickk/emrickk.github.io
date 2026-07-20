@@ -5,10 +5,6 @@ pubDate: '2015-12-04'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'think-again'
-titleZh: '三省吾身'
-titleEn: 'Three Daily Questions'
-descriptionZh: '给自己的每日三问：用户真需要吗，做完之后能干啥，有没有数据支持。'
-descriptionEn: 'Three daily questions for myself: do users really need this, what happens after it ships, and is there data to back it up.'
 ---
 
 吾日三省吾身

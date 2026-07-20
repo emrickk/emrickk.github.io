@@ -2,6 +2,7 @@
 translationKey: 'meet-yourself-at-teenage'
 lang: 'en'
 title: 'Meeting Your Twenty-Year-Old Self'
+description: 'A repost of Hecaitou''s essay on standing before your twenty-year-old self, and what you would, and would not, tell him.'
 ---
 
 At twenty, facing this world, life still holds infinitely many possibilities and choices

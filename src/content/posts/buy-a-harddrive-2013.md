@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOTlyNUorQlB3V05kQzFlSmFEekoxOW
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'buy-a-harddrive-2013'
-titleZh: '硬盘购买记'
-titleEn: 'Hard Drive Shopping Chronicle'
-descriptionZh: '一波三折的硬盘购买记：有划痕的LaCie、高温异响的希捷4T，最后落定3T裸盘加硬盘架。'
-descriptionEn: 'A hard drive shopping saga: a scratched LaCie, a hot and rattling Seagate 4TB, and finally a bare 3TB drive in a dock.'
 ---
 
 好久没写东西了 今天来把欠下来的全补上

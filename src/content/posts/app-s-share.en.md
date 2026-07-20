@@ -2,6 +2,7 @@
 translationKey: 'app-s-share'
 lang: 'en'
 title: 'The Apps on My Phone'
+description: 'A running tour of the apps on my phone: capsule reviews of art and exhibition apps, from Artsy to iMuseum.'
 ---
 
 With nothing to do over lunch, let me share the apps on my phone. I use rather few apps, and my impressions of them run shallow. Just simple categories and introductions; consider it a brick tossed out to draw jade.

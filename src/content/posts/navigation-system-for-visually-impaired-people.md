@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/Visually-Impaired1.jpg'
 category: 'Things'
 lang: 'en'
 translationKey: 'navigation-system-for-visually-impaired-people'
-titleZh: '视障人士导航系统'
-titleEn: 'Navigation System for Visually Impaired People'
-descriptionZh: '一份视障人士导航系统的设计研究：以SLAM与双目相机避障，配合信标与众包地图实现精准导航。'
-descriptionEn: 'A design study for a navigation system for visually impaired people: SLAM-based collision avoidance plus beacons and crowdsourced maps for precise guidance.'
 ---
 
 Two problems blind people often encounter when walking are colliding with obstacles and overshooting or missing completely their intended destinations. Our solution is to combine collision-avoidance measures with navigation guidance systems, using the locations of our users with beacons installed as geology fences at key locations which need high navigation accuracy.

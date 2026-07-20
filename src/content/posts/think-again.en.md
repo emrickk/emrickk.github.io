@@ -2,6 +2,7 @@
 translationKey: 'think-again'
 lang: 'en'
 title: 'Three Daily Questions'
+description: 'Three daily questions for myself: do users really need this, what happens after it ships, and is there data to back it up.'
 ---
 
 Each day I examine myself on three counts.

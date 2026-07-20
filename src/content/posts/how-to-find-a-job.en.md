@@ -2,6 +2,7 @@
 translationKey: 'how-to-find-a-job'
 lang: 'en'
 title: 'Notes from a Job Hunt'
+description: 'Notes from a two-week job hunt: interviews at Toutiao, 360, Momo, and Meituan, and the lessons from each.'
 ---
 
 I spent two weeks switching jobs, so here I am writing down some of the experience and reflections accumulated along the way. It can't really claim to be a universal summary; call it a little sharing of one person's experience. In two parts:

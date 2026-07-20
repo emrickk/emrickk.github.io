@@ -2,6 +2,7 @@
 translationKey: 'weight-control-aside-2013'
 lang: 'en'
 title: 'Weight Loss Diary'
+description: 'A weight loss diary from 2013, logging day by day what I ate, whether I exercised, and how my weight moved.'
 ---
 
 -----------------------------Weight Loss, Phase One-----------------------------

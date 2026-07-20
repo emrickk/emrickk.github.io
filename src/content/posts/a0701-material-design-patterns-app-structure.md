@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/patterns_navigation_threelevel1.png'
 category: 'Things'
 lang: 'zh'
 translationKey: 'a0701-material-design-patterns-app-structure'
-titleZh: 'MD设计中的应用结构'
-titleEn: 'App Structure in Material Design'
-descriptionZh: '对Material Design规范中App Structure一章的翻译：开始屏幕、顶级导航与组合导航的策略。'
-descriptionEn: 'A Chinese translation of the App Structure chapter from Material Design''s Patterns section: start screens, top-level navigation, and combined navigation strategies.'
 ---
 
 本文是对Material Design Pattern部分中App structure章节的翻译，本文没有搬运相应的图片，请自行前往原页面围观图片（[传送门](https://www.google.com/design/spec/patterns/app-structure.html#app-structure-top-level-navigation-strategies)）**前言：应用结构**你想要展示给你的用户的内容和任务影响着你应用的结构。比如说：

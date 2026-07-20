@@ -1,15 +1,11 @@
 ---
 title: 'Lost in Redwood'
-description: 'A photo journal from a July weekend among the coast redwoods: a creaky Victorian inn, fern-lined trails, a VW bus surfacing out of the fog on the coast highway, and the slow road home through the giants.'
+description: 'A photo journal among the coast redwoods.'
 pubDate: '2026-07-12'
 heroImage: '../../assets/hero/2026/07/redwood-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'two-days-in-the-redwoods'
-titleZh: '迷失 Redwood'
-titleEn: 'Lost in Redwood'
-descriptionZh: '七月的一个周末在海岸红杉林：吱呀作响的维多利亚旅馆，蕨类夹道的小径，从海岸公路的雾里驶出的大众巴士，和穿过巨树的归途。'
-descriptionEn: 'A photo journal among the coast redwoods.'
 ---
 
 Last July we spent a weekend on the far north coast of California, where the redwoods grow. The photos then sat in a folder for a year. Sorting through them now, the two days come back sharper than I expected: an old inn, a great many ferns, and fog that refused to lift.

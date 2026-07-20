@@ -2,6 +2,7 @@
 translationKey: 'remarkable-2-review'
 lang: 'en'
 title: 'reMarkable 2'
+description: 'A hands-on review of the reMarkable 2 e-ink tablet: paper-like writing, a great screen, and clear limits from sparse features to poor Chinese support.'
 ---
 
 I have a habit of keeping everything, including my thoughts, on notes for a long time. However, after losing three of my notebooks last year when I moved to California, I started forcing myself to scan all my notes every night before sleeping. Scanning plus OCR is sufficient for saving and retrieving notes, but it is painful to roll the immense boulder up the hill like Sisyphus every night. So, I had the idea to digitalize my note-taking process.

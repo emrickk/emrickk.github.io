@@ -2,6 +2,7 @@
 translationKey: 'now'
 lang: 'en'
 title: 'Now'
+description: 'On not letting the past keep you from enjoying now, like children who play till sundown and still don''t want to go home.'
 ---
 
 Everyone has been through all sorts of different things in the past, yet some of them look impossibly happy. That is because they all understand perfectly well what a losing bargain it is to let the past hold you back from enjoying the present.

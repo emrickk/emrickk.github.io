@@ -2,6 +2,7 @@
 translationKey: 'does-yidilian-love'
 lang: 'en'
 title: 'Does Long-Distance Count as Love?'
+description: 'A repost from Zhihu Daily: a long-distance partner on why distance is no measure of a relationship.'
 ---
 
 Reposted from Zhihu Daily

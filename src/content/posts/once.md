@@ -5,10 +5,6 @@ pubDate: '2011-08-23'
 category: 'Words'
 lang: 'zh'
 translationKey: 'once'
-titleZh: '一生至少该有一次'
-titleEn: 'once'
-descriptionZh: '摘录一段流传很广的话：一生至少该有一次，为了某个人而忘了自己。'
-descriptionEn: 'A widely shared passage: at least once in a lifetime, forgetting yourself for someone.'
 ---
 
 一生至少该有一次，为了某个人而忘了自己，不求有结果，不求同行，不求曾经拥有，甚至不求你爱我。只求在我最美的年华里，遇到你。你遇到了，我也遇到了。

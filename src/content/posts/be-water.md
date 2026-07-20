@@ -5,10 +5,6 @@ pubDate: '2006-10-03'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'be-water'
-titleZh: '水'
-titleEn: 'Water'
-descriptionZh: '从杜牧的赤壁诗写起：水留住了历史，也淌走了遗憾。'
-descriptionEn: 'Starting from Du Mu''s Red Cliff poem: water that keeps history and washes regret away.'
 ---
 
 折戟沉沙铁未消，自将磨洗认前朝。\

@@ -2,6 +2,7 @@
 translationKey: 'mistake-pointed-out'
 lang: 'en'
 title: 'Love Is Not Greed'
+description: 'A repost on love and greed: love is mutual dependence and care between people, and losing yourself in the material is greed, not maturity.'
 ---
 
 Let me first point out one of your misconceptions. The idea of "evolution" has nothing more to do with the rest of your life: you are not forever trending toward becoming healthier or more beautiful, and if your expectations have grown, that isn't evolution either. So don't imagine this as some irresistible part of your nature.

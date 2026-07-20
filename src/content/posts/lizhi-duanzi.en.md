@@ -2,6 +2,7 @@
 translationKey: 'lizhi-duanzi'
 lang: 'en'
 title: 'Inspirational One-Liners'
+description: 'Inspirational one-liners are easy to write, sound wiser the longer you chew on them, and help your life not at all.'
 ---
 
 Writing inspirational one-liners is extremely easy.

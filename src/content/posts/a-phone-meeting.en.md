@@ -2,6 +2,7 @@
 translationKey: 'a-phone-meeting'
 lang: 'en'
 title: 'Notes on a Conference Call'
+description: 'Lessons from a conference call: leave enough time, book the room, don''t rely on the code monkeys, and ask the boss to ride out when needed.'
 ---
 
 Held a conference call today with JJ's classmate.. lessons learned as follows (in chronological order

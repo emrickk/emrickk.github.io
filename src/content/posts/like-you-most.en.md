@@ -2,6 +2,7 @@
 translationKey: 'like-you-most'
 lang: 'en'
 title: 'I Like You the Very Most, Midori'
+description: 'A repost of the bear-in-spring dialogue from Haruki Murakami''s Norwegian Wood.'
 ---
 
 "I like you the very most, Midori."

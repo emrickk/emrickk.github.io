@@ -16,6 +16,7 @@ import { SITE_AUTHOR, SITE_LANG, SITE_TITLE } from '../consts';
 import { getUiText } from '../ui';
 import { withBase } from '../utils/paths';
 import { serializeScriptJson } from '../utils/serialize-script-json';
+import { buildTranslationMap, resolveLangText } from '../utils/translations';
 
 type Props = CollectionEntry<'posts'>['data'] & {
   slug?: string;
@@ -28,12 +29,9 @@ type Props = CollectionEntry<'posts'>['data'] & {
 const {
   slug,
   title,
-  titleZh,
-  titleEn,
   lang: origLang = 'zh',
+  translationKey,
   description,
-  descriptionZh,
-  descriptionEn,
   pubDate,
   updatedDate,
   heroImage,
@@ -48,6 +46,13 @@ const {
 
 const tr = getUiText();
 const postsBase = withBase('/posts');
+
+// zh/en display text: own language from this post's frontmatter, the other
+// language from the sibling translation file.
+const tmap = await buildTranslationMap();
+const text = resolveLangText({ title, description, lang: origLang, translationKey }, tmap);
+const olderText = olderPost ? resolveLangText(olderPost.data, tmap) : undefined;
+const newerText = newerPost ? resolveLangText(newerPost.data, tmap) : undefined;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const pubDateISO = pubDate.toISOString();
@@ -113,8 +118,8 @@ const jsonLd = serializeScriptJson({
         <LangTitle
           tag="h1"
           class="post-title"
-          zh={titleZh}
-          en={titleEn}
+          zh={text.titleZh}
+          en={text.titleEn}
           orig={origLang}
           fallback={title}
           meta={title}
@@ -123,8 +128,8 @@ const jsonLd = serializeScriptJson({
           description && (
             <p class="post-description">
               <LangTitle
-                zh={descriptionZh}
-                en={descriptionEn}
+                zh={text.descriptionZh}
+                en={text.descriptionEn}
                 orig={origLang}
                 fallback={description}
               />
@@ -164,8 +169,8 @@ const jsonLd = serializeScriptJson({
                 <span class="post-nav-label">{tr.postNav.older}</span>
                 <LangTitle
                   class="post-nav-title"
-                  zh={olderPost.data.titleZh}
-                  en={olderPost.data.titleEn}
+                  zh={olderText?.titleZh}
+                  en={olderText?.titleEn}
                   orig={olderPost.data.lang ?? 'zh'}
                   fallback={olderPost.data.title}
                 />
@@ -177,8 +182,8 @@ const jsonLd = serializeScriptJson({
                 <span class="post-nav-label">{tr.postNav.newer}</span>
                 <LangTitle
                   class="post-nav-title"
-                  zh={newerPost.data.titleZh}
-                  en={newerPost.data.titleEn}
+                  zh={newerText?.titleZh}
+                  en={newerText?.titleEn}
                   orig={newerPost.data.lang ?? 'zh'}
                   fallback={newerPost.data.title}
                 />

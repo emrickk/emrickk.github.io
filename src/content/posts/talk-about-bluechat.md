@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/lanxin-pic2.png'
 category: 'Things'
 lang: 'zh'
 translationKey: 'talk-about-bluechat'
-titleZh: '来说一下蓝信'
-titleEn: 'A Word About Lanxin'
-descriptionZh: '吐槽数字公司的御用IM蓝信：为什么会有它，以及那些让人哭笑不得的特色功能。'
-descriptionEn: 'A snarky look at Lanxin, the company''s official IM: why it exists, and the features that mostly do not work.'
 ---
 
 先说说看为什么要有蓝信吧。

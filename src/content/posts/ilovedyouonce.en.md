@@ -2,6 +2,7 @@
 translationKey: 'ilovedyouonce'
 lang: 'en'
 title: 'I loved you once'
+description: 'A repost of Pushkin''s poem "I Loved You Once", with English and Chinese lines interleaved.'
 ---
 
 I once loved you so deeply

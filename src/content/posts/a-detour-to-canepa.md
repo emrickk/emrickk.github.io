@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2024/10/canepa-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'a-detour-to-canepa'
-titleZh: '拐去 Canepa'
-titleEn: 'A detour to Canepa'
-descriptionZh: '去 Santa Cruz 的路上撞见一栋停满车的楼：窗光里的 Abarth，从夹层往下看的车间，一层楼的 911，和黄昏里的 Giant Dipper。'
-descriptionEn: 'A building beside the road to Santa Cruz turned out to be Canepa: an Abarth parked in the window light, a workshop seen from a balcony, a floor of 911s, and the Giant Dipper at dusk to finish the day.'
 ---
 
 ## Upstairs

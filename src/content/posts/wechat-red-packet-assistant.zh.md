@@ -2,6 +2,7 @@
 translationKey: 'wechat-red-packet-assistant'
 lang: 'zh'
 title: '红包助手：让抢红包更有乐趣'
+description: '一篇产品案例：2017年初做的红包助手，让人们在春节抢微信红包的同时不冷落家人。'
 ---
 
 ## 背景

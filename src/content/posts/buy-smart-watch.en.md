@@ -2,6 +2,7 @@
 translationKey: 'buy-smart-watch'
 lang: 'en'
 title: 'Shopping for a Smartwatch'
+description: 'Picking up a Galaxy Gear on a 398-yuan special: solid specs, plenty to tinker with, and a shelf spot a few days later.'
 ---
 
 I had been wanting to buy a smartwatch for ages, but with the big brands' so-called smartwatches priced perpetually sky-high, I could never harden my heart to buy one (well, who told me to be poor

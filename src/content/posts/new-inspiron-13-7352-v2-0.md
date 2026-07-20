@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/dell001.jpg'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'new-inspiron-13-7352-v2-0'
-titleZh: '灵越13 7352特别版晒单'
-titleEn: 'Inspiron 13 7352 Special Edition: A Show-and-Tell'
-descriptionZh: '官翻版戴尔灵越13 7352变形本晒单：惊艳的钻石切割外观，8小时以上的续航，与1.66公斤的重量。'
-descriptionEn: 'A show-and-tell of the refurbished Dell Inspiron 13 7352 convertible: striking diamond-cut looks, eight-plus hours of battery, and 1.66 kilograms.'
 ---
 
 **DELL New Inspiron 13 Special Edition**

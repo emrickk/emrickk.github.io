@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/coaster1.jpg'
 category: 'Things'
 lang: 'en'
 translationKey: 'mit-coasters'
-titleZh: '一套杯垫'
-titleEn: 'A Set of Coasters'
-descriptionZh: '一套杯垫的四张照片。'
-descriptionEn: 'Four photos of a set of coasters.'
 ---
 
 * ![](https://cdn.theneverless.com/2020/02/coaster1.webp)

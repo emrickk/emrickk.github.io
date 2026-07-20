@@ -5,10 +5,6 @@ pubDate: '2011-09-08'
 category: 'Words'
 lang: 'zh'
 translationKey: 'daisy'
-titleZh: '雏菊'
-titleEn: 'Daisy'
-descriptionZh: '转载：法国诗人缪塞的诗《雏菊》。'
-descriptionEn: 'A repost of the French poet Alfred de Musset''s poem "Daisy".'
 ---
 
 我爱着，什么也不说，只看你在对面微笑；

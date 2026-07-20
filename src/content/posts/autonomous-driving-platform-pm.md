@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2022/07/autonomous-driving-platform-cover.jpg'
 category: 'Things'
 lang: 'en'
 translationKey: 'autonomous-driving-platform-pm'
-titleZh: '自动驾驶平台的产品管理'
-titleEn: 'Product Management for Autonomous Driving Platform'
-descriptionZh: '自动驾驶公司效率平台的产品管理方法论：自上而下的设计、以效率为唯一导向，和「节点与触发器」模型。'
-descriptionEn: 'A product management methodology for internal efficiency platforms at an autonomous driving company: top-down design, efficiency as the only guide, and the node-trigger model.'
 ---
 
 In addition to defining Operational Design Domains (ODDs) for autonomous trucks, a significant portion of product management work at autonomous driving companies involves identifying and improving development and iteration processes. Product managers often utilize software solutions for these tasks. In this article, we focus on the product management methodology for efficient platform development.

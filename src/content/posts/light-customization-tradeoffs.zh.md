@@ -2,6 +2,7 @@
 translationKey: 'light-customization-tradeoffs'
 lang: 'zh'
 title: '轻定制中能力与产品妥协的平衡'
+description: '讨论Alibaba.com轻定制项目如何在能力妥协与产品妥协之间取舍：以「全交易化」为方向的指导原则。'
 ---
 
 ## 背景

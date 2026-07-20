@@ -5,10 +5,6 @@ pubDate: '2013-03-23'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'my-heart-hurt'
-titleZh: '我的心曾经悲伤七次'
-titleEn: 'Seven Times My Heart Has Grieved'
-descriptionZh: '转载：纪伯伦的诗《我的心曾悲伤七次》，附一首描绘理想生活的长诗。'
-descriptionEn: 'A repost of Kahlil Gibran''s poem "Seven Times My Heart Has Grieved", followed by a long poem imagining the happy life.'
 ---
 
 第一次，当它本可进取时，却故作谦卑；

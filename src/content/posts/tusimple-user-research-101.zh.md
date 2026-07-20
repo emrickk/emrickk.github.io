@@ -2,6 +2,7 @@
 translationKey: 'tusimple-user-research-101'
 lang: 'zh'
 title: '颠覆性技术公司用户研究入门'
+description: '在图森未来时写给团队初级设计师的一份用户研究入门。'
 ---
 
 *这份文档是我在 TuSimple 时为团队里的初级设计师写的一篇小文*

@@ -5,10 +5,6 @@ pubDate: '2015-12-11'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'problem-must-be-solve'
-titleZh: '工作中暴露出来的问题要及时改，这自然是必须的'
-titleEn: 'Problems Exposed at Work Must Be Fixed Promptly, Of Course'
-descriptionZh: '一份为了不忘却的工作总结：与人交往要客观、独立、公开、友善，先看看明天能不能全做到。'
-descriptionEn: 'A work summary written so as not to forget: deal with people objectively, independently, openly, and kindly, and see if tomorrow I can do all four.'
 ---
 
 随着进入公司时间的增加，与人交际的范围变大，我在人与人交往之间的问题被暴露的越来越严重。

@@ -2,6 +2,7 @@
 translationKey: 'amazon-japan-shopping'
 lang: 'en'
 title: 'Shopping on Amazon Japan'
+description: 'Picking out a watch on Amazon Japan: under 30,000 yen for something that costs over 3,000 RMB at home.'
 ---
 
 Picked out a watch, on AmazonJP... yes.. so next year I too can say, last year I bought a watch =。=

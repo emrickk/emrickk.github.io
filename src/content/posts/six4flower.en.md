@@ -2,6 +2,7 @@
 translationKey: 'six4flower'
 lang: 'en'
 title: 'The Little Flower, Unbowed'
+description: 'Out with a borrowed film camera on a sensitive date: one little flower, unbowed before power.'
 ---
 
 *[![3166874963071725311](https://cdn.theneverless.com/2020/02/3166874963071725311.webp)](https://cdn.theneverless.com/2020/02/3166874963071725311.webp)*

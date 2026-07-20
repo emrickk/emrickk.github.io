@@ -5,10 +5,6 @@ pubDate: '2020-11-22'
 category: 'Prodigal'
 lang: 'en'
 translationKey: 'selecting-a-mechanical-keyboard'
-titleZh: '选购机械键盘'
-titleEn: 'Shopping Mechanical Keyboards'
-descriptionZh: '一份机械键盘选购指南：轴体、按键数量、有线还是无线，以及值得买的品牌。'
-descriptionEn: 'A buyer''s guide to mechanical keyboards: switches, sizes, wired versus wireless, and the brands worth buying.'
 ---
 
 Before we begin, there are a few things we need to consider before selecting a keyboard:

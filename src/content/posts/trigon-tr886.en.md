@@ -2,6 +2,7 @@
 translationKey: 'trigon-tr886'
 lang: 'en'
 title: 'TRIGON'
+description: 'A purchase story and unboxing of the TRIGON TR886, an entry-level carbon fiber road bike.'
 ---
 
 TRIGON is a bicycle brand that started out doing OEM work; nearly ten years ago it took "carbon fiber" as its point of breakthrough and set off down the road of building a bike brand of its own. What I'm showing off this time is TRIGON's entry-level carbon road bike, the TRIGON TR886.

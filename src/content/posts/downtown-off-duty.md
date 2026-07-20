@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2026/07/sj-downtown-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'downtown-off-duty'
-titleZh: '市中心下班了'
-titleEn: 'Downtown, Off Duty'
-descriptionZh: '从 Miro 出门，穿过圣何塞市中心和 SJSU。没有目的地，也没有赶路的理由。'
-descriptionEn: 'An afternoon walk from Miro through downtown San Jose and SJSU, with no destination and no reason to hurry.'
 ---
 
 At the time, I lived at Miro in downtown San Jose. One afternoon in June, I took my camera downstairs and went for a walk.

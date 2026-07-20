@@ -2,6 +2,7 @@
 translationKey: 'router-select-2013'
 lang: 'en'
 title: 'Router Shopping Chronicle'
+description: 'A winding router hunt from ASUS to Netgear that ends with a Buffalo WZR-HP-G300NH2 and a few shopping lessons.'
 ---
 
 The rip-off TPLINK router bought at the DR supermarket, two hundred plus actually paid, seventy yuan actually worth, has been getting more and more useless

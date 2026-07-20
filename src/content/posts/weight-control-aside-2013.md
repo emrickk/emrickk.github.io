@@ -5,10 +5,6 @@ pubDate: '2013-07-20'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'weight-control-aside-2013'
-titleZh: '减肥日记'
-titleEn: 'Weight Loss Diary'
-descriptionZh: '2013年的减肥日记：逐日记录吃了什么、有没有运动和体重变化。'
-descriptionEn: 'A weight loss diary from 2013, logging day by day what I ate, whether I exercised, and how my weight moved.'
 ---
 
 -----------------------------减肥第一阶段-----------------------------

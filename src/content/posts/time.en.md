@@ -2,6 +2,7 @@
 translationKey: 'time'
 lang: 'en'
 title: 'Time'
+description: 'A metaphor about time: the mind sits in a theater called "now", watching a movie called "the past".'
 ---
 
 The human brain does not gauge how fast or slow time passes by counting off a watch; it sits in a cinema called "now," watching a film called "the past."

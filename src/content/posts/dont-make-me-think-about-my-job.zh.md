@@ -2,6 +2,7 @@
 translationKey: 'dont-make-me-think-about-my-job'
 lang: 'zh'
 title: '别让我思考（我的工作）：真诚、专业与 B2B 产品设计'
+description: '《别让我思考》在 B2B 平台常被用错：真正的可用性是围绕采购决策做设计，而简化的资格要靠专业赢得。'
 ---
 
 > *本文最初在 Alibaba.com 产品团队内部分享。所有示例均基于公开信息，敏感数据已做匿名化处理。*

@@ -2,6 +2,7 @@
 translationKey: 'human-factors-study-in-voice-interactive-systems'
 lang: 'zh'
 title: '语音交互系统中的人因研究'
+description: '一项让Alexa与手机对比完成五项任务的人因研究：语音设备擅长简单指令，心理负荷一高便败下阵来。'
 ---
 
 **语音交互系统中的人因研究**

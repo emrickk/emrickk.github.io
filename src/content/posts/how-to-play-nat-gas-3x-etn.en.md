@@ -2,6 +2,7 @@
 translationKey: 'how-to-play-nat-gas-3x-etn'
 lang: 'en'
 title: 'How I Usually Play 3x Natural Gas'
+description: 'Some hard-won notes on trading 3x natural gas ETNs: entries, stop-losses, profit-taking, and a few tips, none of it investment advice.'
 ---
 
 Lately I've been playing VelocityShares' natural gas ETNs, and through the losing and winning I've distilled a tiny bit of experience. Posting it here.

@@ -2,6 +2,7 @@
 translationKey: 'time-in-baoji'
 lang: 'en'
 title: 'Time in Baoji'
+description: 'A running log of a trip to Baoji with friends to visit Ye Ge, including a stop at the bronze ware museum.'
 ---
 
 Lately it's been nothing but weight-loss diary updates. Haven't written a proper entry in ages, so here's one.

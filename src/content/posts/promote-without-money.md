@@ -5,10 +5,6 @@ pubDate: '2015-05-22'
 category: 'Things'
 lang: 'zh'
 translationKey: 'promote-without-money'
-titleZh: '好产品，没钱推广怎么办'
-titleEn: 'Good Product, No Budget: What Then?'
-descriptionZh: '一次公司内部讲座的笔记：好产品没钱推广时该怎么做营销。'
-descriptionEn: 'Notes from an internal company talk on how to promote a good product without a marketing budget.'
 ---
 
 下午听了莎莎姐主讲的公司内部讲座。感觉干货颇多且对具体工作方向性指导有很大帮助，于是整理了一下笔记。

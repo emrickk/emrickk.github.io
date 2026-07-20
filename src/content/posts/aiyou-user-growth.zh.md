@@ -2,6 +2,7 @@
 translationKey: 'aiyou-user-growth'
 lang: 'zh'
 title: '从0到20万日活：爱游穿梭机的用户增长之旅'
+description: '爱游穿梭机如何从0做到20万日活：留存验证、用户调研，和以快手为起点的低成本增长实验。'
 ---
 
 ## 开始之前：一些背景

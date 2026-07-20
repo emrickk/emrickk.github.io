@@ -2,6 +2,7 @@
 translationKey: 'beijing-museum-dongcheng'
 lang: 'en'
 title: 'A Roaming Guide to Beijing Museums: Dongcheng'
+description: 'The Dongcheng installment of a Beijing museum guide: ratings and visiting tips for the National Museum, the Palace Museum, and more.'
 ---
 
 A Wanderer's Guide to Beijing Museums - Dongcheng District

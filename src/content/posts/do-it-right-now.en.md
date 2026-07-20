@@ -2,6 +2,7 @@
 translationKey: 'do-it-right-now'
 lang: 'en'
 title: 'Execution'
+description: 'Execution is a key ability for a product manager: a finished plan is still far from launch, and daily follow-through closes the gap.'
 ---
 
 Execution, which can also be understood as the power to push things forward, is one of the most important abilities a product manager can have

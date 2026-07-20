@@ -2,6 +2,7 @@
 translationKey: 'one-lonely-man'
 lang: 'en'
 title: 'The State of Being Alone'
+description: 'A repost urging you never to stay alone for long: keep even a dog, and never live only for yourself.'
 ---
 
 The state of being "alone" is always the worst. I feel that telling you my personal experience would be of no use to you, since circumstances and opportunities differ. (And more than half of it, besides, would carry a subconscious streak of self-congratulation.) But I can give you one very good piece of advice that my mother once gave me.

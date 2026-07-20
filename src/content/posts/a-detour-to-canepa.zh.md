@@ -2,6 +2,7 @@
 translationKey: 'a-detour-to-canepa'
 lang: 'zh'
 title: '拐去 Canepa'
+description: '去 Santa Cruz 的路上撞见一栋停满车的楼：窗光里的 Abarth，从夹层往下看的车间，一层楼的 911，和黄昏里的 Giant Dipper。'
 ---
 
 ## 楼上

@@ -5,10 +5,6 @@ pubDate: '2014-09-04'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'do-it-right-now'
-titleZh: '执行力'
-titleEn: 'Execution'
-descriptionZh: '执行力是产品经理的重要能力：方案完成离上线还很远，每日整理并推进任务才是关键。'
-descriptionEn: 'Execution is a key ability for a product manager: a finished plan is still far from launch, and daily follow-through closes the gap.'
 ---
 
 执行力,又理解为推动力,是一个产品经理十分重要的能力之一

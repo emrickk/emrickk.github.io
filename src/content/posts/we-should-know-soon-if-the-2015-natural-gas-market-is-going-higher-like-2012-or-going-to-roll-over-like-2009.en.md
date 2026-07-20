@@ -2,6 +2,7 @@
 translationKey: 'we-should-know-soon-if-the-2015-natural-gas-market-is-going-higher-like-2012-or-going-to-roll-over-like-2009'
 lang: 'en'
 title: 'Where Is Natural Gas Headed'
+description: 'A Chinese translation of a SeekingAlpha post by Robert Edwards on whether the 2015 natural gas market will go higher like 2012 or roll over like 2009.'
 ---
 
 **We should know soon whether natural gas will head higher like 2012, or keep on falling like it did in '09**

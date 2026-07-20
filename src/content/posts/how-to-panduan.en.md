@@ -2,6 +2,7 @@
 translationKey: 'how-to-panduan'
 lang: 'en'
 title: 'When Interest Is Gone, How Can You Tell?'
+description: 'Toutiao kept pushing car news after the car was bought: a small product sketch for detecting when a long-held interest suddenly ends.'
 ---
 
 Toutiao is still pushing me all kinds of car news even after I've bought the car..

@@ -2,6 +2,7 @@
 translationKey: 'bmw-330i'
 lang: 'en'
 title: 'Picking Up My BMW 330i'
+description: 'A car-picking chronicle after moving to Southern California: comparing options, lease math, a port delay, and a white-on-black BMW 330i.'
 ---
 
 > If you pronounce BMW out loud your hear “Bee Em Double You”. As with many things we like and I guess dislike, we tend to give cars shorter and easier to pronounce names, kind of to bring them closer to you and make them your own. So owners all over the world started giving these shortened personal names to the cars “Bimmers”.

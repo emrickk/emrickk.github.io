@@ -5,10 +5,6 @@ pubDate: '2015-08-01'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'how-to-find-a-job'
-titleZh: '记一次找工作'
-titleEn: 'Notes from a Job Hunt'
-descriptionZh: '两周换工作的面试记：今日头条、360、陌陌、美团，四家的面经与教训。'
-descriptionEn: 'Notes from a two-week job hunt: interviews at Toutiao, 360, Momo, and Meituan, and the lessons from each.'
 ---
 
 花了两周时间换了工作，在这里写一下找工作期间累计的一些经验和感悟。不能算是一个普适的总结吧，算是个人经历的一点分享。分两部分说：

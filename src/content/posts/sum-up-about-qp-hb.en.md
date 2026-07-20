@@ -2,6 +2,7 @@
 translationKey: 'sum-up-about-qp-hb'
 lang: 'en'
 title: 'Wrapping Up the Ticket-Grabbing and Red Packet Projects'
+description: 'A retrospective on the ticket-grabbing and red packet projects: project management, cross-team communication, and knowing your goals before you start.'
 ---
 
 What exactly the red packet project and the ticket-grabbing project are, I'll leave aside for now; nobody reads this blog anyway, and nobody cares what I actually write. Truth be told, the ticket-grabbing project was one long trail of feathers on the floor from start to finish, and the final numbers were underwhelming. As for the red packet project, I haven't seen the data yet, but from user enthusiasm alone I can already guess roughly how the numbers will turn out, so I'm coming over first to sum things up: reflect on what the problems were and how to optimize, and what the strengths were and how to build on them--I really am one damn rambling person

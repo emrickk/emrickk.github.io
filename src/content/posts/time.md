@@ -5,10 +5,6 @@ pubDate: '2015-09-06'
 category: 'Words'
 lang: 'zh'
 translationKey: 'time'
-titleZh: '时间'
-titleEn: 'Time'
-descriptionZh: '一则关于时间的比喻：人脑坐在叫“现在”的电影院里，看一场叫“过去”的电影。'
-descriptionEn: 'A metaphor about time: the mind sits in a theater called "now", watching a movie called "the past".'
 ---
 
 人脑不是数着表计算时间过得快慢，而是坐在一个叫“现在”的电影院里看一场叫“过去”的电影。

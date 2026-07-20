@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2026/07/marin-civic-center-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'marin-county-civic-center'
-titleZh: '马林县市政中心'
-titleEn: 'Marin County Civic Center'
-descriptionZh: '去红杉林路上的一次绕道：赖特的最后一件作品，马林县市政中心。走廊是花园，天花板是天窗，1962年在这里仍然是未来的样子。'
-descriptionEn: 'A detour on the road north to the redwoods: Frank Lloyd Wright''s last commission, the Marin County Civic Center, where the hallways are gardens, the ceiling is a skylight, and 1962 still looks like the future.'
 ---
 
 Last July we were driving north out of San Francisco toward [the redwoods](/posts/two-days-in-the-redwoods/), and before the trees we finally kept a promise I had been making myself for years: ten minutes off the 101 in San Rafael, Frank Lloyd Wright's last commission, the Marin County Civic Center.

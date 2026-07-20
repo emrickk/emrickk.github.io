@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2021/03/Remarkable-01-1-min.jpeg'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'remarkable-2-review'
-titleZh: 'reMarkable 2 使用体验'
-titleEn: 'reMarkable 2'
-descriptionZh: 'reMarkable 2 电子墨水笔记本的详细体验：接近真纸的书写手感、出色的屏幕，以及有限的功能和糟糕的中文支持。'
-descriptionEn: 'A hands-on review of the reMarkable 2 e-ink tablet: paper-like writing, a great screen, and clear limits from sparse features to poor Chinese support.'
 ---
 
 我一直有把所有东西（包括各种想法）都记在笔记本上的习惯。但去年搬来加州的时候弄丢了三本笔记本，之后我开始强迫自己每天睡前把所有笔记扫描一遍。扫描加 OCR 用来保存和检索笔记是够用了，但每天晚上都像西西弗斯推巨石上山，实在太痛苦了。于是我动了把记笔记这件事数字化的念头。

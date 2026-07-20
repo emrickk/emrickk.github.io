@@ -2,6 +2,7 @@
 translationKey: 'masters-for-product-manager-1'
 lang: 'en'
 title: '[Part 1] A Product Dog Wants a Master''s: Which Programs?'
+description: 'Part one of which master''s programs suit a product dog: from MIT IDM to UW MSTI, programs that blend design, engineering, and business.'
 ---
 
 If a product dog wants a master's, which programs should they pick?

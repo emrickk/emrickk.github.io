@@ -2,6 +2,7 @@
 translationKey: 'shut-your-mouth-up'
 lang: 'en'
 title: 'The Same Hopes Every Lunar New Year'
+description: 'The same Lunar New Year knot: having settled into muddling through, how to start striving again without disowning the wasted years.'
 ---
 
 I'm caught in a dilemma now. I had already made up my mind to eat fatty pork by the mouthful and muddle through a short, hazy life.

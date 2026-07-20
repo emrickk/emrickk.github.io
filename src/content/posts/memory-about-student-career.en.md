@@ -2,6 +2,7 @@
 translationKey: 'memory-about-student-career'
 lang: 'en'
 title: 'Squandered Youth'
+description: 'Stumbling back onto Douban and realizing the college-era sites are all abandoned: not missing school, but regretting a squandered youth.'
 ---
 
 Saw a rather interesting piece today. Following it along, link by link, I ended up on Douban.

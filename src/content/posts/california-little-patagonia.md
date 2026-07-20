@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2026/07/us395-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'california-little-patagonia'
-titleZh: '10 月, 395 公路'
-titleEn: 'October, US 395'
-descriptionZh: '十月中的 395 号公路：Big Pine 的绿松石湖水和 Temple Crag，Bishop Creek 金黄的白杨，Mono 湖的石灰华塔，和一条牧羊人面包。'
-descriptionEn: "Mid-October on US 395: the turquoise lakes and Temple Crag of Big Pine, golden aspens up Bishop Creek, the tufa towers of Mono Lake, and a loaf of sheepherder bread."
 ---
 
 The Bay Area does autumn reluctantly: the trees put it off until December, and then it rains, so there is basically no autumn at all. For the real thing you drive east for half a day, over the crest of the Sierra, and come down the far side. On a Saturday in mid October 2024, I set out.

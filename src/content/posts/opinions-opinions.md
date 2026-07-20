@@ -5,10 +5,6 @@ pubDate: '2017-03-05'
 category: 'Words'
 lang: 'zh'
 translationKey: 'opinions-opinions'
-titleZh: '盲从的陷阱'
-titleEn: 'The Pitfalls of Blindly Following in China'
-descriptionZh: '把判断力拱手让给欧美视角、无脑附和的盲从，是典型的对撞因子偏误。'
-descriptionEn: 'On handing your judgment over to Euro-American voices: mindless deference to power is a textbook case of collider bias.'
 ---
 
 你会在乎一个印度学者怎么理解中国吗？大部分普通民众应该不怎么在乎。但欧美学者甚至记者从他们的角度谈一下中国，好多人就会在乎、紧张甚至单纯根据他们的观点进行自我检讨和行为的修正。当然还会有人附和：哈哈哈的确不合理很荒谬我也早这么觉得了。

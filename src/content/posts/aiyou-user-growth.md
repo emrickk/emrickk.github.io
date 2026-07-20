@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2018/12/aiyou-user-growth-cover.png'
 category: 'Things'
 lang: 'en'
 translationKey: 'aiyou-user-growth'
-titleZh: '从0到20万日活：爱游穿梭机的用户增长之旅'
-titleEn: 'From 0 to 200,000 DAUs: The User Growth Journey of Aiyou'
-descriptionZh: '爱游穿梭机如何从0做到20万日活：留存验证、用户调研，和以快手为起点的低成本增长实验。'
-descriptionEn: 'How the game-assistance app Aiyou grew from zero to 200,000 daily active users: retention checks, user surveys, and low-cost growth experiments starting with Kwai.'
 ---
 
 ## Before We Start: Some Contexts

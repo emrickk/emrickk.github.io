@@ -2,6 +2,7 @@
 translationKey: 'my-heart-hurt'
 lang: 'en'
 title: 'Seven Times My Heart Has Grieved'
+description: 'A repost of Kahlil Gibran''s poem "Seven Times My Heart Has Grieved", followed by a long poem imagining the happy life.'
 ---
 
 The first time, when it could have pressed forward, yet it feigned humility;

@@ -2,6 +2,7 @@
 translationKey: 'alibaba-seller-ecosystem'
 lang: 'zh'
 title: 'Alibaba.com 卖家生态与决策观察'
+description: '基于深圳和义乌12家卖家访谈的观察：流量成本如何主导卖家决策，以及三类典型卖家画像。'
 ---
 
 ### 目标

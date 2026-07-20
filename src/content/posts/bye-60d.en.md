@@ -2,6 +2,7 @@
 translationKey: 'bye-60d'
 lang: 'en'
 title: 'Sayonara, 60D'
+description: 'Saying sayonara to the Canon 60D after eight months: a first prime lens, photos taken for classmates, and selling it off piece by piece.'
 ---
 
 "Sayonara", a Japanese word, and it means more than goodbye.

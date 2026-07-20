@@ -2,6 +2,7 @@
 translationKey: 'revitalizing-360-mobile-security'
 lang: 'zh'
 title: '焕新360手机卫士：从工具到情感伙伴'
+description: '一份产品复盘：用五周时间焕新360手机卫士，从数据研究到7.0改版，让日活和留存重新回升。'
 ---
 
 ## 背景

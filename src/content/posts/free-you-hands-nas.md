@@ -5,10 +5,6 @@ pubDate: '2016-09-09'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'free-you-hands-nas'
-titleZh: '解放你的双手'
-titleEn: 'Free Your Hands'
-descriptionZh: '用了一个多月群晖NAS的感受：备份、同步盘和会自动转码的相册，能用与好用之间隔着一万个太平洋。'
-descriptionEn: 'A month and more with a Synology NAS: backups, a personal sync drive, an auto-transcoding photo album, and the gulf between usable and nice to use.'
 ---
 
 这个文是说我用了一个多月群晖NAS之后的感受。不过这个标题其实可以用在包括电动马桶圈的任何电子产品上...

@@ -2,6 +2,7 @@
 translationKey: 'new-inspiron-13-7352-v2-0'
 lang: 'en'
 title: 'Inspiron 13 7352 Special Edition: A Show-and-Tell'
+description: 'A show-and-tell of the refurbished Dell Inspiron 13 7352 convertible: striking diamond-cut looks, eight-plus hours of battery, and 1.66 kilograms.'
 ---
 
 **DELL New Inspiron 13 Special Edition**

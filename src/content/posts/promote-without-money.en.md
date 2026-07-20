@@ -2,6 +2,7 @@
 translationKey: 'promote-without-money'
 lang: 'en'
 title: 'Good Product, No Budget: What Then?'
+description: 'Notes from an internal company talk on how to promote a good product without a marketing budget.'
 ---
 
 This afternoon I sat in on an internal company talk given by Sister Shasha. It felt packed with substance and genuinely useful as directional guidance for day-to-day work, so I tidied up my notes.

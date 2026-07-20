@@ -2,6 +2,7 @@
 translationKey: 'buffalowzr-hp-g300nh2'
 lang: 'en'
 title: 'A Little Review of the Buffalo WZR-HP-G300NH2'
+description: 'A quick review of the Buffalo WZR-HP-G300NH2 router: good looks, a maddening setup UI, and middling signal.'
 ---
 
 First off, this router was received for me by my esteemed grandmother. Thanks~

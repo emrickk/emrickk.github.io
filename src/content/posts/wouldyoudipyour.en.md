@@ -2,6 +2,7 @@
 translationKey: 'wouldyoudipyour'
 lang: 'en'
 title: 'Would you dip your finger in my coffee?'
+description: 'A repost of a short exchange: "Would you dip your finger in my coffee?" and the prettiest answer I have heard so far.'
 ---
 
 - Would you dip your finger in my coffee?\

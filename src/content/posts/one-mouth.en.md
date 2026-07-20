@@ -2,6 +2,7 @@
 translationKey: 'one-mouth'
 lang: 'en'
 title: 'White Clouds, Grey Dogs Indeed'
+description: 'One month into Cheetah Mobile, from paper-only newbie to owning projects, and the biggest problem is still work without plans or goals.'
 ---
 
 In the blink of an eye I've been at our great Cheetah Mobile for a whole month now, going from a total newbie who only knew things on paper to owning my own projects. Hey, come to think of it I'm even a little thrilled; I'm already in charge of the standalone Box edition and the JJ card-games integration.

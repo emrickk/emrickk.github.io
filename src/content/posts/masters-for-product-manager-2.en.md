@@ -2,6 +2,7 @@
 translationKey: 'masters-for-product-manager-2'
 lang: 'en'
 title: '[Part 2] A Product Dog Wants a Master''s: Which Programs?'
+description: 'Part two of master''s programs for a product dog: CMU, IIT, USC, and SVA, plus why these are not just industrial design programs.'
 ---
 
 [Part 1](/posts/masters-for-product-manager-1) gave you a quick introduction to some programs (well, to their names..), and plenty of programs were still left out. Today, a simple addendum that leaves out HCI and IS programs.

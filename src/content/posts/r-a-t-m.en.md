@@ -2,6 +2,7 @@
 translationKey: 'r-a-t-m'
 lang: 'en'
 title: 'A Fiery Pocket Rocket: The R.A.T.M Red Devil Edition'
+description: 'An unboxing of the Mad Catz R.A.T.M wireless gaming mouse, picked up on a Singles'' Day deal.'
 ---
 
 I'd had my heart set on a MadCatz mouse for ages, browsing from the R.A.T.5 to the R.A.T.7, then from the M.O.U.S.9 to the R.A.T.M. But even when the M.O.U.9 turned up at a lovely eighty dollars I didn't pull the trigger; after all, I'd never used a MadCatz, and word online was that the quality is hit-or-miss. So I dragged my feet on and on, until Singles' Day, when JD put up a 199-minus-40 special. Mainland retail unit, and it's JD, so if it turned out awful there was still a way back. So I seized the chance and brought home the R.A.T.M.

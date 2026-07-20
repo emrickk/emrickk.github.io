@@ -2,6 +2,7 @@
 translationKey: 'coz-love'
 lang: 'en'
 title: 'Because of Love'
+description: 'A repost of the lyrics to the song "Because of Love".'
 ---
 
 Your hands are always open, wider than this world, and yet I am leaving\

@@ -5,10 +5,6 @@ pubDate: '2014-08-15'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'the-feeling-of-happened-again'
-titleZh: '早間的随想之那种似曾相似的感觉'
-titleEn: 'Morning Musings: That Feeling of Déjà Vu'
-descriptionZh: '一篇早间随想：从超市里一闪而过的似曾相识，想到《红楼梦》和另一个时空的自己。'
-descriptionEn: 'A morning musing on déjà vu, from a fleeting moment in the supermarket to "Dream of the Red Chamber" and another self in another world.'
 ---
 
 我小的时候，常常有一种稍纵即逝的奇怪体验，经常遇到一些曾在梦中出现的场景，在某一刻，看见某一场景时，总觉得这一刹那似曾相识，那一瞬间，我甚至可以预知下一秒发生的事情，后来慢慢就习惯了。

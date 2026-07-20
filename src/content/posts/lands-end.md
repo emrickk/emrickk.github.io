@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2026/07/lands-end-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'lands-end'
-titleZh: '旧金山的天涯海角'
-titleEn: 'Lands End, San Francisco'
-descriptionZh: '十月傍晚的Lands End：一栋本身就是相机的房子，Louis''还摆着的餐桌，苏特罗浴场的废墟，和落进海里的太阳。'
-descriptionEn: 'An October evening at Lands End: a building that is a camera, the set tables of Louis'', the ruins of Sutro Baths, and the sun going down behind Seal Rocks.'
 ---
 
 October is San Francisco's real summer: the fog takes a few weeks off, and the city remembers it lives on an ocean. One clear evening in October 2025 we went out to Lands End, the corner where the city plainly runs out of land, to do what everyone goes there to do: watch the sun go down.

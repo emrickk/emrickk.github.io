@@ -2,6 +2,7 @@
 translationKey: 'animal-crossing-is-a-good-game'
 lang: 'zh'
 title: '岛上的悠闲生活'
+description: '几张《动物森友会》截图：朋友们，和岛上轻松惬意的生活。'
 ---
 
 哎呀，我真是爱上了我的朋友们，还有岛上这轻松惬意的生活

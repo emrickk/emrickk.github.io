@@ -2,6 +2,7 @@
 translationKey: 'navigation-system-for-visually-impaired-people'
 lang: 'zh'
 title: '视障人士导航系统'
+description: '一份视障人士导航系统的设计研究：以SLAM与双目相机避障，配合信标与众包地图实现精准导航。'
 ---
 
 盲人在行走时常常遇到的两个问题，是撞上障碍物，以及走过头或完全错过目的地。我们的解决方案是将避障措施与导航引导系统结合起来，利用用户的位置信息，并在需要高导航精度的关键地点安装信标作为地理围栏。

@@ -2,6 +2,7 @@
 translationKey: 'leaving-comments'
 lang: 'zh'
 title: '留言？'
+description: '为什么没人用优雅的留言框：人们执念于回复，害怕写下的话没人读到，「已读」回执因此而生。'
 ---
 
 看看这个留言输入框，多优雅。

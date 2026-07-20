@@ -2,6 +2,7 @@
 translationKey: 'money-can-not-waste'
 lang: 'en'
 title: 'The Domain Fee Must Not Go to Waste'
+description: 'The domain fee must not go to waste, so a two-month ledger: fat again, termites dispatched, and starting on the domestic version of CM Security.'
 ---
 
 I've been too lazy to blog all this while. But the money paid for the domain must not go to waste. The last time I wrote was early March, and now it's mid-May. Let me run through what happened in these two months, ledger-style.

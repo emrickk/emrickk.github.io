@@ -5,10 +5,6 @@ pubDate: '2018-04-22'
 category: 'Things'
 lang: 'zh'
 translationKey: 'masters-for-product-manager-2'
-titleZh: '[第二弹] 产品狗要读硕士，该读什么项目？'
-titleEn: '[Part 2] A Product Dog Wants a Master''s: Which Programs?'
-descriptionZh: '产品狗读硕士项目盘点第二弹：补遗CMU、IIT、USC与SVA的项目，兼谈它们为什么不只是「工业设计」。'
-descriptionEn: 'Part two of master''s programs for a product dog: CMU, IIT, USC, and SVA, plus why these are not just industrial design programs.'
 ---
 
 [第一弹](/posts/masters-for-product-manager-1)给大家简单介绍了一些项目(的名字..)，仍然有非常多遗漏的项目。今天做一个不包含HCI和IS项目的简单补遗。

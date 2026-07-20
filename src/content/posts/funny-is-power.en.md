@@ -2,6 +2,7 @@
 translationKey: 'funny-is-power'
 lang: 'en'
 title: 'Being Interesting Is the Primary Productive Force'
+description: 'A repost of Xiao Jingyan''s short essay on taste in men, summed up as proportion and restraint.'
 ---
 
 Author: Xiao Jingyan  

@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2018/05/revitalizing-360-mobile-security-cover.png
 category: 'Things'
 lang: 'en'
 translationKey: 'revitalizing-360-mobile-security'
-titleZh: '焕新360手机卫士：从工具到情感伙伴'
-titleEn: 'Revitalizing 360 Mobile Security: From a Mere Tool to an Emotional Companion'
-descriptionZh: '一份产品复盘：用五周时间焕新360手机卫士，从数据研究到7.0改版，让日活和留存重新回升。'
-descriptionEn: 'A product case study: five weeks to revitalize 360 Mobile Security, from cohort research to a redesigned 7.0 that turned DAU and retention around.'
 ---
 
 ## Context

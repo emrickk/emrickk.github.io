@@ -2,6 +2,7 @@
 translationKey: 'things-about-50mm-lens'
 lang: 'en'
 title: 'The 50mm Lenses I''ve Used'
+description: 'A rundown of the 50mm lenses I have used, from the Voigtlander Color-Ultron 50 1.8 to a string of Rollei HFT lenses.'
 ---
 
 Ever since Liu the Great Programmer bought an X100s, my grudge against the bulk of the Voigtländer 50/1.8 that lives on my camera has grown and grown. So much so that these past couple of days I've even considered shelving my long-plotted bicycle purchase plan and swapping in a new everyday lens first. Which makes this a good moment, while I'm out researching standard lenses of every stripe, to walk through all the standard lenses I've used.

@@ -5,10 +5,6 @@ pubDate: '2016-08-11'
 category: 'Things'
 lang: 'zh'
 translationKey: 'talk-about-resume'
-titleZh: '也说一下简历怎么写'
-titleEn: 'My Two Cents on Writing a Resume'
-descriptionZh: '五分钟说说产品经理的简历怎么写：挑真实有价值的项目，一句话说清楚，多用数据。'
-descriptionEn: 'Five minutes on writing a product manager''s resume: pick real, valuable projects, say each thing in one sentence, and use numbers.'
 ---
 
 我就简单说一下产品的简历怎么写，五分钟。

@@ -5,10 +5,6 @@ pubDate: '2013-04-07'
 category: 'Repost'
 lang: 'en'
 translationKey: 'andifonlyonethin'
-titleZh: '如果有一件事不一样'
-titleEn: 'If Only One Thing Had Been Different'
-descriptionZh: '转载：电影《本杰明·巴顿奇事》中关于黛西车祸的连锁事件独白。'
-descriptionEn: 'A repost of the chain-of-events monologue about Daisy''s accident from the film "The Curious Case of Benjamin Button".'
 ---
 
 And if only one thing had happened differently,

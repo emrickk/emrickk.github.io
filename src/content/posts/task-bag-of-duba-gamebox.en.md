@@ -2,6 +2,7 @@
 translationKey: 'task-bag-of-duba-gamebox'
 lang: 'en'
 title: 'Motive and Direction'
+description: 'Reflections on a protesting knee and a lackluster task bag launch: get the motive right, and hold the direction.'
 ---
 
 It has been a long while since I sat down to properly sort through what has happened lately and write a blog post. What troubles me most these days is, naturally, the problem with my knee. (Why open with troubles? It seems there really hasn't been much going smoothly since I started working. Worth reflecting on.)

@@ -2,6 +2,7 @@
 translationKey: 'sketch'
 lang: 'en'
 title: 'Sketch'
+description: 'A reposted poem titled "Sketch", a quiet study of rain and memory.'
 ---
 
 Rain about to fall; the pattering seems to come from the far side of the mountain\

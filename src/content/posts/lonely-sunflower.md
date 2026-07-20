@@ -5,10 +5,6 @@ pubDate: '2005-09-18'
 category: 'Words'
 lang: 'zh'
 translationKey: 'lonely-sunflower'
-titleZh: '向日葵的寂寞'
-titleEn: 'The Loneliness of a Sunflower'
-descriptionZh: '巷子里一棵低垂着头的向日葵：太阳落山之后，向日葵有一种不为人知的寂寞。'
-descriptionEn: 'A sunflower drooping in the alley after sundown, and the unseen loneliness of a flower fated to live by the sun.'
 ---
 
 今天从家门口那条长长的巷子走过  

@@ -2,6 +2,7 @@
 translationKey: 'if-life-without-you'
 lang: 'en'
 title: 'I Only Care About You'
+description: 'The lyrics of Teresa Teng''s song "I Only Care About You".'
 ---
 
 If I had never met you

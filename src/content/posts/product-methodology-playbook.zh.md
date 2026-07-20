@@ -2,6 +2,7 @@
 translationKey: 'product-methodology-playbook'
 lang: 'zh'
 title: '产品方法论体系化手册'
+description: '一份产品方法论体系化手册：把失败和成功都记录下来，让决策依靠证据而不是记忆。'
 ---
 
 ### 我们想要什么

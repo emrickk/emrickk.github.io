@@ -2,6 +2,7 @@
 translationKey: 'a0701-material-design-patterns-app-structure'
 lang: 'en'
 title: 'App Structure in Material Design'
+description: 'A Chinese translation of the App Structure chapter from Material Design''s Patterns section: start screens, top-level navigation, and combined navigation strategies.'
 ---
 
 This post is a translation of the App structure chapter in the Patterns section of Material Design. It doesn't carry over the corresponding images, so please head over to the original page to gawk at them yourself ([portal](https://www.google.com/design/spec/patterns/app-structure.html#app-structure-top-level-navigation-strategies))**Foreword: app structure**The content and tasks you want to show your users shape your app's structure. For example:

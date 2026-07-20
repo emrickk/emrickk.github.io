@@ -2,6 +2,7 @@
 translationKey: 'meaning'
 lang: 'en'
 title: 'Meaning'
+description: 'A reposted monologue in the voice of an immortal being, for whom eternal existence brings only endless emptiness.'
 ---
 
 By day I lodge in other people's flesh, to fill up my pallid emptiness. By night I drift at the highest point of the city, savoring the stillness of the dark.

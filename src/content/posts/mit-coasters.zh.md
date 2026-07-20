@@ -2,6 +2,7 @@
 translationKey: 'mit-coasters'
 lang: 'zh'
 title: '一套杯垫'
+description: '一套杯垫的四张照片。'
 ---
 
 * ![](https://cdn.theneverless.com/2020/02/coaster1.webp)

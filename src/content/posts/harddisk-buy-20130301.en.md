@@ -2,6 +2,7 @@
 translationKey: 'harddisk-buy-20130301'
 lang: 'en'
 title: 'Shopping for a Storage Solution'
+description: 'Shopping for a 3TB storage plan, weighing bare drives and enclosures, then falling at first sight for a LaCie Minimus on Taobao.'
 ---
 
 Sold my old 2TB Seagate GoFlex to EJJ, so I started planning to buy a new 3TB drive.

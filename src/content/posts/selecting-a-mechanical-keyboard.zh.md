@@ -2,6 +2,7 @@
 translationKey: 'selecting-a-mechanical-keyboard'
 lang: 'zh'
 title: '选购机械键盘'
+description: '一份机械键盘选购指南：轴体、按键数量、有线还是无线，以及值得买的品牌。'
 ---
 
 在开始之前，有几件事是我们挑键盘前需要考虑的：

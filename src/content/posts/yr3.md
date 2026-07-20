@@ -5,10 +5,6 @@ pubDate: '2008-04-03'
 category: 'Repost'
 lang: 'zh'
 translationKey: 'yr3'
-titleZh: '三年級'
-titleEn: 'Yr 3'
-descriptionZh: '转载：歌曲《三年級》的歌词。'
-descriptionEn: 'A repost of the lyrics to the song "Yr 3".'
 ---
 
 還記得那一天　在那一天　初次上學堂\

@@ -2,6 +2,7 @@
 translationKey: 'product-discussions'
 lang: 'zh'
 title: '产品讨论'
+description: '一篇关于如何开产品讨论会的笔记：区分事实判断与价值判断，想清楚哪些讨论值得花时间。'
 ---
 
 在这里，我们讨论如何进行产品策略与产品设计的讨论，或者说得更具体些，*如何开好一场会*。

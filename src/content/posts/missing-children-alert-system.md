@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2016/05/missing-children-alert-system-cover.png'
 category: 'Things'
 lang: 'en'
 translationKey: 'missing-children-alert-system'
-titleZh: '失踪儿童告警系统：中国第一个类「安珀警报」系统'
-titleEn: "Missing Children Alert System: China's First AMBER-Alert-Like System"
-descriptionZh: '基于360手机卫士推送体系的失踪儿童告警系统：精准触达而不打扰用户，截至2019年协助救回109名儿童。'
-descriptionEn: 'A missing-children alert system built on 360 Mobile Security''s push channel, reaching the right users without disturbing them: 109 children rescued by 2019.'
 ---
 
 An AMBER-Alert-like notification system for lost-found children, based on the push message system of 360 Mobile Security.

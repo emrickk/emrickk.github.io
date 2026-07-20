@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2026/07/concours-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'a-temple-fair-on-the-fairway'
-titleZh: '草坪上的庙会'
-titleEn: 'Concours: a temple fair on the fairway'
-descriptionZh: '2024年8月的圆石滩车展：草坪上的野餐和草帽，开过看台的红色玛莎拉蒂，冒烟的后轮和后窗里的法斗，还有一条硬规矩：车得能动才行。'
-descriptionEn: 'The 2024 Pebble Beach Concours: picnics and straw hats on the fairway, red Maseratis motoring past the grandstand, a smoking rear wheel with a French bulldog watching, and one hard rule: the car still has to run.'
 ---
 
 One Sunday in the middle of August we drove two hours to Pebble Beach to watch a beauty pageant for cars. Its proper name is the Concours d'Elegance, French for "competition of elegance," held once a year on the 18th fairway of the golf course. The name sounds solemn. Walk in and it is a temple fair.

@@ -2,6 +2,7 @@
 translationKey: 'little-think-about-things'
 lang: 'en'
 title: 'A Little Lesson from Recent Splurging'
+description: 'A nine-character mantra to recite before buying anything: you like it, you need it, it suits you.'
 ---
 
 Before buying anything, keep the nine-word mantra in mind: you like it, you need it, it suits you.  

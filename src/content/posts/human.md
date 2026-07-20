@@ -5,10 +5,6 @@ pubDate: '2013-12-16'
 category: 'Words'
 lang: 'zh'
 translationKey: 'human'
-titleZh: '成熟的人'
-titleEn: 'The Mature Person'
-descriptionZh: '关于成熟的一段话：能区分自己与他人，守住清楚的自我界限，也不在家人的生活里迷失自己。'
-descriptionEn: 'A note on maturity: separating yourself from others, keeping clear boundaries, and staying close to family without losing yourself.'
 ---
 
 成熟的人能区分且接受自己和他人是不同的个体，能建立清楚的自我界限，有良好的自我概念，也能够和自己的家庭系统建立良好而有意义的关系，但是又不会过度融入家人的生活里而迷失自己。这表示他可以自由运用情绪，他不会满腔怨愤，也不会爱某个人太深切，可以在恰当的时候稳定。

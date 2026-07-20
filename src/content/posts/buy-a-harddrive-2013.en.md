@@ -2,6 +2,7 @@
 translationKey: 'buy-a-harddrive-2013'
 lang: 'en'
 title: 'Hard Drive Shopping Chronicle'
+description: 'A hard drive shopping saga: a scratched LaCie, a hot and rattling Seagate 4TB, and finally a bare 3TB drive in a dock.'
 ---
 
 Haven't written anything in ages. Today I'm paying off the whole backlog

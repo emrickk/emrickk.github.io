@@ -2,6 +2,7 @@
 translationKey: 'lonely-sunflower'
 lang: 'en'
 title: 'The Loneliness of a Sunflower'
+description: 'A sunflower drooping in the alley after sundown, and the unseen loneliness of a flower fated to live by the sun.'
 ---
 
 Today I walked down the long alley outside my door  

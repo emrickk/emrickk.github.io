@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2026/07/sedona-cover.webp'
 category: 'Journal'
 lang: 'en'
 translationKey: 'red-rocks-and-blueprints'
-titleZh: '塞多纳，登月与圣石'
-titleEn: 'Sedona, the moonshot and the sacred stones'
-descriptionZh: '十一月的亚利桑那高原三日：塞多纳红岩上的最后一道光，NASA排练登月的陨石坑，以及赖特七十岁那年为自己搭起的沙漠营地，西塔里埃森。'
-descriptionEn: "Three days in the Arizona high desert in November: last light on the Sedona buttes, the crater where NASA rehearsed the Moon, and a morning at Taliesin West, the desert camp Frank Lloyd Wright built at seventy."
 ---
 
 In early November we flew into Phoenix, picked up a car, and drove north into the high desert. On paper the trip was about red rocks. Somewhere along the way it became a trip about blueprints: everyone who ever fell for this desert seems to have arrived carrying one. An architect brought his winter camp. His apprentice brought an entire city. A sculptor brought a chapel she had been holding onto for twenty years. NASA brought the Moon.

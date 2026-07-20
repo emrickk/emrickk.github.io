@@ -47,6 +47,8 @@ export function parseFrontmatter(raw) {
 // Primary posts with the fields the sidebar needs. Siblings (*.en.md /
 // *.zh.md) are attached to their primary, never listed on their own. Posts
 // are flat files in src/content/posts today; this listing relies on that.
+// Each language's title lives in that language's file: the primary's `title`
+// is in its own `lang`, the sibling's `title` carries the other language.
 // pubDate strings are ISO dates, so lexicographic sort is date sort.
 export function listPosts(root) {
   const files = readdirSync(join(root, POSTS_DIR)).filter((f) => /\.(md|mdx)$/.test(f))
@@ -59,16 +61,20 @@ export function listPosts(root) {
     const sibling = ['en.md', 'zh.md', 'en.mdx', 'zh.mdx']
       .map((ext) => `${slug}.${ext}`)
       .find((f) => siblings.has(f))
+    const sibFm = sibling
+      ? parseFrontmatter(readFileSync(join(root, POSTS_DIR, sibling), 'utf8'))
+      : {}
+    const lang = fm.lang ?? 'zh'
     posts.push({
       slug,
       path: `${POSTS_DIR}/${file}`,
       siblingPath: sibling ? `${POSTS_DIR}/${sibling}` : null,
       title: fm.title ?? slug,
-      titleZh: fm.titleZh ?? null,
-      titleEn: fm.titleEn ?? null,
+      titleZh: (lang === 'zh' ? fm.title : sibFm.title) ?? null,
+      titleEn: (lang === 'en' ? fm.title : sibFm.title) ?? null,
       pubDate: fm.pubDate ?? '',
       category: fm.category ?? null,
-      lang: fm.lang ?? 'zh',
+      lang,
       draft: fm.draft === 'true',
     })
   }

@@ -2,6 +2,7 @@
 translationKey: 'talk-about-resume'
 lang: 'en'
 title: 'My Two Cents on Writing a Resume'
+description: 'Five minutes on writing a product manager''s resume: pick real, valuable projects, say each thing in one sentence, and use numbers.'
 ---
 
 Let me just quickly cover how to write a product manager's resume. Five minutes.

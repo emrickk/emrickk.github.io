@@ -2,6 +2,7 @@
 translationKey: 'yr3'
 lang: 'en'
 title: 'Yr 3'
+description: 'A repost of the lyrics to the song "Yr 3".'
 ---
 
 I still remember that day, the day I first went to school\

@@ -2,6 +2,7 @@
 translationKey: 'because-of-you'
 lang: 'zh'
 title: '因为你'
+description: '转载：Kelly Clarkson的歌曲《Because of You》的歌词节选。'
 ---
 
 因为你，  

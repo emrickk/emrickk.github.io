@@ -6,10 +6,6 @@ heroImage: ../../assets/hero/2026/07/yosemite-cover.webp
 category: Journal
 lang: zh
 translationKey: yosemite-falls
-titleZh: Yosemite 刚刚好
-titleEn: Yosemite on a summer day
-descriptionZh: 六月的 Yosemite 很好：树很绿，太阳不烈，停车场不挤...虽然到处是刚放暑假的孩子
-descriptionEn: 'Yosemite on a Sunday in June: green trees, gentle sun, a parking lot with room left, kids just out of school.'
 ---
 
 六月上旬的一个星期天，我们决定开进优胜美地的山谷。高处的融雪还在下来，瀑布喂得很饱，云不少，光很好。是体验湾区三俗的好时候。

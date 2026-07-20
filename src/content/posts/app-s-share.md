@@ -5,10 +5,6 @@ pubDate: '2015-11-09'
 category: 'Words'
 lang: 'zh'
 translationKey: 'app-s-share'
-titleZh: '我手机里的APP们'
-titleEn: 'The Apps on My Phone'
-descriptionZh: '分享手机里的APP们：从Artsy到iMuseum，一批看艺术、逛展览的应用小评，持续添加中。'
-descriptionEn: 'A running tour of the apps on my phone: capsule reviews of art and exhibition apps, from Artsy to iMuseum.'
 ---
 
 趁着中午没事，分享一下我手机里的APP们。用的APP还是比较少，体验也比较粗浅。仅简单分类和介绍，谨作抛砖引玉。

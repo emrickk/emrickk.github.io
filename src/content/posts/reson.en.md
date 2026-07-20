@@ -2,6 +2,7 @@
 translationKey: 'reson'
 lang: 'en'
 title: 'A Reason'
+description: 'A bargain alone is not enough; users need a reason to buy with their head held high: Meitu versus Xiaomi.'
 ---
 
 At the end of the day, the biggest crowd in China is still the diaosi, the self-styled losers. But a true diaosi is the last person willing to admit he is one. So just letting them snag a bargain is not enough; you also have to give them a reason to buy from you with their head held high.

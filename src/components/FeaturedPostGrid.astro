@@ -5,6 +5,7 @@ import type { CollectionEntry } from 'astro:content';
 import FormattedDate from './FormattedDate.astro';
 import LangTitle from './LangTitle.astro';
 import { withBase } from '../utils/paths';
+import { buildTranslationMap, resolveLangText } from '../utils/translations';
 
 type PostEntry = CollectionEntry<'posts'>;
 
@@ -16,6 +17,7 @@ type Props = {
 
 const { posts, basePath = '/posts', variant = 'home' } = Astro.props;
 const postSlug = (id: string) => id;
+const tmap = await buildTranslationMap();
 const placeholderEntries = await Promise.all(
   posts.map(
     async (post) =>
@@ -54,6 +56,7 @@ const slot1Sizes = (img: ImageMetadata) => {
   {
     posts.map((post, index) => {
       const initial = Array.from((post.data.title ?? '').trim())[0] ?? '';
+      const text = resolveLangText(post.data, tmap);
 
       return (
         <a
@@ -78,7 +81,9 @@ const slot1Sizes = (img: ImageMetadata) => {
                 alt={post.data.title}
                 class="featured-post-card-img"
                 widths={
-                  index > 0 ? [320, 480, 700, 960, 1280, 1600] : [320, 480, 700, 960, 1280, 1600, 2000, 2400]
+                  index > 0
+                    ? [320, 480, 700, 960, 1280, 1600]
+                    : [320, 480, 700, 960, 1280, 1600, 2000, 2400]
                 }
                 sizes={
                   index > 0
@@ -106,16 +111,16 @@ const slot1Sizes = (img: ImageMetadata) => {
             <LangTitle
               tag="h3"
               class="featured-post-card-title"
-              zh={post.data.titleZh}
-              en={post.data.titleEn}
+              zh={text.titleZh}
+              en={text.titleEn}
               orig={post.data.lang ?? 'zh'}
               fallback={post.data.title}
             />
             {post.data.description && (
               <p class="featured-post-card-desc">
                 <LangTitle
-                  zh={post.data.descriptionZh}
-                  en={post.data.descriptionEn}
+                  zh={text.descriptionZh}
+                  en={text.descriptionEn}
                   orig={post.data.lang ?? 'zh'}
                   fallback={post.data.description}
                 />

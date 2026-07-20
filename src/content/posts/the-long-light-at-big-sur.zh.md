@@ -2,6 +2,7 @@
 translationKey: 'the-long-light-at-big-sur'
 lang: 'zh'
 title: '在大苏尔住一晚'
+description: '以前去大苏尔，总要惦记回家的车程。这次在 Alila Ventana 住一晚，日落终于不再意味着该走了。'
 ---
 
 我们去大苏尔的次数不少，所以每次出发都带着一个回程时间。开车往南，看到海就停，吃点东西，趁天还亮着开始往北。大苏尔离家不远，又没有近到可以忘记回家的车程。

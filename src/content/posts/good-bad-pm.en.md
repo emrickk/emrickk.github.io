@@ -2,6 +2,7 @@
 translationKey: 'good-bad-pm'
 lang: 'en'
 title: 'Good Product Manager/Bad Product Manager'
+description: 'A repost of Dai Yusen''s "Good Product Manager/Bad Product Manager", contrasting the two line by line.'
 ---
 
 By Dai Yusen

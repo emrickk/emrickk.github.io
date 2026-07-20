@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/3166874963071725311.jpg'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'six4flower'
-titleZh: '不屈强权的小花'
-titleEn: 'The Little Flower, Unbowed'
-descriptionZh: '敏感日期借胶片机出门拍照：一朵不屈强权的小花。'
-descriptionEn: 'Out with a borrowed film camera on a sensitive date: one little flower, unbowed before power.'
 ---
 
 *[![3166874963071725311](https://cdn.theneverless.com/2020/02/3166874963071725311.webp)](https://cdn.theneverless.com/2020/02/3166874963071725311.webp)*

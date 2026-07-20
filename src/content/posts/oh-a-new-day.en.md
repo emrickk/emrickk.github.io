@@ -2,6 +2,7 @@
 translationKey: 'oh-a-new-day'
 lang: 'en'
 title: 'Oh, Another New Day'
+description: 'Another new day at work: the sign-in backpack issue settled, a new smartwatch broken, and a reminder to think before speaking.'
 ---
 
 Yesterday's working hours were fairly well filled, and sure enough, walking in this morning I didn't have that holy-crap-there-are-still-ten-thousand-things-to-do-which-one-do-I-even-start-with feeling[![丢](https://cdn.theneverless.com/2020/02/QQE59BBEE7898720140828214503.webp)](https://cdn.theneverless.com/2020/02/QQE59BBEE7898720140828214503.webp)

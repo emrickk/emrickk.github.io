@@ -5,10 +5,6 @@ pubDate: '2017-02-05'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'research-about-home-joy-field'
-titleZh: '为什么每次回家都不能学习'
-titleEn: 'Why Can I Never Study When I Go Home'
-descriptionZh: '认真分析回家就学不进去的世界性难题：错估工作量加缺乏规划，解法是细化颗粒、设定目标和期限。'
-descriptionEn: 'A mock-serious look at why studying at home never works: overestimating yourself, underplanning the holiday, and the cure of concrete milestones and deadlines.'
 ---
 
 远在2007年我就问过自己这个问题了，没错十年前人生卢瑟不是白当的今天我来严肃认真的思考一下这个世界性难题

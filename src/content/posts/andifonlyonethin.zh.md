@@ -2,6 +2,7 @@
 translationKey: 'andifonlyonethin'
 lang: 'zh'
 title: '如果有一件事不一样'
+description: '转载：电影《本杰明·巴顿奇事》中关于黛西车祸的连锁事件独白。'
 ---
 
 如果有一件事发生得不一样，

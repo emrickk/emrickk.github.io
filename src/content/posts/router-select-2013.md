@@ -5,10 +5,6 @@ pubDate: '2013-02-26'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'router-select-2013'
-titleZh: '路由器选购记'
-titleEn: 'Router Shopping Chronicle'
-descriptionZh: '一次曲折的路由器选购：从华硕看到网件，最后379元入手Buffalo，顺便总结几条购物教训。'
-descriptionEn: 'A winding router hunt from ASUS to Netgear that ends with a Buffalo WZR-HP-G300NH2 and a few shopping lessons.'
 ---
 
 DR超市买的实际支付两百多实际价值七十元坑爹TPLINK路由越来越不中用了

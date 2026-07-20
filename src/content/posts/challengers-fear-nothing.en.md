@@ -2,6 +2,7 @@
 translationKey: 'challengers-fear-nothing'
 lang: 'en'
 title: 'Challengers Fear Nothing'
+description: 'A school-days essay on why challengers fear nothing, from Franklin''s kite to Magellan''s voyage.'
 ---
 
 Everyone is likely to have something they fear, but there is one kind of person who has none: the brave challenger.

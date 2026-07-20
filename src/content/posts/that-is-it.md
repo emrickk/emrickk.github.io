@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/pz_382739.jpg'
 category: 'Journal'
 lang: 'en'
 translationKey: 'that-is-it'
-titleZh: '就是这样'
-titleEn: 'That is it'
-descriptionZh: '一张照片，不加评论：就是这样。'
-descriptionEn: 'A single photograph, posted without commentary: that is it.'
 ---
 
 [![pz_382739](https://cdn.theneverless.com/2020/02/pz_382739.webp)](https://cdn.theneverless.com/2020/02/pz_382739.webp)

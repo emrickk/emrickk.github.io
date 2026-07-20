@@ -2,6 +2,7 @@
 translationKey: 'opinions-opinions'
 lang: 'en'
 title: 'The Pitfalls of Blindly Following in China'
+description: 'On handing your judgment over to Euro-American voices: mindless deference to power is a textbook case of collider bias.'
 ---
 
 Would you care how an Indian scholar understands China? Most ordinary people probably wouldn't. But the moment European or American scholars, or even journalists, say a few words about China from their own vantage point, plenty of people start to care, get nervous, or even set about self-examination and correcting their behavior purely on the strength of those views. And of course some will chime in: hahaha, it really is unreasonable, utterly absurd, I always thought so myself.

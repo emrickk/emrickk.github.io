@@ -2,6 +2,7 @@
 translationKey: 'so'
 lang: 'en'
 title: 'So'
+description: 'A short poem: the number nine bus platform, mild sunlight, and the seam the Creator left showing.'
 ---
 
 In sunlight just this mild I walked over

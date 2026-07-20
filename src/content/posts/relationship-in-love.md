@@ -5,10 +5,6 @@ pubDate: '2014-10-19'
 category: 'Words'
 lang: 'zh'
 translationKey: 'relationship-in-love'
-titleZh: '真诚去爱'
-titleEn: 'Love in Earnest'
-descriptionZh: '人无完人，恋爱把缺点无限放大：只要真诚去爱，无论结果如何，过程一定是美好的。'
-descriptionEn: 'No one is perfect and love magnifies every flaw: love in earnest, and whatever the outcome, the process will be beautiful.'
 ---
 
 深深的意识到人无完人。恋爱中，两个人接触的时间被无限延长，缺点会被无限放大。但是「人」本身，比什么东西都重要。所以在恋爱关系中，对方会不会因为你而变得更美好，取决于你有没有这种美好的希望，愿意给予的信念。只要你是真诚的爱着对方，付出你的爱。不管结果是怎样的，过程一定是美好的。

@@ -2,6 +2,7 @@
 translationKey: 'goodstudy'
 lang: 'en'
 title: 'Study Hard'
+description: 'A repost of a widely circulated set of bilingual Chinese and English sayings about love.'
 ---
 
 Study hard

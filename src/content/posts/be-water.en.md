@@ -2,6 +2,7 @@
 translationKey: 'be-water'
 lang: 'en'
 title: 'Water'
+description: 'Starting from Du Mu''s Red Cliff poem: water that keeps history and washes regret away.'
 ---
 
 A broken halberd, sunk in sand, its iron not yet worn away;\

@@ -51,7 +51,6 @@ function makePostsFixture() {
       "pubDate: '2024-10-13'",
       "category: 'Journal'",
       "lang: 'en'",
-      "titleZh: '阿尔法'",
       '---',
       '',
       'Body A',
@@ -60,7 +59,7 @@ function makePostsFixture() {
   )
   writeFileSync(
     join(root, 'src/content/posts/alpha.zh.md'),
-    "---\ntranslationKey: 'alpha'\nlang: 'zh'\n---\n\n正文\n",
+    "---\ntranslationKey: 'alpha'\nlang: 'zh'\ntitle: '阿尔法'\n---\n\n正文\n",
   )
   writeFileSync(
     join(root, 'src/content/posts/beta.md'),
@@ -93,10 +92,13 @@ test('listPosts pairs siblings, skips them as primaries, sorts newest first', ()
     assert.equal(alpha.siblingPath, 'src/content/posts/alpha.zh.md')
     assert.equal(alpha.title, "Alpha's day: a test")
     assert.equal(alpha.titleZh, '阿尔法')
+    assert.equal(alpha.titleEn, "Alpha's day: a test")
     assert.equal(alpha.lang, 'en')
     assert.equal(alpha.draft, false)
     const beta = posts.find((p) => p.slug === 'beta')
     assert.equal(beta.siblingPath, null)
+    assert.equal(beta.titleZh, 'Beta')
+    assert.equal(beta.titleEn, null)
     assert.equal(beta.draft, true)
     assert.equal(beta.lang, 'zh')
   } finally {

@@ -2,6 +2,7 @@
 translationKey: 'ohhh-old'
 lang: 'en'
 title: 'A Little Scared'
+description: 'Cooling weather pulls me back to a campus evening in 2013, while time drags me on toward middle age: less and less of it left.'
 ---
 
 The weather has turned cool.

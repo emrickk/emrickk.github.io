@@ -2,6 +2,7 @@
 translationKey: 'first-ride'
 lang: 'en'
 title: 'And So I Gave Away My First Ride'
+description: 'Notes from a first bike ride: a fall right at the start, trailing the group all the way, and lessons picked up along the road.'
 ---
 
 Now, a product manager ought to have at least a little class, so let me write this in chronological order

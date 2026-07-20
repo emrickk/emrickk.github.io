@@ -2,6 +2,7 @@
 translationKey: 'marin-county-civic-center'
 lang: 'zh'
 title: '马林县市政中心'
+description: '去红杉林路上的一次绕道：赖特的最后一件作品，马林县市政中心。走廊是花园，天花板是天窗，1962年在这里仍然是未来的样子。'
 ---
 
 去年七月，我们从旧金山出发，一路向北去看[红杉](/posts/two-days-in-the-redwoods/)。在见到那些树之前，我先兑现了一个搁置多年的心愿：下101高速十分钟，在圣拉斐尔，看赖特（Frank Lloyd Wright）的最后一件作品，马林县市政中心。

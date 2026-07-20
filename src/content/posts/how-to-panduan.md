@@ -5,10 +5,6 @@ pubDate: '2015-07-20'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'how-to-panduan'
-titleZh: '兴趣点失去了，怎么判断？'
-titleEn: 'When Interest Is Gone, How Can You Tell?'
-descriptionZh: '买完车头条还在推汽车新闻：一份用行为打分判断用户兴趣点突然消失的产品小方案。'
-descriptionEn: 'Toutiao kept pushing car news after the car was bought: a small product sketch for detecting when a long-held interest suddenly ends.'
 ---
 
 今日头条在买完车之后还是不断给我推各种汽车新闻..

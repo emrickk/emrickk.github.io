@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/DSC3896.jpg'
 category: 'Prodigal'
 lang: 'zh'
 translationKey: 'things-about-50mm-lens'
-titleZh: '我用过的那些标头'
-titleEn: 'The 50mm Lenses I''ve Used'
-descriptionZh: '盘点我用过的那些50mm标头：从福伦达Color-Ultron 50 1.8到禄来的几支HFT镜头。'
-descriptionEn: 'A rundown of the 50mm lenses I have used, from the Voigtlander Color-Ultron 50 1.8 to a string of Rollei HFT lenses.'
 ---
 
 自从刘大程序猿买了X100s，对我一直挂机的福伦达50/1.8的体积的怨念越来越大。以致这两天甚至想要暂时放弃“蓄谋已久”的单车购买计划，先行更换一只新的挂机头。刚好，趁着到处了解各种标头的机会，遍历一下我用过的那些标头。

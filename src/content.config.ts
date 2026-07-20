@@ -29,15 +29,11 @@ const posts = defineCollection({
       // scripts/rehype/protected-content.mjs. Bilingual posts must set this
       // in the sibling translation too. Runbook: docs/protected-posts.md.
       protected: z.boolean().default(false),
-      // Bilingual support. `lang` is the post's original language.
-      // `titleZh` / `titleEn` are optional so the site builds at any partial
-      // translation state; the theme falls back to `title` when one is missing.
+      // Bilingual support. `lang` is the post's original language; `title`
+      // and `description` above are in that language. The other language's
+      // title, description, and body live in the sibling translation file.
       lang: z.enum(['zh', 'en']).optional(),
       translationKey: z.string().optional(),
-      titleZh: z.string().optional(),
-      titleEn: z.string().optional(),
-      descriptionZh: z.string().optional(),
-      descriptionEn: z.string().optional(),
     }),
 });
 
@@ -50,7 +46,10 @@ const translations = defineCollection({
   schema: z.object({
     translationKey: z.string(),
     lang: z.enum(['zh', 'en']),
+    // Display title/description for this language. Optional so a post builds
+    // mid-translation; the theme falls back to the primary's title/description.
     title: z.string().optional(),
+    description: z.string().optional(),
     // Must match the primary post's flag; posts/[...slug].astro enforces it.
     protected: z.boolean().default(false),
   }),

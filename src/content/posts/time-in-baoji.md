@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2020/02/T0w0THg0dEJNOS80MkFFeW9jQ1RqWk5MNEczOEFpL0
 category: 'Journal'
 lang: 'zh'
 translationKey: 'time-in-baoji'
-titleZh: '时间在宝鸡'
-titleEn: 'Time in Baoji'
-descriptionZh: '一篇宝鸡之行的流水账：和朋友一起去探望叶哥，逛了青铜器博物馆。'
-descriptionEn: 'A running log of a trip to Baoji with friends to visit Ye Ge, including a stop at the bronze ware museum.'
 ---
 
 最近净更新减肥日记了 好久没有写日志 来一发。

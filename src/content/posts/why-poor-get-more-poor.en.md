@@ -2,6 +2,7 @@
 translationKey: 'why-poor-get-more-poor'
 lang: 'en'
 title: 'Why Do the Rich Get Richer and the Poor Get Poorer?'
+description: 'A repost of a Zhihu answer by Wan Fangzhong on the differences between rich and poor mindsets.'
 ---
 
 Speaking to this question at the level of the individual, through how it shows up in daily life

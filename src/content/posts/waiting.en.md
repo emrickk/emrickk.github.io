@@ -2,6 +2,7 @@
 translationKey: 'waiting'
 lang: 'en'
 title: 'Patience'
+description: 'Thoughts after watching the scholar Jao Tsung-i on the program "Masters": patience, single-mindedness, and the calm life I keep longing for.'
 ---
 
 Patience, and a mind undistracted: that is what I heard while watching Rao Zongyi, the master of Chinese classical studies, on the program Dajia.

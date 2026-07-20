@@ -5,10 +5,6 @@ pubDate: '2008-04-03'
 category: 'Journal'
 lang: 'zh'
 translationKey: 'waiting'
-titleZh: '耐'
-titleEn: 'Patience'
-descriptionZh: '看《大家》栏目里的国学大师饶宗颐有感：耐、心无旁骛，和一直向往的平和安宁。'
-descriptionEn: 'Thoughts after watching the scholar Jao Tsung-i on the program "Masters": patience, single-mindedness, and the calm life I keep longing for.'
 ---
 
 耐、心无旁骛，是我在看《大家》栏目国学大师饶宗颐听到的。

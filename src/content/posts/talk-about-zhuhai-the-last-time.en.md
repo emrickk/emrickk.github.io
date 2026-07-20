@@ -2,6 +2,7 @@
 translationKey: 'talk-about-zhuhai-the-last-time'
 lang: 'en'
 title: 'Time to Talk About Zhuhai!'
+description: '397 days in Zhuhai: a look back at life and work there before leaving, written so as not to forget.'
 ---
 
 Counting from my arrival in Zhuhai on July 7 last year to my departure on August 8 this year, and including the brief, hard-to-tally absences for holidays in between, I spent 397 days in Zhuhai in all. This stretch in Zhuhai brought me some gains in both work and life, and since I most likely won't be returning to this city for a long time, a review is necessary, if only to keep it all from being forgotten.

@@ -6,10 +6,6 @@ heroImage: '../../assets/hero/2024/06/light-customization-tradeoffs-cover.jpg'
 category: 'Things'
 lang: 'en'
 translationKey: 'light-customization-tradeoffs'
-titleZh: '轻定制中能力与产品妥协的平衡'
-titleEn: 'Balancing Capability and Product Compromise in Light Customization'
-descriptionZh: '讨论Alibaba.com轻定制项目如何在能力妥协与产品妥协之间取舍：以「全交易化」为方向的指导原则。'
-descriptionEn: 'How the Alibaba.com Light Customization project should balance capability limits against product compromise, with full transactionalization as the guiding principle.'
 ---
 
 ## Context

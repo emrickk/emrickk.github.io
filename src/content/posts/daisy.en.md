@@ -2,6 +2,7 @@
 translationKey: 'daisy'
 lang: 'en'
 title: 'Daisy'
+description: 'A repost of the French poet Alfred de Musset''s poem "Daisy".'
 ---
 
 I love, and say nothing; I only watch you smiling there across from me;

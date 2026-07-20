@@ -2,6 +2,7 @@
 translationKey: 'winter-tree'
 lang: 'en'
 title: 'Winter, Tree'
+description: 'A repost of Dimchevski''s tangerine photo series "Winter, Tree", with a short musing on winter as a symbol.'
 ---
 
 All weekend I mulled over the expression of winter. It's easy enough: trees piled with ice and snow, a cold gloomy sky, low temperatures, snowflakes, and so on. These belong to winter alone; they let people recognize what winter looks like, year after year. Though no detail is ever quite the same, they are similar enough for us to tell the season apart.

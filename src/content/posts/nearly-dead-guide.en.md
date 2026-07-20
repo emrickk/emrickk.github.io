@@ -2,6 +2,7 @@
 translationKey: 'nearly-dead-guide'
 lang: 'en'
 title: 'A Reckless, Unfinished Weight-Loss Guide'
+description: 'A weight-loss guide from 80kg down to 54kg: apple meals, slow five-kilometer runs, and Jung Da-yeon''s aerobics, left unfinished halfway.'
 ---
 
 Summer is on its way again~ In the spirit of doing the broad masses a good turn, let me post a weight-loss guide of my own
