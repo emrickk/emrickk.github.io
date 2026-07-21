@@ -14,7 +14,7 @@ The drive to Redwood National Park takes seven hours, so the night before we sta
 
 ![The parlor of the inn, with its tiled fireplace and old wallpaper](https://cdn.theneverless.com/2026/07/redwood-inn-parlor.webp)
 
-The next day we drove into the groves. We are used to marveling at how the human world changes; in front of the redwoods, it is the human scale that shrinks in an instant. Photographs cannot give you what standing there gives you: the trunks go up like buildings, the light gets cut into pieces and fights its way down, and the ferns close over the trail at shoulder height.
+The next day we drove into the groves. We are used to marveling at how the human world changes; in front of the redwoods, it is the human scale that shrinks in an instant. Photographs cannot give you what standing there gives you: the trunks go up like buildings, the light gets cut into pieces and fights its way down, and the ferns close over the trail at shoulder height. I made the photos a bit bigger too; feel it as you scroll.
 
 ![Twin redwood trunks beside the trail](https://cdn.theneverless.com/2026/07/redwood-twin-trunks.webp)
 
