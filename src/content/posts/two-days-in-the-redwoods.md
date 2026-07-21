@@ -8,13 +8,13 @@ lang: 'en'
 translationKey: 'two-days-in-the-redwoods'
 ---
 
-Last July we spent a weekend on the far north coast of California, where the redwoods grow. A hundred years ago Americans logged this coast hard enough to force a first-tier city, Eureka, into existence. That city has since faded, but the redwoods are still here, and the ferns beyond counting, so we came to have a look.
+Last July we spent a weekend on California's far northern coast, where the redwoods grow. A century ago, logging along this coast built Eureka into a prosperous city. That prosperity has faded, but the redwoods are still here, along with ferns beyond counting, so we came to have a look.
 
-The drive to Redwood National Park takes seven hours, so the night before we stayed at an old inn in Ferndale, a town along the way. It had its boom too: it is built full of Gothic Revival and Queen Anne houses, and the Gingerbread Mansion, where we stayed, is no exception. The parlor cannot have changed much in a hundred years: patterned wallpaper, a tiled fireplace, candlesticks on the mantel. It really is of that era.
+The drive to Redwood National Park takes seven hours, so the night before we stayed at an old inn in Ferndale, a town along the way. Ferndale had its boom too. Its streets are lined with Gothic Revival and Queen Anne houses, and the Gingerbread Mansion, where we stayed, is no exception. The parlor cannot have changed much in a hundred years: patterned wallpaper, a tiled fireplace, candlesticks on the mantel. It really is of that era.
 
 ![The parlor of the inn, with its tiled fireplace and old wallpaper](https://cdn.theneverless.com/2026/07/redwood-inn-parlor.webp)
 
-The next day we drove into the groves. We are used to marveling at how the human world changes; in front of the redwoods, it is the human scale that shrinks in an instant. Photographs cannot give you what standing there gives you: the trunks go up like buildings, the light gets cut into pieces and fights its way down, and the ferns close over the trail at shoulder height. I made the photos a bit bigger too; feel it as you scroll.
+The next day we drove into the groves. Photographs cannot convey what it feels like to stand beneath these trees: the trunks go up like buildings, the light gets cut into pieces and fights its way down, and the ferns close over the trail at shoulder height. I made the photos a bit bigger too; feel it as you scroll.
 
 ![Twin redwood trunks beside the trail](https://cdn.theneverless.com/2026/07/redwood-twin-trunks.webp)
 
@@ -36,11 +36,11 @@ We walked Trillium Falls Trail, and in the evening came back to the water near o
   <img src="https://cdn.theneverless.com/2026/07/redwood-room-lamp.webp" alt="The lamp in the room" loading="lazy" />
 </div>
 
-The next morning we walked the Grove of Titans. A trail named for giants earns it: an older couple stayed ahead of us the whole way, two small figures against a trunk that made them look like children. That is the trick the redwoods keep playing on you: there is nothing human-sized to measure them against, until there is. An old redwood can live two thousand years. I suddenly thought of those wooden houses in Ferndale. When they were going up, these trees were old already.
+The next morning we walked the Grove of Titans. The trail earns its name: an older couple stayed ahead of us the whole way, two small figures against a trunk that made them look like children. That is the trick the redwoods keep playing on you: nothing nearby gives them scale until a person walks into view. I suddenly thought of those wooden houses in Ferndale. Those houses felt old, but these trees were old already when the houses went up.
 
 ![A giant redwood over the boardwalk, an older couple ahead on the path](https://cdn.theneverless.com/2026/07/redwood-giants-boardwalk.webp)
 
-Out of the woods and onto the coast highway, the fog was still a wall, with no intention of burning off. With the eyes' continuity check gone, the brain loses its grip on what is real. Headlights surfaced first, then a shape: an old Volkswagen bus climbed past us, and a moment later the fog closed over it. Had the bus been there at all?
+Out of the woods and onto the coast highway, the fog was still a wall, with no intention of burning off. The view no longer held together: headlights surfaced first, then a shape. An old Volkswagen bus climbed past us, and a moment later disappeared back into the fog. Had the bus been there at all?
 
 ![A VW bus and a cyclist emerging from the fog on the coast highway](https://cdn.theneverless.com/2026/07/redwood-fog-vw-bus.webp)
 
@@ -55,7 +55,7 @@ To be fair, the fog is not there to block the road. It barely rains here in summ
 
 ![The highway disappearing into a wall of fog at a curve](https://cdn.theneverless.com/2026/07/redwood-fog-curve.webp)
 
-We kept driving back. A little way inland the fog finally gave up, and the green of the understory came back on. Out of the car: the trail threaded between fallen logs bigger than the car we came in.
+We drove on. A little way inland the fog finally gave up, and the green of the understory came back on. Out of the car: the trail threaded between fallen logs bigger than the car we came in.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/redwood-fern-hillside.webp" alt="A hillside of ferns with hikers far below" loading="lazy" />
@@ -64,7 +64,7 @@ We kept driving back. A little way inland the fog finally gave up, and the green
 
 ![Sun flooding back into the grove, fallen logs beside the trail](https://cdn.theneverless.com/2026/07/redwood-sunlit-grove.webp)
 
-For the drive home we skipped the fast highway and took the slow road, the one that runs right between the trunks. It is the old Highway 101; when the freeway was finished, it got left behind among the trees. The evening sun came through in long diagonals, and for half an hour neither of us said anything.
+For the drive home we skipped the freeway and took the slow road, the one that runs right between the trunks. It used to be Highway 101; after the freeway was finished, the old road was left behind among the trees. The evening sun came through in long diagonals across the road.
 
 ![Evening light falling across the road through the redwoods](https://cdn.theneverless.com/2026/07/redwood-evening-light.webp)
 
