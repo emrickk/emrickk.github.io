@@ -1,6 +1,6 @@
 ---
-title: 'The Snoopy Hunt'
-description: 'A weekend hunting what is left of the Peanuts statues of Santa Rosa: Lucy under the junipers, a bronze Charlie Brown that will not be sold, an antique shop with the years filed in bins, and stained glass over the ice rink Schulz built.'
+title: 'Santa Rosa, June'
+description: 'Looking for Snoopy in Santa Rosa: Charlie Brown, Snoopy, and their friends.'
 pubDate: '2024-07-05'
 heroImage: '../../assets/hero/2026/07/snoopy-hunt-cover.webp'
 category: 'Journal'
@@ -8,71 +8,64 @@ lang: 'en'
 translationKey: 'the-snoopy-hunt'
 ---
 
-At the end of June we drove an hour north of the Golden Gate to Santa Rosa, where Charles Schulz spent the back half of his life drawing Peanuts. We went because of a rumor: the city is supposed to be full of Snoopys, hiding on corners and in doorways. So the weekend had one assignment. We went hunting.
-
-![Sunlight in squares on a tiled floor, under a green-tiled wall](https://cdn.theneverless.com/2026/07/santa-rosa-window-light.webp)
+We came to Santa Rosa to check on a rumor. Charles Schulz drew Snoopy here for the back half of his life, and the city is said to be full of Snoopy statues, hiding on corners and in doorways. So the weekend had one assignment. We went treasure hunting.
 
 ## Counting Snoopys
 
-First, the arithmetic of the hunt. For three summers starting in 2005 the city put fiberglass Peanuts statues out on its streets: 55 Charlie Browns the first year, 76 Woodstocks the second, 95 Snoopys the third, about two hundred once the later ones are counted in. Then most of them went to auction, and the money went to art scholarships. We had heard "more than a hundred." The street-level truth, on a Saturday afternoon almost twenty years later, is a much thinner herd.
+First, the arithmetic. For three summers starting in 2005 the city put fiberglass Peanuts statues out on its streets: 55 Charlie Browns the first year, 76 Woodstocks the second, 95 Snoopys the third, about two hundred once the later ones are counted in. Then most of them went to auction, and the money became art scholarships. The version we heard was that more than a hundred are still around.
 
-Lucy found us before we found anything: yellow flowered dress, flowers in her hair, arms open between two junipers, taking a bow.
+Walking the streets on a Saturday afternoon almost twenty years later, the real number is a lot thinner.
+
+We were still checking in when Lucy found us first, right at the hotel door: flowers in her hair, arms open between two junipers. Taking a bow, or just enjoying life?
 
 ![A fiberglass Lucy statue in a yellow flowered dress, arms open between two junipers](https://cdn.theneverless.com/2026/07/lucy-statue-yellow-dress.webp)
 
-## Old stuff
+## Day jobs
 
-Between statues we wandered into an antiques shop, the kind that is really a warehouse of other people's afternoons: a Budweiser sign burning neon in the window, and glass cases lit from inside.
-
-![An antique shop window with a Budweiser neon sign glowing inside](https://cdn.theneverless.com/2026/07/antique-shop-budweiser-neon.webp)
-
-Inside, the records are filed by year: 1941, 1943, 1944, 1948. Next to them sat a cardboard box of photographs that no longer belong to anyone in particular. You can buy a year here, or somebody's birthday party.
+Back on the street the finds picked up, and a pattern emerged: the ones that stayed all have jobs. A Woodstock on his nest by the curb, in a patched work shirt and a garrison cap. A Snoopy holding the corner by the café tables, quite obviously the waiter.
 
 <div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/record-store-year-tabs.webp" alt="Record bins with year tabs marked 1941, 1943, 1944, 1948" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/box-of-old-photographs.webp" alt="A cardboard box full of old photographs" loading="lazy" />
-</div>
-
-## The herd
-
-Back on the street the hunt picked up. A Woodstock in his nest on the sidewalk. A Snoopy someone had given a curled mustache.
-
-<div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/woodstock-nest-statue-street.webp" alt="A Woodstock statue in a nest on the sidewalk" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/woodstock-nest-statue-street.webp" alt="A Woodstock statue in a garrison cap and patched work shirt, in a nest by the curb" loading="lazy" />
   <img src="https://cdn.theneverless.com/2026/07/snoopy-statue-mustache.webp" alt="A white Snoopy statue with a painted curled mustache" loading="lazy" />
 </div>
 
-The auction money also paid for a few bronze ones, and those are the keepers: they do not move, and they will not be sold. Charlie Brown stands with his hand on Snoopy's head, back to the park, watching the traffic like he is waiting for someone.
+Charlie Brown stands with his hand on Snoopy's head, back to the park, watching the traffic: doorman for the visitor center, naturally.
 
 ![The bronze Charlie Brown with his hand on Snoopy's head, facing the street](https://cdn.theneverless.com/2026/07/charlie-brown-snoopy-bronze.webp)
 
-Some corners keep them in pairs, Lucy on one side and Woodstock across the crosswalk. One Snoopy had been posted outside with a basketball and nothing to play against.
+Some corners come in pairs: a Lucy in pink playing tourist, a camera slung on her back, and across the crosswalk, Woodstock is clearly a driver this time. One more Snoopy in a teen-club shirt stood outside with a basketball. That job looks a little easier.
 
 <div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/lucy-woodstock-statues-corner.webp" alt="Two Peanuts statues facing each other across a street corner" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/snoopy-basketball-statue.webp" alt="A Snoopy statue holding a basketball by a bike rack" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/lucy-woodstock-statues-corner.webp" alt="A pink Lucy with a camera on her back, a Woodstock in an engineer's cap across the street" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/snoopy-basketball-statue.webp" alt="A Snoopy statue in a teen-club shirt, holding a basketball by a bike rack" loading="lazy" />
 </div>
 
-## After seven
+## After five
 
-Downtown Santa Rosa is old, and stubborn about it. In 1906 the earthquake that is always named after San Francisco flattened this town too: a dozen blocks of it, the courthouse included. Around the old railroad square only seven buildings came through, among them the stone depot from 1903, which forty years later got to play itself in a Hitchcock film. The city rebuilt and kept the stones.
+Half the afternoon went by fast, and the hunting got tiring. Between two statues we turned into an antiques shop, the kind that is really a warehouse of other people's afternoons: a Budweiser sign burning neon in the window, display cases lit from inside, and an antique car parked on top of the cabinets.
 
-By seven the streets had mostly handed themselves over to the evening shift: a man walking his groceries home under the bookstore sign, another sitting by his bicycle in the last of the shade.
+![An antique shop window with a Budweiser neon sign, an antique car parked above the cabinets](https://cdn.theneverless.com/2026/07/antique-shop-budweiser-neon.webp)
+
+The records inside are filed by year. Next to them sat a cardboard box, full of what used to be somebody's life. They say being forgotten is the real death, and looking at an old lady's color photograph I still pushed the thought back down... hopefully the photo just got sold to the shop in one sweep, by some devoted declutterer in the middle of a move.
+
+<div class="img-grid">
+  <img src="https://cdn.theneverless.com/2026/07/record-store-year-tabs.webp" alt="Record bins with year tabs marked 1940 through 1948" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/box-of-old-photographs.webp" alt="A box of old photographs, a print of two costumed chipmunks on top" loading="lazy" />
+</div>
+
+Out of the shop, we kept wandering. Santa Rosa is not what it used to be. After five the streets mostly hand themselves over to the evening shift, downtown is pretty much down to its restaurants, and everyone still out is either waiting to get off work or already on the way home.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/santa-rosa-evening-sidewalk.webp" alt="An evening sidewalk under awnings, a man walking home with groceries" loading="lazy" />
   <img src="https://cdn.theneverless.com/2026/07/enter-sign-evening-street.webp" alt="A red ENTER sign in the foreground, a man sitting with his bicycle across the street" loading="lazy" />
 </div>
 
-The statues kept their posts anyway: a chrome Snoopy stretched out on a bench, a bellhop with nobody's bags to carry.
+The statues, thankfully, do not get off work. On a bench under the redwoods Marcie read straight into the evening, and Charlie kept on being a train conductor whose shift never ends.
 
 <div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/snoopy-bench-statue-evening.webp" alt="A chrome Snoopy statue reclining on a bench" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/bellhop-statue-evening.webp" alt="A statue in a bellhop uniform on the evening sidewalk" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/snoopy-bench-statue-evening.webp" alt="A silver Marcie statue reading a book on a bench under redwoods" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/bellhop-statue-evening.webp" alt="A porter statue with a locomotive painted on his chest, on the evening sidewalk" loading="lazy" />
 </div>
-
-The long light went around picking things out one at a time: the dishes on a rooftop, a white armchair in a dark room.
-
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/santa-rosa-rooftop-dishes.webp" alt="Satellite dishes on a rooftop against a deep blue sky" loading="lazy" />
   <img src="https://cdn.theneverless.com/2026/07/santa-rosa-armchair-light.webp" alt="A white armchair in a dark room, cut by a slash of light" loading="lazy" />
@@ -80,40 +73,35 @@ The long light went around picking things out one at a time: the dishes on a roo
 
 ## The museum and the rink
 
-Sunday belonged to the Schulz Museum. The statues on its lawn have better job security than the ones downtown: a Snoopy asleep on a painted doghouse, a Linus in crossword print who has clearly been given homework.
+Sunday belonged to the Schulz Museum. The statues on its lawn have it better than the ones downtown: no more work at all. A Snoopy asleep on a doghouse painted over with music; a Linus holding a pencil the size of a fence post, his blanket knotted on like a cape, LINUS spelled into the crossword print of his smock.
 
 <div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/snoopy-doghouse-statue.webp" alt="A painted Snoopy lying on a doghouse against a white wall" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/linus-crossword-statue.webp" alt="A Linus statue in crossword print, holding a pencil" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/snoopy-doghouse-statue.webp" alt="A Snoopy asleep on a doghouse painted with music notes" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/linus-crossword-statue.webp" alt="A Linus statue in a crossword smock, blanket worn as a cape, holding a giant pencil" loading="lazy" />
 </div>
-
-One silver Charlie Brown stands inside a steel frame, holding an ice cream cone, with a smaller figure climbing the scaffold stairs toward him.
-
 <div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/charlie-brown-scaffold-statue.webp" alt="A silver Charlie Brown holding an ice cream cone inside a steel frame" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/scaffold-statue-detail.webp" alt="A small figure climbing the steel frame's stairs" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/charlie-brown-scaffold-statue.webp" alt="A silver Charlie Brown, shirt painted as a brick wall, scaffolding around him" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/scaffold-statue-detail.webp" alt="A Woodstock in a hard hat climbing the scaffold stairs" loading="lazy" />
 </div>
 
 ![A porthole in a cartoon spaceship wall, a Snoopy floating inside the bubble](https://cdn.theneverless.com/2026/07/museum-spaceship-porthole.webp)
 
-Across the parking lot is the ice arena Schulz built in 1969 and skated at until the end. The café in its lobby still keeps his table reserved. We ordered something with too much whipped cream and watched a white Snoopy dance on his pedestal by the door.
+Across the parking lot is the ice arena Schulz built himself in 1969 and skated at until the end. The café in its lobby still keeps his table reserved. We ordered something with too much whipped cream and watched a white Snoopy do his happy dance on the pedestal by the door (see, told you: no more work).
 
 <div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/warm-puppy-cafe-drink.webp" alt="A whipped cream drink in a Warm Puppy Café paper cup" loading="lazy" />
-  <img src="https://cdn.theneverless.com/2026/07/dancing-snoopy-statue.webp" alt="A white dancing Snoopy statue on a black pedestal" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/warm-puppy-cafe-drink.webp" alt="A whipped cream drink in a Warm Puppy Café cup, chef Snoopy printed on it" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/dancing-snoopy-statue.webp" alt="A white Snoopy statue doing the happy dance on a black pedestal" loading="lazy" />
 </div>
 
-The statues here dress for the building: Charlie Brown in a captain's jersey and a yellow hockey helmet, Woodstock in referee stripes, sitting in a birdbath and looking unfit to officiate anything.
+The statues here are clearly on a sports theme: Charlie has changed into a yellow hockey helmet, a puck at his feet, and Woodstock is in referee stripes, sitting in a birdbath and looking unfit to officiate anything.
 
 <div class="img-grid">
-  <img src="https://cdn.theneverless.com/2026/07/hockey-charlie-brown-statue.webp" alt="A Charlie Brown statue in a captain's jersey and yellow hockey helmet" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/hockey-charlie-brown-statue.webp" alt="A statue in a captain's jersey and yellow hockey helmet, a puck at his feet" loading="lazy" />
   <img src="https://cdn.theneverless.com/2026/07/woodstock-referee-birdbath.webp" alt="A Woodstock statue in referee stripes, sitting in a birdbath" loading="lazy" />
 </div>
 
-![A Snoopy statue in a top hat and tails, comic panels on the window behind](https://cdn.theneverless.com/2026/07/top-hat-snoopy-statue.webp)
+![A Snoopy statue in a top hat and tails, a small Woodstock on the hat brim, comic murals on the windows behind](https://cdn.theneverless.com/2026/07/top-hat-snoopy-statue.webp)
 
-And over the café, Snoopy has been put into stained glass, the way older towns do it with saints.
+Before leaving we went back to the café to pack some bread for the road. Looking up: over the café, Snoopy has been put into stained glass, the way older towns do it with saints. I thought about it for a moment. Snoopy does deserve to be treated that way.
 
 ![A round stained glass window of Snoopy on his doghouse](https://cdn.theneverless.com/2026/07/peanuts-stained-glass-window.webp)
-
-We drove home a long way short of a hundred Snoopys. It did not feel like a failed hunt. A town that fell down once and got up again knows what to keep: seven stone buildings, the years in bins, a reserved table, a dog in stained glass. A city with a pulse.
