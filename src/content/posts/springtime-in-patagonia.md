@@ -8,11 +8,11 @@ lang: 'en'
 translationKey: 'springtime-in-patagonia'
 ---
 
-At the end of November 2025 we went about as far south as roads go: Puerto Natales and Torres del Paine, in Chilean Patagonia. It was late spring down there, which in Patagonia means green meadows, snow on every summit, flowers in the fences, and wind that you can lean into.
+At the end of November 2025, we went about as far south as roads go: Puerto Natales and Torres del Paine, in Chilean Patagonia. It was late spring down there, which in Patagonia means green meadows, snow on every summit, flowers along the fences, and wind that you can lean into.
 
 ## Puerto Natales
 
-The town sits on a sound that the charts call Última Esperanza, Last Hope, named by a sailor who was running out of places to look for a way through. It is the kind of place that gets described as a gateway, but it deserves an afternoon of its own: low houses under corrugated roofs, cafés with sun on their patios, paint in colors that seem chosen to argue with the weather.
+The town sits on a sound that the charts call Última Esperanza, Last Hope, named by a sailor who was running out of places to look for a way through. Before driving into the park, we spent an afternoon there: low houses under corrugated roofs, cafés with sun on their patios, and paint in colors that seem chosen to argue with the weather.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/puerto-natales-cafe.webp" alt="A café patio in Puerto Natales" loading="lazy" />
@@ -21,9 +21,9 @@ The town sits on a sound that the charts call Última Esperanza, Last Hope, name
 
 ![An old red car parked on a quiet street](https://cdn.theneverless.com/2026/07/puerto-natales-red-car.webp)
 
-Down by the water the trees give the wind away. They all lean the same direction, combed by decades of it, and across the sound the mountains already have snow.
+Down by the water the trees give the wind away. They all lean in the same direction, combed by decades of it, and across the sound the mountains already have snow.
 
-![Wind-combed trees by the sound, snow mountains beyond](https://cdn.theneverless.com/2026/07/puerto-natales-windswept-trees.webp)
+![Wind-combed trees by the sound, snow-covered mountains beyond](https://cdn.theneverless.com/2026/07/puerto-natales-windswept-trees.webp)
 
 ## The road in
 
@@ -33,7 +33,7 @@ The drive into the park takes about two hours, and for most of it the mountains 
 
 ![The Paine massif in the evening, across the lake](https://cdn.theneverless.com/2026/07/paine-massif-evening-pano.webp)
 
-We stayed at a hotel on the plain by the river. Its best piece of furniture was the window: two armchairs, a small table, and the entire mountain range from end to end. We rearranged our days around that view and never once regretted it.
+We stayed at a hotel on the plain by the river. Its best piece of furniture was the window: two armchairs, a small table, and the whole mountain range. From then on, we arranged our days around that view.
 
 ![Two armchairs facing the Paine massif through the hotel window](https://cdn.theneverless.com/2026/07/hotel-window-paine-massif.webp)
 
@@ -50,7 +50,7 @@ This far south, in this season, the light refuses to end. At half past seven the
 
 ![Evening light over the river plain below the massif](https://cdn.theneverless.com/2026/07/paine-river-evening-pano.webp)
 
-Sunset came around ten. We watched it from the lounge: first the clouds catching fire above the peaks, then a long blue hour in which the range slowly turned to silhouette. Nobody at the windows said much.
+Sunset came around ten. We watched it from the lounge: first the clouds catching fire above the peaks, then a long blue hour in which the range slowly turned to silhouette.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/paine-sunset-clouds.webp" alt="Sunset clouds burning above the massif" loading="lazy" />
@@ -68,7 +68,7 @@ The next day we drove the long way through the park. At Lago Pehoé the water is
   <img src="https://cdn.theneverless.com/2026/07/road-to-the-torres.webp" alt="A gravel road running toward the Torres" loading="lazy" />
 </div>
 
-Toward the eastern entrance the water changes character: Laguna Amarga is rimmed with white minerals, and behind it the three granite towers that give the park its name finally show themselves. By the shelter there is a bench that faces them straight on. People sit down on it and go quiet for a while. It works on everyone.
+Toward the eastern entrance the water changes character: Laguna Amarga is rimmed with white minerals, and behind it the three granite towers that give the park its name finally show themselves. By the shelter there is a bench that faces them straight on.
 
 ![Two people on a bench facing the Torres across the white water of Laguna Amarga](https://cdn.theneverless.com/2026/07/laguna-amarga-bench.webp)
 

@@ -5,11 +5,11 @@ title: '巴塔哥尼亚的春天'
 description: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满酒店窗户的百内山群，佩霍埃湖，Laguna Amarga的长椅，和要等到晚上十点的日落。'
 ---
 
-2025年11月底，我们去了公路能到达的差不多最南的地方：智利巴塔哥尼亚的纳塔莱斯港和百内国家公园。那里正是晚春，而巴塔哥尼亚的晚春意味着：草甸是绿的，每座山顶都有雪，篱笆边开着花，风大得可以让人斜着身子靠上去。
+2025年11月底，我们去了公路能到达的差不多最南的地方：智利 Patagonia 的 Puerto Natales 和百内国家公园。那里正是晚春，而 Patagonia 的晚春意味着：草甸是绿的，每座山顶都有雪，篱笆边开着花，风大得可以让人斜着身子靠上去。
 
-## 纳塔莱斯港
+## Puerto Natales
 
-小镇坐在一条峡湾边上，海图上叫它"最后的希望"（Última Esperanza），是一位快要无路可找的水手起的名字。旅行手册总说它是百内的"门户"，但它值得专门留一个下午：铁皮屋顶压得低低的房子，晒着太阳的咖啡馆露台，墙上的颜色鲜艳得像是故意要跟天气吵架。
+小镇坐在一条峡湾边上，海图上叫它"最后的希望"（Última Esperanza），是一位快要无路可找的水手起的名字。进山之前，我们在这里待了一个下午：铁皮屋顶压得低低的房子，晒着太阳的咖啡馆露台，墙上的颜色鲜艳得像是故意要跟天气吵架。
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/puerto-natales-cafe.webp" alt="纳塔莱斯港的咖啡馆露台" loading="lazy" />
@@ -30,7 +30,7 @@ description: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满酒
 
 ![傍晚隔湖望百内山群](https://cdn.theneverless.com/2026/07/paine-massif-evening-pano.webp)
 
-我们住在河边平原上的一家酒店。它最好的家具是那扇窗：两把扶手椅，一张小圆桌，和从头到尾一整列山脉。之后几天的日程都是围着这扇窗排的，从没后悔过。
+我们住在河边平原上的一家酒店。它最好的家具是那扇窗：两把扶手椅，一张小圆桌，窗外是一整列山脉。之后几天的日程都是围着这扇窗排的。
 
 ![酒店窗前的两把扶手椅，正对百内山群](https://cdn.theneverless.com/2026/07/hotel-window-paine-massif.webp)
 
@@ -47,7 +47,7 @@ description: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满酒
 
 ![暮色中山下的河谷平原](https://cdn.theneverless.com/2026/07/paine-river-evening-pano.webp)
 
-日落要等到十点左右。我们在酒店大堂里看完了全场：先是云在峰顶上烧起来，然后是漫长的蓝调时刻，山脉慢慢变成剪影。窗前的人都不怎么说话。
+日落要等到十点左右。我们在酒店大堂里看完了全场：先是云在峰顶上烧起来，然后是漫长的蓝调时刻，山脉慢慢变成剪影。
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/paine-sunset-clouds.webp" alt="峰顶上燃烧的晚霞" loading="lazy" />
@@ -56,7 +56,7 @@ description: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满酒
 
 ## 去百内塔的路
 
-第二天我们把公园里的路开了个来回。佩霍埃湖的蓝不太讲道理，湖心的小岛上有一家旅舍，靠一条长长的木栈桥连着岸，属于那种镜头随便往哪儿一指、它都能让照片变好看的建筑。
+第二天我们把公园里的路开了个来回。Lago Pehoé 的蓝不太讲道理，湖心的小岛上有一家旅舍，靠一条长长的木栈桥连着岸，属于那种镜头随便往哪儿一指、它都能让照片变好看的建筑。
 
 ![佩霍埃湖心小岛上的旅舍与木栈桥](https://cdn.theneverless.com/2026/07/lago-pehoe-hosteria.webp)
 
@@ -65,7 +65,7 @@ description: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满酒
   <img src="https://cdn.theneverless.com/2026/07/road-to-the-torres.webp" alt="通向百内塔的砂石路" loading="lazy" />
 </div>
 
-靠近东门，水换了一副性格：苦湖（Laguna Amarga）的岸边结着一圈白色的矿物，湖后面，公园因之得名的三座花岗岩塔终于露面。棚子旁边有一条长椅，正对着它们。人坐上去就会安静好一阵子，屡试不爽。
+靠近东门，水换了一副性格：Laguna Amarga 的岸边结着一圈白色的矿物，湖后面，公园因之得名的三座花岗岩塔终于露面。棚子旁边有一条长椅，正对着它们。
 
 ![两个人坐在长椅上，隔着苦湖白色的水面望百内塔](https://cdn.theneverless.com/2026/07/laguna-amarga-bench.webp)
 
@@ -77,7 +77,7 @@ description: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满酒
 
 ## 离开
 
-纳塔莱斯港机场大概是我们飞过的最小的机场：一个登机口，一座橙色屋顶的塔台，候机厅有一扇教堂式的高窗，窗里装着雪山。登机是从雪糕筒之间走过去的，一路按着帽子。
+Puerto Natales 机场大概是我们飞过的最小的机场：一个登机口，一座橙色屋顶的塔台，候机厅有一扇教堂式的高窗，窗里装着雪山。登机是从雪糕筒之间走过去的，一路按着帽子。
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/puerto-natales-airport.webp" alt="候机厅高窗下喝咖啡的人影" loading="lazy" />
@@ -86,7 +86,7 @@ description: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满酒
 
 ![走过停机坪登机](https://cdn.theneverless.com/2026/07/boarding-at-puerto-natales.webp)
 
-北上的航班是这趟旅行最后的礼物。有半个小时，舷窗里只有南巴塔哥尼亚冰原：冰川在黑色山脊之间编成辫子淌下来，一整个无人居住的冰的国度。
+北上的航班是这趟旅行最后的礼物。有半个小时，舷窗里只有 Southern Patagonian Ice Field：冰川在黑色山脊之间编成辫子淌下来，一整个无人居住的冰的国度。
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/icefield-from-above.webp" alt="飞机上俯瞰南巴塔哥尼亚冰原" loading="lazy" />
