@@ -9,7 +9,7 @@ On a Sunday in early June we decided to drive into Yosemite Valley. The snowmelt
 
 ![Yosemite Falls above the parking lot](https://cdn.theneverless.com/2026/07/yosemite-falls-parking-lot.webp)
 
-The trees are green, the sun is gentle, the parking lot has room left in it. Park the car, walk a stretch of trail, drive on to the next spot. That is the rhythm of a national park in summer: drive, park, walk, sunshine, shuffled together in no particular order.
+The trees are green, the sun is gentle, the parking lot has room left in it. Park the car, walk a stretch of trail, drive on to the next spot. That is the rhythm of a national park in summer: drive, park, walk, sunshine; the proportions depend on the day.
 
 ![Yosemite Falls between the trees](https://cdn.theneverless.com/2026/07/yosemite-falls-between-the-trees.webp)
 

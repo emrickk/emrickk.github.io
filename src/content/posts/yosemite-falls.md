@@ -13,7 +13,7 @@ translationKey: yosemite-falls
 ![停车场上方的优胜美地瀑布](https://cdn.theneverless.com/2026/07/yosemite-falls-parking-lot.webp)
 
 
-树是绿的，太阳不烈，停车场不挤。把车停好，去走一段步道，回来再开去下一处。国家公园的夏天就是这样的节奏：开车、停车、走路、晒太阳，配比随机混在一起。
+树是绿的，太阳不烈，停车场不挤。把车停好，去走一段步道，回来再开去下一处。国家公园的夏天就是这样的节奏：开车、停车、走路、晒太阳，配比全看当天。
 
 ![树影之间的优胜美地瀑布](https://cdn.theneverless.com/2026/07/yosemite-falls-between-the-trees.webp)
 
