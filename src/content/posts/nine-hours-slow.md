@@ -1,6 +1,6 @@
 ---
 title: 'Rome, 9 Hours or 900 Years Behind?'
-description: 'The camera was 9 hours slow; Rome is 900 years behind. Four days in May: the Colosseum with nobody around, St. Peter''s built for God, a palace of statues all to ourselves, and the sun coming through the roof of the Pantheon.'
+description: 'The camera was 9 hours slow. Four days in May: the Colosseum with nobody around, St. Peter''s built for God, a palace of statues all to ourselves, and the sun coming through the roof of the Pantheon.'
 pubDate: '2026-06-02'
 heroImage: '../../assets/hero/2026/07/nine-hours-slow-cover.webp'
 category: 'Journal'
@@ -8,7 +8,7 @@ lang: 'en'
 translationKey: 'nine-hours-slow'
 ---
 
-In mid May we spent four days in Rome. The camera's clock was still on California time, nine hours slow, and I only noticed on the second morning, so everything from the first day and a half is stamped wrong: the Colosseum at seven in the morning says ten o'clock the night before.
+In mid-May we spent four days in Rome. The camera's clock was still on California time, nine hours slow, and I only noticed on the second morning, so every photo from the first day and a half is stamped wrong: the Colosseum at seven in the morning says ten o'clock the night before.
 
 ## A golden afternoon
 
@@ -33,24 +33,24 @@ Out at seven the next day. Nobody in the streets, nobody at the Colosseum, the s
 
 ![The Forum in morning haze, the white Altare della Patria beyond](https://cdn.theneverless.com/2026/07/rome-forum-morning-haze.webp)
 
-Walking back, the little church in Monti had just caught the sun, and a bird was crossing above its cross.
+Walking back, the little church in Monti had just caught the sun, and a bird passed over its cross.
 
 ![The pediment of the Monti church catching the morning sun, a bird above the cross](https://cdn.theneverless.com/2026/07/rome-monti-church.webp)
 
-We turned into Santa Maria Maggiore again: ten to nine, and the gold of the apse mosaic was already lit.
+We went into Santa Maria Maggiore again: ten to nine, and the gold of the apse mosaic was already lit.
 
 ![Morning in Santa Maria Maggiore, the golden apse mosaic above the altar](https://cdn.theneverless.com/2026/07/rome-morning-altar.webp)
 
 ## The famous stones
 
-The day went to the famous stones. Inside the Colosseum you look up and there are arches behind the arches; on the rise next to it, the Temple of Venus and Roma is down to its brick core and a few columns.
+Inside the Colosseum you look up and there are arches behind the arches; on the rise next to it, the Temple of Venus and Roma is down to its brick core and a few columns.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/rome-colosseum-arches.webp" alt="The arches of the Colosseum, looking up from below" loading="lazy" />
   <img src="https://cdn.theneverless.com/2026/07/rome-temple-venus-roma.webp" alt="The brick core and columns of the Temple of Venus and Roma" loading="lazy" />
 </div>
 
-In the Forum, the statues of the Vestal Virgins still stand in their own courtyard; the temple behind them has housed a church since the Middle Ages, its baroque front growing out from between the Roman columns. Both are still standing.
+In the Forum, the statues of the Vestal Virgins still stand in their own courtyard; the temple behind them has housed a church since the Middle Ages, its baroque front growing out from between the Roman columns. The temple and the church inside it are both still standing.
 
 ![Statues of the Vestal Virgins, the temple with a church grown into it behind](https://cdn.theneverless.com/2026/07/rome-forum-vestals.webp)
 
@@ -61,18 +61,18 @@ In the Forum, the statues of the Vestal Virgins still stand in their own courtya
 
 ## Built for God
 
-The third day, the Vatican. I had only ever seen St. Peter's Square on television, mostly in the Christmas news: the Pope at the window, the crowd below. Standing in it is something else.
+The third day, the Vatican. I had only ever seen St. Peter's Square on television, mostly in Christmas broadcasts: the Pope at the window, the crowd below.
 
 ![Statues of saints on top of the colonnade of St. Peter's Square](https://cdn.theneverless.com/2026/07/rome-st-peters-colonnade.webp)
 
-Strictly speaking, St. Peter's is not even the cathedral of Rome (that would be the Lateran), but one step inside and you understand who it was built for: none of the proportions are human. The ring of letters below the dome, each one more than a meter tall; the bronze canopy over the altar, nearly ten stories high. Absurd, and completely coherent.
+Strictly speaking, St. Peter's is not even the cathedral of Rome (that would be the Lateran), but one step inside and you understand who it was built for: nothing here is built to human scale. The letters around the base of the dome are each more than a meter tall; the bronze canopy over the altar is nearly ten stories high.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/rome-st-peters-dome.webp" alt="The dome of St. Peter's with afternoon light coming through" loading="lazy" />
   <img src="https://cdn.theneverless.com/2026/07/rome-st-peters-longinus.webp" alt="The statue with the spear under the dome pier" loading="lazy" />
 </div>
 
-Even the light here is arranged: in the apse it first passes through a window of alabaster with a dove at the center, then through a pour of gilded clouds and angels, and lands on the throne. People kneel at the rail.
+Even the light here is arranged: it comes through an alabaster window with a dove at the center, then falls across gilded clouds and angels onto the throne. People kneel at the rail.
 
 ![The glowing dove window above the Cathedra](https://cdn.theneverless.com/2026/07/rome-cathedra-window.webp)
 
@@ -82,7 +82,7 @@ We walked out along the Tiber to the Sant'Angelo bridge.
 
 ## A palace to ourselves
 
-Toward closing time we turned into Palazzo Altemps, the smallest branch of the National Roman Museum. Four hundred years ago, cardinals brought excavated Roman statues into the rooms of this house; the statues never moved again, one to a room, the windows the only lighting. Apart from the attendants, we nearly had it to ourselves.
+Toward closing time we turned into Palazzo Altemps, the smallest branch of the National Roman Museum. Four hundred years ago, cardinals brought excavated Roman statues into the rooms of this house; the statues never moved again, one to a room, the windows their only light. Apart from the attendants, we nearly had it to ourselves.
 
 ![A doorway in Palazzo Altemps, a statue standing in the far room](https://cdn.theneverless.com/2026/07/rome-altemps-doorway.webp)
 
@@ -94,7 +94,7 @@ Early out to San Paolo fuori le Mura; the name is the address, St. Paul's outsid
 
 ![The cloistered courtyard of San Paolo fuori le Mura with its palm](https://cdn.theneverless.com/2026/07/rome-san-paolo-palm.webp)
 
-At noon we stopped back at the hotel. The Romeo is a sixteenth-century palazzo redone by Zaha Hadid's studio, and there is a red grand piano parked in the lobby; it occurred to me that it was probably the youngest thing we had seen all week 😂 Zaha collided things on purpose too: digging during the renovation turned up a two-thousand-year-old Roman workshop, which now sits under the glass floor of the swimming pool.
+At noon we stopped back at the hotel. The Romeo is a sixteenth-century palazzo redone by Zaha Hadid's studio. A red grand piano is parked in the lobby; it occurred to me that it was probably the youngest thing we had seen all week 😂 The collision was deliberate: digging during the renovation turned up the remains of a two-thousand-year-old Roman workshop, now preserved under the glass floor of the swimming pool.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/rome-red-piano.webp" alt="The red grand piano in the hotel lobby" loading="lazy" />
@@ -105,7 +105,7 @@ The Pantheon came last.
 
 ![The porch of the Pantheon and the crowd in the square](https://cdn.theneverless.com/2026/07/rome-pantheon-facade.webp)
 
-The only light inside falls through the round opening at the top of the dome. It also comes from overhead, but there is no dove, no gilded clouds, not even glass. Just the sun. It lands on the columns and moves a little every few minutes.
+The only light inside falls through the round opening at the top of the dome, with no glass in the opening. It lands on the columns and moves a little every few minutes.
 
 ![The light from the oculus resting on the columns of the Pantheon](https://cdn.theneverless.com/2026/07/rome-pantheon-light.webp)
 
