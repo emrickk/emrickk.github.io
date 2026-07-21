@@ -18,6 +18,8 @@ In the spring of 2017, Highway 1 broke. The Pfeiffer Canyon Bridge in Big Sur wa
 > Or maybe some other time. It will take a year to fix.\
 > Can we wait a year? Would you still go? Do you like it?
 
+<iframe title="Cheer Chen, 我喜欢上你时的内心活动, on Apple Music" src="https://embed.music.apple.com/us/song/1238560865" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" frameborder="0" loading="lazy" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe>
+
 The bridge took eight months to rebuild, for once beating the song's estimate. But Highway 1 kept breaking. In February 2024, a whole hillside near Lucia let go, and the resulting closure became the longest in the highway's ninety-year history. On January 14 this year, Caltrans finally reopened the last stretch. For the first time in three years, you could drive the coast end to end.
 
 ## Do we still go
