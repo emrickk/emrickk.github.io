@@ -11,7 +11,7 @@ translationKey: highway-1-all-the-way-home
 > 要不再说呢 会修一年吧\
 > 一年能等吗 你还去吗 你喜欢吗
 
-<iframe title="陈绮贞《我喜欢上你时的内心活动》, Apple Music" src="https://embed.music.apple.com/us/song/1238560865" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" frameborder="0" loading="lazy" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe>
+<iframe title="陈绮贞《我喜欢上你时的内心活动》, Spotify" src="https://open.spotify.com/embed/track/3Sk5vML32xkCFsysfuvNYl" height="152" style="width:100%;max-width:660px;border-radius:12px;" frameborder="0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 桥八个月就修好了，难得比歌里的估计还快。但一号公路一直在断。2024年2月，Lucia附近整面山坡垮了下来，成了这条公路九十年历史上最长的一次封闭。今年1月14日，Caltrans终于修通了最后一段。三年来第一次，海岸线可以从头开到尾。
 
