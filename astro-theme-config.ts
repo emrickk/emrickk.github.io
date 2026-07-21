@@ -47,14 +47,7 @@ const config = {
   ] as NavItem[],
 
   content: {
-    categoryOrder: [
-      'Journal',
-      'Things',
-      'Prodigal',
-      'Words',
-      'Repost',
-      'Fiona',
-    ],
+    categoryOrder: ['Journal', 'Things', 'Prodigal', 'Words', 'Repost', 'Fiona'],
     /**
      * Bilingual display names for post categories; they swap with the EN·中
      * toggle. Frontmatter keeps the raw key. Unmapped categories (e.g. Fiona)
@@ -111,54 +104,60 @@ const config = {
     profileImage: '',
     name: 'NeVeRtheLeSs',
     /** Every {zh, en} pair below swaps with the EN·中 toggle. */
-    role: { zh: '懒癌晚期', en: 'Terminally lazy' },
+    role: { zh: '居然还在', en: 'Still here, somehow' },
     location: { zh: '地球某处', en: 'Somewhere on Earth' },
-    focus: { zh: '生活、想法与碎碎念', en: 'Life, thoughts, and asides' },
+    focus: { zh: '生活，以及碰巧留意到的东西', en: 'Life and whatever catches my attention' },
     lead: {
-      zh: '一个从 2005 年写到现在的个人博客。写了二十多年，内容却比你想象的少得多，所以其实也没那么深。',
-      en: "Started in 2005, yet with far less here than you would expect from a blog past twenty. So, not that deep after all.",
+      zh: '这个博客是 2005 年开始写的。二十多年过去，留下来的东西却比你想象的少得多。所以其实也没那么深。',
+      en: 'This blog started in 2005. More than twenty years later, there is far less here than you might expect. So, not that deep after all.',
     },
     headline: ['Still waters', 'run deep.'],
     statementLabel: { zh: '关于博客', en: 'About the Blog' },
-    statementTitle: { zh: '写的东西其实不想被你看', en: 'Not really meant to be read' },
+    statementTitle: { zh: '写写停停', en: 'On and off' },
     statement: {
-      zh: '这里没有固定的主题，只是我随手写下在想什么、在做什么，以及对生活的一些总结和反思。而且你从最新一篇文章大概也能看出来：取决于你来的时间，这个博客多半已经停更几个月了。',
-      en: 'No fixed topics here. I just write down whatever I am thinking about, whatever I am doing, and the occasional summing-up or reflection on life. And as the latest post probably shows, depending on when you visit, this blog has most likely been on pause for a few months already.',
+      zh: '这里没有固定主题。我随手写下当时在想的、在做的，偶尔也回头总结一下生活。看看最新一篇的日期大概就知道了：你来的时候，这个博客多半已经停更几个月了。',
+      en: "There's no fixed topic here. I write down whatever I happen to be thinking or doing, plus the occasional look back at life. And the date on the latest post probably gives it away: depending on when you drop by, odds are this blog has been quiet for a few months.",
     },
-    careerLabel: { zh: '关于我', en: 'About Me' },
+    careerLabel: { zh: '几个年份', en: 'A Few Dates' },
     career: [
       {
         period: { zh: '2005', en: '2005' },
         title: { zh: '开始写博客', en: 'Started the blog' },
         description: {
-          zh: '一切从这里开始。',
-          en: 'Where all of this began.',
+          zh: '那时候当然没想到，它会留到今天。',
+          en: 'I did not expect it to last this long.',
         },
       },
       {
         period: { zh: '2018', en: '2018' },
-        title: { zh: '传送到地球另一端', en: 'Teleported across the Earth' },
+        title: { zh: '搬到太平洋另一边', en: 'Moved across the Pacific' },
         description: {
-          zh: '把自己传送到了地球的另一边，落在一所叫 MIT 的大学。',
-          en: 'Teleported myself to the other side of the Earth, landing at a university called MIT.',
+          zh: '这个博客也跟着一起过来了。',
+          en: 'The blog came with me.',
         },
       },
       {
-        period: { zh: '2026', en: '2026' },
-        title: { zh: '为下一代造产品', en: 'Building for the next generation' },
+        period: { zh: '现在', en: 'Now' },
+        title: { zh: '在做下一代娱乐产品', en: 'Building next-generation entertainment products' },
         description: {
-          zh: '在做一些为下一代准备的事：打造下一代的产品。',
-          en: 'Doing something for the next generation: building next-generation products.',
+          zh: '博客要是再停更，多半就是因为它。',
+          en: 'If the blog goes quiet again, this is probably why.',
         },
       },
     ],
     interests: [
-      { zh: '把想说的话写下来，哪怕没人看', en: 'Writing down what I want to say, even if nobody reads it' },
-      { zh: '慢慢写、慢慢更新的那点耐心', en: 'The patience to write slowly and update slowly' },
-      { zh: '过去很多年里留下来的旧文字', en: 'Old words left behind from many years past' },
+      {
+        zh: '去过的地方，和从那里带回来的照片',
+        en: 'Places I have been and photographs I brought back',
+      },
+      {
+        zh: '用过、做过，或者想得太多的东西',
+        en: 'Things I have used, worked on, or thought too much about',
+      },
+      { zh: '一些不想就这么忘掉的小事', en: 'Small moments I wanted to keep somewhere' },
     ],
-    interestsLabel: { zh: '关于', en: 'Notes' },
-    interestsHeading: { zh: '这里都写些什么', en: 'What gets written here' },
+    interestsLabel: { zh: '随记', en: 'Notes' },
+    interestsHeading: { zh: '最后留在这里的东西', en: 'What ends up here' },
   },
 };
 
