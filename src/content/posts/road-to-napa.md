@@ -1,6 +1,6 @@
 ---
-title: 'Road to Napa'
-description: 'A photo journal from two days in Napa in early April: Highway 1 north past Pigeon Point, a fire bowl at dawn on the Alila balcony, cherry blossoms over a roof, and a town still setting its tables. No wine.'
+title: 'Napa, April'
+description: 'We came to Napa for fun, and did not drink.'
 pubDate: '2025-04-08'
 heroImage: '../../assets/hero/2026/07/road-to-napa-cover.webp'
 category: 'Journal'
@@ -8,24 +8,22 @@ lang: 'en'
 translationKey: 'road-to-napa'
 ---
 
-In early April we drove up to Napa, two days and one night. We were in no hurry, so instead of the fast way we took Highway 1, following the coast north.
-
-The coast does not let you drive fast in spring anyway. Wildflowers crowded the turnouts, and every few miles there was another reason to pull over. The lighthouse at Pigeon Point has been lit since 1872. That morning there was hardly anyone on the hillside: the grass half gold, the tower white, and past it nothing but the Pacific.
+In early April we spent two days and a night in Napa. We were in no hurry on the way up, so we took Highway 1 north along the coast. The morning shore was nearly empty, wildflowers crowding the shoulders, and the lighthouse at Pigeon Point stood on the half-gold hillside, just off its night shift.
 
 ![Pigeon Point Lighthouse over golden grass, the Pacific behind](https://cdn.theneverless.com/2026/07/napa-pigeon-point-lighthouse.webp)
 
-The proper business of Napa is wine, and we drank none. Our hotel was the Alila, which put an outdoor bathtub and a bowl of fire on the balcony. The next morning we were up early and lit it. The trees outside had just caught the sun, green enough to glow.
+We stayed at the Alila again. The outdoor bathtub and the fire bowl on the balcony make a good pair.
 
 ![The balcony at dawn, an outdoor bathtub and a lit fire bowl, green trees beyond](https://cdn.theneverless.com/2026/07/napa-alila-fire-bowl.webp)
 
-April is blossom season in the valley; the cherry blossoms hung over a dark shingle roof.
-
-![Cherry blossoms over a dark shingle roof](https://cdn.theneverless.com/2026/07/napa-cherry-blossoms.webp)
-
-In the morning we went into town for bread. The bakery was open and nobody else was. At the taqueria the tables were already set, menus standing, flowers in their jars, chairs empty behind a window that held the reflection of the whole street.
+The next morning we retreated. We passed through town for bread, and few doors were open yet. The taqueria's tables were set all the same: menus standing, flowers in their jars, chairs empty, one pane of glass away, the whole street reflected in it.
 
 ![The taqueria through its window, tables set and empty, the street reflected in the glass](https://cdn.theneverless.com/2026/07/napa-taqueria-window.webp)
 
-Two days, one night, a trip to wine country without a single glass of wine. When we left, the town was just waking up: on the corner a restaurant had carried two chairs out early and set them beside the fire hydrant, tablecloth already on.
+On the corner a restaurant had carried two chairs out ahead of time and set them by the fire hydrant, tablecloth already on, the customers not yet anywhere. Napa at noon and Napa at night are probably lively; we experienced none of it: two days, one night, not a single glass of wine, and everything we saw was the place before it opened.
 
 ![A street corner with stone columns, two café chairs and a tablecloth beside a fire hydrant](https://cdn.theneverless.com/2026/07/napa-street-corner.webp)
+
+But the flowers in the valley were up as early as we were: only April, and the cherry blossoms were already past the dark shingle roof.
+
+![Cherry blossoms over a dark shingle roof](https://cdn.theneverless.com/2026/07/napa-cherry-blossoms.webp)
