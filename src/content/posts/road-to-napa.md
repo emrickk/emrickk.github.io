@@ -1,6 +1,6 @@
 ---
 title: 'Napa, April'
-description: 'We came to Napa for fun, and did not drink.'
+description: 'A trip to Napa without drinking.'
 pubDate: '2025-04-08'
 heroImage: '../../assets/hero/2026/07/road-to-napa-cover.webp'
 category: 'Journal'

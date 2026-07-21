@@ -1,6 +1,6 @@
 ---
 title: 'A stay in Big Sur'
-description: 'We usually visit Big Sur with an eye on the drive home. This time we had a room at Alila Ventana, and sunset no longer meant it was time to leave.'
+description: 'Two days in Big Sur.'
 pubDate: '2025-07-13'
 heroImage: '../../assets/hero/2026/07/big-sur-long-light-cover.webp'
 category: 'Journal'

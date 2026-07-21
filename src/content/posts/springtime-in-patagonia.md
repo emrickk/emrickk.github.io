@@ -1,6 +1,6 @@
 ---
 title: 'Springtime in Patagonia'
-description: 'A photo journal from Chilean Patagonia at the end of November: Puerto Natales, the Paine massif filling a hotel window, Lago Pehoé, the bench at Laguna Amarga, and sunsets that last until ten at night.'
+description: 'Wind, ice, distance, and days when the light outlasted us.'
 pubDate: '2025-12-09'
 heroImage: '../../assets/hero/2026/07/patagonia-cover.webp'
 category: 'Journal'

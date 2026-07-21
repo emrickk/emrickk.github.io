@@ -2,7 +2,7 @@
 translationKey: 'springtime-in-patagonia'
 lang: 'zh'
 title: '巴塔哥尼亚的春天'
-description: '十一月底的智利巴塔哥尼亚：纳塔莱斯港，装满酒店窗户的百内山群，佩霍埃湖，Laguna Amarga的长椅，和要等到晚上十点的日落。'
+description: '风，冰，距离，和每天都比我们撑得久的光。'
 ---
 
 2025年11月底，我们去了公路能到达的差不多最南的地方：智利 Patagonia 的 Puerto Natales 和百内国家公园。那里正是晚春，而 Patagonia 的晚春意味着：草甸是绿的，每座山顶都有雪，篱笆边开着花，风大得可以让人斜着身子靠上去。

@@ -2,7 +2,7 @@
 translationKey: 'two-days-in-venice'
 lang: 'en'
 title: 'Sunset in Venice'
-description: 'Venice at the end of May: more bridges than you can count, boat rides you never tire of, and an island built out of color.'
+description: 'Venice: countless bridges, boat rides that never get old, and an island built out of color.'
 ---
 
 The train from Florence spends its last few minutes running on the sea: water on both sides of the causeway, and then straight into Santa Lucia station. Down the front steps, and there is the Grand Canal. Venice gives you no time to ease in; the moment you step out, you get all of it at once. I had come prepared to be disappointed, and it flattened me anyway. She stood at the water's edge for a long time.

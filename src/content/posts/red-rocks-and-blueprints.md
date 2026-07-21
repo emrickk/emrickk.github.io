@@ -1,6 +1,6 @@
 ---
 title: 'Sedona, the moonshot and the sacred stones'
-description: "Three days in the Arizona high desert in November: last light on the Sedona buttes, the crater where NASA rehearsed the Moon, and a morning at Taliesin West, the desert camp Frank Lloyd Wright built at seventy."
+description: 'Three days in Arizona.'
 pubDate: '2025-11-10'
 heroImage: '../../assets/hero/2026/07/sedona-cover.webp'
 category: 'Journal'

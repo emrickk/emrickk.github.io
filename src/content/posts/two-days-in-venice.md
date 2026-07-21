@@ -1,6 +1,6 @@
 ---
 title: '威尼斯的日落'
-description: '五月底的威尼斯：数不清的桥，坐不腻的船，和一座用颜色盖成的岛。'
+description: '威尼斯：数不清的桥，坐不腻的船，和一座用颜色盖成的岛。'
 pubDate: '2026-06-10'
 heroImage: '../../assets/hero/2026/07/venice-cover.webp'
 category: 'Journal'

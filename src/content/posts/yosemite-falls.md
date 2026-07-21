@@ -1,6 +1,6 @@
 ---
 title: Yosemite 刚刚好
-description: 六月的 Yosemite 很好：树很绿，太阳不烈，停车场不挤...虽然到处是刚放暑假的孩子
+description: 六月的 Yosemite：瀑布正满，太阳不烈，连停车场都有空。
 pubDate: 2026-06-14
 heroImage: ../../assets/hero/2026/07/yosemite-cover.webp
 category: Journal

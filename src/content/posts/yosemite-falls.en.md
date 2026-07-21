@@ -2,7 +2,7 @@
 translationKey: 'yosemite-falls'
 lang: 'en'
 title: 'Yosemite on a summer day'
-description: 'Yosemite on a Sunday in June: green trees, gentle sun, a parking lot with room left, kids just out of school.'
+description: 'A June Sunday in Yosemite: full waterfalls, gentle sun, and even room in the parking lot.'
 ---
 
 On a Sunday in early June we decided to drive into Yosemite Valley. The snowmelt was still coming down from the high country and the falls were running full; plenty of cloud, good light. A good day for one of the Bay Area's three great clichés.

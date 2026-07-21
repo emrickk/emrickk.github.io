@@ -1,6 +1,6 @@
 ---
 title: 'Marin County Civic Center'
-description: 'A ten-minute detour on the way to the redwoods: Frank Lloyd Wright''s Marin County Civic Center, a government building still in daily use more than sixty years after it opened.'
+description: 'Frank Lloyd Wright’s last commission, still in use and still looking like the future.'
 pubDate: '2026-03-15'
 heroImage: '../../assets/hero/2026/07/marin-civic-center-cover.webp'
 category: 'Journal'

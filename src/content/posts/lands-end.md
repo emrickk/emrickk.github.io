@@ -1,6 +1,6 @@
 ---
 title: 'Lands End, San Francisco'
-description: 'An October evening at Lands End: a building that is a camera, the set tables of Louis'', the ruins of Sutro Baths, and the sun going down behind Seal Rocks.'
+description: 'An October evening at the edge of San Francisco.'
 pubDate: '2025-10-19'
 heroImage: '../../assets/hero/2026/07/lands-end-cover.webp'
 category: 'Journal'

@@ -1,6 +1,6 @@
 ---
 title: Oak Alley 种植园
-description: 房子很漂亮，背后的历史又脏又黑
+description: 去了一趟 Oak Alley 种植园。
 lang: zh
 translationKey: oak-alley-plantation
 ---

@@ -1,6 +1,6 @@
 ---
-title: 'Don''t Make Me Think (About My Job): Sincerity, Expertise, and B2B Product Design'
-description: 'How "don''t make me think" gets misapplied on Alibaba.com: define the buyer''s decision, earn domain expertise, and build sincere B2B products.'
+title: 'Don''t Make Me Think (About My Job)'
+description: 'In B2B, "don''t make me think" means doing the hard thinking for the buyer.'
 pubDate: '2025-08-17'
 heroImage: '../../assets/hero/2025/08/dont-make-me-think-cover.webp'
 category: 'Things'
