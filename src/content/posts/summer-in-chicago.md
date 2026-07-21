@@ -1,7 +1,7 @@
 ---
 title: 'Chicago, July'
 description: 'City on foot!'
-pubDate: '2026-07-20'
+pubDate: '2025-07-20'
 heroImage: '../../assets/hero/2026/07/summer-in-chicago-cover.webp'
 category: 'Journal'
 lang: 'en'

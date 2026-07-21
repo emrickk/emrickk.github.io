@@ -1,7 +1,7 @@
 ---
 title: 'Highway 1, All the Way Home'
 description: 'A song from 2017 asked: the bridge on Highway 1 is down, do we still go? This January the coast reopened end to end for the first time in three years. We went, and then we drove home, where the pumpkins were already out.'
-pubDate: '2026-02-01'
+pubDate: '2026-07-20'
 heroImage: '../../assets/hero/2026/07/highway-1-cover.webp'
 category: 'Journal'
 lang: 'en'
