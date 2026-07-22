@@ -30,6 +30,15 @@ const posts = defineCollection({
         .describe(
           'Publication date shown on the post; also orders posts on the home page, feed, and RSS.',
         ),
+      // The glob loader uses data.slug as the entry id when present, so this
+      // overrides the URL that otherwise comes from the filename.
+      slug: z
+        .string()
+        .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'lowercase letters, digits, and hyphens only')
+        .optional()
+        .describe(
+          'Custom URL for this post: theneverless.com/posts/<slug>/. Lowercase letters, digits, and hyphens. Empty uses the filename. Changing it on a published post breaks existing links to the old URL.',
+        ),
       updatedDate: z.coerce
         .date()
         .optional()

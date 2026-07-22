@@ -150,3 +150,33 @@ test('the scoped secret scan catches a planted token', () => {
     rmSync(root, { recursive: true, force: true })
   }
 })
+
+test('an invalid slug is reported and a valid one passes', () => {
+  const root = makeTree({
+    'src/content/posts/x.md': `---\ntitle: 'X'\ndescription: 'D'\npubDate: '2024-01-01'\nslug: 'my-custom-url'\n---\nBody.\n`,
+    'src/content/posts/y.md': `---\ntitle: 'Y'\ndescription: 'D'\npubDate: '2024-01-01'\nslug: 'Bad Slug!'\n---\nBody.\n`,
+  })
+  try {
+    assert.deepEqual(validatePostFile(root, 'src/content/posts/x.md'), [])
+    const errors = validatePostFile(root, 'src/content/posts/y.md')
+    assert.ok(errors.some((e) => /slug must be lowercase/.test(e)), errors.join('; '))
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('a deleted file in the change set is skipped, not an error', () => {
+  const root = makeTree({
+    'src/content/posts/kept.md': `---\ntitle: 'K'\ndescription: 'D'\npubDate: '2024-01-01'\n---\nBody.\n`,
+  })
+  try {
+    const errors = runFastChecks(root, [
+      'src/content/posts/kept.md',
+      'src/content/posts/deleted-post.md',
+      'src/content/posts/deleted-post.zh.md',
+    ])
+    assert.deepEqual(errors, [])
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})

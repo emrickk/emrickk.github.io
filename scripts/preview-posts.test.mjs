@@ -541,3 +541,29 @@ test('renderReviewPage escapes HTML metacharacters in targets', () => {
   assert.ok(html.includes('&quot;'), 'quotes must be escaped')
   assert.ok(html.includes('&lt;script&gt;'), 'angle brackets must be escaped')
 })
+
+test('routeSlugForPostFile prefers the frontmatter slug and falls back to filename', async () => {
+  const { mkdtempSync, mkdirSync, writeFileSync, rmSync } = await import('node:fs')
+  const { tmpdir } = await import('node:os')
+  const { join, dirname } = await import('node:path')
+  const { routeSlugForPostFile } = await import('./preview-posts.mjs')
+  const root = mkdtempSync(join(tmpdir(), 'route-slug-'))
+  try {
+    const write = (rel, content) => {
+      mkdirSync(dirname(join(root, rel)), { recursive: true })
+      writeFileSync(join(root, rel), content)
+    }
+    write(
+      'src/content/posts/file-name.md',
+      "---\ntitle: 'X'\nslug: 'custom-url'\n---\nBody.\n",
+    )
+    write('src/content/posts/plain.md', "---\ntitle: 'Y'\n---\nBody.\n")
+    assert.equal(routeSlugForPostFile(root, 'src/content/posts/file-name.md'), 'custom-url')
+    // The sibling routes through its primary's slug
+    assert.equal(routeSlugForPostFile(root, 'src/content/posts/file-name.zh.md'), 'custom-url')
+    assert.equal(routeSlugForPostFile(root, 'src/content/posts/plain.md'), 'plain')
+    assert.equal(routeSlugForPostFile(root, 'src/content/posts/gone.md'), 'gone')
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})

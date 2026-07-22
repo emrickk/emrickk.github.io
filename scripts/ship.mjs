@@ -18,6 +18,7 @@ import {
   renderReviewPage,
   resolveBaseRef,
   reviewTargets,
+  routeSlugForPostFile,
   slugForPostFile,
   writeManifest,
 } from './preview-posts.mjs'
@@ -346,7 +347,7 @@ export async function main(values) {
     })
     console.log(`pushed ${sha.slice(0, 7)} to origin/main`)
     const conclusion = await watchDeploy(root, sha, [
-      ...new Set(now.changeSet.map((p) => slugForPostFile(p))),
+      ...new Set(now.changeSet.map((p) => routeSlugForPostFile(root, p))),
     ])
     if (values.fast && conclusion !== 'success' && conclusion !== 'unknown') {
       console.error(

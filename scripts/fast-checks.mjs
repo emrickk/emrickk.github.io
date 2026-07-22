@@ -70,6 +70,11 @@ export function validatePostFile(root, relPath) {
         errors.push(`${relPath}: heroImage not found on disk (${fm.heroImage})`)
       }
     }
+    if (fm.slug !== undefined && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(fm.slug)) {
+      errors.push(
+        `${relPath}: slug must be lowercase letters, digits, and hyphens (${fm.slug})`,
+      )
+    }
   }
 
   // protected must match between the pair or the build refuses the post
@@ -88,8 +93,12 @@ export function validatePostFile(root, relPath) {
 
 // All fast-lane findings for a scoped change set: frontmatter shape per
 // file plus a secret scan limited to the shipped files. Empty array = go.
+// A change-set path missing on disk is a staged deletion (git computed the
+// set), which needs no content validation: the commit removes the page.
 export function runFastChecks(root, changeSet) {
-  const errors = changeSet.flatMap((relPath) => validatePostFile(root, relPath))
+  const errors = changeSet.flatMap((relPath) =>
+    existsSync(path.join(root, relPath)) ? validatePostFile(root, relPath) : [],
+  )
   const allowlist = loadAllowlist(root)
   for (const relPath of changeSet) {
     const abs = path.join(root, relPath)

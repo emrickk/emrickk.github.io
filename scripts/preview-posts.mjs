@@ -156,6 +156,19 @@ export function computeChangeSet(root, { baseRef = resolveBaseRef(root) } = {}) 
 // page, so any note change, including a deletion, reviews the /notes/
 // timeline. Site-wide changes get the homepage plus one image-heavy exemplar.
 // Sorted and deduplicated, '/' first.
+// Route slug for a post file: the frontmatter `slug` when the primary
+// declares one (the glob loader uses data.slug as the entry id), otherwise
+// the filename shorthand. Deleted files fall back to the filename.
+export function routeSlugForPostFile(root, path) {
+  const primary = join(root, primaryPostPath(path))
+  if (existsSync(primary)) {
+    const fm = readFileSync(primary, 'utf8').match(/^---\r?\n([\s\S]*?)\r?\n---/)
+    const m = fm && fm[1].match(/^slug:\s*['"]?([a-z0-9-]+)['"]?\s*$/m)
+    if (m) return m[1]
+  }
+  return slugForPostFile(path)
+}
+
 export function reviewTargets(root, changeSet) {
   const targets = new Set()
   for (const path of changeSet) {
@@ -164,7 +177,7 @@ export function reviewTargets(root, changeSet) {
       // A currently-draft post has no page of its own (a published-to-draft
       // flip removes one), so review goes to the homepage like a deletion.
       if (existsSync(join(root, primaryPostPath(path))) && !isDraftPost(root, path))
-        targets.add(`/posts/${slugForPostFile(path)}/`)
+        targets.add(`/posts/${routeSlugForPostFile(root, path)}/`)
       else targets.add('/')
     } else if (kind === 'note') {
       targets.add('/notes/')
