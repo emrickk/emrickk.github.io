@@ -37,6 +37,10 @@ The owner tends to design a post as one or more threads (主线) running through
 
 Concrete material carries the feeling. Facts, objects, physical experience, and dry turns do the work. Interpretation is allowed when the surrounding material earns it. The prose should feel natural rather than polished into symmetry.
 
+Facts are actors, not plaques (owner edits, 2026-07-21): redeploy dates and history inside the scene instead of parking them in an info sentence (1912 statues as 老演员，目送新修的后辈小路). Narrate small decisions as micro-stories with a setup and a payoff (三个不同的黑让我犯了一小会儿难，最后闭着眼睛选的 Sapphire Black … 我看起来也选得没错). Self-deprecating humor is part of the register (车还是被我的恶趣味悄悄感染). The narrator thinks on the page (估计、确实、突然想到): prose that only observes reads like captions; his participates. The rule also cuts (mendocino, 2026-07-21): a bare fact dies even when true. The 1944 wooden bridge survived his edit because it arrived with irony (屈就于木头), a fresh joke (好在加州也并不缺好木头), and a personal crossing (我们刚刚来酒店的路上就是从这座桥上过); the 1909 first lighting and its lens, accurate and plaque-bare, did not. One dated fact doing work beats two.
+
+The voice talks to the reader (mendocino, 2026-07-21): a fourth-wall aside with an emoji is in range (我知道这几张照片出奇的相似，但是来和我一起看海吧🐶), and hedges are warmth, not weakness: he softened a clean zeugma with 似乎, an absolute (nobody builds facing inland) into a desire (没有人想要), and opened a verdict with 说实话. Drafts that read as sealed essays get windows cut into them by his edits; leave a window open yourself. And name the mundane thing: "someone has lined a windowsill with carved whales" romanticized what was simply the gift shop's bookstore, and his edit named the shop. The prosaic name is the honest move and the funnier one.
+
 The current post and his published posts in `src/content/posts/` are the primary references for how he writes, but published posts are evidence of range, not templates: match the current post's register before importing habits from another post. Take style feedback live in the session; fold durable lessons into this file in the open, through his review, never into private memory.
 
 ## Composing
@@ -44,12 +48,13 @@ The current post and his published posts in `src/content/posts/` are the primary
 The sequence for any authorized draft, rewrite, or translation:
 
 1. Read the whole post and all the source material (his dictation, the photos, the existing draft).
-2. State the topic in one sentence. If none can be written, stop and ask. If the topic was inferred rather than given, disclose the sentence at handoff so he can veto it before reading the draft.
-3. Map the scenes to one or two threads.
-4. Identify the real gaps without inventing material; when he hands a design to an existing post, usually most of the material already carries it.
-5. Write the authorized passage or post fresh, as one continuous hand; patched hybrids accrete into 四不像. His scenes and dictated lines are material to compose from, not sentences to transplant. Save a labeled checkpoint before overwriting a full post.
-6. Compare the draft with the post's strongest passages for temperature and rhythm.
-7. Only now check the draft for AI tells. Write from the topic, the material, and the voice; the tells check is a final diagnostic pass, never a sentence-generation recipe.
+2. Form your own reading first (owner rule, 2026-07-20): study the photos independently and decide what story you would tell before going back to his input. His dictation is context, not a script: pick from it what serves the story you found, and integrate. A draft that expands his sentences and fills the gaps between them with photo descriptions (看图写字、扩写他给的东西) fails even when every fact in it is his: 如果只是在扩写他给的东西，肯定写不出来好东西. Dictated tokens are pointers to meaning, not spellings (owner rule, 2026-07-20): voice transcripts garble numbers, names, and code-switched words, so resolve them to their concrete referent (his published posts often hold it) or verify them, and fix proper-noun casing ("买了 850" was the M850i of 「给M850i拍一组肖像」; "personal touch" wanted a natural rendering; "sapphire black" is the color Sapphire Black; "Google Calendar" was Google Maps, and recovering the concrete fact beats blurring it into 收藏夹). His interview answers are context for him too (mendocino, 2026-07-21): a fact he volunteered and confirmed across two rounds of questions (the second lighthouse, Point Arena) still did not survive his own final edit; supplying a fact is not a commitment to keep it.
+3. State the topic in one sentence. If none can be written, stop and ask. If the topic was inferred rather than given, disclose the sentence at handoff so he can veto it before reading the draft.
+4. Map the scenes to one or two threads.
+5. Identify the real gaps without inventing material; when he hands a design to an existing post, usually most of the material already carries it.
+6. Write the authorized passage or post fresh, as one continuous hand; patched hybrids accrete into 四不像. His scenes and dictated lines are material to compose from, not sentences to transplant. Prose gives images context and feeling but never reads out their contents; a sentence that enumerates what the surrounding frames show is 看图说话 even when it is phrased as scene prose. Save a labeled checkpoint before overwriting a full post.
+7. Compare the draft with the post's strongest passages for temperature and rhythm, and check every scene against the day's own logic: times, distances, and decisions must add up (one leaves to catch the sunset while hours of light remain, not at eight).
+8. Only now check the draft for AI tells. Write from the topic, the material, and the voice; the tells check is a final diagnostic pass, never a sentence-generation recipe.
 
 At handoff: the preview link (see preview-posts), the structural choices he may want to reverse, and content-bearing additions or interpretive choices disclosed (not routine mechanics). Prose that is genuinely yours, an English sync of his zh rewrite for example, is declared as yours; he sees it before it ships.
 
@@ -67,10 +72,15 @@ Owner-verdict-backed (blind tests plus his own rewrites, 2026-07-16/17), but lea
 - A declarative or quotable line stays when the adjacent concrete material pays for it; cut it only when it floats. Default to keeping, and never give it its own standalone paragraph; fold it into the scene it belongs to.
 - When a change of place or time would feel unmoored, give it a physical transition, in the simplest phrasing (从穹顶下来，走到老宫).
 - Fix a repetition or a rotating label only when the replacement is at least as vivid; natural repetition stays.
-- Do not narrate the photography itself; photos punctuate the post, the post does not discuss its photos as photos.
+- Do not narrate the photography itself; photos punctuate the post, the post does not discuss its photos as photos. Carve-out (mendocino, 2026-07-21): a playful curatorial aside to the reader is his voice, not narration of the shooting (来和我一起看海吧🐶 stands right after admitting the frames repeat).
+- Order scenes on the traveler's clock, not by theme (mendocino, 2026-07-21): arrival before contemplation (he moved the bridge you cross to get there ahead of the view you study once arrived), and day markers bracket a weekend piece (周六清晨出发 … 周日三点刚过，车头重新朝南). Thematic grouping that breaks itinerary order reads curated.
+- An aphorism closer does not survive (mendocino, 2026-07-21): he cut "The lighthouse does it for a living" and rewrote its idea as a warm, self-mocking reflection folded mid-post (海生气归生气 … 太阳从中调停，好歹我们才有了一些好看的文艺颜色), then ended on 回家！ and the photo. The thread stays implicit and light; do not rivet every section to it, and give the last word back to the image.
 - Concision cuts frames and summaries, never flavor words: 难得, 终于, 高处的 and their kin carry the feeling inside factual sentences and stay.
 - Three-item lists only when the three items are literally true and each earns its place; two usually beat three.
 - Vary how paragraphs end; break a run of same-shape sentences. Short fragments are his style, not a defect.
+- One beat, once: a sentiment that belongs to the ending does not also appear in the middle (a mid-post 其实还新 paragraph was cut because the closer already says 都还是新鲜的).
+- Braid a recurring motif through the scenes when the material offers one (the sunset left to be caught, landing on the paint, coming down with the plane), and when he ends a post on a photo, the photo keeps the last word.
+- Recover garbled dictated facts to their concrete form instead of blurring them (Google Maps, not 收藏夹); when two anniversaries compete for the title, the life event outranks the possession (湾区一年 over 一年半).
 
 ## Proofread before every handoff
 
