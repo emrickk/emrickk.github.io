@@ -1,8 +1,7 @@
 ---
 // Language switch: pick EN or 中文. Mirrors ThemeToggle's data-attr +
 // localStorage pattern. Sets `data-lang` on <html>; CSS (lang.css) shows the
-// active language. aria-pressed is managed by script so it also reflects the
-// resolved language in `auto` mode.
+// active language. English is the default when no preference is stored.
 ---
 
 <div class="lang-toggle" role="group" aria-label="Language / 语言">
@@ -14,15 +13,7 @@
 <script is:inline>
   (function () {
     function resolved(root) {
-      const l = root.getAttribute('data-lang');
-      if (l === 'zh' || l === 'en') return l;
-      let nav = '';
-      try {
-        nav = (navigator.language || '').toLowerCase();
-      } catch {
-        /* navigator unavailable */
-      }
-      return nav.indexOf('zh') === 0 ? 'zh' : 'en';
+      return root.getAttribute('data-lang') === 'zh' ? 'zh' : 'en';
     }
 
     function mount() {

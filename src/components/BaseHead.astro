@@ -122,17 +122,7 @@ const websiteJsonLd =
     } catch {
       lang = null;
     }
-    if (lang !== 'zh' && lang !== 'en') {
-      let nav = '';
-      try {
-        nav = (navigator.language || '').toLowerCase();
-      } catch {
-        nav = '';
-      }
-      if (nav.indexOf('zh') === 0) lang = 'zh';
-      else if (nav.indexOf('en') === 0) lang = 'en';
-      else lang = 'auto';
-    }
+    if (lang !== 'zh' && lang !== 'en') lang = 'en';
     document.documentElement.setAttribute('data-lang', lang);
   })();
 </script>
