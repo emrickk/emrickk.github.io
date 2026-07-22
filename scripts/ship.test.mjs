@@ -106,14 +106,14 @@ test('originStatus reports missing origin and remote-ahead counts', () => {
   const fx = makeFixtureWithOrigin()
   try {
     const { root } = fx
-    assert.deepEqual(originStatus(root), { hasOrigin: true, ahead: 0 })
+    assert.deepEqual(originStatus(root), { hasOrigin: true, ahead: 0, localAhead: 0 })
     write(root, 'tracked.md', 'about to be remote-only\n')
     run(root, ['add', 'tracked.md'])
     run(root, ['commit', '-q', '-m', 'remote-only commit'])
     run(root, ['push', '-q', 'origin', 'main'])
     run(root, ['reset', '-q', '--hard', 'HEAD~1'])
     run(root, ['fetch', '-q', 'origin'])
-    assert.deepEqual(originStatus(root), { hasOrigin: true, ahead: 1 })
+    assert.deepEqual(originStatus(root), { hasOrigin: true, ahead: 1, localAhead: 0 })
   } finally {
     cleanupWithOrigin(fx)
   }
@@ -322,6 +322,26 @@ test('checkPostPreview with a scoped change set only needs the scoped approval',
     assert.match(scopedRes.detail, /scoped change set/)
     const fullRes = checkPostPreview(root)
     assert.equal(fullRes.status, 'FAIL')
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('originStatus counts localAhead and preflight strictSync aborts on it', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    write(root, 'src/content/posts/committed.md', 'v2\n')
+    run(root, ['add', 'src/content/posts/committed.md'])
+    run(root, ['commit', '-q', '-m', 'local only'])
+    const status = originStatus(root)
+    assert.equal(status.ahead, 0)
+    assert.equal(status.localAhead, 1)
+    const strict = preflight(root, { fetch: false, strictSync: true })
+    assert.equal(strict.status, 'abort')
+    assert.match(strict.detail, /1 unpushed commit/)
+    const relaxed = preflight(root, { fetch: false })
+    assert.equal(relaxed.status, 'ok')
   } finally {
     cleanupWithOrigin(fx)
   }

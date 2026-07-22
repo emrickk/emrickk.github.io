@@ -22,11 +22,12 @@ import {
   writeManifest,
 } from './preview-posts.mjs'
 import { runChecks, verdict } from './release-check.mjs'
+import { runFastChecks } from './fast-checks.mjs'
 
 const POSTS_PREFIX = 'src/content/posts/'
 const ACTIONS_URL = 'https://github.com/emrickk/emrickk.github.io/actions'
 const USAGE =
-  'usage: npm run ship -- [--preflight] [--yes --digest <d>] [--only <path> ...] [--message <msg>] [--port N] [--no-open]'
+  'usage: npm run ship -- [--preflight] [--yes --digest <d>] [--only <path> ...] [--fast] [--message <msg>] [--port N] [--no-open]'
 
 export function partitionPurity(paths) {
   return {
@@ -65,14 +66,20 @@ export function rawDiffPaths(root, baseRef) {
   ].sort()
 }
 
-// ahead counts commits that exist only on origin/main.
+// ahead counts commits that exist only on origin/main; localAhead counts
+// commits that exist only on local main (committed but not pushed).
 export function originStatus(root) {
   const hasOrigin = Boolean(
     git(['rev-parse', '--verify', '-q', 'origin/main'], { cwd: root, allowFail: true }),
   )
-  if (!hasOrigin) return { hasOrigin, ahead: 0 }
+  if (!hasOrigin) return { hasOrigin, ahead: 0, localAhead: 0 }
   const counts = git(['rev-list', '--left-right', '--count', 'origin/main...main'], { cwd: root })
-  return { hasOrigin, ahead: Number(counts.split(/\s+/)[0] || '0') }
+  const parts = counts.split(/\s+/)
+  return {
+    hasOrigin,
+    ahead: Number(parts[0] || '0'),
+    localAhead: Number(parts[1] || '0'),
+  }
 }
 
 // Spec step 1. Returns a plain result so every branch is testable:
@@ -81,7 +88,10 @@ export function originStatus(root) {
 // `only` (repo-relative paths) scopes the shipped change set to the given
 // post files; purity still checks the whole tree, so non-post changes
 // anywhere keep blocking, and unselected post edits simply stay pending.
-export function preflight(root, { fetch = true, only = null } = {}) {
+// `strictSync` (fast lane) additionally requires local main to be exactly
+// origin/main: `git push` pushes the whole branch, so any unpushed local
+// commit would ride along with the scoped publish otherwise.
+export function preflight(root, { fetch = true, only = null, strictSync = false } = {}) {
   const branch = git(['rev-parse', '--abbrev-ref', 'HEAD'], { cwd: root })
   if (branch !== 'main') {
     return { status: 'abort', detail: `on branch ${branch}; ship only runs on main` }
@@ -93,13 +103,21 @@ export function preflight(root, { fetch = true, only = null } = {}) {
       console.error('warning: could not fetch origin; comparing against the last-known origin/main')
     }
   }
-  const { hasOrigin, ahead } = originStatus(root)
+  const { hasOrigin, ahead, localAhead } = originStatus(root)
   if (hasOrigin && ahead > 0) {
     return {
       status: 'abort',
       detail:
         `origin/main has ${ahead} commit(s) not in local main; ` +
         'reconcile in a Claude session (or git pull --rebase when comfortable) before shipping',
+    }
+  }
+  if (strictSync && hasOrigin && localAhead > 0) {
+    return {
+      status: 'abort',
+      detail:
+        `local main has ${localAhead} unpushed commit(s); a scoped publish pushes the whole ` +
+        'branch and would carry them along. Push or reconcile them in a Claude session first',
     }
   }
   const baseRef = resolveBaseRef(root)
@@ -179,6 +197,8 @@ async function waitForServer(url, { intervalMs = 500, timeoutMs = 15000 } = {}) 
   return false
 }
 
+// Returns the deploy conclusion: 'success', a failure conclusion string,
+// or 'unknown' (gh unavailable, or the watch timed out).
 async function watchDeploy(root, sha, slugs) {
   const deadline = Date.now() + 5 * 60 * 1000
   while (Date.now() < deadline) {
@@ -193,7 +213,7 @@ async function watchDeploy(root, sha, slugs) {
       )
     } catch {
       console.log('gh unavailable; watch the deploy at ' + ACTIONS_URL)
-      return
+      return 'unknown'
     }
     const run = runs[0]
     if (run && run.headSha === sha && run.status === 'completed') {
@@ -203,11 +223,12 @@ async function watchDeploy(root, sha, slugs) {
       } else {
         console.log(`deploy finished with conclusion ${run.conclusion}; inspect ${ACTIONS_URL}`)
       }
-      return
+      return run.conclusion || 'unknown'
     }
     await new Promise((resolve) => setTimeout(resolve, 10000))
   }
   console.log('deploy watch timed out after 5 minutes; check ' + ACTIONS_URL)
+  return 'unknown'
 }
 
 export async function main(values) {
@@ -217,9 +238,14 @@ export async function main(values) {
     console.error(USAGE)
     return 1
   }
+  if (values.fast && !(Array.isArray(values.only) && values.only.length > 0)) {
+    console.error('--fast requires --only <path>: the fast lane is for scoped publishes')
+    console.error(USAGE)
+    return 1
+  }
   save(root, { trigger: 'ship', quiet: true })
   const only = Array.isArray(values.only) && values.only.length > 0 ? values.only : null
-  const pre = preflight(root, { only })
+  const pre = preflight(root, { only, strictSync: Boolean(values.fast) })
   if (pre.status === 'abort') {
     console.error(pre.detail)
     return 1
@@ -280,32 +306,56 @@ export async function main(values) {
     // reviewed content. A concurrent session's post edit (or any new
     // non-post change) landing after the review aborts here.
     const approved = values.yes ? values.digest : pre.digest
-    const now = preflight(root, { fetch: false, only })
+    const now = preflight(root, { fetch: false, only, strictSync: Boolean(values.fast) })
     if (now.status !== 'ok' || now.digest !== approved) {
       console.error(
         'the tree changed since the review (another session?); nothing recorded, start over',
       )
       return 1
     }
-    writeManifest(root, hashChangeSet(root, now.changeSet), { baseRef: now.baseRef })
-    console.log('approval recorded')
+    if (!values.fast) {
+      // The fast lane skips the review manifest: there was no review, so
+      // recording an approval would be a false audit trail.
+      writeManifest(root, hashChangeSet(root, now.changeSet), { baseRef: now.baseRef })
+      console.log('approval recorded')
+    }
     if (server) {
       stopServer(server)
       server = null
       activeServer = null
     }
 
-    console.log('\nrunning release checks...')
-    const results = await runChecks(root, { previewChangeSet: now.changeSet })
-    const summary = verdict(results)
-    console.log('\n' + summary)
-    if (!summary.startsWith('VERDICT: GO')) return 1
+    if (values.fast) {
+      console.log('\nrunning fast checks...')
+      const errors = runFastChecks(root, now.changeSet)
+      if (errors.length > 0) {
+        console.error('fast checks failed:\n  ' + errors.join('\n  '))
+        return 1
+      }
+      console.log(`fast checks passed for ${now.changeSet.length} file(s)`)
+    } else {
+      console.log('\nrunning release checks...')
+      const results = await runChecks(root, { previewChangeSet: now.changeSet })
+      const summary = verdict(results)
+      console.log('\n' + summary)
+      if (!summary.startsWith('VERDICT: GO')) return 1
+    }
 
     const sha = commitAndPush(root, now.changeSet, {
       message: values.message || commitMessageFor(now.changeSet),
     })
     console.log(`pushed ${sha.slice(0, 7)} to origin/main`)
-    await watchDeploy(root, sha, [...new Set(now.changeSet.map((p) => slugForPostFile(p)))])
+    const conclusion = await watchDeploy(root, sha, [
+      ...new Set(now.changeSet.map((p) => slugForPostFile(p))),
+    ])
+    if (values.fast && conclusion !== 'success' && conclusion !== 'unknown') {
+      console.error(
+        'deploy failed: the post is NOT live (the site stays on the previous version) ' +
+          'and main is blocked until this is fixed. Fix the post and publish again, ' +
+          'or revert in a Claude session.',
+      )
+      return 1
+    }
     return 0
   } finally {
     stopServer(server)
@@ -325,6 +375,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         preflight: { type: 'boolean', default: false },
         yes: { type: 'boolean', default: false },
         only: { type: 'string', multiple: true },
+        fast: { type: 'boolean', default: false },
         digest: { type: 'string' },
       },
     }))
