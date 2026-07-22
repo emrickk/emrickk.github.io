@@ -317,17 +317,26 @@ export const CHECKS = [
   { num: 9, name: 'built output', run: checkBuiltOutput },
   { num: 10, name: 'CDN images', full: true, run: checkCdnImages },
   { num: 11, name: 'internal links', full: true, run: checkInternalLinks },
-  { num: 12, name: 'post preview', run: (root) => checkPostPreview(root) },
+  {
+    num: 12,
+    name: 'post preview',
+    run: (root, opts = {}) =>
+      checkPostPreview(root, { changeSet: opts.previewChangeSet ?? undefined }),
+  },
 ]
 
-export async function runChecks(root, { full = false } = {}) {
+// `previewChangeSet` scopes check 12 to an explicit change set: ship passes
+// the exact files it will commit, so other posts still pending in the tree
+// do not block a scoped publish. The standalone CLI never sets it, so manual
+// pushes keep checking the whole tree.
+export async function runChecks(root, { full = false, previewChangeSet = null } = {}) {
   const results = []
   for (const check of CHECKS) {
     if (check.full && !full) continue
     const started = Date.now()
     let result
     try {
-      result = await check.run(root, { full })
+      result = await check.run(root, { full, previewChangeSet })
     } catch (err) {
       result = { status: 'FAIL', detail: err.message }
     }

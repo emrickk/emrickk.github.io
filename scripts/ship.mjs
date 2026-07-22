@@ -26,7 +26,7 @@ import { runChecks, verdict } from './release-check.mjs'
 const POSTS_PREFIX = 'src/content/posts/'
 const ACTIONS_URL = 'https://github.com/emrickk/emrickk.github.io/actions'
 const USAGE =
-  'usage: npm run ship -- [--preflight] [--yes --digest <d>] [--message <msg>] [--port N] [--no-open]'
+  'usage: npm run ship -- [--preflight] [--yes --digest <d>] [--only <path> ...] [--message <msg>] [--port N] [--no-open]'
 
 export function partitionPurity(paths) {
   return {
@@ -78,7 +78,10 @@ export function originStatus(root) {
 // Spec step 1. Returns a plain result so every branch is testable:
 // status 'abort' (exit 1), 'empty' (exit 0), or 'ok' with changeSet and
 // digest. Fetch failures warn and fall back to the last-known origin/main.
-export function preflight(root, { fetch = true } = {}) {
+// `only` (repo-relative paths) scopes the shipped change set to the given
+// post files; purity still checks the whole tree, so non-post changes
+// anywhere keep blocking, and unselected post edits simply stay pending.
+export function preflight(root, { fetch = true, only = null } = {}) {
   const branch = git(['rev-parse', '--abbrev-ref', 'HEAD'], { cwd: root })
   if (branch !== 'main') {
     return { status: 'abort', detail: `on branch ${branch}; ship only runs on main` }
@@ -110,9 +113,17 @@ export function preflight(root, { fetch = true } = {}) {
         '\nhandle this in a Claude session instead',
     }
   }
-  const changeSet = computeChangeSet(root, { baseRef })
+  let changeSet = computeChangeSet(root, { baseRef })
+  if (only && only.length > 0) {
+    const wanted = new Set(only.map((p) => p.replace(/^\.\//, '')))
+    changeSet = changeSet.filter((p) => wanted.has(p))
+  }
   if (changeSet.length === 0) {
-    return { status: 'empty', detail: 'nothing to ship', baseRef }
+    return {
+      status: 'empty',
+      detail: only ? 'nothing to ship for the selected post(s)' : 'nothing to ship',
+      baseRef,
+    }
   }
   return { status: 'ok', baseRef, changeSet, digest: changeSetDigest(hashChangeSet(root, changeSet)) }
 }
@@ -207,7 +218,8 @@ export async function main(values) {
     return 1
   }
   save(root, { trigger: 'ship', quiet: true })
-  const pre = preflight(root)
+  const only = Array.isArray(values.only) && values.only.length > 0 ? values.only : null
+  const pre = preflight(root, { only })
   if (pre.status === 'abort') {
     console.error(pre.detail)
     return 1
@@ -268,7 +280,7 @@ export async function main(values) {
     // reviewed content. A concurrent session's post edit (or any new
     // non-post change) landing after the review aborts here.
     const approved = values.yes ? values.digest : pre.digest
-    const now = preflight(root, { fetch: false })
+    const now = preflight(root, { fetch: false, only })
     if (now.status !== 'ok' || now.digest !== approved) {
       console.error(
         'the tree changed since the review (another session?); nothing recorded, start over',
@@ -284,7 +296,7 @@ export async function main(values) {
     }
 
     console.log('\nrunning release checks...')
-    const results = await runChecks(root)
+    const results = await runChecks(root, { previewChangeSet: now.changeSet })
     const summary = verdict(results)
     console.log('\n' + summary)
     if (!summary.startsWith('VERDICT: GO')) return 1
@@ -312,6 +324,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         'no-open': { type: 'boolean', default: false },
         preflight: { type: 'boolean', default: false },
         yes: { type: 'boolean', default: false },
+        only: { type: 'string', multiple: true },
         digest: { type: 'string' },
       },
     }))

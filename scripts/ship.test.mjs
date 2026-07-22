@@ -16,6 +16,7 @@ import {
   preflight,
   rawDiffPaths,
 } from './ship.mjs'
+import { checkPostPreview, hashChangeSet, writeManifest } from './preview-posts.mjs'
 import { cleanup, makeFixtureRepo, run, write } from './test-helpers.mjs'
 
 // Fixture repo with a local bare origin, pushed and fetched, so origin/main
@@ -265,6 +266,62 @@ test('cli: --preflight aborts with exit 1 on mixed changes', () => {
     const res = runShip(root, ['--preflight'])
     assert.equal(res.code, 1)
     assert.match(res.stderr, /docs\/notes\.md/)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('preflight --only scopes the change set to the selected post pair', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    write(root, 'src/content/posts/alpha.md', 'alpha v2\n')
+    write(root, 'src/content/posts/alpha.zh.md', 'alpha zh v2\n')
+    write(root, 'src/content/posts/beta.md', 'beta v2\n')
+    const full = preflight(root, { fetch: false })
+    assert.equal(full.status, 'ok')
+    assert.equal(full.changeSet.length, 3)
+    const scoped = preflight(root, {
+      fetch: false,
+      only: ['src/content/posts/alpha.md', 'src/content/posts/alpha.zh.md'],
+    })
+    assert.equal(scoped.status, 'ok')
+    assert.deepEqual(scoped.changeSet, [
+      'src/content/posts/alpha.md',
+      'src/content/posts/alpha.zh.md',
+    ])
+    assert.notEqual(scoped.digest, full.digest)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('preflight --only with no matching pending change is empty', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    write(root, 'src/content/posts/beta.md', 'beta v2\n')
+    const res = preflight(root, { fetch: false, only: ['src/content/posts/alpha.md'] })
+    assert.equal(res.status, 'empty')
+    assert.match(res.detail, /selected post/)
+  } finally {
+    cleanupWithOrigin(fx)
+  }
+})
+
+test('checkPostPreview with a scoped change set only needs the scoped approval', () => {
+  const fx = makeFixtureWithOrigin()
+  try {
+    const { root } = fx
+    write(root, 'src/content/posts/alpha.md', 'alpha v2\n')
+    write(root, 'src/content/posts/beta.md', 'beta v2\n')
+    const scoped = ['src/content/posts/alpha.md']
+    writeManifest(root, hashChangeSet(root, scoped), { baseRef: 'origin/main' })
+    const scopedRes = checkPostPreview(root, { changeSet: scoped })
+    assert.equal(scopedRes.status, 'PASS')
+    assert.match(scopedRes.detail, /scoped change set/)
+    const fullRes = checkPostPreview(root)
+    assert.equal(fullRes.status, 'FAIL')
   } finally {
     cleanupWithOrigin(fx)
   }

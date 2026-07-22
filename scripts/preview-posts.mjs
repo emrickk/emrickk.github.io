@@ -231,12 +231,16 @@ const REMEDIATION = 'run npm run preview-posts, review in the browser, then npm 
 // When the base ref has commits HEAD lacks, every verdict says so: the
 // change set was computed against the merge-base, and the operator should
 // know the comparison base is not origin/main itself.
-export function checkPostPreview(root, { baseRef } = {}) {
+// `changeSet` overrides the computed set for scoped publishes (ship --only):
+// the approval then only needs to cover the files actually being shipped.
+export function checkPostPreview(root, { baseRef, changeSet: changeSetOverride } = {}) {
   const base = baseRef ?? resolveBaseRef(root)
-  const note = resolveDiffBase(root, base).headBehind
-    ? ` (${base} has commits not in HEAD; change set is local work vs their merge-base)`
-    : ''
-  const changeSet = computeChangeSet(root, { baseRef: base })
+  const scopedNote = changeSetOverride ? ' (scoped change set)' : ''
+  const note =
+    (resolveDiffBase(root, base).headBehind
+      ? ` (${base} has commits not in HEAD; change set is local work vs their merge-base)`
+      : '') + scopedNote
+  const changeSet = changeSetOverride ?? computeChangeSet(root, { baseRef: base })
   if (changeSet.length === 0) return { status: 'SKIP', detail: `no preview-relevant changes${note}` }
   const manifest = readManifest(root)
   if (!manifest) {
