@@ -2,22 +2,22 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "blog-dev",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--", "--port", "4399"],
-      "port": 4399
-    },
-    {
       "name": "blog-preview",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "preview", "--", "--port", "4398"],
-      "port": 4398
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["astro", "preview", "--port", "4327"],
+      "port": 4327
     },
     {
-      "name": "blog-editor",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--", "--port", "4321"],
-      "port": 4321
+      "name": "blog-dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["astro", "dev", "--port", "4341"],
+      "port": 4341
+    },
+    {
+      "name": "blog-dev-4353",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["astro", "dev", "--port", "4353"],
+      "port": 4353
     }
   ]
 }
