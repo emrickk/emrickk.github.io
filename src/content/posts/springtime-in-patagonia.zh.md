@@ -1,7 +1,7 @@
 ---
 translationKey: 'springtime-in-patagonia'
 lang: 'zh'
-title: '巴塔哥尼亚的春天'
+title: 'Patagonia的春天'
 description: '风，冰，距离，和每天都比我们撑得久的光。'
 ---
 
