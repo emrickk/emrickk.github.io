@@ -57,7 +57,7 @@ const config = {
       Words: { zh: '随想', en: 'Musings' },
       Journal: { zh: '日志', en: 'Journal' },
       Repost: { zh: '转载', en: 'Repost' },
-      Things: { zh: '长考', en: 'Ponderings' },
+      Things: { zh: '琢磨', en: 'Mulling' },
       Prodigal: { zh: '败家', en: 'Splurges' },
     } as Record<string, { zh: string; en: string }>,
   },
