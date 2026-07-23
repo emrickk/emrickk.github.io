@@ -12,7 +12,7 @@ In early April we spent two days and a night in Napa. We were in no hurry on the
 
 ![Pigeon Point Lighthouse over golden grass, the Pacific behind](https://cdn.theneverless.com/2026/07/napa-pigeon-point-lighthouse.webp)
 
-We stayed at the Alila again. The outdoor bathtub and the fire bowl on the balcony make a good pair.
+We stayed at the Alila again. At first light the fire bowl on the balcony was already lit, the bathtub right beside it, neither one hurrying the other.
 
 ![The balcony at dawn, an outdoor bathtub and a lit fire bowl, green trees beyond](https://cdn.theneverless.com/2026/07/napa-alila-fire-bowl.webp)
 

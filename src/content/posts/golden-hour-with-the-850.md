@@ -33,7 +33,7 @@ The low sun came straight through the spokes of the wheels and laid the whole si
 
 ![Side profile with the sun flaring through the wheels](https://cdn.theneverless.com/2026/07/bmw-850-side-pano.webp)
 
-The rear deserves its own study. The taillights stretch into the haunches, and the M850i badge sits just above the diffuser like a signature in the corner of the canvas.
+The rear got a set of its own. The taillights stretch into the haunches, and the M850i badge sits just above the diffuser like a signature in the corner of the canvas.
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/bmw-850-taillight.webp" alt="Taillight and rear haunch in close-up" loading="lazy" />
@@ -58,5 +58,3 @@ As the light went out the shots got darker and moodier, which suits this car jus
 And one last portrait before heading home, of the other member of the crew: the red panda who rides along on the rear window, peeking over the door the whole way.
 
 ![The red panda sticker peeking over the window](https://cdn.theneverless.com/2026/07/bmw-850-red-panda.webp)
-
-An empty lot, one car, one golden hour. Some evenings that is all it takes.

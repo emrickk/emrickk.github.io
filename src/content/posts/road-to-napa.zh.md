@@ -9,7 +9,7 @@ translationKey: road-to-napa
 
 ![金色草坡上的 Pigeon Point 灯塔，后面是太平洋](https://cdn.theneverless.com/2026/07/napa-pigeon-point-lighthouse.webp)
 
-还是住 Alila，阳台上的浴缸和火盆很配。
+还是住 Alila。天刚亮，阳台上的火盆已经点着了，旁边就是浴缸，谁也不催谁。
 
 ![黎明的阳台，露天浴缸和点着的火盆，外面是绿树](https://cdn.theneverless.com/2026/07/napa-alila-fire-bowl.webp)
 

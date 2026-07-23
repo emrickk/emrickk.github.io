@@ -8,7 +8,7 @@ lang: 'en'
 translationKey: 'summer-in-chicago'
 ---
 
-The theme of this Chicago trip was simple: walk hard, look at buildings. We signed up for two architecture tours and booked the architecture cruise. Chicago is for buildings, of course; this is the city that put up the world's first skyscraper, and Chicagoans have never once let anyone forget it, have they?
+The theme of this Chicago trip was simple: walk hard, look at buildings. We booked the architecture cruise and left the rest to our feet. Chicago is for buildings, of course; this is the city that put up the world's first skyscraper, and Chicagoans have never once let anyone forget it, have they?
 
 We started with the cruise. From the water, the structure of downtown explains itself. The river is the bottom floor: boats on the river, bridges over the boats, trains over the bridges, and above the trains, the towers.
 
