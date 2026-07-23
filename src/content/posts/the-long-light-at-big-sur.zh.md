@@ -19,7 +19,7 @@ description: '在大苏尔待了两天。'
 
 ## 下午换了主人
 
-房间是刻意的暗，里里外外都是红杉木，窗帘的活儿由森林代劳。能进来的光都先在树里走过一遭，到屋里已经是温的。桌上等着一盘奶酪，一小杯深色的甜酒，还有一个被七月闲置的壁炉。
+房间是刻意的暗，里里外外都是红杉木，窗帘的活儿由森林代劳。能进来的光都先在树里走过一遭，到屋里已经是温的。桌上等着一盘奶酪，一小杯深色又甜的东西，还有一个被七月闲置的壁炉。
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/big-sur-desk-window.webp" alt="窗光里的书桌和皮椅" loading="lazy" />
@@ -33,7 +33,7 @@ description: '在大苏尔待了两天。'
   <img src="https://cdn.theneverless.com/2026/07/big-sur-welcome-plate.webp" alt="房间桌上的一只盘子和一杯酒" loading="lazy" />
 </div>
 
-后来还是出了门。这里的房子被拆散了撒进林子，看见一段屋顶都算一个发现；小路从橡树底下钻过去，出来就是一片金色的坡。这些当然都是安排好的，这种地方什么都是安排好的，好在树的年纪足够大，守得住这个秘密。
+后来还是出了门。这里的房子零零散散地藏在林子里，看见一段屋顶都算一个发现；小路从橡树底下钻过去，出来就是一片金色的坡。这些当然都是安排好的，这种地方什么都是安排好的，好在树的年纪足够大，守得住这个秘密。
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/big-sur-cabin-redwoods.webp" alt="几乎藏进红杉林里的木房子" loading="lazy" />
@@ -55,7 +55,7 @@ description: '在大苏尔待了两天。'
   <img src="https://cdn.theneverless.com/2026/07/big-sur-moon-redwoods.webp" alt="深色红杉树梢上方的月亮" loading="lazy" />
 </div>
 
-坚持得最久的是山。草地先变金色，再变琥珀色，大树干一人留一道亮边。对面的山脊在我们这边全蓝下来之后，还在太阳里泡了很久。你会明白，黑在这里不是落下来的，是山谷自己做的一件事，按部就班，有先有后。
+坚持得最久的是山。草地先变金色，再变琥珀色，粗大的树干各有一面还亮着。对面的山脊在我们这边全蓝下来之后，还在太阳里泡了很久。你会明白，黑在这里不是落下来的，是山谷自己做的一件事，按部就班，有先有后。
 
 <div class="img-grid">
   <img src="https://cdn.theneverless.com/2026/07/big-sur-hillside-last-light.webp" alt="最后的光越过山坡、红杉和一面墙" loading="lazy" />
@@ -72,6 +72,6 @@ description: '在大苏尔待了两天。'
 
 ![清晨的雾带压在海上，空着的草坪](https://cdn.theneverless.com/2026/07/big-sur-morning-fog.webp)
 
-海是在回家路上整个还给我们的，在一片几乎没人的沙滩上。一把红伞撑开着，底下没有人：整条海岸都摆好了在等，却很少有人留下来坐一会儿。这次我们是白天开完剩下的路的，下午背后，终于没有谁站着了。
+回家路上，在一片几乎没人的沙滩边，海一下子全回来了。一把红伞撑在那里，底下没有人：整条海岸都摆好了，就等人来，却没几个人留下来坐一会儿。这一次，剩下的路开完了，天还亮着。下午背后，终于没有谁站着了。
 
 ![安静沙滩上的一把红伞](https://cdn.theneverless.com/2026/07/big-sur-red-umbrella-beach.webp)
