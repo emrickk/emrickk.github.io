@@ -52,6 +52,6 @@ By eight the haze had gone pink. One figure had walked out to the very end of th
   <img src="https://cdn.theneverless.com/2026/07/figure-on-the-rock.webp" alt="A lone figure standing on the last rock above the ocean" loading="lazy" />
 </div>
 
-Two more sat on the warm side of the rocks, in jackets. Hey, not us. We finished shooting, watched the sunset out, and shivered home.
+Two more sat on the warm side of the rocks, in jackets. Hey, not us. We watched the sunset out and shivered home.
 
 ![Two figures on the sunlit rocks above the waves at Sutro](https://cdn.theneverless.com/2026/07/sutro-rocks-two-figures.webp)

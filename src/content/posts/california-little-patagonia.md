@@ -12,7 +12,7 @@ The Bay Area does autumn reluctantly: the trees put it off until December, and t
 
 ## South on 395
 
-US 395 runs along the east side of the range, snow mountains on one hand, desert on the other. Bridgeport is the last town before the stretch I had come for. The buildings and the maples could pass for New England, but the vegetation and the architecture kept reminding me this was California. I kept driving.
+US 395 runs along the east side of the range, snow mountains on one hand, desert on the other. Bridgeport is the last town before the stretch I had come for. The houses and the maples could pass for New England, but the desert at one end of the road and the snow at the other kept reminding me this was California. I kept driving.
 
 ![A roadside diner with STEAKS on the awning and an old pickup out front](https://cdn.theneverless.com/2026/07/us395-roadside-diner.webp)
 

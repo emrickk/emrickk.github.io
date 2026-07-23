@@ -28,11 +28,9 @@ Go? Of course. Ten days later we were on the road.
 
 January is not Highway 1's best season, but it is the California coast's secret spring: after the rains the hills turn a green that will not survive June, and the tour buses have not figured this out yet. Good views, few people, perfect for pulling over along the way and climbing onto the rocks.
 
-It barely counts as early spring, and the surf is heavy. Each set rolls in, and first you feel the chill coming through the rocks beneath your feet; only then do you hear the water, as if it were saying that the hills are turning green. Draw your gaze back from the sea, and you find the hills wearing the emerald-green velvet they get for only two months a year.
-
+It barely counts as early spring, and the surf is heavy. Each set rolls in, and first you feel the chill coming through the rocks beneath your feet; your ears get their turn after. Draw your gaze back from the sea, and you find the hills wearing the emerald-green velvet they get for only two months a year.
 
 ![The green winter hills of Big Sur in the side mirror](https://cdn.theneverless.com/2026/07/hills-in-the-side-mirror.webp)
-
 
 ![Dusk on Highway 1: the curve, a bare tree, the last pink light](https://cdn.theneverless.com/2026/07/highway-1-dusk-curve.webp)
 
@@ -54,6 +52,5 @@ This is the other side of the story. While Highway 1 was being repaired, we move
 The place is rented. The flowers are from the grocery store. The bulldog is made of leather. None of that matters to a dog. Real dogs and fake ones alike have a strong sense of entitlement, strong enough that even the leather dog thinks this beam of afternoon light is his alone.
 
 ![The lounge chair, the bookshelf, and the bulldog headed for the balcony](https://cdn.theneverless.com/2026/07/bulldog-and-lounge-chair.webp)
-
 
 Sure enough, Highway 1 broke again in February. When it breaks, wait; when it is fixed, go again. Anyway, I have a comfortable home to wait in.

@@ -73,7 +73,7 @@ description: '我的相机比罗马慢九小时。罗马自己，大概慢了九
 
 ![后殿正中发亮的鸽子窗和圣座](https://cdn.theneverless.com/2026/07/rome-cathedra-window.webp)
 
-出来沿着台伯河走到圣天使桥。
+出来沿着台伯河走到圣天使桥。桥上的天使已经举了三百多年，不差我们这一会儿。
 
 ![圣天使桥上的天使，背后是圣天使堡](https://cdn.theneverless.com/2026/07/rome-bridge-angel.webp)
 

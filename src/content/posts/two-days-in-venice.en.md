@@ -93,4 +93,4 @@ By evening we were back on the main island, just in time for another sunset. A g
 <img src="https://cdn.theneverless.com/2026/07/venice-last-canal.webp" alt="A small blue boat in the shadows of a narrow canal">
 </div>
 
-They say Venice is sinking, a few millimeters every year. Everything I heard before the trip was true as well: the crowds, the packed boats, the tourists everywhere. What nobody mentioned is that missing one boat buys you half an empty city, and that a sinking city can hold everything up this steadily: the bridges, the boats, and two people whose feet were sore and who still did not want to leave.
+They say Venice is sinking, a few millimeters every year. Everything I heard before the trip was true as well: the crowds, the packed boats, the tourists everywhere. What nobody mentioned is that missing one boat buys you half an empty city, and that a sinking city holds things up this steadily: bridges, boats, and two people whose feet were sore and who still did not want to leave.

@@ -8,7 +8,7 @@ lang: 'en'
 translationKey: 'another-city-walk-in-san-francisco'
 ---
 
-One Saturday in July 2024, a week after the last downtown walk, we were back: errands in the city, finished early, a new camera that had never been outside, and roughly the same route, wandered more than planned. Looking back, the day had a second thread running through it: everything old down there is in somebody's care, some kept faithfully, some by accident, some still waiting to be claimed.
+One Saturday in July 2024, a week after the last downtown walk, we were back: errands in the city, finished early, a new camera that had never been outside, and roughly the same route, wandered more than planned. Looking back, the day had a second thread running through it, though it took the whole walk to see.
 
 ## City Lights
 

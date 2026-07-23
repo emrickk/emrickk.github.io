@@ -9,7 +9,7 @@ translationKey: california-little-patagonia
 
 ## 395 往南
 
-395 号公路贴着山脉东侧走，一边是雪山，一边是荒漠。Bridgeport是我来到沿线景点之前的最后一个小镇。镇子上的建筑和枫叶和新英格兰极其相似，但是植被和建筑风格又无不提醒我这里是加州。我继续开。
+395 号公路贴着山脉东侧走，一边是雪山，一边是荒漠。Bridgeport是我来到沿线景点之前的最后一个小镇。镇子上的房子和枫叶像极了新英格兰，可路两头的荒漠和雪山又提醒我，这里是加州。我继续开。
 
 ![路边小馆，白棚子上写着 STEAKS，门口一辆老皮卡](https://cdn.theneverless.com/2026/07/us395-roadside-diner.webp)
 

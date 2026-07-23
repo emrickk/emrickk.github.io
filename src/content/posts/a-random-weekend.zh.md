@@ -49,6 +49,6 @@ Camera Obscura还在平台上值班。礁石上面的餐厅关了好几年了。
   <img src="https://cdn.theneverless.com/2026/07/figure-on-the-rock.webp" alt="站在海上礁石顶端的一个人影" loading="lazy" />
 </div>
 
-还有两个人穿着外套坐在晒得暖的那一面。嘿，我们可没有。拍完，看完日落，哆哆嗦嗦回家。
+还有两个人穿着外套坐在晒得暖的那一面。嘿，我们可没有。看完日落，哆哆嗦嗦回家。
 
 ![夕阳下Sutro礁石上的两个人影，下面是海浪](https://cdn.theneverless.com/2026/07/sutro-rocks-two-figures.webp)

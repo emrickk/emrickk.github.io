@@ -76,7 +76,7 @@ Even the light here is arranged: it comes through an alabaster window with a dov
 
 ![The glowing dove window above the Cathedra](https://cdn.theneverless.com/2026/07/rome-cathedra-window.webp)
 
-We walked out along the Tiber to the Sant'Angelo bridge.
+We walked out along the Tiber to the Sant'Angelo bridge. The angels up there have been holding their poses for three hundred years; a few more minutes of ours cost them nothing.
 
 ![An angel on the Sant'Angelo bridge, Castel Sant'Angelo behind](https://cdn.theneverless.com/2026/07/rome-bridge-angel.webp)
 
