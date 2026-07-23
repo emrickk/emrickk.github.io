@@ -66,7 +66,7 @@ const posts = defineCollection({
         .string()
         .optional()
         .describe(
-          'Category label readers see on the post and in the post feed. Use the settled zh names (Journal, Splurges, and friends).',
+          'Raw category key: Journal, Things, Prodigal, Words, or Repost. Readers see the bilingual display name mapped in categoryLabels in astro-theme-config.ts, so rename categories there, never here.',
         ),
       homeFeatured: z
         .boolean()

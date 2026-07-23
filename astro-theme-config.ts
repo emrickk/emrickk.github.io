@@ -47,17 +47,17 @@ const config = {
   ] as NavItem[],
 
   content: {
-    categoryOrder: ['Journal', 'Things', 'Prodigal', 'Words', 'Repost', 'Fiona'],
+    categoryOrder: ['Journal', 'Things', 'Prodigal', 'Words', 'Repost'],
     /**
      * Bilingual display names for post categories; they swap with the EN·中
-     * toggle. Frontmatter keeps the raw key. Unmapped categories (e.g. Fiona)
-     * show the raw key in both languages.
+     * toggle. Frontmatter keeps the raw key. Unmapped categories show the
+     * raw key in both languages.
      */
     categoryLabels: {
-      Words: { zh: '文字', en: 'Words' },
+      Words: { zh: '随想', en: 'Musings' },
       Journal: { zh: '日志', en: 'Journal' },
       Repost: { zh: '转载', en: 'Repost' },
-      Things: { zh: '东西', en: 'Things' },
+      Things: { zh: '长考', en: 'Ponderings' },
       Prodigal: { zh: '败家', en: 'Splurges' },
     } as Record<string, { zh: string; en: string }>,
   },
