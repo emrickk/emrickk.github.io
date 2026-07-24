@@ -1,0 +1,50 @@
+---
+title: 'Lassen, July 4th'
+description: 'A Lassen weekend: the Fourth of July on Manzanita Lake, evening glitter on Lake Helen, and the Muir house on the drive up.'
+pubDate: '2026-07-04'
+heroImage: '../../assets/hero/2026/07/lassen-cover.webp'
+category: 'Journal'
+lang: 'en'
+translationKey: 'lassen-july-4th'
+---
+
+For the Fourth of July long weekend we drove north to Lassen Volcanic National Park, with one stop on the way, in Martinez: John Muir's old house. A freeway runs hard against the property these days; at least it has the manners to call itself the John Muir Parkway.
+
+The house was built by Muir's father-in-law. Muir spent the second half of his life here, ran a large fruit ranch, and on the side wrote the idea of the national park into America's head. Inside it is dark wood from floor to ceiling; the afternoon sun burned the window a solid white and somehow made the room feel darker. The room in the photo is the father-in-law's study, the sign by the door says Strentzel Office. The room where Muir did his writing is upstairs.
+
+![The Strentzel office in the Muir house, dark wood and afternoon sun](https://cdn.theneverless.com/2026/07/muir-strentzel-office.webp)
+
+## Manzanita Lake
+
+We entered the park the next afternoon. Manzanita Lake sits right by the northwest entrance, Lassen Peak stands across it under what July has left of the snow, and the lake hands the whole thing back in full.
+
+![Lassen Peak and its reflection over Manzanita Lake](https://cdn.theneverless.com/2026/07/lassen-peak-manzanita-lake.webp)
+
+The lake was in its holiday mood: paddleboards drifting out one after another, kayakers in life vests paddling in earnest, and plenty of people paddling nothing at all, just sitting on the water.
+
+<div class="img-grid">
+  <img src="https://cdn.theneverless.com/2026/07/manzanita-lake-paddleboards.webp" alt="Paddleboarders on Manzanita Lake, through pine branches" loading="lazy" />
+  <img src="https://cdn.theneverless.com/2026/07/manzanita-lake-kayaker.webp" alt="A kayaker on Manzanita Lake below Lassen Peak" loading="lazy" />
+</div>
+
+![Lassen Peak across the full width of Manzanita Lake](https://cdn.theneverless.com/2026/07/manzanita-lake-pano.webp)
+
+We did climb the volcano itself this trip. Looking back, though, what stayed with me is not the summit; it is the summer: an alpine lake shining under the sun, and people beside it in no hurry at all.
+
+## Lake Helen
+
+Toward evening we followed the park road uphill and stopped beside a lake of a frankly excessive blue. Lake Helen, I think; honestly I never did pin the name down.
+
+As the sun got low, the whole surface broke into glitter. A young couple sat on the rocks at the edge, shoulder to shoulder.
+
+![A young couple on the rocks at the edge of Lake Helen](https://cdn.theneverless.com/2026/07/lake-helen-couple.webp)
+
+A little way off, an old man had clearly come prepared: folding chair pitched in the pine shade, sandals up, a can going slowly in one hand. He was not going anywhere this evening.
+
+![An old man reclining in a camp chair in the pine shade above the lake](https://cdn.theneverless.com/2026/07/lake-helen-camp-chair.webp)
+
+The road bends around this end of the lake and the shoulder was parked solid; on the shore below, blankets and chairs lay spread out with no visible intention of being packed up. The Fourth of July, and this is how these people threw the country its birthday party: drive into a park, find a flat spot by the water, and do nothing.
+
+I thought again of that dark study in Martinez from the day before. Muir wrote his whole life largely to convince people that afternoons like this deserved a place set aside to happen in. The people on this shore may never have read a word of his, but the chairs were already up. For a writing man, there is no better royalty.
+
+![Blankets and chairs along the lakeshore in the evening light](https://cdn.theneverless.com/2026/07/lake-helen-picnic-shore.webp)
